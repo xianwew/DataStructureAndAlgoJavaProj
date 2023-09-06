@@ -24,7 +24,8 @@ public class MyHashTable {
     }
     
     public void hashing(int key, Handle handle, Seminar seminar){
-		keys[numOfElement] = key;
+    	keys[numOfElement] = key;
+		System.out.println("number of element: " + numOfElement);
 		numOfElement++;
 		Handle handleAtIndex;
 		try{
@@ -36,6 +37,7 @@ public class MyHashTable {
 					while(values[(CalculateSecondHashing(key, size) + prevValue) % size] != null){
 						prevValue = (CalculateSecondHashing(key, size) + prevValue) % size;
 					}
+					System.out.println("(doubleHashing) Ready to insert at index: " + (CalculateSecondHashing(key, size) + prevValue) % size);
 					values[(CalculateSecondHashing(key, size) + prevValue) % size] = handle;
 				}
 				else{
@@ -120,7 +122,12 @@ public class MyHashTable {
     		if(values[i] != null){
     			System.out.println(i + ": " + values[i].getKey());
     		}			
-    	}  	
+    	} 
+    	for(int i = 0; i < keys.length; i++) {
+    		if(keys[i] != 0){
+    			System.out.println("key : " + keys[i]);
+    		}			
+    	} 
     }
     
 	public boolean delete(SemManager semManager, int key){
@@ -163,6 +170,7 @@ public class MyHashTable {
     	if(success) {
     		System.out.println("Successfully deleted record with ID " + key);
     	}
+    	printHashtable();
     	return success;
     }
     
