@@ -1,0 +1,29 @@
+public class WorldDataBase {
+    private SemManager semManager;
+    private MyHashTable hashTable;
+
+    public WorldDataBase(SemManager semManager, MyHashTable hashTable) {
+        this.semManager = semManager;
+        this.hashTable = hashTable;
+    }
+    
+    public void processCommand(int instruction, int key, Seminar seminar) {
+        switch(instruction) {
+        case 1:
+        	hashTable.insert(key, seminar);
+        	break;
+        case 2:
+        	hashTable.search(key);
+        	break;
+        case 3:
+        	hashTable.printHashtable();
+        	break;
+        case 4:
+        	semManager.printSemMenger();
+        case 5:
+        	hashTable.deleteRecord(key);
+    	default:
+    		break;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+public class WorldDataBase {
+    private SemManager semManager;
+    private MyHashTable hashTable;
+
+    public WorldDataBase(SemManager semManager, MyHashTable hashTable) {
+        this.semManager = semManager;
+        this.hashTable = hashTable;
+    }
+    
+    public void processCommand(int instruction, Seminar seminar) {
+        switch(instruction) {
+        case 0:
+        	
+        
+        
+        }
+    }
+}

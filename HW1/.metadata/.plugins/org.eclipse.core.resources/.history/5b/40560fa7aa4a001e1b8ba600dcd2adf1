@@ -1,0 +1,16 @@
+public class WorldDataBase {
+	SemManager semManager;
+	
+	public WorldDataBase(){
+	}
+	
+	public void setSemManager() {
+		this.semManager = semManager;
+	}
+	
+	public void ProcessCommand(Seminar seminar) {
+		
+	}
+	
+	
+}

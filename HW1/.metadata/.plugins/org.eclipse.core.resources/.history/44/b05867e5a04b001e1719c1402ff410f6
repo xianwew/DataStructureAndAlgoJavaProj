@@ -1,0 +1,10 @@
+
+public class Handle {
+	private int startIndex;
+	private int endIndex;
+	
+	public void getStartIndex() {
+		
+	}
+	
+}

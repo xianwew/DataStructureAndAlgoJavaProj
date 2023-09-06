@@ -1,0 +1,11 @@
+public class WorldDataBase {
+	public WorldDataBase() {
+		
+	}
+	
+	public void ProcessCommand(Seminar seminar) {
+		
+	}
+	
+	
+}

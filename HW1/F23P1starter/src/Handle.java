@@ -1,0 +1,39 @@
+import java.util.*;
+import java.util.*;
+
+public class Handle {
+	private int startIndex = -1;
+	private int size = -1;
+	private int key = -1;
+	
+	public Handle(int start, int size, int key) {
+		this.startIndex = start;
+		this.size = size;
+		this.key = -1;
+	}
+	
+	public int getStartIndex() {
+		return this.startIndex;
+	}
+	
+	public int getSize() {
+		return this.size;
+	}
+	
+	public void setStartIndex(int startIndex) {
+		this.startIndex = startIndex;
+	}
+	
+	public void setSize(int endIndex) {
+		this.size = endIndex;
+	}
+	
+	public int getKey(){
+		return this.key;
+	}
+	
+	public void setKey(int key) {
+		this.key = key;
+	}
+	
+}

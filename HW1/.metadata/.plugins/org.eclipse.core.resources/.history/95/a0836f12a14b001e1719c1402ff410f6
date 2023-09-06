@@ -1,0 +1,22 @@
+
+public class Handle {
+	private int startIndex;
+	private int endIndex;
+	
+	public int getStartIndex() {
+		return this.startIndex;
+	}
+	
+	public int getEndIndex() {
+		return this.endIndex;
+	}
+	
+	public int setStartIndex(int startIndex) {
+		this.startIndex = startIndex;
+	}
+	
+	public int setEndIndex(int endIndex) {
+		this.endIndex = endIndex;
+	}
+	
+}

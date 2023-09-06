@@ -1,0 +1,29 @@
+import java.util.Arrays;
+import java.util.Iterator;
+
+public class Handle {
+	private int startIndex;
+	private int size;
+	
+	public Handle(int start, int size) {
+		this.startIndex = start;
+		this.size = size;
+	}
+	
+	public int getStartIndex() {
+		return this.startIndex;
+	}
+	
+	public int getSize() {
+		return this.size;
+	}
+	
+	public void setStartIndex(int startIndex) {
+		this.startIndex = startIndex;
+	}
+	
+	public void setSize(int endIndex) {
+		this.size = endIndex;
+	}
+	
+}

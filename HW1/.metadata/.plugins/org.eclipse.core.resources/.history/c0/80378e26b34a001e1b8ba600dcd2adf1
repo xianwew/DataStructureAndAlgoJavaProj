@@ -1,0 +1,11 @@
+public class WorldDataBase {
+    private SemManager semManager;
+
+    public WorldDataBase(SemManager semManager) {
+        this.semManager = semManager;
+    }
+
+    public void processCommand(Seminar seminar) {
+        // Implement your processing logic here
+    }
+}

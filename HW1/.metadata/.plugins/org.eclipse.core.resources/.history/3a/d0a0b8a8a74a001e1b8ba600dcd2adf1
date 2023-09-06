@@ -1,0 +1,69 @@
+import java.io.File;
+import java.util.*;
+//import java.io.FileNotFoundException;
+//import java.util.Scanner;
+
+public class Parser {
+	private int i;
+	private Seminar seminar;
+	public Parser() {
+		seminar = null;
+		i = 0;
+	}
+	
+	public void initializeComponents(String[] args, Seminar[] memoryPool, MyHashTable hashTable, File CommandFile) {
+        try{
+        	i = Integer.parseInt(args[2]);
+        }
+        catch(Exception e) {
+        	System.out.println("Error in creating memory pool! Please enter an integar!");
+            e.printStackTrace();
+        }
+        if((i & i - 1) != 0 || i <= 0) {
+        	System.out.println("Error in creating memory pool! The size must be the power of 2 and greater than 0!");
+        	System.exit(0);
+        }
+        memoryPool = new Seminar[Integer.parseInt(args[2])];
+        try{
+        	i = Integer.parseInt(args[3]);
+        }
+        catch(Exception e) {
+        	System.out.println("Error in creating hashTable! Please enter an integar!");
+            e.printStackTrace();
+        }
+        if((i & i - 1) != 0 || i <= 0) {
+        	System.out.println("Error in creating hashTable! The size must be the power of 2 and greater than 0!");
+        	System.exit(0);
+        }
+        hashTable = new MyHashTable(Integer.parseInt(args[3]));
+        
+        //System.out.println(args[4]);
+        try{
+        	CommandFile = new File(args[4]);
+        } 
+    	catch (Exception e) {
+            System.out.println("Error in reading files!");
+            e.printStackTrace();
+    	}
+	}
+	
+	public void ProcessSeminars(File CommandFile){
+		try {		
+			Scanner Reader = new Scanner(CommandFile);
+			while (Reader.hasNextLine()) {
+				String data = Reader.nextLine();
+				//System.out.println(data);
+			}
+			Reader.close();
+		}
+		catch(Exception e) {
+            System.out.println("Error in reading files!");
+            e.printStackTrace();
+		}
+	}
+	
+	public void ProcessSingleSeminar(){
+		
+	}
+	
+}

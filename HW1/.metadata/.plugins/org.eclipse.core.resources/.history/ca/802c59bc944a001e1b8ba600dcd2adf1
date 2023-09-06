@@ -1,0 +1,23 @@
+
+public class MyHashTable {
+	private int[] hashArray;
+	private size;
+	
+	public MyHashTable(int HashSize) {
+		this.hashArray = new int[HashSize];
+		this.size = HashSize;
+	}
+	
+	public int CalculateFirstHashing(int ID) {
+		return ID % this.hashArray.length;
+	}
+	
+	public int getHashSize() {
+		return size;
+	}
+	
+	public int CalculateSecondHashing(int ID) {
+		return (((ID / this.hashArray.length) % (this.hashArray.length / 2)) * 2) + 1;
+	}
+	
+}

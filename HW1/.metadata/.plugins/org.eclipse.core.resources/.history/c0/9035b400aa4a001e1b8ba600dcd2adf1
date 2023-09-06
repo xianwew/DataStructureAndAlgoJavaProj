@@ -1,0 +1,13 @@
+public class WorldDataBase {
+	SemManager semManager;
+	
+	public WorldDataBase() {
+
+	}
+	
+	public void ProcessCommand(Seminar seminar) {
+		
+	}
+	
+	
+}

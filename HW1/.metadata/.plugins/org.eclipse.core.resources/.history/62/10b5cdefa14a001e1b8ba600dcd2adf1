@@ -1,0 +1,38 @@
+
+public class FreeList {
+    private int val;
+    private FreeList next;
+    private FreeList prev;
+
+    public FreeList(int val) {
+        this.val = val;
+        this.next = null;
+        this.prev = null;
+    }
+
+    public FreeList getNext() {
+        return next;
+    }
+    
+    public void setNext(FreeList next) {
+        this.next = next;
+    }
+
+    public FreeList getPrev() {
+        return prev;
+    }
+
+    public void setPrev(FreeList prev) {
+        this.prev = prev;
+    }
+    
+        public int getVal() {
+        return val;
+    }
+
+    public void setVal(int val) {
+        this.val = val;
+    }
+    
+}
+

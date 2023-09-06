@@ -1,0 +1,45 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Parser {
+	
+	public void initializeComponents(String[] args, Seminar[] memoryPool, MyHashTable hashTable) {
+        try{
+        	int i = Integer.parseInt(args[2]);
+        }
+        catch(Exception e) {
+        	System.out.println("Error in creating memory pool!");
+            e.printStackTrace();
+        }
+        memoryPool = new Seminar[Integer.parseInt(args[2])];
+        try{
+        	int i = Integer.parseInt(args[3]);
+        }
+        catch(Exception e) {
+        	System.out.println("Error in creating hashTable!");
+            e.printStackTrace();
+        }
+        if((Math.log(Integer.parseInt(args[3])) / Math.log(2)) != 0) {
+        	System.out.println("Error in creating hashTable!The size must be the multipler of 2");
+        	System.exit(0);
+        }
+        hashTable = new MyHashTable(Integer.parseInt(args[3]));
+        
+        //System.out.println(args[4]);
+        try{
+            File newObj = new File(args[4]);
+            Scanner Reader = new Scanner(newObj);
+            while (Reader.hasNextLine()) {
+              String data = Reader.nextLine();
+              //System.out.println(data);
+            }
+            Reader.close();
+        } 
+    	catch (FileNotFoundException e) {
+            System.out.println("Error in reading files!");
+            e.printStackTrace();
+    	}
+	}
+	
+}

@@ -1,0 +1,13 @@
+public class WorldDataBase {
+    private SemManager semManager;
+    private MyHashTable hashTable;
+
+    public WorldDataBase(SemManager semManager, int hashTableSize) {
+        this.semManager = semManager;
+        this.hashTable = new MyHashTable(hashTableSize);
+    }
+
+    public void processCommand(int instruction, Seminar seminar) {
+        
+    }
+}

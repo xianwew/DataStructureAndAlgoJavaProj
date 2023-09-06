@@ -1,0 +1,22 @@
+
+public class MyHashTable {
+	private int[] hashArray;
+	
+	public MyHashTable(int HashSize) {
+		this.hashArray = new int[HashSize];
+	}
+	
+	public int CalculateFirstHashing(int ID) {
+		return ID % hashArray.length()
+	}
+	
+	public int CalculateSecondHashing(int fisrtHanding) {
+		return ID % hashArray.length()
+	}
+	
+	public static void () {
+		
+	}
+	
+	
+}
