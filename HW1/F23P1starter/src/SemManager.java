@@ -59,7 +59,7 @@ public class SemManager {
 		else{
 			System.out.println("Freeblock List:");
 			while(curPosition != null){
-				System.out.println(curPosition.getIndex() + ": " + curPosition.getVal());
+				System.out.println(curPosition.getVal() + ": " + curPosition.getIndex());
 				curPosition = curPosition.getNext();
 			}	
 		}
@@ -78,7 +78,7 @@ public class SemManager {
 			searchedRecord = Seminar.deserialize(searchedRecordByte);
 			System.out.println(searchedRecord.toString());
 		}
-		catch(Exception e) {
+		catch(Exception e){
             System.out.println("Error in reading seminar record in memory manager!");
             e.printStackTrace();
 		}

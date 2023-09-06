@@ -23,9 +23,8 @@ public class MyHashTable {
         return (((ID / Size) % (Size / 2)) * 2) + 1;
     }
     
-    public void hashing(int key, Handle handle, Seminar seminar){
-    	keys[numOfElement] = key;
-		System.out.println("number of element: " + numOfElement);
+    public void hashing(int key, Handle handle, Seminar seminar){	 	
+		keys[numOfElement] = key;
 		numOfElement++;
 		Handle handleAtIndex;
 		try{
@@ -121,25 +120,30 @@ public class MyHashTable {
     	for(int i = 0; i < values.length; i++) {
     		if(values[i] != null){
     			System.out.println(i + ": " + values[i].getKey());
-    		}			
+    		}	
+    		else {
+    			//System.out.println(i + ": " + "TOMBSTONE");
+    		}
     	} 
-    	for(int i = 0; i < keys.length; i++) {
-    		if(keys[i] != 0){
-    			System.out.println("key : " + keys[i]);
-    		}			
-    	} 
+//    	for(int i = 0; i < keys.length; i++) {
+//    		if(keys[i] != 0){
+//    			System.out.println("key : " + keys[i]);
+//    		}			
+//    	} 
     }
     
 	public boolean delete(SemManager semManager, int key){
     	boolean containKey = false;
     	boolean success = false;
     	int[] tmp = new int[keys.length];
-    	for(int i = 0; i < keys.length; i++){
-    		if(keys[i] == key){
+    	int j = 0;
+    	for(int i : keys){
+    		if(i == key){
     			containKey = true;
     		}
     		else{
-    			tmp[i] = keys[i];
+    			tmp[j] = i;
+    			j++;
     		}	
     	}
     	keys = tmp;

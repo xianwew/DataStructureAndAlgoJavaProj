@@ -56,18 +56,14 @@ public class Parser {
 		}
 		catch(Exception e) {
             System.out.println("data can't be split! Error occurs!");
-            //e.printStackTrace();
 		}
 		if(tmpDataLeft.indexOf("insert") == 0){
-			//System.out.println("Instruction name: " + tmpDataLeft);
 			return 1;
 		}
 		else if(tmpDataLeft.indexOf("search") == 0) {
-			//System.out.println("Instruction name: " + tmpDataLeft);
 			return 2;
 		}
 		else if(tmpDataLeft.indexOf("print") == 0) {
-			//System.out.println("Instruction name: " + tmpDataLeft + " " + tmpDataRight);
 			if(tmpDataRight.indexOf("hashtable") == 0){
 				return 3;
 			}
@@ -77,7 +73,6 @@ public class Parser {
 			return 0;
 		}
 		else if(tmpDataLeft.indexOf("delete") == 0) {
-			//System.out.println("Instruction name: " + tmpDataLeft);
 			return 5;
 		}
 		return 0;
@@ -91,7 +86,7 @@ public class Parser {
 			if(Reader.hasNextLine()) {
 				data = Reader.nextLine().trim();
 			}
-			while(Reader.hasNextLine()){
+			while(true){
 				instruction = GetInstruction(data);
 				int line = 0;
 				int ID = -1;
@@ -112,7 +107,6 @@ public class Parser {
 								ID = Integer.parseInt(tmpData.split("\\s+")[1]);
 							}
 							catch(Exception e){
-								//System.out.println("ID is not needed for print instruction!");
 							}
 							break;
 						case 1:
@@ -121,7 +115,6 @@ public class Parser {
 						case 2:
 							String[] tmpDataArr = tmpData.split("\\s+");
 							dateTime = tmpDataArr[0];
-							//System.out.println("split arry index 1: " + tmpDataArr[1]);
 							length = Integer.parseInt(tmpDataArr[1]);
 							x = Short.parseShort(tmpDataArr[2]);
 							y = Short.parseShort(tmpDataArr[3]);
@@ -140,9 +133,6 @@ public class Parser {
 					if(Reader.hasNextLine()){
 						data = Reader.nextLine().replaceAll("^\\s+", "");
 					}	
-					else {
-						break;
-					}
 					tmpData = data;
 					while (Reader.hasNextLine() && tmpData.replaceAll("\\s+", "") == "") {
 					    data = Reader.nextLine().trim();
@@ -160,8 +150,18 @@ public class Parser {
 				Seminar seminar = new Seminar(ID, title, dateTime, length, x, y, cost, keywordList, desc);
 				dataBase.processCommand(instruction, ID, seminar);
 				System.out.println("");
+				if(!Reader.hasNextLine()){
+					Reader.close();
+					instruction = GetInstruction(data);
+					if(instruction != 0){
+						System.out.println("data is:    " + data);
+						ID = Integer.parseInt(data.split("\\s+")[1]);
+						seminar = new Seminar(ID, title, dateTime, length, x, y, cost, keywordList, desc);
+						dataBase.processCommand(instruction, ID, seminar);
+					}
+					break;
+				}
 			}
-			Reader.close();
 		}
 		catch(Exception e) {
             System.out.println("Error in reading/processing files!");
