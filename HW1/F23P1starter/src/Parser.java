@@ -11,31 +11,31 @@ public class Parser {
 	public Object[] initializeComponents(String[] args) {
 		if(args != null) {
 			File CommandFile = null;
-	        try{
+	        try {
 	    		i = Integer.parseInt(args[2]);
 	        }
-	        catch(Exception e) {
+	        catch (Exception e) {
 	        	System.out.println("Error in creating memory pool! Please enter an integar!");
 	            e.printStackTrace();
 	        }
-	        if((i & i - 1) != 0 || i <= 0) {
+	        if ((i & i - 1) != 0 || i <= 0) {
 	        	System.out.println("Error in creating memory pool! The size must be the power of 2 and greater than 0!");
 	        	System.exit(0);
 	        }
 	        
-	        try{
+	        try {
 	        	i = Integer.parseInt(args[3]);
 	        }
-	        catch(Exception e) {
+	        catch (Exception e) {
 	        	System.out.println("Error in creating hashTable! Please enter an integar!");
 	            e.printStackTrace();
 	        }
-	        if((i & i - 1) != 0 || i <= 0) {
+	        if ((i & i - 1) != 0 || i <= 0) {
 	        	System.out.println("Error in creating hashTable! The size must be the power of 2 and greater than 0!");
 	        	System.exit(0);
 	        }
 	
-	        try{
+	        try {
 	        	CommandFile = new File(args[4]);
 	        } 
 	    	catch (Exception e) {
@@ -56,31 +56,31 @@ public class Parser {
 			tmpDataLeft = data.split("\\s+")[0];
 			tmpDataRight = data.split("\\s+")[1];
 		}
-		catch(Exception e) {
+		catch (Exception e) {
             System.out.println("data can't be split! Error occurs!");
 		}
-		if(tmpDataLeft.indexOf("insert") == 0){
+		if (tmpDataLeft.indexOf("insert") == 0) {
 			return 1;
 		}
-		else if(tmpDataLeft.indexOf("search") == 0) {
+		else if (tmpDataLeft.indexOf("search") == 0) {
 			return 2;
 		}
-		else if(tmpDataLeft.indexOf("print") == 0) {
+		else if (tmpDataLeft.indexOf("print") == 0) {
 			if(tmpDataRight.indexOf("hashtable") == 0){
 				return 3;
 			}
-			else if(tmpDataRight.indexOf("blocks") == 0) {
+			else if (tmpDataRight.indexOf("blocks") == 0) {
 				return 4;
 			}
 			return 0;
 		}
-		else if(tmpDataLeft.indexOf("delete") == 0) {
+		else if (tmpDataLeft.indexOf("delete") == 0) {
 			return 5;
 		}
 		return 0;
 	}
 	
-	public void ProcessSeminars(File CommandFile, WorldDataBase dataBase){
+	public void ProcessSeminars(File CommandFile, WorldDataBase dataBase) {
 		try {		
 			Scanner Reader = new Scanner(CommandFile);
 			String data = "";
@@ -88,7 +88,7 @@ public class Parser {
 			if(Reader.hasNextLine()) {
 				data = Reader.nextLine().trim();
 			}
-			while(true){
+			while (true) {
 				instruction = GetInstruction(data);
 				int line = 0;
 				int ID = -1;
@@ -105,7 +105,7 @@ public class Parser {
 					System.out.println("data is:    " + data);
 					switch(line){
 						case 0:
-							try{
+							try {
 								ID = Integer.parseInt(tmpData.split("\\s+")[1]);
 							}
 							catch(Exception e){
@@ -132,7 +132,7 @@ public class Parser {
 					        break; 
 					}
 					line++;
-					if(Reader.hasNextLine()){
+					if (Reader.hasNextLine()) {
 						data = Reader.nextLine().replaceAll("^\\s+", "");
 					}	
 					tmpData = data;
@@ -140,22 +140,22 @@ public class Parser {
 					    data = Reader.nextLine().trim();
 					    tmpData = data;
 					}
-					if(Reader.hasNextLine()){
-						if(GetInstruction(data) != 0){
+					if (Reader.hasNextLine()) {
+						if (GetInstruction(data) != 0) {
 							break;
 						}
 					}
-					else{
+					else {
 						break;
 					}
 				}
 				Seminar seminar = new Seminar(ID, title, dateTime, length, x, y, cost, keywordList, desc);
 				dataBase.processCommand(instruction, ID, seminar);
 				System.out.println("");
-				if(!Reader.hasNextLine()){
+				if (!Reader.hasNextLine()) {
 					Reader.close();
 					instruction = GetInstruction(data);
-					if(instruction != 0){
+					if (instruction != 0) {
 						System.out.println("data is:    " + data);
 						ID = Integer.parseInt(data.split("\\s+")[1]);
 						seminar = new Seminar(ID, title, dateTime, length, x, y, cost, keywordList, desc);
@@ -165,7 +165,7 @@ public class Parser {
 				}
 			}
 		}
-		catch(Exception e) {
+		catch (Exception e) {
             System.out.println("Error in reading/processing files!");
             e.printStackTrace();
 		}

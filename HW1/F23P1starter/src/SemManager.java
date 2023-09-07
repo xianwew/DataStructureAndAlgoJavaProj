@@ -30,7 +30,6 @@
 //   letter of this restriction.
 
 import java.io.*;
-import java.util.*;
 
 public class SemManager {
     /**
@@ -51,14 +50,14 @@ public class SemManager {
 		this.memoryPool = new byte[size];
 	}
 
-	public void printSemMenger(){	
+	public void printSemMenger() {	
 		FreeList curPosition = dummy.getNext();
-		if(curPosition == null) {
+		if (curPosition == null) {
 			System.out.println("There are no Freeblocks in the memory pool!");
 		}
-		else{
+		else {
 			System.out.println("Freeblock List:");
-			while(curPosition != null){
+			while(curPosition != null) {
 				System.out.println(curPosition.getVal() + ": " + curPosition.getIndex());
 				curPosition = curPosition.getNext();
 			}	
@@ -70,7 +69,7 @@ public class SemManager {
 		byte[] searchedRecordByte = new byte[handle.getSize()];
 		int curSearchedRecordByteIndex = 0;
 		System.out.println("search handle start index: " + handle.getStartIndex());
-		for(int i = handle.getStartIndex(); i < handle.getStartIndex() + handle.getSize(); i++){
+		for (int i = handle.getStartIndex(); i < handle.getStartIndex() + handle.getSize(); i++) {
 			searchedRecordByte[curSearchedRecordByteIndex] = memoryPool[i];
 			curSearchedRecordByteIndex++;
 		}
@@ -78,21 +77,21 @@ public class SemManager {
 			searchedRecord = Seminar.deserialize(searchedRecordByte);
 			System.out.println(searchedRecord.toString());
 		}
-		catch(Exception e){
+		catch (Exception e){
             System.out.println("Error in reading seminar record in memory manager!");
             e.printStackTrace();
 		}
 	}
 	
-	public void doubleSize(){
+	public void doubleSize() {
 		System.out.println("doubling memory pool size!");
 		byte[] tmp = new byte[size*2];
-		for(int i = 0; i < memoryPool.length; i++) {
+		for (int i = 0; i < memoryPool.length; i++) {
 			tmp[i] = memoryPool[i];
 		}
 		FreeList newInsert = new FreeList(size, 0);
 		FreeList curPosition = dummy;	
-		while(curPosition != null && curPosition.getNext() != null){
+		while (curPosition != null && curPosition.getNext() != null) {
 			curPosition = curPosition.getNext();
 		}
 		curPosition.setNext(newInsert);
@@ -102,12 +101,13 @@ public class SemManager {
 		size *= 2;
 	}
 	
-	public FreeList FindSpaceAvailable(int requestedSize){
+	public FreeList FindSpaceAvailable(int requestedSize) {
 		FreeList curPosition = dummy.getNext();
 		FreeList ReturnPtr = null;
 		int smallestGreaterThanReq = Integer.MAX_VALUE;
-		while(curPosition != null){
-			if(curPosition.getVal() >= requestedSize && curPosition.getVal() <= smallestGreaterThanReq){
+		while (curPosition != null) {
+			if (curPosition.getVal() >= requestedSize && 
+				curPosition.getVal() <= smallestGreaterThanReq) {
 				smallestGreaterThanReq = curPosition.getVal();
 				ReturnPtr = curPosition;
 			}
@@ -118,35 +118,36 @@ public class SemManager {
 	}
 	
 	private int getNearestPowerOfTwo(int requestedSize) {
-        if(Math.log(requestedSize) / Math.log(2) == 0){
+        if (Math.log(requestedSize) / Math.log(2) == 0) {
             return requestedSize;
         }
         int nearestPowerOfTwo = 1;
-        while (nearestPowerOfTwo < requestedSize){
+        while (nearestPowerOfTwo < requestedSize) {
         	nearestPowerOfTwo *= 2; 
         }
         return nearestPowerOfTwo;
     }
 	
-	public void splitMemoryPool(int insertPositionSize, FreeList insertPosition){
-		FreeList prev = insertPosition.getPrev(), next = insertPosition.getNext();
-		FreeList newInsert = new FreeList(insertPositionSize / 2, insertPosition.getIndex() + insertPositionSize / 2);
+	public void splitMemoryPool(int insertPositionSize, FreeList insertPosition) {
+		FreeList next = insertPosition.getNext();
+		FreeList newInsert = new FreeList(insertPositionSize / 2, 
+				insertPosition.getIndex() + insertPositionSize / 2);
 		newInsert.setPrev(insertPosition);
 		newInsert.setNext(next);
 		insertPosition.setNext(newInsert);
 		System.out.println("InsertPosition next val: " + insertPosition.getNext().getVal());	
 		insertPosition.setVal(insertPositionSize / 2);
-		if(next != null){
+		if (next != null) {
 			next.setPrev(newInsert);
 		}
 		System.out.println("cur ptr length: " + insertPosition.getVal());	
 		System.out.println("splited ptr length: " + insertPosition.getNext().getVal());	
 	}
 	
-	public Handle insert(byte[] insertData, int key){
+	public Handle insert(byte[] insertData, int key) {
 		Handle handle = new Handle(-1, -1, -1);
 		FreeList insertPosition = FindSpaceAvailable(insertData.length);
-		while(insertPosition == null){
+		while (insertPosition == null) {
 			doubleSize();	
 			insertPosition = FindSpaceAvailable(insertData.length);
 		}	
@@ -175,7 +176,7 @@ public class SemManager {
 		}
 		System.out.println("Successfully inserted record with ID " + key);			
 		FreeList testPtr = dummy;
-		while(testPtr != null){
+		while (testPtr != null) {
 			System.out.println("ptr val: " + testPtr.getVal());	
 			testPtr = testPtr.getNext();
 		}
@@ -197,17 +198,17 @@ public class SemManager {
 //	if(searchPtr.getPrev().getIndex() <  newInsert.getIndex()) {
 //	}				
 //}
-	public boolean delete(Handle handle){
-		if(handle.getStartIndex() == -1){
+	public boolean delete(Handle handle) {
+		if (handle.getStartIndex() == -1) {
 			return false;
 		}
-		for(int i = handle.getStartIndex(); i < handle.getStartIndex() + handle.getSize(); i++){
+		for (int i = handle.getStartIndex(); i < handle.getStartIndex() + handle.getSize(); i++) {
 			memoryPool[i] = 0;
 		}
 		FreeList newInsert = new FreeList(getNearestPowerOfTwo(handle.getSize()), handle.getStartIndex());
 		FreeList searchPtr = dummy;
-		while(searchPtr != null){
-			if(searchPtr.getIndex() > newInsert.getIndex()){
+		while (searchPtr != null) {
+			if (searchPtr.getIndex() > newInsert.getIndex()) {
 				break;
 			}
 			searchPtr = searchPtr.getNext();
@@ -227,11 +228,11 @@ public class SemManager {
 		return true;
 	}
 	
-	public void detectMerge(){
+	public void detectMerge() {
 		FreeList left = dummy.getNext();
 		FreeList right = left.getNext();	
-		while(right != null){
-			if((left.getVal() == right.getVal())){
+		while (right != null) {
+			if ((left.getVal() == right.getVal())) {
 				FreeList newInsert = new FreeList(left.getVal() * 2, left.getIndex());
 				FreeList prev = left.getPrev(), next = right.getNext();
 				newInsert.setPrev(prev);
@@ -243,7 +244,7 @@ public class SemManager {
 				left = newInsert;
 				right = next;	
 			}
-			else{
+			else {
 				left = right;
 				right = right.getNext();	
 			}
@@ -255,7 +256,7 @@ public class SemManager {
 	    Parser parser = new Parser();
 	    Object[] components = parser.initializeComponents(args);   
 	    SemManager semManager = new SemManager();
-	    try{
+	    try {
 		    semManager.memoryPool = (byte[]) components[0];
 		    semManager.initializeSemManger(semManager.memoryPool.length);
 		    MyHashTable hashTable = (MyHashTable) components[1];
@@ -263,7 +264,7 @@ public class SemManager {
 		    WorldDataBase worldDataBase = new WorldDataBase(semManager, hashTable);
 		    parser.ProcessSeminars(CommandFile, worldDataBase);
 	    }
-	    catch(Exception e) {
+	    catch (Exception e) {
             System.out.println("Error in initializing instances!");
             e.printStackTrace();
 		}

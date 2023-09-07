@@ -41125,3 +41125,2707 @@ BufferTransition
 </Property>
 </Properties>
 </SensorData>
+<SensorData>
+<Timestamp>
+1694050701965
+</Timestamp>
+<Runtime>
+1694050701965
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050710634
+</Timestamp>
+<Runtime>
+1694050710634
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Remove
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+ProgramUnit
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+import java.util.*
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+Import
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050711966
+</Timestamp>
+<Runtime>
+1694050711966
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050716967
+</Timestamp>
+<Runtime>
+1694050716967
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050737558
+</Timestamp>
+<Runtime>
+1694050737558
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+(default package) (1)
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+下午9:36:03 PIT >> INFO : --------------------------------------------------------
+下午9:36:03 PIT >> INFO : Enabled (+) and disabled (-) features.
+下午9:36:03 PIT >> INFO : -----------------------------------------
+下午9:36:03 PIT >> INFO : +FANN           Filters mutations in classes and methods
+下午9:36:03 PIT >> INFO :   [annotation]    Annotation to avoid (full package name
+下午9:36:03 PIT >> INFO : +FENUM          Filters mutations in enum constructors
+下午9:36:03 PIT >> INFO : +FFBLOCK        Filters mutations in code duplicated by 
+下午9:36:03 PIT >> INFO : +FFEACH         Filters mutations in compiler generated 
+下午9:36:03 PIT >> INFO : +FFLOOP         Filters any mutations to increments in f
+下午9:36:03 PIT >> INFO : +FINFINC        Filters mutations to increments that may
+下午9:36:03 PIT >> INFO : +FINFIT         Filters mutations that may cause infinit
+下午9:36:03 PIT >> INFO : +FINULL         Filters mutations in compiler generated 
+下午9:36:03 PIT >> INFO : +FKOTLIN        Filters out junk mutations in bytecode c
+下午9:36:03 PIT >> INFO : +FLOGCALL       Filters mutations in code that makes cal
+下午9:36:03 PIT >> INFO : +FMRNULL        Filters mutations in compiler generated 
+下午9:36:03 PIT >> INFO : +FRETEQUIV      Filters return vals mutants with bytecod
+下午9:36:03 PIT >> INFO : +FSEQUIVEQUALS  Filters equivalent mutations that affect
+下午9:36:03 PIT >> INFO : +FSTATI         Filters mutations in static initializers
+下午9:36:03 PIT >> INFO : +FSTATINIT      Filters mutations in static initializers
+下午9:36:03 PIT >> INFO : +FTRYWR         Filters mutations in code generated for 
+下午9:36:03 PIT >> INFO : +_internal_activate_by_output_string
+下午9:36:03 PIT >> INFO : -CLASSLIMIT     Limits the maximum number of mutations p
+下午9:36:03 PIT >> INFO :   [limit]         Integer value for maximum mutations to
+下午9:36:03 PIT >> INFO : -EXPORT         Exports mutants bytecode and other detai
+下午9:36:03 PIT >> INFO : --------------------------------------------------------
+下午9:36:03 PIT >> FINE : Running report with ReportOptions [targetClasses=[Semina
+下午9:36:03 PIT >> FINE : System class path is C:\Users\Xianwei\.p2\pool\plugins\o
+下午9:36:03 PIT >> FINE : Maximum available memory is 16368 mb
+下午9:36:04 PIT >> FINE : Incremental analysis set 246 mutations to a status of NO
+下午9:36:04 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+下午9:36:04 PIT >> INFO : Created  4 mutation test units in pre scan
+下午9:36:04 PIT >> FINE : MINION : Installing PIT agent
+下午9:36:04 PIT >> INFO : Sending 9 test classes to minion
+下午9:36:04 PIT >> INFO : Sent tests to minion
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> FINE : Expecting 9 tests class
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> FINE : Tests classes received
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> INFO : Checking environment
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> INFO : Found  4 tests
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> INFO : Dependency analysis red
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> INFO : 4 tests received
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> FINE : Running 4 units
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> FINE : Gathering coverage for 
+下午9:36:04 PIT >> INFO : MINION : WARNING: A terminally deprecated method in java
+下午9:36:04 PIT >> INFO : MINION : WARNING: System::setSecurityManager has been ca
+下午9:36:04 PIT >> INFO : MINION : WARNING: Please consider reporting this to the 
+下午9:36:04 PIT >> INFO : MINION : WARNING: System::setSecurityManager will be rem
+下午9:36:04 PIT >> FINE : MINION : 
+下午9:36:04 PIT >> FINE : MINION : 
+下午9:36:04 PIT >> FINE : MINION : -----------------------------------
+下午9:36:04 PIT >> FINE : MINION : Tests for the class: Parser
+下午9:36:04 PIT >> FINE : MINION : Tester Prima v.1.5.1 - 17 June 2012
+下午9:36:04 PIT >> FINE : MINION : -----------------------------------
+下午9:36:04 PIT >> FINE : MINION : Tests defined in the class: Parser:
+下午9:36:04 PIT >> FINE : MINION : ---------------------------
+下午9:36:04 PIT >> FINE : MINION : Parser:
+下午9:36:04 PIT >> FINE : MINION : ---------------
+下午9:36:04 PIT >> FINE : MINION : 
+下午9:36:04 PIT >> FINE : MINION :  new Parser:1(
+下午9:36:04 PIT >> FINE : MINION :   this.i = 0)
+下午9:36:04 PIT >> FINE : MINION : ---------------
+下午9:36:04 PIT >> INFO : MINION : WARNING: A terminally deprecated method in java
+下午9:36:04 PIT >> FINE : MINION : All tests passed.
+下午9:36:04 PIT >> INFO : MINION : WARNING: System::setSecurityManager has been ca
+下午9:36:04 PIT >> FINE : MINION : 
+下午9:36:04 PIT >> FINE : MINION : --- END OF TEST RESULTS ---
+下午9:36:04 PIT >> INFO : MINION : WARNING: Please consider reporting this to the 
+下午9:36:04 PIT >> INFO : MINION : WARNING: System::setSecurityManager will be rem
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> FINE : Gathering coverage for 
+下午9:36:04 PIT >> FINE : MINION : 
+下午9:36:04 PIT >> FINE : MINION : 
+下午9:36:04 PIT >> FINE : MINION : -----------------------------------
+下午9:36:04 PIT >> FINE : MINION : Tests for the class: SemManager
+下午9:36:04 PIT >> FINE : MINION : Tester Prima v.1.5.1 - 17 June 2012
+下午9:36:04 PIT >> FINE : MINION : -----------------------------------
+下午9:36:04 PIT >> FINE : MINION : Tests defined in the class: SemManager:
+下午9:36:04 PIT >> FINE : MINION : ---------------------------
+下午9:36:04 PIT >> FINE : MINION : SemManager:
+下午9:36:04 PIT >> FINE : MINION : ---------------
+下午9:36:04 PIT >> FINE : MINION : 
+下午9:36:04 PIT >> FINE : MINION :  new SemManager:1(
+下午9:36:04 PIT >> FINE : MINION :   this.dummy = null
+下午9:36:04 PIT >> FINE : MINION :   this.size = 0
+下午9:36:04 PIT >> FINE : MINION :   this.memoryPool = null)
+下午9:36:04 PIT >> FINE : MINION : ---------------
+下午9:36:04 PIT >> FINE : MINION : All tests passed.
+下午9:36:04 PIT >> FINE : MINION : 
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> FINE : Gathering coverage for 
+下午9:36:04 PIT >> FINE : MINION : --- END OF TEST RESULTS ---
+下午9:36:04 PIT >> FINE : MINION : Error in initializing instances!
+下午9:36:04 PIT >> INFO : MINION : java.lang.NullPointerException: Cannot load fro
+下午9:36:04 PIT >> INFO : MINION : 	at SemManager.main(SemManager.java:259)
+下午9:36:04 PIT >> INFO : MINION : 	at SemManagerTest.testMInitx(SemManagerTest.ja
+下午9:36:04 PIT >> INFO : MINION : 	at java.base/jdk.internal.reflect.NativeMethod
+下午9:36:04 PIT >> INFO : MINION : 	at java.base/jdk.internal.reflect.NativeMethod
+下午9:36:04 PIT >> INFO : MINION : 	at java.base/jdk.internal.reflect.DelegatingMe
+下午9:36:04 PIT >> INFO : MINION : 	at java.base/java.lang.reflect.Method.invoke(M
+下午9:36:04 PIT >> INFO : MINION : 	at org.junit.runners.model.FrameworkMethod$1.r
+下午9:36:04 PIT >> INFO : MINION : 	at org.junit.internal.runners.model.Reflective
+下午9:36:04 PIT >> INFO : MINION : 	at org.junit.runners.model.FrameworkMethod.inv
+下午9:36:04 PIT >> INFO : MINION : 	at org.junit.internal.runners.statements.Invok
+下午9:36:04 PIT >> INFO : MINION : 	at org.junit.internal.runners.statements.RunBe
+下午9:36:04 PIT >> INFO : MINION : 	at org.junit.internal.runners.statements.RunAf
+下午9:36:04 PIT >> INFO : MINION : 	at student.testingsupport.junit4.RunTestMethod
+下午9:36:04 PIT >> INFO : MINION : 	at org.junit.internal.runners.statements.FailO
+下午9:36:04 PIT >> INFO : MINION : 	at org.junit.internal.runners.statements.FailO
+下午9:36:04 PIT >> INFO : MINION : 	at java.base/java.util.concurrent.FutureTask.r
+下午9:36:04 PIT >> INFO : MINION : 	at java.base/java.lang.Thread.run(Thread.java:
+下午9:36:04 PIT >> INFO : MINION : 下午9:36:04 PIT >> FINE : Gathering coverage for 
+下午9:36:04 PIT >> FINE : MINION : testtoString
+下午9:36:04 PIT >> FINE : MINION : ID: 1729, Title: Seminar Title
+下午9:36:04 PIT >> FINE : MINION : Date: 2405231000, Length: 75, X: 15, Y: 33, Cos
+下午9:36:04 PIT >> FINE : MINION : Description: This is a great seminar
+下午9:36:04 PIT >> FINE : MINION : Keywords: Good, Bad, Ugly
+下午9:36:04 PIT >> FINE : MINION : testSeminarDS
+下午9:36:04 PIT >> FINE : MINION : Number of bytes in serialized object is: 95
+下午9:36:04 PIT >> FINE : MINION : ID: 1729, Title: Seminar Title
+下午9:36:04 PIT >> FINE : MINION : Date: 2405231000, Length: 75, X: 15, Y: 33, Cos
+下午9:36:04 PIT >> FINE : MINION : Description: This is a great seminar
+下午9:36:04 PIT >> FINE : MINION : Keywords: Good, Bad, Ugly
+下午9:36:04 PIT >> FINE : MINION : ID: 1729, Title: Seminar Title
+下午9:36:04 PIT >> FINE : MINION : Date: 2405231000, Length: 75, X: 15, Y: 33, Cos
+下午9:36:04 PIT >> FINE : MINION : Description: This is a great seminar
+下午9:36:04 PIT >> FINE : MINION : Keywords: Good, Bad, Ugly
+下午9:36:04 PIT >> FINE : Coverage generator Minion exited ok
+下午9:36:04 PIT >> INFO : Calculated coverage in 0 seconds.
+下午9:36:04 PIT >> FINE : Used memory after coverage calculation 16 mb
+下午9:36:04 PIT >> FINE : Free Memory after coverage calculation 1007 mb
+下午9:36:04 PIT >> FINE : Incremental analysis set 246 mutations to a status of NO
+下午9:36:04 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+下午9:36:04 PIT >> INFO : Created  4 mutation test units
+下午9:36:04 PIT >> FINE : Used memory before analysis start 85 mb
+下午9:36:04 PIT >> FINE : Free Memory before analysis start 938 mb
+下午9:36:04 PIT >> FINE : Running 4 units
+stdout  : Installing PIT agent
+stdout  : Installing PIT agent
+stderr  : 下午9:36:05 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+stderr  : 下午9:36:05 PIT >> FINE : mutating method initializeComponents
+stderr  : 下午9:36:05 PIT >> FINE : 1 relevant test for initializeComponents
+stderr  : 下午9:36:05 PIT >> FINE : replaced class with mutant in 4 ms
+stderr  : 下午9:36:05 PIT >> FINE : Running 1 units
+stderr  : WARNING: A terminally deprecated method in java.lang.System has been c
+stderr  : WARNING: System::setSecurityManager has been called by student.testing
+stderr  : WARNING: Please consider reporting this to the maintainers of student.
+stderr  : WARNING: System::setSecurityManager will be removed in a future releas
+stderr  : 下午9:36:05 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+stderr  : 下午9:36:05 PIT >> FINE : mutating method deserialize
+stderr  : 下午9:36:05 PIT >> FINE : 1 relevant test for deserialize
+stderr  : 下午9:36:05 PIT >> FINE : replaced class with mutant in 4 ms
+stderr  : 下午9:36:05 PIT >> FINE : Running 1 units
+stderr  : WARNING: A terminally deprecated method in java.lang.System has been c
+stderr  : WARNING: System::setSecurityManager has been called by student.testing
+stderr  : WARNING: Please consider reporting this to the maintainers of student.
+stderr  : WARNING: System::setSecurityManager will be removed in a future releas
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly
+stdout  : testSeminarDS
+stdout  : Error in creating memory pool! Please enter an integar!
+stderr  : java.lang.NullPointerException: Cannot load from object array because 
+stderr  : 	at Parser.initializeComponents(Parser.java:15)
+stderr  : 	at SemManager.main(SemManager.java:256)
+stderr  : 	at SemManagerTest.testMInitx(SemManagerTest.java:23)
+stderr  : 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Na
+stderr  : 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Nat
+stderr  : 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+stderr  : 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+stderr  : 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(Framew
+stderr  : 	at org.junit.internal.runners.model.ReflectiveCallable.run(Reflective
+stderr  : 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(Framewor
+stderr  : 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(Invoke
+stderr  : 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefor
+stderr  : 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters
+stderr  : 	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTes
+stderr  : 	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatem
+stderr  : 	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatem
+stderr  : 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+stderr  : 	at java.base/java.lang.Thread.run(Thread.java:833)
+stdout  : Error in creating memory pool! The size must be the power of 2 and gre
+stderr  : WARNING: A terminally deprecated method in java.lang.System has been c
+stderr  : WARNING: System::setSecurityManager has been called by student.testing
+stderr  : WARNING: Please consider reporting this to the maintainers of student.
+stderr  : WARNING: System::setSecurityManager will be removed in a future releas
+stderr  : WARNING: A terminally deprecated method in java.lang.System has been c
+stderr  : WARNING: System::setSecurityManager has been called by student.testing
+stderr  : WARNING: Please consider reporting this to the maintainers of student.
+stderr  : WARNING: System::setSecurityManager will be removed in a future releas
+stderr  : 下午9:36:05 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:36:05 PIT >> FINE : processed mutation in 80 ms.
+stderr  : 下午9:36:05 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:36:05 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:36:05 PIT >> FINE : Mutation MutationIdentifier [location=Location
+下午9:36:05 PIT >> FINE : MutationIdentifier [location=Location [clazz=Parser, met
+stderr  : 下午9:36:05 PIT >> FINE : processed mutation in 84 ms.
+stderr  : 下午9:36:05 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+stderr  : 下午9:36:05 PIT >> FINE : mutating method toString
+stderr  : 下午9:36:05 PIT >> FINE : 1 relevant test for toString
+stderr  : 下午9:36:05 PIT >> FINE : mutating method initializeComponents
+stderr  : 下午9:36:05 PIT >> FINE : 1 relevant test for initializeComponents
+stderr  : 下午9:36:05 PIT >> FINE : replaced class with mutant in 4 ms
+stderr  : 下午9:36:05 PIT >> FINE : Running 1 units
+stderr  : 下午9:36:05 PIT >> FINE : replaced class with mutant in 3 ms
+stderr  : 下午9:36:05 PIT >> FINE : Running 1 units
+stdout  : testSeminarDS
+stderr  : 下午9:36:05 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:36:05 PIT >> FINE : processed mutation in 11 ms.
+stderr  : 下午9:36:05 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:36:05 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stdout  : Error in initializing instances!
+stderr  : java.lang.NullPointerException: Cannot load from object array because 
+stderr  : 	at SemManager.main(SemManager.java:259)
+stderr  : 	at SemManagerTest.testMInitx(SemManagerTest.java:23)
+stderr  : 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Na
+stderr  : 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Nat
+stderr  : 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+stderr  : 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+stderr  : 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(Framew
+stderr  : 	at org.junit.internal.runners.model.ReflectiveCallable.run(Reflective
+stderr  : 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(Framewor
+stderr  : 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(Invoke
+stderr  : 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefor
+stderr  : 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters
+stderr  : 	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTes
+stderr  : 	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatem
+stderr  : 	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatem
+stderr  : 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+stderr  : 	at java.base/java.lang.Thread.run(Thread.java:833)
+stderr  : 下午9:36:05 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:36:05 PIT >> FINE : processed mutation in 11 ms.
+下午9:36:05 PIT >> FINE : MutationIdentifier [location=Location [clazz=Parser, met
+stderr  : 下午9:36:05 PIT >> FINE : mutating method toString
+stderr  : 下午9:36:05 PIT >> FINE : 1 relevant test for toString
+下午9:36:05 PIT >> FINE : Exit code was - OK
+下午9:36:05 PIT >> FINE : Minion exited ok
+stderr  : 下午9:36:05 PIT >> FINE : replaced class with mutant in 4 ms
+stderr  : 下午9:36:05 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stderr  : 下午9:36:05 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:36:05 PIT >> FINE : processed mutation in 11 ms.
+stderr  : 下午9:36:05 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:36:05 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:36:05 PIT >> FINE : mutating method toString
+stderr  : 下午9:36:05 PIT >> FINE : 1 relevant test for toString
+stderr  : 下午9:36:05 PIT >> FINE : replaced class with mutant in 5 ms
+stderr  : 下午9:36:05 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, BadUgly, 
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, BadUgly, 
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, BadUgly, 
+stderr  : 下午9:36:05 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:36:05 PIT >> FINE : processed mutation in 10 ms.
+stderr  : 下午9:36:05 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:36:05 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:36:05 PIT >> FINE : mutating method toString
+stderr  : 下午9:36:05 PIT >> FINE : 1 relevant test for toString
+stderr  : 下午9:36:05 PIT >> FINE : replaced class with mutant in 4 ms
+stderr  : 下午9:36:05 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: GoodBadUgly
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: GoodBadUgly
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: GoodBadUgly
+stderr  : 下午9:36:05 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:36:05 PIT >> FINE : processed mutation in 9 ms.
+stderr  : 下午9:36:05 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:36:05 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:36:05 PIT >> FINE : mutating method toString
+stderr  : 下午9:36:05 PIT >> FINE : 1 relevant test for toString
+stderr  : 下午9:36:05 PIT >> FINE : replaced class with mutant in 4 ms
+stderr  : 下午9:36:05 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: 
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: 
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: 
+stderr  : 下午9:36:05 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:36:05 PIT >> FINE : processed mutation in 11 ms.
+stderr  : 下午9:36:05 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:36:05 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:36:05 PIT >> FINE : mutating method deserialize
+stderr  : 下午9:36:05 PIT >> FINE : 1 relevant test for deserialize
+stderr  : 下午9:36:05 PIT >> FINE : replaced class with mutant in 6 ms
+stderr  : 下午9:36:05 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: Good
+stdout  : Keywords: null, null, null
+stderr  : 下午9:36:05 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:36:05 PIT >> FINE : processed mutation in 12 ms.
+stderr  : 下午9:36:05 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:36:05 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:36:05 PIT >> FINE : mutating method toString
+stderr  : 下午9:36:05 PIT >> FINE : 1 relevant test for toString
+stderr  : 下午9:36:05 PIT >> FINE : replaced class with mutant in 4 ms
+stderr  : 下午9:36:05 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stderr  : 下午9:36:05 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:36:05 PIT >> FINE : processed mutation in 10 ms.
+下午9:36:05 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+下午9:36:05 PIT >> FINE : Exit code was - OK
+下午9:36:05 PIT >> FINE : Minion exited ok
+下午9:36:05 PIT >> INFO : Completed in 1 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_
+>> Generated 16 Killed 2 (13%)
+> KILLED 2 LINES_NEEDING_BETTER_TESTING 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 14 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.rv.AOD1Mutator
+>> Generated 55 Killed 1 (2%)
+> KILLED 1 LINES_NEEDING_BETTER_TESTING 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 54 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.rv.AOD2Mutator
+>> Generated 55 Killed 1 (2%)
+> KILLED 1 LINES_NEEDING_BETTER_TESTING 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 54 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_
+>> Generated 52 Killed 1 (2%)
+> KILLED 1 LINES_NEEDING_BETTER_TESTING 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 50 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_
+>> Generated 16 Killed 2 (13%)
+> KILLED 2 LINES_NEEDING_BETTER_TESTING 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 14 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_
+>> Generated 52 Killed 2 (4%)
+> KILLED 2 LINES_NEEDING_BETTER_TESTING 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 50 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : < 1 second
+> build mutation tests : < 1 second
+> run mutation analysis : < 1 second
+--------------------------------------------------------------------------------
+> Total  : 1 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 66/511 (13%)
+>> Generated 246 mutations Killed 9 (4%)
+>> Mutations with no coverage 236. Test strength 90%
+>> Ran 12 tests (0.05 tests per mutation)
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050737559
+</Timestamp>
+<Runtime>
+1694050737559
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050740998
+</Timestamp>
+<Runtime>
+1694050740998
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+insert was called!
+Current ptr size: 512
+insertData length: 173
+Memory Pool length: 512
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 0
+Successfully inserted record with ID 1
+ptr val: -1
+ptr val: 256
+(FirstHashing) Ready to insert at index: 1
+Hashtable:
+1: 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+insert was called!
+Current ptr size: 256
+insertData length: 244
+Memory Pool length: 512
+Insert position 256
+Successfully inserted record with ID 2
+ptr val: -1
+(FirstHashing) Ready to insert at index: 2
+Hashtable:
+1: 1
+2: 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+insert was called!
+doubling memory pool size!
+Current ptr size: 512
+insertData length: 192
+Memory Pool length: 1024
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 512
+Successfully inserted record with ID 3
+ptr val: -1
+ptr val: 256
+(FirstHashing) Ready to insert at index: 3
+hashTable resized to: 8
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Current ptr size: 256
+insertData length: 168
+Memory Pool length: 1024
+Insert position 768
+Successfully inserted record with ID 10
+ptr val: -1
+(doubleHashing) Ready to insert at index: 5
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Delete was called!
+Successfully deleted record with ID 2
+Hashtable:
+1: 1
+3: 3
+5: 10
+
+data is:    search 2
+search was called!
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete was called!
+Delete FAILED -- There is no record with ID 6
+Hashtable:
+1: 1
+3: 3
+5: 10
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+insert was called!
+Current ptr size: 256
+doubling memory pool size!
+Current ptr size: 256
+Current ptr size: 1024
+insertData length: 260
+Memory Pool length: 2048
+InsertPosition next val: 512
+cur ptr length: 512
+splited ptr length: 512
+Insert position 1024
+Successfully inserted record with ID 2
+ptr val: -1
+ptr val: 256
+ptr val: 512
+(FirstHashing) Ready to insert at index: 2
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    delete 10
+Delete was called!
+Successfully deleted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+1024: 256
+
+data is:    search 1
+search was called!
+Found record with ID 1:
+search handle start index: 0
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+search was called!
+Found record with ID 2:
+search handle start index: 1024
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+search was called!
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050740998
+</Timestamp>
+<Runtime>
+1694050740998
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+(default package) (1)
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050766970
+</Timestamp>
+<Runtime>
+1694050766970
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050776971
+</Timestamp>
+<Runtime>
+1694050776971
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050786971
+</Timestamp>
+<Runtime>
+1694050786971
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManagerTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManagerTest.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050811703
+</Timestamp>
+<Runtime>
+1694050811703
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+(default package) (1)
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+下午9:39:01 PIT >> INFO : --------------------------------------------------------
+下午9:39:01 PIT >> INFO : Enabled (+) and disabled (-) features.
+下午9:39:01 PIT >> INFO : -----------------------------------------
+下午9:39:01 PIT >> INFO : +FANN           Filters mutations in classes and methods
+下午9:39:01 PIT >> INFO :   [annotation]    Annotation to avoid (full package name
+下午9:39:01 PIT >> INFO : +FENUM          Filters mutations in enum constructors
+下午9:39:01 PIT >> INFO : +FFBLOCK        Filters mutations in code duplicated by 
+下午9:39:01 PIT >> INFO : +FFEACH         Filters mutations in compiler generated 
+下午9:39:01 PIT >> INFO : +FFLOOP         Filters any mutations to increments in f
+下午9:39:01 PIT >> INFO : +FINFINC        Filters mutations to increments that may
+下午9:39:01 PIT >> INFO : +FINFIT         Filters mutations that may cause infinit
+下午9:39:01 PIT >> INFO : +FINULL         Filters mutations in compiler generated 
+下午9:39:01 PIT >> INFO : +FKOTLIN        Filters out junk mutations in bytecode c
+下午9:39:01 PIT >> INFO : +FLOGCALL       Filters mutations in code that makes cal
+下午9:39:01 PIT >> INFO : +FMRNULL        Filters mutations in compiler generated 
+下午9:39:01 PIT >> INFO : +FRETEQUIV      Filters return vals mutants with bytecod
+下午9:39:01 PIT >> INFO : +FSEQUIVEQUALS  Filters equivalent mutations that affect
+下午9:39:01 PIT >> INFO : +FSTATI         Filters mutations in static initializers
+下午9:39:01 PIT >> INFO : +FSTATINIT      Filters mutations in static initializers
+下午9:39:01 PIT >> INFO : +FTRYWR         Filters mutations in code generated for 
+下午9:39:01 PIT >> INFO : +_internal_activate_by_output_string
+下午9:39:01 PIT >> INFO : -CLASSLIMIT     Limits the maximum number of mutations p
+下午9:39:01 PIT >> INFO :   [limit]         Integer value for maximum mutations to
+下午9:39:01 PIT >> INFO : -EXPORT         Exports mutants bytecode and other detai
+下午9:39:01 PIT >> INFO : --------------------------------------------------------
+下午9:39:01 PIT >> FINE : Running report with ReportOptions [targetClasses=[Semina
+下午9:39:01 PIT >> FINE : System class path is C:\Users\Xianwei\.p2\pool\plugins\o
+下午9:39:01 PIT >> FINE : Maximum available memory is 16368 mb
+下午9:39:01 PIT >> FINE : Incremental analysis set 246 mutations to a status of NO
+下午9:39:01 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+下午9:39:01 PIT >> INFO : Created  4 mutation test units in pre scan
+下午9:39:01 PIT >> FINE : MINION : Installing PIT agent
+下午9:39:01 PIT >> INFO : Sending 9 test classes to minion
+下午9:39:01 PIT >> INFO : Sent tests to minion
+下午9:39:01 PIT >> INFO : MINION : 下午9:39:01 PIT >> FINE : Expecting 9 tests class
+下午9:39:01 PIT >> INFO : MINION : 下午9:39:01 PIT >> FINE : Tests classes received
+下午9:39:01 PIT >> INFO : MINION : 下午9:39:01 PIT >> INFO : Checking environment
+下午9:39:02 PIT >> INFO : MINION : 下午9:39:02 PIT >> INFO : Found  4 tests
+下午9:39:02 PIT >> INFO : MINION : 下午9:39:02 PIT >> INFO : Dependency analysis red
+下午9:39:02 PIT >> INFO : MINION : 下午9:39:02 PIT >> INFO : 4 tests received
+下午9:39:02 PIT >> INFO : MINION : 下午9:39:02 PIT >> FINE : Running 4 units
+下午9:39:02 PIT >> INFO : MINION : 下午9:39:02 PIT >> FINE : Gathering coverage for 
+下午9:39:02 PIT >> INFO : MINION : WARNING: A terminally deprecated method in java
+下午9:39:02 PIT >> INFO : MINION : WARNING: System::setSecurityManager has been ca
+下午9:39:02 PIT >> INFO : MINION : WARNING: Please consider reporting this to the 
+下午9:39:02 PIT >> INFO : MINION : WARNING: System::setSecurityManager will be rem
+下午9:39:02 PIT >> FINE : MINION : 
+下午9:39:02 PIT >> FINE : MINION : 
+下午9:39:02 PIT >> FINE : MINION : -----------------------------------
+下午9:39:02 PIT >> FINE : MINION : Tests for the class: Parser
+下午9:39:02 PIT >> FINE : MINION : Tester Prima v.1.5.1 - 17 June 2012
+下午9:39:02 PIT >> FINE : MINION : -----------------------------------
+下午9:39:02 PIT >> FINE : MINION : Tests defined in the class: Parser:
+下午9:39:02 PIT >> FINE : MINION : ---------------------------
+下午9:39:02 PIT >> FINE : MINION : Parser:
+下午9:39:02 PIT >> FINE : MINION : ---------------
+下午9:39:02 PIT >> FINE : MINION : 
+下午9:39:02 PIT >> FINE : MINION :  new Parser:1(
+下午9:39:02 PIT >> FINE : MINION :   this.i = 0)
+下午9:39:02 PIT >> FINE : MINION : ---------------
+下午9:39:02 PIT >> INFO : MINION : WARNING: A terminally deprecated method in java
+下午9:39:02 PIT >> INFO : MINION : WARNING: System::setSecurityManager has been ca
+下午9:39:02 PIT >> FINE : MINION : All tests passed.
+下午9:39:02 PIT >> FINE : MINION : 
+下午9:39:02 PIT >> FINE : MINION : --- END OF TEST RESULTS ---
+下午9:39:02 PIT >> INFO : MINION : WARNING: Please consider reporting this to the 
+下午9:39:02 PIT >> INFO : MINION : WARNING: System::setSecurityManager will be rem
+下午9:39:02 PIT >> INFO : MINION : 下午9:39:02 PIT >> FINE : Gathering coverage for 
+下午9:39:02 PIT >> FINE : MINION : 
+下午9:39:02 PIT >> FINE : MINION : 
+下午9:39:02 PIT >> FINE : MINION : -----------------------------------
+下午9:39:02 PIT >> FINE : MINION : Tests for the class: SemManager
+下午9:39:02 PIT >> FINE : MINION : Tester Prima v.1.5.1 - 17 June 2012
+下午9:39:02 PIT >> FINE : MINION : -----------------------------------
+下午9:39:02 PIT >> FINE : MINION : Tests defined in the class: SemManager:
+下午9:39:02 PIT >> FINE : MINION : ---------------------------
+下午9:39:02 PIT >> FINE : MINION : SemManager:
+下午9:39:02 PIT >> FINE : MINION : ---------------
+下午9:39:02 PIT >> FINE : MINION : 
+下午9:39:02 PIT >> FINE : MINION :  new SemManager:1(
+下午9:39:02 PIT >> FINE : MINION :   this.dummy = null
+下午9:39:02 PIT >> FINE : MINION :   this.size = 0
+下午9:39:02 PIT >> FINE : MINION :   this.memoryPool = null)
+下午9:39:02 PIT >> FINE : MINION : ---------------
+下午9:39:02 PIT >> FINE : MINION : All tests passed.
+下午9:39:02 PIT >> FINE : MINION : 
+下午9:39:02 PIT >> FINE : MINION : --- END OF TEST RESULTS ---
+下午9:39:02 PIT >> INFO : MINION : 下午9:39:02 PIT >> FINE : Gathering coverage for 
+下午9:39:02 PIT >> FINE : MINION : Error in initializing instances!
+下午9:39:02 PIT >> INFO : MINION : java.lang.NullPointerException: Cannot load fro
+下午9:39:02 PIT >> INFO : MINION : 	at SemManager.main(SemManager.java:258)
+下午9:39:02 PIT >> INFO : MINION : 	at SemManagerTest.testMInitx(SemManagerTest.ja
+下午9:39:02 PIT >> INFO : MINION : 	at java.base/jdk.internal.reflect.NativeMethod
+下午9:39:02 PIT >> INFO : MINION : 	at java.base/jdk.internal.reflect.NativeMethod
+下午9:39:02 PIT >> INFO : MINION : 	at java.base/jdk.internal.reflect.DelegatingMe
+下午9:39:02 PIT >> INFO : MINION : 	at java.base/java.lang.reflect.Method.invoke(M
+下午9:39:02 PIT >> INFO : MINION : 	at org.junit.runners.model.FrameworkMethod$1.r
+下午9:39:02 PIT >> INFO : MINION : 	at org.junit.internal.runners.model.Reflective
+下午9:39:02 PIT >> INFO : MINION : 	at org.junit.runners.model.FrameworkMethod.inv
+下午9:39:02 PIT >> INFO : MINION : 	at org.junit.internal.runners.statements.Invok
+下午9:39:02 PIT >> INFO : MINION : 	at org.junit.internal.runners.statements.RunBe
+下午9:39:02 PIT >> INFO : MINION : 	at org.junit.internal.runners.statements.RunAf
+下午9:39:02 PIT >> INFO : MINION : 	at student.testingsupport.junit4.RunTestMethod
+下午9:39:02 PIT >> INFO : MINION : 	at org.junit.internal.runners.statements.FailO
+下午9:39:02 PIT >> INFO : MINION : 	at org.junit.internal.runners.statements.FailO
+下午9:39:02 PIT >> INFO : MINION : 	at java.base/java.util.concurrent.FutureTask.r
+下午9:39:02 PIT >> INFO : MINION : 	at java.base/java.lang.Thread.run(Thread.java:
+下午9:39:02 PIT >> INFO : MINION : 下午9:39:02 PIT >> FINE : Gathering coverage for 
+下午9:39:02 PIT >> FINE : MINION : testtoString
+下午9:39:02 PIT >> FINE : MINION : ID: 1729, Title: Seminar Title
+下午9:39:02 PIT >> FINE : MINION : Date: 2405231000, Length: 75, X: 15, Y: 33, Cos
+下午9:39:02 PIT >> FINE : MINION : Description: This is a great seminar
+下午9:39:02 PIT >> FINE : MINION : Keywords: Good, Bad, Ugly
+下午9:39:02 PIT >> FINE : MINION : testSeminarDS
+下午9:39:02 PIT >> FINE : MINION : Number of bytes in serialized object is: 95
+下午9:39:02 PIT >> FINE : MINION : ID: 1729, Title: Seminar Title
+下午9:39:02 PIT >> FINE : MINION : Date: 2405231000, Length: 75, X: 15, Y: 33, Cos
+下午9:39:02 PIT >> FINE : MINION : Description: This is a great seminar
+下午9:39:02 PIT >> FINE : MINION : Keywords: Good, Bad, Ugly
+下午9:39:02 PIT >> FINE : MINION : ID: 1729, Title: Seminar Title
+下午9:39:02 PIT >> FINE : MINION : Date: 2405231000, Length: 75, X: 15, Y: 33, Cos
+下午9:39:02 PIT >> FINE : MINION : Description: This is a great seminar
+下午9:39:02 PIT >> FINE : MINION : Keywords: Good, Bad, Ugly
+下午9:39:02 PIT >> FINE : Coverage generator Minion exited ok
+下午9:39:02 PIT >> INFO : Calculated coverage in 0 seconds.
+下午9:39:02 PIT >> FINE : Used memory after coverage calculation 16 mb
+下午9:39:02 PIT >> FINE : Free Memory after coverage calculation 1007 mb
+下午9:39:02 PIT >> FINE : Incremental analysis set 246 mutations to a status of NO
+下午9:39:02 PIT >> INFO : Incremental analysis reduced number of mutations by 0
+下午9:39:02 PIT >> INFO : Created  4 mutation test units
+下午9:39:02 PIT >> FINE : Used memory before analysis start 8 mb
+下午9:39:02 PIT >> FINE : Free Memory before analysis start 1015 mb
+下午9:39:02 PIT >> FINE : Running 4 units
+stdout  : Installing PIT agent
+stdout  : Installing PIT agent
+stderr  : 下午9:39:02 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+stderr  : 下午9:39:02 PIT >> FINE : mutating method deserialize
+stderr  : 下午9:39:02 PIT >> FINE : 1 relevant test for deserialize
+stderr  : 下午9:39:02 PIT >> FINE : replaced class with mutant in 4 ms
+stderr  : 下午9:39:02 PIT >> FINE : Running 1 units
+stderr  : 下午9:39:02 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+stderr  : 下午9:39:02 PIT >> FINE : mutating method initializeComponents
+stderr  : 下午9:39:02 PIT >> FINE : 1 relevant test for initializeComponents
+stderr  : 下午9:39:02 PIT >> FINE : replaced class with mutant in 4 ms
+stderr  : 下午9:39:02 PIT >> FINE : Running 1 units
+stderr  : WARNING: A terminally deprecated method in java.lang.System has been c
+stderr  : WARNING: System::setSecurityManager has been called by student.testing
+stderr  : WARNING: Please consider reporting this to the maintainers of student.
+stderr  : WARNING: System::setSecurityManager will be removed in a future releas
+stderr  : WARNING: A terminally deprecated method in java.lang.System has been c
+stderr  : WARNING: System::setSecurityManager has been called by student.testing
+stderr  : WARNING: Please consider reporting this to the maintainers of student.
+stderr  : WARNING: System::setSecurityManager will be removed in a future releas
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly
+stdout  : testSeminarDS
+stdout  : Error in creating memory pool! Please enter an integar!
+stderr  : java.lang.NullPointerException: Cannot load from object array because 
+stderr  : 	at Parser.initializeComponents(Parser.java:15)
+stderr  : 	at SemManager.main(SemManager.java:255)
+stderr  : 	at SemManagerTest.testMInitx(SemManagerTest.java:23)
+stderr  : 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Na
+stderr  : 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Nat
+stderr  : 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+stderr  : 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+stderr  : 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(Framew
+stderr  : 	at org.junit.internal.runners.model.ReflectiveCallable.run(Reflective
+stderr  : 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(Framewor
+stderr  : 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(Invoke
+stderr  : 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefor
+stderr  : 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters
+stderr  : 	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTes
+stderr  : 	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatem
+stderr  : 	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatem
+stderr  : 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+stderr  : 	at java.base/java.lang.Thread.run(Thread.java:833)
+stdout  : Error in creating memory pool! The size must be the power of 2 and gre
+stderr  : WARNING: A terminally deprecated method in java.lang.System has been c
+stderr  : WARNING: System::setSecurityManager has been called by student.testing
+stderr  : WARNING: Please consider reporting this to the maintainers of student.
+stderr  : WARNING: System::setSecurityManager will be removed in a future releas
+stderr  : WARNING: A terminally deprecated method in java.lang.System has been c
+stderr  : WARNING: System::setSecurityManager has been called by student.testing
+stderr  : WARNING: Please consider reporting this to the maintainers of student.
+stderr  : WARNING: System::setSecurityManager will be removed in a future releas
+stderr  : 下午9:39:02 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:39:02 PIT >> FINE : processed mutation in 97 ms.
+stderr  : 下午9:39:02 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:39:02 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+下午9:39:02 PIT >> FINE : MutationIdentifier [location=Location [clazz=Parser, met
+stderr  : 下午9:39:02 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:39:02 PIT >> FINE : processed mutation in 101 ms.
+stderr  : 下午9:39:02 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+stderr  : 下午9:39:02 PIT >> FINE : mutating method toString
+stderr  : 下午9:39:02 PIT >> FINE : 1 relevant test for toString
+stderr  : 下午9:39:02 PIT >> FINE : mutating method initializeComponents
+stderr  : 下午9:39:02 PIT >> FINE : 1 relevant test for initializeComponents
+stderr  : 下午9:39:02 PIT >> FINE : replaced class with mutant in 5 ms
+stderr  : 下午9:39:02 PIT >> FINE : Running 1 units
+stdout  : testSeminarDS
+stderr  : 下午9:39:02 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:39:02 PIT >> FINE : processed mutation in 13 ms.
+stderr  : 下午9:39:02 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:39:02 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:39:02 PIT >> FINE : replaced class with mutant in 5 ms
+stderr  : 下午9:39:02 PIT >> FINE : Running 1 units
+stderr  : 下午9:39:02 PIT >> FINE : mutating method toString
+stderr  : 下午9:39:02 PIT >> FINE : 1 relevant test for toString
+stdout  : Error in initializing instances!
+stderr  : java.lang.NullPointerException: Cannot load from object array because 
+stderr  : 	at SemManager.main(SemManager.java:258)
+stderr  : 	at SemManagerTest.testMInitx(SemManagerTest.java:23)
+stderr  : 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Na
+stderr  : 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Nat
+stderr  : 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke
+stderr  : 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+stderr  : 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(Framew
+stderr  : 	at org.junit.internal.runners.model.ReflectiveCallable.run(Reflective
+stderr  : 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(Framewor
+stderr  : 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(Invoke
+stderr  : 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefor
+stderr  : 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters
+stderr  : 	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTes
+stderr  : 	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatem
+stderr  : 	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatem
+stderr  : 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+stderr  : 	at java.base/java.lang.Thread.run(Thread.java:833)
+stderr  : 下午9:39:02 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:39:02 PIT >> FINE : processed mutation in 15 ms.
+下午9:39:02 PIT >> FINE : MutationIdentifier [location=Location [clazz=Parser, met
+下午9:39:02 PIT >> FINE : Exit code was - OK
+下午9:39:02 PIT >> FINE : Minion exited ok
+stderr  : 下午9:39:02 PIT >> FINE : replaced class with mutant in 6 ms
+stderr  : 下午9:39:02 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stderr  : 下午9:39:02 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:39:02 PIT >> FINE : processed mutation in 13 ms.
+stderr  : 下午9:39:02 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:39:02 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:39:02 PIT >> FINE : mutating method toString
+stderr  : 下午9:39:02 PIT >> FINE : 1 relevant test for toString
+stderr  : 下午9:39:02 PIT >> FINE : replaced class with mutant in 5 ms
+stderr  : 下午9:39:02 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, BadUgly, 
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, BadUgly, 
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, BadUgly, 
+stderr  : 下午9:39:02 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:39:02 PIT >> FINE : processed mutation in 13 ms.
+下午9:39:02 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:39:02 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+stderr  : 下午9:39:02 PIT >> FINE : mutating method toString
+stderr  : 下午9:39:02 PIT >> FINE : 1 relevant test for toString
+stderr  : 下午9:39:02 PIT >> FINE : replaced class with mutant in 5 ms
+stderr  : 下午9:39:02 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: GoodBadUgly
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: GoodBadUgly
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: GoodBadUgly
+stderr  : 下午9:39:02 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:39:02 PIT >> FINE : processed mutation in 10 ms.
+stderr  : 下午9:39:02 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:39:02 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:39:02 PIT >> FINE : mutating method toString
+stderr  : 下午9:39:02 PIT >> FINE : 1 relevant test for toString
+stderr  : 下午9:39:02 PIT >> FINE : replaced class with mutant in 5 ms
+stderr  : 下午9:39:02 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: 
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: 
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: 
+stderr  : 下午9:39:02 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:39:02 PIT >> FINE : processed mutation in 11 ms.
+stderr  : 下午9:39:02 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:39:02 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:39:02 PIT >> FINE : mutating method deserialize
+stderr  : 下午9:39:02 PIT >> FINE : 1 relevant test for deserialize
+stderr  : 下午9:39:02 PIT >> FINE : replaced class with mutant in 4 ms
+stderr  : 下午9:39:02 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: Good
+stdout  : Keywords: null, null, null
+stderr  : 下午9:39:02 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:39:02 PIT >> FINE : processed mutation in 10 ms.
+stderr  : 下午9:39:02 PIT >> FINE : Running mutation MutationDetails [id=MutationI
+下午9:39:02 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+stderr  : 下午9:39:02 PIT >> FINE : mutating method toString
+stderr  : 下午9:39:02 PIT >> FINE : 1 relevant test for toString
+stderr  : 下午9:39:02 PIT >> FINE : replaced class with mutant in 5 ms
+stderr  : 下午9:39:02 PIT >> FINE : Running 1 units
+stdout  : testtoString
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stdout  : testSeminarDS
+stdout  : Number of bytes in serialized object is: 95
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stdout  : ID: 1729, Title: Seminar Title
+stdout  : Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+stdout  : Description: This is a great seminar
+stdout  : Keywords: Good, Bad, Ugly, 
+stderr  : 下午9:39:02 PIT >> FINE : Mutation MutationIdentifier [location=Location
+stderr  : 下午9:39:02 PIT >> FINE : processed mutation in 11 ms.
+下午9:39:02 PIT >> FINE : MutationIdentifier [location=Location [clazz=Seminar, me
+下午9:39:02 PIT >> FINE : Exit code was - OK
+下午9:39:02 PIT >> FINE : Minion exited ok
+下午9:39:02 PIT >> INFO : Completed in 1 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_
+>> Generated 16 Killed 2 (13%)
+> KILLED 2 LINES_NEEDING_BETTER_TESTING 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 14 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.rv.AOD1Mutator
+>> Generated 55 Killed 1 (2%)
+> KILLED 1 LINES_NEEDING_BETTER_TESTING 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 54 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.rv.AOD2Mutator
+>> Generated 55 Killed 1 (2%)
+> KILLED 1 LINES_NEEDING_BETTER_TESTING 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 54 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_
+>> Generated 52 Killed 1 (2%)
+> KILLED 1 LINES_NEEDING_BETTER_TESTING 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 50 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_
+>> Generated 16 Killed 2 (13%)
+> KILLED 2 LINES_NEEDING_BETTER_TESTING 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 14 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_
+>> Generated 52 Killed 2 (4%)
+> KILLED 2 LINES_NEEDING_BETTER_TESTING 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> LINES_NOT_TESTED 50 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : < 1 second
+> build mutation tests : < 1 second
+> run mutation analysis : < 1 second
+--------------------------------------------------------------------------------
+> Total  : 1 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage: 66/511 (13%)
+>> Generated 246 mutations Killed 9 (4%)
+>> Mutations with no coverage 236. Test strength 90%
+>> Ran 12 tests (0.05 tests per mutation)
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050811703
+</Timestamp>
+<Runtime>
+1694050811703
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+(default package)
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694050926985
+</Timestamp>
+<Runtime>
+1694050926985
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/FreeList.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/FreeList.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManagerTest.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051046994
+</Timestamp>
+<Runtime>
+1694051046994
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/FreeList.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051064703
+</Timestamp>
+<Runtime>
+1694051064703
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Rename
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+To-Unit-Name
+</Name>
+<Value>
+int calculateFirstHashing(int, int)
+</Value>
+</Property>
+<Property>
+<Name>
+From-Unit-Name
+</Name>
+<Value>
+CalculateFirstHashing(int, int)
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+ProgramUnit
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+Method
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051065965
+</Timestamp>
+<Runtime>
+1694051065965
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Rename
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+To-Unit-Name
+</Name>
+<Value>
+int calculateSecondHashing(int, int)
+</Value>
+</Property>
+<Property>
+<Name>
+From-Unit-Name
+</Name>
+<Value>
+CalculateSecondHashing(int, int)
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+ProgramUnit
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+Method
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051130849
+</Timestamp>
+<Runtime>
+1694051130849
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+(default package)
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+testtoString
+ID: 1729, Title: Seminar Title
+Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+Description: This is a great seminar
+Keywords: Good, Bad, Ugly
+testSeminarDS
+Number of bytes in serialized object is: 95
+ID: 1729, Title: Seminar Title
+Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+Description: This is a great seminar
+Keywords: Good, Bad, Ugly
+ID: 1729, Title: Seminar Title
+Date: 2405231000, Length: 75, X: 15, Y: 33, Cost: 125
+Description: This is a great seminar
+Keywords: Good, Bad, Ugly
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Error in initializing instances!
+java.lang.NullPointerException: Cannot load from object array because "component
+	at SemManager.main(SemManager.java:258)
+	at SemManagerTest.testMInitx(SemManagerTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051130849
+</Timestamp>
+<Runtime>
+1694051130849
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051472032
+</Timestamp>
+<Runtime>
+1694051472032
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/FreeList.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/FreeList.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051482032
+</Timestamp>
+<Runtime>
+1694051482032
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051627046
+</Timestamp>
+<Runtime>
+1694051627046
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051697054
+</Timestamp>
+<Runtime>
+1694051697054
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/Unknown
+</URI>
+<ProjectURI>
+/Unknown
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:///Unknown
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051702054
+</Timestamp>
+<Runtime>
+1694051702054
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/Unknown
+</URI>
+<ProjectURI>
+/Unknown
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:///Unknown
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManagerTest.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051727058
+</Timestamp>
+<Runtime>
+1694051727058
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:///Unknown
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694051732058
+</Timestamp>
+<Runtime>
+1694051732058
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
