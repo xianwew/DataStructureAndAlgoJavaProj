@@ -193,6 +193,10 @@ public class SemManager {
         return powerOfTwo;
 	}
 	
+//	if(searchPtr.getPrev() != null){
+//	if(searchPtr.getPrev().getIndex() <  newInsert.getIndex()) {
+//	}				
+//}
 	public boolean delete(Handle handle){
 		if(handle.getStartIndex() == -1){
 			return false;
@@ -203,7 +207,7 @@ public class SemManager {
 		FreeList newInsert = new FreeList(getNearestPowerOfTwo(handle.getSize()), handle.getStartIndex());
 		FreeList searchPtr = dummy;
 		while(searchPtr != null){
-			if(searchPtr.getVal() == getNearestPowerOfTwoSmaller(handle.getSize())) {
+			if(searchPtr.getIndex() > newInsert.getIndex()){
 				break;
 			}
 			searchPtr = searchPtr.getNext();
@@ -227,7 +231,7 @@ public class SemManager {
 		FreeList left = dummy.getNext();
 		FreeList right = left.getNext();	
 		while(right != null){
-			if(Math.log(left.getVal() + right.getVal()) / Math.log(2) == 0 && left.getIndex() + left.getVal() == right.getIndex()){
+			if((left.getVal() == right.getVal())){
 				FreeList newInsert = new FreeList(left.getVal() * 2, left.getIndex());
 				FreeList prev = left.getPrev(), next = right.getNext();
 				newInsert.setPrev(prev);
@@ -237,7 +241,7 @@ public class SemManager {
 					next.setPrev(newInsert);
 				}
 				left = newInsert;
-				right = right.getNext();	
+				right = next;	
 			}
 			else{
 				left = right;
