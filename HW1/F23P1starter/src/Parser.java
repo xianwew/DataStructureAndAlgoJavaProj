@@ -9,42 +9,44 @@ public class Parser {
 	}
 	
 	public Object[] initializeComponents(String[] args) {
-		File CommandFile = null;
-        try{
-        	i = Integer.parseInt(args[2]);
-        }
-        catch(Exception e) {
-        	System.out.println("Error in creating memory pool! Please enter an integar!");
-            e.printStackTrace();
-        }
-        if((i & i - 1) != 0 || i <= 0) {
-        	System.out.println("Error in creating memory pool! The size must be the power of 2 and greater than 0!");
-        	System.exit(0);
-        }
-        
-        try{
-        	i = Integer.parseInt(args[3]);
-        }
-        catch(Exception e) {
-        	System.out.println("Error in creating hashTable! Please enter an integar!");
-            e.printStackTrace();
-        }
-        if((i & i - 1) != 0 || i <= 0) {
-        	System.out.println("Error in creating hashTable! The size must be the power of 2 and greater than 0!");
-        	System.exit(0);
-        }
-
-        try{
-        	CommandFile = new File(args[4]);
-        } 
-    	catch (Exception e) {
-            System.out.println("Error in reading files!");
-            e.printStackTrace();
-    	}
-  
-        Object[] res = { new byte[Integer.parseInt(args[2])], new MyHashTable(Integer.parseInt(args[3])), CommandFile};
-        return res;
-        
+		if(args != null) {
+			File CommandFile = null;
+	        try{
+	    		i = Integer.parseInt(args[2]);
+	        }
+	        catch(Exception e) {
+	        	System.out.println("Error in creating memory pool! Please enter an integar!");
+	            e.printStackTrace();
+	        }
+	        if((i & i - 1) != 0 || i <= 0) {
+	        	System.out.println("Error in creating memory pool! The size must be the power of 2 and greater than 0!");
+	        	System.exit(0);
+	        }
+	        
+	        try{
+	        	i = Integer.parseInt(args[3]);
+	        }
+	        catch(Exception e) {
+	        	System.out.println("Error in creating hashTable! Please enter an integar!");
+	            e.printStackTrace();
+	        }
+	        if((i & i - 1) != 0 || i <= 0) {
+	        	System.out.println("Error in creating hashTable! The size must be the power of 2 and greater than 0!");
+	        	System.exit(0);
+	        }
+	
+	        try{
+	        	CommandFile = new File(args[4]);
+	        } 
+	    	catch (Exception e) {
+	            System.out.println("Error in reading files!");
+	            e.printStackTrace();
+	    	}
+	  
+	        Object[] res = { new byte[Integer.parseInt(args[2])], new MyHashTable(Integer.parseInt(args[3])), CommandFile};
+	        return res;
+		}
+		return null;
 	}
 	
 	private int GetInstruction(String data){

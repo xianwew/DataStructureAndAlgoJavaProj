@@ -255,11 +255,17 @@ public class SemManager {
 	    Parser parser = new Parser();
 	    Object[] components = parser.initializeComponents(args);   
 	    SemManager semManager = new SemManager();
-	    semManager.memoryPool = (byte[]) components[0];
-	    semManager.initializeSemManger(semManager.memoryPool.length);
-	    MyHashTable hashTable = (MyHashTable) components[1];
-	    File CommandFile = (File) components[2];        
-	    WorldDataBase worldDataBase = new WorldDataBase(semManager, hashTable);
-	    parser.ProcessSeminars(CommandFile, worldDataBase);
+	    try{
+		    semManager.memoryPool = (byte[]) components[0];
+		    semManager.initializeSemManger(semManager.memoryPool.length);
+		    MyHashTable hashTable = (MyHashTable) components[1];
+		    File CommandFile = (File) components[2];        
+		    WorldDataBase worldDataBase = new WorldDataBase(semManager, hashTable);
+		    parser.ProcessSeminars(CommandFile, worldDataBase);
+	    }
+	    catch(Exception e) {
+            System.out.println("Error in initializing instances!");
+            e.printStackTrace();
+		}
     }
 }
