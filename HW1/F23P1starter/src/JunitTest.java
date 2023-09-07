@@ -1,35 +1,35 @@
-//import MyHashTable;//import the method
-//import SemManager;
-//import student.TestCase;
-//public class JunitTest extends TestCase {
-//JunitTest test;//field, make object im testing
-//public void setUp() {
-//test = new JunitTest();//constructor
-//}
-//
-//
-//@JunitTest
-//public static void testInsert() {
-//SemManager semManager = new SemManager();
-//MyHashTable myHashTable = new MyHashTable(32);
-//int ID = 10;
-//String title = "Computational Biology and Bioinformatics in CS at Virginia Tech";
-//String dateTime = "0610071600";
-//int length = 60;
-//short x = 20;
-//short y = 10;
-//int cost = 30;
-//String desc = "";
-//String[] keywordList = {"Bioinformatics", "computation_biology", "Biology", "Computer_Science", "VT", "Virginia_Tech"};
-//Seminar seminar = new Seminar(ID, title, dateTime, length, x, y, cost, keywordList, desc);
-//myHashTable.insert(semManager, 10, seminar);
-//ID = 2;
-//myHashTable.insert(semManager, 2, seminar);
-//assertEquals(1.0, myHashTable.search(semManager, 2), 0.01);
+import student.TestCase;
+public class JunitTest extends student.TestCase {
+JunitTest test;//field, make object im testing
+public void setUp() {
+test = new JunitTest();//constructor
+}
+
+
+public static void testInsert() {
+SemManager semManager = new SemManager();
+MyHashTable myHashTable = new MyHashTable(32);
+int ID = 10;
+String title = "Computational Biology and Bioinformatics in CS at Virginia Tech";
+String dateTime = "0610071600";
+int length = 60;
+short x = 20;
+short y = 10;
+int cost = 30;
+String desc = "";
+String[] keywordList = {"Bioinformatics", "computation_biology", "Biology", "Computer_Science", "VT", "Virginia_Tech"};
+Seminar seminar = new Seminar(ID, title, dateTime, length, x, y, cost, keywordList, desc);
+myHashTable.insert(semManager, 10, seminar);
+ID = 2;
+Seminar seminar2 = new Seminar(ID, title, dateTime, length, x, y, cost, keywordList, desc);
+myHashTable.insert(semManager, 2, seminar2);
+//assertEquals(1.0, myHashTable.search(semManager, 2) ? 1.0: 0, 0.01);
 //assertEquals(10.0, myHashTable.search(semManager, 10), 0.01);
-//}
-//
-//
+assertTrue(myHashTable.search(semManager, 2));
+assertTrue(myHashTable.search(semManager, 10));
+}
+
+
 //@JunitTest
 //public void testDelete() {
 //SemManager semManager = new SemManager();
@@ -72,4 +72,4 @@
 //assertTrue(printed.contains("key1: 1.0"));
 //assertTrue(printed.contains("key2: 10.0"));
 //}
-//}
+}
