@@ -257,6 +257,22 @@ public class SemManager {
 		return true;
 	}
 	
+	public boolean compareIndex(int index1, int index2) {
+		String binarIndex1 = String.format("%8s", Integer.toBinaryString(index1)).replace(' ', '0');
+        String binarIndex2 = String.format("%8s", Integer.toBinaryString(index2)).replace(' ', '0');
+		if (binarIndex1.length() != binarIndex2.length()) {
+			return false;
+		}
+		else {
+			for (int i = 0; i < binarIndex1.length(); i++) {
+				if (binarIndex1.charAt(i) != binarIndex2.charAt(i) && i != 0) {
+					return false;
+				}
+			}
+		}
+        return true;
+	}
+	
 	public void detectMerge() {
 		/**
 	     * The function detects if any two nodes are adjacent and
@@ -265,7 +281,7 @@ public class SemManager {
 		FreeList left = dummy.getNext();
 		FreeList right = left.getNext();	
 		while (right != null) {
-			if ((left.getVal() == right.getVal())) {
+			if ((left.getVal() == right.getVal()) && compareIndex(left.getVal(), right.getVal())) {
 				FreeList newInsert = new FreeList(left.getVal() * 2, left.getIndex());
 				FreeList prev = left.getPrev(), next = right.getNext();
 				newInsert.setPrev(prev);
