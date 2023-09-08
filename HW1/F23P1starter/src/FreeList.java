@@ -17,8 +17,6 @@ public class FreeList {
      * Initialize paramaters.
      * 
      * @param val    input values
-     * @param next   Defines the next block of memory that a pointer points to in a freelist
-     * @param prev   previous pointer
      * @param index  memory pool index
      */
     
@@ -40,9 +38,7 @@ public class FreeList {
     }
     /**
      * set the value of a field named next
-     * 
-     * @return set the value of the next field 
-     * to the value provided as the argument to the method
+     * @param next  Redefine the new next domain, receive next
      */
     public void setNext(FreeList next) {
         this.next = next;
@@ -57,9 +53,7 @@ public class FreeList {
     }
     /**
      * set the value of a field named prev
-     * 
-     * @return set the value of the prev field 
-     * to the value provided as the argument to the method   
+     * @param prev  Redefine the new next domain, receive previous 
      */
     public void setPrev(FreeList prev) {
         this.prev = prev;
@@ -74,9 +68,7 @@ public class FreeList {
     }
     /**
      * set the value of a field named Val
-     * 
-     * @return set the value of the Val field 
-     * to the value provided as the argument to the method   
+     * @param Val  Redefine the new next domain, receive values
      */
     public void setVal(int val) {
         this.val = val;
@@ -91,9 +83,7 @@ public class FreeList {
     }
     /**
      * set the value of a field named Index
-     * 
-     * @return set the value of the Index field 
-     * to the value provided as the argument to the method   
+     * @param index  Redefine the new next domain, receive index 
      */
     public void setIndex(int index) {
         this.index = index;
