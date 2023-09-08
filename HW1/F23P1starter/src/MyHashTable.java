@@ -10,30 +10,30 @@ public class MyHashTable {
     private int[] keys;
     private int size;
     private int numOfElement;
-	
     /**
-	* Constructor for the class
-	*
-	* @param hashSize  defines the table size
-	*/
-	public MyHashTable(int hashSize) {
-		this.values = new Handle[hashSize];
-		this.keys = new int[hashSize];
-		this.size = hashSize;
-		this.numOfElement = 0;
-	}
-	/**
-	* Create a new Seminar object from the field data
-	*
-	* @param Handle input values
-	* @param keys input keys
-	* @param size input hashTable size
-	* @param numofElement input num of keys
-	*/
-	/**
-	* Retrieve the size of the hash table from the input.
-	* @return initialize hashTable size
-	*/
+    * Constructor for the class
+    *
+    * @param hashSize  defines the table size
+    */
+    public MyHashTable(int hashSize) {
+        this.values = new Handle[hashSize];
+        this.keys = new int[hashSize];
+        this.size = hashSize;
+        this.numOfElement = 0;
+    }
+    /**
+    * Create a new Seminar object from the field data
+    *
+    * @param Handle input values
+    * @param keys input keys
+    * @param size input hashTable size
+    * @param numofElement input num of keys
+    */
+   
+    /**
+    * Retrieve the size of the hash table from the input.
+    * @return initialize hashTable size
+    */
 	public int gethashSize() {
 		return size;
 	}
@@ -85,14 +85,15 @@ public class MyHashTable {
 								+ prevValue) % size;
 					}
 					System.out.println("(doubleHashing) Ready to "
-					+ "insert at index: " +
-					(calculateSecondHashing(key, size) + prevValue) % size);
+							+ "insert at index: " +
+							(calculateSecondHashing(
+									key, size) + prevValue) % size);
 					values[(calculateSecondHashing(key, size)
 					+ prevValue) % size] = handle;
 				}
 				else {
 					System.out.println("(SecHashing) Ready to insert at index: "
-					+ calculateSecondHashing(key, size));
+							+ calculateSecondHashing(key, size));
 					values[calculateSecondHashing(key, size)] = handle;
 				}
 			}
@@ -100,7 +101,7 @@ public class MyHashTable {
 		catch (Exception e) {
 			//System.out.println("Inserted to value in hastTable!");
 			System.out.println("(FirstHashing) Ready to insert at index: "
-			+ calculateFirstHashing(key, size));
+					+ calculateFirstHashing(key, size));
 			values[calculateFirstHashing(key, size)] = handle;
 		}
 		if (numOfElement > size / 2) {
@@ -210,6 +211,7 @@ public class MyHashTable {
 	* Implement the delete function for the hash table.
 	* @param semManager a semManager object created by main.
 	* @param key provided by the user.
+	* @return return true if deletion succeeded
 	*/
 	public boolean delete(SemManager semManager, int key) {
 		boolean containKey = false;
@@ -217,7 +219,7 @@ public class MyHashTable {
 		int[] tmp = new int[keys.length];
 		int j = 0;
 		for (int i : keys) {
-			if(i == key){
+			if (i == key) {
 				containKey = true;
 			}
 			else {
@@ -228,28 +230,30 @@ public class MyHashTable {
 		keys = tmp;
 		if (containKey) {
 			if (values[calculateFirstHashing(key, size)].getKey() == key) {
-				success = semManager.delete
-						(values[calculateFirstHashing(key, size)]);
+				success = semManager.delete(
+						values[calculateFirstHashing(key, size)]);
 				values[calculateFirstHashing(key, size)] = null;
 				numOfElement--;
 			}
-			else if (values[calculateSecondHashing(key, size)].getKey() == key) {
-				success = semManager.delete
-						(values[calculateSecondHashing(key, size)]);
+			else if (values[calculateSecondHashing(
+					key, size)].getKey() == key) {
+				success = semManager.delete(
+						values[calculateSecondHashing(key, size)]);
 				values[calculateSecondHashing(key, size)] = null;
 				numOfElement--;
 			}
 			else {
-					int prevValue = calculateFirstHashing(key, size);
-					while (values[(calculateSecondHashing(key, size)
-							+ prevValue) % size].getKey() != key) {
-						prevValue = (calculateSecondHashing(key, size)
-								+ prevValue) % size;
-					}
-					success = semManager.delete(values[(calculateSecondHashing(key, size)
-							+ prevValue) % size]);
-					values[(calculateSecondHashing(key, size)
-							+ prevValue) % size] = null;
+				int prevValue = calculateFirstHashing(key, size);
+				while (values[(calculateSecondHashing(key, size)
+					+ prevValue) % size].getKey() != key) {
+					prevValue = (calculateSecondHashing(key, size)
+							+ prevValue) % size;
+				}
+				success = semManager.delete(
+						values[(calculateSecondHashing(key, size)
+						+ prevValue) % size]);
+				values[(calculateSecondHashing(key, size)
+						+ prevValue) % size] = null;
 				numOfElement--;
 			}
 		}
@@ -257,7 +261,7 @@ public class MyHashTable {
 			System.out.println("Delete FAILED -- "
 					+ "There is no record with ID " + key);
 		}
-		if(success) {
+		if (success) {
 			System.out.println("Successfully deleted record with ID " + key);
 		}
 		printHashtable();
@@ -280,21 +284,22 @@ public class MyHashTable {
 					originalHandle = values[calculateSecondHashing(i, size)];
 				}
 				catch (Exception e2) {
-			 	System.out.println("Error in locating value!");
-			 }
-		 }
+					System.out.println("Error in locating value!");
+				}
+			}
 			
 			try {
 				Handle k = tmpHandle[calculateFirstHashing(i, size * 2)];
 				if (k.getStartIndex() != -1) {
-					tmpHandle[calculateSecondHashing(i, size*2)] = originalHandle;
+					tmpHandle[calculateSecondHashing(
+							i, size * 2)] = originalHandle;
 				}
 			}
 			catch (Exception e) {
 				tmpHandle[calculateFirstHashing(i, size * 2)]
 						= originalHandle;
-		 }	 		
-			}
+			}	 		
+		}
 		
 		int j = 0;
 		for (int i : keys) {
