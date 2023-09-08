@@ -1,16 +1,30 @@
 import java.io.*;
 import java.util.*;
 
+/**
+ * @author Xianwei Wu/Jiren Wang
+ * @version September 2023, updated September 2023
+ */
 
 public class Parser {
+/**
+ * Create Parser to read files
+ * @param i the Size of components defined by user
+ */
 	private int i;
 	public Parser() {
+		/**
+		 * The input given by the user
+		 */
 		i = 0;
 	}
-	
+	/**
+	 * Create a method to initialize components
+	 * @return initialize components
+	 */
 	public Object[] initializeComponents(String[] args) {
-		if(args != null) {
-			File CommandFile = null;
+		if (args != null) {
+			File commandFile = null;
 	        try {
 	    		i = Integer.parseInt(args[2]);
 	        }
@@ -19,7 +33,8 @@ public class Parser {
 	            e.printStackTrace();
 	        }
 	        if ((i & i - 1) != 0 || i <= 0) {
-	        	System.out.println("Error in creating memory pool! The size must be the power of 2 and greater than 0!");
+	        	System.out.println("Error in creating memory pool! "
+	        			+ "The size must be the power of 2 and greater than 0!");
 	        	System.exit(0);
 	        }
 	        
@@ -27,29 +42,37 @@ public class Parser {
 	        	i = Integer.parseInt(args[3]);
 	        }
 	        catch (Exception e) {
-	        	System.out.println("Error in creating hashTable! Please enter an integar!");
+	        	System.out.println("Error in creating hashTable!"
+	        			+ " Please enter an integar!");
 	            e.printStackTrace();
 	        }
 	        if ((i & i - 1) != 0 || i <= 0) {
-	        	System.out.println("Error in creating hashTable! The size must be the power of 2 and greater than 0!");
+	        	System.out.println("Error in creating hashTable! "
+	        			+ "The size must be the power "
+	        			+ "of 2 and greater than 0!");
 	        	System.exit(0);
 	        }
 	
 	        try {
-	        	CommandFile = new File(args[4]);
+	        	commandFile = new File(args[4]);
 	        } 
 	    	catch (Exception e) {
 	            System.out.println("Error in reading files!");
 	            e.printStackTrace();
 	    	}
 	  
-	        Object[] res = { new byte[Integer.parseInt(args[2])], new MyHashTable(Integer.parseInt(args[3])), CommandFile};
+	        Object[] res = {new byte[Integer.parseInt(args[2])], 
+	        				new MyHashTable(Integer.parseInt(args[3])), commandFile};
 	        return res;
 		}
 		return null;
 	}
 	
-	private int GetInstruction(String data){
+	private int getInstruction (String data) {
+		/**
+		 * Create a method to get the instruction from the input string
+		 * @return output instruction
+		 */
 		String tmpDataLeft = data;
 		String tmpDataRight = data;
 		try {
@@ -66,7 +89,7 @@ public class Parser {
 			return 2;
 		}
 		else if (tmpDataLeft.indexOf("print") == 0) {
-			if(tmpDataRight.indexOf("hashtable") == 0){
+			if(tmpDataRight.indexOf("hashtable") == 0) {
 				return 3;
 			}
 			else if (tmpDataRight.indexOf("blocks") == 0) {
@@ -81,17 +104,22 @@ public class Parser {
 	}
 	
 	public void ProcessSeminars(File CommandFile, WorldDataBase dataBase) {
+		/**
+		 * The most important function of the parser class, it read, 
+		 * process the files and pass it to 
+		 * world database for further processing
+		 */
 		try {		
-			Scanner Reader = new Scanner(CommandFile);
+			Scanner reader = new Scanner(CommandFile);
 			String data = "";
 			int instruction = 0;
-			if(Reader.hasNextLine()) {
-				data = Reader.nextLine().trim();
+			if (reader.hasNextLine()) {
+				data = reader.nextLine().trim();
 			}
 			while (true) {
-				instruction = GetInstruction(data);
+				instruction = getInstruction(data);
 				int line = 0;
-				int ID = -1;
+				int id = -1;
 		        String title = "";
 		        String dateTime = "";
 		        int length = -1;
@@ -100,13 +128,13 @@ public class Parser {
 		        int cost = -1;
 		        String desc = "";
 		        String[] keywordList = {};
-				while(true){
+				while (true) {
 					String tmpData = data.trim();
 					System.out.println("data is:    " + data);
-					switch(line){
+					switch (line) {
 						case 0:
 							try {
-								ID = Integer.parseInt(tmpData.split("\\s+")[1]);
+								id = Integer.parseInt(tmpData.split("\\s+")[1]);
 							}
 							catch(Exception e){
 							}
@@ -128,20 +156,21 @@ public class Parser {
 						case 4:
 							desc = data;
 							break;
-						 default:
+						default:
 					        break; 
 					}
 					line++;
-					if (Reader.hasNextLine()) {
-						data = Reader.nextLine().replaceAll("^\\s+", "");
+					if (reader.hasNextLine()) {
+						data = reader.nextLine().replaceAll("^\\s+", "");
 					}	
 					tmpData = data;
-					while (Reader.hasNextLine() && tmpData.replaceAll("\\s+", "") == "") {
-					    data = Reader.nextLine().trim();
+					while (reader.hasNextLine() && 
+					tmpData.replaceAll("\\s+", "") == "") {
+					    data = reader.nextLine().trim();
 					    tmpData = data;
 					}
-					if (Reader.hasNextLine()) {
-						if (GetInstruction(data) != 0) {
+					if (reader.hasNextLine()) {
+						if (getInstruction(data) != 0) {
 							break;
 						}
 					}
@@ -149,17 +178,21 @@ public class Parser {
 						break;
 					}
 				}
-				Seminar seminar = new Seminar(ID, title, dateTime, length, x, y, cost, keywordList, desc);
-				dataBase.processCommand(instruction, ID, seminar);
+				Seminar seminar = new Seminar(
+						id, title, dateTime, length, 
+						x, y, cost, keywordList, desc);
+				dataBase.processCommand(instruction, id, seminar);
 				System.out.println("");
-				if (!Reader.hasNextLine()) {
-					Reader.close();
-					instruction = GetInstruction(data);
+				if (!reader.hasNextLine()) {
+					reader.close();
+					instruction = getInstruction(data);
 					if (instruction != 0) {
 						System.out.println("data is:    " + data);
-						ID = Integer.parseInt(data.split("\\s+")[1]);
-						seminar = new Seminar(ID, title, dateTime, length, x, y, cost, keywordList, desc);
-						dataBase.processCommand(instruction, ID, seminar);
+						id = Integer.parseInt(data.split("\\s+")[1]);
+						seminar = new Seminar(
+								id, title, dateTime, length, 
+								x, y, cost, keywordList, desc);
+						dataBase.processCommand(instruction, id, seminar);
 					}
 					break;
 				}

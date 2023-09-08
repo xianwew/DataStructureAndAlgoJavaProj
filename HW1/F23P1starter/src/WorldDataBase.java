@@ -23,7 +23,7 @@ public class WorldDataBase {
         	break;
         case 4:
         	System.out.println("Print blocks was called!");
-        	semManager.printSemMenger();
+        	semManager.printSemManager();
         	break;
         case 5:
         	System.out.println("Delete was called!");

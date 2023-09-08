@@ -1,15 +1,3 @@
-
-/**
- * {Project Description Here}
- */
-
-/**
- * The class containing the main method.
- *
- * @author {Your Name Here}
- * @version {Put Something Here}
- */
-
 // On my honor:
 // - I have not used source code obtained from another current or
 //   former student, or any other unauthorized source, either
@@ -31,17 +19,42 @@
 
 import java.io.*;
 
+/**
+ * The semSanager is used to store the seminar objects, 
+ * or retrieve seminar objects from the memory pool.
+ * 
+ * @author Xianwei Wu/Jiren Wang
+ * @version September 2023, updated September 2023
+ * 
+ * @param args
+ *     Command line parameters
+ * @FreeList dummy: the dummy node, 
+ * or it is called the header of the list
+ * @size: the size of the memory pool.
+ * @memory pool: the place to store seminar objects.
+ */
+
 public class SemManager {
     /**
+     * The semSanager is used to store the seminar objects, 
+     * or retrieve seminar objects from the memory pool.
      * @param args
      *     Command line parameters
+     * @FreeList dummy: the dummy node, or it is 
+     * called the header of the list
+     * @size: the size of the memory pool.
+     * @memory pool: the place to store seminar objects.
      */
 	private FreeList dummy;
 	private int size;
 	private byte[] memoryPool;
-	public SemManager(){}
+	public SemManager() {}
 
-	public void initializeSemManger(int size) {
+	public void initializeSemManger (int size) {
+		/**
+	     * The initializeSemManger is the method that is called to 
+	     * initialize the memory manager.
+	     */		
 		dummy = new FreeList(-1, -1);
 		FreeList head = new FreeList(size, 0);
 		dummy.setNext(head);
@@ -50,7 +63,10 @@ public class SemManager {
 		this.memoryPool = new byte[size];
 	}
 
-	public void printSemMenger() {	
+	public void printSemManager () {	
+		/**
+	     * The printSemManager is used to print out the free blocks
+	     */	
 		FreeList curPosition = dummy.getNext();
 		if (curPosition == null) {
 			System.out.println("There are no Freeblocks in the memory pool!");
@@ -64,7 +80,11 @@ public class SemManager {
 		}
 	}
 	
-	public void search(Handle handle) {
+	public void search (Handle handle) {
+		/**
+	     * The search function search the result by a given handle,
+	     * and print the result out.
+	     */	
 		Seminar searchedRecord = new Seminar();
 		byte[] searchedRecordByte = new byte[handle.getSize()];
 		int curSearchedRecordByteIndex = 0;
@@ -83,7 +103,10 @@ public class SemManager {
 		}
 	}
 	
-	public void doubleSize() {
+	public void doubleSize () {
+		/**
+	     * The function doubles the size of the memory manager
+	     */	
 		System.out.println("doubling memory pool size!");
 		byte[] tmp = new byte[size*2];
 		for (int i = 0; i < memoryPool.length; i++) {
@@ -101,7 +124,11 @@ public class SemManager {
 		size *= 2;
 	}
 	
-	public FreeList FindSpaceAvailable(int requestedSize) {
+	public FreeList FindSpaceAvailable (int requestedSize) {
+		/**
+	     * The function tries to find if there is a position available
+	     * by a given requested size.
+	     */	
 		FreeList curPosition = dummy.getNext();
 		FreeList ReturnPtr = null;
 		int smallestGreaterThanReq = Integer.MAX_VALUE;
@@ -117,7 +144,11 @@ public class SemManager {
 		return ReturnPtr;
 	}
 	
-	private int getNearestPowerOfTwo(int requestedSize) {
+	private int getNearestPowerOfTwo (int requestedSize) {
+		/**
+	     * The function return a power of two number that is greater
+	     * than a given number.
+	     */
         if (Math.log(requestedSize) / Math.log(2) == 0) {
             return requestedSize;
         }
@@ -128,7 +159,10 @@ public class SemManager {
         return nearestPowerOfTwo;
     }
 	
-	public void splitMemoryPool(int insertPositionSize, FreeList insertPosition) {
+	public void splitMemoryPool (int insertPositionSize, FreeList insertPosition) {
+		/**
+	     * The function split the given node.
+	     */
 		FreeList next = insertPosition.getNext();
 		FreeList newInsert = new FreeList(insertPositionSize / 2, 
 				insertPosition.getIndex() + insertPositionSize / 2);
@@ -144,7 +178,13 @@ public class SemManager {
 		System.out.println("splited ptr length: " + insertPosition.getNext().getVal());	
 	}
 	
-	public Handle insert(byte[] insertData, int key) {
+	public Handle insert (byte[] insertData, int key) {
+		/**
+	     * The function inserts the data, when the memory pool deos not
+	     * have enough space, it calls doubleSize().
+	     * @return once the record is stored, a handle is returned for 
+	     * recovery purposes.
+	     */
 		Handle handle = new Handle(-1, -1, -1);
 		FreeList insertPosition = FindSpaceAvailable(insertData.length);
 		while (insertPosition == null) {
@@ -183,22 +223,11 @@ public class SemManager {
 		return handle;
 	}	
 	
-	public int getNearestPowerOfTwoSmaller(int number) {
-		if (number <= 0) {
-            return -1;
-        }
-        int powerOfTwo = 1;
-        while (powerOfTwo * 2 <= number) {
-            powerOfTwo *= 2;
-        }
-        return powerOfTwo;
-	}
-	
-//	if(searchPtr.getPrev() != null){
-//	if(searchPtr.getPrev().getIndex() <  newInsert.getIndex()) {
-//	}				
-//}
 	public boolean delete(Handle handle) {
+		/**
+	     * The function deletes a record by a given handle.
+	     * @return true if the record was deleted
+	     */
 		if (handle.getStartIndex() == -1) {
 			return false;
 		}
@@ -229,6 +258,10 @@ public class SemManager {
 	}
 	
 	public void detectMerge() {
+		/**
+	     * The function detects if any two nodes are adjacent and
+	     * need to be merge to one node 
+	     */
 		FreeList left = dummy.getNext();
 		FreeList right = left.getNext();	
 		while (right != null) {
@@ -251,8 +284,11 @@ public class SemManager {
 		}	
 	}
 
-	public static void main(String[] args) {
-	    // This is the main file for the program.
+	public static void main (String[] args) {
+		/**
+	     * The main function of the program. It firstly initializes all
+	     * the components and then calls function. 
+	     */
 	    Parser parser = new Parser();
 	    Object[] components = parser.initializeComponents(args);   
 	    SemManager semManager = new SemManager();

@@ -1,3 +1,7 @@
+/**
+ * This is a Javadoc comment for the MyHashTable class.
+ */
+
 public class MyHashTable {
     private Handle[] values;
     private int[] keys;
@@ -83,7 +87,7 @@ public class MyHashTable {
     	}
     }
     
-    public boolean search(SemManager semManager, int key) {
+    public boolean search (SemManager semManager, int key) {
     	boolean containKey = false;
     	for (int i : keys) {
     		if (i == key) {
@@ -101,7 +105,7 @@ public class MyHashTable {
     			return true;
     		}
     		else {
-    			if(values[calculateSecondHashing(key, size)].getKey() == key) {
+    			if (values[calculateSecondHashing(key, size)].getKey() == key) {
     				System.out.println("Found record with ID " + key + ":");
 	    			semManager.search(values[calculateSecondHashing(key, size)]);
 	    			return true;
