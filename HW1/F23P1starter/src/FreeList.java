@@ -68,7 +68,7 @@ public class FreeList {
     }
     /**
      * set the value of a field named Val
-     * @param Val  Redefine the new next domain, receive values
+     * @param val  Redefine the new next domain, receive values
      */
     public void setVal(int val) {
         this.val = val;
