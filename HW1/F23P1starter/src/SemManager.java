@@ -109,18 +109,17 @@ public class SemManager {
 	     * The function doubles the size of the memory manager
 	     */	
 		System.out.println("doubling memory pool size!");
-		byte[] tmp = new byte[size*2];
+		byte[] tmp = new byte[size * 2];
 		for (int i = 0; i < memoryPool.length; i++) {
 			tmp[i] = memoryPool[i];
 		}
-		FreeList newInsert = new FreeList(size, 0);
+		FreeList newInsert = new FreeList(size, size);
 		FreeList curPosition = dummy;	
 		while (curPosition != null && curPosition.getNext() != null) {
 			curPosition = curPosition.getNext();
 		}
 		curPosition.setNext(newInsert);
 		newInsert.setPrev(curPosition);	
-		newInsert.setIndex(size);
 		memoryPool = tmp;
 		size *= 2;
 	}
@@ -174,6 +173,7 @@ public class SemManager {
 		insertPosition.setVal(insertPositionSize / 2);
 		if (next != null) {
 			next.setPrev(newInsert);
+			//System.out.println("abab");
 		}
 		System.out.println("cur ptr length: " + insertPosition.getVal());	
 		System.out.println("splited ptr length: " + insertPosition.getNext().getVal());	
@@ -194,12 +194,10 @@ public class SemManager {
 		}	
 		System.out.println("insertData length: " + insertData.length);	
 		System.out.println("Memory Pool length: " + memoryPool.length);	
-		//System.out.println("insertPosition Prev Val: " + insertPosition.getPrev().getVal());
 		while(insertPosition.getVal() > getNearestPowerOfTwo(insertData.length)){
 			splitMemoryPool(insertPosition.getVal(), insertPosition);
 		}
 		FreeList prev = insertPosition.getPrev(), next = insertPosition.getNext();
-		//System.out.println("InsertPosition next val: " + next.getVal());	
 		int insertStartIndex = insertPosition.getIndex();
 		handle.setStartIndex(insertStartIndex);
 		handle.setSize(insertData.length);
@@ -215,6 +213,7 @@ public class SemManager {
 		if(next != null){
 			next.setPrev(prev);
 		}
+		//System.out.println(next.getVal());
 		System.out.println("Successfully inserted record with ID " + key);			
 		FreeList testPtr = dummy;
 		while (testPtr != null) {
