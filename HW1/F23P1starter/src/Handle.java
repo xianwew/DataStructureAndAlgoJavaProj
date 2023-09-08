@@ -1,6 +1,10 @@
 /**
- * Handle class represents a handle used to manage memory allocations.
- * It contains information about the starting index, size, and a key associated with the handle.
+ * Handle class represents a handle 
+ * used to manage memory allocations.
+ * It contains information about the starting 
+ * index, size, and a key associated with the handle.
+ * @author xianwei & jiren
+ * @version September 2023, updated September 2023
  */
 public class Handle {
     private int startIndex = -1;
@@ -10,11 +14,11 @@ public class Handle {
      * start a construction includes new object
      * with the specified start index, size, and key.
      *
-     * @param startIndex The starting index of the memory allocation.
+     * @start the start of the memory allocation 
      * @param size The size of the memory allocation.
      * @param key The key associated with the handle.
      */
-	public Handle(int start, int size, int key) {
+    public Handle(int start, int size, int key) {
 		this.startIndex = start;
 		this.size = size;
 		this.key = -1;
@@ -46,7 +50,7 @@ public class Handle {
 	/**
      * Sets the size of the memory allocation.
      *
-     * @param size The new size to set.
+     * @endIndex the end of the memory index
      */
 	public void setSize(int endIndex) {
 		this.size = endIndex;

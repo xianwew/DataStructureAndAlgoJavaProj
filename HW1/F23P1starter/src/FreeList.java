@@ -4,7 +4,7 @@
  *representing a list of currently
  *unoccupied memory blocks within the memory pool.
  * @author xianwei & jiren
- * @version July 2023, updated August 2023
+ * @version September 2023, updated September 2023
  */
 
 public class FreeList {
