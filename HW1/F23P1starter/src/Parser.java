@@ -85,9 +85,7 @@ public class Parser {
 			tmpDataLeft = data.split("\\s+")[0];
 			tmpDataRight = data.split("\\s+")[1];
 		}
-		catch (Exception e) {
-            System.out.println("data can't be split! Error occurs!");
-		}
+		catch (Exception e) {}
 		if (tmpDataLeft.indexOf("insert") == 0) {
 			return 1;
 		}
@@ -198,7 +196,10 @@ public class Parser {
 					instruction = getInstruction(data);
 					if (instruction != 0) {
 						System.out.println("data is:    " + data);
-						id = Integer.parseInt(data.split("\\s+")[1]);
+						try {
+							id = Integer.parseInt(data.split("\\s+")[1]);
+						}
+						catch (Exception e) {}
 						seminar = new Seminar(
 								id, title, dateTime, length, 
 								x, y, cost, keywordList, desc);

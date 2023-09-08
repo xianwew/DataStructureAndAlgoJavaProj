@@ -9,7 +9,7 @@ public class MyHashTable {
     private Handle[] values;
     private int[] keys;
     private int size;
-    private int LastElementIndex;
+    private int lastElementIndex;
     /**
     * Constructor for the class
     *
@@ -19,7 +19,7 @@ public class MyHashTable {
         this.values = new Handle[hashSize];
         this.keys = new int[hashSize];
         this.size = hashSize;
-        this.LastElementIndex = 0;
+        this.lastElementIndex = 0;
     }
     /**
     * Create a new Seminar object from the field data
@@ -67,13 +67,16 @@ public class MyHashTable {
 	* 
 	* @param key        input key 
 	* @param handle     input the handle used for insertion
-	* @param seminar    the seminar object to be stored
+	* @param insertArr    a array to store the handle
+	* @param ignoreLastElementIndex    a boolean to specify 
+	* if we need to change the lastElementIndex
 	*/
-	public void hashing(int key, Handle handle, Handle[] insertArr, boolean ignoreLastElementIndex) {	 	
+	public void hashing(int key, Handle handle, 
+			Handle[] insertArr, boolean ignoreLastElementIndex) {	 	
 		if (!ignoreLastElementIndex) {
-			keys[LastElementIndex] = key;
-			LastElementIndex++;	
-			System.out.println("Last Element Index: " + LastElementIndex);
+			keys[lastElementIndex] = key;
+			lastElementIndex++;	
+			System.out.println("Last Element Index: " + lastElementIndex);
 		}
 		Handle handleAtIndex;
 		int arrSize = insertArr.length;
@@ -85,7 +88,8 @@ public class MyHashTable {
 			insertArr[calculateFirstHashing(key, arrSize)] = handle;	
 		}
 		else if (insertArr[calculateSecondHashing(key, arrSize)] != null) {
-			if (insertArr[calculateSecondHashing(key, arrSize)].getStartIndex() == -1) {
+			if (insertArr[calculateSecondHashing(
+					key, arrSize)].getStartIndex() == -1) {
 				insertArr[calculateSecondHashing(key, arrSize)] = handle;	
 			}	
 			else {
@@ -104,7 +108,7 @@ public class MyHashTable {
 									+ prevValue) % arrSize;
 						}
 					}
-					else{
+					else {
 						insertArr[(calculateSecondHashing(key, arrSize)
 								+ prevValue) % arrSize] = handle;
 						break;
@@ -115,7 +119,7 @@ public class MyHashTable {
 		else if (insertArr[calculateSecondHashing(key, arrSize)] == null) {
 			insertArr[calculateSecondHashing(key, arrSize)] = handle;	
 		}
-		if (LastElementIndex > arrSize / 2 && !ignoreLastElementIndex) {
+		if (lastElementIndex > arrSize / 2 && !ignoreLastElementIndex) {
 			reHash();
 		}
 		if (!ignoreLastElementIndex) {
@@ -140,7 +144,8 @@ public class MyHashTable {
 		}
 		if (!containKey) {
 		 	try {
-		 		Handle handle = semManager.insert(seminar.serialize(), key);		
+		 		Handle handle = semManager.insert(
+		 				seminar.serialize(), key);		
 		 		hashing(key, handle, values, false);
 		 	}
 			catch (Exception e) {
@@ -209,7 +214,8 @@ public class MyHashTable {
 		for (int i = 0; i < values.length; i++) {
 			if (values[i] != null) {
 				System.out.println(i + ": " + (
-						values[i].getKey() == -1? "TOMBSTONE" : values[i].getKey()));
+						values[i].getKey() == -1? 
+								"TOMBSTONE" : values[i].getKey()));
 			}	
 			else {
 				//System.out.println(i + ": " + "TOMBSTONE");
@@ -244,7 +250,7 @@ public class MyHashTable {
 		}
 		keys = tmp;
 		if (containKey) {
-			LastElementIndex--;
+			lastElementIndex--;
 			if (values[calculateFirstHashing(key, size)].getKey() == key) {
 				success = semManager.delete(
 						values[calculateFirstHashing(key, size)]);
@@ -296,8 +302,8 @@ public class MyHashTable {
 		Handle[] tmpHandle = new Handle[size * 2];
 		int[] tmpKey = new int[size * 2];
 		
-		for(Handle i: values) {
-			if(i != null) {
+		for (Handle i: values) {
+			if (i != null) {
 				hashing(i.getKey(), i, tmpHandle, true);
 			}
 			else {
