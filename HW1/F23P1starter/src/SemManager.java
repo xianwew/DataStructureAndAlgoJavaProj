@@ -26,8 +26,6 @@ import java.io.*;
  * @author Xianwei Wu/Jiren Wang
  * @version September 2023, updated September 2023
  * 
- * @param args
- *     Command line parameters
  * @FreeList dummy: the dummy node, 
  * or it is called the header of the list
  * @size: the size of the memory pool.
@@ -35,7 +33,12 @@ import java.io.*;
  */
 
 public class SemManager {
-    /**
+	private FreeList dummy;
+	private int size;
+	private byte[] memoryPool;
+	public SemManager() {}
+	
+	/**
      * The semSanager is used to store the seminar objects, 
      * or retrieve seminar objects from the memory pool.
      * @param args
@@ -45,16 +48,14 @@ public class SemManager {
      * @size: the size of the memory pool.
      * @memory pool: the place to store seminar objects.
      */
-	private FreeList dummy;
-	private int size;
-	private byte[] memoryPool;
-	public SemManager() {}
 
+	/**
+     * The initializeSemManger is the method that is called to 
+     * initialize the memory manager.
+     */	
+	
 	public void initializeSemManger (int size) {
-		/**
-	     * The initializeSemManger is the method that is called to 
-	     * initialize the memory manager.
-	     */		
+			
 		dummy = new FreeList(-1, -1);
 		FreeList head = new FreeList(size, 0);
 		dummy.setNext(head);
@@ -296,9 +297,9 @@ public class SemManager {
 		    semManager.memoryPool = (byte[]) components[0];
 		    semManager.initializeSemManger(semManager.memoryPool.length);
 		    MyHashTable hashTable = (MyHashTable) components[1];
-		    File CommandFile = (File) components[2];        
+		    File commandFile = (File) components[2];        
 		    WorldDataBase worldDataBase = new WorldDataBase(semManager, hashTable);
-		    parser.ProcessSeminars(CommandFile, worldDataBase);
+		    parser.processSeminars(commandFile, worldDataBase);
 	    }
 	    catch (Exception e) {
             System.out.println("Error in initializing instances!");

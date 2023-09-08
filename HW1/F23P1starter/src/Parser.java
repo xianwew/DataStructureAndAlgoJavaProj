@@ -12,14 +12,17 @@ public class Parser {
  * @param i the Size of components defined by user
  */
 	private int i;
-	public Parser() {
-		/**
+	
+	/**
 		 * The input given by the user
 		 */
+	public Parser() {	
 		i = 0;
 	}
+	
 	/**
 	 * Create a method to initialize components
+	 * @param the user input arguments
 	 * @return initialize components
 	 */
 	public Object[] initializeComponents(String[] args) {
@@ -29,12 +32,14 @@ public class Parser {
 	    		i = Integer.parseInt(args[2]);
 	        }
 	        catch (Exception e) {
-	        	System.out.println("Error in creating memory pool! Please enter an integar!");
+	        	System.out.println("Error in creating memory pool!"
+	        			+ " Please enter an integar!");
 	            e.printStackTrace();
 	        }
 	        if ((i & i - 1) != 0 || i <= 0) {
 	        	System.out.println("Error in creating memory pool! "
-	        			+ "The size must be the power of 2 and greater than 0!");
+	        			+ "The size must be the power "
+	        			+ "of 2 and greater than 0!");
 	        	System.exit(0);
 	        }
 	        
@@ -68,11 +73,12 @@ public class Parser {
 		return null;
 	}
 	
-	private int getInstruction (String data) {
-		/**
-		 * Create a method to get the instruction from the input string
-		 * @return output instruction
-		 */
+	/**
+	 * Create a method to get the instruction from the input string
+	 * @param the data is one line of code of the user input file
+	 * @return output instruction
+	 */
+	private int getInstruction (String data) {	
 		String tmpDataLeft = data;
 		String tmpDataRight = data;
 		try {
@@ -103,14 +109,18 @@ public class Parser {
 		return 0;
 	}
 	
-	public void ProcessSeminars(File CommandFile, WorldDataBase dataBase) {
-		/**
-		 * The most important function of the parser class, it read, 
-		 * process the files and pass it to 
-		 * world database for further processing
-		 */
+	/**
+	 * The most important function of the parser class, it read, 
+	 * process the files and pass it to 
+	 * world database for further processing
+	 * 
+	 * @param commandFile File objected created by Parser
+	 * @param dataBase the class that acts like a bridge between 
+	 * various class, and calls functions
+	 */
+	public void processSeminars(File commandFile, WorldDataBase dataBase) {	
 		try {		
-			Scanner reader = new Scanner(CommandFile);
+			Scanner reader = new Scanner(commandFile);
 			String data = "";
 			int instruction = 0;
 			if (reader.hasNextLine()) {
@@ -136,7 +146,7 @@ public class Parser {
 							try {
 								id = Integer.parseInt(tmpData.split("\\s+")[1]);
 							}
-							catch(Exception e){
+							catch (Exception e) {
 							}
 							break;
 						case 1:
@@ -165,7 +175,7 @@ public class Parser {
 					}	
 					tmpData = data;
 					while (reader.hasNextLine() && 
-					tmpData.replaceAll("\\s+", "") == "") {
+					tmpData.replaceAll("\\s+", "").equals("")) {
 					    data = reader.nextLine().trim();
 					    tmpData = data;
 					}
