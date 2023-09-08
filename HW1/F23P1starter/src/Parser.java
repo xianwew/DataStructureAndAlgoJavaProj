@@ -14,8 +14,8 @@ public class Parser {
 	private int i;
 	
 	/**
-		 * The input given by the user
-		 */
+	 * The input given by the user
+	 */
 	public Parser() {	
 		i = 0;
 	}
