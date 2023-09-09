@@ -72,7 +72,11 @@ public class MyHashTable {
 	* if we need to change the lastElementIndex
 	*/
 	public void hashing(int key, Handle handle, 
-			Handle[] insertArr) {	 	
+			Handle[] insertArr, boolean ignoreLastElementIndex) {	 	
+		if (!ignoreLastElementIndex) {
+			keys[lastElementIndex] = key;
+			lastElementIndex++;	
+		}
 		Handle handleAtIndex;
 		int arrSize = insertArr.length;
 		handleAtIndex = insertArr[calculateFirstHashing(key, arrSize)];
@@ -113,6 +117,7 @@ public class MyHashTable {
 		else if (insertArr[calculateSecondHashing(key, arrSize)] == null) {
 			insertArr[calculateSecondHashing(key, arrSize)] = handle;	
 		}
+
 	}
 	
 	/**
@@ -132,10 +137,8 @@ public class MyHashTable {
 		if (!containKey) {
 		 	try {
 		 		Handle handle = semManager.insert(
-		 				seminar.serialize(), key);	
-		 		keys[lastElementIndex] = key;	
-		 		lastElementIndex++;	
-		 		hashing(key, handle, values);
+		 				seminar.serialize(), key);		
+		 		hashing(key, handle, values, false);
 				if (lastElementIndex > size / 2) {
 					reHash();
 				}
@@ -288,7 +291,7 @@ public class MyHashTable {
 		
 		for (Handle i: values) {
 			if (i != null) {
-				hashing(i.getKey(), i, tmpHandle);
+				hashing(i.getKey(), i, tmpHandle, true);
 			}
 		}
 		

@@ -135,7 +135,7 @@ public class MyHashTable {
 		 				seminar.serialize(), key);	
 		 		keys[lastElementIndex] = key;	
 		 		lastElementIndex++;	
-		 		hashing(key, handle, values);
+		 		hashing(key, handle, values, false);
 				if (lastElementIndex > size / 2) {
 					reHash();
 				}
@@ -288,7 +288,7 @@ public class MyHashTable {
 		
 		for (Handle i: values) {
 			if (i != null) {
-				hashing(i.getKey(), i, tmpHandle);
+				hashing(i.getKey(), i, tmpHandle, true);
 			}
 		}
 		
