@@ -7,12 +7,14 @@ public class myHashTableTest {
 	
 		MyHashTable test = new MyHashTable(1024);  	
 		assertEquals(1, test.calculateFirstHashing(1, 1024));  	
-		assertEquals(0, test.calculateFirstHashing(1, -1)); 	
+		assertEquals(0, test.calculateFirstHashing(1, -1)); 
+//		assertEquals(-1, test.calculateFirstHashing(1, -2)); 
 		assertEquals(1, test.calculateSecondHashing(1, 2));
 		assertEquals(1, test.calculateSecondHashing(2, -2));
 		assertEquals(1, test.calculateSecondHashing(-2, 2));
 		assertEquals(1, test.calculateSecondHashing(-2, -2));
 		assertEquals(1, test.calculateSecondHashing(0, -2));
+		assertEquals(-3, test.calculateSecondHashing(16, -8));
 	}
 	
 	public void testHashing() {
@@ -26,7 +28,7 @@ public class myHashTableTest {
 		assertEquals(2, test.lastElementIndex);
 		assertEquals(2, test.keys[1]);
 		assertEquals(1, test.values[2].getSize());		
-		test.reHash();
+//		test.reHash();
 //		test.hashing(10, new Handle(10, 1, 10), test.values, false);
 //		assertEquals(3, test.lastElementIndex);
 //		assertEquals(10, test.keys[2]);
