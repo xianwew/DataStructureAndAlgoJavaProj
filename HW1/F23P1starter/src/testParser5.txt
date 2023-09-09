@@ -1,0 +1,7 @@
+delete 32
+        insert 12
+
+
+
+
+print hashtable

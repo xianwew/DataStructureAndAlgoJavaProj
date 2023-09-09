@@ -1,5 +1,6 @@
 import static org.junit.Assert.*;
 
+import java.io.File;
 import java.nio.ByteBuffer;
 import student.TestCase;
 
@@ -34,6 +35,53 @@ public class ParserTest {
 		assertEquals(14,test.initializeComponents(new String[] {"java","SemManager","16","3","10"}).length);
 		assertEquals(3,test.initializeComponents(new String[] {"java","SemManager","16","16","10"}).length);
         
+		Parser test1 = new Parser();
+		SemManager semManager = new SemManager();
+		semManager.initializeSemManger(1024);
+		String[] input = new String[]{"java","SemManager","16","16","src/testParser1.txt"};
+		Object[] components = test1.initializeComponents(input);  
+		semManager.memoryPool = (byte[]) components[0];
+	    semManager.initializeSemManger(semManager.memoryPool.length);
+	    MyHashTable hashTable = (MyHashTable) components[1];
+	    File commandFile1 = (File) components[2];
+	    File commandFile2 = new File("src/testParser0.txt");
+	    File commandFile3 = new File("src/testParser2.txt");
+	    File commandFile4 = new File("src/testParser3.txt");
+	    File commandFile5 = new File("src/testParser4.txt");
+	    File commandFile6 = new File("src/testParser5.txt");
+	    File commandFile7 = new File("src/testParser6.txt");
+	    File commandFile8 = new File("src/testParser7.txt");
+		WorldDataBase worldDataBase = new WorldDataBase(semManager, hashTable);
+		test1.processSeminars(commandFile1, worldDataBase);
+		assertEquals("awdasd", test1.data);
+		test1.data = "";
+		test1.processSeminars(commandFile2, worldDataBase);
+		assertEquals("", test1.data);
+		test1.data = "";
+		test1.processSeminars(commandFile3, worldDataBase);
+		assertEquals("abcdefg", test1.data);
+		test1.data = "";
+		test1.processSeminars(commandFile4, worldDataBase);
+		assertEquals("awdasd", test1.data);
+		test1.data = "";
+		test1.processSeminars(commandFile5, worldDataBase);
+		assertEquals("insert 1", test1.data);
+		test1.data = "";
+		test1.processSeminars(commandFile6, worldDataBase);
+		assertEquals("print hashtable", test1.data);
+		test1.data = "";
+		test1.processSeminars(commandFile7, worldDataBase);
+		assertEquals("delete 1", test1.data);
+		test1.data = "";
+		test1.processSeminars(commandFile8, worldDataBase);
+		assertEquals("search 1", test1.data);
+		
+//		if(commandFile1 != null) {
+//			System.out.println("abc");
+//		}
+//		else {
+//			System.out.println("cde");
+//		}
 	}
 
 	    
