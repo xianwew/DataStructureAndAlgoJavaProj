@@ -214,18 +214,10 @@ public class MyHashTable {
 		for (int i = 0; i < values.length; i++) {
 			if (values[i] != null) {
 				System.out.println(i + ": " + (
-						values[i].getKey() == -1? 
+						values[i].getKey() == -1 ? 
 								"TOMBSTONE" : values[i].getKey()));
 			}	
-			else {
-				//System.out.println(i + ": " + "TOMBSTONE");
-			}
 		}
-	// 	for(int i = 0; i < keys.length; i++) {
-	// 		if(keys[i] != 0){
-	// 			System.out.println("key : " + keys[i]);
-	// 		}			
-	// 	}
 	}
 	
 	/**
@@ -289,7 +281,8 @@ public class MyHashTable {
 					+ "There is no record with ID " + key);
 		}
 		if (success) {
-			System.out.println("Record with ID " + key + " successfully deleted from the database");
+			System.out.println("Record with ID " + key + 
+					" successfully deleted from the database");
 		}
 		//printHashtable();
 		return success;
@@ -321,7 +314,6 @@ public class MyHashTable {
 		this.keys = tmpKey;
 		
 		System.out.println("hashTable resized to: " + size);
-		//printHashtable();	
 	}
 }
 
