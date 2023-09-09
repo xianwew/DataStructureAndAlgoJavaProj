@@ -5,15 +5,15 @@ import student.TestCase;
 
 public class ParserTest {
 
+	@SuppressWarnings("deprecation")
 	public void testInitializeComponents() {
 	
 		Parser test = new Parser();
 		String[] args = {"Java", "SemManager", "-1", "0", "0"};
-		int result = Integer.parseInt(args[2]);
-        assertEquals(42, result);
-        Object[] result0=test.initializeComponents(null);
-        //assertTrue(result0);
-        assertNull(result0);
+		//assertArrayEquals(null, test.initializeComponents(args));	
+//		assertTrue(test.initializeComponents(new String[] {"Java", "SemManager", "16", "4", "10"}[0] != null));
+		assertNull(test.initializeComponents(new String[] {"Java", "SemManager", "16", "0", "10"}));
+		assertNull(test.initializeComponents(new String[] {"Java", "SemManager", "0", "4", "10"}));
 		assertEquals(1,test.getInstruction("insert 10000"));
 		assertEquals(2,test.getInstruction("search 10000"));
 		assertEquals(3,test.getInstruction("print hashtable"));
@@ -21,8 +21,6 @@ public class ParserTest {
 		assertEquals(0,test.getInstruction("print"));
 		assertEquals(5,test.getInstruction("delete 10000"));
 		assertEquals(0,test.getInstruction(""));
-
 	}
 
-	    
 }
