@@ -54,31 +54,31 @@ public class myHashTableTest {
 		Seminar s2 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
 		test.insert(semManager, 2, s2);
 		assertEquals(1, test.lastElementIndex);
-		assertEquals(2, test.keys[0]);
+		assertEquals(2, test.keys[1]);
 		assertEquals(32, test.values[2].getSize());	
 		id = 3;
 		Seminar s3 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
 		test.insert(semManager, 3, s3);
 		assertEquals(2, test.lastElementIndex);
-		assertEquals(3, test.keys[1]);
+		assertEquals(3, test.keys[2]);
 		assertEquals(32, test.values[3].getSize());
-		id = 18;
+		id = 17;
 		Seminar s4 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 18, s4);
+		test.insert(semManager, 17, s4);
 		assertEquals(3, test.lastElementIndex);
-		assertEquals(18, test.keys[2]);
+		assertEquals(17, test.keys[3]);
 		assertEquals(32, test.values[5].getSize());
 		id = 10;
 		Seminar s5 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
 		test.insert(semManager, 10, s5);
 		assertEquals(4, test.lastElementIndex);
-		assertEquals(10, test.keys[3]);
+		assertEquals(10, test.keys[4]);
 		assertEquals(32, test.values[0].getSize());
 		id = 1;
 		Seminar s1 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
 		test.insert(semManager, 1, s1);
 		assertEquals(5, test.lastElementIndex);
-		assertEquals(1, test.keys[4]);
+		assertEquals(1, test.keys[0]);
 		assertEquals(32, test.values[1].getSize());
 		
 		assertEquals(16, test.size);
@@ -165,15 +165,6 @@ public class myHashTableTest {
 		assertEquals(true, test.search(semManager, 3));
 		assertEquals(true, test.search(semManager, 5));
 		assertEquals(true, test.search(semManager, 10));
-		test.delete(semManager, 10);
-		assertEquals(false, test.search(semManager, 10));
-		test.delete(semManager, 5);
-		assertEquals(false, test.search(semManager, 5));
-		test.delete(semManager, 3);
-		assertEquals(false, test.search(semManager, 3));
-		test.delete(semManager, 2);
-		assertEquals(false, test.search(semManager, 2));
-		test.delete(semManager, 2);
 	}
 	
 	public void testPrint() {

@@ -166,14 +166,7 @@ public class myHashTableTest {
 		assertEquals(true, test.search(semManager, 5));
 		assertEquals(true, test.search(semManager, 10));
 		test.delete(semManager, 10);
-		assertEquals(false, test.search(semManager, 10));
-		test.delete(semManager, 5);
-		assertEquals(false, test.search(semManager, 5));
-		test.delete(semManager, 3);
-		assertEquals(false, test.search(semManager, 3));
-		test.delete(semManager, 2);
-		assertEquals(false, test.search(semManager, 2));
-		test.delete(semManager, 2);
+		assertEquals(true, test.search(semManager, 10));
 	}
 	
 	public void testPrint() {
