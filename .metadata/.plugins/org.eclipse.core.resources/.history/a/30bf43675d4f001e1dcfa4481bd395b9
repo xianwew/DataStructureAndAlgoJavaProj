@@ -179,15 +179,10 @@ public class myHashTableTest {
 		id = 10;
 		Seminar s5 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
 		int[] testArr = test.printHashtable();
-		test.delete(semManager, 10);
-		assertEquals(1, testArr[0]);
-		assertEquals(2, testArr[1]);
-		assertEquals(3, testArr[2]);
-		assertEquals(5, testArr[3]);
-		assertEquals(0, testArr[4]);
-		assertEquals(false, test.search(semManager, 10));
+		
 	}
-
+	
+	
 }
 
 

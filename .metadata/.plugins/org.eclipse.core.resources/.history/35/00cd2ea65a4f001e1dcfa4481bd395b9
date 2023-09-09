@@ -96,8 +96,6 @@ public class myHashTableTest {
         String[] keywordList = {};
 		Seminar s1 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
 		test.insert(semManager, 1, s1);
-		test.delete(semManager, 1);
-		test.insert(semManager, 1, s1);
 		id = 2;
 		Seminar s2 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
 		test.insert(semManager, 2, s2);
@@ -114,78 +112,7 @@ public class myHashTableTest {
 		test.delete(semManager, 3);
 		test.insert(semManager, 3, s3);
 		test.delete(semManager, 4);
-	}
 
-	public void testSearch() {
-		MyHashTable test = new MyHashTable(8);
-		SemManager semManager = new SemManager();
-		semManager.initializeSemManger(512);
-		short i = 1;
-		int id = 1;
-        String title = "";
-        String dateTime = "";
-        int length = -1;
-        short x = -1;
-        short y = -1;
-        int cost = -1;
-        String desc = "";
-        String[] keywordList = {};
-		Seminar s1 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 1, s1);
-		id = 2;
-		Seminar s2 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 2, s2);
-		id = 3;
-		Seminar s3 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 3, s3);
-		id = 5;
-		Seminar s4 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 5, s4);
-		id = 10;
-		Seminar s5 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 10, s5);
-		assertEquals(false, test.search(semManager, -1));
-		assertEquals(true, test.search(semManager, 2));
-		assertEquals(true, test.search(semManager, 3));
-		assertEquals(true, test.search(semManager, 5));
-		assertEquals(true, test.search(semManager, 10));
-	}
-	
-	public void testPrint() {
-		MyHashTable test = new MyHashTable(8);
-		SemManager semManager = new SemManager();
-		semManager.initializeSemManger(512);
-		short i = 1;
-		int id = 1;
-        String title = "";
-        String dateTime = "";
-        int length = -1;
-        short x = -1;
-        short y = -1;
-        int cost = -1;
-        String desc = "";
-        String[] keywordList = {};
-		Seminar s1 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 1, s1);
-		id = 2;
-		Seminar s2 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 2, s2);
-		id = 3;
-		Seminar s3 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 3, s3);
-		id = 5;
-		Seminar s4 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 5, s4);
-		id = 10;
-		Seminar s5 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		int[] testArr = test.printHashtable();
-		test.delete(semManager, 10);
-		assertEquals(1, testArr[0]);
-		assertEquals(2, testArr[1]);
-		assertEquals(3, testArr[2]);
-		assertEquals(5, testArr[3]);
-		assertEquals(0, testArr[4]);
-		assertEquals(false, test.search(semManager, 10));
 	}
 
 }

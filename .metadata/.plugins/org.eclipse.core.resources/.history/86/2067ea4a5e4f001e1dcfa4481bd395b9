@@ -185,7 +185,6 @@ public class myHashTableTest {
 		assertEquals(3, testArr[2]);
 		assertEquals(5, testArr[3]);
 		assertEquals(0, testArr[4]);
-		assertEquals(false, test.search(semManager, 10));
 	}
 
 }

@@ -201,21 +201,15 @@ public class MyHashTable {
 	/**
 	* Implement the print function for the hash table.
 	*/
-	public int[] printHashtable() {
-		int[] tmp = new int[values.length];
+	public void printHashtable() {
 		System.out.println("Hashtable:");
-		int j = 0;
 		for (int i = 0; i < values.length; i++) {
 			if (values[i] != null) {
 				System.out.println(i + ": " + (
 						values[i].getKey() == -1 ? 
 								"TOMBSTONE" : values[i].getKey()));
-				
-				tmp[j] = values[i].getKey();
-				j++;
 			}	
 		}
-		return tmp;
 	}
 	
 	/**

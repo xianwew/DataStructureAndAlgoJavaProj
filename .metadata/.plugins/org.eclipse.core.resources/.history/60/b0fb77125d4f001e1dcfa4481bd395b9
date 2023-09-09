@@ -212,9 +212,9 @@ public class MyHashTable {
 								"TOMBSTONE" : values[i].getKey()));
 				
 				tmp[j] = values[i].getKey();
-				j++;
 			}	
 		}
+	
 		return tmp;
 	}
 	
