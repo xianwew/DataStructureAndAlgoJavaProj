@@ -1,0 +1,6091 @@
+<SensorData>
+<Timestamp>
+1694219987423
+</Timestamp>
+<Runtime>
+1694219987423
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220392158
+</Timestamp>
+<Runtime>
+1694220392158
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220416495
+</Timestamp>
+<Runtime>
+1694220416495
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+insert was called!
+Current ptr size: 512
+insertData length: 173
+Memory Pool length: 512
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 0
+Successfully inserted record with ID 1
+ptr val: -1
+ptr val: 256
+Last Element Index: 1
+Hashtable:
+1: 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+insert was called!
+Current ptr size: 256
+insertData length: 244
+Memory Pool length: 512
+Insert position 256
+Successfully inserted record with ID 2
+ptr val: -1
+Last Element Index: 2
+Hashtable:
+1: 1
+2: 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+insert was called!
+doubling memory pool size!
+Current ptr size: 512
+insertData length: 192
+Memory Pool length: 1024
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 512
+Successfully inserted record with ID 3
+ptr val: -1
+ptr val: 256
+Last Element Index: 3
+Error in rehashing!
+hashTable resized to: 8
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Current ptr size: 256
+insertData length: 168
+Memory Pool length: 1024
+Insert position 768
+Successfully inserted record with ID 10
+ptr val: -1
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Delete was called!
+Successfully deleted record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    search 2
+search was called!
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete was called!
+Delete FAILED -- There is no record with ID 6
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+insert was called!
+Current ptr size: 256
+doubling memory pool size!
+Current ptr size: 256
+Current ptr size: 1024
+insertData length: 260
+Memory Pool length: 2048
+InsertPosition next val: 512
+cur ptr length: 512
+splited ptr length: 512
+Insert position 1024
+Successfully inserted record with ID 2
+ptr val: -1
+ptr val: 256
+ptr val: 512
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    delete 10
+Delete was called!
+Successfully deleted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+1024: 256
+
+data is:    search 1
+search was called!
+Found record with ID 1:
+search handle start index: 0
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+search was called!
+Found record with ID 2:
+search handle start index: 1024
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+search was called!
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220416496
+</Timestamp>
+<Runtime>
+1694220416496
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220427165
+</Timestamp>
+<Runtime>
+1694220427165
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+insert was called!
+Current ptr size: 512
+insertData length: 173
+Memory Pool length: 512
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 0
+Successfully inserted record with ID 1
+ptr val: -1ptr index: -1
+ptr val: 256ptr index: 256
+Last Element Index: 1
+Hashtable:
+1: 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+insert was called!
+Current ptr size: 256
+insertData length: 244
+Memory Pool length: 512
+Insert position 256
+Successfully inserted record with ID 2
+ptr val: -1ptr index: -1
+Last Element Index: 2
+Hashtable:
+1: 1
+2: 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+insert was called!
+doubling memory pool size!
+Current ptr size: 512
+insertData length: 192
+Memory Pool length: 1024
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 512
+Successfully inserted record with ID 3
+ptr val: -1ptr index: -1
+ptr val: 256ptr index: 768
+Last Element Index: 3
+Error in rehashing!
+hashTable resized to: 8
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Current ptr size: 256
+insertData length: 168
+Memory Pool length: 1024
+Insert position 768
+Successfully inserted record with ID 10
+ptr val: -1ptr index: -1
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Delete was called!
+Successfully deleted record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    search 2
+search was called!
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete was called!
+Delete FAILED -- There is no record with ID 6
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+insert was called!
+Current ptr size: 256
+doubling memory pool size!
+Current ptr size: 256
+Current ptr size: 1024
+insertData length: 260
+Memory Pool length: 2048
+InsertPosition next val: 512
+cur ptr length: 512
+splited ptr length: 512
+Insert position 1024
+Successfully inserted record with ID 2
+ptr val: -1ptr index: -1
+ptr val: 256ptr index: 256
+ptr val: 512ptr index: 1536
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    delete 10
+Delete was called!
+Successfully deleted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+1024: 256
+
+data is:    search 1
+search was called!
+Found record with ID 1:
+search handle start index: 0
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+search was called!
+Found record with ID 2:
+search handle start index: 1024
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+search was called!
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220427166
+</Timestamp>
+<Runtime>
+1694220427166
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220632263
+</Timestamp>
+<Runtime>
+1694220632263
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220637264
+</Timestamp>
+<Runtime>
+1694220637264
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220655524
+</Timestamp>
+<Runtime>
+1694220655524
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+insert was called!
+Current ptr size: 512
+insertData length: 173
+Memory Pool length: 512
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 0
+Successfully inserted record with ID 1
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+Last Element Index: 1
+Hashtable:
+1: 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+insert was called!
+Current ptr size: 256
+insertData length: 244
+Memory Pool length: 512
+Insert position 256
+Successfully inserted record with ID 2
+ptr val: -1 ptr index: -1
+Last Element Index: 2
+Hashtable:
+1: 1
+2: 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+insert was called!
+doubling memory pool size!
+Current ptr size: 512
+insertData length: 192
+Memory Pool length: 1024
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 512
+Successfully inserted record with ID 3
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 768
+Last Element Index: 3
+Error in rehashing!
+hashTable resized to: 8
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Current ptr size: 256
+insertData length: 168
+Memory Pool length: 1024
+Insert position 768
+Successfully inserted record with ID 10
+ptr val: -1 ptr index: -1
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Delete was called!
+Successfully deleted record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    search 2
+search was called!
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete was called!
+Delete FAILED -- There is no record with ID 6
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+insert was called!
+Current ptr size: 256
+doubling memory pool size!
+Current ptr size: 256
+Current ptr size: 1024
+insertData length: 260
+Memory Pool length: 2048
+InsertPosition next val: 512
+cur ptr length: 512
+splited ptr length: 512
+Insert position 1024
+Successfully inserted record with ID 2
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+ptr val: 512 ptr index: 1536
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    delete 10
+Delete was called!
+Successfully deleted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+1024: 256
+
+data is:    search 1
+search was called!
+Found record with ID 1:
+search handle start index: 0
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+search was called!
+Found record with ID 2:
+search handle start index: 1024
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+search was called!
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220655524
+</Timestamp>
+<Runtime>
+1694220655524
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220882552
+</Timestamp>
+<Runtime>
+1694220882552
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Build
+</Value>
+</Property>
+<Property>
+<Name>
+Error
+</Name>
+<Value>
+Syntax error on token ")", delete this token
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Compile
+</Value>
+</Property>
+<Property>
+<Name>
+Success
+</Name>
+<Value>
+false
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220890567
+</Timestamp>
+<Runtime>
+1694220890567
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Build
+</Value>
+</Property>
+<Property>
+<Name>
+Error
+</Name>
+<Value>
+Syntax error on token ")", delete this token
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Compile
+</Value>
+</Property>
+<Property>
+<Name>
+Success
+</Name>
+<Value>
+false
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220890675
+</Timestamp>
+<Runtime>
+1694220890675
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Build
+</Value>
+</Property>
+<Property>
+<Name>
+Error
+</Name>
+<Value>
+Syntax error on token ")", delete this token
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Compile
+</Value>
+</Property>
+<Property>
+<Name>
+Success
+</Name>
+<Value>
+false
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220893521
+</Timestamp>
+<Runtime>
+1694220893521
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+insert was called!
+Current ptr size: 512
+insertData length: 173
+Memory Pool length: 512
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 0
+Successfully inserted record with ID 1
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+Last Element Index: 1
+Hashtable:
+1: 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+insert was called!
+Current ptr size: 256
+insertData length: 244
+Memory Pool length: 512
+Insert position 256
+Successfully inserted record with ID 2
+ptr val: -1 ptr index: -1
+Last Element Index: 2
+Hashtable:
+1: 1
+2: 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+insert was called!
+doubling memory pool size!
+Current ptr size: 512
+insertData length: 192
+Memory Pool length: 1024
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 512
+Successfully inserted record with ID 3
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 768
+Last Element Index: 3
+Error in rehashing!
+hashTable resized to: 8
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Current ptr size: 256
+insertData length: 168
+Memory Pool length: 1024
+Insert position 768
+Successfully inserted record with ID 10
+ptr val: -1 ptr index: -1
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Delete was called!
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+Successfully deleted record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    search 2
+search was called!
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete was called!
+Delete FAILED -- There is no record with ID 6
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+insert was called!
+Current ptr size: 256
+doubling memory pool size!
+Current ptr size: 256
+Current ptr size: 1024
+insertData length: 260
+Memory Pool length: 2048
+InsertPosition next val: 512
+cur ptr length: 512
+splited ptr length: 512
+Insert position 1024
+Successfully inserted record with ID 2
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+ptr val: 512 ptr index: 1536
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    delete 10
+Delete was called!
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+ptr val: 256 ptr index: 768
+ptr val: 512 ptr index: 1536
+Successfully deleted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+1024: 256
+
+data is:    search 1
+search was called!
+Found record with ID 1:
+search handle start index: 0
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+search was called!
+Found record with ID 2:
+search handle start index: 1024
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+search was called!
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220893521
+</Timestamp>
+<Runtime>
+1694220893521
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220894806
+</Timestamp>
+<Runtime>
+1694220894806
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+insert was called!
+Current ptr size: 512
+insertData length: 173
+Memory Pool length: 512
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 0
+Successfully inserted record with ID 1
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+Last Element Index: 1
+Hashtable:
+1: 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+insert was called!
+Current ptr size: 256
+insertData length: 244
+Memory Pool length: 512
+Insert position 256
+Successfully inserted record with ID 2
+ptr val: -1 ptr index: -1
+Last Element Index: 2
+Hashtable:
+1: 1
+2: 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+insert was called!
+doubling memory pool size!
+Current ptr size: 512
+insertData length: 192
+Memory Pool length: 1024
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 512
+Successfully inserted record with ID 3
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 768
+Last Element Index: 3
+Error in rehashing!
+hashTable resized to: 8
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Current ptr size: 256
+insertData length: 168
+Memory Pool length: 1024
+Insert position 768
+Successfully inserted record with ID 10
+ptr val: -1 ptr index: -1
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Delete was called!
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+Successfully deleted record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    search 2
+search was called!
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete was called!
+Delete FAILED -- There is no record with ID 6
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+insert was called!
+Current ptr size: 256
+doubling memory pool size!
+Current ptr size: 256
+Current ptr size: 1024
+insertData length: 260
+Memory Pool length: 2048
+InsertPosition next val: 512
+cur ptr length: 512
+splited ptr length: 512
+Insert position 1024
+Successfully inserted record with ID 2
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+ptr val: 512 ptr index: 1536
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    delete 10
+Delete was called!
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+ptr val: 256 ptr index: 768
+ptr val: 512 ptr index: 1536
+Successfully deleted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+1024: 256
+
+data is:    search 1
+search was called!
+Found record with ID 1:
+search handle start index: 0
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+search was called!
+Found record with ID 2:
+search handle start index: 1024
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+search was called!
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220899688
+</Timestamp>
+<Runtime>
+1694220899688
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Build
+</Value>
+</Property>
+<Property>
+<Name>
+Error
+</Name>
+<Value>
+Syntax error on token ")", delete this token
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Compile
+</Value>
+</Property>
+<Property>
+<Name>
+Success
+</Name>
+<Value>
+false
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694220903146
+</Timestamp>
+<Runtime>
+1694220903146
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221129270
+</Timestamp>
+<Runtime>
+1694221129270
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+insert was called!
+Current ptr size: 512
+insertData length: 173
+Memory Pool length: 512
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 0
+Successfully inserted record with ID 1
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+Last Element Index: 1
+Hashtable:
+1: 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+insert was called!
+Current ptr size: 256
+insertData length: 244
+Memory Pool length: 512
+Insert position 256
+Successfully inserted record with ID 2
+ptr val: -1 ptr index: -1
+Last Element Index: 2
+Hashtable:
+1: 1
+2: 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+insert was called!
+doubling memory pool size!
+Current ptr size: 512
+insertData length: 192
+Memory Pool length: 1024
+InsertPosition next val: 256
+cur ptr length: 256
+splited ptr length: 256
+Insert position 512
+Successfully inserted record with ID 3
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 768
+Last Element Index: 3
+Error in rehashing!
+hashTable resized to: 8
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Current ptr size: 256
+insertData length: 168
+Memory Pool length: 1024
+Insert position 768
+Successfully inserted record with ID 10
+ptr val: -1 ptr index: -1
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Delete was called!
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+Successfully deleted record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    search 2
+search was called!
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete was called!
+Delete FAILED -- There is no record with ID 6
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+insert was called!
+Current ptr size: 256
+doubling memory pool size!
+Current ptr size: 256
+Current ptr size: 1024
+insertData length: 260
+Memory Pool length: 2048
+InsertPosition next val: 512
+cur ptr length: 512
+splited ptr length: 512
+Insert position 1024
+Successfully inserted record with ID 2
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+ptr val: 512 ptr index: 1536
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    delete 10
+Delete was called!
+ptr val: -1 ptr index: -1
+ptr val: 256 ptr index: 256
+ptr val: 256 ptr index: 768
+ptr val: 512 ptr index: 1536
+Successfully deleted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+
+data is:    search 1
+search was called!
+Found record with ID 1:
+search handle start index: 0
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+search was called!
+Found record with ID 2:
+search handle start index: 1024
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+search was called!
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221129270
+</Timestamp>
+<Runtime>
+1694221129270
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221157439
+</Timestamp>
+<Runtime>
+1694221157439
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221182442
+</Timestamp>
+<Runtime>
+1694221182442
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221193043
+</Timestamp>
+<Runtime>
+1694221193043
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+insert was called!
+InsertPosition next val: 256
+Successfully inserted record with ID 1
+Last Element Index: 1
+Hashtable:
+1: 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+insert was called!
+Successfully inserted record with ID 2
+Last Element Index: 2
+Hashtable:
+1: 1
+2: 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+insert was called!
+doubling memory pool size!
+InsertPosition next val: 256
+Successfully inserted record with ID 3
+Last Element Index: 3
+Error in rehashing!
+hashTable resized to: 8
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+insert was called!
+Successfully inserted record with ID 10
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Delete was called!
+Successfully deleted record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    search 2
+search was called!
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete was called!
+Delete FAILED -- There is no record with ID 6
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+insert was called!
+doubling memory pool size!
+InsertPosition next val: 512
+Successfully inserted record with ID 2
+Last Element Index: 4
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    delete 10
+Delete was called!
+Successfully deleted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print hashtable
+Print Hashtable was called!
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Print blocks was called!
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+
+data is:    search 1
+search was called!
+Found record with ID 1:
+search handle start index: 0
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+search was called!
+Found record with ID 2:
+search handle start index: 1024
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+search was called!
+Found record with ID 3:
+search handle start index: 512
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+search was called!
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221193043
+</Timestamp>
+<Runtime>
+1694221193043
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221207445
+</Timestamp>
+<Runtime>
+1694221207445
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221230722
+</Timestamp>
+<Runtime>
+1694221230722
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Successfully inserted record with ID 1
+Hashtable:
+1: 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+Successfully inserted record with ID 2
+Hashtable:
+1: 1
+2: 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+doubling memory pool size!
+Successfully inserted record with ID 3
+Error in rehashing!
+hashTable resized to: 8
+Hashtable:
+1: 1
+2: 2
+3: 3
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Successfully inserted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Successfully deleted record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    search 2
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete FAILED -- There is no record with ID 6
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+doubling memory pool size!
+Successfully inserted record with ID 2
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    delete 10
+Successfully deleted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+
+data is:    search 1
+Found record with ID 1:
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+Found record with ID 2:
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221230722
+</Timestamp>
+<Runtime>
+1694221230722
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221282453
+</Timestamp>
+<Runtime>
+1694221282453
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221322458
+</Timestamp>
+<Runtime>
+1694221322458
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221380195
+</Timestamp>
+<Runtime>
+1694221380195
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Successfully inserted record with ID 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+Successfully inserted record with ID 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+doubling memory pool size!
+Successfully inserted record with ID 3
+Error in rehashing!
+hashTable resized to: 8
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Successfully inserted record with ID 10
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Successfully deleted record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    search 2
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete FAILED -- There is no record with ID 6
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+doubling memory pool size!
+Successfully inserted record with ID 2
+
+data is:    delete 10
+Successfully deleted record with ID 10
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+
+data is:    search 1
+Found record with ID 1:
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+Found record with ID 2:
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221380195
+</Timestamp>
+<Runtime>
+1694221380195
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221429387
+</Timestamp>
+<Runtime>
+1694221429387
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Successfully inserted record with ID 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+Successfully inserted record with ID 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+doubling memory pool size!
+Successfully inserted record with ID 3
+hashTable resized to: 8
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Successfully inserted record with ID 10
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Record with ID 2 successfully deleted from the database
+
+data is:    search 2
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete FAILED -- There is no record with ID 6
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+doubling memory pool size!
+Successfully inserted record with ID 2
+
+data is:    delete 10
+Record with ID 10 successfully deleted from the database
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+
+data is:    search 1
+Found record with ID 1:
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+
+data is:    search 2
+Found record with ID 2:
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    search 10
+Search FAILED -- There is no record with ID 10
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221429387
+</Timestamp>
+<Runtime>
+1694221429387
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221938989
+</Timestamp>
+<Runtime>
+1694221938989
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Successfully inserted record with ID 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+Successfully inserted record with ID 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+doubling memory pool size!
+Successfully inserted record with ID 3
+hashTable resized to: 8
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Successfully inserted record with ID 10
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Record with ID 2 successfully deleted from the database
+
+data is:    search 2
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete FAILED -- There is no record with ID 6
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+doubling memory pool size!
+Successfully inserted record with ID 2
+
+data is:    delete 10
+Record with ID 10 successfully deleted from the database
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694221938989
+</Timestamp>
+<Runtime>
+1694221938989
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222067696
+</Timestamp>
+<Runtime>
+1694222067696
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222071363
+</Timestamp>
+<Runtime>
+1694222071363
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+ParserTest
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+TestCodeEdit
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+CommitHash
+</Name>
+<Value>
+e0cab84e08a859e9833062835931d2cc6d958e97
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+188
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Save
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+file
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222072697
+</Timestamp>
+<Runtime>
+1694222072697
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222078374
+</Timestamp>
+<Runtime>
+1694222078374
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Successfully inserted record with ID 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+Successfully inserted record with ID 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+doubling memory pool size!
+Successfully inserted record with ID 3
+hashTable resized to: 8
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Successfully inserted record with ID 10
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Record with ID 2 successfully deleted from the database
+
+data is:    search 2
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete FAILED -- There is no record with ID 6
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+doubling memory pool size!
+Successfully inserted record with ID 2
+
+data is:    delete 10
+Record with ID 10 successfully deleted from the database
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222078374
+</Timestamp>
+<Runtime>
+1694222078374
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222407725
+</Timestamp>
+<Runtime>
+1694222407725
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222432727
+</Timestamp>
+<Runtime>
+1694222432727
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222437727
+</Timestamp>
+<Runtime>
+1694222437727
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Handle.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222447728
+</Timestamp>
+<Runtime>
+1694222447728
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222452729
+</Timestamp>
+<Runtime>
+1694222452729
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222457729
+</Timestamp>
+<Runtime>
+1694222457729
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222487732
+</Timestamp>
+<Runtime>
+1694222487732
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222492732
+</Timestamp>
+<Runtime>
+1694222492732
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222497732
+</Timestamp>
+<Runtime>
+1694222497732
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222506648
+</Timestamp>
+<Runtime>
+1694222506648
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+ParserTest
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+188
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+StateChange
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222507230
+</Timestamp>
+<Runtime>
+1694222507230
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Add
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+ProgramUnit
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+import org.junit.Assert.*
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+Import
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222509706
+</Timestamp>
+<Runtime>
+1694222509706
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Assertions
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+ParserTest
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+TestCodeEdit
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+CommitHash
+</Name>
+<Value>
+2f5380c011ad23bd04e66e7f7908e659375f2a6a
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+164
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Methods
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Save
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+file
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222536650
+</Timestamp>
+<Runtime>
+1694222536650
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Assertions
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+ParserTest
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+164
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Methods
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+StateChange
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222716652
+</Timestamp>
+<Runtime>
+1694222716652
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Assertions
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+ParserTest
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+180
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Methods
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+StateChange
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222727439
+</Timestamp>
+<Runtime>
+1694222727439
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Add
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+ProgramUnit
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+String
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+Field
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222746652
+</Timestamp>
+<Runtime>
+1694222746652
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Assertions
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+ParserTest
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+195
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Methods
+</Name>
+<Value>
+1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+StateChange
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222757255
+</Timestamp>
+<Runtime>
+1694222757255
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Successfully inserted record with ID 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+Successfully inserted record with ID 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+doubling memory pool size!
+Successfully inserted record with ID 3
+hashTable resized to: 8
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Successfully inserted record with ID 10
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Record with ID 2 successfully deleted from the database
+
+data is:    search 2
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete FAILED -- There is no record with ID 6
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+doubling memory pool size!
+Successfully inserted record with ID 2
+
+data is:    delete 10
+Record with ID 10 successfully deleted from the database
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222757256
+</Timestamp>
+<Runtime>
+1694222757256
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222758118
+</Timestamp>
+<Runtime>
+1694222758118
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/JunitTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Successfully inserted record with ID 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+Successfully inserted record with ID 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+doubling memory pool size!
+Successfully inserted record with ID 3
+hashTable resized to: 8
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Successfully inserted record with ID 10
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Record with ID 2 successfully deleted from the database
+
+data is:    search 2
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete FAILED -- There is no record with ID 6
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+doubling memory pool size!
+Successfully inserted record with ID 2
+
+data is:    delete 10
+Record with ID 10 successfully deleted from the database
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222762736
+</Timestamp>
+<Runtime>
+1694222762736
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+ParserTest
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+TestCodeEdit
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+CommitHash
+</Name>
+<Value>
+22aadaa23a506879e926ab0cf744f96f5d200c5d
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+219
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Save
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+file
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694222776651
+</Timestamp>
+<Runtime>
+1694222776651
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+ParserTest
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+0
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+184
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+StateChange
+</Value>
+</Property>
+</Properties>
+</SensorData>
