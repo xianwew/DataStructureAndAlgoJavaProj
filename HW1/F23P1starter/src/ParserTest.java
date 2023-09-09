@@ -51,6 +51,7 @@ public class ParserTest {
 	    File commandFile6 = new File("src/testParser5.txt");
 	    File commandFile7 = new File("src/testParser6.txt");
 	    File commandFile8 = new File("src/testParser7.txt");
+	    File commandFile9 = new File("src/testParser8.txt");
 		WorldDataBase worldDataBase = new WorldDataBase(semManager, hashTable);
 		test1.processSeminars(commandFile1, worldDataBase);
 		assertEquals("awdasd", test1.data);
@@ -68,13 +69,17 @@ public class ParserTest {
 		assertEquals("insert 1", test1.data);
 		test1.data = "";
 		test1.processSeminars(commandFile6, worldDataBase);
-		assertEquals("print hashtable", test1.data);
+		assertEquals("sadawefgaw", test1.data);
 		test1.data = "";
 		test1.processSeminars(commandFile7, worldDataBase);
 		assertEquals("delete 1", test1.data);
 		test1.data = "";
 		test1.processSeminars(commandFile8, worldDataBase);
 		assertEquals("search 1", test1.data);
+		test1.data = "";
+		test1.processSeminars(commandFile9, worldDataBase);
+		assertEquals("0610051600 90 10 10 awd", test1.data);
+		
 		
 //		if(commandFile1 != null) {
 //			System.out.println("abc");

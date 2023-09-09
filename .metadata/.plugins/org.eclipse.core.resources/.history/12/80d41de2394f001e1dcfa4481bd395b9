@@ -1,0 +1,40 @@
+import static org.junit.Assert.*;
+import student.TestCase;
+
+public class myHashTableTest {
+
+	public void testHashingCalculation() {
+	
+		MyHashTable test = new MyHashTable(1024);  	
+		assertEquals(1, test.calculateFirstHashing(1, 1024));  	
+		assertEquals(0, test.calculateFirstHashing(1, -1)); 	
+		assertEquals(1, test.calculateSecondHashing(1, 2));
+		assertEquals(1, test.calculateSecondHashing(2, -2));
+		assertEquals(1, test.calculateSecondHashing(-2, 2));
+		assertEquals(1, test.calculateSecondHashing(-2, -2));
+		assertEquals(1, test.calculateSecondHashing(0, -2));
+		assertEquals(1, test.calculateSecondHashing(0, -2));
+	}
+	
+	public void testHashing() {
+		Handle handle = new Handle(1, 1, 1);
+		MyHashTable test = new MyHashTable(1024);
+		test.hashing(1, new Handle(1, 1, 1), test.values, false);
+		assertEquals(1, test.lastElementIndex);
+		assertEquals(1, test.keys[0]);
+		assertEquals(1, test.keys[0]);
+		
+	}
+
+	public void testInsert() {
+//		Handle handle = new Handle(-1, -1, -1);
+//		MyHashTable test = new MyHashTable(1024);
+//		Handle[] insertArr = new Handle[256];
+//		assertTrue(test.hashing(1, handle, insertArr, false));
+//		assertEquals(1, test.calculateSecondHashing(1, 2));
+//		assertEquals(1, test.calculateSecondHashing(1, 2));
+	}
+
+}
+
+

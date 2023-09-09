@@ -69,7 +69,7 @@ public class Parser {
 	        objects[2] = commandFile;
 	        return objects;
 		}
-		 return new String[16];
+		return new String[16];
 	}
 	
 	/**
