@@ -1859,3 +1859,26 @@ java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.webcat.eclipse.projectlink 4 0 2023-09-08 23:24:46.757
+!MESSAGE null Operation not supported in JLS2 AST
+!STACK 0
+java.lang.UnsupportedOperationException: Operation not supported in JLS2 AST
+	at org.eclipse.jdt.core.dom.ASTNode.unsupportedIn2(ASTNode.java:2163)
+	at org.eclipse.jdt.core.dom.BodyDeclaration.modifiers(BodyDeclaration.java:262)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.isJUnit4Test(JavaStatementMeter.java:63)
+	at org.webcat.eclipse.deveventtracker.addon.JavaStatementMeter.visit(JavaStatementMeter.java:92)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:653)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3254)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3325)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:490)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3254)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3325)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:3254)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.measureJavaFile(EclipseSensor.java:624)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.computeFileMetrics(EclipseSensor.java:578)
+	at org.webcat.eclipse.deveventtracker.EclipseSensor.processStateChangeActivity(EclipseSensor.java:508)
+	at org.webcat.eclipse.deveventtracker.StateChangeTimerTask.run(StateChangeTimerTask.java:25)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
