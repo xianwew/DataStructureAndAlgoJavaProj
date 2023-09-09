@@ -76,7 +76,6 @@ public class MyHashTable {
 		if (!ignoreLastElementIndex) {
 			keys[lastElementIndex] = key;
 			lastElementIndex++;	
-			//System.out.println("Last Element Index: " + lastElementIndex);
 		}
 		Handle handleAtIndex;
 		int arrSize = insertArr.length;
@@ -121,11 +120,7 @@ public class MyHashTable {
 		}
 		if (lastElementIndex > arrSize / 2 && !ignoreLastElementIndex) {
 			reHash();
-		}
-//		if (!ignoreLastElementIndex) {
-//			printHashtable();	
-//		}
-		
+		}	
 	}
 	
 	/**
@@ -284,7 +279,6 @@ public class MyHashTable {
 			System.out.println("Record with ID " + key + 
 					" successfully deleted from the database");
 		}
-		//printHashtable();
 		return success;
 	}
 	
@@ -298,9 +292,6 @@ public class MyHashTable {
 		for (Handle i: values) {
 			if (i != null) {
 				hashing(i.getKey(), i, tmpHandle, true);
-			}
-			else {
-				//System.out.println("Error in rehashing!");
 			}
 		}
 		

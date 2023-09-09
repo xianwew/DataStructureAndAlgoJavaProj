@@ -89,7 +89,6 @@ public class SemManager {
 		Seminar searchedRecord = new Seminar();
 		byte[] searchedRecordByte = new byte[handle.getSize()];
 		int curSearchedRecordByteIndex = 0;
-		//System.out.println("search handle start index: " + handle.getStartIndex());
 		for (int i = handle.getStartIndex(); i < handle.getStartIndex() + handle.getSize(); i++) {
 			searchedRecordByte[curSearchedRecordByteIndex] = memoryPool[i];
 			curSearchedRecordByteIndex++;
@@ -138,7 +137,6 @@ public class SemManager {
 				smallestGreaterThanReq = curPosition.getVal();
 				ReturnPtr = curPosition;
 			}
-			//System.out.println("Current ptr size: " + curPosition.getVal());	
 			curPosition = curPosition.getNext();
 		}
 		return ReturnPtr;
@@ -168,15 +166,11 @@ public class SemManager {
 				insertPosition.getIndex() + insertPositionSize / 2);
 		newInsert.setPrev(insertPosition);
 		newInsert.setNext(next);
-		insertPosition.setNext(newInsert);
-		//System.out.println("InsertPosition next val: " + insertPosition.getNext().getVal());	
+		insertPosition.setNext(newInsert);	
 		insertPosition.setVal(insertPositionSize / 2);
 		if (next != null) {
 			next.setPrev(newInsert);
-			//System.out.println("abab");
 		}
-		//System.out.println("cur ptr length: " + insertPosition.getVal());	
-		//System.out.println("splited ptr length: " + insertPosition.getNext().getVal());	
 	}
 	
 	public Handle insert (byte[] insertData, int key) {
@@ -191,9 +185,7 @@ public class SemManager {
 		while (insertPosition == null) {
 			doubleSize();	
 			insertPosition = FindSpaceAvailable(insertData.length);
-		}	
-		//System.out.println("insertData length: " + insertData.length);	
-		//System.out.println("Memory Pool length: " + memoryPool.length);	
+		}		
 		while(insertPosition.getVal() > getNearestPowerOfTwo(insertData.length)){
 			splitMemoryPool(insertPosition.getVal(), insertPosition);
 		}
@@ -205,21 +197,14 @@ public class SemManager {
 		for(byte i : insertData){
 			memoryPool[insertStartIndex] = i;
 			insertStartIndex++;
-		}
-		//System.out.println("Insert position " + insertPosition.getIndex());	
+		}	
 		insertPosition.setNext(null);
 		insertPosition.setPrev(null);
 		prev.setNext(next);
 		if(next != null){
 			next.setPrev(prev);
 		}
-		//System.out.println(next.getVal());
 		System.out.println("Successfully inserted record with ID " + key);			
-//		FreeList testPtr = dummy;
-//		while (testPtr != null) {
-//			System.out.println("ptr val: " + testPtr.getVal() + " ptr index: " + testPtr.getIndex());	
-//			testPtr = testPtr.getNext();
-//		}
 		return handle;
 	}	
 	
