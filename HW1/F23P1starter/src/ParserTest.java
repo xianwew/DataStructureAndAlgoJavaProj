@@ -10,7 +10,7 @@ public class ParserTest {
 		Parser test = new Parser();
 		String[] args = {"Java", "SemManager", "-1", "0", "0"};
 		int result = Integer.parseInt(args[2]);
-        assertEquals(42, result);
+        assertEquals(-1, result);
         Object[] result0=test.initializeComponents(null);
         //assertTrue(result0);
         assertNull(result0);
