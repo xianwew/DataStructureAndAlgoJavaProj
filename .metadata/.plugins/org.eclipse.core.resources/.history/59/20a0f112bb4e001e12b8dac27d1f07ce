@@ -1,0 +1,45 @@
+import static org.junit.Assert.assertTrue;
+import student.TestCase;
+public class myHashTableTest {
+
+    private MyHashTable hashTable;
+    private Handle[] insertArr;
+    
+    void setUp() {
+    	hashTable = new MyHashTable(1024);
+        insertArr = new Handle[50];
+    }
+
+    void testHashingWithIgnoreLastElementIndex() {
+        int key = 123;
+        Handle handle = new Handle(-1, -1, -1);
+        boolean ignoreLastElementIndex = true;
+
+        boolean result = hashTable.hashing(key, handle, insertArr, ignoreLastElementIndex);
+
+        assertTrue(result);
+    }
+
+    void testHashingWithoutIgnoreLastElementIndex() {
+        int key = 123;
+        Handle handle = new Handle(-1, -1, -1);
+        boolean ignoreLastElementIndex = false;
+        boolean result = hashTable.hashing(key, handle, insertArr, ignoreLastElementIndex);
+        assertTrue(result);
+    }
+
+    void testHashingWithCollision() {
+        assertTrue(hashTable.hashing(123, new Handle(-1, -1, -1), insertArr, false));
+        assertTrue(hashTable.hashing(456, new Handle(-1, -1, -1), insertArr, false));
+        assertTrue(hashTable.hashing(123, new Handle(-1, -1, -1), insertArr, true));
+        assertTrue(hashTable.hashing(456, new Handle(-1, -1, -1), insertArr, true));
+    }
+
+    void testReHash() {
+        int arrSize = insertArr.length;
+        for (int i = 0; i < arrSize / 2; i++) {
+            assertTrue(hashTable.hashing(i, new Handle(-1, -1, -1), insertArr, false));
+        }
+        assertTrue(hashTable.hashing(arrSize / 2, new Handle(-1, -1, -1), insertArr, false));
+    }
+}

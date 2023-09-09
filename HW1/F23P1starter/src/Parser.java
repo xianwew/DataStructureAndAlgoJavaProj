@@ -40,7 +40,7 @@ public class Parser {
 	        	System.out.println("Error in creating memory pool! "
 	        			+ "The size must be the power "
 	        			+ "of 2 and greater than 0!");
-	        	System.exit(0);
+	        	return null;
 	        }
 	        
 	        try {
@@ -55,7 +55,7 @@ public class Parser {
 	        	System.out.println("Error in creating hashTable! "
 	        			+ "The size must be the power "
 	        			+ "of 2 and greater than 0!");
-	        	System.exit(0);
+	        	return null;
 	        }
 	
 	        try {

@@ -1,16 +1,15 @@
 import static org.junit.Assert.*;
 
-import org.junit.Test;
+import java.nio.ByteBuffer;
+import student.TestCase;
 
 public class ParserTest {
 
-	@Test
-	public void test() {
+	public void testInitializeComponents() {
 	
 		Parser test = new Parser();
-		String[] args = new String[5];
-		assertEquals(null,test.initializeComponents(null));
-		
+		String[] args = {"Java", "SemManager", "-1", "0", "0"};
+		assertEquals(null, test.initializeComponents(args));
 	}
 
 }

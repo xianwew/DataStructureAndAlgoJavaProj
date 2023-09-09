@@ -81,15 +81,15 @@ public class MyHashTable {
 		int arrSize = insertArr.length;
 		handleAtIndex = insertArr[calculateFirstHashing(key, arrSize)];
 		if (handleAtIndex == null) {
-			insertArr[calculateFirstHashing(key, arrSize)] = handle;	
+			insertArr[calculateFirstHashing(key, arrSize)] = handle;
 		}
 		else if (handleAtIndex != null && handleAtIndex.getStartIndex() == -1) {
-			insertArr[calculateFirstHashing(key, arrSize)] = handle;	
+			insertArr[calculateFirstHashing(key, arrSize)] = handle;
 		}
 		else if (insertArr[calculateSecondHashing(key, arrSize)] != null) {
 			if (insertArr[calculateSecondHashing(
 					key, arrSize)].getStartIndex() == -1) {
-				insertArr[calculateSecondHashing(key, arrSize)] = handle;	
+				insertArr[calculateSecondHashing(key, arrSize)] = handle;
 			}	
 			else {
 				int prevValue = calculateFirstHashing(key, arrSize);
@@ -100,7 +100,6 @@ public class MyHashTable {
 								prevValue) % arrSize].getStartIndex() == -1) {
 							insertArr[(calculateSecondHashing(key, arrSize)
 							+ prevValue) % arrSize] = handle;
-							break;
 						}
 						else {
 							prevValue = (calculateSecondHashing(key, arrSize)
@@ -120,7 +119,7 @@ public class MyHashTable {
 		}
 		if (lastElementIndex > arrSize / 2 && !ignoreLastElementIndex) {
 			reHash();
-		}	
+		}
 	}
 	
 	/**
