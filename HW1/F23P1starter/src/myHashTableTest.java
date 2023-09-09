@@ -8,7 +8,6 @@ public class myHashTableTest {
 		MyHashTable test = new MyHashTable(1024);  	
 		assertEquals(1, test.calculateFirstHashing(1, 1024));  	
 		assertEquals(0, test.calculateFirstHashing(1, -1)); 
-//		assertEquals(-1, test.calculateFirstHashing(1, -2)); 
 		assertEquals(1, test.calculateSecondHashing(1, 2));
 		assertEquals(1, test.calculateSecondHashing(2, -2));
 		assertEquals(1, test.calculateSecondHashing(-2, 2));
@@ -19,7 +18,7 @@ public class myHashTableTest {
 	
 	public void testHashing() {
 		Handle handle = new Handle(1, 1, 1);
-		MyHashTable test = new MyHashTable(4);
+		MyHashTable test = new MyHashTable(8);
 		test.hashing(1, new Handle(1, 1, 1), test.values, false);
 		assertEquals(1, test.lastElementIndex);
 		assertEquals(1, test.keys[0]);
@@ -27,16 +26,20 @@ public class myHashTableTest {
 		test.hashing(2, new Handle(2, 1, 2), test.values, false);
 		assertEquals(2, test.lastElementIndex);
 		assertEquals(2, test.keys[1]);
-		assertEquals(1, test.values[2].getSize());		
-//		test.reHash();
-//		test.hashing(10, new Handle(10, 1, 10), test.values, false);
-//		assertEquals(3, test.lastElementIndex);
-//		assertEquals(10, test.keys[2]);
-//		assertEquals(1, test.values[5].getSize());
-//		test.hashing(5, new Handle(5, 1, 5), test.values, false);
-//		assertEquals(4, test.lastElementIndex);
-//		assertEquals(5, test.keys[3]);
-//		assertEquals(1, test.values[6].getSize());
+		assertEquals(1, test.values[2].getSize());	
+		test.hashing(3, new Handle(3, 1, 3), test.values, false);
+		assertEquals(3, test.lastElementIndex);
+		assertEquals(3, test.keys[2]);
+		assertEquals(1, test.values[3].getSize());
+		test.hashing(5, new Handle(4, 1, 5), test.values, false);
+		assertEquals(4, test.lastElementIndex);
+		assertEquals(5, test.keys[3]);
+		assertEquals(1, test.values[5].getSize());
+		test.hashing(10, new Handle(5, 1, 10), test.values, false);
+		assertEquals(5, test.lastElementIndex);
+		assertEquals(10, test.keys[4]);
+		assertEquals(1, test.values[10].getSize());
+
 		
 	}
 
