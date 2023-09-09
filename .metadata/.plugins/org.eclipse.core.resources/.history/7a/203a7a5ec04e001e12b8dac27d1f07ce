@@ -78,7 +78,7 @@ public class Parser {
 	 * @param the data is one line of code of the user input file
 	 * @return output instruction
 	 */
-	public int getInstruction (String data) {	
+	private int getInstruction (String data) {	
 		String tmpDataLeft = data;
 		String tmpDataRight = data;
 		try {
