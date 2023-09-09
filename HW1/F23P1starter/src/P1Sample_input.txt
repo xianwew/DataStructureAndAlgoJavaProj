@@ -54,8 +54,3 @@ Bioinformatics computation_biology Biology Computer_Science VT Virginia_Tech
 print hashtable   
   print blocks
 
-search 1
-search 2
-search 3
-search 10
-
