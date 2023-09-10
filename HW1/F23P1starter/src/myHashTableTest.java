@@ -39,7 +39,7 @@ public class myHashTableTest {
 	public void testInsert() {
 		MyHashTable test = new MyHashTable(8);
 		SemManager semManager = new SemManager();
-		semManager.initializeSemManger(512);
+		semManager.initializeSemManger(32);
 		short i = 1;
 		int id = 1;
         String title = "";
@@ -50,47 +50,34 @@ public class myHashTableTest {
         int cost = -1;
         String desc = "";
         String[] keywordList = {};
-		id = 2;
-		Seminar s2 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 2, s2);
-		assertEquals(1, test.lastElementIndex);
-		assertEquals(2, test.keys[0]);
-		assertEquals(32, test.values[2].getSize());	
-		id = 3;
-		Seminar s3 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 3, s3);
-		assertEquals(2, test.lastElementIndex);
-		assertEquals(3, test.keys[1]);
-		assertEquals(32, test.values[3].getSize());
-		id = 18;
-		Seminar s4 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 18, s4);
-		assertEquals(3, test.lastElementIndex);
-		assertEquals(18, test.keys[2]);
-		assertEquals(32, test.values[5].getSize());
-		id = 10;
-		Seminar s5 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 10, s5);
-		assertEquals(4, test.lastElementIndex);
-		assertEquals(10, test.keys[3]);
-		assertEquals(32, test.values[0].getSize());
-		id = 1;
-		Seminar s1 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 1, s1);
-		assertEquals(5, test.lastElementIndex);
-		assertEquals(1, test.keys[4]);
-		assertEquals(32, test.values[1].getSize());
-		
-		assertEquals(16, test.size);
-		assertEquals(16, test.keys.length);
-		assertEquals(16, test.values.length);
-		test.insert(semManager, 10, s5);
+        for(int k= 1; k <= 100; k++) {
+    		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
+    		test.insert(semManager, k, s);
+    		assertEquals(k, test.lastElementIndex);
+    		assertEquals(k, test.keys[k-1]);
+    		int t = 0;
+    		for(Handle h:test.values) {
+    			if(h != null && h.getKey()==k) {
+    				t = k;
+    				break;
+    			}
+    		}
+    		assertEquals(32, test.values[t].getSize());	
+    		}
+		assertEquals(256,test.size);
+		assertEquals(256, test.keys.length);
+		assertEquals(256, test.values.length);	
+		 for(int k= 1; k <= 100; k++) {
+	    		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
+	    		
+	    		assertEquals(false,test.insert(semManager, k, s));
+	    		}
 	}
 
 	public void testDelete() {
 		MyHashTable test = new MyHashTable(8);
 		SemManager semManager = new SemManager();
-		semManager.initializeSemManger(512);
+		semManager.initializeSemManger(32);
 		short i = 1;
 		int id = 1;
         String title = "";
@@ -101,35 +88,81 @@ public class myHashTableTest {
         int cost = -1;
         String desc = "";
         String[] keywordList = {};
-		Seminar s1 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 1, s1);
-		test.delete(semManager, 1);
-		test.insert(semManager, 1, s1);
-		id = 2;
-		Seminar s2 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 2, s2);
-		id = 3;
-		Seminar s3 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 3, s3);
-		id = 17;
-		Seminar s4 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 17, s4);
-		id = 10;
-		Seminar s5 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 10, s5);
-		id = 11;
-		Seminar s6 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-		test.insert(semManager, 11, s6);
-			
-		test.delete(semManager, 17);
-        test.insert(semManager, 10, s5);
-        test.delete(semManager, 2);
-        test.delete(semManager, 3);  	
-        test.insert(semManager, 3, s3); 	
-        test.delete(semManager, -1); 	
-        test.delete(semManager, 10);
-        test.insert(semManager, 17, s4);
-		test.delete(semManager, 17);
+   		Seminar s1 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+   		test.insert(semManager, 1, s1);
+   		test.delete(semManager, 1);
+   		test.insert(semManager, 1, s1);
+   		id = 2;
+   		Seminar s2 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+   		test.insert(semManager, 2, s2);
+   		id = 3;
+   		Seminar s3 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+   		test.insert(semManager, 3, s3);
+   		id = 17;
+   		Seminar s4 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+   		test.insert(semManager, 17, s4);
+   		id = 10;
+   		Seminar s5 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+   		test.insert(semManager, 10, s5);
+   		id = 11;
+   		Seminar s6 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+   		test.insert(semManager, 11, s6);
+   			
+   		test.delete(semManager, 17);
+           test.insert(semManager, 10, s5);
+           test.delete(semManager, 2);
+           test.delete(semManager, 3);  	
+           test.insert(semManager, 3, s3); 	
+           test.delete(semManager, -1); 	
+           test.delete(semManager, 10);
+           test.insert(semManager, 17, s4);
+   		test.delete(semManager, 17);
+        for(int k= 1; k <= 100; k++) {
+    		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
+    		test.insert(semManager, k, s);	
+    		}
+        for(int k = 200; k>50; k--) {
+        	if(k <= 100) {
+        		assertEquals(true,test.delete(semManager, k));
+        	}
+        	else {
+        		assertEquals(false,test.delete(semManager, k));
+        	}
+        	
+        }
+        for(int k = 1; k <= 50; k++) {
+        	if(k <= 100) {
+        		assertEquals(true,test.delete(semManager, k));
+        	}
+        	else {
+        		assertEquals(false,test.delete(semManager, k));
+        	}
+        	
+        }
+        for(int k= 1; k <= 100; k++) {
+    		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
+    		test.insert(semManager, k, s);	
+    		}
+        for(int k = 200; k>50; k--) {
+        	if(k <= 100) {
+        		assertEquals(true,test.delete(semManager, k));
+        	}
+        	else {
+        		assertEquals(false,test.delete(semManager, k));
+        	}
+        	
+        }
+        for(int k = 1; k <= 50; k++) {
+        	if(k <= 100) {
+        		assertEquals(true,test.delete(semManager, k));
+        	}
+        	else {
+        		assertEquals(false,test.delete(semManager, k));
+        	}
+        	
+        }
+
+
 	}
 
 	public void testSearch() {

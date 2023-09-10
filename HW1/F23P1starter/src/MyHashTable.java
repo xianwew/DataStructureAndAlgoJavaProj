@@ -121,7 +121,7 @@ public class MyHashTable {
 	* @param key provided by the user.
 	* @param seminar object created by the parser.
 	*/
-	public void insert(SemManager semManager, int key, Seminar seminar) {
+	public boolean insert(SemManager semManager, int key, Seminar seminar) {
 		boolean containKey = false;
 		for (int i : keys) {
 			if (i == key) {
@@ -139,15 +139,18 @@ public class MyHashTable {
 				if (lastElementIndex > size / 2) {
 					reHash();
 				}
+				return true;
 		 	}
 			catch (Exception e) {
 				System.out.println("Error in inserting to the memory manager!");
 				e.printStackTrace();
+				return false;
 			}
 		}
 		else {
 			System.out.println("Insert FAILED - "
 					+ "There is already a record with ID " + key);
+			return false;
 		}
 	}
 	
