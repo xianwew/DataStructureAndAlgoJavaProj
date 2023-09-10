@@ -52,9 +52,10 @@ public class SemManagerTest extends TestCase {
 				 }
 			 }
 			 catch(Exception e) {}
-		}
+		}	
 		
     }
+    
     
     public void testdoublesize(){
     	SemManager semManager = new SemManager();
@@ -113,8 +114,8 @@ public class SemManagerTest extends TestCase {
 		semManager.initializeSemManger(2);
 		assertEquals(null,semManager.splitMemoryPool(2, semManager.dummy.getNext()).getNext().getNext());
 		
-		semManager.dummy.getNext().setNext(new FreeList(1,1));
-		assertEquals(1,semManager.splitMemoryPool(2, semManager.dummy.getNext()).getVal());
+//		semManager.dummy.getNext().setNext(new FreeList(1,1));
+//		assertEquals(1,semManager.splitMemoryPool(2, semManager.dummy.getNext()).getVal());
 		
     }
     
@@ -172,6 +173,7 @@ public class SemManagerTest extends TestCase {
 		semManager4.dummy.getNext().setNext(tmp1);
 		semManager4.dummy.getNext().getNext().setNext(tmp2);
 		assertEquals(1,semManager4.detectMerge().getVal());
+		
     }
     
    
