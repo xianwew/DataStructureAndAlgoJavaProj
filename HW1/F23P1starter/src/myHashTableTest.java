@@ -33,7 +33,10 @@ public class myHashTableTest extends TestCase {
 		test.keys[4] = 10;
 		test.hashing(10, new Handle(5, 1, 10), test.values);
 		assertEquals(1, test.values[0].getSize());
-						
+		
+		
+		
+		
 	}
 	
 	public void testInsert() {
@@ -172,10 +175,11 @@ public class myHashTableTest extends TestCase {
         int cost = -1;
         String desc = "";
         String[] keywordList = {};
-        for(int k= 1; k <= 100; k++) {
-    		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
-    		test.insert(semManager, k, s);
-    		assertEquals(true, test.search(semManager, k));
+        int[] array = new int[] {2,3,5,10,18,32,4,54,7,24,4,31,152,54,4,63,2541,245,11,1,23,54};
+        for(int k= 0; k < array.length; k++) {
+    		Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
+    		test.insert(semManager, array[k], s);
+    		
     	}
 		assertEquals(false, test.search(semManager, -1));
 		assertEquals(true, test.search(semManager, 2));
@@ -190,13 +194,13 @@ public class myHashTableTest extends TestCase {
 		assertEquals(false, test.search(semManager, 3));
 		test.delete(semManager, 2);
 		assertEquals(false, test.search(semManager, 2));
-        for(int k = 1; k <= 100; k++) {
-    		if (k != 2 && k != 3 && k != 5 && k != 10) {
-    			assertEquals(true, test.search(semManager, k));
-    		}
-    		else {
-    			assertEquals(false, test.search(semManager, k));
-    		}
+        for(int k = 0; k < array.length; k++) {	
+        	if(array[k] != 10 && array[k] != 2 && array[k] != 3 && array[k] != 5) {
+        		assertEquals(true, test.search(semManager, array[k]));
+        	}
+        	else {
+        		assertEquals(false, test.search(semManager, array[k]));
+        	}
     	}
 //		MyHashTable test = new MyHashTable(8);
 //		SemManager semManager = new SemManager();

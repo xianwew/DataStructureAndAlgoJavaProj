@@ -172,6 +172,7 @@ public class MyHashTable {
 		if (!containKey) {
 			System.out.println("Search FAILED -- "
 					+ "There is no record with ID " + key);
+			return false;
 		}
 		else {			
 			if (values[calculateFirstHashing(key, size)].getKey() == key) {
@@ -199,7 +200,6 @@ public class MyHashTable {
 				} 			
 			}
 		}
-		return false;
 	}
 	
 	/**
