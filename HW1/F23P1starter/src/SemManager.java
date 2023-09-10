@@ -80,14 +80,14 @@ public class SemManager {
 		}
 		else {
 			while(curPosition != null) {
-			
 				curPosition = curPosition.getNext();
 				i++;
 			}	
-			FreeList[] tmp = new FreeList[i];
+			FreeList[] tmp = new FreeList[i];	
 			for(int k = 0; k < tmp.length; k++) {
-				tmp[k] = new FreeList(-1,-1);
+				tmp[k] = new FreeList(-1, -1);
 			}
+
 			curPosition = dummy.getNext();
 			while(curPosition != null) {
 				boolean set = false;
@@ -97,15 +97,16 @@ public class SemManager {
 						while(tmpList.getNext() != null) {
 							tmpList = tmpList.getNext();
 						}
-						tmpList.setNext(new FreeList(curPosition.getVal(),curPosition.getIndex()));
+						tmpList.setNext(new FreeList(curPosition.getVal(), curPosition.getIndex()));
 						set = true;
 						break;
-					}					
+					}						
 				}
 				if(!set) {
-					for(int k = 0; k < tmp.length; k++) {
-						if(tmp[k].getVal() == -1) {
-							tmp[k].setNext(new FreeList(curPosition.getVal(),curPosition.getIndex()));
+					for(int k = 0; k < tmp.length; k++) {			
+						if(tmp[k].getVal() == -1) {	
+							tmp[k].setVal(curPosition.getVal());
+							tmp[k].setIndex(curPosition.getIndex());
 							set = true;
 							break;
 						}					
@@ -116,11 +117,13 @@ public class SemManager {
 			for(int k = 0; k < tmp.length; k++) {
 				if(tmp[k].getVal() != -1) {
 					curPosition = tmp[k];
-					while(curPosition.getNext() != null) {
-						System.out.println(curPosition.getVal() + ": " + curPosition.getIndex() + " ");
+					System.out.print(curPosition.getVal() + ": ");
+					while(curPosition != null) {
+						System.out.print(curPosition.getIndex() + " ");
 						curPosition = curPosition.getNext();
 					}
-				}					
+					System.out.println("");
+				}
 			}
 		return true;
 		}

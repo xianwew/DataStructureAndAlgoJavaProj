@@ -1,0 +1,5377 @@
+<SensorData>
+<Timestamp>
+1694371350727
+</Timestamp>
+<Runtime>
+1694371350727
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371351816
+</Timestamp>
+<Runtime>
+1694371351816
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Successfully inserted record with ID 3
+Hash table expanded to 8 records
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+Freeblock List:
+256: 256
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371361093
+</Timestamp>
+<Runtime>
+1694371361093
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Build
+</Value>
+</Property>
+<Property>
+<Name>
+Error
+</Name>
+<Value>
+k cannot be resolved to a variable
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Compile
+</Value>
+</Property>
+<Property>
+<Name>
+Success
+</Name>
+<Value>
+false
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371376002
+</Timestamp>
+<Runtime>
+1694371376002
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Build
+</Value>
+</Property>
+<Property>
+<Name>
+Error
+</Name>
+<Value>
+k cannot be resolved to a variable
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Compile
+</Value>
+</Property>
+<Property>
+<Name>
+Success
+</Name>
+<Value>
+false
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371382043
+</Timestamp>
+<Runtime>
+1694371382043
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Build
+</Value>
+</Property>
+<Property>
+<Name>
+Error
+</Name>
+<Value>
+k cannot be resolved to a variable
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Compile
+</Value>
+</Property>
+<Property>
+<Name>
+Success
+</Name>
+<Value>
+false
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371388408
+</Timestamp>
+<Runtime>
+1694371388408
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371456806
+</Timestamp>
+<Runtime>
+1694371456806
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+Freeblock List: k 1
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+Freeblock List: k 3
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371456807
+</Timestamp>
+<Runtime>
+1694371456807
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371477178
+</Timestamp>
+<Runtime>
+1694371477178
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371477179
+</Timestamp>
+<Runtime>
+1694371477179
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371492764
+</Timestamp>
+<Runtime>
+1694371492764
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+abab
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+abab
+abab
+abab
+abab
+abab
+abab
+abab
+abab
+abab
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371492764
+</Timestamp>
+<Runtime>
+1694371492764
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371517783
+</Timestamp>
+<Runtime>
+1694371517783
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371517783
+</Timestamp>
+<Runtime>
+1694371517783
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371557117
+</Timestamp>
+<Runtime>
+1694371557117
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+abab
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+abab
+abab
+abab
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371557117
+</Timestamp>
+<Runtime>
+1694371557117
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371568804
+</Timestamp>
+<Runtime>
+1694371568804
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+abab
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+abab
+abab
+abab
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371568805
+</Timestamp>
+<Runtime>
+1694371568805
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371629546
+</Timestamp>
+<Runtime>
+1694371629546
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+abab
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+abab
+abab
+abab
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371629547
+</Timestamp>
+<Runtime>
+1694371629547
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371646975
+</Timestamp>
+<Runtime>
+1694371646975
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+tmpList val: 256
+256: -1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371646975
+</Timestamp>
+<Runtime>
+1694371646975
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371712961
+</Timestamp>
+<Runtime>
+1694371712961
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: -1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371712961
+</Timestamp>
+<Runtime>
+1694371712961
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371748695
+</Timestamp>
+<Runtime>
+1694371748695
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+tmpList val: 256
+256: -1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371748695
+</Timestamp>
+<Runtime>
+1694371748695
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371868739
+</Timestamp>
+<Runtime>
+1694371868739
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+256: 256 
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: 256 
+512: 1536 
+256: -1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371868740
+</Timestamp>
+<Runtime>
+1694371868740
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371907336
+</Timestamp>
+<Runtime>
+1694371907336
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Build
+</Value>
+</Property>
+<Property>
+<Name>
+Error
+</Name>
+<Value>
+Syntax error, insert ";" to complete BlockStatements
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Compile
+</Value>
+</Property>
+<Property>
+<Name>
+Success
+</Name>
+<Value>
+false
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371911207
+</Timestamp>
+<Runtime>
+1694371911207
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+tmpList val: 256
+256: -1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371911207
+</Timestamp>
+<Runtime>
+1694371911207
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371912244
+</Timestamp>
+<Runtime>
+1694371912244
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+tmpList val: 256
+256: -1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371918026
+</Timestamp>
+<Runtime>
+1694371918026
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371933917
+</Timestamp>
+<Runtime>
+1694371933917
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: -1 
+-1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371933918
+</Timestamp>
+<Runtime>
+1694371933918
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371935126
+</Timestamp>
+<Runtime>
+1694371935126
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: -1 
+-1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371939339
+</Timestamp>
+<Runtime>
+1694371939339
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371963118
+</Timestamp>
+<Runtime>
+1694371963118
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: -1 
+test: -1
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694371963118
+</Timestamp>
+<Runtime>
+1694371963118
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372024794
+</Timestamp>
+<Runtime>
+1694372024794
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+test: 256
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+test: 256
+256: -1 
+test: 1536
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372024794
+</Timestamp>
+<Runtime>
+1694372024794
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372060757
+</Timestamp>
+<Runtime>
+1694372060757
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+256: 
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: 
+-1 
+1536:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372060757
+</Timestamp>
+<Runtime>
+1694372060757
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372096708
+</Timestamp>
+<Runtime>
+1694372096708
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+256: 
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: 
+-1 
+1536:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372096708
+</Timestamp>
+<Runtime>
+1694372096708
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372154872
+</Timestamp>
+<Runtime>
+1694372154872
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+256: 
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: 
+-1 1536:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372154872
+</Timestamp>
+<Runtime>
+1694372154872
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372383222
+</Timestamp>
+<Runtime>
+1694372383222
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+Freeblock List:256256 
+256: 
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+Freeblock List:256256 
+Freeblock List:256768 
+Freeblock List:5121536 
+256: 
+-1 1536:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372383222
+</Timestamp>
+<Runtime>
+1694372383222
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372389602
+</Timestamp>
+<Runtime>
+1694372389602
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+256: 
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: 
+-1 1536:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372389602
+</Timestamp>
+<Runtime>
+1694372389602
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372668253
+</Timestamp>
+<Runtime>
+1694372668253
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+256: 
+
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: 
+-1 1536:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372668253
+</Timestamp>
+<Runtime>
+1694372668253
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372682989
+</Timestamp>
+<Runtime>
+1694372682989
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/FreeList.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Open
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+FreeList.java
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+file
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372685370
+</Timestamp>
+<Runtime>
+1694372685370
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/FreeList.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/FreeList.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372970397
+</Timestamp>
+<Runtime>
+1694372970397
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/FreeList.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372991262
+</Timestamp>
+<Runtime>
+1694372991262
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+256: 
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: -1 1536:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694372991262
+</Timestamp>
+<Runtime>
+1694372991262
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694373002745
+</Timestamp>
+<Runtime>
+1694373002745
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+
+Memory pool expanded to 1024 bytes.
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+
+Insert FAILED - There is already a record with ID 3
+
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+
+Freeblock List:
+There are no Freeblocks in the memory pool!
+
+Record with ID 2 successfully deleted from the database
+
+Search FAILED -- There is no record with ID 2
+
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+
+Freeblock List:
+256: 
+Delete FAILED -- There is no record with ID 6
+
+Memory pool expanded to 2048 bytes.
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+
+Record with ID 10 successfully deleted from the database
+
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+
+Freeblock List:
+256: 256 512:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694373002746
+</Timestamp>
+<Runtime>
+1694373002746
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
