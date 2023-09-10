@@ -29,6 +29,14 @@ public class MyHashTable {
     * @param size input hashTable size
     * @param numofElement input num of keys
     */
+   
+    /**
+    * Retrieve the size of the hash table from the input.
+    * @return initialize hashTable size
+    */
+	public int gethashSize() {
+		return size;
+	}
 	
 	/**
 	* The first hash function
@@ -75,27 +83,36 @@ public class MyHashTable {
 				handleAtIndex.getStartIndex() == -1) {
 			insertArr[calculateFirstHashing(key, arrSize)] = handle;
 		}
-		else {
-			int prevValue = calculateFirstHashing(key, arrSize);
-			while (true) {
-				if (insertArr[(calculateSecondHashing(key, arrSize) +
-						prevValue) % arrSize] != null) {
+		else if (insertArr[calculateSecondHashing(key, arrSize)] != null) {
+			if (insertArr[calculateSecondHashing(
+					key, arrSize)].getStartIndex() == -1) {
+				insertArr[calculateSecondHashing(key, arrSize)] = handle;
+			}	
+			else {
+				int prevValue = calculateFirstHashing(key, arrSize);
+				while (true) {
 					if (insertArr[(calculateSecondHashing(key, arrSize) +
-							prevValue) % arrSize].getStartIndex() == -1) {
-						insertArr[(calculateSecondHashing(key, arrSize)
-						+ prevValue) % arrSize] = handle;
+							prevValue) % arrSize] != null) {
+						if (insertArr[(calculateSecondHashing(key, arrSize) +
+								prevValue) % arrSize].getStartIndex() == -1) {
+							insertArr[(calculateSecondHashing(key, arrSize)
+							+ prevValue) % arrSize] = handle;
+						}
+						else {
+							prevValue = (calculateSecondHashing(key, arrSize)
+									+ prevValue) % arrSize;
+						}
 					}
 					else {
-						prevValue = (calculateSecondHashing(key, arrSize)
-								+ prevValue) % arrSize;
+						insertArr[(calculateSecondHashing(key, arrSize)
+								+ prevValue) % arrSize] = handle;
+						break;
 					}
 				}
-				else {
-					insertArr[(calculateSecondHashing(key, arrSize)
-							+ prevValue) % arrSize] = handle;
-					break;
-				}
 			}
+		}
+		else {
+			insertArr[calculateSecondHashing(key, arrSize)] = handle;	
 		}
 	}
 	
@@ -164,17 +181,24 @@ public class MyHashTable {
 				return true;
 			}
 			else {
-				int prevValue = calculateFirstHashing(key, size);
-				while (values[(calculateSecondHashing(key, size)
-						+ prevValue) % size].getKey() != key) {
-					prevValue = (calculateSecondHashing(key, size)
-							+ prevValue) % size;
+				if (values[calculateSecondHashing(key, size)].getKey() == key) {
+					System.out.println("Found record with ID " + key + ":");
+		 			semManager.search(values
+		 					[calculateSecondHashing(key, size)]);
+		 			return true;
 				}
-	 			semManager.search(values[(calculateSecondHashing(key, size)
-	 					+ prevValue) % size]);
-	 			System.out.println("Found record with ID " + key + ":");
-	 			return true;	
-			} 			
+				else {
+					int prevValue = calculateFirstHashing(key, size);
+					while (values[(calculateSecondHashing(key, size)
+							+ prevValue) % size].getKey() != key) {
+						prevValue = (calculateSecondHashing(key, size)
+								+ prevValue) % size;
+					}
+		 			semManager.search(values[(calculateSecondHashing(key, size)
+		 					+ prevValue) % size]);
+		 			return true;	
+				} 			
+			}
 		}
 	}
 	
@@ -224,6 +248,14 @@ public class MyHashTable {
 			if (values[calculateFirstHashing(key, size)].getKey() == key) {
 				success = semManager.delete(
 						values[calculateFirstHashing(key, size)]);
+				values[calculateFirstHashing(key, size)].setKey(-1); 
+				values[calculateFirstHashing(key, size)].setSize(-1); 
+				values[calculateFirstHashing(key, size)].setStartIndex(-1); 
+			}
+			else if (values[calculateSecondHashing(
+					key, size)].getKey() == key) {
+				success = semManager.delete(
+						values[calculateSecondHashing(key, size)]);
 				values[calculateFirstHashing(key, size)].setKey(-1); 
 				values[calculateFirstHashing(key, size)].setSize(-1); 
 				values[calculateFirstHashing(key, size)].setStartIndex(-1); 

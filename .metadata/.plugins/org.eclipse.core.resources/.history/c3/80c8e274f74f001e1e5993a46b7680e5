@@ -29,6 +29,14 @@ public class MyHashTable {
     * @param size input hashTable size
     * @param numofElement input num of keys
     */
+   
+    /**
+    * Retrieve the size of the hash table from the input.
+    * @return initialize hashTable size
+    */
+	public int gethashSize() {
+		return size;
+	}
 	
 	/**
 	* The first hash function

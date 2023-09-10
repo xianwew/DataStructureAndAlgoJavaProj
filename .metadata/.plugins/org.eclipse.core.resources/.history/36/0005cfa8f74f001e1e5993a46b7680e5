@@ -121,6 +121,7 @@ public class Parser {
 			int instruction = 0;
 			if (reader.hasNextLine()) {
 				data = reader.nextLine().trim();
+				System.out.println("Inside loop: " + data);
 			}
 			while (true) {
 				instruction = getInstruction(data);
@@ -206,6 +207,7 @@ public class Parser {
 					break;
 				}
 			}
+			System.out.println("After execution: " + data);
 		}
 		catch (Exception e) {
             System.out.println("Error in reading/processing files!");

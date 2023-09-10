@@ -14061,3 +14061,4803 @@ src (1)
 </Property>
 </Properties>
 </SensorData>
+<SensorData>
+<Timestamp>
+1694362194459
+</Timestamp>
+<Runtime>
+1694362194459
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+153
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Assertions
+</Name>
+<Value>
+31
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+myHashTableTest
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+6
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+10207
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Methods
+</Name>
+<Value>
+6
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+StateChange
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694362224459
+</Timestamp>
+<Runtime>
+1694362224459
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+153
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Assertions
+</Name>
+<Value>
+31
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+myHashTableTest
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+6
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+10206
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Methods
+</Name>
+<Value>
+6
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+StateChange
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694362236677
+</Timestamp>
+<Runtime>
+1694362236677
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! Please enter an integar!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating hashTable! Please enter an integar!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Inside loop: awdasd
+data is:    awdasd
+
+After execution: awdasd
+data is:    
+
+After execution: 
+Inside loop: awdasd
+data is:    awdasd
+
+After execution: abcdefg
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+After execution: awdasd
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+doubling memory pool size!
+doubling memory pool size!
+doubling memory pool size!
+Successfully inserted record with ID 1
+After execution: insert 1
+Inside loop: delete 32
+data is:    delete 32
+data is:    sagfaqwoi
+data is:    sadawefgaw
+Error in reading/processing files!
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at Parser.processSeminars(Parser.java:155)
+	at ParserTest.testInitializeComponents(ParserTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Insert FAILED - There is already a record with ID 1
+
+data is:    delete 1
+Record with ID 1 successfully deleted from the database
+After execution: delete 1
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Successfully inserted record with ID 1
+
+data is:    search 1
+Found record with ID 1:
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+After execution: search 1
+Inside loop: insert 1
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Insert FAILED - There is already a record with ID 1
+
+data is:    insert 1
+data is:    of HCI Research at VT
+data is:    0610051600 90 10 10 awd
+Error in reading/processing files!
+java.lang.NumberFormatException: For input string: "awd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatExcepti
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at Parser.processSeminars(Parser.java:158)
+	at ParserTest.testInitializeComponents(ParserTest.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 4
+doubling memory pool size!
+Successfully inserted record with ID 5
+hashTable resized to: 16
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+Successfully inserted record with ID 8
+doubling memory pool size!
+Successfully inserted record with ID 9
+hashTable resized to: 32
+Successfully inserted record with ID 10
+Successfully inserted record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+Successfully inserted record with ID 97
+Successfully inserted record with ID 98
+Successfully inserted record with ID 99
+Successfully inserted record with ID 100
+Insert FAILED - There is already a record with ID 1
+Insert FAILED - There is already a record with ID 2
+Insert FAILED - There is already a record with ID 3
+Insert FAILED - There is already a record with ID 4
+Insert FAILED - There is already a record with ID 5
+Insert FAILED - There is already a record with ID 6
+Insert FAILED - There is already a record with ID 7
+Insert FAILED - There is already a record with ID 8
+Insert FAILED - There is already a record with ID 9
+Insert FAILED - There is already a record with ID 10
+Insert FAILED - There is already a record with ID 11
+Insert FAILED - There is already a record with ID 12
+Insert FAILED - There is already a record with ID 13
+Insert FAILED - There is already a record with ID 14
+Insert FAILED - There is already a record with ID 15
+Insert FAILED - There is already a record with ID 16
+Insert FAILED - There is already a record with ID 17
+Insert FAILED - There is already a record with ID 18
+Insert FAILED - There is already a record with ID 19
+Insert FAILED - There is already a record with ID 20
+Insert FAILED - There is already a record with ID 21
+Insert FAILED - There is already a record with ID 22
+Insert FAILED - There is already a record with ID 23
+Insert FAILED - There is already a record with ID 24
+Insert FAILED - There is already a record with ID 25
+Insert FAILED - There is already a record with ID 26
+Insert FAILED - There is already a record with ID 27
+Insert FAILED - There is already a record with ID 28
+Insert FAILED - There is already a record with ID 29
+Insert FAILED - There is already a record with ID 30
+Insert FAILED - There is already a record with ID 31
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 33
+Insert FAILED - There is already a record with ID 34
+Insert FAILED - There is already a record with ID 35
+Insert FAILED - There is already a record with ID 36
+Insert FAILED - There is already a record with ID 37
+Insert FAILED - There is already a record with ID 38
+Insert FAILED - There is already a record with ID 39
+Insert FAILED - There is already a record with ID 40
+Insert FAILED - There is already a record with ID 41
+Insert FAILED - There is already a record with ID 42
+Insert FAILED - There is already a record with ID 43
+Insert FAILED - There is already a record with ID 44
+Insert FAILED - There is already a record with ID 45
+Insert FAILED - There is already a record with ID 46
+Insert FAILED - There is already a record with ID 47
+Insert FAILED - There is already a record with ID 48
+Insert FAILED - There is already a record with ID 49
+Insert FAILED - There is already a record with ID 50
+Insert FAILED - There is already a record with ID 51
+Insert FAILED - There is already a record with ID 52
+Insert FAILED - There is already a record with ID 53
+Insert FAILED - There is already a record with ID 54
+Insert FAILED - There is already a record with ID 55
+Insert FAILED - There is already a record with ID 56
+Insert FAILED - There is already a record with ID 57
+Insert FAILED - There is already a record with ID 58
+Insert FAILED - There is already a record with ID 59
+Insert FAILED - There is already a record with ID 60
+Insert FAILED - There is already a record with ID 61
+Insert FAILED - There is already a record with ID 62
+Insert FAILED - There is already a record with ID 63
+Insert FAILED - There is already a record with ID 64
+Insert FAILED - There is already a record with ID 65
+Insert FAILED - There is already a record with ID 66
+Insert FAILED - There is already a record with ID 67
+Insert FAILED - There is already a record with ID 68
+Insert FAILED - There is already a record with ID 69
+Insert FAILED - There is already a record with ID 70
+Insert FAILED - There is already a record with ID 71
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 73
+Insert FAILED - There is already a record with ID 74
+Insert FAILED - There is already a record with ID 75
+Insert FAILED - There is already a record with ID 76
+Insert FAILED - There is already a record with ID 77
+Insert FAILED - There is already a record with ID 78
+Insert FAILED - There is already a record with ID 79
+Insert FAILED - There is already a record with ID 80
+Insert FAILED - There is already a record with ID 81
+Insert FAILED - There is already a record with ID 82
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 84
+Insert FAILED - There is already a record with ID 85
+Insert FAILED - There is already a record with ID 86
+Insert FAILED - There is already a record with ID 87
+Insert FAILED - There is already a record with ID 88
+Insert FAILED - There is already a record with ID 89
+Insert FAILED - There is already a record with ID 90
+Insert FAILED - There is already a record with ID 91
+Insert FAILED - There is already a record with ID 92
+Insert FAILED - There is already a record with ID 93
+Insert FAILED - There is already a record with ID 94
+Insert FAILED - There is already a record with ID 95
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 97
+Insert FAILED - There is already a record with ID 98
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 100
+Successfully inserted record with ID 1
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 17
+doubling memory pool size!
+Successfully inserted record with ID 10
+hashTable resized to: 16
+Successfully inserted record with ID 11
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 10
+Record with ID 2 successfully deleted from the database
+Record with ID 3 successfully deleted from the database
+Successfully inserted record with ID 3
+Delete FAILED -- There is no record with ID -1
+Record with ID 10 successfully deleted from the database
+Successfully inserted record with ID 17
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+Insert FAILED - There is already a record with ID 3
+Successfully inserted record with ID 4
+Successfully inserted record with ID 5
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+doubling memory pool size!
+Successfully inserted record with ID 8
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:78)
+	at MyHashTable.reHash(MyHashTable.java:301)
+	at MyHashTable.insert(MyHashTable.java:141)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 9
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:78)
+	at MyHashTable.reHash(MyHashTable.java:301)
+	at MyHashTable.insert(MyHashTable.java:141)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 10
+hashTable resized to: 32
+Insert FAILED - There is already a record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+org.webcat.deveventtracker.OutputTruncated
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694362236678
+</Timestamp>
+<Runtime>
+1694362236678
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694362254460
+</Timestamp>
+<Runtime>
+1694362254460
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+153
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Assertions
+</Name>
+<Value>
+31
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+myHashTableTest
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+6
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+10207
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Methods
+</Name>
+<Value>
+6
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+StateChange
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694362277000
+</Timestamp>
+<Runtime>
+1694362277000
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+153
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Assertions
+</Name>
+<Value>
+31
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+myHashTableTest
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+6
+</Value>
+</Property>
+<Property>
+<Name>
+TestCodeEdit
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+CommitHash
+</Name>
+<Value>
+80e3652386d42366644da9d94c346d3281b88682
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+10207
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Methods
+</Name>
+<Value>
+6
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Save
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+file
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363227333
+</Timestamp>
+<Runtime>
+1694363227333
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Current-Statements
+</Name>
+<Value>
+153
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Assertions
+</Name>
+<Value>
+31
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+myHashTableTest
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Methods
+</Name>
+<Value>
+6
+</Value>
+</Property>
+<Property>
+<Name>
+TestCodeEdit
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+CommitHash
+</Name>
+<Value>
+d13ee64dc63c578ed036ad1e2dbcbb6925d5ba6d
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Size
+</Name>
+<Value>
+8907
+</Value>
+</Property>
+<Property>
+<Name>
+Current-Test-Methods
+</Name>
+<Value>
+6
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Save
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+file
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363227333
+</Timestamp>
+<Runtime>
+1694363227333
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363408826
+</Timestamp>
+<Runtime>
+1694363408826
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! Please enter an integar!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating hashTable! Please enter an integar!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Inside loop: awdasd
+data is:    awdasd
+
+After execution: awdasd
+data is:    
+
+After execution: 
+Inside loop: awdasd
+data is:    awdasd
+
+After execution: abcdefg
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+After execution: awdasd
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+doubling memory pool size!
+doubling memory pool size!
+doubling memory pool size!
+Successfully inserted record with ID 1
+After execution: insert 1
+Inside loop: delete 32
+data is:    delete 32
+data is:    sagfaqwoi
+data is:    sadawefgaw
+Error in reading/processing files!
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at Parser.processSeminars(Parser.java:155)
+	at ParserTest.testInitializeComponents(ParserTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Insert FAILED - There is already a record with ID 1
+
+data is:    delete 1
+Record with ID 1 successfully deleted from the database
+After execution: delete 1
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Successfully inserted record with ID 1
+
+data is:    search 1
+Found record with ID 1:
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+After execution: search 1
+Inside loop: insert 1
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Insert FAILED - There is already a record with ID 1
+
+data is:    insert 1
+data is:    of HCI Research at VT
+data is:    0610051600 90 10 10 awd
+Error in reading/processing files!
+java.lang.NumberFormatException: For input string: "awd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatExcepti
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at Parser.processSeminars(Parser.java:158)
+	at ParserTest.testInitializeComponents(ParserTest.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 4
+doubling memory pool size!
+Successfully inserted record with ID 5
+hashTable resized to: 16
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+Successfully inserted record with ID 8
+doubling memory pool size!
+Successfully inserted record with ID 9
+hashTable resized to: 32
+Successfully inserted record with ID 10
+Successfully inserted record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+Successfully inserted record with ID 97
+Successfully inserted record with ID 98
+Successfully inserted record with ID 99
+Successfully inserted record with ID 100
+Insert FAILED - There is already a record with ID 1
+Insert FAILED - There is already a record with ID 2
+Insert FAILED - There is already a record with ID 3
+Insert FAILED - There is already a record with ID 4
+Insert FAILED - There is already a record with ID 5
+Insert FAILED - There is already a record with ID 6
+Insert FAILED - There is already a record with ID 7
+Insert FAILED - There is already a record with ID 8
+Insert FAILED - There is already a record with ID 9
+Insert FAILED - There is already a record with ID 10
+Insert FAILED - There is already a record with ID 11
+Insert FAILED - There is already a record with ID 12
+Insert FAILED - There is already a record with ID 13
+Insert FAILED - There is already a record with ID 14
+Insert FAILED - There is already a record with ID 15
+Insert FAILED - There is already a record with ID 16
+Insert FAILED - There is already a record with ID 17
+Insert FAILED - There is already a record with ID 18
+Insert FAILED - There is already a record with ID 19
+Insert FAILED - There is already a record with ID 20
+Insert FAILED - There is already a record with ID 21
+Insert FAILED - There is already a record with ID 22
+Insert FAILED - There is already a record with ID 23
+Insert FAILED - There is already a record with ID 24
+Insert FAILED - There is already a record with ID 25
+Insert FAILED - There is already a record with ID 26
+Insert FAILED - There is already a record with ID 27
+Insert FAILED - There is already a record with ID 28
+Insert FAILED - There is already a record with ID 29
+Insert FAILED - There is already a record with ID 30
+Insert FAILED - There is already a record with ID 31
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 33
+Insert FAILED - There is already a record with ID 34
+Insert FAILED - There is already a record with ID 35
+Insert FAILED - There is already a record with ID 36
+Insert FAILED - There is already a record with ID 37
+Insert FAILED - There is already a record with ID 38
+Insert FAILED - There is already a record with ID 39
+Insert FAILED - There is already a record with ID 40
+Insert FAILED - There is already a record with ID 41
+Insert FAILED - There is already a record with ID 42
+Insert FAILED - There is already a record with ID 43
+Insert FAILED - There is already a record with ID 44
+Insert FAILED - There is already a record with ID 45
+Insert FAILED - There is already a record with ID 46
+Insert FAILED - There is already a record with ID 47
+Insert FAILED - There is already a record with ID 48
+Insert FAILED - There is already a record with ID 49
+Insert FAILED - There is already a record with ID 50
+Insert FAILED - There is already a record with ID 51
+Insert FAILED - There is already a record with ID 52
+Insert FAILED - There is already a record with ID 53
+Insert FAILED - There is already a record with ID 54
+Insert FAILED - There is already a record with ID 55
+Insert FAILED - There is already a record with ID 56
+Insert FAILED - There is already a record with ID 57
+Insert FAILED - There is already a record with ID 58
+Insert FAILED - There is already a record with ID 59
+Insert FAILED - There is already a record with ID 60
+Insert FAILED - There is already a record with ID 61
+Insert FAILED - There is already a record with ID 62
+Insert FAILED - There is already a record with ID 63
+Insert FAILED - There is already a record with ID 64
+Insert FAILED - There is already a record with ID 65
+Insert FAILED - There is already a record with ID 66
+Insert FAILED - There is already a record with ID 67
+Insert FAILED - There is already a record with ID 68
+Insert FAILED - There is already a record with ID 69
+Insert FAILED - There is already a record with ID 70
+Insert FAILED - There is already a record with ID 71
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 73
+Insert FAILED - There is already a record with ID 74
+Insert FAILED - There is already a record with ID 75
+Insert FAILED - There is already a record with ID 76
+Insert FAILED - There is already a record with ID 77
+Insert FAILED - There is already a record with ID 78
+Insert FAILED - There is already a record with ID 79
+Insert FAILED - There is already a record with ID 80
+Insert FAILED - There is already a record with ID 81
+Insert FAILED - There is already a record with ID 82
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 84
+Insert FAILED - There is already a record with ID 85
+Insert FAILED - There is already a record with ID 86
+Insert FAILED - There is already a record with ID 87
+Insert FAILED - There is already a record with ID 88
+Insert FAILED - There is already a record with ID 89
+Insert FAILED - There is already a record with ID 90
+Insert FAILED - There is already a record with ID 91
+Insert FAILED - There is already a record with ID 92
+Insert FAILED - There is already a record with ID 93
+Insert FAILED - There is already a record with ID 94
+Insert FAILED - There is already a record with ID 95
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 97
+Insert FAILED - There is already a record with ID 98
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 100
+Successfully inserted record with ID 1
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 17
+doubling memory pool size!
+Successfully inserted record with ID 10
+hashTable resized to: 16
+Successfully inserted record with ID 11
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 10
+Record with ID 2 successfully deleted from the database
+Record with ID 3 successfully deleted from the database
+Successfully inserted record with ID 3
+Delete FAILED -- There is no record with ID -1
+Record with ID 10 successfully deleted from the database
+Successfully inserted record with ID 17
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+Insert FAILED - There is already a record with ID 3
+Successfully inserted record with ID 4
+Successfully inserted record with ID 5
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+doubling memory pool size!
+Successfully inserted record with ID 8
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:78)
+	at MyHashTable.reHash(MyHashTable.java:301)
+	at MyHashTable.insert(MyHashTable.java:141)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 9
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:78)
+	at MyHashTable.reHash(MyHashTable.java:301)
+	at MyHashTable.insert(MyHashTable.java:141)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 10
+hashTable resized to: 32
+Insert FAILED - There is already a record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+org.webcat.deveventtracker.OutputTruncated
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363408826
+</Timestamp>
+<Runtime>
+1694363408826
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363410188
+</Timestamp>
+<Runtime>
+1694363410188
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! Please enter an integar!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating hashTable! Please enter an integar!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Inside loop: awdasd
+data is:    awdasd
+
+After execution: awdasd
+data is:    
+
+After execution: 
+Inside loop: awdasd
+data is:    awdasd
+
+After execution: abcdefg
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+After execution: awdasd
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+doubling memory pool size!
+doubling memory pool size!
+doubling memory pool size!
+Successfully inserted record with ID 1
+After execution: insert 1
+Inside loop: delete 32
+data is:    delete 32
+data is:    sagfaqwoi
+data is:    sadawefgaw
+Error in reading/processing files!
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at Parser.processSeminars(Parser.java:155)
+	at ParserTest.testInitializeComponents(ParserTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Insert FAILED - There is already a record with ID 1
+
+data is:    delete 1
+Record with ID 1 successfully deleted from the database
+After execution: delete 1
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Successfully inserted record with ID 1
+
+data is:    search 1
+Found record with ID 1:
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+After execution: search 1
+Inside loop: insert 1
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Insert FAILED - There is already a record with ID 1
+
+data is:    insert 1
+data is:    of HCI Research at VT
+data is:    0610051600 90 10 10 awd
+Error in reading/processing files!
+java.lang.NumberFormatException: For input string: "awd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatExcepti
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at Parser.processSeminars(Parser.java:158)
+	at ParserTest.testInitializeComponents(ParserTest.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 4
+doubling memory pool size!
+Successfully inserted record with ID 5
+hashTable resized to: 16
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+Successfully inserted record with ID 8
+doubling memory pool size!
+Successfully inserted record with ID 9
+hashTable resized to: 32
+Successfully inserted record with ID 10
+Successfully inserted record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+Successfully inserted record with ID 97
+Successfully inserted record with ID 98
+Successfully inserted record with ID 99
+Successfully inserted record with ID 100
+Insert FAILED - There is already a record with ID 1
+Insert FAILED - There is already a record with ID 2
+Insert FAILED - There is already a record with ID 3
+Insert FAILED - There is already a record with ID 4
+Insert FAILED - There is already a record with ID 5
+Insert FAILED - There is already a record with ID 6
+Insert FAILED - There is already a record with ID 7
+Insert FAILED - There is already a record with ID 8
+Insert FAILED - There is already a record with ID 9
+Insert FAILED - There is already a record with ID 10
+Insert FAILED - There is already a record with ID 11
+Insert FAILED - There is already a record with ID 12
+Insert FAILED - There is already a record with ID 13
+Insert FAILED - There is already a record with ID 14
+Insert FAILED - There is already a record with ID 15
+Insert FAILED - There is already a record with ID 16
+Insert FAILED - There is already a record with ID 17
+Insert FAILED - There is already a record with ID 18
+Insert FAILED - There is already a record with ID 19
+Insert FAILED - There is already a record with ID 20
+Insert FAILED - There is already a record with ID 21
+Insert FAILED - There is already a record with ID 22
+Insert FAILED - There is already a record with ID 23
+Insert FAILED - There is already a record with ID 24
+Insert FAILED - There is already a record with ID 25
+Insert FAILED - There is already a record with ID 26
+Insert FAILED - There is already a record with ID 27
+Insert FAILED - There is already a record with ID 28
+Insert FAILED - There is already a record with ID 29
+Insert FAILED - There is already a record with ID 30
+Insert FAILED - There is already a record with ID 31
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 33
+Insert FAILED - There is already a record with ID 34
+Insert FAILED - There is already a record with ID 35
+Insert FAILED - There is already a record with ID 36
+Insert FAILED - There is already a record with ID 37
+Insert FAILED - There is already a record with ID 38
+Insert FAILED - There is already a record with ID 39
+Insert FAILED - There is already a record with ID 40
+Insert FAILED - There is already a record with ID 41
+Insert FAILED - There is already a record with ID 42
+Insert FAILED - There is already a record with ID 43
+Insert FAILED - There is already a record with ID 44
+Insert FAILED - There is already a record with ID 45
+Insert FAILED - There is already a record with ID 46
+Insert FAILED - There is already a record with ID 47
+Insert FAILED - There is already a record with ID 48
+Insert FAILED - There is already a record with ID 49
+Insert FAILED - There is already a record with ID 50
+Insert FAILED - There is already a record with ID 51
+Insert FAILED - There is already a record with ID 52
+Insert FAILED - There is already a record with ID 53
+Insert FAILED - There is already a record with ID 54
+Insert FAILED - There is already a record with ID 55
+Insert FAILED - There is already a record with ID 56
+Insert FAILED - There is already a record with ID 57
+Insert FAILED - There is already a record with ID 58
+Insert FAILED - There is already a record with ID 59
+Insert FAILED - There is already a record with ID 60
+Insert FAILED - There is already a record with ID 61
+Insert FAILED - There is already a record with ID 62
+Insert FAILED - There is already a record with ID 63
+Insert FAILED - There is already a record with ID 64
+Insert FAILED - There is already a record with ID 65
+Insert FAILED - There is already a record with ID 66
+Insert FAILED - There is already a record with ID 67
+Insert FAILED - There is already a record with ID 68
+Insert FAILED - There is already a record with ID 69
+Insert FAILED - There is already a record with ID 70
+Insert FAILED - There is already a record with ID 71
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 73
+Insert FAILED - There is already a record with ID 74
+Insert FAILED - There is already a record with ID 75
+Insert FAILED - There is already a record with ID 76
+Insert FAILED - There is already a record with ID 77
+Insert FAILED - There is already a record with ID 78
+Insert FAILED - There is already a record with ID 79
+Insert FAILED - There is already a record with ID 80
+Insert FAILED - There is already a record with ID 81
+Insert FAILED - There is already a record with ID 82
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 84
+Insert FAILED - There is already a record with ID 85
+Insert FAILED - There is already a record with ID 86
+Insert FAILED - There is already a record with ID 87
+Insert FAILED - There is already a record with ID 88
+Insert FAILED - There is already a record with ID 89
+Insert FAILED - There is already a record with ID 90
+Insert FAILED - There is already a record with ID 91
+Insert FAILED - There is already a record with ID 92
+Insert FAILED - There is already a record with ID 93
+Insert FAILED - There is already a record with ID 94
+Insert FAILED - There is already a record with ID 95
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 97
+Insert FAILED - There is already a record with ID 98
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 100
+Successfully inserted record with ID 1
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 17
+doubling memory pool size!
+Successfully inserted record with ID 10
+hashTable resized to: 16
+Successfully inserted record with ID 11
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 10
+Record with ID 2 successfully deleted from the database
+Record with ID 3 successfully deleted from the database
+Successfully inserted record with ID 3
+Delete FAILED -- There is no record with ID -1
+Record with ID 10 successfully deleted from the database
+Successfully inserted record with ID 17
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+Insert FAILED - There is already a record with ID 3
+Successfully inserted record with ID 4
+Successfully inserted record with ID 5
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+doubling memory pool size!
+Successfully inserted record with ID 8
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:78)
+	at MyHashTable.reHash(MyHashTable.java:301)
+	at MyHashTable.insert(MyHashTable.java:141)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 9
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:78)
+	at MyHashTable.reHash(MyHashTable.java:301)
+	at MyHashTable.insert(MyHashTable.java:141)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 10
+hashTable resized to: 32
+Insert FAILED - There is already a record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+org.webcat.deveventtracker.OutputTruncated
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363429293
+</Timestamp>
+<Runtime>
+1694363429293
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363443108
+</Timestamp>
+<Runtime>
+1694363443108
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Inside loop: insert 1
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Successfully inserted record with ID 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+Successfully inserted record with ID 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+doubling memory pool size!
+Successfully inserted record with ID 3
+hashTable resized to: 8
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Successfully inserted record with ID 10
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Record with ID 2 successfully deleted from the database
+
+data is:    search 2
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete FAILED -- There is no record with ID 6
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+doubling memory pool size!
+Successfully inserted record with ID 2
+
+data is:    delete 10
+Record with ID 10 successfully deleted from the database
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+
+After execution:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363443108
+</Timestamp>
+<Runtime>
+1694363443108
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363473118
+</Timestamp>
+<Runtime>
+1694363473118
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Remove
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+ProgramUnit
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+gethashSize()
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+Method
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363485401
+</Timestamp>
+<Runtime>
+1694363485401
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! Please enter an integar!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating hashTable! Please enter an integar!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Inside loop: awdasd
+data is:    awdasd
+
+After execution: awdasd
+data is:    
+
+After execution: 
+Inside loop: awdasd
+data is:    awdasd
+
+After execution: abcdefg
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+After execution: awdasd
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+doubling memory pool size!
+doubling memory pool size!
+doubling memory pool size!
+Successfully inserted record with ID 1
+After execution: insert 1
+Inside loop: delete 32
+data is:    delete 32
+data is:    sagfaqwoi
+data is:    sadawefgaw
+Error in reading/processing files!
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at Parser.processSeminars(Parser.java:155)
+	at ParserTest.testInitializeComponents(ParserTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Insert FAILED - There is already a record with ID 1
+
+data is:    delete 1
+Record with ID 1 successfully deleted from the database
+After execution: delete 1
+Inside loop: awdasd
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Successfully inserted record with ID 1
+
+data is:    search 1
+Found record with ID 1:
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+After execution: search 1
+Inside loop: insert 1
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Insert FAILED - There is already a record with ID 1
+
+data is:    insert 1
+data is:    of HCI Research at VT
+data is:    0610051600 90 10 10 awd
+Error in reading/processing files!
+java.lang.NumberFormatException: For input string: "awd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatExcepti
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at Parser.processSeminars(Parser.java:158)
+	at ParserTest.testInitializeComponents(ParserTest.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 4
+doubling memory pool size!
+Successfully inserted record with ID 5
+hashTable resized to: 16
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+Successfully inserted record with ID 8
+doubling memory pool size!
+Successfully inserted record with ID 9
+hashTable resized to: 32
+Successfully inserted record with ID 10
+Successfully inserted record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+Successfully inserted record with ID 97
+Successfully inserted record with ID 98
+Successfully inserted record with ID 99
+Successfully inserted record with ID 100
+Insert FAILED - There is already a record with ID 1
+Insert FAILED - There is already a record with ID 2
+Insert FAILED - There is already a record with ID 3
+Insert FAILED - There is already a record with ID 4
+Insert FAILED - There is already a record with ID 5
+Insert FAILED - There is already a record with ID 6
+Insert FAILED - There is already a record with ID 7
+Insert FAILED - There is already a record with ID 8
+Insert FAILED - There is already a record with ID 9
+Insert FAILED - There is already a record with ID 10
+Insert FAILED - There is already a record with ID 11
+Insert FAILED - There is already a record with ID 12
+Insert FAILED - There is already a record with ID 13
+Insert FAILED - There is already a record with ID 14
+Insert FAILED - There is already a record with ID 15
+Insert FAILED - There is already a record with ID 16
+Insert FAILED - There is already a record with ID 17
+Insert FAILED - There is already a record with ID 18
+Insert FAILED - There is already a record with ID 19
+Insert FAILED - There is already a record with ID 20
+Insert FAILED - There is already a record with ID 21
+Insert FAILED - There is already a record with ID 22
+Insert FAILED - There is already a record with ID 23
+Insert FAILED - There is already a record with ID 24
+Insert FAILED - There is already a record with ID 25
+Insert FAILED - There is already a record with ID 26
+Insert FAILED - There is already a record with ID 27
+Insert FAILED - There is already a record with ID 28
+Insert FAILED - There is already a record with ID 29
+Insert FAILED - There is already a record with ID 30
+Insert FAILED - There is already a record with ID 31
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 33
+Insert FAILED - There is already a record with ID 34
+Insert FAILED - There is already a record with ID 35
+Insert FAILED - There is already a record with ID 36
+Insert FAILED - There is already a record with ID 37
+Insert FAILED - There is already a record with ID 38
+Insert FAILED - There is already a record with ID 39
+Insert FAILED - There is already a record with ID 40
+Insert FAILED - There is already a record with ID 41
+Insert FAILED - There is already a record with ID 42
+Insert FAILED - There is already a record with ID 43
+Insert FAILED - There is already a record with ID 44
+Insert FAILED - There is already a record with ID 45
+Insert FAILED - There is already a record with ID 46
+Insert FAILED - There is already a record with ID 47
+Insert FAILED - There is already a record with ID 48
+Insert FAILED - There is already a record with ID 49
+Insert FAILED - There is already a record with ID 50
+Insert FAILED - There is already a record with ID 51
+Insert FAILED - There is already a record with ID 52
+Insert FAILED - There is already a record with ID 53
+Insert FAILED - There is already a record with ID 54
+Insert FAILED - There is already a record with ID 55
+Insert FAILED - There is already a record with ID 56
+Insert FAILED - There is already a record with ID 57
+Insert FAILED - There is already a record with ID 58
+Insert FAILED - There is already a record with ID 59
+Insert FAILED - There is already a record with ID 60
+Insert FAILED - There is already a record with ID 61
+Insert FAILED - There is already a record with ID 62
+Insert FAILED - There is already a record with ID 63
+Insert FAILED - There is already a record with ID 64
+Insert FAILED - There is already a record with ID 65
+Insert FAILED - There is already a record with ID 66
+Insert FAILED - There is already a record with ID 67
+Insert FAILED - There is already a record with ID 68
+Insert FAILED - There is already a record with ID 69
+Insert FAILED - There is already a record with ID 70
+Insert FAILED - There is already a record with ID 71
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 73
+Insert FAILED - There is already a record with ID 74
+Insert FAILED - There is already a record with ID 75
+Insert FAILED - There is already a record with ID 76
+Insert FAILED - There is already a record with ID 77
+Insert FAILED - There is already a record with ID 78
+Insert FAILED - There is already a record with ID 79
+Insert FAILED - There is already a record with ID 80
+Insert FAILED - There is already a record with ID 81
+Insert FAILED - There is already a record with ID 82
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 84
+Insert FAILED - There is already a record with ID 85
+Insert FAILED - There is already a record with ID 86
+Insert FAILED - There is already a record with ID 87
+Insert FAILED - There is already a record with ID 88
+Insert FAILED - There is already a record with ID 89
+Insert FAILED - There is already a record with ID 90
+Insert FAILED - There is already a record with ID 91
+Insert FAILED - There is already a record with ID 92
+Insert FAILED - There is already a record with ID 93
+Insert FAILED - There is already a record with ID 94
+Insert FAILED - There is already a record with ID 95
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 97
+Insert FAILED - There is already a record with ID 98
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 100
+Successfully inserted record with ID 1
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 17
+doubling memory pool size!
+Successfully inserted record with ID 10
+hashTable resized to: 16
+Successfully inserted record with ID 11
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 10
+Record with ID 2 successfully deleted from the database
+Record with ID 3 successfully deleted from the database
+Successfully inserted record with ID 3
+Delete FAILED -- There is no record with ID -1
+Record with ID 10 successfully deleted from the database
+Successfully inserted record with ID 17
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+Insert FAILED - There is already a record with ID 3
+Successfully inserted record with ID 4
+Successfully inserted record with ID 5
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+doubling memory pool size!
+Successfully inserted record with ID 8
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:78)
+	at MyHashTable.reHash(MyHashTable.java:277)
+	at MyHashTable.insert(MyHashTable.java:132)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 9
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:78)
+	at MyHashTable.reHash(MyHashTable.java:277)
+	at MyHashTable.insert(MyHashTable.java:132)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 10
+hashTable resized to: 32
+Insert FAILED - There is already a record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+org.webcat.deveventtracker.OutputTruncated
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363485402
+</Timestamp>
+<Runtime>
+1694363485402
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363492360
+</Timestamp>
+<Runtime>
+1694363492360
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363547367
+</Timestamp>
+<Runtime>
+1694363547367
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363562898
+</Timestamp>
+<Runtime>
+1694363562898
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Inside loop: insert 1
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Successfully inserted record with ID 1
+
+data is:    insert 2
+data is:    Computational Biology and Bioinformatics in CS at Virginia Tech
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to   bioinformatics and computation biology
+Successfully inserted record with ID 2
+
+data is:    insert 3
+data is:    Computing Systems Research at VT
+data is:    0701250830  30 30   10  17
+data is:    high_performance_computing           grids     VT computer science
+data is:    Seminar about the      Computing systems research at      VT
+doubling memory pool size!
+Successfully inserted record with ID 3
+hashTable resized to: 8
+
+data is:    insert 3
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Insert FAILED - There is already a record with ID 3
+
+data is:    insert 10
+data is:    Overview of HPC and CSE Research at VT
+data is:    0703301125     35        0  0                                       
+data is:    HPC      CSE      computer_science 
+data is:    Learn what kind of    research is done on HPC  and CSE at VT
+Successfully inserted record with ID 10
+
+data is:    search 3
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+
+data is:    print blocks
+There are no Freeblocks in the memory pool!
+
+data is:    delete    2
+Record with ID 2 successfully deleted from the database
+
+data is:    search 2
+Search FAILED -- There is no record with ID 2
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+
+data is:    print blocks
+Freeblock List:
+256: 256
+
+data is:    delete 6
+Delete FAILED -- There is no record with ID 6
+
+data is:    insert 2
+data is:    Much More Computational Biology and Bioinformatics in CS at Virginia
+data is:    0610071600       60     20     10 30
+data is:    Bioinformatics computation_biology Biology Computer_Science VT Virgi
+data is:    Introduction to bioinformatics and lots of computation biology
+doubling memory pool size!
+Successfully inserted record with ID 2
+
+data is:    delete 10
+Record with ID 10 successfully deleted from the database
+
+data is:    print hashtable
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+
+data is:    print blocks
+Freeblock List:
+256: 256
+256: 768
+512: 1536
+
+After execution:
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363562898
+</Timestamp>
+<Runtime>
+1694363562898
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+(default package)
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363584626
+</Timestamp>
+<Runtime>
+1694363584626
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+(default package)
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! Please enter an integar!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating hashTable! Please enter an integar!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+data is:    awdasd
+
+data is:    
+
+data is:    awdasd
+
+data is:    awdasd
+data is:    abcdefg
+
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+doubling memory pool size!
+doubling memory pool size!
+doubling memory pool size!
+Successfully inserted record with ID 1
+data is:    delete 32
+data is:    sagfaqwoi
+data is:    sadawefgaw
+Error in reading/processing files!
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at Parser.processSeminars(Parser.java:154)
+	at ParserTest.testInitializeComponents(ParserTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Insert FAILED - There is already a record with ID 1
+
+data is:    delete 1
+Record with ID 1 successfully deleted from the database
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Successfully inserted record with ID 1
+
+data is:    search 1
+Found record with ID 1:
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Insert FAILED - There is already a record with ID 1
+
+data is:    insert 1
+data is:    of HCI Research at VT
+data is:    0610051600 90 10 10 awd
+Error in reading/processing files!
+java.lang.NumberFormatException: For input string: "awd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatExcepti
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at Parser.processSeminars(Parser.java:157)
+	at ParserTest.testInitializeComponents(ParserTest.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 4
+doubling memory pool size!
+Successfully inserted record with ID 5
+hashTable resized to: 16
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+Successfully inserted record with ID 8
+doubling memory pool size!
+Successfully inserted record with ID 9
+hashTable resized to: 32
+Successfully inserted record with ID 10
+Successfully inserted record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+Successfully inserted record with ID 97
+Successfully inserted record with ID 98
+Successfully inserted record with ID 99
+Successfully inserted record with ID 100
+Insert FAILED - There is already a record with ID 1
+Insert FAILED - There is already a record with ID 2
+Insert FAILED - There is already a record with ID 3
+Insert FAILED - There is already a record with ID 4
+Insert FAILED - There is already a record with ID 5
+Insert FAILED - There is already a record with ID 6
+Insert FAILED - There is already a record with ID 7
+Insert FAILED - There is already a record with ID 8
+Insert FAILED - There is already a record with ID 9
+Insert FAILED - There is already a record with ID 10
+Insert FAILED - There is already a record with ID 11
+Insert FAILED - There is already a record with ID 12
+Insert FAILED - There is already a record with ID 13
+Insert FAILED - There is already a record with ID 14
+Insert FAILED - There is already a record with ID 15
+Insert FAILED - There is already a record with ID 16
+Insert FAILED - There is already a record with ID 17
+Insert FAILED - There is already a record with ID 18
+Insert FAILED - There is already a record with ID 19
+Insert FAILED - There is already a record with ID 20
+Insert FAILED - There is already a record with ID 21
+Insert FAILED - There is already a record with ID 22
+Insert FAILED - There is already a record with ID 23
+Insert FAILED - There is already a record with ID 24
+Insert FAILED - There is already a record with ID 25
+Insert FAILED - There is already a record with ID 26
+Insert FAILED - There is already a record with ID 27
+Insert FAILED - There is already a record with ID 28
+Insert FAILED - There is already a record with ID 29
+Insert FAILED - There is already a record with ID 30
+Insert FAILED - There is already a record with ID 31
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 33
+Insert FAILED - There is already a record with ID 34
+Insert FAILED - There is already a record with ID 35
+Insert FAILED - There is already a record with ID 36
+Insert FAILED - There is already a record with ID 37
+Insert FAILED - There is already a record with ID 38
+Insert FAILED - There is already a record with ID 39
+Insert FAILED - There is already a record with ID 40
+Insert FAILED - There is already a record with ID 41
+Insert FAILED - There is already a record with ID 42
+Insert FAILED - There is already a record with ID 43
+Insert FAILED - There is already a record with ID 44
+Insert FAILED - There is already a record with ID 45
+Insert FAILED - There is already a record with ID 46
+Insert FAILED - There is already a record with ID 47
+Insert FAILED - There is already a record with ID 48
+Insert FAILED - There is already a record with ID 49
+Insert FAILED - There is already a record with ID 50
+Insert FAILED - There is already a record with ID 51
+Insert FAILED - There is already a record with ID 52
+Insert FAILED - There is already a record with ID 53
+Insert FAILED - There is already a record with ID 54
+Insert FAILED - There is already a record with ID 55
+Insert FAILED - There is already a record with ID 56
+Insert FAILED - There is already a record with ID 57
+Insert FAILED - There is already a record with ID 58
+Insert FAILED - There is already a record with ID 59
+Insert FAILED - There is already a record with ID 60
+Insert FAILED - There is already a record with ID 61
+Insert FAILED - There is already a record with ID 62
+Insert FAILED - There is already a record with ID 63
+Insert FAILED - There is already a record with ID 64
+Insert FAILED - There is already a record with ID 65
+Insert FAILED - There is already a record with ID 66
+Insert FAILED - There is already a record with ID 67
+Insert FAILED - There is already a record with ID 68
+Insert FAILED - There is already a record with ID 69
+Insert FAILED - There is already a record with ID 70
+Insert FAILED - There is already a record with ID 71
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 73
+Insert FAILED - There is already a record with ID 74
+Insert FAILED - There is already a record with ID 75
+Insert FAILED - There is already a record with ID 76
+Insert FAILED - There is already a record with ID 77
+Insert FAILED - There is already a record with ID 78
+Insert FAILED - There is already a record with ID 79
+Insert FAILED - There is already a record with ID 80
+Insert FAILED - There is already a record with ID 81
+Insert FAILED - There is already a record with ID 82
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 84
+Insert FAILED - There is already a record with ID 85
+Insert FAILED - There is already a record with ID 86
+Insert FAILED - There is already a record with ID 87
+Insert FAILED - There is already a record with ID 88
+Insert FAILED - There is already a record with ID 89
+Insert FAILED - There is already a record with ID 90
+Insert FAILED - There is already a record with ID 91
+Insert FAILED - There is already a record with ID 92
+Insert FAILED - There is already a record with ID 93
+Insert FAILED - There is already a record with ID 94
+Insert FAILED - There is already a record with ID 95
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 97
+Insert FAILED - There is already a record with ID 98
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 100
+Successfully inserted record with ID 1
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 17
+doubling memory pool size!
+Successfully inserted record with ID 10
+hashTable resized to: 16
+Successfully inserted record with ID 11
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 10
+Record with ID 2 successfully deleted from the database
+Record with ID 3 successfully deleted from the database
+Successfully inserted record with ID 3
+Delete FAILED -- There is no record with ID -1
+Record with ID 10 successfully deleted from the database
+Successfully inserted record with ID 17
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+Insert FAILED - There is already a record with ID 3
+Successfully inserted record with ID 4
+Successfully inserted record with ID 5
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+doubling memory pool size!
+Successfully inserted record with ID 8
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:70)
+	at MyHashTable.reHash(MyHashTable.java:269)
+	at MyHashTable.insert(MyHashTable.java:124)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 9
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:70)
+	at MyHashTable.reHash(MyHashTable.java:269)
+	at MyHashTable.insert(MyHashTable.java:124)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 10
+hashTable resized to: 32
+Insert FAILED - There is already a record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+Successfully inserted record with ID 97
+Successfully inserted record with ID 98
+Successfully inserted record with ID 99
+Successfully inserted record with ID 100
+Delete FAILED -- There is no record with ID 200
+Delete FAILED -- There is no record with ID 199
+Delete FAILED -- There is no record with ID 198
+Delete FAILED -- There is no record with ID 197
+Delete FAILED -- There is no record with ID 196
+Delete FAILED -- There is no record with ID 195
+Delete FAILED -- There is no record with ID 194
+Delete FAILED -- There is no record with ID 193
+Delete FAILED -- There is no record with ID 192
+Delete FAILED -- There is no record with ID 191
+Delete FAILED -- There is no record with ID 190
+org.webcat.deveventtracker.OutputTruncated
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363584627
+</Timestamp>
+<Runtime>
+1694363584627
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363590357
+</Timestamp>
+<Runtime>
+1694363590357
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! Please enter an integar!
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating memory pool! The size must be the power of 2 and greater than 
+Error in creating hashTable! Please enter an integar!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+Error in creating hashTable! The size must be the power of 2 and greater than 0!
+data is:    awdasd
+
+data is:    
+
+data is:    awdasd
+
+data is:    awdasd
+data is:    abcdefg
+
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+doubling memory pool size!
+doubling memory pool size!
+doubling memory pool size!
+Successfully inserted record with ID 1
+data is:    delete 32
+data is:    sagfaqwoi
+data is:    sadawefgaw
+Error in reading/processing files!
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at Parser.processSeminars(Parser.java:154)
+	at ParserTest.testInitializeComponents(ParserTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Insert FAILED - There is already a record with ID 1
+
+data is:    delete 1
+Record with ID 1 successfully deleted from the database
+data is:    awdasd
+data is:    abcdefg
+
+data is:    insert 1
+Successfully inserted record with ID 1
+
+data is:    search 1
+Found record with ID 1:
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+data is:    insert 1
+data is:    Overview of HCI Research at VT
+data is:    0610051600 90 10 10 45
+data is:    HCI Computer_Science VT Virginia_Tech
+data is:    This seminar will present an overview of HCI research at VT
+Insert FAILED - There is already a record with ID 1
+
+data is:    insert 1
+data is:    of HCI Research at VT
+data is:    0610051600 90 10 10 awd
+Error in reading/processing files!
+java.lang.NumberFormatException: For input string: "awd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatExcepti
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at Parser.processSeminars(Parser.java:157)
+	at ParserTest.testInitializeComponents(ParserTest.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 4
+doubling memory pool size!
+Successfully inserted record with ID 5
+hashTable resized to: 16
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+Successfully inserted record with ID 8
+doubling memory pool size!
+Successfully inserted record with ID 9
+hashTable resized to: 32
+Successfully inserted record with ID 10
+Successfully inserted record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+Successfully inserted record with ID 97
+Successfully inserted record with ID 98
+Successfully inserted record with ID 99
+Successfully inserted record with ID 100
+Insert FAILED - There is already a record with ID 1
+Insert FAILED - There is already a record with ID 2
+Insert FAILED - There is already a record with ID 3
+Insert FAILED - There is already a record with ID 4
+Insert FAILED - There is already a record with ID 5
+Insert FAILED - There is already a record with ID 6
+Insert FAILED - There is already a record with ID 7
+Insert FAILED - There is already a record with ID 8
+Insert FAILED - There is already a record with ID 9
+Insert FAILED - There is already a record with ID 10
+Insert FAILED - There is already a record with ID 11
+Insert FAILED - There is already a record with ID 12
+Insert FAILED - There is already a record with ID 13
+Insert FAILED - There is already a record with ID 14
+Insert FAILED - There is already a record with ID 15
+Insert FAILED - There is already a record with ID 16
+Insert FAILED - There is already a record with ID 17
+Insert FAILED - There is already a record with ID 18
+Insert FAILED - There is already a record with ID 19
+Insert FAILED - There is already a record with ID 20
+Insert FAILED - There is already a record with ID 21
+Insert FAILED - There is already a record with ID 22
+Insert FAILED - There is already a record with ID 23
+Insert FAILED - There is already a record with ID 24
+Insert FAILED - There is already a record with ID 25
+Insert FAILED - There is already a record with ID 26
+Insert FAILED - There is already a record with ID 27
+Insert FAILED - There is already a record with ID 28
+Insert FAILED - There is already a record with ID 29
+Insert FAILED - There is already a record with ID 30
+Insert FAILED - There is already a record with ID 31
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 33
+Insert FAILED - There is already a record with ID 34
+Insert FAILED - There is already a record with ID 35
+Insert FAILED - There is already a record with ID 36
+Insert FAILED - There is already a record with ID 37
+Insert FAILED - There is already a record with ID 38
+Insert FAILED - There is already a record with ID 39
+Insert FAILED - There is already a record with ID 40
+Insert FAILED - There is already a record with ID 41
+Insert FAILED - There is already a record with ID 42
+Insert FAILED - There is already a record with ID 43
+Insert FAILED - There is already a record with ID 44
+Insert FAILED - There is already a record with ID 45
+Insert FAILED - There is already a record with ID 46
+Insert FAILED - There is already a record with ID 47
+Insert FAILED - There is already a record with ID 48
+Insert FAILED - There is already a record with ID 49
+Insert FAILED - There is already a record with ID 50
+Insert FAILED - There is already a record with ID 51
+Insert FAILED - There is already a record with ID 52
+Insert FAILED - There is already a record with ID 53
+Insert FAILED - There is already a record with ID 54
+Insert FAILED - There is already a record with ID 55
+Insert FAILED - There is already a record with ID 56
+Insert FAILED - There is already a record with ID 57
+Insert FAILED - There is already a record with ID 58
+Insert FAILED - There is already a record with ID 59
+Insert FAILED - There is already a record with ID 60
+Insert FAILED - There is already a record with ID 61
+Insert FAILED - There is already a record with ID 62
+Insert FAILED - There is already a record with ID 63
+Insert FAILED - There is already a record with ID 64
+Insert FAILED - There is already a record with ID 65
+Insert FAILED - There is already a record with ID 66
+Insert FAILED - There is already a record with ID 67
+Insert FAILED - There is already a record with ID 68
+Insert FAILED - There is already a record with ID 69
+Insert FAILED - There is already a record with ID 70
+Insert FAILED - There is already a record with ID 71
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 73
+Insert FAILED - There is already a record with ID 74
+Insert FAILED - There is already a record with ID 75
+Insert FAILED - There is already a record with ID 76
+Insert FAILED - There is already a record with ID 77
+Insert FAILED - There is already a record with ID 78
+Insert FAILED - There is already a record with ID 79
+Insert FAILED - There is already a record with ID 80
+Insert FAILED - There is already a record with ID 81
+Insert FAILED - There is already a record with ID 82
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 84
+Insert FAILED - There is already a record with ID 85
+Insert FAILED - There is already a record with ID 86
+Insert FAILED - There is already a record with ID 87
+Insert FAILED - There is already a record with ID 88
+Insert FAILED - There is already a record with ID 89
+Insert FAILED - There is already a record with ID 90
+Insert FAILED - There is already a record with ID 91
+Insert FAILED - There is already a record with ID 92
+Insert FAILED - There is already a record with ID 93
+Insert FAILED - There is already a record with ID 94
+Insert FAILED - There is already a record with ID 95
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 97
+Insert FAILED - There is already a record with ID 98
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 100
+Successfully inserted record with ID 1
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+doubling memory pool size!
+Successfully inserted record with ID 2
+doubling memory pool size!
+Successfully inserted record with ID 3
+Successfully inserted record with ID 17
+doubling memory pool size!
+Successfully inserted record with ID 10
+hashTable resized to: 16
+Successfully inserted record with ID 11
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 10
+Record with ID 2 successfully deleted from the database
+Record with ID 3 successfully deleted from the database
+Successfully inserted record with ID 3
+Delete FAILED -- There is no record with ID -1
+Record with ID 10 successfully deleted from the database
+Successfully inserted record with ID 17
+Record with ID 17 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+Insert FAILED - There is already a record with ID 3
+Successfully inserted record with ID 4
+Successfully inserted record with ID 5
+Successfully inserted record with ID 6
+Successfully inserted record with ID 7
+doubling memory pool size!
+Successfully inserted record with ID 8
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:70)
+	at MyHashTable.reHash(MyHashTable.java:269)
+	at MyHashTable.insert(MyHashTable.java:124)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 9
+Error in inserting to the memory manager!
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32
+	at MyHashTable.hashing(MyHashTable.java:70)
+	at MyHashTable.reHash(MyHashTable.java:269)
+	at MyHashTable.insert(MyHashTable.java:124)
+	at myHashTableTest.testDelete(myHashTableTest.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Metho
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodA
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegatin
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.j
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.ja
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.jav
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWra
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(F
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Successfully inserted record with ID 10
+hashTable resized to: 32
+Insert FAILED - There is already a record with ID 11
+Successfully inserted record with ID 12
+Successfully inserted record with ID 13
+Successfully inserted record with ID 14
+Successfully inserted record with ID 15
+Successfully inserted record with ID 16
+doubling memory pool size!
+Successfully inserted record with ID 17
+hashTable resized to: 64
+Successfully inserted record with ID 18
+Successfully inserted record with ID 19
+Successfully inserted record with ID 20
+Successfully inserted record with ID 21
+Successfully inserted record with ID 22
+Successfully inserted record with ID 23
+Successfully inserted record with ID 24
+Successfully inserted record with ID 25
+Successfully inserted record with ID 26
+Successfully inserted record with ID 27
+Successfully inserted record with ID 28
+Successfully inserted record with ID 29
+Successfully inserted record with ID 30
+Successfully inserted record with ID 31
+Successfully inserted record with ID 32
+doubling memory pool size!
+Successfully inserted record with ID 33
+hashTable resized to: 128
+Successfully inserted record with ID 34
+Successfully inserted record with ID 35
+Successfully inserted record with ID 36
+Successfully inserted record with ID 37
+Successfully inserted record with ID 38
+Successfully inserted record with ID 39
+Successfully inserted record with ID 40
+Successfully inserted record with ID 41
+Successfully inserted record with ID 42
+Successfully inserted record with ID 43
+Successfully inserted record with ID 44
+Successfully inserted record with ID 45
+Successfully inserted record with ID 46
+Successfully inserted record with ID 47
+Successfully inserted record with ID 48
+Successfully inserted record with ID 49
+Successfully inserted record with ID 50
+Successfully inserted record with ID 51
+Successfully inserted record with ID 52
+Successfully inserted record with ID 53
+Successfully inserted record with ID 54
+Successfully inserted record with ID 55
+Successfully inserted record with ID 56
+Successfully inserted record with ID 57
+Successfully inserted record with ID 58
+Successfully inserted record with ID 59
+Successfully inserted record with ID 60
+Successfully inserted record with ID 61
+Successfully inserted record with ID 62
+Successfully inserted record with ID 63
+Successfully inserted record with ID 64
+doubling memory pool size!
+Successfully inserted record with ID 65
+hashTable resized to: 256
+Successfully inserted record with ID 66
+Successfully inserted record with ID 67
+Successfully inserted record with ID 68
+Successfully inserted record with ID 69
+Successfully inserted record with ID 70
+Successfully inserted record with ID 71
+Successfully inserted record with ID 72
+Successfully inserted record with ID 73
+Successfully inserted record with ID 74
+Successfully inserted record with ID 75
+Successfully inserted record with ID 76
+Successfully inserted record with ID 77
+Successfully inserted record with ID 78
+Successfully inserted record with ID 79
+Successfully inserted record with ID 80
+Successfully inserted record with ID 81
+Successfully inserted record with ID 82
+Successfully inserted record with ID 83
+Successfully inserted record with ID 84
+Successfully inserted record with ID 85
+Successfully inserted record with ID 86
+Successfully inserted record with ID 87
+Successfully inserted record with ID 88
+Successfully inserted record with ID 89
+Successfully inserted record with ID 90
+Successfully inserted record with ID 91
+Successfully inserted record with ID 92
+Successfully inserted record with ID 93
+Successfully inserted record with ID 94
+Successfully inserted record with ID 95
+Successfully inserted record with ID 96
+Successfully inserted record with ID 97
+Successfully inserted record with ID 98
+Successfully inserted record with ID 99
+Successfully inserted record with ID 100
+Delete FAILED -- There is no record with ID 200
+Delete FAILED -- There is no record with ID 199
+Delete FAILED -- There is no record with ID 198
+Delete FAILED -- There is no record with ID 197
+Delete FAILED -- There is no record with ID 196
+Delete FAILED -- There is no record with ID 195
+Delete FAILED -- There is no record with ID 194
+Delete FAILED -- There is no record with ID 193
+Delete FAILED -- There is no record with ID 192
+Delete FAILED -- There is no record with ID 191
+Delete FAILED -- There is no record with ID 190
+org.webcat.deveventtracker.OutputTruncated
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363590357
+</Timestamp>
+<Runtime>
+1694363590357
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694363597372
+</Timestamp>
+<Runtime>
+1694363597372
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
