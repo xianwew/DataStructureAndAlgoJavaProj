@@ -161,7 +161,9 @@ public class Parser {
 							break;
 						case 4:
 							desc = data;
-							break; 
+							break;
+						default:
+					        break; 
 					}
 					line++;
 					if (reader.hasNextLine()) {
