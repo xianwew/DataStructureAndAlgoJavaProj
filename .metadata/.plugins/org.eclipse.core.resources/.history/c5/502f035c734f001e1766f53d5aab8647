@@ -63,13 +63,13 @@ public class myHashTableTest {
     			}
     		}
     		assertEquals(32, test.values[t].getSize());	
-		}
+    		}
 		assertEquals(256,test.size);
 		assertEquals(256, test.keys.length);
 		assertEquals(256, test.values.length);	
-		for(int k= 1; k <= 100; k++) {
-			Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
-			assertEquals(false, test.insert(semManager, k, s));
+		 for(int k= 1; k <= 100; k++) {
+    		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
+    		assertEquals(false, test.insert(semManager, k, s));
 		}
 	}
 

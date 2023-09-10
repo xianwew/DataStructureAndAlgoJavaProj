@@ -63,7 +63,7 @@ public class myHashTableTest {
     			}
     		}
     		assertEquals(32, test.values[t].getSize());	
-		}
+    		}
 		assertEquals(256,test.size);
 		assertEquals(256, test.keys.length);
 		assertEquals(256, test.values.length);	

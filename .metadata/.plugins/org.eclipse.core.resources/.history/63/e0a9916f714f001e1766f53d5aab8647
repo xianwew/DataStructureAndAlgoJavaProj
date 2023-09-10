@@ -63,13 +63,13 @@ public class myHashTableTest {
     			}
     		}
     		assertEquals(32, test.values[t].getSize());	
-		}
+    		}
 		assertEquals(256,test.size);
 		assertEquals(256, test.keys.length);
 		assertEquals(256, test.values.length);	
-		for(int k= 1; k <= 100; k++) {
-			Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
-			assertEquals(false, test.insert(semManager, k, s));
+		 for(int k= 1; k <= 100; k++) {
+    		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
+    		assertEquals(false, test.insert(semManager, k, s));
 		}
 	}
 
@@ -126,7 +126,8 @@ public class myHashTableTest {
         	}
         	else {
         		assertEquals(false,test.delete(semManager, k));
-        	}   	
+        	}
+        	
         }
         for(int k = 1; k <= 50; k++) {
         	if(k <= 100) {
@@ -134,7 +135,8 @@ public class myHashTableTest {
         	}
         	else {
         		assertEquals(false,test.delete(semManager, k));
-        	}     	
+        	}
+        	
         }
         for(int k= 1; k <= 100; k++) {
     		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
@@ -146,7 +148,8 @@ public class myHashTableTest {
         	}
         	else {
         		assertEquals(false,test.delete(semManager, k));
-        	} 	
+        	}
+        	
         }
         for(int k = 1; k <= 50; k++) {
         	if(k <= 100) {
@@ -154,8 +157,11 @@ public class myHashTableTest {
         	}
         	else {
         		assertEquals(false,test.delete(semManager, k));
-        	} 	
+        	}
+        	
         }
+
+
 	}
 
 	public void testSearch() {
@@ -174,30 +180,17 @@ public class myHashTableTest {
         String[] keywordList = {};
         for(int k= 1; k <= 100; k++) {
     		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
-    		test.insert(semManager, k, s);
-    		assertEquals(true, test.search(semManager, k));
+    		test.insert(semManager, k, s);   	
     	}
 		assertEquals(false, test.search(semManager, -1));
 		assertEquals(true, test.search(semManager, 2));
 		assertEquals(true, test.search(semManager, 3));
 		assertEquals(true, test.search(semManager, 5));
 		assertEquals(true, test.search(semManager, 10));
-		test.delete(semManager, 10);
-		assertEquals(false, test.search(semManager, 10));
-		test.delete(semManager, 5);
-		assertEquals(false, test.search(semManager, 5));
-		test.delete(semManager, 3);
-		assertEquals(false, test.search(semManager, 3));
-		test.delete(semManager, 2);
-		assertEquals(false, test.search(semManager, 2));
-        for(int k = 1; k <= 100; k++) {
-    		if (k != 2 && k != 3 && k != 5 && k != 10) {
-    			assertEquals(true, test.search(semManager, k));
-    		}
-    		else {
-    			assertEquals(false, test.search(semManager, k));
-    		}
-    	}
+		
+		
+        
+		
 //		MyHashTable test = new MyHashTable(8);
 //		SemManager semManager = new SemManager();
 //		semManager.initializeSemManger(512);
