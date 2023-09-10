@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Project1" project="Project1" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="SemManagerTest" time="0.001">
+    <testcase name="testMInitx" classname="SemManagerTest" time="0.001"/>
+    <testcase name="testPrintSemManager" classname="SemManagerTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="SeminarTest" time="0.0">
+    <testcase name="testtoString" classname="SeminarTest" time="0.0"/>
+    <testcase name="testSeminarDS" classname="SeminarTest" time="0.0"/>
+  </testsuite>
+</testrun>

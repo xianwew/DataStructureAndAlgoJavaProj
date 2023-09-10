@@ -4,7 +4,7 @@ import java.io.File;
 import java.nio.ByteBuffer;
 import student.TestCase;
 
-public class ParserTest {
+public class ParserTest  extends TestCase {
 
 	public void testInitializeComponents() {
 	

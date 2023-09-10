@@ -79,7 +79,8 @@ public class MyHashTable {
 		if (handleAtIndex == null) {
 			insertArr[calculateFirstHashing(key, arrSize)] = handle;
 		}
-		else if (handleAtIndex != null && handleAtIndex.getStartIndex() == -1) {
+		else if (handleAtIndex != null && 
+				handleAtIndex.getStartIndex() == -1) {
 			insertArr[calculateFirstHashing(key, arrSize)] = handle;
 		}
 		else if (insertArr[calculateSecondHashing(key, arrSize)] != null) {
@@ -110,7 +111,7 @@ public class MyHashTable {
 				}
 			}
 		}
-		else if (insertArr[calculateSecondHashing(key, arrSize)] == null) {
+		else {
 			insertArr[calculateSecondHashing(key, arrSize)] = handle;	
 		}
 	}

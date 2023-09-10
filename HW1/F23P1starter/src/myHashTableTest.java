@@ -1,9 +1,9 @@
 import static org.junit.Assert.*;
 import student.TestCase;
 
-public class myHashTableTest {
+public class myHashTableTest extends TestCase {
 
-	public void testHashingCalculation() {
+	public void testHashingCalculation () {
 	
 		MyHashTable test = new MyHashTable(1024);  	
 		assertEquals(1, test.calculateFirstHashing(1, 1024));  	
