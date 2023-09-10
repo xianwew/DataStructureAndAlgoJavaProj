@@ -186,12 +186,12 @@ public class Parser {
 						id, title, dateTime, length, 
 						x, y, cost, keywordList, desc);
 				dataBase.processCommand(instruction, id, seminar);
-				System.out.println("");
+//				System.out.println("");
 				if (!reader.hasNextLine()) {
 					reader.close();
 					instruction = getInstruction(data);
 					if (instruction != 0) {
-						System.out.println("data is:    " + data);
+//						System.out.println("data is:    " + data);
 						try {
 							id = Integer.parseInt(data.split("\\s+")[1]);
 						}
