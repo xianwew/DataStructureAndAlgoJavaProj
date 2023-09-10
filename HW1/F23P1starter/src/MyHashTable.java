@@ -124,6 +124,7 @@ public class MyHashTable {
 				if (lastElementIndex > size / 2) {
 					reHash();
 				}
+				System.out.println("Successfully inserted record with ID " + key);	
 				System.out.println(seminar.toString());
 				System.out.println("Size: " + seminar.serialize().length);
 				return true;
@@ -187,7 +188,7 @@ public class MyHashTable {
 	public int[] printHashtable() {
 		int[] tmp = new int[values.length];
 		System.out.println("Hashtable:");
-		int j = 0;
+		int j = 0, k = 0;
 		for (int i = 0; i < values.length; i++) {
 			if (values[i] != null) {
 				System.out.println(i + ": " + (
@@ -196,8 +197,13 @@ public class MyHashTable {
 				
 				tmp[j] = values[i].getKey();
 				j++;
-			}	
+				if(values[i].getKey() != -1) {
+					k++;
+				}
+			}
+			
 		}
+		System.out.println("total records: " + k);
 		return tmp;
 	}
 	

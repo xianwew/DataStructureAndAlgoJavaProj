@@ -71,17 +71,57 @@ public class SemManager {
 		/**
 	     * The printSemManager is used to print out the free blocks
 	     */	
+		System.out.println("Freeblock List:");
+		int i = 0;
 		FreeList curPosition = dummy.getNext();
 		if (curPosition == null) {
 			System.out.println("There are no Freeblocks in the memory pool!");
 			return false;
 		}
 		else {
-			System.out.println("Freeblock List:");
 			while(curPosition != null) {
-				System.out.println(curPosition.getVal() + ": " + curPosition.getIndex());
+			
+				curPosition = curPosition.getNext();
+				i++;
+			}	
+			FreeList[] tmp = new FreeList[i];
+			for(int k = 0; k < tmp.length; k++) {
+				tmp[k] = new FreeList(-1,-1);
+			}
+			curPosition = dummy.getNext();
+			while(curPosition != null) {
+				boolean set = false;
+				for(int k = 0; k < tmp.length; k++) {
+					if(tmp[k].getVal() == curPosition.getVal()) {
+						FreeList tmpList = tmp[k];
+						while(tmpList.getNext() != null) {
+							tmpList = tmpList.getNext();
+						}
+						tmpList.setNext(new FreeList(curPosition.getVal(),curPosition.getIndex()));
+						set = true;
+						break;
+					}					
+				}
+				if(!set) {
+					for(int k = 0; k < tmp.length; k++) {
+						if(tmp[k].getVal() == -1) {
+							tmp[k].setNext(new FreeList(curPosition.getVal(),curPosition.getIndex()));
+							set = true;
+							break;
+						}					
+					}
+				}
 				curPosition = curPosition.getNext();
 			}	
+			for(int k = 0; k < tmp.length; k++) {
+				if(tmp[k].getVal() != -1) {
+					curPosition = tmp[k];
+					while(curPosition.getNext() != null) {
+						System.out.println(curPosition.getVal() + ": " + curPosition.getIndex() + " ");
+						curPosition = curPosition.getNext();
+					}
+				}					
+			}
 		return true;
 		}
 	}
@@ -222,7 +262,7 @@ public class SemManager {
 		if(next != null){
 			next.setPrev(prev);
 		}
-		System.out.println("Successfully inserted record with ID " + key);			
+				
 		return handle;
 	}	
 	
