@@ -35,8 +35,9 @@ import java.io.*;
  */
 
 public class SemManager {
-	private FreeList dummy;
-	private int size;
+	public int doubleSizeTest = 0;
+	public FreeList dummy;
+	public int size;
 	public byte[] memoryPool;
 	public SemManager() {}
 	
@@ -66,13 +67,14 @@ public class SemManager {
 		this.memoryPool = new byte[size];
 	}
 
-	public void printSemManager () {	
+	public boolean printSemManager () {	
 		/**
 	     * The printSemManager is used to print out the free blocks
 	     */	
 		FreeList curPosition = dummy.getNext();
 		if (curPosition == null) {
 			System.out.println("There are no Freeblocks in the memory pool!");
+			return false;
 		}
 		else {
 			System.out.println("Freeblock List:");
@@ -80,6 +82,7 @@ public class SemManager {
 				System.out.println(curPosition.getVal() + ": " + curPosition.getIndex());
 				curPosition = curPosition.getNext();
 			}	
+		return true;
 		}
 	}
 	
@@ -105,24 +108,30 @@ public class SemManager {
 		}
 	}
 	
-	public void doubleSize () {
+	public FreeList doubleSize () {
 		/**
 	     * The function doubles the size of the memory manager
 	     */	
 		System.out.println("doubling memory pool size!");
 		byte[] tmp = new byte[size * 2];
-		for (int i = 0; i < memoryPool.length; i++) {
-			tmp[i] = memoryPool[i];
+		doubleSizeTest = 0;
+		while (doubleSizeTest < memoryPool.length) {
+			tmp[doubleSizeTest] = memoryPool[doubleSizeTest];
+			doubleSizeTest++;
 		}
+
 		FreeList newInsert = new FreeList(size, size);
 		FreeList curPosition = dummy;	
 		while (curPosition != null && curPosition.getNext() != null) {
 			curPosition = curPosition.getNext();
 		}
-		curPosition.setNext(newInsert);
-		newInsert.setPrev(curPosition);	
+		if (curPosition != null) {
+			curPosition.setNext(newInsert);
+			newInsert.setPrev(curPosition);	
+		}
 		memoryPool = tmp;
 		size *= 2;
+		return curPosition;
 	}
 	
 	public FreeList FindSpaceAvailable (int requestedSize) {
@@ -130,9 +139,13 @@ public class SemManager {
 	     * The function tries to find if there is a position available
 	     * by a given requested size.
 	     */	
-		FreeList curPosition = dummy.getNext();
+		FreeList curPosition = null;
+		if(dummy != null) {
+			curPosition = dummy.getNext();
+		}
+		
 		FreeList ReturnPtr = null;
-		int smallestGreaterThanReq = Integer.MAX_VALUE;
+		int smallestGreaterThanReq = Integer.MAX_VALUE-1;
 		while (curPosition != null) {
 			if (curPosition.getVal() >= requestedSize && 
 				curPosition.getVal() <= smallestGreaterThanReq) {
@@ -144,14 +157,14 @@ public class SemManager {
 		return ReturnPtr;
 	}
 	
-	private int getNearestPowerOfTwo (int requestedSize) {
+	public int getNearestPowerOfTwo (int requestedSize) {
 		/**
 	     * The function return a power of two number that is greater
 	     * than a given number.
 	     */
-        if (Math.log(requestedSize) / Math.log(2) == 0) {
-            return requestedSize;
-        }
+//        if (Math.log(requestedSize) / Math.log(2) == 0) {
+//            return requestedSize;
+//        }
         int nearestPowerOfTwo = 1;
         while (nearestPowerOfTwo < requestedSize) {
         	nearestPowerOfTwo *= 2; 
@@ -159,20 +172,22 @@ public class SemManager {
         return nearestPowerOfTwo;
     }
 	
-	public void splitMemoryPool (int insertPositionSize, FreeList insertPosition) {
+	public FreeList splitMemoryPool (int insertPositionSize, FreeList insertPosition) {
 		/**
 	     * The function split the given node.
 	     */
 		FreeList next = insertPosition.getNext();
-		FreeList newInsert = new FreeList(insertPositionSize / 2, 
-				insertPosition.getIndex() + insertPositionSize / 2);
+		int i = insertPositionSize / 2;
+		int k = insertPosition.getIndex()+i;
+		FreeList newInsert = new FreeList(i, k);
 		newInsert.setPrev(insertPosition);
 		newInsert.setNext(next);
 		insertPosition.setNext(newInsert);	
-		insertPosition.setVal(insertPositionSize / 2);
+		insertPosition.setVal(i);
 		if (next != null) {
 			next.setPrev(newInsert);
 		}
+		return insertPosition;
 	}
 	
 	public Handle insert (byte[] insertData, int key) {
@@ -231,7 +246,9 @@ public class SemManager {
 		}	
 		if(searchPtr != null) {
 			FreeList prev = searchPtr.getPrev();
-			prev.setNext(newInsert);
+			if(prev != null) {
+				prev.setNext(newInsert);	
+			}
 			newInsert.setPrev(prev);
 			searchPtr.setPrev(newInsert);
 			newInsert.setNext(searchPtr);
@@ -244,37 +261,26 @@ public class SemManager {
 		return true;
 	}
 	
-	public boolean compareIndex(int index1, int index2) {
-		String binarIndex1 = String.format("%8s", Integer.toBinaryString(index1)).replace(' ', '0');
-        String binarIndex2 = String.format("%8s", Integer.toBinaryString(index2)).replace(' ', '0');
-		if (binarIndex1.length() != binarIndex2.length()) {
-			return false;
-		}
-		else {
-			for (int i = 0; i < binarIndex1.length(); i++) {
-				if (binarIndex1.charAt(i) != binarIndex2.charAt(i) && i != 0) {
-					return false;
-				}
-			}
-		}
-        return true;
-	}
-	
-	public void detectMerge() {
+	public FreeList detectMerge() {
 		/**
 	     * The function detects if any two nodes are adjacent and
 	     * need to be merge to one node 
 	     */
 		FreeList left = dummy.getNext();
-		FreeList right = left.getNext();	
+		FreeList right = null;
+		if(left != null) {
+			right = left.getNext();		
+		}
+		
 		while (right != null) {
-			if ((left.getVal() == right.getVal()) && (left.getIndex() + left.getVal() == right.getIndex())) {
+			if ((left.getVal() == right.getVal()) && 
+					(left.getIndex() + left.getVal() == right.getIndex())) {
 				FreeList newInsert = new FreeList(left.getVal() * 2, left.getIndex());
 				FreeList prev = left.getPrev(), next = right.getNext();
 				newInsert.setPrev(prev);
 				newInsert.setNext(next);
 				prev.setNext(newInsert);
-				if(next != null){
+				if (next != null) {
 					next.setPrev(newInsert);
 				}
 				left = newInsert;
@@ -285,6 +291,7 @@ public class SemManager {
 				right = right.getNext();	
 			}
 		}	
+		return left;
 	}
 
 	public static void main (String[] args) {
@@ -308,23 +315,5 @@ public class SemManager {
             e.printStackTrace();
 		}
 	    
-//		Parser test1 = new Parser();
-//		SemManager semManager = new SemManager();
-//		semManager.initializeSemManger(1024);
-//		String[] input = new String[]{"java","SemManager","16","16","src/testParser1.txt"};
-//		Object[] components = test1.initializeComponents(input);  
-//		semManager.memoryPool = (byte[]) components[0];
-//	    semManager.initializeSemManger(semManager.memoryPool.length);
-//	    MyHashTable hashTable = (MyHashTable) components[1];
-//	    File commandFile1 = (File) components[2];
-//		WorldDataBase worldDataBase = new WorldDataBase(semManager, hashTable);
-//		test1.processSeminars(commandFile1, worldDataBase);
-//		assertEquals("awdasd", test1.data);
-//		if(commandFile1 != null) {
-//			System.out.println("abc");
-//		}
-//		else {
-//			System.out.println("cde");
-//		} 
     }
 }
