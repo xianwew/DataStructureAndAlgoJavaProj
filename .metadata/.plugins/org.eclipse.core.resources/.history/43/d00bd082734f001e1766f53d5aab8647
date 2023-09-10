@@ -1,4 +1,4 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import student.TestCase;
 
@@ -24,14 +24,5 @@ public class SemManagerTest extends TestCase {
         assertNotNull(sem);
         SemManager.main(null);
     }
-    
-    public void testPrintSemManager() {
-		SemManager semManager = new SemManager();
-		semManager.initializeSemManger(32);
-		
-		
-    }
-    
-    
 }
 

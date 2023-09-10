@@ -26,10 +26,9 @@ public class SemManagerTest extends TestCase {
     }
     
     public void testPrintSemManager() {
+    	MyHashTable test = new MyHashTable(8);
 		SemManager semManager = new SemManager();
 		semManager.initializeSemManger(32);
-		
-		
     }
     
     

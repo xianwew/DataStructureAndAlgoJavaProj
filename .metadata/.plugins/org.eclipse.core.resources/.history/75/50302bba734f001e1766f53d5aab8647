@@ -26,10 +26,7 @@ public class SemManagerTest extends TestCase {
     }
     
     public void testPrintSemManager() {
-		SemManager semManager = new SemManager();
-		semManager.initializeSemManger(32);
-		
-		
+    	
     }
     
     
