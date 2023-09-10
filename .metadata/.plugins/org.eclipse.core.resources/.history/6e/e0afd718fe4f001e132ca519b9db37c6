@@ -136,7 +136,7 @@ public class Parser {
 		        String[] keywordList = {};
 				while (true) {
 					String tmpData = data.trim();
-					//System.out.println("data is:    " + data);
+					System.out.println("data is:    " + data);
 					switch (line) {
 						case 0:
 							try {

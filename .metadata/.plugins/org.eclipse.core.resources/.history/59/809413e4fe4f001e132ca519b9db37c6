@@ -112,7 +112,7 @@ public class SemManager {
 		/**
 	     * The function doubles the size of the memory manager
 	     */	
-		
+		System.out.println("doubling memory pool size!");
 		byte[] tmp = new byte[size * 2];
 		doubleSizeTest = 0;
 		while (doubleSizeTest < memoryPool.length) {
@@ -131,7 +131,6 @@ public class SemManager {
 		}
 		memoryPool = tmp;
 		size *= 2;
-		System.out.println("Memory pool expanded to " + size + " bytes.");
 		return curPosition;
 	}
 	

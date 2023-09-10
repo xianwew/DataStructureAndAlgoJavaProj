@@ -120,12 +120,9 @@ public class MyHashTable {
 		 		keys[lastElementIndex] = key;	
 		 		lastElementIndex++;	
 		 		hashing(key, handle, values);
-		 		
 				if (lastElementIndex > size / 2) {
 					reHash();
 				}
-				System.out.println(seminar.toString());
-				System.out.println("Size: " + seminar.serialize().length);
 				return true;
 		 	}
 			catch (Exception e) {
@@ -282,7 +279,7 @@ public class MyHashTable {
 		this.values = tmpHandle;
 		this.keys = tmpKey;
 		
-		System.out.println("Hash table expanded to " + size + " records");
+		System.out.println("hashTable resized to: " + size);
 	}
 }
 
