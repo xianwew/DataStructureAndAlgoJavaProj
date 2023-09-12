@@ -69,7 +69,7 @@ public class ParserTest  extends TestCase {
 		assertEquals("insert 1", test1.data);
 		test1.data = "";
 		test1.processSeminars(commandFile6, worldDataBase);
-		assertEquals("sadawefgaw", test1.data);
+		assertEquals("print blocks", test1.data);
 		test1.data = "";
 		test1.processSeminars(commandFile7, worldDataBase);
 		assertEquals("delete 1", test1.data);
@@ -78,7 +78,7 @@ public class ParserTest  extends TestCase {
 		assertEquals("search 1", test1.data);
 		test1.data = "";
 		test1.processSeminars(commandFile9, worldDataBase);
-		assertEquals("0610051600 90 10 10 awd", test1.data);
+		assertEquals("search 1", test1.data);
 		
 		
 //		if(commandFile1 != null) {

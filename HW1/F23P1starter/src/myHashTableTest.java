@@ -118,8 +118,9 @@ public class myHashTableTest extends TestCase {
 		test.delete(memManager, -1); 	
 		test.delete(memManager, 10);
 		test.insert(memManager, 17, s4);
-   		test.delete(memManager, 17);
-        for(int k= 1; k <= 100; k++) {
+		test.delete(memManager, 17);
+   		
+        for(int k = 1; k <= 100; k++) {
     		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
     		test.insert(memManager, k, s);	
     		}

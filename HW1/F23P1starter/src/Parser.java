@@ -65,6 +65,8 @@ public class Parser {
 	        
 	        Object[] objects = new Object[3];
 	        objects[0] = new byte[Integer.parseInt(args[2])];
+//	        byte[] test = (byte[]) objects[0];
+//	        System.out.println(test.length);
 	        objects[1] = new MyHashTable(Integer.parseInt(args[3]));
 	        objects[2] = commandFile;
 	        return objects;

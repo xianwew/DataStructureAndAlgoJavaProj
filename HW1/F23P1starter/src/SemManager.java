@@ -17,15 +17,7 @@
 //   during the discussion. I have violated neither the spirit nor
 //   letter of this restriction.
 
-import static org.junit.Assert.assertEquals;
-
 import java.io.*;
-
-import org.junit.Test;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.PrintStream;
-import static org.junit.Assert.assertEquals;
 
 /**
  * The semSanager is used to store the seminar objects, 
@@ -41,50 +33,22 @@ import static org.junit.Assert.assertEquals;
  */
 
 public class SemManager {
-	
+     /**
+     * The main function of the program. It firstly initializes all
+     * the components and then calls function. 
+     */
 	public static void main (String[] args) {
-		/**
-	     * The main function of the program. It firstly initializes all
-	     * the components and then calls function. 
-	     */
-		if(args != null) {
+		if (args != null) {
 			Parser parser = new Parser();
 		    Object[] components = parser.initializeComponents(args);   
-		    MemManager memManager = new MemManager();
-		    try {
-	
-	//	    	ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-	//	        PrintStream customOutput = new PrintStream(outputStream);
-	//	        System.setOut(customOutput);
-		        
-		        memManager.memoryPool = (byte[]) components[0];
-		        memManager.initializeMemManger(memManager.memoryPool.length);
-			    MyHashTable hashTable = (MyHashTable) components[1];
-			    File commandFile = (File) components[2];        
-			    WorldDataBase worldDataBase = new WorldDataBase(memManager, hashTable);
-			    parser.processSeminars(commandFile, worldDataBase);
-			    
-	
-	//		    String output = outputStream.toString();
-	//	        System.setOut(System.out);
-	//	        String filePath = "src/ourOutput.txt";
-	//
-	//	        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
-	//	            writer.write(output);
-	//	        } catch (IOException e) {
-	//	            e.printStackTrace();
-	//	        }
-		        
-	//	        String refOutput = readFile("src/P1Sample_output.txt");
-	//	        assertEquals(refOutput, output);
-		    }
-		    catch (Exception e) {
-	            System.out.println("Error in initializing instances!");
-	            e.printStackTrace();
-			}
+		    MemManager memManager = new MemManager();		        
+	        memManager.memoryPool = (byte[]) components[0];
+	        memManager.initializeMemManger(Integer.parseInt(args[0]));
+		    MyHashTable hashTable = (MyHashTable) components[1];
+		    File commandFile = (File) components[2];        
+		    WorldDataBase worldDataBase = 
+		    		new WorldDataBase(memManager, hashTable);
+		    parser.processSeminars(commandFile, worldDataBase);		    
 		}   
     }
-	
-
-	
 }

@@ -131,7 +131,7 @@ public class MyHashTable {
 		 	}
 			catch (Exception e) {
 				System.out.println("Error in inserting to the memory manager!");
-				e.printStackTrace();
+				//e.printStackTrace();
 				return false;
 			}
 		}
