@@ -21,6 +21,12 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.*;
 
+import org.junit.Test;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+import static org.junit.Assert.assertEquals;
+
 /**
  * The semSanager is used to store the seminar objects, 
  * or retrieve seminar objects from the memory pool.
@@ -174,7 +180,7 @@ public class SemManager {
 		}
 		memoryPool = tmp;
 		size *= 2;
-		System.out.println("Memory pool expanded to " + size + " bytes.");
+		System.out.println("Memory pool expanded to " + size + " bytes");
 		return curPosition;
 	}
 	
@@ -337,6 +343,18 @@ public class SemManager {
 		}	
 		return left;
 	}
+	
+	
+	private static String readFile(String filePath) throws IOException {
+        StringBuilder content = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+        }
+        return content.toString();
+    }
 
 	public static void main (String[] args) {
 		/**
@@ -347,12 +365,22 @@ public class SemManager {
 	    Object[] components = parser.initializeComponents(args);   
 	    SemManager semManager = new SemManager();
 	    try {
+
+	        
 		    semManager.memoryPool = (byte[]) components[0];
 		    semManager.initializeSemManger(semManager.memoryPool.length);
 		    MyHashTable hashTable = (MyHashTable) components[1];
 		    File commandFile = (File) components[2];        
 		    WorldDataBase worldDataBase = new WorldDataBase(semManager, hashTable);
 		    parser.processSeminars(commandFile, worldDataBase);
+		    
+	    	ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+	        PrintStream customOut = new PrintStream(outputStream);
+	        System.setOut(customOut);
+		    String output = outputStream.toString();
+	        System.setOut(System.out);
+	        String referenceOutput = readFile("src/P1Sample_output.txt");
+	        assertEquals(referenceOutput, output);
 	    }
 	    catch (Exception e) {
             System.out.println("Error in initializing instances!");
@@ -360,4 +388,7 @@ public class SemManager {
 		}
 	    
     }
+	
+
+	
 }
