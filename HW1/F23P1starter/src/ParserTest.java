@@ -10,8 +10,8 @@ public class ParserTest  extends TestCase {
 	
 		Parser test = new Parser();
 
-        Object[] result0=test.initializeComponents(new String[] {"java","SemManager","16","0","10"});
-        Object[] result1=test.initializeComponents(new String[] {"java","SemManager","0","16","10"});
+        Object[] result0=test.initializeComponents(new String[] {"java","MemManager","16","0","10"});
+        Object[] result1=test.initializeComponents(new String[] {"java","MemManager","0","16","10"});
         
         //assertTrue(result0);
         
@@ -27,21 +27,21 @@ public class ParserTest  extends TestCase {
 
 		
 		assertEquals(16,test.initializeComponents(null).length);
-		assertEquals(11,test.initializeComponents(new String[] {"java","SemManager","hello","0","10"}).length);
-		assertEquals(12,test.initializeComponents(new String[] {"java","SemManager","-1","0","10"}).length);
-		assertEquals(12,test.initializeComponents(new String[] {"java","SemManager","3","0","10"}).length);
-		assertEquals(13,test.initializeComponents(new String[] {"java","SemManager","16","hello","10"}).length);
-		assertEquals(14,test.initializeComponents(new String[] {"java","SemManager","16","-1","10"}).length);
-		assertEquals(14,test.initializeComponents(new String[] {"java","SemManager","16","3","10"}).length);
-		assertEquals(3,test.initializeComponents(new String[] {"java","SemManager","16","16","10"}).length);
+		assertEquals(11,test.initializeComponents(new String[] {"java","MemManager","hello","0","10"}).length);
+		assertEquals(12,test.initializeComponents(new String[] {"java","MemManager","-1","0","10"}).length);
+		assertEquals(12,test.initializeComponents(new String[] {"java","MemManager","3","0","10"}).length);
+		assertEquals(13,test.initializeComponents(new String[] {"java","MemManager","16","hello","10"}).length);
+		assertEquals(14,test.initializeComponents(new String[] {"java","MemManager","16","-1","10"}).length);
+		assertEquals(14,test.initializeComponents(new String[] {"java","MemManager","16","3","10"}).length);
+		assertEquals(3,test.initializeComponents(new String[] {"java","MemManager","16","16","10"}).length);
         
 		Parser test1 = new Parser();
-		SemManager semManager = new SemManager();
-		semManager.initializeSemManger(1024);
-		String[] input = new String[]{"java","SemManager","16","16","src/testParser1.txt"};
+		MemManager memManager = new MemManager();
+		memManager.initializeMemManger(1024);
+		String[] input = new String[]{"java","MemManager","16","16","src/testParser1.txt"};
 		Object[] components = test1.initializeComponents(input);  
-		semManager.memoryPool = (byte[]) components[0];
-	    semManager.initializeSemManger(semManager.memoryPool.length);
+		memManager.memoryPool = (byte[]) components[0];
+	    memManager.initializeMemManger(memManager.memoryPool.length);
 	    MyHashTable hashTable = (MyHashTable) components[1];
 	    File commandFile1 = (File) components[2];
 	    File commandFile2 = new File("src/testParser0.txt");
@@ -52,7 +52,7 @@ public class ParserTest  extends TestCase {
 	    File commandFile7 = new File("src/testParser6.txt");
 	    File commandFile8 = new File("src/testParser7.txt");
 	    File commandFile9 = new File("src/testParser8.txt");
-		WorldDataBase worldDataBase = new WorldDataBase(semManager, hashTable);
+		WorldDataBase worldDataBase = new WorldDataBase(memManager, hashTable);
 		test1.processSeminars(commandFile1, worldDataBase);
 		assertEquals("awdasd", test1.data);
 		test1.data = "";

@@ -101,11 +101,11 @@ public class MyHashTable {
 	
 	/**
 	* Implement the insertion function for the hash table.
-	* @param semManager a semManager object created by main.
+	* @param memManager a memManager object created by main.
 	* @param key provided by the user.
 	* @param seminar object created by the parser.
 	*/
-	public boolean insert(SemManager semManager, int key, Seminar seminar) {
+	public boolean insert(MemManager memManager, int key, Seminar seminar) {
 		boolean containKey = false;
 		for (int i : keys) {
 			if (i == key) {
@@ -115,7 +115,7 @@ public class MyHashTable {
 		}
 		if (!containKey) {
 		 	try {
-		 		Handle handle = semManager.insert(
+		 		Handle handle = memManager.insert(
 		 				seminar.serialize(), key);	
 		 		keys[lastElementIndex] = key;	
 		 		lastElementIndex++;	
@@ -144,11 +144,11 @@ public class MyHashTable {
 	
 	/**
 	* Implement the search function for the hash table.
-	* @param semManager a semManager object created by main.
+	* @param memManager a memManager object created by main.
 	* @param key provided by the user.
 	* @return Whether it contains the key you are looking for.
 	*/
-	public boolean search(SemManager semManager, int key) {
+	public boolean search(MemManager memManager, int key) {
 		boolean containKey = false;
 		for (int i : keys) {
 			if (i == key) {
@@ -164,7 +164,7 @@ public class MyHashTable {
 		else {			
 			if (values[calculateFirstHashing(key, size)].getKey() == key) {
 				System.out.println("Found record with ID " + key + ":");
-				semManager.search(values[calculateFirstHashing(key, size)]);
+				memManager.search(values[calculateFirstHashing(key, size)]);
 				return true;
 			}
 			else {
@@ -174,7 +174,7 @@ public class MyHashTable {
 					prevValue = (calculateSecondHashing(key, size)
 							+ prevValue) % size;
 				}
-	 			semManager.search(values[(calculateSecondHashing(key, size)
+	 			memManager.search(values[(calculateSecondHashing(key, size)
 	 					+ prevValue) % size]);
 	 			System.out.println("Found record with ID " + key + ":");
 	 			return true;	
@@ -209,11 +209,11 @@ public class MyHashTable {
 	
 	/**
 	* Implement the delete function for the hash table.
-	* @param semManager a semManager object created by main.
+	* @param memManager a memManager object created by main.
 	* @param key provided by the user.
 	* @return return true if deletion succeeded
 	*/
-	public boolean delete(SemManager semManager, int key) {
+	public boolean delete(MemManager memManager, int key) {
 		boolean containKey = false;
 		boolean success = false;
 		int[] tmp = new int[keys.length];
@@ -231,7 +231,7 @@ public class MyHashTable {
 		if (containKey) {
 			lastElementIndex--;
 			if (values[calculateFirstHashing(key, size)].getKey() == key) {
-				success = semManager.delete(
+				success = memManager.delete(
 						values[calculateFirstHashing(key, size)]);
 				values[calculateFirstHashing(key, size)].setKey(-1); 
 				values[calculateFirstHashing(key, size)].setSize(-1); 
@@ -244,7 +244,7 @@ public class MyHashTable {
 					prevValue = (calculateSecondHashing(key, size)
 							+ prevValue) % size;
 				}
-				success = semManager.delete(
+				success = memManager.delete(
 						values[(calculateSecondHashing(key, size)
 						+ prevValue) % size]);
 				values[(calculateSecondHashing(key, size)

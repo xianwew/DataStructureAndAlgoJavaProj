@@ -7,17 +7,17 @@
  * @version September 2023, updated September 2023
  */
 public class WorldDataBase {
-    private SemManager semManager;
+    private MemManager memManager;
     private MyHashTable hashTable;
     /**
      * Constructs a new `WorldDataBase` object with
      * the specified seminar manager and hashTable.
      *
-     * @param semManager a memory manager reference
+     * @param MemManager a memory manager reference
      * @param hashTable a hashTable class reference
      */
-    public WorldDataBase(SemManager semManager, MyHashTable hashTable) {
-        this.semManager = semManager;
+    public WorldDataBase(MemManager memManager, MyHashTable hashTable) {
+        this.memManager = memManager;
         this.hashTable = hashTable;
     }
     /**
@@ -30,19 +30,19 @@ public class WorldDataBase {
     public void processCommand(int instruction, int key, Seminar seminar) {
         switch (instruction) {
 			case 1:
-			    hashTable.insert(semManager, key, seminar);
+			    hashTable.insert(memManager, key, seminar);
 			    break;
 			case 2:
-			    hashTable.search(semManager, key);
+			    hashTable.search(memManager, key);
 			    break;
 			case 3:
 			    hashTable.printHashtable();
 			    break;
 			case 4:
-			    semManager.printSemManager();
+			    memManager.printMemManager();
 			    break;
 			case 5:
-			    hashTable.delete(semManager, key);
+			    hashTable.delete(memManager, key);
 			    break;
 			default:
 			    break;
