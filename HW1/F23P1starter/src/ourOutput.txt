@@ -47,7 +47,7 @@ Hashtable:
 5: 10
 total records: 3
 Freeblock List:
-256: 256 
+256: 256
 Delete FAILED -- There is no record with ID 6
 Memory pool expanded to 2048 bytes
 Successfully inserted record with ID 2
@@ -64,5 +64,5 @@ Hashtable:
 5: TOMBSTONE
 total records: 3
 Freeblock List:
-256: 256 768 
-512: 1536 
+256: 256 768
+512: 1536
