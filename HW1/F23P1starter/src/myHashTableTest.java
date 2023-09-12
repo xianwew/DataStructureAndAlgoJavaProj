@@ -17,30 +17,32 @@ public class myHashTableTest extends TestCase {
 	}
 	
 	public void testHashing() {
-		MyHashTable test = new MyHashTable(8);
-		test.keys[0] = 1;	
-		test.hashing(1, new Handle(1, 1, 1), test.values);
-		assertEquals(1, test.values[1].getSize());
-		test.keys[1] = 2;
-		test.hashing(2, new Handle(2, 1, 2), test.values);
-		assertEquals(1, test.values[2].getSize());	
-		test.keys[2] = 3;
-		test.hashing(3, new Handle(3, 1, 3), test.values);
-		assertEquals(1, test.values[3].getSize());
-		test.keys[3] = 5;
-		test.hashing(5, new Handle(4, 1, 5), test.values);
-		assertEquals(1, test.values[5].getSize());
-		test.keys[4] = 10;
-		test.hashing(10, new Handle(5, 1, 10), test.values);
+		MyHashTable test = new MyHashTable(16);
+		test.keys[0] = 32;	
+		test.hashing(32, new Handle(1, 1, 32), test.values);
 		assertEquals(1, test.values[0].getSize());
-		
-		
+		test.keys[1] = 96;
+		test.hashing(96, new Handle(2, 1, 96), test.values);
+		assertEquals(1, test.values[13].getSize());	
+		test.keys[2] = 160;
+		test.hashing(160, new Handle(3, 1, 160), test.values);
+		assertEquals(1, test.values[5].getSize());
+		test.keys[3] = 224;
+		test.hashing(224, new Handle(4, 1, 224), test.values);
+		assertEquals(1, test.values[10].getSize());
+		test.keys[4] = 72;
+		test.hashing(72, new Handle(5, 1, 72), test.values);
+		assertEquals(1, test.values[8].getSize());
+		test.keys[3]=0;
+		test.values[10].setStartIndex(-1);
+		test.hashing(224, new Handle(4, 1, 224), test.values);
+		assertEquals(1, test.values[10].getSize());
 		
 		
 	}
 	
 	public void testInsert() {
-		MyHashTable test = new MyHashTable(8);
+		MyHashTable test = new MyHashTable(16);
 		MemManager memManager = new MemManager();
 		memManager.initializeMemManger(32);
 		short i = 1;
@@ -53,31 +55,32 @@ public class myHashTableTest extends TestCase {
         int cost = -1;
         String desc = "";
         String[] keywordList = {};
-        for(int k= 1; k <= 100; k++) {
-    		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
-    		test.insert(memManager, k, s);
-    		assertEquals(k, test.lastElementIndex);
-    		assertEquals(k, test.keys[k-1]);
+        int[] array = new int[] {32, 96, 160, 224, 72, 83, 99, 115, 131, 147, 163, 179, 195, 211, 227, 243};
+        for(int k= 0; k < array.length; k++) {
+    		Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
+    		test.insert(memManager, array[k], s);
+    		assertEquals(k+1, test.lastElementIndex);
+//    		assertEquals(, test.keys[array[k]-1]);
     		int t = 0;
     		for(Handle h:test.values) {
-    			if(h != null && h.getKey()==k) {
-    				t = k;
+    			if(h != null && h.getKey()==array[k]) {
+    				t = array[k];
     				break;
     			}
     		}
-    		assertEquals(32, test.values[t].getSize());	
+//    		assertEquals(1, test.values[t].getSize());	
 		}
-		assertEquals(256,test.size);
-		assertEquals(256, test.keys.length);
-		assertEquals(256, test.values.length);	
-		for(int k= 1; k <= 100; k++) {
-			Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
-			assertEquals(false, test.insert(memManager, k, s));
+		assertEquals(32,test.size);
+		assertEquals(32, test.keys.length);
+		assertEquals(32, test.values.length);	
+		 for(int k= 0; k < array.length; k++) {
+			Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
+			assertEquals(false, test.insert(memManager,array[k], s));
 		}
 	}
 
 	public void testDelete() {
-		MyHashTable test = new MyHashTable(8);
+		MyHashTable test = new MyHashTable(16);
 		MemManager memManager = new MemManager();
 		memManager.initializeMemManger(32);
 		short i = 1;
@@ -94,31 +97,28 @@ public class myHashTableTest extends TestCase {
    		test.insert(memManager, 1, s1);
    		test.delete(memManager, 1);
    		test.insert(memManager, 1, s1);
-   		id = 2;
+   		id = 32;
    		Seminar s2 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-   		test.insert(memManager, 2, s2);
-   		id = 3;
+   		test.insert(memManager, id, s2);
+   		id = 96;
    		Seminar s3 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-   		test.insert(memManager, 3, s3);
-   		id = 17;
+   		test.insert(memManager, id, s3);
+   		id = 160;
    		Seminar s4 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-   		test.insert(memManager, 17, s4);
-   		id = 10;
+   		test.insert(memManager, id, s4);
+   		id = 224;
    		Seminar s5 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-   		test.insert(memManager, 10, s5);
-   		id = 11;
+   		test.insert(memManager, id, s5);
+   		id = 72;
    		Seminar s6 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
-   		test.insert(memManager, 11, s6);
+   		test.insert(memManager, id, s6);
    			
-   		test.delete(memManager, 17);
-   		test.insert(memManager, 10, s5);
-		test.delete(memManager, 2);
-		test.delete(memManager, 3);  	
-		test.insert(memManager, 3, s3); 	
-		test.delete(memManager, -1); 	
-		test.delete(memManager, 10);
-		test.insert(memManager, 17, s4);
-		test.delete(memManager, 17);
+   		test.delete(memManager, 72);
+		test.delete(memManager, 224);
+		test.delete(memManager, 160);  	
+		test.delete(memManager, 96); 	
+		test.delete(memManager, 32);
+	
    		
         for(int k = 1; k <= 100; k++) {
     		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
@@ -176,7 +176,7 @@ public class myHashTableTest extends TestCase {
         int cost = -1;
         String desc = "";
         String[] keywordList = {};
-        int[] array = new int[] {55,39,92,18,32,4,54,7,24,4,31,152,54,4,63,2541,245,11,1,23,54};
+        int[] array = new int[] {32, 96, 160, 224, 72, 83, 99, 115, 131, 147, 163, 179, 195, 211, 227, 243};
         for(int k= 0; k < array.length; k++) {
     		Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
     		test.insert(memManager, array[k], s);

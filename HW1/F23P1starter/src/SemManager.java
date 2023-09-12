@@ -43,7 +43,7 @@ public class SemManager {
 		    Object[] components = parser.initializeComponents(args);   
 		    MemManager memManager = new MemManager();		        
 	        memManager.memoryPool = (byte[]) components[0];
-	        memManager.initializeMemManger(Integer.parseInt(args[0]));
+	        memManager.initializeMemManger(Integer.parseInt(args[2]));
 		    MyHashTable hashTable = (MyHashTable) components[1];
 		    File commandFile = (File) components[2];        
 		    WorldDataBase worldDataBase = 
