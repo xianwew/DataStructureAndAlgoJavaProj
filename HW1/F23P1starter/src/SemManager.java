@@ -81,7 +81,7 @@ public class SemManager {
 		int i = 0;
 		FreeList curPosition = dummy.getNext();
 		if (curPosition == null) {
-			System.out.println("There are no Freeblocks in the memory pool!");
+			System.out.println("There are no freeblocks in the memory pool");
 			return false;
 		}
 		else {
@@ -125,7 +125,12 @@ public class SemManager {
 					curPosition = tmp[k];
 					System.out.print(curPosition.getVal() + ": ");
 					while(curPosition != null) {
-						System.out.print(curPosition.getIndex() + " ");
+						if(curPosition.getNext() != null) {
+							System.out.print(curPosition.getIndex() + " ");
+						}
+						else {
+							System.out.print(curPosition.getIndex());
+						}
 						curPosition = curPosition.getNext();
 					}
 					System.out.println("");
@@ -390,7 +395,8 @@ public class SemManager {
 	        }
 	        
 	        String referenceOutput = readFile("src/P1Sample_output.txt");
-	        //assertEquals(referenceOutput, output);
+	        assertEquals(referenceOutput, output);
+	        
 	    }
 	    catch (Exception e) {
             System.out.println("Error in initializing instances!");
