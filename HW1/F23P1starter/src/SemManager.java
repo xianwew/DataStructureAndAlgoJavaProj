@@ -47,41 +47,42 @@ public class SemManager {
 	     * The main function of the program. It firstly initializes all
 	     * the components and then calls function. 
 	     */
-	    Parser parser = new Parser();
-	    Object[] components = parser.initializeComponents(args);   
-	    MemManager memManager = new MemManager();
-	    try {
-
-//	    	ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-//	        PrintStream customOutput = new PrintStream(outputStream);
-//	        System.setOut(customOutput);
-	        
-	        memManager.memoryPool = (byte[]) components[0];
-	        memManager.initializeMemManger(memManager.memoryPool.length);
-		    MyHashTable hashTable = (MyHashTable) components[1];
-		    File commandFile = (File) components[2];        
-		    WorldDataBase worldDataBase = new WorldDataBase(memManager, hashTable);
-		    parser.processSeminars(commandFile, worldDataBase);
-		    
-
-//		    String output = outputStream.toString();
-//	        System.setOut(System.out);
-//	        String filePath = "src/ourOutput.txt";
-//
-//	        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
-//	            writer.write(output);
-//	        } catch (IOException e) {
-//	            e.printStackTrace();
-//	        }
-	        
-//	        String refOutput = readFile("src/P1Sample_output.txt");
-//	        assertEquals(refOutput, output);
-	    }
-	    catch (Exception e) {
-            System.out.println("Error in initializing instances!");
-            e.printStackTrace();
-		}
-	    
+		if(args != null) {
+			Parser parser = new Parser();
+		    Object[] components = parser.initializeComponents(args);   
+		    MemManager memManager = new MemManager();
+		    try {
+	
+	//	    	ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+	//	        PrintStream customOutput = new PrintStream(outputStream);
+	//	        System.setOut(customOutput);
+		        
+		        memManager.memoryPool = (byte[]) components[0];
+		        memManager.initializeMemManger(memManager.memoryPool.length);
+			    MyHashTable hashTable = (MyHashTable) components[1];
+			    File commandFile = (File) components[2];        
+			    WorldDataBase worldDataBase = new WorldDataBase(memManager, hashTable);
+			    parser.processSeminars(commandFile, worldDataBase);
+			    
+	
+	//		    String output = outputStream.toString();
+	//	        System.setOut(System.out);
+	//	        String filePath = "src/ourOutput.txt";
+	//
+	//	        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+	//	            writer.write(output);
+	//	        } catch (IOException e) {
+	//	            e.printStackTrace();
+	//	        }
+		        
+	//	        String refOutput = readFile("src/P1Sample_output.txt");
+	//	        assertEquals(refOutput, output);
+		    }
+		    catch (Exception e) {
+	            System.out.println("Error in initializing instances!");
+	            e.printStackTrace();
+			}
+		}   
     }
 	
 

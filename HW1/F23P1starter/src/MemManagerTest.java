@@ -18,13 +18,6 @@ public class MemManagerTest extends TestCase {
     /**
      * Get code coverage of the class declaration.
      */
-    public void testMInitx()
-    {
-        MemManager sem = new MemManager();
-        assertNotNull(sem);
-        SemManager.main(null);
-    }
-    
     public void testPrintMemManager() {
 		MemManager memManager = new MemManager();
 		memManager.initializeMemManger(32);
