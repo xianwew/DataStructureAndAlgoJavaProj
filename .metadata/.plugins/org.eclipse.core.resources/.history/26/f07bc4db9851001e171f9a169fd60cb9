@@ -142,21 +142,19 @@ public class Parser {
 							try {
 								id = Integer.parseInt(tmpData.split("\\s+")[1]);
 							}
-							catch (Exception e) {}
+							catch (Exception e) {
+							}
 							break;
 						case 1:
 							title = data;
 							break;
 						case 2:
-							try {
-								String[] tmpDataArr = tmpData.split("\\s+");
-								dateTime = tmpDataArr[0];
-								length = Integer.parseInt(tmpDataArr[1]);
-								x = Short.parseShort(tmpDataArr[2]);
-								y = Short.parseShort(tmpDataArr[3]);
-								cost = Integer.parseInt(tmpDataArr[4]);
-							}
-							catch (Exception e) {}
+							String[] tmpDataArr = tmpData.split("\\s+");
+							dateTime = tmpDataArr[0];
+							length = Integer.parseInt(tmpDataArr[1]);
+							x = Short.parseShort(tmpDataArr[2]);
+							y = Short.parseShort(tmpDataArr[3]);
+							cost = Integer.parseInt(tmpDataArr[4]);
 							break;
 						case 3:
 							keywordList = tmpData.split("\\s+");
