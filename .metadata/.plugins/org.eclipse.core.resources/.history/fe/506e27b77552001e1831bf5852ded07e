@@ -283,13 +283,6 @@ public class MyHashTable {
 			tmpKey[j] = i;
 			j++;
 		}
-		
-		for(int i = 0; i < tmpHandle.length; i++) {
-			if(tmpHandle[i].getStartIndex() == -1) {
-				tmpHandle[i] = null;
-			}
-		}
-		
 		this.size *= 2;	
 		this.values = tmpHandle;
 		this.keys = tmpKey;

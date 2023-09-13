@@ -285,8 +285,8 @@ public class MyHashTable {
 		}
 		
 		for(int i = 0; i < tmpHandle.length; i++) {
-			if(tmpHandle[i].getStartIndex() == -1) {
-				tmpHandle[i] = null;
+			if(h.getKey() == -1) {
+				h = null;
 			}
 		}
 		
