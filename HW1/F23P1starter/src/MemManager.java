@@ -52,7 +52,7 @@ public class MemManager {
 		System.out.println("Freeblock List:");
 		FreeList curPosition = dummy.getNext();
 		int i = 1;
-		if (curPosition == null) {
+		if (dummy.getNext() == null) {
 			System.out.println("There are no freeblocks in the memory pool");
 			return false;
 		}

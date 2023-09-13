@@ -40,18 +40,15 @@ public class MemManagerTest extends TestCase {
         memManager.dummy.setNext(null);
         assertEquals(false, memManager.printMemManager());
         memManager.dummy.setNext(tmp);	
-		Seminar s1 = new Seminar(1, "Overview of HCI Research at VT", "0610051600", 90, x, y, 45, new String[] { "HCI", "Computer_Science", "VT", "Virginia_Tech"}, desc);
-		myHashTable.insert(memManager, 1, s1); 		
+		Seminar s1 = new Seminar(1, "Overview of HCI Research at VT", "0610051600", 90, x, y, 45, new String[] { "HCI", "Computer_Science", "VT", "Virginia_Tech"}, desc);		
         x = 20;
         y = 10;
         desc = "Introduction to   bioinformatics and computation biology";
 		Seminar s2 = new Seminar(2, "Computational Biology and Bioinformatics in CS at Virginia Tech", "0610071600", 60, x, y, 30, new String[] { "Bioinformatics", "computation_biology", "Biology", "Computer_Science", "VT", "Virginia_Tech"}, desc);
-		myHashTable.insert(memManager, 2, s2); 	
 		x = 30;
 		y = 10;
         desc = "Seminar about the      Computing systems research at      VT";
 		Seminar s3 = new Seminar(3, "Computing Systems Research at VT", "0701250830", 30, x, y, cost, new String[] { "high_performance_computing", "grids", "VT", "computer", "science"}, desc);
-		myHashTable.insert(memManager, 3, s3); 	
 		x = 0;
 		y = 0;
         desc = "Learn what kind of    research is done on HPC  and CSE at VT";
@@ -60,14 +57,41 @@ public class MemManagerTest extends TestCase {
 		y = 10;
         desc = "Introduction to bioinformatics and lots of computation biology";
 		Seminar s5 = new Seminar(2, "Much More Computational Biology and Bioinformatics in CS at Virginia Tech", "0610071600", 60, x, y, 30, new String[] { "Bioinformatics", "computation_biology", "Biology", "Computer_Science", "VT", "Virginia_Tech"}, desc);
+		Seminar s6 = new Seminar(4, "Much More Computational Biology and Bioinformatics in CS at Virginia Tech", "0610071600", 60, x, y, 30, new String[] { "Bioinformatics", "computation_biology", "Biology", "Computer_Science", "VT", "Virginia_Tech"}, desc);
 		myHashTable.insert(memManager, 1, s1); 	
+		assertEquals(true, memManager.printMemManager());
 		myHashTable.insert(memManager, 2, s2); 	
+		assertEquals(false, memManager.printMemManager());
 		myHashTable.insert(memManager, 3, s3); 	
+		assertEquals(true, memManager.printMemManager());
 		myHashTable.insert(memManager, 10, s4); 	
+		assertEquals(false, memManager.printMemManager());
 		myHashTable.delete(memManager, 2);
+		assertEquals(true, memManager.printMemManager());
 		myHashTable.insert(memManager, 2, s5); 
+		assertEquals(true, memManager.printMemManager());
+		myHashTable.insert(memManager, 4, s6); 
+		assertEquals(true, memManager.printMemManager());
 		myHashTable.delete(memManager, 10);
 		assertEquals(true, memManager.printMemManager());
+		myHashTable.delete(memManager, 2);
+		assertEquals(true, memManager.printMemManager());
+    	
+    	MemManager memManager3 = new MemManager();
+    	memManager3.initializeMemManger(512);
+    	FreeList tmp1 = new FreeList(32, 0);
+    	FreeList tmp2 = new FreeList(64, 32);
+    	FreeList tmp3 = new FreeList(32, 96);
+    	FreeList tmp4 = new FreeList(128, 128);
+    	assertEquals(true, memManager3.printMemManager());
+    	memManager3.dummy.setNext(tmp1);
+    	assertEquals(true, memManager3.printMemManager());
+    	tmp1.setNext(tmp2);
+    	assertEquals(true, memManager3.printMemManager());
+    	tmp2.setNext(tmp3);
+    	assertEquals(true, memManager3.printMemManager());
+    	tmp3.setNext(tmp4);
+    	assertEquals(true, memManager3.printMemManager());
     }
     
     

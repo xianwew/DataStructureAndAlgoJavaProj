@@ -10,8 +10,8 @@ public class ParserTest  extends TestCase {
 	
 		Parser test = new Parser();
 
-        Object[] result0=test.initializeComponents(new String[] {"java","MemManager","16","0","10"});
-        Object[] result1=test.initializeComponents(new String[] {"java","MemManager","0","16","10"});
+        Object[] result0=test.initializeComponents(new String[] {"16","0","10"});
+        Object[] result1=test.initializeComponents(new String[] {"0","16","10"});
         
         //assertTrue(result0);
         
@@ -27,21 +27,21 @@ public class ParserTest  extends TestCase {
 
 		
 		assertEquals(16,test.initializeComponents(null).length);
-		assertEquals(11,test.initializeComponents(new String[] {"java","MemManager","hello","0","10"}).length);
-		assertEquals(12,test.initializeComponents(new String[] {"java","MemManager","-1","0","10"}).length);
-		assertEquals(12,test.initializeComponents(new String[] {"java","MemManager","3","0","10"}).length);
-		assertEquals(13,test.initializeComponents(new String[] {"java","MemManager","16","hello","10"}).length);
-		assertEquals(14,test.initializeComponents(new String[] {"java","MemManager","16","-1","10"}).length);
-		assertEquals(14,test.initializeComponents(new String[] {"java","MemManager","16","3","10"}).length);
-		assertEquals(3,test.initializeComponents(new String[] {"java","MemManager","16","16","10"}).length);
+		assertEquals(11,test.initializeComponents(new String[] {"hello","0","10"}).length);
+		assertEquals(12,test.initializeComponents(new String[] {"0","0","10"}).length);
+		assertEquals(12,test.initializeComponents(new String[] {"3","0","10"}).length);
+		assertEquals(13,test.initializeComponents(new String[] {"16","hello","10"}).length);
+		assertEquals(14,test.initializeComponents(new String[] {"16","0","10"}).length);
+		assertEquals(14,test.initializeComponents(new String[] {"16","3","10"}).length);
+		assertEquals(3,test.initializeComponents(new String[] {"16","16","10"}).length);
         
 		Parser test1 = new Parser();
 		MemManager memManager = new MemManager();
 		memManager.initializeMemManger(1024);
-		String[] input = new String[]{"java","MemManager","16","16","src/testParser1.txt"};
+		String[] input = new String[]{"16","16","src/testParser1.txt"};
 		Object[] components = test1.initializeComponents(input);  
 		memManager.memoryPool = (byte[]) components[0];
-	    memManager.initializeMemManger(memManager.memoryPool.length);
+	    memManager.initializeMemManger(16);
 	    MyHashTable hashTable = (MyHashTable) components[1];
 	    File commandFile1 = (File) components[2];
 	    File commandFile2 = new File("src/testParser0.txt");

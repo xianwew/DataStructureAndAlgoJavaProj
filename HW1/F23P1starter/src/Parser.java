@@ -32,21 +32,22 @@ public class Parser {
 			int i = -1;
 			int k = -1;
 	        try {
-	    		i = Integer.parseInt(args[2]);
+	    		i = Integer.parseInt(args[0]);
 	        }
 	        catch (Exception e) {
 	        	System.out.println("Error in creating memory pool!"
 	        			+ " Please enter an integar!");
 	        	return new String[11];
 	        }
-	        if ((i & i - 1) != 0 || i <= 0) {
+	        if ((i & i - 1) != 0 ||
+	        		i <= 0) {
 	        	System.out.println("Error in creating memory pool! "
 	        			+ "The size must be the power "
 	        			+ "of 2 and greater than 0!");
 	        	return new String[12];
 	        }   
 	        try {
-	        	k = Integer.parseInt(args[3]);
+	        	k = Integer.parseInt(args[1]);
 	        }
 	        catch (Exception e) {
 	        	System.out.println("Error in creating hashTable!"
@@ -60,14 +61,14 @@ public class Parser {
 	        	return new String[14];
 	        }
 	       
-	        commandFile = new File(args[4]);
+	        commandFile = new File(args[2]);
 	    	
 	        
 	        Object[] objects = new Object[3];
-	        objects[0] = new byte[Integer.parseInt(args[2])];
+	        objects[0] = new byte[Integer.parseInt(args[0])];
 //	        byte[] test = (byte[]) objects[0];
 //	        System.out.println(test.length);
-	        objects[1] = new MyHashTable(Integer.parseInt(args[3]));
+	        objects[1] = new MyHashTable(Integer.parseInt(args[1]));
 	        objects[2] = commandFile;
 	        return objects;
 		}

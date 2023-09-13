@@ -39,11 +39,12 @@ public class SemManager {
      */
 	public static void main (String[] args) {
 		if (args != null) {
+			String[] arguements = {args[2], args[3], args[4]};
 			Parser parser = new Parser();
-		    Object[] components = parser.initializeComponents(args);   
+		    Object[] components = parser.initializeComponents(arguements);   
 		    MemManager memManager = new MemManager();		        
 	        memManager.memoryPool = (byte[]) components[0];
-	        memManager.initializeMemManger(Integer.parseInt(args[2]));
+	        memManager.initializeMemManger(Integer.parseInt(arguements[0]));
 		    MyHashTable hashTable = (MyHashTable) components[1];
 		    File commandFile = (File) components[2];        
 		    WorldDataBase worldDataBase = 
