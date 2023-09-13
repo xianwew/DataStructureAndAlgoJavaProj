@@ -19,7 +19,12 @@ public class MemManagerTest extends TestCase {
      * Get code coverage of the class declaration.
      */
     public void testPrintMemManager() {
-		MemManager memManager = new MemManager();
+    	MemManager memManager2 = new MemManager();
+    	memManager2.initializeMemManger(512);
+    	memManager2.dummy.setNext(null);
+    	assertEquals(false, memManager2.printMemManager());
+    	
+    	MemManager memManager = new MemManager();
 		MyHashTable myHashTable = new MyHashTable(4);
 		memManager.initializeMemManger(512);
         String title = "";
