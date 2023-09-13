@@ -121,6 +121,7 @@ public class MyHashTable {
 		 		hashing(key, handle, values);
 		 		
 				if (lastElementIndex > size / 2) {
+					//System.out.println("abab");
 					reHash();
 				}
 				System.out.println("Successfully inserted record with ID " + key);	
@@ -273,7 +274,7 @@ public class MyHashTable {
 		int[] tmpKey = new int[size * 2];
 		
 		for (Handle i: values) {
-			if (i != null) {
+			if (i != null && i.getKey() != -1) {
 				hashing(i.getKey(), i, tmpHandle);
 			}
 		}

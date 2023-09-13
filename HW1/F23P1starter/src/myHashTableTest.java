@@ -62,7 +62,7 @@ public class myHashTableTest extends TestCase {
     		assertEquals(k+1, test.lastElementIndex);
 //    		assertEquals(, test.keys[array[k]-1]);
     		int t = 0;
-    		for(Handle h:test.values) {
+    		for(Handle h: test.values) {
     			if(h != null && h.getKey()==array[k]) {
     				t = array[k];
     				break;
@@ -70,13 +70,20 @@ public class myHashTableTest extends TestCase {
     		}
 //    		assertEquals(1, test.values[t].getSize());	
 		}
-		assertEquals(32,test.size);
+		assertEquals(32, test.size);
 		assertEquals(32, test.keys.length);
 		assertEquals(32, test.values.length);	
-		 for(int k= 0; k < array.length; k++) {
+		for(int k = 0; k < array.length; k++) {
 			Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
 			assertEquals(false, test.insert(memManager,array[k], s));
 		}
+	    Seminar s = new Seminar(147, title, dateTime, length, x, y, cost, keywordList, desc);
+	    test.delete(memManager, 147); 
+	    test.insert(memManager, 147, s); 
+	    test.reHash(); 
+	    assertEquals(64, test.size);
+		assertEquals(64, test.keys.length);
+		assertEquals(64, test.values.length);
 	}
 
 	public void testDelete() {
