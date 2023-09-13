@@ -20,33 +20,26 @@ public class MemManagerTest extends TestCase {
      */
     public void testPrintMemManager() {
 		MemManager memManager = new MemManager();
-		memManager.initializeMemManger(32);
-		short i = 1;
-		int id = 1;
+		MyHashTable myHashTable = new MyHashTable(256);
+		memManager.initializeMemManger(256);
         String title = "";
         String dateTime = "";
-        int length = -1;
+        int length = 32;
         short x = -1;
         short y = -1;
         int cost = -1;
         String desc = "";
         String[] keywordList = {};
-       
-		for (int k = 1 ; k<=100; k++ ) {
+        FreeList tmp = memManager.dummy.getNext();
+        memManager.dummy.setNext(null);
+        assertEquals(false, memManager.printMemManager());
+        memManager.dummy.setNext(tmp);
+		for (int k = 1; k <= 20; k++ ) {
 			 Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
+			 myHashTable.insert(memManager, k, s); 
 			 
-			 try {
-				 memManager.insert(s.serialize(), k); 
-				 if(k == 1) {
-					 assertEquals(false,memManager.printMemManager());
-				 }
-				 if (k == 3) {
-					 assertEquals(true,memManager.printMemManager());
-				 }
-			 }
-			 catch(Exception e) {}
 		}	
-		
+		assertEquals(true, memManager.printMemManager());
     }
     
     

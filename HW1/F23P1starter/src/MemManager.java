@@ -67,12 +67,12 @@ public class MemManager {
 			}
 
 			curPosition = dummy.getNext();
-			while(curPosition != null) {
+			while (curPosition != null) {
 				boolean set = false;
-				for(int k = 0; k < tmp.length; k++) {
-					if(tmp[k].getVal() == curPosition.getVal()) {
+				for (int k = 0; k < tmp.length; k++) {
+					if (tmp[k].getVal() == curPosition.getVal()) {
 						FreeList tmpList = tmp[k];
-						while(tmpList.getNext() != null) {
+						while (tmpList.getNext() != null) {
 							tmpList = tmpList.getNext();
 						}
 						tmpList.setNext(new FreeList(curPosition.getVal(), curPosition.getIndex()));
@@ -80,9 +80,9 @@ public class MemManager {
 						break;
 					}						
 				}
-				if(!set) {
-					for(int k = 0; k < tmp.length; k++) {			
-						if(tmp[k].getVal() == -1) {	
+				if (!set) {
+					for (int k = 0; k < tmp.length; k++) {			
+						if (tmp[k].getVal() == -1) {	
 							tmp[k].setVal(curPosition.getVal());
 							tmp[k].setIndex(curPosition.getIndex());
 							set = true;
@@ -92,12 +92,12 @@ public class MemManager {
 				}
 				curPosition = curPosition.getNext();
 			}	
-			for(int k = 0; k < tmp.length; k++) {
-				if(tmp[k].getVal() != -1) {
+			for (int k = 0; k < tmp.length; k++) {
+				if (tmp[k].getVal() != -1) {
 					curPosition = tmp[k];
 					System.out.print(curPosition.getVal() + ": ");
-					while(curPosition != null) {
-						if(curPosition.getNext() != null) {
+					while (curPosition != null) {
+						if (curPosition.getNext() != null) {
 							System.out.print(curPosition.getIndex() + " ");
 						}
 						else {
@@ -319,21 +319,7 @@ public class MemManager {
 			}
 		}	
 		return left;
-	}
-	
-	
-	private static String readFile(String filePath) throws IOException {
-        StringBuilder content = new StringBuilder();
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                content.append(line).append("\n");
-            }
-        }
-        return content.toString();
-    }
-
-	    
+	}   
 }
 	
 
