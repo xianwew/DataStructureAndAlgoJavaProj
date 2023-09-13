@@ -61,7 +61,6 @@ public class MemManagerTest extends TestCase {
 		myHashTable.insert(memManager, 10, s4); 	
 		myHashTable.delete(memManager, 2);
 		myHashTable.insert(memManager, 2, s5); 
-		myHashTable.delete(memManager, 10);
 		assertEquals(true, memManager.printMemManager());
     }
     

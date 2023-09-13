@@ -130,6 +130,7 @@ public class MemManager {
 		}
 		catch (Exception e){
             System.out.println("Error in reading seminar record in memory manager!");
+            e.printStackTrace();
 		}
 	}
 	

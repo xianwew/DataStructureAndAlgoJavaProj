@@ -55,13 +55,11 @@ public class MemManagerTest extends TestCase {
 		y = 10;
         desc = "Introduction to bioinformatics and lots of computation biology";
 		Seminar s5 = new Seminar(2, "Much More Computational Biology and Bioinformatics in CS at Virginia Tech", "0610071600", 60, x, y, 30, new String[] { "Bioinformatics", "computation_biology", "Biology", "Computer_Science", "VT", "Virginia_Tech"}, desc);
-		myHashTable.insert(memManager, 1, s1); 	
-		myHashTable.insert(memManager, 2, s2); 	
-		myHashTable.insert(memManager, 3, s3); 	
 		myHashTable.insert(memManager, 10, s4); 	
 		myHashTable.delete(memManager, 2);
-		myHashTable.insert(memManager, 2, s5); 
 		myHashTable.delete(memManager, 10);
+		myHashTable.delete(memManager, 1);
+		myHashTable.delete(memManager, 3);
 		assertEquals(true, memManager.printMemManager());
     }
     

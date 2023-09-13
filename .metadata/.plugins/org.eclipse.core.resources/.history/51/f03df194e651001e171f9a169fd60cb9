@@ -120,25 +120,45 @@ public class myHashTableTest extends TestCase {
 		test.delete(memManager, 32);
 	
    		
-        for(int k = 1; k <= 50; k++) {
+        for(int k = 1; k <= 100; k++) {
     		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
     		test.insert(memManager, k, s);	
     		}
         for(int k = 200; k>50; k--) {
-        		assertEquals(false,test.delete(memManager, k)); 	
+        	if(k <= 100) {
+        		assertEquals(true,test.delete(memManager, k));
+        	}
+        	else {
+        		assertEquals(false,test.delete(memManager, k));
+        	}   	
         }
         for(int k = 1; k <= 50; k++) {
-        		assertEquals(true,test.delete(memManager, k));    	
+        	if(k <= 100) {
+        		assertEquals(true,test.delete(memManager, k));
+        	}
+        	else {
+        		assertEquals(false,test.delete(memManager, k));
+        	}     	
         }
-        for(int k= 1; k <= 50; k++) {
+        for(int k= 1; k <= 100; k++) {
     		Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
     		test.insert(memManager, k, s);	
     		}
         for(int k = 200; k>50; k--) {
-    		assertEquals(false,test.delete(memManager, k));	
+        	if(k <= 100) {
+        		assertEquals(true,test.delete(memManager, k));
+        	}
+        	else {
+        		assertEquals(false,test.delete(memManager, k));
+        	} 	
         }
         for(int k = 1; k <= 50; k++) {
-        	assertEquals(true,test.delete(memManager, k));	
+        	if(k <= 100) {
+        		assertEquals(true,test.delete(memManager, k));
+        	}
+        	else {
+        		assertEquals(false,test.delete(memManager, k));
+        	} 	
         }
 	}
 

@@ -50,8 +50,8 @@ public class MemManager {
 	     * The printMemManager is used to print out the free blocks
 	     */	
 		System.out.println("Freeblock List:");
+		int i = 0;
 		FreeList curPosition = dummy.getNext();
-		int i = curPosition == null ? 0 : 1;
 		if (curPosition == null) {
 			System.out.println("There are no freeblocks in the memory pool");
 			return false;
@@ -79,7 +79,7 @@ public class MemManager {
 						set = true;
 						break;
 					}						
-				}  
+				}
 				if (!set) {
 					for (int k = 0; k < tmp.length; k++) {			
 						if (tmp[k].getVal() == -1) {	
@@ -130,6 +130,7 @@ public class MemManager {
 		}
 		catch (Exception e){
             System.out.println("Error in reading seminar record in memory manager!");
+            e.printStackTrace();
 		}
 	}
 	

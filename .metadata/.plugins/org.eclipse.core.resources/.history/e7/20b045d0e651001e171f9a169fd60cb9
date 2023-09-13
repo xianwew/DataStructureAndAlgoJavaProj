@@ -138,7 +138,7 @@ public class myHashTableTest extends TestCase {
     		assertEquals(false,test.delete(memManager, k));	
         }
         for(int k = 1; k <= 50; k++) {
-        	assertEquals(true,test.delete(memManager, k));	
+        	assertEquals(false,test.delete(memManager, k));	
         }
 	}
 
