@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="src (1)" project="Project1" tests="17" started="17" failures="1" errors="0" ignored="0">
+  <testsuite name="ParserTest" time="0.027">
+    <testcase name="testInitializeComponents" classname="ParserTest" time="0.027"/>
+  </testsuite>
+  <testsuite name="SeminarTest" time="0.005">
+    <testcase name="testtoString" classname="SeminarTest" time="0.002"/>
+    <testcase name="testSeminarDS" classname="SeminarTest" time="0.002"/>
+  </testsuite>
+  <testsuite name="SemManagerTest" time="0.007">
+    <testcase name="testMInitx" classname="SemManagerTest" time="0.007"/>
+  </testsuite>
+  <testsuite name="MemManagerTest" time="0.021">
+    <testcase name="testPrintMemManager" classname="MemManagerTest" time="0.004"/>
+    <testcase name="testdoublesize" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testFindSpaceAvailable" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testgetNearestPowerOfTwo" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testsplitMemoryPool" classname="MemManagerTest" time="0.003"/>
+    <testcase name="testdelete" classname="MemManagerTest" time="0.006"/>
+    <testcase name="testdetectMerge" classname="MemManagerTest" time="0.002"/>
+  </testsuite>
+  <testsuite name="myHashTableTest" time="0.022">
+    <testcase name="testHashing" classname="myHashTableTest" time="0.002"/>
+    <testcase name="testHashingCalculation" classname="myHashTableTest" time="0.002"/>
+    <testcase name="testInsert" classname="myHashTableTest" time="0.003"/>
+    <testcase name="testDelete" classname="myHashTableTest" time="0.009">
+      <failure>junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;&#13;
+	at junit.framework.Assert.fail(Assert.java:57)&#13;
+	at junit.framework.Assert.failNotEquals(Assert.java:329)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:78)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:174)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:181)&#13;
+	at junit.framework.TestCase.assertEquals(TestCase.java:324)&#13;
+	at myHashTableTest.testDelete(myHashTableTest.java:131)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWrapper.java:74)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testSearch" classname="myHashTableTest" time="0.004"/>
+    <testcase name="testPrint" classname="myHashTableTest" time="0.002"/>
+  </testsuite>
+</testrun>
