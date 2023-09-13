@@ -39,17 +39,16 @@ public class SemManager {
      */
 	public static void main (String[] args) {
 		if (args != null) {
-			String[] arguements = {args[2], args[3], args[4]};
 			Parser parser = new Parser();
-		    Object[] components = parser.initializeComponents(arguements);   
+		    Object[] components = parser.initializeComponents(args);   
 		    MemManager memManager = new MemManager();		        
 	        memManager.memoryPool = (byte[]) components[0];
-	        memManager.initializeMemManger(Integer.parseInt(arguements[0]));
+	        memManager.initializeMemManger(Integer.parseInt(args[0]));
 		    MyHashTable hashTable = (MyHashTable) components[1];
 		    File commandFile = (File) components[2];        
 		    WorldDataBase worldDataBase = 
 		    		new WorldDataBase(memManager, hashTable);
 		    parser.processSeminars(commandFile, worldDataBase);		    
-		}   
-    }
+		}
+	}   
 }

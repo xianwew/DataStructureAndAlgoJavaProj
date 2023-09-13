@@ -21,6 +21,6 @@ public class SemManagerTest extends TestCase {
         SemManager sem = new SemManager();
         assertNotNull(sem);
         SemManager.main(null);
-        SemManager.main(new String[] {"Java","SemManager","512", "4", "src/P1Sample_input.txt"});
+        SemManager.main(new String[] {"512", "4", "src/P1Sample_input.txt"});
     }
 }
