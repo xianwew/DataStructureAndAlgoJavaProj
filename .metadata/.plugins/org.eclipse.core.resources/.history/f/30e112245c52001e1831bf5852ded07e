@@ -156,7 +156,6 @@ public class MemManager {
 		}
 		memoryPool = tmp;
 		size *= 2;
-		detectMerge();
 		System.out.println("Memory pool expanded to " + size + " bytes");
 		return curPosition;
 	}
@@ -293,10 +292,6 @@ public class MemManager {
 	     * The function detects if any two nodes are adjacent and
 	     * need to be merge to one node 
 	     */
-		if(dummy == null) {
-			return null;
-		}
-		
 		FreeList left = dummy.getNext();
 		FreeList right = null;
 		if(left != null) {
