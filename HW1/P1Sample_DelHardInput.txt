@@ -1,0 +1,46 @@
+insert 1
+T1
+0610051600 90 10 10 45
+K1
+D1
+
+
+insert 17
+T2
+      0610071600       60     20     10 30
+K2
+D2
+
+insert 33
+T3
+      0610071600       60     20     10 30
+K3
+D3
+
+
+insert 49
+T4
+      0610071600       60     20     10 30
+K4
+D4
+
+
+insert 65
+T5
+      0610071600       60     20     10 30
+K5
+D5
+
+print hashtable
+
+delete 33
+
+print hashtable
+
+search 33
+search 49
+
+delete 65
+search 65
+
+print hashtable
