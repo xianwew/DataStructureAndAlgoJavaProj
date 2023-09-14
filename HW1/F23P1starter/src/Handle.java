@@ -14,13 +14,13 @@ public class Handle {
      * start a construction includes new object
      * with the specified start index, size, and key.
      *
-     * @start the start of the memory allocation 
+     * @param start the start of the memory allocation 
      * @param size The size of the memory allocation.
      * @param key The key associated with the handle.
      * @start the start of handle
      */
     public Handle(int start, int size, int key) {
-	    this.startIndex = start;
+        this.startIndex = start;
 		this.size = size;
 		this.key = -1;
 	}

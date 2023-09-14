@@ -1,9 +1,14 @@
 /**
+ * test the Memmanager 
  * @author Xianwei Wu/Jiren Wang
  * @version September 2023, updated September 2023
  */
 
+
 import student.TestCase;
+/**
+ * a testcase to test the MemmangerTest
+ */
 public class MemManagerTest extends TestCase {
     /**
      * Sets up the tests that follow. In general, used for 
@@ -41,20 +46,16 @@ public class MemManagerTest extends TestCase {
         memManager.getDummyNode().setNext(tmp);
         Seminar s1 = new Seminar(1, "Overview of HCI Research at VT", 
                 "0610051600", 90, x, y, 45,
-                new String[] { "HCI", "Computer_Science", 
-                        "VT", "Virginia_Tech" }, desc);
+                new String[] { "HCI", "Computer_Science", "VT", "Virginia_Tech" }, desc);
         x = 20;
         y = 10;
         desc = "Introduction to   bioinformatics " 
-        + "and computation biology";
+            + "and computation biology";
         Seminar s2 = new Seminar(2, "Computational Biology "
                 + "and Bioinformatics in CS at Virginia Tech",
                 "0610071600", 60,
-                x, y, 30, new String[] { "Bioinformatics", 
-                        "computation_biology", "Biology", 
-                        "Computer_Science", "VT",
-                        "Virginia_Tech" },
-                desc);
+                x, y, 30, new String[] { "Bioinformatics", "computation_biology", 
+                    "Biology", "Computer_Science", "VT", "Virginia_Tech" }, desc);
         x = 30;
         y = 10;
         desc = "Seminar about the      Computing systems "
@@ -62,7 +63,7 @@ public class MemManagerTest extends TestCase {
         Seminar s3 = new Seminar(3, "Computing Systems Research at VT",
                 "0701250830", 30, x, y, cost,
                 new String[] { "high_performance_computing", "grids", "VT", 
-                        "computer", "science" }, desc);
+                    "computer", "science" }, desc);
         x = 0;
         y = 0;
         desc = "Learn what kind of    research is done on HPC  "
@@ -78,14 +79,14 @@ public class MemManagerTest extends TestCase {
         Seminar s5 = new Seminar(2, "Much More Computational "
                 + "Biology and Bioinformatics in CS at Virginia Tech",
                 "0610071600", 60, x, y, 30, new String[] { "Bioinformatics",
-                        "computation_biology", "Biology",
-                        "Computer_Science", "VT", "Virginia_Tech" },
+                    "computation_biology", "Biology",
+                    "Computer_Science", "VT", "Virginia_Tech" },
                 desc);
         Seminar s6 = new Seminar(4, "Much More Computational "
                 + "Biology and Bioinformatics in CS at Virginia Tech",
                 "0610071600", 60, x, y, 30, new String[] { "Bioinformatics", 
-                        "computation_biology", "Biology",
-                        "Computer_Science", "VT", "Virginia_Tech" },
+                     "computation_biology", "Biology",
+                    "Computer_Science", "VT", "Virginia_Tech" },
                 desc);
         myHashTable.insert(memManager, 1, s1);
         assertEquals(true, memManager.printMemManager());
@@ -189,9 +190,8 @@ public class MemManagerTest extends TestCase {
     public void testsplitMemoryPool() {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(2);
-        assertEquals(null, memManager.splitMemoryPool
-                (2, memManager.getDummyNode().getNext())
-                .getNext().getNext());
+        assertEquals(null, memManager.splitMemoryPool (2, 
+                memManager.getDummyNode().getNext()).getNext().getNext());
 
 
     }

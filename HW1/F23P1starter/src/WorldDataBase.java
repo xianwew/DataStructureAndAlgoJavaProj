@@ -31,23 +31,23 @@ public class WorldDataBase {
      */
     public void processCommand(int instruction, int key, Seminar seminar) {
         switch (instruction) {
-        case 1:
-            hashTable.insert(memManager, key, seminar);
-            break;
-        case 2:
-            hashTable.search(memManager, key);
-            break;
-        case 3:
-            hashTable.printHashtable();
-            break;
-        case 4:
-            memManager.printMemManager();
-            break;
-        case 5:
-            hashTable.delete(memManager, key);
-            break;
-        default:
-            break;
+            case 1:
+                hashTable.insert(memManager, key, seminar);
+                break;
+            case 2:
+                hashTable.search(memManager, key);
+                break;
+            case 3:
+                hashTable.printHashtable();
+                break;
+            case 4:
+                memManager.printMemManager();
+                break;
+            case 5:
+                hashTable.delete(memManager, key);
+                break;
+            default:
+                break;
         }
     }
 }

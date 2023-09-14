@@ -1,11 +1,15 @@
 /**
  * This class contains unit tests for the `Parser` class, specifically testing
  * its initialization and command processing methods.
+ * @author Xianwei Wu/Jiren Wang
+ * @version September 2023, updated September 2023
  */
 
 import java.io.File;
 import student.TestCase;
-
+/**
+ * Test the Parser class
+ */
 public class ParserTest extends TestCase {
     /**
      * Test the `initializeComponents` method for correct component 
@@ -16,9 +20,9 @@ public class ParserTest extends TestCase {
         Parser test = new Parser();
 
         Object[] result0 = test.initializeComponents(new String[] 
-                { "16", "0", "10" });
+            { "16", "0", "10" });
         Object[] result1 = test.initializeComponents(new String[] 
-                { "0", "16", "10" });
+            { "0", "16", "10" });
 
         assertEquals(1, test.getInstruction("insert 10000"));
         assertEquals(2, test.getInstruction("search 10000"));
@@ -30,25 +34,24 @@ public class ParserTest extends TestCase {
 
         assertEquals(16, test.initializeComponents(null).length);
         assertEquals(11, test.initializeComponents(new String[] 
-                { "hello", "0", "10" }).length);
+            { "hello", "0", "10" }).length);
         assertEquals(12, test.initializeComponents(new String[] 
-                { "0", "0", "10" }).length);
+            { "0", "0", "10" }).length);
         assertEquals(12, test.initializeComponents(new String[] 
-                { "3", "0", "10" }).length);
+            { "3", "0", "10" }).length);
         assertEquals(13, test.initializeComponents(new String[] 
-                { "16", "hello", "10" }).length);
+            { "16", "hello", "10" }).length);
         assertEquals(14, test.initializeComponents(new String[] 
-                { "16", "0", "10" }).length);
+            { "16", "0", "10" }).length);
         assertEquals(14, test.initializeComponents(new String[] 
-                { "16", "3", "10" }).length);
+            { "16", "3", "10" }).length);
         assertEquals(3, test.initializeComponents(new String[] 
-                { "16", "16", "10" }).length);
+            { "16", "16", "10" }).length);
 
         Parser test1 = new Parser();
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(1024);
-        String[] input = new String[] { "16", "16", 
-                "src/testParser1.txt" };
+        String[] input = new String[] { "16", "16", "src/testParser1.txt" };
         Object[] components = test1.initializeComponents(input);
         memManager.setMemoryPool((byte[]) components[0]);
         memManager.initializeMemManger(16);

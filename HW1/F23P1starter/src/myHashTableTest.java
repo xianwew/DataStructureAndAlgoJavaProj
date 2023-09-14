@@ -1,11 +1,13 @@
 /**
- * This class contains a set of unit tests for the `MyHashTable` 
-class.
+ * This class contains a set of unit tests for the `MyHashTable` class.
  * @author jiren&xianwei
  * @version September 2023, updated September 2023
  */
 
 import student.TestCase;
+/**
+ * Test the Myhashtable class
+ */
 public class myHashTableTest extends TestCase {
     /**
      * Test the `calculateFirstHashing` and `calculateSecondHashing` 
@@ -71,13 +73,12 @@ public class myHashTableTest extends TestCase {
         String desc = "";
         String[] keywordList = {};
         int[] array = new int[] { 32, 96, 160, 224, 72, 83, 99, 
-                115, 131, 147, 163, 179, 195, 211, 227, 243 };
+            115, 131, 147, 163, 179, 195, 211, 227, 243 };
         for (int k = 0; k < array.length; k++) {
             Seminar s = new Seminar(array[k], title, dateTime, 
                     length, x, y, cost, keywordList, desc);
             test.insert(memManager, array[k], s);
             assertEquals(k + 1, test.getLastElementIndex());
-//    		assertEquals(, test.keys[array[k]-1]);
             int t = 0;
             for (Handle h : test.getValues()) {
                 if (h != null && h.getKey() == array[k]) {
@@ -85,7 +86,6 @@ public class myHashTableTest extends TestCase {
                     break;
                 }
             }
-//    		assertEquals(1, test.values[t].getSize());	
         }
         assertEquals(32, test.getSize());
         assertEquals(32, test.getKeys().length);
@@ -198,7 +198,7 @@ public class myHashTableTest extends TestCase {
         String desc = "";
         String[] keywordList = {};
         int[] array = new int[] { 32, 96, 160, 224, 72, 83, 99, 
-                115, 131, 147, 163, 179, 195, 211, 227, 243 };
+            115, 131, 147, 163, 179, 195, 211, 227, 243 };
         for (int k = 0; k < array.length; k++) {
             Seminar s = new Seminar(array[k], title, dateTime, 
                     length, x, y, cost, keywordList, desc);
@@ -222,7 +222,8 @@ public class myHashTableTest extends TestCase {
             if (array[k] != 10 && array[k] != 2 && array[k] != 3 
                     && array[k] != 5) {
                 assertEquals(true, test.search(memManager, array[k]));
-            } else {
+            } 
+            else {
                 assertEquals(false, test.search(memManager, array[k]));
             }
         }

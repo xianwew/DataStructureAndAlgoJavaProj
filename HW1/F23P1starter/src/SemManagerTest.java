@@ -1,10 +1,13 @@
 /**
- * @author {Your Name Here}
- * @version {Put Something Here}
+ * This class contains a set of unit tests for the `MyHashTable` class.
+ * @author xianwei&jiren
+ * @version September 2023, updated September 2023
  */
 
 import student.TestCase;
-
+/**
+ * Test the SemManager class
+ */
 public class SemManagerTest extends TestCase {
     /**
      * Sets up the tests that follow. 
@@ -22,6 +25,6 @@ public class SemManagerTest extends TestCase {
         assertNotNull(sem);
         SemManager.main(null);
         SemManager.main(new String[] {
-                "512", "4", "src/P1Sample_input.txt" });
+            "512", "4", "src/P1Sample_input.txt" });
     }
 }
