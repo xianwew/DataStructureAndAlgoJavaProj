@@ -1,0 +1,55 @@
+insert 1T1
+0610051600 90 10 10 45
+K1 
+ID1
+
+insert 2
+T1
+ 0610051600 98 10 10 45
+K1
+D1
+
+insert 3
+T1
+0610051600 90 18 10 45
+K1
+D1
+
+insert 4
+T1
+0610051600 90 10 10 45
+K1
+D1
+
+insert 5
+T1
+0610051600 90 10 10 45
+K1
+D1
+
+insert 6
+T1
+0610051600 90 10 10 45
+K1
+D1
+
+insert 7
+T1
+0610051600 90 10 10 45
+K1
+D1
+
+print blocks
+
+delete 2
+delete 4
+delete 6
+delete 1
+
+print blocks
+
+delete 3
+delete 5
+delete 7
+
+print blocks

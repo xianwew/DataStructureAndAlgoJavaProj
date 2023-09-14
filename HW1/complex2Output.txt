@@ -1,0 +1,57 @@
+Successfully inserted record with ID 1
+ID: 1，Title: T1
+Date: 0610051600， Length: 90，X: 10，Y: 10, Cost: 45
+Description: 01
+Keywords: K1
+Size: 50
+Suecessfully inserted record with ID 2
+ID: 2，Title: T1
+Date: 0610051600，Length: 90，X: 10，Y: 10，Cost: 45
+Description: D1
+Keywords: K1
+Size:50
+Successfully inserted record with ID 3
+ID: 3，Title: T1
+Date: 0610051600， Length: 90，X: 10，Y: 10，Cost: 45
+Description:D1
+Keywords: K1
+Size: 50
+Successfully inserted record with ID 4
+ID:4，Title: T1
+Date: 0610051600，Length: 90，X: 10，Y: 10，Cost: 45
+Description: D1
+Keywords: K1
+Size: 50
+Successfully inserted record with ID 5
+ID: 5，Title: T1
+Date: 0610051600， Length: 90，X: 10，Y: 10，Cost: 45
+Descr1ption: 01
+Keywords: K1
+Size: 50
+Successfully inserted record with ID 6
+ID: 6，Title: T1
+Date: 0610051600， Length: 90,X: 10， Y: 10，Cost: 45
+Description: D1Keywords: K1
+Size: 50
+Successfully inserted record with ID 7
+ID; 7，Title: T1
+Date: 0610051600，Length: 90，X:18，Y: 10，Cost: 45
+Descript1on: 01
+Keywords: K1
+Size: 50
+Freeblock List:
+64: 448
+512: 512
+Record with ID 2 successfully deleted from the database
+Record with ID 4 successfully deleted from the database
+Record with ID 6 successfully deleted from the database
+Record with ID 1 successfully deleted from the database
+Freeblock List:
+64: 192 320 448
+128:0
+512: 512
+Record with ID 3 successfully deleted from the database
+Record with ID 5 successfully deleted from the database
+Record with ID 7 successfully deleted from the database
+Freeblock List:
+1024： 0
