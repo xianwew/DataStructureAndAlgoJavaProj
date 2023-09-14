@@ -34,6 +34,7 @@ Overview of HPC and CSE Research at VT
       HPC      CSE      computer_science 
     Learn d f    research is done on HPC  and CSE at VT
 
+delete 3
 delete 10
-delete 1
+delete 15
 print blocks

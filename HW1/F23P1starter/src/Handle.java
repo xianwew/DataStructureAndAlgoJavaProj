@@ -17,9 +17,10 @@ public class Handle {
      * @start the start of the memory allocation 
      * @param size The size of the memory allocation.
      * @param key The key associated with the handle.
+     * @start the start of handle
      */
     public Handle(int start, int size, int key) {
-		this.startIndex = start;
+	    this.startIndex = start;
 		this.size = size;
 		this.key = -1;
 	}
@@ -50,7 +51,7 @@ public class Handle {
 	/**
      * Sets the size of the memory allocation.
      *
-     * @endIndex the end of the memory index
+     * @param endIndex the end of the memory index
      */
 	public void setSize(int endIndex) {
 		this.size = endIndex;
