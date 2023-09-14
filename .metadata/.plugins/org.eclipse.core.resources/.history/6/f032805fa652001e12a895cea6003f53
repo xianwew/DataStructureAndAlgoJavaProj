@@ -93,18 +93,18 @@ public class MemManager {
 				curPosition = curPosition.getNext();
 			}	
 			
-			int n = tmp.length;
-	        for (int x = 1; x < n; x++) {
-	            FreeList tmpList = tmp[x];
-	            int j = x - 1;
+	        int n = tmp.length;
+	        for (int x = 1; x < n; i++) {
+	            FreeList tmplist = tmp[x];
+	            int j = i - 1;
 
 	            // Move elements of arr[0..i-1] that are greater than key
 	            // to one position ahead of their current position
-	            while (j >= 0 && tmp[j].getVal() > tmpList.getVal()) {
-	                tmp[j + 1] = tmp[j];
+	            while (j >= 0 && tmp[j].getVal() > tmplist.getVal()) {
+	            	tmp[j + 1] = tmp[j];
 	                j--;
 	            }
-	            tmp[j + 1] = tmpList;
+	            tmp[j + 1] = key;
 	        }
 			
 			

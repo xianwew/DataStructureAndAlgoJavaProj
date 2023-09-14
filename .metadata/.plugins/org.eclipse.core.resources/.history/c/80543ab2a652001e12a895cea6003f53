@@ -104,7 +104,7 @@ public class MemManager {
 	                tmp[j + 1] = tmp[j];
 	                j--;
 	            }
-	            tmp[j + 1] = tmpList;
+	            arr[j + 1] = key;
 	        }
 			
 			

@@ -101,10 +101,10 @@ public class MemManager {
 	            // Move elements of arr[0..i-1] that are greater than key
 	            // to one position ahead of their current position
 	            while (j >= 0 && tmp[j].getVal() > tmpList.getVal()) {
-	                tmp[j + 1] = tmp[j];
+	                arr[j + 1] = arr[j];
 	                j--;
 	            }
-	            tmp[j + 1] = tmpList;
+	            arr[j + 1] = key;
 	        }
 			
 			
