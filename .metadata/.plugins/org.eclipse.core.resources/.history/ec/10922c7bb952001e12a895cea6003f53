@@ -33,7 +33,7 @@ import java.io.*;
  */
 
 /**
- * The main function of the program.
+ * The main function of the program. 
  * It firstly initializes all the components
  * and then calls function.
  */

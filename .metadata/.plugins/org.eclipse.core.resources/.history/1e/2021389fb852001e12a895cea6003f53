@@ -102,8 +102,8 @@ public class Parser {
 
     /**
      * The most important function of the 
-     * parser class, it read, process the files and
-     * pass it to world database for further processing
+     * parser class, it read, process the files
+     * and pass it to world database for further processing
      * 
      * @param commandFile File objected created by Parser
      * @param dataBase    the class that acts 
@@ -168,8 +168,7 @@ public class Parser {
                         data = reader.nextLine().replaceAll("^\\s+", "");
                     }
                     tmpData = data;
-                    while (reader.hasNextLine() && 
-                            tmpData.replaceAll("\\s+", "").equals("")) {
+                    while (reader.hasNextLine() && tmpData.replaceAll("\\s+", "").equals("")) {
                         data = reader.nextLine().trim();
                         tmpData = data;
                     }
@@ -184,8 +183,7 @@ public class Parser {
                 if (desc.equals("")) {
                     desc = data.trim();
                 }
-                Seminar seminar = new Seminar(id, title, 
-                        dateTime, length, x, y, cost, keywordList, desc);
+                Seminar seminar = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
                 dataBase.processCommand(instruction, id, seminar);
                 if (!reader.hasNextLine()) {
                     reader.close();
@@ -196,16 +194,14 @@ public class Parser {
                         } 
                         catch (Exception e) {
                         }
-                        seminar = new Seminar(id, title, 
-                                dateTime, length, x, y, cost, keywordList, desc);
+                        seminar = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
                         dataBase.processCommand(instruction, id, seminar);
                     }
                     break;
                 }
             }
         } catch (Exception e) {
-            System.out.println("Error"
-                    + " in reading/processing files!");
+            System.out.println("Error in reading/processing files!");
             e.printStackTrace();
         }
     }

@@ -103,7 +103,7 @@ public class Parser {
     /**
      * The most important function of the 
      * parser class, it read, process the files and
-     * pass it to world database for further processing
+     *  pass it to world database for further processing
      * 
      * @param commandFile File objected created by Parser
      * @param dataBase    the class that acts 
