@@ -158,6 +158,7 @@ public class MemManagerTest extends TestCase {
         return true;
     }
     
+    
     /**
      * Test insertionSort function
      */
@@ -228,7 +229,9 @@ public class MemManagerTest extends TestCase {
         tmp10[0] = new FreeList(2, 0);
         memManager.insertionSort(tmp9, 1);
         assertEquals(false, assertEqualsCustom(tmp11, 4, tmp12, 5));  
-    }   
+    }
+    
+    
     
     /**
      * Test printOut function
@@ -322,6 +325,7 @@ public class MemManagerTest extends TestCase {
                 memManager.processFreeList(curPosition, tmp8, 1));
     }
     
+    
     /**
      * Test the `doubleSize` method when the initial size is 0.
      * It should return a new `MemManager` with a value of 0 
@@ -352,7 +356,6 @@ public class MemManagerTest extends TestCase {
         assertEquals(null, memManager4.doubleSize());
 
     }
-    
     /**
      * Test the `FindSpaceAvailable` method with different scenarios.
      */
@@ -372,7 +375,6 @@ public class MemManagerTest extends TestCase {
         assertEquals(null, memManager3.findSpaceAvailable(3));
 
     }
-    
     /**
      * Test the `getNearestPowerOfTwo` method with various inputs.
      */
@@ -384,7 +386,6 @@ public class MemManagerTest extends TestCase {
         assertEquals(4, memManager.getNearestPowerOfTwo(3));
         assertEquals(1, memManager.getNearestPowerOfTwo(0));
     }
-    
     /**
      * Test the `splitMemoryPool` method with specific 
      * input conditions.
@@ -394,8 +395,9 @@ public class MemManagerTest extends TestCase {
         memManager.initializeMemManger(2);
         assertEquals(null, memManager.splitMemoryPool(
                 2, memManager.getDummyNode().getNext()).getNext().getNext());
+
+
     }
-    
     /**
      * Test the `delete` method with various scenarios.
      */
@@ -414,7 +416,6 @@ public class MemManagerTest extends TestCase {
         assertEquals(true, memManager.delete(new Handle(1, 1, 2)));
 
     }
-    
     /**
      * Test mergeMemeoryPool method
      */
@@ -428,8 +429,8 @@ public class MemManagerTest extends TestCase {
         memManager2.initializeMemManger(2);
         memManager2.getDummyNode().getNext().setNext(new FreeList(2, 2));
         assertEquals(true, memManager2.mergeMemoryPool());
+
     }
-    
     /**
      * Test the `detectMerge` method with various scenarios.
      */

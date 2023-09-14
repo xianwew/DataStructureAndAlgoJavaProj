@@ -437,6 +437,10 @@ public class MemManager {
      * @return the pointer pointing to the merged space
      */
     public FreeList detectMerge() {
+        if (dummy == null) {
+            return null;
+        }
+
         FreeList left = dummy.getNext();
         FreeList right = null;
         if (left != null) {
