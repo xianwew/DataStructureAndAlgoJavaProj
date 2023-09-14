@@ -122,14 +122,6 @@ public class MemManagerTest extends TestCase {
         tmp3.setNext(tmp4);
         assertEquals(true, memManager3.printMemManager());
     }
-    
-    /**
-     * Test printOut function
-     */
-    public void testPrintOut() {
-        
-    }
-    
     /**
      * Test the `doubleSize` method when the initial size is 0.
      * It should return a new `MemManager` with a value of 0 

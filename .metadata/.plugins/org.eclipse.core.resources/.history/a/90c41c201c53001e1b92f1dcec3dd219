@@ -130,6 +130,12 @@ public class MemManagerTest extends TestCase {
         
     }
     
+    
+    
+    
+    
+    
+    
     /**
      * Test the `doubleSize` method when the initial size is 0.
      * It should return a new `MemManager` with a value of 0 
