@@ -91,8 +91,7 @@ public class MemManager {
                 while (curPosition != null) {
                     if (curPosition.getNext() != null) {
                         System.out.print(curPosition.getIndex() + " ");
-                    } 
-                    else {
+                    } else {
                         System.out.print(curPosition.getIndex());
                     }
                     curPosition = curPosition.getNext();
@@ -378,7 +377,7 @@ public class MemManager {
      * The function detects if any two 
      * nodes are adjacent and need to be merge to
      * one node
-     * @return the pointer pointing to the merged space
+     * @param return the pointer pointing to the merged space
      */
     public FreeList detectMerge() {
         if (dummy == null) {

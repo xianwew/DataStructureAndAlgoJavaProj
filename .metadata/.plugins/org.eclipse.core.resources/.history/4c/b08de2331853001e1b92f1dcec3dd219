@@ -105,9 +105,7 @@ public class Parser {
             tmpDataLeft = dataLocal.split("\\s+")[0];
             tmpDataRight = dataLocal.split("\\s+")[1];
         } 
-        catch (Exception e) {
-//            System.out.println("Error in getting instruction!");
-        }
+        catch (Exception e) { }
         if (tmpDataLeft.indexOf("insert") == 0) {
             return 1;
         } 
@@ -167,10 +165,7 @@ public class Parser {
                             try {
                                 id = Integer.parseInt(tmpData.split("\\s+")[1]);
                             } 
-                            catch (Exception e) {
-//                              System.out.println("
-//                                  Error in getting instruction!");
-                            }
+                            catch (Exception e) { }
                             break;
                         case 1:
                             title = data.trim();
@@ -184,10 +179,7 @@ public class Parser {
                                 y = Short.parseShort(tmpDataArr[3]);
                                 cost = Integer.parseInt(tmpDataArr[4]);
                             } 
-                            catch (Exception e) {
-//                              System.out.println("
-//                                  Error in getting instruction!");
-                            }
+                            catch (Exception e) { }
                             break;
                         case 3:
                             keywordList = tmpData.split("\\s+");
@@ -229,8 +221,6 @@ public class Parser {
                             id = Integer.parseInt(data.split("\\s+")[1]);
                         } 
                         catch (Exception e) {
-//                          System.out.println("
-//                              Error in getting instruction!");
                         }
                         seminar = new Seminar(id, title, dateTime, 
                                 length, x, y, cost, keywordList, desc);

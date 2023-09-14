@@ -279,8 +279,7 @@ public class MyHashTable {
                 while (values[(calculateSecondHashing(
                         key, size) + prevValue) % size].getKey() != key) {
                     prevValue = (
-                            calculateSecondHashing(
-                                    key, size) + prevValue) % size;
+                            calculateSecondHashing(key, size) + prevValue) % size;
                 }
                 success = memManager.delete(values[(
                         calculateSecondHashing(key, size) + prevValue) % size]);

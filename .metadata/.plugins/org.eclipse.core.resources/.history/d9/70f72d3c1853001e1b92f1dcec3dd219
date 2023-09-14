@@ -1,10 +1,14 @@
-import java.io.File;
-import student.TestCase;
 /**
  * This class contains unit tests for the `Parser` class, specifically testing
  * its initialization and command processing methods.
  * @author Xianwei Wu/Jiren Wang
  * @version September 2023, updated September 2023
+ */
+
+import java.io.File;
+import student.TestCase;
+/**
+ * Test the Parser class
  */
 public class ParserTest extends TestCase {
     /**

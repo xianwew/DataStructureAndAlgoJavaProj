@@ -1,8 +1,6 @@
 /**
- * Handle class represents a handle 
- * used to manage memory allocations. It
- * contains information about the 
- * starting index, size, and a key associated
+ * Handle class represents a handle used to manage memory allocations. It
+ * contains information about the starting index, size, and a key associated
  * with the handle.
  * 
  * @author xianwei & jiren

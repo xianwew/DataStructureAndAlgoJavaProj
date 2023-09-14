@@ -91,8 +91,7 @@ public class MemManager {
                 while (curPosition != null) {
                     if (curPosition.getNext() != null) {
                         System.out.print(curPosition.getIndex() + " ");
-                    } 
-                    else {
+                    } else {
                         System.out.print(curPosition.getIndex());
                     }
                     curPosition = curPosition.getNext();
@@ -190,8 +189,7 @@ public class MemManager {
             searchedRecord = Seminar.deserialize(
                     searchedRecordByte);
             System.out.println(searchedRecord.toString());
-        } 
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Error in"
                     + " reading seminar record in memory manager!");
         }
@@ -365,8 +363,7 @@ public class MemManager {
             newInsert.setPrev(prev);
             searchPtr.setPrev(newInsert);
             newInsert.setNext(searchPtr);
-        } 
-        else {
+        } else {
             newInsert.setPrev(dummy);
             dummy.setNext(newInsert);
         }
@@ -378,7 +375,6 @@ public class MemManager {
      * The function detects if any two 
      * nodes are adjacent and need to be merge to
      * one node
-     * @return the pointer pointing to the merged space
      */
     public FreeList detectMerge() {
         if (dummy == null) {

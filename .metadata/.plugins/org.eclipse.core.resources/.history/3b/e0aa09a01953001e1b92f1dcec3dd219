@@ -167,10 +167,7 @@ public class Parser {
                             try {
                                 id = Integer.parseInt(tmpData.split("\\s+")[1]);
                             } 
-                            catch (Exception e) {
-//                              System.out.println("
-//                                  Error in getting instruction!");
-                            }
+                            catch (Exception e) { }
                             break;
                         case 1:
                             title = data.trim();
@@ -185,8 +182,7 @@ public class Parser {
                                 cost = Integer.parseInt(tmpDataArr[4]);
                             } 
                             catch (Exception e) {
-//                              System.out.println("
-//                                  Error in getting instruction!");
+//                                System.out.println("Error in getting instruction!");
                             }
                             break;
                         case 3:
@@ -229,8 +225,7 @@ public class Parser {
                             id = Integer.parseInt(data.split("\\s+")[1]);
                         } 
                         catch (Exception e) {
-//                          System.out.println("
-//                              Error in getting instruction!");
+//                          System.out.println("Error in getting instruction!");
                         }
                         seminar = new Seminar(id, title, dateTime, 
                                 length, x, y, cost, keywordList, desc);

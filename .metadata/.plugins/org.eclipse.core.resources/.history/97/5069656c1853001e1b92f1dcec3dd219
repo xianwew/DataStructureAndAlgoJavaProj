@@ -1,9 +1,6 @@
 import student.TestCase;
 /**
  * Test the SemManager class
- * 
- * @author Xianwei Wu/Jiren Wang
- * @version September 2023, updated September 2023
  */
 public class SemManagerTest extends TestCase {
     /**

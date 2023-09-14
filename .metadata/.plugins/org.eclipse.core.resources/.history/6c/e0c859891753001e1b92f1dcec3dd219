@@ -33,8 +33,8 @@ public class MyHashTable {
     
     /**
      * Set keys element
-     * @param index input index
-     * @param val input value
+     * @param index: input index
+     * @param val: input value
      */
     public void setKeysElement(int index, int val) {
         keys[index] = val;
@@ -135,7 +135,7 @@ public class MyHashTable {
      * @param memManager a memManager object created by main.
      * @param key        provided by the user.
      * @param seminar    object created by the parser.
-     * @return           if insert was successful
+     * @param return     if insert was successful
      */
     public boolean insert(MemManager memManager, int key, Seminar seminar) {
         boolean containKey = false;
@@ -258,8 +258,7 @@ public class MyHashTable {
         for (int i : keys) {
             if (i == key) {
                 containKey = true;
-            } 
-            else {
+            } else {
                 tmp[j] = i;
                 j++;
             }
@@ -279,8 +278,7 @@ public class MyHashTable {
                 while (values[(calculateSecondHashing(
                         key, size) + prevValue) % size].getKey() != key) {
                     prevValue = (
-                            calculateSecondHashing(
-                                    key, size) + prevValue) % size;
+                            calculateSecondHashing(key, size) + prevValue) % size;
                 }
                 success = memManager.delete(values[(
                         calculateSecondHashing(key, size) + prevValue) % size]);

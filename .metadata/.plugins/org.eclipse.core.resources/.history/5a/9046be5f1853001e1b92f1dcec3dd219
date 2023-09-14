@@ -29,9 +29,13 @@ import java.io.*;
 
 public class SemManager {
     /**
-     * The main function of the program
-     * @param args user input
+     * The semSanager is used to call the main function
+     * 
+     * @author Xianwei Wu/Jiren Wang
+     * @version September 2023, updated September 2023
+     * 
      */
+    
     public static void main(String[] args) {
         if (args != null) {
             Parser parser = new Parser();

@@ -1,11 +1,10 @@
-import java.io.*;
-import java.util.*;
 /**
- * Parse the user input to the program
- * 
  * @author Xianwei Wu/Jiren Wang
  * @version September 2023, updated September 2023
  */
+import java.io.*;
+import java.util.*;
+
 public class Parser {
     /**
      * Create Parser to read files
@@ -106,7 +105,6 @@ public class Parser {
             tmpDataRight = dataLocal.split("\\s+")[1];
         } 
         catch (Exception e) {
-//            System.out.println("Error in getting instruction!");
         }
         if (tmpDataLeft.indexOf("insert") == 0) {
             return 1;
@@ -168,8 +166,6 @@ public class Parser {
                                 id = Integer.parseInt(tmpData.split("\\s+")[1]);
                             } 
                             catch (Exception e) {
-//                              System.out.println("
-//                                  Error in getting instruction!");
                             }
                             break;
                         case 1:
@@ -185,8 +181,6 @@ public class Parser {
                                 cost = Integer.parseInt(tmpDataArr[4]);
                             } 
                             catch (Exception e) {
-//                              System.out.println("
-//                                  Error in getting instruction!");
                             }
                             break;
                         case 3:
@@ -229,8 +223,6 @@ public class Parser {
                             id = Integer.parseInt(data.split("\\s+")[1]);
                         } 
                         catch (Exception e) {
-//                          System.out.println("
-//                              Error in getting instruction!");
                         }
                         seminar = new Seminar(id, title, dateTime, 
                                 length, x, y, cost, keywordList, desc);

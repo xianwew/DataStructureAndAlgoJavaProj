@@ -378,7 +378,7 @@ public class MemManager {
      * The function detects if any two 
      * nodes are adjacent and need to be merge to
      * one node
-     * @return the pointer pointing to the merged space
+     * @param return the pointer pointing to the merged space
      */
     public FreeList detectMerge() {
         if (dummy == null) {

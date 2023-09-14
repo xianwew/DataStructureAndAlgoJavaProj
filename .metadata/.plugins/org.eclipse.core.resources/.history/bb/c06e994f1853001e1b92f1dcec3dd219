@@ -28,10 +28,6 @@ import java.io.*;
  */
 
 public class SemManager {
-    /**
-     * The main function of the program
-     * @param args user input
-     */
     public static void main(String[] args) {
         if (args != null) {
             Parser parser = new Parser();
