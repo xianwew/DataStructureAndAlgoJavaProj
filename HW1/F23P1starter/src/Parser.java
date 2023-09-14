@@ -16,7 +16,9 @@ public class Parser {
     /**
      * Dummy Parser constructor
      */
-    public Parser() {}
+    public Parser() { 
+        // Nothing here
+    }
 
     /**
      * Create a method to initialize components
@@ -31,7 +33,8 @@ public class Parser {
             int k = -1;
             try {
                 i = Integer.parseInt(args[0]);
-            } catch (Exception e) {
+            } 
+            catch (Exception e) {
                 System.out.println("Error in creating memory "
                         + "pool!" + " Please enter an integar!");
                 return new String[11];
@@ -39,12 +42,14 @@ public class Parser {
             if ((i & i - 1) != 0 || i <= 0) {
                 System.out.println(
                         "Error in creating memory pool! " + "The size must "
-                                + "be the power " + "of 2 and greater than 0!");
+                                + "be the power " + ""
+                                        + "of 2 and greater than 0!");
                 return new String[12];
             }
             try {
                 k = Integer.parseInt(args[1]);
-            } catch (Exception e) {
+            } 
+            catch (Exception e) {
                 System.out.println("Error in creating "
                         + "hashTable!" + " Please enter an integar!");
                 return new String[13];
@@ -52,7 +57,8 @@ public class Parser {
             if ((k & k - 1) != 0 || k <= 0) {
                 System.out.println(
                         "Error in creating hashTable! " + "The size must"
-                                + " be the power " + "of 2 and greater than 0!");
+                                + " be the power " + ""
+                                        + "of 2 and greater than 0!");
                 return new String[14];
             }
 
@@ -69,15 +75,16 @@ public class Parser {
     }
 
     /**
-     * return the data value
+     * Get the data valuable
+     * @return the data value
      */
     public String getData() {
         return this.data;
     }
     
     /**
-     * set the data value
-     * @param input: the input string value
+     * Set the data value
+     * @param input the input string value
      */
     public void setData(String input) {
         this.data = input;
@@ -87,29 +94,34 @@ public class Parser {
     /**
      * Create a method to get the instruction from the input string
      * 
-     * @param the data is one line of code of the user input file
+     * @param dataLocal is one line of code of the user input file
      * @return output instruction
      */
-    public int getInstruction(String data) {
-        String tmpDataLeft = data;
-        String tmpDataRight = data;
+    public int getInstruction(String dataLocal) {
+        String tmpDataLeft = dataLocal;
+        String tmpDataRight = dataLocal;
         try {
-            tmpDataLeft = data.split("\\s+")[0];
-            tmpDataRight = data.split("\\s+")[1];
-        } catch (Exception e) {
+            tmpDataLeft = dataLocal.split("\\s+")[0];
+            tmpDataRight = dataLocal.split("\\s+")[1];
+        } 
+        catch (Exception e) {
         }
         if (tmpDataLeft.indexOf("insert") == 0) {
             return 1;
-        } else if (tmpDataLeft.indexOf("search") == 0) {
+        } 
+        else if (tmpDataLeft.indexOf("search") == 0) {
             return 2;
-        } else if (tmpDataLeft.indexOf("print") == 0) {
+        } 
+        else if (tmpDataLeft.indexOf("print") == 0) {
             if (tmpDataRight.indexOf("hashtable") == 0) {
                 return 3;
-            } else if (tmpDataRight.indexOf("blocks") == 0) {
+            } 
+            else if (tmpDataRight.indexOf("blocks") == 0) {
                 return 4;
             }
             return 0;
-        } else if (tmpDataLeft.indexOf("delete") == 0) {
+        } 
+        else if (tmpDataLeft.indexOf("delete") == 0) {
             return 5;
         }
         return 0;
@@ -149,34 +161,34 @@ public class Parser {
                     String tmpData = data.trim();
                     // System.out.println("data is: " + data);
                     switch (line) {
-                    case 0:
-                        try {
-                            id = Integer.parseInt(tmpData.split("\\s+")[1]);
-                        } 
-                        catch (Exception e) {
-                        }
-                        break;
-                    case 1:
-                        title = data.trim();
-                        break;
-                    case 2:
-                        try {
-                            String[] tmpDataArr = tmpData.split("\\s+");
-                            dateTime = tmpDataArr[0];
-                            length = Integer.parseInt(tmpDataArr[1]);
-                            x = Short.parseShort(tmpDataArr[2]);
-                            y = Short.parseShort(tmpDataArr[3]);
-                            cost = Integer.parseInt(tmpDataArr[4]);
-                        } 
-                        catch (Exception e) {
-                        }
-                        break;
-                    case 3:
-                        keywordList = tmpData.split("\\s+");
-                        break;
-                    case 4:
-                        desc = data.trim();
-                        break;
+                        case 0:
+                            try {
+                                id = Integer.parseInt(tmpData.split("\\s+")[1]);
+                            } 
+                            catch (Exception e) {
+                            }
+                            break;
+                        case 1:
+                            title = data.trim();
+                            break;
+                        case 2:
+                            try {
+                                String[] tmpDataArr = tmpData.split("\\s+");
+                                dateTime = tmpDataArr[0];
+                                length = Integer.parseInt(tmpDataArr[1]);
+                                x = Short.parseShort(tmpDataArr[2]);
+                                y = Short.parseShort(tmpDataArr[3]);
+                                cost = Integer.parseInt(tmpDataArr[4]);
+                            } 
+                            catch (Exception e) {
+                            }
+                            break;
+                        case 3:
+                            keywordList = tmpData.split("\\s+");
+                            break;
+                        case 4:
+                            desc = data.trim();
+                            break;
                     }
                     line++;
                     if (reader.hasNextLine()) {
@@ -192,7 +204,8 @@ public class Parser {
                         if (getInstruction(data) != 0) {
                             break;
                         }
-                    } else {
+                    } 
+                    else {
                         break;
                     }
                 }
@@ -211,14 +224,15 @@ public class Parser {
                         } 
                         catch (Exception e) {
                         }
-                        seminar = new Seminar(id, title, 
-                                dateTime, length, x, y, cost, keywordList, desc);
+                        seminar = new Seminar(id, title, dateTime, 
+                                length, x, y, cost, keywordList, desc);
                         dataBase.processCommand(instruction, id, seminar);
                     }
                     break;
                 }
             }
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             System.out.println("Error"
                     + " in reading/processing files!");
             e.printStackTrace();

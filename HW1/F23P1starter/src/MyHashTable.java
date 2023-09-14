@@ -24,14 +24,15 @@ public class MyHashTable {
     }
 
     /**
-     * return the keys array 
+     * Get the keys array
+     * @return the keys array 
      */
     public int[] getKeys() {
         return this.keys;
     }
     
     /**
-     * set keys element
+     * Set keys element
      * @param index: input index
      * @param val: input value
      */
@@ -40,31 +41,24 @@ public class MyHashTable {
     }
     
     /**
-     * return the values array 
+     * Get the values array
+     * @return the values array 
      */
     public Handle[] getValues() {
         return this.values;
     }
     
     /**
-     * set Handle element
-     * @param index: input index
-     * @param val: input value
-     */
-    public void setKeysElement(int index, Handle val) {
-        values[index] = val;
-    }
-    
-    
-    /**
-     * return the lastElementIndex
+     * Get the last element index valuable
+     * @return the lastElementIndex
      */
     public int getLastElementIndex() {
         return this.lastElementIndex;
     }
     
     /**
-     * return the size 
+     * Get the size valuable
+     * @return the size 
      */
     public int getSize() {
         return this.size;
@@ -100,8 +94,6 @@ public class MyHashTable {
      * @param key                    input key
      * @param handle                 input the handle used for insertion
      * @param insertArr              a array to store the handle
-     * @param ignoreLastElementIndex a boolean to specify if we need to change the
-     *                               lastElementIndex
      */
     public void hashing(int key, Handle handle, Handle[] insertArr) {
         Handle handleAtIndex;
@@ -109,19 +101,28 @@ public class MyHashTable {
         handleAtIndex = insertArr[calculateFirstHashing(key, arrSize)];
         if (handleAtIndex == null) {
             insertArr[calculateFirstHashing(key, arrSize)] = handle;
-        } else if (handleAtIndex.getStartIndex() == -1) {
+        } 
+        else if (handleAtIndex.getStartIndex() == -1) {
             insertArr[calculateFirstHashing(key, arrSize)] = handle;
-        } else {
+        } 
+        else {
             int prevValue = calculateFirstHashing(key, arrSize);
             while (true) {
-                if (insertArr[(calculateSecondHashing(key, arrSize) + prevValue) % arrSize] != null) {
-                    if (insertArr[(calculateSecondHashing(key, arrSize) + prevValue) % arrSize].getStartIndex() == -1) {
-                        insertArr[(calculateSecondHashing(key, arrSize) + prevValue) % arrSize] = handle;
-                    } else {
-                        prevValue = (calculateSecondHashing(key, arrSize) + prevValue) % arrSize;
+                if (insertArr[(calculateSecondHashing(
+                        key, arrSize) + prevValue) % arrSize] != null) {
+                    if (insertArr[(calculateSecondHashing(key, arrSize)
+                            + prevValue) % arrSize].getStartIndex() == -1) {
+                        insertArr[(calculateSecondHashing(key, arrSize)
+                                + prevValue) % arrSize] = handle;
+                    } 
+                    else {
+                        prevValue = (calculateSecondHashing(
+                                key, arrSize) + prevValue) % arrSize;
                     }
-                } else {
-                    insertArr[(calculateSecondHashing(key, arrSize) + prevValue) % arrSize] = handle;
+                } 
+                else {
+                    insertArr[(calculateSecondHashing(
+                            key, arrSize) + prevValue) % arrSize] = handle;
                     break;
                 }
             }
@@ -134,6 +135,7 @@ public class MyHashTable {
      * @param memManager a memManager object created by main.
      * @param key        provided by the user.
      * @param seminar    object created by the parser.
+     * @param return     if insert was successful
      */
     public boolean insert(MemManager memManager, int key, Seminar seminar) {
         boolean containKey = false;
@@ -154,17 +156,21 @@ public class MyHashTable {
                     // System.out.println("abab");
                     reHash();
                 }
-                System.out.println("Successfully inserted record with ID " + key);
+                System.out.println(""
+                        + "Successfully inserted record with ID " + key);
                 System.out.println(seminar.toString());
                 System.out.println("Size: " + seminar.serialize().length);
                 return true;
-            } catch (Exception e) {
+            } 
+            catch (Exception e) {
                 System.out.println("Error in inserting to the memory manager!");
                 // e.printStackTrace();
                 return false;
             }
-        } else {
-            System.out.println("Insert FAILED - " + "There is already a record with ID " + key);
+        } 
+        else {
+            System.out.println("Insert FAILED - " + ""
+                    + "There is already a record with ID " + key);
             return false;
         }
     }
@@ -185,20 +191,26 @@ public class MyHashTable {
             }
         }
         if (!containKey) {
-            System.out.println("Search FAILED -- " + "There is no record with ID " + key);
+            System.out.println("Search FAILED -- " + ""
+                    + "There is no record with ID " + key);
             return false;
-        } else {
+        } 
+        else {
             if (values[calculateFirstHashing(key, size)].getKey() == key) {
                 System.out.println("Found record with ID " + key + ":");
                 memManager.search(values[calculateFirstHashing(key, size)]);
                 return true;
-            } else {
+            } 
+            else {
                 int prevValue = calculateFirstHashing(key, size);
-                while (values[(calculateSecondHashing(key, size) + prevValue) % size].getKey() != key) {
-                    prevValue = (calculateSecondHashing(key, size) + prevValue) % size;
+                while (values[(calculateSecondHashing(key, size) + 
+                        prevValue) % size].getKey() != key) {
+                    prevValue = (calculateSecondHashing(
+                            key, size) + prevValue) % size;
                 }
                 System.out.println("Found record with ID " + key + ":");
-                memManager.search(values[(calculateSecondHashing(key, size) + prevValue) % size]);
+                memManager.search(values[(
+                        calculateSecondHashing(key, size) + prevValue) % size]);
                 return true;
             }
         }
@@ -206,14 +218,18 @@ public class MyHashTable {
 
     /**
      * Implement the print function for the hash table.
+     * @return a temporary array that 
+     * contains all the non null values
      */
     public int[] printHashtable() {
         int[] tmp = new int[values.length];
         System.out.println("Hashtable:");
-        int j = 0, k = 0;
+        int j = 0;
+        int k = 0;
         for (int i = 0; i < values.length; i++) {
             if (values[i] != null) {
-                System.out.println(i + ": " + (values[i].getKey() == -1 ? "TOMBSTONE" : values[i].getKey()));
+                System.out.println(i + ": " + (values[i].getKey()
+                        == -1 ? "TOMBSTONE" : values[i].getKey()));
 
                 tmp[j] = values[i].getKey();
                 j++;
@@ -232,6 +248,7 @@ public class MyHashTable {
      * 
      * @param memManager a memManager object created by main.
      * @param key        provided by the user.
+     * @return           if deletion was successful
      */
     public boolean delete(MemManager memManager, int key) {
         boolean containKey = false;
@@ -250,25 +267,36 @@ public class MyHashTable {
         if (containKey) {
             lastElementIndex--;
             if (values[calculateFirstHashing(key, size)].getKey() == key) {
-                success = memManager.delete(values[calculateFirstHashing(key, size)]);
+                success = memManager.delete(
+                        values[calculateFirstHashing(key, size)]);
                 values[calculateFirstHashing(key, size)].setKey(-1);
                 values[calculateFirstHashing(key, size)].setSize(-1);
                 values[calculateFirstHashing(key, size)].setStartIndex(-1);
-            } else {
+            } 
+            else {
                 int prevValue = calculateFirstHashing(key, size);
-                while (values[(calculateSecondHashing(key, size) + prevValue) % size].getKey() != key) {
-                    prevValue = (calculateSecondHashing(key, size) + prevValue) % size;
+                while (values[(calculateSecondHashing(
+                        key, size) + prevValue) % size].getKey() != key) {
+                    prevValue = (
+                            calculateSecondHashing(key, size) + prevValue) % size;
                 }
-                success = memManager.delete(values[(calculateSecondHashing(key, size) + prevValue) % size]);
-                values[(calculateSecondHashing(key, size) + prevValue) % size].setKey(-1);
-                values[(calculateSecondHashing(key, size) + prevValue) % size].setSize(-1);
-                values[(calculateSecondHashing(key, size) + prevValue) % size].setStartIndex(-1);
+                success = memManager.delete(values[(
+                        calculateSecondHashing(key, size) + prevValue) % size]);
+                values[(calculateSecondHashing(
+                        key, size) + prevValue) % size].setKey(-1);
+                values[(calculateSecondHashing(
+                        key, size) + prevValue) % size].setSize(-1);
+                values[(calculateSecondHashing(
+                        key, size) + prevValue) % size].setStartIndex(-1);
             }
-        } else {
-            System.out.println("Delete FAILED -- " + "There is no record with ID " + key);
+        } 
+        else {
+            System.out.println("Delete FAILED -- " + ""
+                    + "There is no record with ID " + key);
         }
         if (success) {
-            System.out.println("Record with ID " + key + " successfully deleted from the database");
+            System.out.println("Record with ID " + key + ""
+                    + " successfully deleted from the database");
         }
         return success;
     }

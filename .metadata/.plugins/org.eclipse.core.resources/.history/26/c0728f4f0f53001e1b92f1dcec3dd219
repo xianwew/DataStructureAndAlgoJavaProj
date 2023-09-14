@@ -20,13 +20,23 @@
 import java.io.*;
 
 /**
- * The semSanager is used to call the main function
+ * The semSanager is used to store the seminar objects, 
+ * or retrieve seminar objects from the memory pool.
  * 
  * @author Xianwei Wu/Jiren Wang
  * @version September 2023, updated September 2023
  * 
+ * @FreeList dummy: the dummy node, 
+ * or it is called the header of the list
+ * @size: the size of the memory pool.
+ * @memory pool: the place to store seminar objects.
  */
 
+/**
+ * The main function of the program.
+ * It firstly initializes all the components
+ * and then calls function.
+ */
 public class SemManager {
     public static void main(String[] args) {
         if (args != null) {
