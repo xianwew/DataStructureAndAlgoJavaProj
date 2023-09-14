@@ -186,7 +186,7 @@ public class MemManagerTest extends TestCase {
         curPosition = new FreeList(-1, -1);
         FreeList[] tmp5 = new FreeList[0];
         memManager.processFreeList(curPosition, tmp5, 0);
-        assertEquals(false, 
+        assertEquals(true, 
                 memManager.processFreeList(curPosition, tmp5, 0));
         FreeList[] tmp6 = new FreeList[1];
         tmp6[0] = new FreeList(-1, -1);

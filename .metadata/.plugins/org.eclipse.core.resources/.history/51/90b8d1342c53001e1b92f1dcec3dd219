@@ -85,10 +85,6 @@ public class MemManager {
      * @return if the function can run to the end 
      */
     public boolean printOut(FreeList[] tmp, int length) {
-        if (length == 0) {
-            return false;
-        }
-        
         for (int k = 0; k < length; k++) {
             if (tmp[k].getVal() != -1) {
                 FreeList curPosition = tmp[k];
@@ -117,10 +113,6 @@ public class MemManager {
      */
     public boolean processFreeList(
             FreeList curPosition, FreeList[] tmp, int length) {
-        if (length == 0) {
-            return false;
-        }
-        
         boolean set = false;
         for (int k = 0; k < length; k++) {
             if (tmp[k].getVal() == curPosition.getVal()) {
