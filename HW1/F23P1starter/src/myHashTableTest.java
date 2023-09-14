@@ -1,5 +1,6 @@
 /**
- * This class contains a set of unit tests for the `MyHashTable` class.
+ * This class contains a set of unit tests for the `MyHashTable` 
+class.
  * @author jiren&xianwei
  * @version September 2023, updated September 2023
  */
@@ -90,7 +91,8 @@ public class myHashTableTest extends TestCase {
         assertEquals(32, test.getKeys().length);
         assertEquals(32, test.getValues().length);
         for (int k = 0; k < array.length; k++) {
-            Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
+            Seminar s = new Seminar(array[k], title, dateTime, length, x, y, 
+                    cost, keywordList, desc);
             assertEquals(false, test.insert(memManager, array[k], s));
         }
         Seminar s = new Seminar(147, title, dateTime, length, x, y, 
@@ -104,7 +106,8 @@ public class myHashTableTest extends TestCase {
     }
 
     /**
-     * Test the `delete` method for removing elements from the hash table.
+     * Test the `delete` method for removing elements from 
+     * the hash table.
      */
     public void testDelete() {
         MyHashTable test = new MyHashTable(16);
