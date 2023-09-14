@@ -82,8 +82,9 @@ public class MemManager {
      * Print the free list out
      * @param tmp the free list array to be printed
      * @param length the length of the free list array
+     * @return if the function can run to the end 
      */
-    public void printOut(FreeList[] tmp, int length) {
+    public boolean printOut(FreeList[] tmp, int length) {
         for (int k = 0; k < length; k++) {
             if (tmp[k] != null && tmp[k].getVal() != -1) {
                 FreeList curPosition = tmp[k];
@@ -100,6 +101,7 @@ public class MemManager {
                 System.out.println("");
             }
         }
+        return true;
     }
     
     /**
@@ -107,8 +109,9 @@ public class MemManager {
      * @param curPosition the current pointer
      * @param tmp the FreeList array
      * @param length the length of the tmp array
+     * @return the function run to the end
      */
-    public void processFreeList(
+    public boolean processFreeList(
             FreeList curPosition, FreeList[] tmp, int length) {
         boolean set = false;
         for (int k = 0; k < length; k++) {
@@ -133,6 +136,7 @@ public class MemManager {
                 }
             }
         }
+        return true;
     }
     
     /**

@@ -133,17 +133,25 @@ public class MemManagerTest extends TestCase {
      */
     public void testPrintOut() {
         MemManager memManager = new MemManager();
-        memManager.initializeMemManger(0);
-        
+        memManager.initializeMemManger(0); 
         FreeList[] tmp1 = new FreeList[0];
         memManager.printOut(tmp1, 0);
+        assertEquals(true, memManager.printOut(tmp1, 0));
         FreeList[] tmp2 = new FreeList[1];
         memManager.printOut(tmp2, 1);
+        assertEquals(true, memManager.printOut(tmp2, 1));
         FreeList[] tmp3 = new FreeList[1];
         tmp3[0] = new FreeList(1, 0);
         tmp3[0].setNext(new FreeList(1, 1));
         tmp3[0].getNext().setNext(new FreeList(1, 2));
         memManager.printOut(tmp3, 1);
+        assertEquals(true, memManager.printOut(tmp3, 1));
+        FreeList[] tmp4 = new FreeList[2];
+        tmp4[0] = new FreeList(-1, -1);
+        tmp4[1] = new FreeList(1, 0);
+        tmp4[1].setNext(new FreeList(1, 1));
+        tmp4[1].getNext().setNext(new FreeList(1, 2));
+        assertEquals(true, memManager.printOut(tmp4, 1));
     }
     /**
      * Test ProcessFreeList
@@ -155,13 +163,50 @@ public class MemManagerTest extends TestCase {
         
         FreeList[] tmp1 = new FreeList[0];
         memManager.processFreeList(curPosition, tmp1, 0);
+        assertEquals(true, 
+                memManager.processFreeList(curPosition, tmp1, 0));
         FreeList[] tmp2 = new FreeList[1];
         memManager.processFreeList(curPosition, tmp2, 1);
+        assertEquals(true, 
+                memManager.processFreeList(curPosition, tmp2, 1));
         FreeList[] tmp3 = new FreeList[1];
-        tmp3[0] = new FreeList(1,0);
-        tmp3[0].setNext(new FreeList(1,1));
-        tmp3[0].getNext().setNext(new FreeList(1,2));
+        tmp3[0] = new FreeList(1, 0);
+        tmp3[0].setNext(new FreeList(1, 1));
+        tmp3[0].getNext().setNext(new FreeList(1, 2));
         memManager.processFreeList(curPosition, tmp3, 1);
+        assertEquals(true, 
+                memManager.processFreeList(curPosition, tmp3, 1));
+        FreeList[] tmp4 = new FreeList[2];
+        tmp4[0] = new FreeList(-1, -1);
+        tmp4[1] = new FreeList(1, 0);
+        tmp4[1].setNext(new FreeList(1, 1));
+        tmp4[1].getNext().setNext(new FreeList(1, 2));
+        assertEquals(true, 
+                memManager.processFreeList(curPosition, tmp4, 1));
+
+        curPosition = new FreeList(-1, -1);
+        FreeList[] tmp5 = new FreeList[0];
+        memManager.processFreeList(curPosition, tmp5, 0);
+        assertEquals(true, 
+                memManager.processFreeList(curPosition, tmp5, 0));
+        FreeList[] tmp6 = new FreeList[1];
+        memManager.processFreeList(curPosition, tmp6, 1);
+        assertEquals(true, 
+                memManager.processFreeList(curPosition, tmp6, 1));
+        FreeList[] tmp7 = new FreeList[1];
+        tmp7[0] = new FreeList(1, 0);
+        tmp7[0].setNext(new FreeList(1, 1));
+        tmp7[0].getNext().setNext(new FreeList(1, 2));
+        memManager.processFreeList(curPosition, tmp7, 1);
+        assertEquals(true, 
+                memManager.processFreeList(curPosition, tmp7, 1));
+        FreeList[] tmp8 = new FreeList[2];
+        tmp8[0] = new FreeList(-1, -1);
+        tmp8[1] = new FreeList(1, 0);
+        tmp8[1].setNext(new FreeList(1, 1));
+        tmp8[1].getNext().setNext(new FreeList(1, 2));
+        assertEquals(true, 
+                memManager.processFreeList(curPosition, tmp8, 1));
     }
     
     
