@@ -1,4 +1,8 @@
 import student.TestCase;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 /**
  * Test the SemManager class
  * 
@@ -21,7 +25,20 @@ public class SemManagerTest extends TestCase {
         SemManager sem = new SemManager();
         assertNotNull(sem);
         SemManager.main(null);
-        SemManager.main(new String[] {
-            "512", "4", "src/P1Sample_input.txt" });
+        
+        String filePath = "src/P1Sample_output.txt"; 
+
+        String refOut = "";
+        try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+            refOut = new String(bytes, StandardCharsets.UTF_8);
+        } 
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        SemManager.main(new String[]{"512", "4", "src/P1Sample_input.txt"});
+        String printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
     }
 }
