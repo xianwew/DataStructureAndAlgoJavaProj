@@ -92,7 +92,19 @@ public class MemManager {
 				}
 				curPosition = curPosition.getNext();
 			}	
-	
+			
+//			int n = tmp.length;
+//	        for (int x = 1; x < n; x++) {
+//	            FreeList tmpList = tmp[x];
+//	            int j = x - 1;
+//	            while (j >= 0 && tmp[j].getVal() > tmpList.getVal()) {
+//	                tmp[j + 1] = tmp[j];
+//	                j--;
+//	            }
+//	            tmp[j + 1] = tmpList;
+//	        }
+			
+			
 			for (int k = 0; k < tmp.length; k++) {
 				if (tmp[k].getVal() != -1) {
 					curPosition = tmp[k];
