@@ -85,7 +85,7 @@ public class MemManager {
      */
     public void printOut(FreeList[] tmp, int length) {
         for (int k = 0; k < length; k++) {
-            if (tmp[k].getVal() != -1) {
+            if (tmp[k] != null && tmp[k].getVal() != -1) {
                 FreeList curPosition = tmp[k];
                 System.out.print(curPosition.getVal() + ": ");
                 while (curPosition != null) {
@@ -112,7 +112,7 @@ public class MemManager {
             FreeList curPosition, FreeList[] tmp, int length) {
         boolean set = false;
         for (int k = 0; k < length; k++) {
-            if (tmp[k].getVal() == curPosition.getVal()) {
+            if (tmp[k] != null && tmp[k].getVal() == curPosition.getVal()) {
                 FreeList tmpList = tmp[k];
                 while (tmpList.getNext() != null) {
                     tmpList = tmpList.getNext();
@@ -125,7 +125,7 @@ public class MemManager {
         }
         if (!set) {
             for (int k = 0; k < length; k++) {
-                if (tmp[k].getVal() == -1) {
+                if (tmp[k] != null && tmp[k].getVal() == -1) {
                     tmp[k].setVal(curPosition.getVal());
                     tmp[k].setIndex(curPosition.getIndex());
                     set = true;

@@ -78,7 +78,7 @@ public class MemManagerTest extends TestCase {
         Seminar s5 = new Seminar(2, "Much More Computational "
                 + "Biology and Bioinformatics in CS at Virginia Tech",
                 "0610071600", 60, x, y, 30, new String[] { "Bioinformatics"
-                        + "", "computation_biology", "Biology",""
+                        + "", "computation_biology", "Biology", ""
                             + "Computer_Science", "VT", "Virginia_Tech" },
                 desc);
         Seminar s6 = new Seminar(4, "Much More Computational "
@@ -121,14 +121,49 @@ public class MemManagerTest extends TestCase {
         assertEquals(true, memManager3.printMemManager());
         tmp3.setNext(tmp4);
         assertEquals(true, memManager3.printMemManager());
+    
+        MemManager memManager4 = new MemManager();
+        memManager4.initializeMemManger(0); 
+        memManager4.getDummyNode().setNext(null);
+        assertEquals(false, memManager4.printMemManager());
     }
     
     /**
      * Test printOut function
      */
     public void testPrintOut() {
+        MemManager memManager = new MemManager();
+        memManager.initializeMemManger(0);
         
+        FreeList[] tmp1 = new FreeList[0];
+        memManager.printOut(tmp1, 0);
+        FreeList[] tmp2 = new FreeList[1];
+        memManager.printOut(tmp2, 1);
+        FreeList[] tmp3 = new FreeList[1];
+        tmp3[0] = new FreeList(1, 0);
+        tmp3[0].setNext(new FreeList(1, 1));
+        tmp3[0].getNext().setNext(new FreeList(1, 2));
+        memManager.printOut(tmp3, 1);
     }
+    /**
+     * Test ProcessFreeList
+     */
+    public void testProcessFreeList() {
+        FreeList curPosition = new FreeList(1, 1);
+        MemManager memManager = new MemManager();
+        memManager.initializeMemManger(0);
+        
+        FreeList[] tmp1 = new FreeList[0];
+        memManager.processFreeList(curPosition, tmp1, 0);
+        FreeList[] tmp2 = new FreeList[1];
+        memManager.processFreeList(curPosition, tmp2, 1);
+        FreeList[] tmp3 = new FreeList[1];
+        tmp3[0] = new FreeList(1,0);
+        tmp3[0].setNext(new FreeList(1,1));
+        tmp3[0].getNext().setNext(new FreeList(1,2));
+        memManager.processFreeList(curPosition, tmp3, 1);
+    }
+    
     
     /**
      * Test the `doubleSize` method when the initial size is 0.
