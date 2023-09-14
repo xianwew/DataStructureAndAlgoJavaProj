@@ -33,40 +33,59 @@ public class MemManagerTest extends TestCase {
         short y = 10;
         int cost = -1;
         int id = 1;
-        String desc = "This seminar will present an overview of HCI research at VT";
+        String desc = "This seminar will present "
+                + "an overview of HCI research at VT";
         String[] keywordList = {};
         FreeList tmp = memManager.dummy.getNext();
         memManager.dummy.setNext(null);
         assertEquals(false, memManager.printMemManager());
         memManager.dummy.setNext(tmp);
-        Seminar s1 = new Seminar(1, "Overview of HCI Research at VT", "0610051600", 90, x, y, 45,
-                new String[] { "HCI", "Computer_Science", "VT", "Virginia_Tech" }, desc);
+        Seminar s1 = new Seminar(1, "Overview of HCI Research at VT", 
+                "0610051600", 90, x, y, 45,
+                new String[] { "HCI", "Computer_Science", 
+                        "VT", "Virginia_Tech" }, desc);
         x = 20;
         y = 10;
-        desc = "Introduction to   bioinformatics and computation biology";
-        Seminar s2 = new Seminar(2, "Computational Biology and Bioinformatics in CS at Virginia Tech", "0610071600", 60,
-                x, y, 30, new String[] { "Bioinformatics", "computation_biology", "Biology", "Computer_Science", "VT",
+        desc = "Introduction to   bioinformatics " 
+        + "and computation biology";
+        Seminar s2 = new Seminar(2, "Computational Biology "
+                + "and Bioinformatics in CS at Virginia Tech",
+                "0610071600", 60,
+                x, y, 30, new String[] { "Bioinformatics", 
+                        "computation_biology", "Biology", 
+                        "Computer_Science", "VT",
                         "Virginia_Tech" },
                 desc);
         x = 30;
         y = 10;
-        desc = "Seminar about the      Computing systems research at      VT";
-        Seminar s3 = new Seminar(3, "Computing Systems Research at VT", "0701250830", 30, x, y, cost,
-                new String[] { "high_performance_computing", "grids", "VT", "computer", "science" }, desc);
+        desc = "Seminar about the      Computing systems "
+                + "research at      VT";
+        Seminar s3 = new Seminar(3, "Computing Systems Research at VT",
+                "0701250830", 30, x, y, cost,
+                new String[] { "high_performance_computing", "grids", "VT", 
+                        "computer", "science" }, desc);
         x = 0;
         y = 0;
-        desc = "Learn what kind of    research is done on HPC  and CSE at VT";
-        Seminar s4 = new Seminar(10, "Overview of HPC and CSE Research at VT", "0703301125", 35, x, y, 25,
+        desc = "Learn what kind of    research is done on HPC  "
+                + "and CSE at VT";
+        Seminar s4 = new Seminar(10, "Overview of HPC "
+                + "and CSE Research at VT", 
+                "0703301125", 35, x, y, 25,
                 new String[] { "HPC", "CSE", "Computer_Science" }, desc);
         x = 20;
         y = 10;
-        desc = "Introduction to bioinformatics and lots of computation biology";
-        Seminar s5 = new Seminar(2, "Much More Computational Biology and Bioinformatics in CS at Virginia Tech",
-                "0610071600", 60, x, y, 30, new String[] { "Bioinformatics", "computation_biology", "Biology",
+        desc = "Introduction to bioinformatics "
+                + "and lots of computation biology";
+        Seminar s5 = new Seminar(2, "Much More Computational "
+                + "Biology and Bioinformatics in CS at Virginia Tech",
+                "0610071600", 60, x, y, 30, new String[] { "Bioinformatics",
+                        "computation_biology", "Biology",
                         "Computer_Science", "VT", "Virginia_Tech" },
                 desc);
-        Seminar s6 = new Seminar(4, "Much More Computational Biology and Bioinformatics in CS at Virginia Tech",
-                "0610071600", 60, x, y, 30, new String[] { "Bioinformatics", "computation_biology", "Biology",
+        Seminar s6 = new Seminar(4, "Much More Computational "
+                + "Biology and Bioinformatics in CS at Virginia Tech",
+                "0610071600", 60, x, y, 30, new String[] { "Bioinformatics", 
+                        "computation_biology", "Biology",
                         "Computer_Science", "VT", "Virginia_Tech" },
                 desc);
         myHashTable.insert(memManager, 1, s1);
@@ -104,7 +123,11 @@ public class MemManagerTest extends TestCase {
         tmp3.setNext(tmp4);
         assertEquals(true, memManager3.printMemManager());
     }
-
+    /**
+     * Test the `doubleSize` method when the initial size is 0.
+     * It should return a new `MemManager` with a value of 0 
+     * and a size of 0.
+     */
     public void testdoublesize() {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(0);
@@ -130,7 +153,9 @@ public class MemManagerTest extends TestCase {
         assertEquals(null, memManager4.doubleSize());
 
     }
-
+    /**
+     * Test the `FindSpaceAvailable` method with different scenarios.
+     */
     public void testFindSpaceAvailable() {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(1);
@@ -147,7 +172,9 @@ public class MemManagerTest extends TestCase {
         assertEquals(null, memManager3.FindSpaceAvailable(3));
 
     }
-
+    /**
+     * Test the `getNearestPowerOfTwo` method with various inputs.
+     */
     public void testgetNearestPowerOfTwo() {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(0);
@@ -156,17 +183,23 @@ public class MemManagerTest extends TestCase {
         assertEquals(4, memManager.getNearestPowerOfTwo(3));
         assertEquals(1, memManager.getNearestPowerOfTwo(0));
     }
-
+    /**
+     * Test the `splitMemoryPool` method with specific 
+     * input conditions.
+     */
     public void testsplitMemoryPool() {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(2);
-        assertEquals(null, memManager.splitMemoryPool(2, memManager.dummy.getNext()).getNext().getNext());
+        assertEquals(null, memManager.splitMemoryPool
+                (2, memManager.dummy.getNext()).getNext().getNext());
 
 //		memManager.dummy.getNext().setNext(new FreeList(1,1));
 //		assertEquals(1,memManager.splitMemoryPool(2, memManager.dummy.getNext()).getVal());
 
     }
-
+    /**
+     * Test the `delete` method with various scenarios.
+     */
     public void testdelete() {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(2);
@@ -182,7 +215,9 @@ public class MemManagerTest extends TestCase {
         assertEquals(true, memManager.delete(new Handle(1, 1, 2)));
 
     }
-
+    /**
+     * Test the `detectMerge` method with various scenarios.
+     */
     public void testdetectMerge() {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(2);
