@@ -280,7 +280,7 @@ public class MemManager {
         int smallestGreaterThanReq = Integer.MAX_VALUE - 1;
         while (curPosition != null) {
             if (curPosition.getVal() >= requestedSize &&
-                    curPosition.getVal() < smallestGreaterThanReq) {
+                    curPosition.getVal() <= smallestGreaterThanReq) {
                 smallestGreaterThanReq = curPosition.getVal();
                 returnPtr = curPosition;
             }
@@ -416,10 +416,9 @@ public class MemManager {
      */
     public boolean mergeCondition() {
         FreeList curPosition = dummy.getNext();
-        while (curPosition != null &&
-                curPosition.getNext() != null) {
+        while (curPosition != null && curPosition.getNext() != null) {
             if (curPosition.getIndex() + curPosition.getVal() == 
-                    curPosition.getNext().getIndex() && 
+                    curPosition.getNext().getIndex() &&
                         curPosition.getVal() == curPosition.getNext().getVal()) {
                 return true;
             }

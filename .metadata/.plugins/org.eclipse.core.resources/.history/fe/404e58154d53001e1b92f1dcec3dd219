@@ -419,8 +419,8 @@ public class MemManager {
         while (curPosition != null &&
                 curPosition.getNext() != null) {
             if (curPosition.getIndex() + curPosition.getVal() == 
-                    curPosition.getNext().getIndex() && 
-                        curPosition.getVal() == curPosition.getNext().getVal()) {
+                    curPosition.getNext().getIndex() && curPosition.getVal(
+                            ) == curPosition.getNext().getVal()) {
                 return true;
             }
             curPosition = curPosition.getNext();

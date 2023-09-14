@@ -38005,3 +38005,191 @@ SemManager
 </Property>
 </Properties>
 </SensorData>
+<SensorData>
+<Timestamp>
+1694730006028
+</Timestamp>
+<Runtime>
+1694730006028
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+Successfully inserted record with ID 1
+ID: 1, Title: T1
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: D1
+Keywords: K
+Size: 49
+Successfully inserted record with ID 2
+ID: 2, Title: T1
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: D1
+Keywords: K
+Size: 49
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: T1
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: D1
+Keywords: K
+Size: 49
+Successfully inserted record with ID 4
+ID: 4, Title: T1
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: D1
+Keywords: K
+Size: 49
+Hash table expanded to 16 records
+Successfully inserted record with ID 5
+ID: 5, Title: T1
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: D1
+Keywords: K
+Size: 49
+Successfully inserted record with ID 6
+ID: 6, Title: T1
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: D1
+Keywords: K
+Size: 49
+Successfully inserted record with ID 7
+ID: 7, Title: T1
+Date: 8610051606, Length: 90, X: 18, Y: 18, Cost: 45
+Description: D1
+Keywords: K1
+Size: 50
+Freeblock List:
+64: 448
+512: 512
+Record with ID 2 successfully deleted from the database
+Record with ID 6 successfully deleted from the database
+Record with ID 4 successfully deleted from the database
+Freeblock List:
+64: 64 192 320 448
+512: 512
+Successfully inserted record with ID 8
+ID: 8, Title: T1
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: D1
+Keywords: K
+Size: 49
+Successfully inserted record with ID 9
+ID: 9, Title: T1
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: D1
+Keywords: K
+Size: 49
+Freeblock List:
+64: 64 192
+512: 512
+Record with ID 8 successfully deleted from the database
+Record with ID 9 successfully deleted from the database
+Freeblock List:
+64: 64 192 320 448
+512: 512
+Record with ID 5 successfully deleted from the database
+Record with ID 1 successfully deleted from the database
+Record with ID 7 successfully deleted from the database
+Freeblock List:
+64: 448
+128: 0
+256: 192
+512: 512
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694730006028
+</Timestamp>
+<Runtime>
+1694730006028
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
+</Value>
+</Property>
+</Properties>
+</SensorData>
