@@ -1,9 +1,9 @@
 <SensorData>
 <Timestamp>
-1694635120331
+1694657045220
 </Timestamp>
 <Runtime>
-1694635120331
+1694657045220
 </Runtime>
 <Tool>
 Eclipse
@@ -12,7 +12,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -31,7 +31,7 @@ Launch
 Subtype
 </Name>
 <Value>
-Normal
+Test
 </Value>
 </Property>
 <Property>
@@ -39,17 +39,17 @@ Normal
 Unit-Name
 </Name>
 <Value>
-SemManager
+MemManagerTest (1)
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1694635138755
+1694657209137
 </Timestamp>
 <Runtime>
-1694635138755
+1694657209137
 </Runtime>
 <Tool>
 Eclipse
@@ -58,7 +58,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -77,7 +77,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-SemManager
+MemManagerTest (1)
 </Value>
 </Property>
 <Property>
@@ -85,7 +85,7 @@ SemManager
 Subsubtype
 </Name>
 <Value>
-Normal
+|Success|
 </Value>
 </Property>
 <Property>
@@ -93,14 +93,28 @@ Normal
 ConsoleOutput
 </Name>
 <Value>
-Error in reading/processing files!
-java.io.FileNotFoundException: P1Sample_DelHardInput (系统找不到指定的文件。)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.util.Scanner.<init>(Scanner.java:639)
-	at Parser.processSeminars(Parser.java:123)
-	at SemManager.main(SemManager.java:51)
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Freeblock List:
+0: 0
+Freeblock List:
+64: 0
+Freeblock List:
+64: 0
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+128: 128
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
 </Value>
 </Property>
 <Property>
@@ -108,17 +122,25 @@ java.io.FileNotFoundException: P1Sample_DelHardInput (系统找不到指定的文件。)
 Subtype
 </Name>
 <Value>
-Normal
+Test
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+|testPrintMemManager|
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1694635138756
+1694657209137
 </Timestamp>
 <Runtime>
-1694635138756
+1694657209137
 </Runtime>
 <Tool>
 Eclipse
@@ -127,7 +149,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -161,10 +183,10 @@ SemManager
 </SensorData>
 <SensorData>
 <Timestamp>
-1694635470837
+1694657247639
 </Timestamp>
 <Runtime>
-1694635470837
+1694657247639
 </Runtime>
 <Tool>
 Eclipse
@@ -173,176 +195,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-Successfully inserted record with ID 1
-ID: 1, Title: T1
-Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
-Description: D1
-Keywords: K1
-Size: 50
-Successfully inserted record with ID 17
-ID: 17, Title: T2
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D2
-Keywords: K2
-Size: 50
-Hash table expanded to 8 records
-Successfully inserted record with ID 33
-ID: 33, Title: T3
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D3
-Keywords: K3
-Size: 50
-Successfully inserted record with ID 49
-ID: 49, Title: T4
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D4
-Keywords: K4
-Size: 50
-Hash table expanded to 16 records
-Successfully inserted record with ID 65
-ID: 65, Title: T5
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D5
-Keywords: K5
-Size: 50
-Hashtable:
-1: 1
-4: 17
-6: 33
-8: 49
-10: 65
-total records: 5
-Record with ID 33 successfully deleted from the database
-Hashtable:
-1: 1
-4: 17
-6: TOMBSTONE
-8: 49
-10: 65
-total records: 4
-Search FAILED -- There is no record with ID 33
-ID: 49, Title: T4
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D4
-Keywords: K4
-Found record with ID 49:
-Record with ID 65 successfully deleted from the database
-Search FAILED -- There is no record with ID 65
-Hashtable:
-1: 1
-4: 17
-6: TOMBSTONE
-8: 49
-10: TOMBSTONE
-total records: 3
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694635470838
-</Timestamp>
-<Runtime>
-1694635470838
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694635709600
-</Timestamp>
-<Runtime>
-1694635709600
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -459,10 +312,10 @@ Normal
 </SensorData>
 <SensorData>
 <Timestamp>
-1694635709600
+1694657247639
 </Timestamp>
 <Runtime>
-1694635709600
+1694657247639
 </Runtime>
 <Tool>
 Eclipse
@@ -471,7 +324,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -505,10 +358,10 @@ SemManager
 </SensorData>
 <SensorData>
 <Timestamp>
-1694635726524
+1694657318838
 </Timestamp>
 <Runtime>
-1694635726524
+1694657318838
 </Runtime>
 <Tool>
 Eclipse
@@ -517,7 +370,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -553,72 +406,39 @@ ConsoleOutput
 </Name>
 <Value>
 Successfully inserted record with ID 1
-ID: 1, Title: Overview of HCI Research at VT
-Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
-Description: This seminar will present an overview of HCI research at VT
-Keywords: HCI, Computer_Science, VT, Virginia_Tech
-Size: 173
+ID: 1, Title: T1
+Date: 0610051600, Length: 99, X: 10, Y: 10, Cost: 45
+Description: D1
+Keywords: K1
+Size: 50
 Successfully inserted record with ID 2
-ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+ID: 2, Title: T2
 Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: Introduction to   bioinformatics and computation biology
-Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
-Size: 244
-Memory pool expanded to 1024 bytes
+Description: D2
+Keywords: K2
+Size: 50
+Record with ID 1 successfully deleted from the database
 Successfully inserted record with ID 3
-ID: 3, Title: Computing Systems Research at VT
-Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
-Description: Seminar about the      Computing systems research at      VT
-Keywords: high_performance_computing, grids, VT, computer, science
-Size: 192
-Insert FAILED - There is already a record with ID 3
-Successfully inserted record with ID 10
-ID: 10, Title: Overview of HPC and CSE Research at VT
-Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
-Description: Learn what kind of    research is done on HPC  and CSE at VT
-Keywords: HPC, CSE, computer_science
-Size: 168
-Found record with ID 3:
-ID: 3, Title: Computing Systems Research at VT
-Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
-Description: Seminar about the      Computing systems research at      VT
-Keywords: high_performance_computing, grids, VT, computer, science
-Hashtable:
-1: 1
-2: 2
-3: 3
-10: 10
-total records: 4
-Freeblock List:
-There are no freeblocks in the memory pool
-Record with ID 2 successfully deleted from the database
-Search FAILED -- There is no record with ID 2
-Hashtable:
-1: 1
-2: TOMBSTONE
-3: 3
-10: 10
-total records: 3
-Freeblock List:
-256: 256
-Delete FAILED -- There is no record with ID 6
-Memory pool expanded to 2048 bytes
-Successfully inserted record with ID 2
-ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+ID: 3, Title: T3
 Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: Introduction to bioinformatics and lots of computation biology
-Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
-Size: 260
-Record with ID 10 successfully deleted from the database
+Description: D3
+Keywords: K3
+Size: 50
+Hash table expanded to 8 records
+Successfully inserted record with ID 4
+ID: 4, Title: T4
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: D4
+Keywords: K4
+Size: 50
 Hashtable:
-1: 1
 2: 2
 3: 3
-10: TOMBSTONE
+4: 4
 total records: 3
 Freeblock List:
-256: 256 768
-512: 1536
+64: 192
+256: 256
 </Value>
 </Property>
 <Property>
@@ -633,10 +453,10 @@ Normal
 </SensorData>
 <SensorData>
 <Timestamp>
-1694635726524
+1694657318838
 </Timestamp>
 <Runtime>
-1694635726524
+1694657318838
 </Runtime>
 <Tool>
 Eclipse
@@ -645,7 +465,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -679,126 +499,10 @@ SemManager
 </SensorData>
 <SensorData>
 <Timestamp>
-1694635872420
+1694657367028
 </Timestamp>
 <Runtime>
-1694635872420
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-WorldDataBase.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694635874773
-</Timestamp>
-<Runtime>
-1694635874773
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694635884774
-</Timestamp>
-<Runtime>
-1694635884774
+1694657367028
 </Runtime>
 <Tool>
 Eclipse
@@ -808,254 +512,6 @@ DevEvent
 </SensorDataType>
 <URI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694635929778
-</Timestamp>
-<Runtime>
-1694635929778
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694635954780
-</Timestamp>
-<Runtime>
-1694635954780
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694635974782
-</Timestamp>
-<Runtime>
-1694635974782
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694635988089
-</Timestamp>
-<Runtime>
-1694635988089
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -1102,812 +558,7 @@ Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
 Description: D2
 Keywords: K2
 Size: 50
-Successfully inserted record with ID 33
-ID: 33, Title: T3
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D3
-Keywords: K3
-Size: 50
-Successfully inserted record with ID 49
-ID: 49, Title: T4
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D4
-Keywords: K4
-Size: 50
-Successfully inserted record with ID 65
-ID: 65, Title: T5
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D5
-Keywords: K5
-Size: 50
-Hashtable:
-1: 1
-4: 17
-6: 33
-8: 49
-10: 65
-total records: 5
-Record with ID 33 successfully deleted from the database
-Hashtable:
-1: 1
-4: 17
-6: TOMBSTONE
-8: 49
-10: 65
-total records: 4
-Search FAILED -- There is no record with ID 33
-ID: 49, Title: T4
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D4
-Keywords: K4
-Found record with ID 49:
-Record with ID 65 successfully deleted from the database
-Search FAILED -- There is no record with ID 65
-Hashtable:
-1: 1
-4: 17
-6: TOMBSTONE
-8: 49
-10: TOMBSTONE
-total records: 3
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694635988090
-</Timestamp>
-<Runtime>
-1694635988090
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694636004784
-</Timestamp>
-<Runtime>
-1694636004784
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Parser.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694636009784
-</Timestamp>
-<Runtime>
-1694636009784
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694636030258
-</Timestamp>
-<Runtime>
-1694636030258
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-Successfully inserted record with ID 1
-ID: 1, Title: Overview of HCI Research at VT
-Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
-Description: This seminar will present an overview of HCI research at VT
-Keywords: HCI, Computer_Science, VT, Virginia_Tech
-Size: 173
-Successfully inserted record with ID 2
-ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: Introduction to   bioinformatics and computation biology
-Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
-Size: 244
-Memory pool expanded to 1024 bytes
-Successfully inserted record with ID 3
-ID: 3, Title: Computing Systems Research at VT
-Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
-Description: Seminar about the      Computing systems research at      VT
-Keywords: high_performance_computing, grids, VT, computer, science
-Size: 192
-Insert FAILED - There is already a record with ID 3
-Successfully inserted record with ID 10
-ID: 10, Title: Overview of HPC and CSE Research at VT
-Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
-Description: Learn what kind of    research is done on HPC  and CSE at VT
-Keywords: HPC, CSE, computer_science
-Size: 168
-Found record with ID 3:
-ID: 3, Title: Computing Systems Research at VT
-Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
-Description: Seminar about the      Computing systems research at      VT
-Keywords: high_performance_computing, grids, VT, computer, science
-Hashtable:
-1: 1
-2: 2
-3: 3
-10: 10
-total records: 4
-Freeblock List:
-There are no freeblocks in the memory pool
-Record with ID 2 successfully deleted from the database
-Search FAILED -- There is no record with ID 2
-Hashtable:
-1: 1
-2: TOMBSTONE
-3: 3
-10: 10
-total records: 3
-Freeblock List:
-256: 256
-Delete FAILED -- There is no record with ID 6
-Memory pool expanded to 2048 bytes
-Successfully inserted record with ID 2
-ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: Introduction to bioinformatics and lots of computation biology
-Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
-Size: 260
-Record with ID 10 successfully deleted from the database
-Hashtable:
-1: 1
-2: 2
-3: 3
-10: TOMBSTONE
-total records: 3
-Freeblock List:
-256: 256 768
-512: 1536
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694636030258
-</Timestamp>
-<Runtime>
-1694636030258
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694636069280
-</Timestamp>
-<Runtime>
-1694636069280
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-Successfully inserted record with ID 1
-ID: 1, Title: Overview of HCI Research at VT
-Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
-Description: This seminar will present an overview of HCI research at VT
-Keywords: HCI, Computer_Science, VT, Virginia_Tech
-Size: 173
-Successfully inserted record with ID 2
-ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: Introduction to   bioinformatics and computation biology
-Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
-Size: 244
-Memory pool expanded to 1024 bytes
-Successfully inserted record with ID 3
-ID: 3, Title: Computing Systems Research at VT
-Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
-Description: Seminar about the      Computing systems research at      VT
-Keywords: high_performance_computing, grids, VT, computer, science
-Size: 192
-Insert FAILED - There is already a record with ID 3
-Successfully inserted record with ID 10
-ID: 10, Title: Overview of HPC and CSE Research at VT
-Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
-Description: Learn what kind of    research is done on HPC  and CSE at VT
-Keywords: HPC, CSE, computer_science
-Size: 168
-Found record with ID 3:
-ID: 3, Title: Computing Systems Research at VT
-Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
-Description: Seminar about the      Computing systems research at      VT
-Keywords: high_performance_computing, grids, VT, computer, science
-Hashtable:
-1: 1
-2: 2
-3: 3
-10: 10
-total records: 4
-Freeblock List:
-There are no freeblocks in the memory pool
-Record with ID 2 successfully deleted from the database
-Search FAILED -- There is no record with ID 2
-Hashtable:
-1: 1
-2: TOMBSTONE
-3: 3
-10: 10
-total records: 3
-Freeblock List:
-256: 256
-Delete FAILED -- There is no record with ID 6
-Memory pool expanded to 2048 bytes
-Successfully inserted record with ID 2
-ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: Introduction to bioinformatics and lots of computation biology
-Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
-Size: 260
-Record with ID 10 successfully deleted from the database
-Hashtable:
-1: 1
-2: 2
-3: 3
-10: TOMBSTONE
-total records: 3
-Freeblock List:
-256: 256 768
-512: 1536
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694636069280
-</Timestamp>
-<Runtime>
-1694636069280
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694636519288
-</Timestamp>
-<Runtime>
-1694636519288
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-Successfully inserted record with ID 1
-ID: 1, Title: T1
-Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
-Description: D1
-Keywords: K1
-Size: 50
-Successfully inserted record with ID 17
-ID: 17, Title: T2
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D2
-Keywords: K2
-Size: 50
-Successfully inserted record with ID 33
-ID: 33, Title: T3
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D3
-Keywords: K3
-Size: 50
-Successfully inserted record with ID 49
-ID: 49, Title: T4
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D4
-Keywords: K4
-Size: 50
-Successfully inserted record with ID 65
-ID: 65, Title: T5
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D5
-Keywords: K5
-Size: 50
-Hashtable:
-1: 1
-4: 17
-6: 33
-8: 49
-10: 65
-total records: 5
-Record with ID 33 successfully deleted from the database
-Hashtable:
-1: 1
-4: 17
-6: TOMBSTONE
-8: 49
-10: 65
-total records: 4
-Search FAILED -- There is no record with ID 33
-Found record with ID 49:
-ID: 49, Title: T4
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D4
-Keywords: K4
-Record with ID 65 successfully deleted from the database
-Search FAILED -- There is no record with ID 65
-Hashtable:
-1: 1
-4: 17
-6: TOMBSTONE
-8: 49
-10: TOMBSTONE
-total records: 3
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694636519288
-</Timestamp>
-<Runtime>
-1694636519288
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637375616
-</Timestamp>
-<Runtime>
-1694637375616
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-Successfully inserted record with ID 1
-ID: 1, Title: T1
-Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
-Description: D1
-Keywords: K1
-Size: 50
-Successfully inserted record with ID 17
-ID: 17, Title: T2
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D2
-Keywords: K2
-Size: 50
+Hash table expanded to 8 records
 Successfully inserted record with ID 33
 ID: 33, Title: T3
 Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
@@ -1922,17 +573,17 @@ Keywords: K4
 Size: 50
 Hashtable:
 1: 1
-4: 17
-6: 33
-8: 49
+2: 33
+3: 49
+6: 17
 total records: 4
 Record with ID 1 successfully deleted from the database
 Record with ID 33 successfully deleted from the database
 Hashtable:
 1: TOMBSTONE
-4: 17
-6: TOMBSTONE
-8: 49
+2: TOMBSTONE
+3: 49
+6: 17
 total records: 2
 Search FAILED -- There is no record with ID 33
 Found record with ID 49:
@@ -1940,6 +591,9 @@ ID: 49, Title: T4
 Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
 Description: D4
 Keywords: K4
+Freeblock List:
+64: 0 128
+256: 256
 </Value>
 </Property>
 <Property>
@@ -1954,332 +608,10 @@ Normal
 </SensorData>
 <SensorData>
 <Timestamp>
-1694637375616
+1694657367028
 </Timestamp>
 <Runtime>
-1694637375616
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637455571
-</Timestamp>
-<Runtime>
-1694637455571
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-Successfully inserted record with ID 1
-ID: 1, Title: T1
-Date: 0610051600, Length: 99, X: 10, Y: 10, Cost: 45
-Description: 01
-Keywords: K1
-Size: 50
-Successfully inserted record with ID 2
-ID: 2, Title: T2
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D2
-Keywords: K2
-Size: 50
-Record with ID 1 successfully deleted from the database
-Successfully inserted record with ID 3
-ID: 3, Title: T3
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D3
-Keywords: K3
-Size: 50
-Successfully inserted record with ID 4
-ID: 4, Title: T4
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D4
-Keywords: K4
-Size: 50
-Hashtable:
-1: TOMBSTONE
-2: 2
-3: 3
-4: 4
-total records: 3
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637455571
-</Timestamp>
-<Runtime>
-1694637455571
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637607926
-</Timestamp>
-<Runtime>
-1694637607926
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-Successfully inserted record with ID 1
-ID: 1, Title: T1
-Date: 0610051600, Length: 99, X: 10, Y: 10, Cost: 45
-Description: D1
-Keywords: K1
-Size: 50
-Successfully inserted record with ID 2
-ID: 2, Title: T2
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D2
-Keywords: K2
-Size: 50
-Record with ID 1 successfully deleted from the database
-Successfully inserted record with ID 3
-ID: 3, Title: T3
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D3
-Keywords: K3
-Size: 50
-Successfully inserted record with ID 4
-ID: 4, Title: T4
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D4
-Keywords: K4
-Size: 50
-Hashtable:
-1: TOMBSTONE
-2: 2
-3: 3
-4: 4
-total records: 3
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637607926
-</Timestamp>
-<Runtime>
-1694637607926
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637643768
-</Timestamp>
-<Runtime>
-1694637643768
+1694657367028
 </Runtime>
 <Tool>
 Eclipse
@@ -2299,15 +631,7 @@ DevEvent
 Type
 </Name>
 <Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-h cannot be resolved
+Launch
 </Value>
 </Property>
 <Property>
@@ -2315,25 +639,25 @@ h cannot be resolved
 Subtype
 </Name>
 <Value>
-Compile
+Normal
 </Value>
 </Property>
 <Property>
 <Name>
-Success
+Unit-Name
 </Name>
 <Value>
-false
+SemManager
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1694637643768
+1694657471693
 </Timestamp>
 <Runtime>
-1694637643768
+1694657471693
 </Runtime>
 <Tool>
 Eclipse
@@ -2343,114 +667,6 @@ DevEvent
 </SensorDataType>
 <URI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-h cannot be resolved to a variable
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637654260
-</Timestamp>
-<Runtime>
-1694637654260
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-h cannot be resolved to a variable
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637658872
-</Timestamp>
-<Runtime>
-1694637658872
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -2487,35 +703,69 @@ ConsoleOutput
 <Value>
 Successfully inserted record with ID 1
 ID: 1, Title: T1
-Date: 0610051600, Length: 99, X: 10, Y: 10, Cost: 45
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
 Description: D1
 Keywords: K1
 Size: 50
-Successfully inserted record with ID 2
-ID: 2, Title: T2
+Successfully inserted record with ID 17
+ID: 17, Title: T2
 Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
 Description: D2
 Keywords: K2
 Size: 50
-Record with ID 1 successfully deleted from the database
-Successfully inserted record with ID 3
-ID: 3, Title: T3
+Hash table expanded to 8 records
+Successfully inserted record with ID 33
+ID: 33, Title: T3
 Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
 Description: D3
 Keywords: K3
 Size: 50
-Successfully inserted record with ID 4
-ID: 4, Title: T4
+Successfully inserted record with ID 49
+ID: 49, Title: T4
 Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
 Description: D4
 Keywords: K4
 Size: 50
+Hash table expanded to 16 records
+Successfully inserted record with ID 65
+ID: 65, Title: T5
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: D5
+Keywords: K5
+Size: 50
 Hashtable:
-1: TOMBSTONE
-2: 2
-3: 3
-4: 4
+1: 1
+4: 17
+6: 33
+8: 49
+10: 65
+total records: 5
+Record with ID 33 successfully deleted from the database
+Hashtable:
+1: 1
+4: 17
+6: TOMBSTONE
+8: 49
+10: 65
+total records: 4
+Search FAILED -- There is no record with ID 33
+Found record with ID 49:
+ID: 49, Title: T4
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: D4
+Keywords: K4
+Record with ID 65 successfully deleted from the database
+Search FAILED -- There is no record with ID 65
+Hashtable:
+1: 1
+4: 17
+6: TOMBSTONE
+8: 49
+10: TOMBSTONE
 total records: 3
+Freeblock List:
+64: 128
+256: 256
 </Value>
 </Property>
 <Property>
@@ -2530,10 +780,10 @@ Normal
 </SensorData>
 <SensorData>
 <Timestamp>
-1694637658872
+1694657471693
 </Timestamp>
 <Runtime>
-1694637658872
+1694657471693
 </Runtime>
 <Tool>
 Eclipse
@@ -2542,7 +792,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -2576,10 +826,10 @@ SemManager
 </SensorData>
 <SensorData>
 <Timestamp>
-1694637685674
+1694657483447
 </Timestamp>
 <Runtime>
-1694637685674
+1694657483447
 </Runtime>
 <Tool>
 Eclipse
@@ -2599,60 +849,6 @@ DevEvent
 Type
 </Name>
 <Value>
-Build
-</Value>
-</Property>
-<Property>
-<Name>
-Error
-</Name>
-<Value>
-The method setStartIndex(int) in the type Handle is not applicable for the arguments ()
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Compile
-</Value>
-</Property>
-<Property>
-<Name>
-Success
-</Name>
-<Value>
-false
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637716012
-</Timestamp>
-<Runtime>
-1694637716012
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
 Termination
 </Value>
 </Property>
@@ -2678,174 +874,47 @@ ConsoleOutput
 </Name>
 <Value>
 Successfully inserted record with ID 1
-ID: 1, Title: T1
-Date: 0610051600, Length: 99, X: 10, Y: 10, Cost: 45
-Description: D1
-Keywords: K1
-Size: 50
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
 Successfully inserted record with ID 2
-ID: 2, Title: T2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D2
-Keywords: K2
-Size: 50
-Record with ID 1 successfully deleted from the database
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+Memory pool expanded to 1024 bytes
+Hash table expanded to 8 records
 Successfully inserted record with ID 3
-ID: 3, Title: T3
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D3
-Keywords: K3
-Size: 50
-Successfully inserted record with ID 4
-ID: 4, Title: T4
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D4
-Keywords: K4
-Size: 50
-Hashtable:
-1: TOMBSTONE
-2: 2
-3: 3
-4: 4
-total records: 3
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637716012
-</Timestamp>
-<Runtime>
-1694637716012
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637741881
-</Timestamp>
-<Runtime>
-1694637741881
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-Successfully inserted record with ID 1
-ID: 1, Title: T1
-Date: 0610051600, Length: 99, X: 10, Y: 10, Cost: 45
-Description: D1
-Keywords: K1
-Size: 50
-Successfully inserted record with ID 2
-ID: 2, Title: T2
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D2
-Keywords: K2
-Size: 50
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+Memory pool expanded to 2048 bytes
+Hash table expanded to 16 records
+Successfully inserted record with ID 15
+ID: 15, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of  awdawdawd  reseaawdawdassafawrch is done on HPC
+Keywords: HPC, CSE, computer_science
+Size: 190
+Successfully inserted record with ID 13
+ID: 13, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn d f    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 159
+Record with ID 10 successfully deleted from the database
 Record with ID 1 successfully deleted from the database
-Successfully inserted record with ID 3
-ID: 3, Title: T3
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D3
-Keywords: K3
-Size: 50
-Successfully inserted record with ID 4
-ID: 4, Title: T4
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D4
-Keywords: K4
-Size: 50
-Hashtable:
-1: TOMBSTONE
-2: 2
-3: 3
-4: 4
-total records: 3
 </Value>
 </Property>
 <Property>
@@ -2860,10 +929,10 @@ Normal
 </SensorData>
 <SensorData>
 <Timestamp>
-1694637741881
+1694657483448
 </Timestamp>
 <Runtime>
-1694637741881
+1694657483448
 </Runtime>
 <Tool>
 Eclipse
@@ -2872,140 +941,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Launch
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637756650
-</Timestamp>
-<Runtime>
-1694637756650
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Termination
-</Value>
-</Property>
-<Property>
-<Name>
-Class-Name
-</Name>
-<Value>
-SemManager
-</Value>
-</Property>
-<Property>
-<Name>
-Subsubtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-<Property>
-<Name>
-ConsoleOutput
-</Name>
-<Value>
-Successfully inserted record with ID 1
-ID: 1, Title: T1
-Date: 0610051600, Length: 99, X: 10, Y: 10, Cost: 45
-Description: D1
-Keywords: K1
-Size: 50
-Successfully inserted record with ID 2
-ID: 2, Title: T2
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D2
-Keywords: K2
-Size: 50
-Record with ID 1 successfully deleted from the database
-Successfully inserted record with ID 3
-ID: 3, Title: T3
-Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
-Description: D3
-Keywords: K3
-Size: 50
-Error in inserting to the memory manager!
-Hashtable:
-0: 4
-1: TOMBSTONE
-2: 2
-3: 3
-total records: 3
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Normal
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694637756650
-</Timestamp>
-<Runtime>
-1694637756650
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter

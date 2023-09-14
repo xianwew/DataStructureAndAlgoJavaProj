@@ -31,3 +31,4 @@ delete 33
 print hashtable
 search 33
 search 49
+print blocks

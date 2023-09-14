@@ -44,3 +44,4 @@ delete 65
 search 65
 
 print hashtable
+print blocks

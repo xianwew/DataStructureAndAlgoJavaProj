@@ -148,7 +148,7 @@ public class Parser {
 							catch (Exception e) {}
 							break;
 						case 1:
-							title = data;
+							title = data.trim();
 							break;
 						case 2:
 							try {
@@ -165,7 +165,7 @@ public class Parser {
 							keywordList = tmpData.split("\\s+");
 							break;
 						case 4:
-							desc = data;
+							desc = data.trim();
 							break; 
 					}
 					line++;
@@ -187,25 +187,26 @@ public class Parser {
 						break;
 					}
 				}
+				if (desc.equals("")) {
+					desc = data.trim();
+				}
 				Seminar seminar = new Seminar(
 						id, title, dateTime, length, 
 						x, y, cost, keywordList, desc);
 				dataBase.processCommand(instruction, id, seminar);
-//				System.out.println("");
 				if (!reader.hasNextLine()) {
 					reader.close();
 					instruction = getInstruction(data);
 					if (instruction != 0) {
-//						System.out.println("data is:    " + data);
 						try {
-							id = Integer.parseInt(data.split("\\s+")[1]);
+							id = Integer.parseInt(data.split("\\s+")[1]);	
 						}
-						catch (Exception e) {}
+						catch (Exception e) {}	
 						seminar = new Seminar(
 								id, title, dateTime, length, 
 								x, y, cost, keywordList, desc);
 						dataBase.processCommand(instruction, id, seminar);
-					}
+					}	
 					break;
 				}
 			}

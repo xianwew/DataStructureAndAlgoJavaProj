@@ -26,3 +26,4 @@ K4
 D4
 
 print hashtable
+print blocks
