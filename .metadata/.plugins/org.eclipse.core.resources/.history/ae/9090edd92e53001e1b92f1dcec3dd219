@@ -85,7 +85,7 @@ public class MemManager {
      * @return if the function can run to the end 
      */
     public boolean printOut(FreeList[] tmp, int length) {
-        if (length <= 0) {
+        if (length == 0) {
             return false;
         }
         
@@ -117,7 +117,7 @@ public class MemManager {
      */
     public boolean processFreeList(
             FreeList curPosition, FreeList[] tmp, int length) {
-        if (length <= 0) {
+        if (length == 0) {
             return false;
         }
         
