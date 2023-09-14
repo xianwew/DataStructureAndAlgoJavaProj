@@ -160,16 +160,16 @@ public class MemManagerTest extends TestCase {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(1);
         memManager.setDummy(null);
-        assertEquals(null, memManager.findSpaceAvailable(0));
+        assertEquals(null, memManager.FindSpaceAvailable(0));
 
         MemManager memManager2 = new MemManager();
         memManager2.initializeMemManger(1);
-        assertEquals(null, memManager2.findSpaceAvailable(3));
+        assertEquals(null, memManager2.FindSpaceAvailable(3));
 
         MemManager memManager3 = new MemManager();
         memManager3.initializeMemManger(1);
         memManager3.getDummyNode().getNext().setVal(Integer.MAX_VALUE);
-        assertEquals(null, memManager3.findSpaceAvailable(3));
+        assertEquals(null, memManager3.FindSpaceAvailable(3));
 
     }
     /**

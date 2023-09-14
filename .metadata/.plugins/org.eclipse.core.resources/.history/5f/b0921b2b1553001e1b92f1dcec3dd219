@@ -400,8 +400,7 @@ public class MemManager {
                 }
                 left = newInsert;
                 right = next;
-            } 
-            else {
+            } else {
                 left = right;
                 right = right.getNext();
             }

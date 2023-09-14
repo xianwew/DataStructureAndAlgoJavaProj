@@ -390,8 +390,7 @@ public class MemManager {
                     + left.getVal() == right.getIndex())) {
                 FreeList newInsert = 
                         new FreeList(left.getVal() * 2, left.getIndex());
-                FreeList prev = left.getPrev();
-                FreeList next = right.getNext();
+                FreeList prev = left.getPrev(), next = right.getNext();
                 newInsert.setPrev(prev);
                 newInsert.setNext(next);
                 prev.setNext(newInsert);
@@ -400,8 +399,7 @@ public class MemManager {
                 }
                 left = newInsert;
                 right = next;
-            } 
-            else {
+            } else {
                 left = right;
                 right = right.getNext();
             }

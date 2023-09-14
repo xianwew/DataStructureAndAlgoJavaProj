@@ -18,28 +18,34 @@ public class MemManager {
     /**
      * Dummy MemManager constructor
      */
-    public MemManager() {
-        //Nothing here
-    }
+    public MemManager() {}
 
     /**
-     * The initializeSemManger is the method
-     * that is called to initialize the memory
-     * manager.
-     * @param sizeInput the size to be initialized
+     * The semSanager is used to store the seminar objects, or retrieve seminar
+     * objects from the memory pool.
+     * 
+     * @param args Command line parameters
+     * @FreeList dummy: the dummy node, or it is called the header of the list
+     * @size: the size of the memory pool.
+     * @memory pool: the place to store seminar objects.
      */
-    public void initializeMemManger(int sizeInput) {
+
+    /**
+     * The initializeSemManger is the method that is called to initialize the memory
+     * manager.
+     */
+
+    public void initializeMemManger(int size) {
         dummy = new FreeList(-1, -1);
-        FreeList head = new FreeList(sizeInput, 0);
+        FreeList head = new FreeList(size, 0);
         dummy.setNext(head);
         head.setPrev(dummy);
-        this.size = sizeInput;
-        this.memoryPool = new byte[sizeInput];
+        this.size = size;
+        this.memoryPool = new byte[size];
     }
     
     /**
-     * The function return the dummy node
-     * @Return dummy node
+     * Return dummy node
      */
     public FreeList getDummyNode() {
         return dummy;
@@ -47,7 +53,7 @@ public class MemManager {
     
     /**
      * Set dummy node
-     * @param node FreeList node input
+     * @param node: FreeList node input
      */
     public void setDummy(FreeList node) {
         this.dummy = node;
@@ -55,7 +61,6 @@ public class MemManager {
     
     /**
      * Get the memory pool size
-     * @return the size
      */
     public int getSize() {
         return size;
@@ -63,7 +68,7 @@ public class MemManager {
     
     /**
      * Set the memory pool
-     * @param memoryPoolInput input memory pool
+     * @param memoryPoolInput: input memory pool
      */
     public void setMemoryPool(
             byte[] memoryPoolInput) {
@@ -72,10 +77,9 @@ public class MemManager {
     
     /**
      * Get the doubleSizeTestVal
-     * @return the doubleSizeTest valuable
      */
     public int getDoubleSizeTest() {
-        return doubleSizeTest;
+            return doubleSizeTest;
     }
     
     /**
@@ -101,12 +105,8 @@ public class MemManager {
     
     /**
      * Process the free list print
-     * @param curPosition the current pointer
-     * @param tmp the FreeList array
-     * @param length the length of the tmp array
      */
-    public void processFreeList(
-            FreeList curPosition, FreeList[] tmp, int length) {
+    public void processFreeList(FreeList curPosition, FreeList[] tmp, int length) {
         boolean set = false;
         for (int k = 0; k < length; k++) {
             if (tmp[k].getVal() == curPosition.getVal()) {
@@ -121,7 +121,7 @@ public class MemManager {
             }
         }
         if (!set) {
-            for (int k = 0; k < length; k++) {
+            for (int k = 0; k < tmp.length; k++) {
                 if (tmp[k].getVal() == -1) {
                     tmp[k].setVal(curPosition.getVal());
                     tmp[k].setIndex(curPosition.getIndex());
@@ -133,8 +133,7 @@ public class MemManager {
     }
     
     /**
-     * The printMemManager is used
-     * to print out the free blocks
+     * The printMemManager is used to print out the free blocks
      * @return if the print is successful
      */
     public boolean printMemManager() {
@@ -158,9 +157,10 @@ public class MemManager {
 
             curPosition = dummy.getNext();
             while (curPosition != null) {
-                processFreeList(curPosition, tmp, tmp.length);
+
                 curPosition = curPosition.getNext();
             }
+
             printOut(tmp, tmp.length);
             return true;
         }
@@ -174,8 +174,7 @@ public class MemManager {
      */
     public void search(Handle handle) {
         Seminar searchedRecord = new Seminar();
-        byte[] searchedRecordByte =
-                new byte[handle.getSize()];
+        byte[] searchedRecordByte = new byte[handle.getSize()];
         int curSearchedRecordByteIndex = 0;
         for (int i = handle.getStartIndex(); 
                 i < handle.getStartIndex() + handle.getSize(); i++) {
@@ -196,9 +195,12 @@ public class MemManager {
     /**
      * The doubleSize function is used to
      * double the size of the memory pool
-     * @return the curPosition pointer 
      */
     public FreeList doubleSize() {
+        /**
+         * The function doubles the size of the memory manager
+         */
+
         byte[] tmp = new byte[size * 2];
         doubleSizeTest = 0;
         while (doubleSizeTest < memoryPool.length) {
@@ -228,33 +230,36 @@ public class MemManager {
      * find the available space for insertion
      * @param requestedSize the size that
      *  is used to check for space
-     * @return the pointer pointing to the available space
      */
-    public FreeList findSpaceAvailable(int requestedSize) {
+    public FreeList FindSpaceAvailable(int requestedSize) {
+        /**
+         * The function tries to find if there
+         * is a position available by a given
+         * requested size.
+         */
         FreeList curPosition = null;
         if (dummy != null) {
             curPosition = dummy.getNext();
         }
 
-        FreeList returnPtr = null;
+        FreeList ReturnPtr = null;
         int smallestGreaterThanReq = Integer.MAX_VALUE - 1;
         while (curPosition != null) {
             if (curPosition.getVal() >= requestedSize &&
                     curPosition.getVal() <= smallestGreaterThanReq) {
                 smallestGreaterThanReq = curPosition.getVal();
-                returnPtr = curPosition;
+                ReturnPtr = curPosition;
             }
             curPosition = curPosition.getNext();
         }
-        return returnPtr;
+        return ReturnPtr;
     }
 
     /**
      * The getNearestPowerOfTwo function is used to
      * return a power of two number 
      * that is greater than a given number.
-     * @param requestedSize the requested size
-     * @return the nearestPowerOfTwo number
+     * @param requestedSize: the requested size
      */
     public int getNearestPowerOfTwo(int requestedSize) {     
         int nearestPowerOfTwo = 1;
@@ -266,10 +271,6 @@ public class MemManager {
 
     /**
      * Split the memory pool
-     * @param insertPositionSize the original space size
-     * @param insertPosition the pointer pointing to the space
-     *        needed to be split
-     * @return the pointer pointing to the split space         
      */
     public FreeList splitMemoryPool(
             int insertPositionSize, FreeList insertPosition) {
@@ -292,26 +293,24 @@ public class MemManager {
      * when the memory pool does not have enough
      * space, it calls doubleSize().
      * 
-     * @param insertData the seminar serialized object
-     * @param key the key associated with the seminar object
-     * @return once the record is stored, a handle 
-     *         is returned for recovery purposes.
+     * @return once the record is stored, a handle is returned for recovery
+     *         purposes.
      */
     public Handle insert(byte[] insertData, int key) {
         Handle handle = new Handle(-1, -1, -1);
         FreeList insertPosition = 
-                findSpaceAvailable(insertData.length);
+                FindSpaceAvailable(insertData.length);
         while (insertPosition == null) {
             doubleSize();
             insertPosition = 
-                    findSpaceAvailable(insertData.length);
+                    FindSpaceAvailable(insertData.length);
         }
         while (insertPosition.getVal()
                 > getNearestPowerOfTwo(insertData.length)) {
             splitMemoryPool(insertPosition.getVal(), insertPosition);
         }
-        FreeList prev = insertPosition.getPrev();
-        FreeList next = insertPosition.getNext();
+        FreeList prev = insertPosition.getPrev(),
+                next = insertPosition.getNext();
         int insertStartIndex = insertPosition.getIndex();
         handle.setStartIndex(insertStartIndex);
         handle.setSize(insertData.length);
@@ -332,7 +331,7 @@ public class MemManager {
 
     /**
      * The function deletes a record by a given handle.
-     * @param handle handle to be deleted
+     * @param handle: handle to be deleted
      * @return true if the record was deleted
      */
     public boolean delete(Handle handle) {
@@ -368,13 +367,13 @@ public class MemManager {
         detectMerge();
         return true;
     }
-    
-    /**
-     * The function detects if any two 
-     * nodes are adjacent and need to be merge to
-     * one node
-     */
+
     public FreeList detectMerge() {
+        /**
+         * The function detects if any two 
+         * nodes are adjacent and need to be merge to
+         * one node
+         */
         if (dummy == null) {
             return null;
         }
@@ -390,8 +389,7 @@ public class MemManager {
                     + left.getVal() == right.getIndex())) {
                 FreeList newInsert = 
                         new FreeList(left.getVal() * 2, left.getIndex());
-                FreeList prev = left.getPrev();
-                FreeList next = right.getNext();
+                FreeList prev = left.getPrev(), next = right.getNext();
                 newInsert.setPrev(prev);
                 newInsert.setNext(next);
                 prev.setNext(newInsert);
@@ -400,8 +398,7 @@ public class MemManager {
                 }
                 left = newInsert;
                 right = next;
-            } 
-            else {
+            } else {
                 left = right;
                 right = right.getNext();
             }
