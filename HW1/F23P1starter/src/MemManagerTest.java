@@ -129,6 +129,111 @@ public class MemManagerTest extends TestCase {
     }
     
     /**
+     * Test assertEqualsCustom test if two FreeList[] are equal 
+     * 
+     * @param arr1 input arr1
+     * @param arr2 input arr2
+     * @param arr1Length input arr1 length
+     * @param arr2Length input arr2 length
+     * @return return if these two FreeList[] are equal
+     */
+    public boolean assertEqualsCustom(FreeList[] arr1, 
+            int arr1Length, FreeList[] arr2, int arr2Length) {
+        if (arr1Length != arr2Length) {
+            return false;
+        }
+
+        for (int i = 0; i < arr1Length; i++) {
+            FreeList list1 = arr1[i];
+            FreeList list2 = arr2[i];
+
+            while (list1 != null && list2 != null) {
+                if (list1.getVal() != list2.getVal()) {              
+                    return false;
+                }
+                list1 = list1.getNext();
+                list2 = list2.getNext();
+            }
+        }
+        return true;
+    }
+    
+    
+    /**
+     * Test insertionSort function
+     */
+    public void testInsertionSort() {
+        MemManager memManager = new MemManager();
+        memManager.initializeMemManger(0); 
+        FreeList[] tmp1 = new FreeList[5];
+        tmp1[0] = new FreeList(1, 0);
+        tmp1[1] = new FreeList(2, 0);
+        tmp1[2] = new FreeList(3, 0);
+        tmp1[3] = new FreeList(5, 0);
+        tmp1[4] = new FreeList(4, 0);
+        FreeList[] tmp2 = new FreeList[5];
+        tmp2[0] = new FreeList(1, 0);
+        tmp2[1] = new FreeList(2, 0);
+        tmp2[2] = new FreeList(3, 0);
+        tmp2[3] = new FreeList(4, 0);
+        tmp2[4] = new FreeList(5, 0);
+        memManager.insertionSort(tmp1, 5);
+        assertTrue(assertEqualsCustom(tmp1, 5, tmp2, 5));
+        
+        FreeList[] tmp3 = new FreeList[5];
+        tmp3[0] = new FreeList(-6, 0);
+        tmp3[1] = new FreeList(-5, 0);
+        tmp3[2] = new FreeList(-4, 0);
+        tmp3[3] = new FreeList(-3, 0);
+        tmp3[4] = new FreeList(-10, 0);
+        FreeList[] tmp4 = new FreeList[5];
+        tmp4[0] = new FreeList(-10, 0);
+        tmp4[1] = new FreeList(-6, 0);
+        tmp4[2] = new FreeList(-5, 0);
+        tmp4[3] = new FreeList(-4, 0);
+        tmp4[4] = new FreeList(-3, 0);
+        memManager.insertionSort(tmp3, 5);
+        assertTrue(assertEqualsCustom(tmp3, 5, tmp4, 5));
+        
+        FreeList[] tmp5 = new FreeList[0];
+        FreeList[] tmp6 = new FreeList[0];
+        memManager.insertionSort(tmp5, 5);
+        assertTrue(assertEqualsCustom(tmp5, 0, tmp6, 0));
+        
+        FreeList[] tmp7 = new FreeList[5];
+        tmp7[0] = new FreeList(1, 0);
+        tmp7[1] = new FreeList(1, 0);
+        tmp7[2] = new FreeList(1, 0);
+        tmp7[3] = new FreeList(1, 0);
+        tmp7[4] = new FreeList(1, 0);
+        FreeList[] tmp8 = new FreeList[5];
+        tmp8[0] = new FreeList(1, 0);
+        tmp8[1] = new FreeList(1, 0);
+        tmp8[2] = new FreeList(1, 0);
+        tmp8[3] = new FreeList(1, 0);
+        tmp8[4] = new FreeList(1, 0);
+        memManager.insertionSort(tmp7, 5);
+        assertTrue(assertEqualsCustom(tmp7, 5, tmp8, 5));
+        
+        
+        FreeList[] tmp9 = new FreeList[5];
+        tmp9[0] = new FreeList(2, 0);
+        FreeList[] tmp10 = new FreeList[5];
+        tmp10[0] = new FreeList(2, 0);
+        memManager.insertionSort(tmp9, 1);
+        assertTrue(assertEqualsCustom(tmp9, 5, tmp10, 5));  
+        
+        FreeList[] tmp11 = new FreeList[4];
+        tmp9[0] = new FreeList(2, 0);
+        FreeList[] tmp12 = new FreeList[5];
+        tmp10[0] = new FreeList(2, 0);
+        memManager.insertionSort(tmp9, 1);
+        assertEquals(false, assertEqualsCustom(tmp11, 4, tmp12, 5));  
+    }
+    
+    
+    
+    /**
      * Test printOut function
      */
     public void testPrintOut() {
@@ -157,6 +262,7 @@ public class MemManagerTest extends TestCase {
         tmp4[1].getNext().setNext(new FreeList(1, 2));
         assertEquals(true, memManager.printOut(tmp4, 1));
     }
+    
     /**
      * Test ProcessFreeList
      */

@@ -148,6 +148,29 @@ public class MemManager {
     }
     
     /**
+     * The insertionSort is used
+     * to sort free list for printing
+     * @param tmp FreeList[] input
+     * @param length the length of the input array
+     * @return if the sorting was successful
+     */
+    public boolean insertionSort(FreeList[] tmp, int length) {
+        if (tmp.length < 2) { 
+            return false;
+        }
+        for (int i = 1; i < length; i++) {
+            FreeList tmpList = tmp[i];
+            int j = i - 1; 
+            while (j >= 0 && tmp[j].getVal() > tmpList.getVal()) {
+                tmp[j + 1] = tmp[j];
+                j--;
+            }          
+            tmp[j + 1] = tmpList;      
+        }
+        return true;
+    }
+    
+    /**
      * The printMemManager is used
      * to print out the free blocks
      * @return if the print is successful
@@ -176,6 +199,7 @@ public class MemManager {
                 processFreeList(curPosition, tmp, tmp.length);
                 curPosition = curPosition.getNext();
             }
+            insertionSort(tmp, tmp.length);
             printOut(tmp, tmp.length);
             return true;
         }
@@ -234,7 +258,7 @@ public class MemManager {
         }
         memoryPool = tmp;
         size *= 2;
-        detectMerge();
+        mergeMemoryPool();
         System.out.println("Memory pool expanded to " + size + " bytes");
         return curPosition;
     }
@@ -381,10 +405,26 @@ public class MemManager {
         else {
             newInsert.setPrev(dummy);
             dummy.setNext(newInsert);
-        }
-        detectMerge();
+        }      
+        mergeMemoryPool();   
         return true;
     }
+    
+    /**
+     * The function detects some blocks are 
+     * still can be merged
+     */
+    public void mergeMemoryPool() {
+        FreeList curPosition = dummy.getNext();
+        while (curPosition != null && curPosition.getNext() != null) {
+            if (curPosition.getIndex() + curPosition.getVal() == 
+                    curPosition.getNext().getIndex()) {
+                detectMerge();
+            }
+            curPosition = curPosition.getNext();
+        }
+    }
+    
     
     /**
      * The function detects if any two 
@@ -424,6 +464,7 @@ public class MemManager {
                 right = right.getNext();
             }
         }
+        
         return left;
     }
 }
