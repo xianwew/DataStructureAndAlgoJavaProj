@@ -1,9 +1,9 @@
 <SensorData>
 <Timestamp>
-1694662862367
+1694715125746
 </Timestamp>
 <Runtime>
-1694662862367
+1694715125746
 </Runtime>
 <Tool>
 Eclipse
@@ -12,7 +12,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -28,28 +28,20 @@ Launch
 </Property>
 <Property>
 <Name>
-Subtype
-</Name>
-<Value>
-Debug
-</Value>
-</Property>
-<Property>
-<Name>
 Unit-Name
 </Name>
 <Value>
-MemManagerTest (1)
+src (1)
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1694662864033
+1694715185102
 </Timestamp>
 <Runtime>
-1694662864033
+1694715185102
 </Runtime>
 <Tool>
 Eclipse
@@ -58,7 +50,69 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManagerTest.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManagerTest.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+true
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715260924
+</Timestamp>
+<Runtime>
+1694715260924
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -77,7 +131,7 @@ Termination
 Class-Name
 </Name>
 <Value>
-MemManagerTest (1)
+src (1)
 </Value>
 </Property>
 <Property>
@@ -85,8 +139,102 @@ MemManagerTest (1)
 ConsoleOutput
 </Name>
 <Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
 Freeblock List:
-512: 0
+There are no freeblocks in the memory pool
+Freeblock List:
+There are no freeblocks in the memory pool
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+Freeblock List:
+256: 256
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+Freeblock List:
+There are no freeblocks in the memory pool
+Memory pool expanded to 1024 bytes
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: -1
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+Freeblock List:
+256: 768
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, Computer_Science
+Size: 168
+Freeblock List:
+There are no freeblocks in the memory pool
+Record with ID 2 successfully deleted from the database
+Freeblock List:
+256: 256
+Memory pool expanded to 2048 bytes
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Freeblock List:
+256: 256
+512: 1536
+Hash table expanded to 16 records
+Successfully inserted record with ID 4
+ID: 4, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Freeblock List:
+256: 256
+Record with ID 10 successfully deleted from the database
+Freeblock List:
+256: 768
+Record with ID 2 successfully deleted from the database
+Freeblock List:
+512: 1024
+Freeblock List:
+0: 0
+Freeblock List:
+64: 0
+Freeblock List:
+64: 0
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+128: 128
+Freeblock List:
+There are no freeblocks in the memory pool
+1: 0 1 2
+1: 0 1 2
+Memory pool expanded to 0 bytes
+Memory pool expanded to 2 bytes
+Memory pool expanded to 4 bytes
+Memory pool expanded to 4 bytes
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
 Successfully inserted record with ID 1
 ID: 1, Title: Overview of HCI Research at VT
 Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
@@ -107,478 +255,402 @@ Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
 Description: Seminar about the      Computing systems research at      VT
 Keywords: high_performance_computing, grids, VT, computer, science
 Size: 192
+Insert FAILED - There is already a record with ID 3
 Successfully inserted record with ID 10
 ID: 10, Title: Overview of HPC and CSE Research at VT
 Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
 Description: Learn what kind of    research is done on HPC  and CSE at VT
 Keywords: HPC, CSE, computer_science
 Size: 168
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Debug
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663106313
-</Timestamp>
-<Runtime>
-1694663106313
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-ParserTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663109199
-</Timestamp>
-<Runtime>
-1694663109199
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManagerTest.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManagerTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663114593
-</Timestamp>
-<Runtime>
-1694663114593
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/FreeList.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-FreeList.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663115814
-</Timestamp>
-<Runtime>
-1694663115814
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Handle.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Handle.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663116735
-</Timestamp>
-<Runtime>
-1694663116735
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManagerTest.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SemManagerTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663117599
-</Timestamp>
-<Runtime>
-1694663117599
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Seminar.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663118608
-</Timestamp>
-<Runtime>
-1694663118608
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SeminarTest.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-SeminarTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+Freeblock List:
+There are no freeblocks in the memory pool
+Record with ID 2 successfully deleted from the database
+Search FAILED -- There is no record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+Freeblock List:
+256: 256
+Delete FAILED -- There is no record with ID 6
+Memory pool expanded to 2048 bytes
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Record with ID 10 successfully deleted from the database
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+Freeblock List:
+256: 256 768
+512: 1536
+Successfully inserted record with ID 32
+ID: 32, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 64 bytes
+Successfully inserted record with ID 96
+ID: 96, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 128 bytes
+Successfully inserted record with ID 160
+ID: 160, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 224
+ID: 224, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 256 bytes
+Successfully inserted record with ID 72
+ID: 72, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 83
+ID: 83, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 99
+ID: 99, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 115
+ID: 115, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 512 bytes
+Hash table expanded to 32 records
+Successfully inserted record with ID 131
+ID: 131, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 147
+ID: 147, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 163
+ID: 163, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 179
+ID: 179, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 195
+ID: 195, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 211
+ID: 211, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 227
+ID: 227, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 243
+ID: 243, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 160
+Insert FAILED - There is already a record with ID 224
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 115
+Insert FAILED - There is already a record with ID 131
+Insert FAILED - There is already a record with ID 147
+Insert FAILED - There is already a record with ID 163
+Insert FAILED - There is already a record with ID 179
+Insert FAILED - There is already a record with ID 195
+Insert FAILED - There is already a record with ID 211
+Insert FAILED - There is already a record with ID 227
+Insert FAILED - There is already a record with ID 243
+Record with ID 147 successfully deleted from the database
+Successfully inserted record with ID 147
+ID: 147, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Hash table expanded to 64 records
+Successfully inserted record with ID 1
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 64 bytes
+Successfully inserted record with ID 32
+ID: 32, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 128 bytes
+Successfully inserted record with ID 96
+ID: 96, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 160
+ID: 160, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 256 bytes
+Successfully inserted record with ID 224
+ID: 224, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 72
+ID: 72, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Record with ID 72 successfully deleted from the database
+Record with ID 224 successfully deleted from the database
+Record with ID 160 successfully deleted from the database
+Record with ID 96 successfully deleted from the database
+Record with ID 32 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+ID: 2, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 3
+ID: 3, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 4
+ID: 4, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 5
+ID: 5, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 6
+ID: 6, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 7
+ID: 7, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 8
+ID: 8, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 512 bytes
+Hash table expanded to 32 records
+Successfully inserted record with ID 9
+ID: 9, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 10
+ID: 10, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 11
+ID: 11, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 12
+ID: 12, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 13
+ID: 13, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 14
+ID: 14, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 15
+ID: 15, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 16
+ID: 16, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 1024 bytes
+Hash table expanded to 64 records
+Successfully inserted record with ID 17
+ID: 17, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 18
+ID: 18, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 19
+ID: 19, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 20
+ID: 20, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 21
+ID: 21, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 22
+ID: 22, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 23
+ID: 23, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 24
+ID: 24, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 25
+ID: 25, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 26
+ID: 26, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 27
+ID: 27, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+org.webcat.deveventtracker.OutputTruncated
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1694663119199
+1694715260924
 </Timestamp>
 <Runtime>
-1694663119199
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SeminarTest.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SeminarTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663119552
-</Timestamp>
-<Runtime>
-1694663119552
+1694715260924
 </Runtime>
 <Tool>
 Eclipse
@@ -598,15 +670,7 @@ DevEvent
 Type
 </Name>
 <Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
+Launch
 </Value>
 </Property>
 <Property>
@@ -614,25 +678,17 @@ Open
 Unit-Name
 </Name>
 <Value>
-WorldDataBase.java
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
+src (1)
 </Value>
 </Property>
 </Properties>
 </SensorData>
 <SensorData>
 <Timestamp>
-1694663121671
+1694715285399
 </Timestamp>
 <Runtime>
-1694663121671
+1694715285399
 </Runtime>
 <Tool>
 Eclipse
@@ -641,115 +697,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/Unknown
-</URI>
-<ProjectURI>
-/Unknown
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Open
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Unknown
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663123829
-</Timestamp>
-<Runtime>
-1694663123829
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/Unknown
-</URI>
-<ProjectURI>
-/Unknown
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-Close
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Name
-</Name>
-<Value>
-Unknown
-</Value>
-</Property>
-<Property>
-<Name>
-Unit-Type
-</Name>
-<Value>
-file
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663124199
-</Timestamp>
-<Runtime>
-1694663124199
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -760,131 +708,7 @@ DevEvent
 To-Buff-Name
 </Name>
 <Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:///Unknown
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663129199
-</Timestamp>
-<Runtime>
-1694663129199
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManagerTest.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManagerTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Type
-</Name>
-<Value>
-Edit
-</Value>
-</Property>
-<Property>
-<Name>
-Modified
-</Name>
-<Value>
-false
-</Value>
-</Property>
-<Property>
-<Name>
-From-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/myHashTableTest.java
-</Value>
-</Property>
-<Property>
-<Name>
-Subtype
-</Name>
-<Value>
-BufferTransition
-</Value>
-</Property>
-</Properties>
-</SensorData>
-<SensorData>
-<Timestamp>
-1694663134200
-</Timestamp>
-<Runtime>
-1694663134200
-</Runtime>
-<Tool>
-Eclipse
-</Tool>
-<SensorDataType>
-DevEvent
-</SensorDataType>
-<URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
-</URI>
-<ProjectURI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
-</ProjectURI>
-<Properties>
-<Property>
-<Name>
-To-Buff-Name
-</Name>
-<Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManager.java
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
 </Value>
 </Property>
 <Property>
@@ -908,7 +732,7 @@ true
 From-Buff-Name
 </Name>
 <Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/ParserTest.java
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManagerTest.java
 </Value>
 </Property>
 <Property>
@@ -923,10 +747,10 @@ BufferTransition
 </SensorData>
 <SensorData>
 <Timestamp>
-1694663144201
+1694715288244
 </Timestamp>
 <Runtime>
-1694663144201
+1694715288244
 </Runtime>
 <Tool>
 Eclipse
@@ -935,7 +759,241 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManagerTest.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Rename
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+To-Unit-Name
+</Name>
+<Value>
+void search
+</Value>
+</Property>
+<Property>
+<Name>
+From-Unit-Name
+</Name>
+<Value>
+search(Handle)
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+ProgramUnit
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+Field
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715289800
+</Timestamp>
+<Runtime>
+1694715289800
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Rename
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+To-Unit-Name
+</Name>
+<Value>
+void Exception()
+</Value>
+</Property>
+<Property>
+<Name>
+From-Unit-Name
+</Name>
+<Value>
+Exception(Handle)
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+ProgramUnit
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+Method
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715293850
+</Timestamp>
+<Runtime>
+1694715293850
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Subsubtype
+</Name>
+<Value>
+Rename
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Language
+</Name>
+<Value>
+java
+</Value>
+</Property>
+<Property>
+<Name>
+To-Unit-Name
+</Name>
+<Value>
+void Exception(Handle)
+</Value>
+</Property>
+<Property>
+<Name>
+From-Unit-Name
+</Name>
+<Value>
+Exception()
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+ProgramUnit
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Type
+</Name>
+<Value>
+Method
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715300399
+</Timestamp>
+<Runtime>
+1694715300399
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
@@ -946,7 +1004,7 @@ DevEvent
 To-Buff-Name
 </Name>
 <Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManagerTest.java
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
 </Value>
 </Property>
 <Property>
@@ -970,7 +1028,7 @@ true
 From-Buff-Name
 </Name>
 <Value>
-file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/SemManagerTest.java
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
 </Value>
 </Property>
 <Property>
@@ -979,6 +1037,2540 @@ Subtype
 </Name>
 <Value>
 BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715310447
+</Timestamp>
+<Runtime>
+1694715310447
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/Seminar.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715320307
+</Timestamp>
+<Runtime>
+1694715320307
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Freeblock List:
+There are no freeblocks in the memory pool
+Freeblock List:
+There are no freeblocks in the memory pool
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+Freeblock List:
+256: 256
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+Freeblock List:
+There are no freeblocks in the memory pool
+Memory pool expanded to 1024 bytes
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: -1
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+Freeblock List:
+256: 768
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, Computer_Science
+Size: 168
+Freeblock List:
+There are no freeblocks in the memory pool
+Record with ID 2 successfully deleted from the database
+Freeblock List:
+256: 256
+Memory pool expanded to 2048 bytes
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Freeblock List:
+256: 256
+512: 1536
+Hash table expanded to 16 records
+Successfully inserted record with ID 4
+ID: 4, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Freeblock List:
+256: 256
+Record with ID 10 successfully deleted from the database
+Freeblock List:
+256: 768
+Record with ID 2 successfully deleted from the database
+Freeblock List:
+512: 1024
+Freeblock List:
+0: 0
+Freeblock List:
+64: 0
+Freeblock List:
+64: 0
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+128: 128
+Freeblock List:
+There are no freeblocks in the memory pool
+1: 0 1 2
+1: 0 1 2
+Memory pool expanded to 0 bytes
+Memory pool expanded to 2 bytes
+Memory pool expanded to 4 bytes
+Memory pool expanded to 4 bytes
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+Memory pool expanded to 1024 bytes
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+Insert FAILED - There is already a record with ID 3
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+Freeblock List:
+There are no freeblocks in the memory pool
+Record with ID 2 successfully deleted from the database
+Search FAILED -- There is no record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+Freeblock List:
+256: 256
+Delete FAILED -- There is no record with ID 6
+Memory pool expanded to 2048 bytes
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Record with ID 10 successfully deleted from the database
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+Freeblock List:
+256: 256 768
+512: 1536
+Successfully inserted record with ID 32
+ID: 32, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 64 bytes
+Successfully inserted record with ID 96
+ID: 96, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 128 bytes
+Successfully inserted record with ID 160
+ID: 160, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 224
+ID: 224, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 256 bytes
+Successfully inserted record with ID 72
+ID: 72, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 83
+ID: 83, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 99
+ID: 99, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 115
+ID: 115, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 512 bytes
+Hash table expanded to 32 records
+Successfully inserted record with ID 131
+ID: 131, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 147
+ID: 147, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 163
+ID: 163, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 179
+ID: 179, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 195
+ID: 195, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 211
+ID: 211, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 227
+ID: 227, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 243
+ID: 243, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 160
+Insert FAILED - There is already a record with ID 224
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 115
+Insert FAILED - There is already a record with ID 131
+Insert FAILED - There is already a record with ID 147
+Insert FAILED - There is already a record with ID 163
+Insert FAILED - There is already a record with ID 179
+Insert FAILED - There is already a record with ID 195
+Insert FAILED - There is already a record with ID 211
+Insert FAILED - There is already a record with ID 227
+Insert FAILED - There is already a record with ID 243
+Record with ID 147 successfully deleted from the database
+Successfully inserted record with ID 147
+ID: 147, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Hash table expanded to 64 records
+Successfully inserted record with ID 1
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 64 bytes
+Successfully inserted record with ID 32
+ID: 32, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 128 bytes
+Successfully inserted record with ID 96
+ID: 96, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 160
+ID: 160, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 256 bytes
+Successfully inserted record with ID 224
+ID: 224, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 72
+ID: 72, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Record with ID 72 successfully deleted from the database
+Record with ID 224 successfully deleted from the database
+Record with ID 160 successfully deleted from the database
+Record with ID 96 successfully deleted from the database
+Record with ID 32 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+ID: 2, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 3
+ID: 3, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 4
+ID: 4, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 5
+ID: 5, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 6
+ID: 6, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 7
+ID: 7, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 8
+ID: 8, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 512 bytes
+Hash table expanded to 32 records
+Successfully inserted record with ID 9
+ID: 9, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 10
+ID: 10, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 11
+ID: 11, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 12
+ID: 12, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 13
+ID: 13, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 14
+ID: 14, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 15
+ID: 15, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 16
+ID: 16, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 1024 bytes
+Hash table expanded to 64 records
+Successfully inserted record with ID 17
+ID: 17, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 18
+ID: 18, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 19
+ID: 19, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 20
+ID: 20, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 21
+ID: 21, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 22
+ID: 22, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 23
+ID: 23, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 24
+ID: 24, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 25
+ID: 25, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 26
+ID: 26, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 27
+ID: 27, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+org.webcat.deveventtracker.OutputTruncated
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715320308
+</Timestamp>
+<Runtime>
+1694715320308
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715321370
+</Timestamp>
+<Runtime>
+1694715321370
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Freeblock List:
+There are no freeblocks in the memory pool
+Freeblock List:
+There are no freeblocks in the memory pool
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+Freeblock List:
+256: 256
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+Freeblock List:
+There are no freeblocks in the memory pool
+Memory pool expanded to 1024 bytes
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: -1
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+Freeblock List:
+256: 768
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, Computer_Science
+Size: 168
+Freeblock List:
+There are no freeblocks in the memory pool
+Record with ID 2 successfully deleted from the database
+Freeblock List:
+256: 256
+Memory pool expanded to 2048 bytes
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Freeblock List:
+256: 256
+512: 1536
+Hash table expanded to 16 records
+Successfully inserted record with ID 4
+ID: 4, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Freeblock List:
+256: 256
+Record with ID 10 successfully deleted from the database
+Freeblock List:
+256: 768
+Record with ID 2 successfully deleted from the database
+Freeblock List:
+512: 1024
+Freeblock List:
+0: 0
+Freeblock List:
+64: 0
+Freeblock List:
+64: 0
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+128: 128
+Freeblock List:
+There are no freeblocks in the memory pool
+1: 0 1 2
+1: 0 1 2
+Memory pool expanded to 0 bytes
+Memory pool expanded to 2 bytes
+Memory pool expanded to 4 bytes
+Memory pool expanded to 4 bytes
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+Memory pool expanded to 1024 bytes
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+Insert FAILED - There is already a record with ID 3
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+Freeblock List:
+There are no freeblocks in the memory pool
+Record with ID 2 successfully deleted from the database
+Search FAILED -- There is no record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+Freeblock List:
+256: 256
+Delete FAILED -- There is no record with ID 6
+Memory pool expanded to 2048 bytes
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Record with ID 10 successfully deleted from the database
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+Freeblock List:
+256: 256 768
+512: 1536
+Successfully inserted record with ID 32
+ID: 32, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 64 bytes
+Successfully inserted record with ID 96
+ID: 96, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 128 bytes
+Successfully inserted record with ID 160
+ID: 160, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 224
+ID: 224, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 256 bytes
+Successfully inserted record with ID 72
+ID: 72, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 83
+ID: 83, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 99
+ID: 99, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 115
+ID: 115, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 512 bytes
+Hash table expanded to 32 records
+Successfully inserted record with ID 131
+ID: 131, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 147
+ID: 147, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 163
+ID: 163, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 179
+ID: 179, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 195
+ID: 195, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 211
+ID: 211, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 227
+ID: 227, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 243
+ID: 243, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 160
+Insert FAILED - There is already a record with ID 224
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 115
+Insert FAILED - There is already a record with ID 131
+Insert FAILED - There is already a record with ID 147
+Insert FAILED - There is already a record with ID 163
+Insert FAILED - There is already a record with ID 179
+Insert FAILED - There is already a record with ID 195
+Insert FAILED - There is already a record with ID 211
+Insert FAILED - There is already a record with ID 227
+Insert FAILED - There is already a record with ID 243
+Record with ID 147 successfully deleted from the database
+Successfully inserted record with ID 147
+ID: 147, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Hash table expanded to 64 records
+Successfully inserted record with ID 1
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 64 bytes
+Successfully inserted record with ID 32
+ID: 32, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 128 bytes
+Successfully inserted record with ID 96
+ID: 96, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 160
+ID: 160, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 256 bytes
+Successfully inserted record with ID 224
+ID: 224, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 72
+ID: 72, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Record with ID 72 successfully deleted from the database
+Record with ID 224 successfully deleted from the database
+Record with ID 160 successfully deleted from the database
+Record with ID 96 successfully deleted from the database
+Record with ID 32 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+ID: 2, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 3
+ID: 3, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 4
+ID: 4, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 5
+ID: 5, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 6
+ID: 6, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 7
+ID: 7, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 8
+ID: 8, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 512 bytes
+Hash table expanded to 32 records
+Successfully inserted record with ID 9
+ID: 9, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 10
+ID: 10, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 11
+ID: 11, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 12
+ID: 12, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 13
+ID: 13, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 14
+ID: 14, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 15
+ID: 15, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 16
+ID: 16, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 1024 bytes
+Hash table expanded to 64 records
+Successfully inserted record with ID 17
+ID: 17, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 18
+ID: 18, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 19
+ID: 19, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 20
+ID: 20, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 21
+ID: 21, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 22
+ID: 22, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 23
+ID: 23, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 24
+ID: 24, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 25
+ID: 25, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 26
+ID: 26, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 27
+ID: 27, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+org.webcat.deveventtracker.OutputTruncated
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715325447
+</Timestamp>
+<Runtime>
+1694715325447
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715330448
+</Timestamp>
+<Runtime>
+1694715330448
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+To-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MemManager.java
+</Value>
+</Property>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Edit
+</Value>
+</Property>
+<Property>
+<Name>
+Modified
+</Name>
+<Value>
+false
+</Value>
+</Property>
+<Property>
+<Name>
+From-Buff-Name
+</Name>
+<Value>
+file:/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/MyHashTable.java
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+BufferTransition
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715342800
+</Timestamp>
+<Runtime>
+1694715342800
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715365024
+</Timestamp>
+<Runtime>
+1694715365024
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Freeblock List:
+There are no freeblocks in the memory pool
+Freeblock List:
+There are no freeblocks in the memory pool
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+Freeblock List:
+256: 256
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+Freeblock List:
+There are no freeblocks in the memory pool
+Memory pool expanded to 1024 bytes
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: -1
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+Freeblock List:
+256: 768
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, Computer_Science
+Size: 168
+Freeblock List:
+There are no freeblocks in the memory pool
+Record with ID 2 successfully deleted from the database
+Freeblock List:
+256: 256
+Memory pool expanded to 2048 bytes
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Freeblock List:
+256: 256
+512: 1536
+Hash table expanded to 16 records
+Successfully inserted record with ID 4
+ID: 4, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Freeblock List:
+256: 256
+Record with ID 10 successfully deleted from the database
+Freeblock List:
+256: 768
+Record with ID 2 successfully deleted from the database
+Freeblock List:
+512: 1024
+Freeblock List:
+0: 0
+Freeblock List:
+64: 0
+Freeblock List:
+64: 0
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+128: 128
+Freeblock List:
+There are no freeblocks in the memory pool
+1: 0 1 2
+1: 0 1 2
+Memory pool expanded to 0 bytes
+Memory pool expanded to 2 bytes
+Memory pool expanded to 4 bytes
+Memory pool expanded to 4 bytes
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+Memory pool expanded to 1024 bytes
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+Insert FAILED - There is already a record with ID 3
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+Freeblock List:
+There are no freeblocks in the memory pool
+Record with ID 2 successfully deleted from the database
+Search FAILED -- There is no record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+Freeblock List:
+256: 256
+Delete FAILED -- There is no record with ID 6
+Memory pool expanded to 2048 bytes
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Record with ID 10 successfully deleted from the database
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+Freeblock List:
+256: 256 768
+512: 1536
+Successfully inserted record with ID 32
+ID: 32, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 64 bytes
+Successfully inserted record with ID 96
+ID: 96, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 128 bytes
+Successfully inserted record with ID 160
+ID: 160, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 224
+ID: 224, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 256 bytes
+Successfully inserted record with ID 72
+ID: 72, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 83
+ID: 83, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 99
+ID: 99, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 115
+ID: 115, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 512 bytes
+Hash table expanded to 32 records
+Successfully inserted record with ID 131
+ID: 131, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 147
+ID: 147, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 163
+ID: 163, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 179
+ID: 179, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 195
+ID: 195, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 211
+ID: 211, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 227
+ID: 227, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 243
+ID: 243, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 160
+Insert FAILED - There is already a record with ID 224
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 115
+Insert FAILED - There is already a record with ID 131
+Insert FAILED - There is already a record with ID 147
+Insert FAILED - There is already a record with ID 163
+Insert FAILED - There is already a record with ID 179
+Insert FAILED - There is already a record with ID 195
+Insert FAILED - There is already a record with ID 211
+Insert FAILED - There is already a record with ID 227
+Insert FAILED - There is already a record with ID 243
+Record with ID 147 successfully deleted from the database
+Successfully inserted record with ID 147
+ID: 147, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Hash table expanded to 64 records
+Successfully inserted record with ID 1
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 64 bytes
+Successfully inserted record with ID 32
+ID: 32, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 128 bytes
+Successfully inserted record with ID 96
+ID: 96, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 160
+ID: 160, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 256 bytes
+Successfully inserted record with ID 224
+ID: 224, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 72
+ID: 72, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Record with ID 72 successfully deleted from the database
+Record with ID 224 successfully deleted from the database
+Record with ID 160 successfully deleted from the database
+Record with ID 96 successfully deleted from the database
+Record with ID 32 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+ID: 2, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 3
+ID: 3, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 4
+ID: 4, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 5
+ID: 5, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 6
+ID: 6, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 7
+ID: 7, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 8
+ID: 8, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 512 bytes
+Hash table expanded to 32 records
+Successfully inserted record with ID 9
+ID: 9, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 10
+ID: 10, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 11
+ID: 11, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 12
+ID: 12, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 13
+ID: 13, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 14
+ID: 14, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 15
+ID: 15, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 16
+ID: 16, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 1024 bytes
+Hash table expanded to 64 records
+Successfully inserted record with ID 17
+ID: 17, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 18
+ID: 18, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 19
+ID: 19, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 20
+ID: 20, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 21
+ID: 21, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 22
+ID: 22, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 23
+ID: 23, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 24
+ID: 24, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 25
+ID: 25, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 26
+ID: 26, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 27
+ID: 27, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+org.webcat.deveventtracker.OutputTruncated
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715365024
+</Timestamp>
+<Runtime>
+1694715365024
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715409766
+</Timestamp>
+<Runtime>
+1694715409766
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Termination
+</Value>
+</Property>
+<Property>
+<Name>
+Class-Name
+</Name>
+<Value>
+src (1)
+</Value>
+</Property>
+<Property>
+<Name>
+ConsoleOutput
+</Name>
+<Value>
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Freeblock List:
+There are no freeblocks in the memory pool
+Freeblock List:
+There are no freeblocks in the memory pool
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+Freeblock List:
+256: 256
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+Freeblock List:
+There are no freeblocks in the memory pool
+Memory pool expanded to 1024 bytes
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: -1
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+Freeblock List:
+256: 768
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, Computer_Science
+Size: 168
+Freeblock List:
+There are no freeblocks in the memory pool
+Record with ID 2 successfully deleted from the database
+Freeblock List:
+256: 256
+Memory pool expanded to 2048 bytes
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Freeblock List:
+256: 256
+512: 1536
+Hash table expanded to 16 records
+Successfully inserted record with ID 4
+ID: 4, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Freeblock List:
+256: 256
+Record with ID 10 successfully deleted from the database
+Freeblock List:
+256: 768
+Record with ID 2 successfully deleted from the database
+Freeblock List:
+512: 1024
+Freeblock List:
+0: 0
+Freeblock List:
+64: 0
+Freeblock List:
+64: 0
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+Freeblock List:
+64: 0 96
+32: 64
+128: 128
+Freeblock List:
+There are no freeblocks in the memory pool
+1: 0 1 2
+1: 0 1 2
+Memory pool expanded to 0 bytes
+Memory pool expanded to 2 bytes
+Memory pool expanded to 4 bytes
+Memory pool expanded to 4 bytes
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by student.testingsupport.Ex
+WARNING: Please consider reporting this to the maintainers of student.testingsup
+WARNING: System::setSecurityManager will be removed in a future release
+Successfully inserted record with ID 1
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 10, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Size: 173
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 244
+Memory pool expanded to 1024 bytes
+Hash table expanded to 8 records
+Successfully inserted record with ID 3
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Size: 192
+Insert FAILED - There is already a record with ID 3
+Successfully inserted record with ID 10
+ID: 10, Title: Overview of HPC and CSE Research at VT
+Date: 0703301125, Length: 35, X: 0, Y: 0, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
+Size: 168
+Found record with ID 3:
+ID: 3, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: 10
+total records: 4
+Freeblock List:
+There are no freeblocks in the memory pool
+Record with ID 2 successfully deleted from the database
+Search FAILED -- There is no record with ID 2
+Hashtable:
+1: 1
+2: TOMBSTONE
+3: 3
+5: 10
+total records: 3
+Freeblock List:
+256: 256
+Delete FAILED -- There is no record with ID 6
+Memory pool expanded to 2048 bytes
+Successfully inserted record with ID 2
+ID: 2, Title: Much More Computational Biology and Bioinformatics in CS at Virgin
+Date: 0610071600, Length: 60, X: 20, Y: 10, Cost: 30
+Description: Introduction to bioinformatics and lots of computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Vi
+Size: 260
+Record with ID 10 successfully deleted from the database
+Hashtable:
+1: 1
+2: 2
+3: 3
+5: TOMBSTONE
+total records: 3
+Freeblock List:
+256: 256 768
+512: 1536
+Successfully inserted record with ID 32
+ID: 32, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 64 bytes
+Successfully inserted record with ID 96
+ID: 96, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 128 bytes
+Successfully inserted record with ID 160
+ID: 160, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 224
+ID: 224, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 256 bytes
+Successfully inserted record with ID 72
+ID: 72, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 83
+ID: 83, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 99
+ID: 99, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 115
+ID: 115, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 512 bytes
+Hash table expanded to 32 records
+Successfully inserted record with ID 131
+ID: 131, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 147
+ID: 147, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 163
+ID: 163, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 179
+ID: 179, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 195
+ID: 195, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 211
+ID: 211, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 227
+ID: 227, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 243
+ID: 243, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Insert FAILED - There is already a record with ID 32
+Insert FAILED - There is already a record with ID 96
+Insert FAILED - There is already a record with ID 160
+Insert FAILED - There is already a record with ID 224
+Insert FAILED - There is already a record with ID 72
+Insert FAILED - There is already a record with ID 83
+Insert FAILED - There is already a record with ID 99
+Insert FAILED - There is already a record with ID 115
+Insert FAILED - There is already a record with ID 131
+Insert FAILED - There is already a record with ID 147
+Insert FAILED - There is already a record with ID 163
+Insert FAILED - There is already a record with ID 179
+Insert FAILED - There is already a record with ID 195
+Insert FAILED - There is already a record with ID 211
+Insert FAILED - There is already a record with ID 227
+Insert FAILED - There is already a record with ID 243
+Record with ID 147 successfully deleted from the database
+Successfully inserted record with ID 147
+ID: 147, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Hash table expanded to 64 records
+Successfully inserted record with ID 1
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Record with ID 1 successfully deleted from the database
+Successfully inserted record with ID 1
+ID: 1, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 64 bytes
+Successfully inserted record with ID 32
+ID: 32, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 128 bytes
+Successfully inserted record with ID 96
+ID: 96, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 160
+ID: 160, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 256 bytes
+Successfully inserted record with ID 224
+ID: 224, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 72
+ID: 72, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Record with ID 72 successfully deleted from the database
+Record with ID 224 successfully deleted from the database
+Record with ID 160 successfully deleted from the database
+Record with ID 96 successfully deleted from the database
+Record with ID 32 successfully deleted from the database
+Insert FAILED - There is already a record with ID 1
+Successfully inserted record with ID 2
+ID: 2, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 3
+ID: 3, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 4
+ID: 4, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 5
+ID: 5, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 6
+ID: 6, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 7
+ID: 7, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 8
+ID: 8, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 512 bytes
+Hash table expanded to 32 records
+Successfully inserted record with ID 9
+ID: 9, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 10
+ID: 10, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 11
+ID: 11, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 12
+ID: 12, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 13
+ID: 13, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 14
+ID: 14, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 15
+ID: 15, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 16
+ID: 16, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Memory pool expanded to 1024 bytes
+Hash table expanded to 64 records
+Successfully inserted record with ID 17
+ID: 17, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 18
+ID: 18, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 19
+ID: 19, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 20
+ID: 20, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 21
+ID: 21, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 22
+ID: 22, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 23
+ID: 23, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 24
+ID: 24, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 25
+ID: 25, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 26
+ID: 26, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+Successfully inserted record with ID 27
+ID: 27, Title: 
+Date: , Length: -1, X: -1, Y: -1, Cost: -1
+Description: 
+Keywords: 
+Size: 32
+org.webcat.deveventtracker.OutputTruncated
+</Value>
+</Property>
+</Properties>
+</SensorData>
+<SensorData>
+<Timestamp>
+1694715409766
+</Timestamp>
+<Runtime>
+1694715409766
+</Runtime>
+<Tool>
+Eclipse
+</Tool>
+<SensorDataType>
+DevEvent
+</SensorDataType>
+<URI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/src/WorldDataBase.java
+</URI>
+<ProjectURI>
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter
+</ProjectURI>
+<Properties>
+<Property>
+<Name>
+Type
+</Name>
+<Value>
+Launch
+</Value>
+</Property>
+<Property>
+<Name>
+Subtype
+</Name>
+<Value>
+Normal
+</Value>
+</Property>
+<Property>
+<Name>
+Unit-Name
+</Name>
+<Value>
+SemManager
 </Value>
 </Property>
 </Properties>

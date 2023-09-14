@@ -135,6 +135,7 @@ public class MemManagerTest extends TestCase {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(0); 
         FreeList[] tmp1 = new FreeList[0];
+        tmp1[0] = new FreeList(-1, -1);
         memManager.printOut(tmp1, 0);
         assertEquals(true, memManager.printOut(tmp1, 0));
         FreeList[] tmp2 = new FreeList[1];
@@ -163,11 +164,11 @@ public class MemManagerTest extends TestCase {
         memManager.initializeMemManger(0);
         
         FreeList[] tmp1 = new FreeList[0];
+        tmp1[0] = new FreeList(-1, -1);
         memManager.processFreeList(curPosition, tmp1, 0);
         assertEquals(true, 
                 memManager.processFreeList(curPosition, tmp1, 0));
         FreeList[] tmp2 = new FreeList[1];
-        tmp2[0] = new FreeList(-1, -1);
         memManager.processFreeList(curPosition, tmp2, 1);
         assertEquals(true, 
                 memManager.processFreeList(curPosition, tmp2, 1));
@@ -192,7 +193,6 @@ public class MemManagerTest extends TestCase {
         assertEquals(true, 
                 memManager.processFreeList(curPosition, tmp5, 0));
         FreeList[] tmp6 = new FreeList[1];
-        tmp6[0] = new FreeList(-1, -1);
         memManager.processFreeList(curPosition, tmp6, 1);
         assertEquals(true, 
                 memManager.processFreeList(curPosition, tmp6, 1));

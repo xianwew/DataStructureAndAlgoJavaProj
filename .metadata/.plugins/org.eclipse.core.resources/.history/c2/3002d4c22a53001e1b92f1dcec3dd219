@@ -128,7 +128,7 @@ public class MemManager {
         }
         if (!set) {
             for (int k = 0; k < length; k++) {
-                if (tmp[k].getVal() == -1) {
+                if (tmp[k] != null && tmp[k].getVal() == -1) {
                     tmp[k].setVal(curPosition.getVal());
                     tmp[k].setIndex(curPosition.getIndex());
                     set = true;
@@ -179,7 +179,7 @@ public class MemManager {
      * out.
      * @param handle the handle to be searched
      */
-    public void search(Handle handle) {
+    public void search (Handle handle) {
         Seminar searchedRecord = new Seminar();
         byte[] searchedRecordByte =
                 new byte[handle.getSize()];

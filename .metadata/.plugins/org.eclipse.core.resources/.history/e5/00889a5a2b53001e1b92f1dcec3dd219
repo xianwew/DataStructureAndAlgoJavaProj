@@ -179,7 +179,7 @@ public class MemManager {
      * out.
      * @param handle the handle to be searched
      */
-    public void search(Handle handle) {
+    public void search (Handle handle) {
         Seminar searchedRecord = new Seminar();
         byte[] searchedRecordByte =
                 new byte[handle.getSize()];
