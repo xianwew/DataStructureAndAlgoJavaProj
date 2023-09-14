@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="src (1)" project="Project1" tests="20" started="20" failures="0" errors="1" ignored="0">
+  <testsuite name="MemManagerTest" time="0.037">
+    <testcase name="testPrintMemManager" classname="MemManagerTest" time="0.011"/>
+    <testcase name="testInsertionSort" classname="MemManagerTest" time="0.007">
+      <error>java.lang.NullPointerException: Cannot invoke "FreeList.getVal()" because "tmpList" is null&#13;
+	at MemManager.insertionSort(MemManager.java:161)&#13;
+	at MemManagerTest.testInsertionSort(MemManagerTest.java:150)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#13;
+	at student.testingsupport.junit4.RunTestMethodWrapper.evaluate(RunTestMethodWrapper.java:74)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testPrintOut" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testProcessFreeList" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testdoublesize" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testFindSpaceAvailable" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testgetNearestPowerOfTwo" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testsplitMemoryPool" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testdelete" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testdetectMerge" classname="MemManagerTest" time="0.002"/>
+  </testsuite>
+  <testsuite name="SemManagerTest" time="0.052">
+    <testcase name="testMInitx" classname="SemManagerTest" time="0.052"/>
+  </testsuite>
+  <testsuite name="MyHashTableTest" time="0.027">
+    <testcase name="testHashing" classname="MyHashTableTest" time="0.002"/>
+    <testcase name="testHashingCalculation" classname="MyHashTableTest" time="0.001"/>
+    <testcase name="testInsert" classname="MyHashTableTest" time="0.003"/>
+    <testcase name="testDelete" classname="MyHashTableTest" time="0.011"/>
+    <testcase name="testSearch" classname="MyHashTableTest" time="0.005"/>
+    <testcase name="testPrint" classname="MyHashTableTest" time="0.003"/>
+  </testsuite>
+  <testsuite name="SeminarTest" time="0.004">
+    <testcase name="testtoString" classname="SeminarTest" time="0.002"/>
+    <testcase name="testSeminarDS" classname="SeminarTest" time="0.002"/>
+  </testsuite>
+  <testsuite name="ParserTest" time="0.008">
+    <testcase name="testInitializeComponents" classname="ParserTest" time="0.008"/>
+  </testsuite>
+</testrun>

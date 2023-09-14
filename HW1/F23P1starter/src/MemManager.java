@@ -414,15 +414,19 @@ public class MemManager {
      * The function detects some blocks are 
      * still can be merged
      */
-    public void mergeMemoryPool() {
-        FreeList curPosition = dummy.getNext();
-        while (curPosition != null && curPosition.getNext() != null) {
-            if (curPosition.getIndex() + curPosition.getVal() == 
-                    curPosition.getNext().getIndex()) {
-                detectMerge();
+    public boolean mergeMemoryPool() {
+        if(dummy != null) {
+            FreeList curPosition = dummy.getNext();
+            while (curPosition != null && curPosition.getNext() != null) {
+                if (curPosition.getIndex() + curPosition.getVal() == 
+                        curPosition.getNext().getIndex()) {
+                    detectMerge();
+                }
+                curPosition = curPosition.getNext();
             }
-            curPosition = curPosition.getNext();
+            return true;
         }
+        return false;
     }
     
     
