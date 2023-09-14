@@ -7,8 +7,8 @@
 import student.TestCase;
 public class myHashTableTest extends TestCase {
     /**
-     * Test the `calculateFirstHashing` and `calculateSecondHashing` methods for
-     * correct hashing calculations.
+     * Test the `calculateFirstHashing` and `calculateSecondHashing` 
+     * methods for correct hashing calculations.
      */
     public void testHashingCalculation() {
 
@@ -24,7 +24,8 @@ public class myHashTableTest extends TestCase {
     }
 
     /**
-     * Test the `hashing` method for inserting elements into the hash table.
+     * Test the `hashing` method for inserting elements into 
+     * the hash table.
      */
     public void testHashing() {
         MyHashTable test = new MyHashTable(16);
@@ -51,7 +52,8 @@ public class myHashTableTest extends TestCase {
     }
 
     /**
-     * Test the `insert` method for inserting elements into the hash table.
+     * Test the `insert` method for inserting elements into 
+     * the hash table.
      */
     public void testInsert() {
         MyHashTable test = new MyHashTable(16);
@@ -67,9 +69,11 @@ public class myHashTableTest extends TestCase {
         int cost = -1;
         String desc = "";
         String[] keywordList = {};
-        int[] array = new int[] { 32, 96, 160, 224, 72, 83, 99, 115, 131, 147, 163, 179, 195, 211, 227, 243 };
+        int[] array = new int[] { 32, 96, 160, 224, 72, 83, 99, 
+                115, 131, 147, 163, 179, 195, 211, 227, 243 };
         for (int k = 0; k < array.length; k++) {
-            Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
+            Seminar s = new Seminar(array[k], title, dateTime, 
+                    length, x, y, cost, keywordList, desc);
             test.insert(memManager, array[k], s);
             assertEquals(k + 1, test.getLastElementIndex());
 //    		assertEquals(, test.keys[array[k]-1]);
@@ -89,7 +93,8 @@ public class myHashTableTest extends TestCase {
             Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
             assertEquals(false, test.insert(memManager, array[k], s));
         }
-        Seminar s = new Seminar(147, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s = new Seminar(147, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         test.delete(memManager, 147);
         test.insert(memManager, 147, s);
         test.reHash();
@@ -115,24 +120,30 @@ public class myHashTableTest extends TestCase {
         int cost = -1;
         String desc = "";
         String[] keywordList = {};
-        Seminar s1 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s1 = new Seminar(id, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         test.insert(memManager, 1, s1);
         test.delete(memManager, 1);
         test.insert(memManager, 1, s1);
         id = 32;
-        Seminar s2 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s2 = new Seminar(id, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         test.insert(memManager, id, s2);
         id = 96;
-        Seminar s3 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s3 = new Seminar(id, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         test.insert(memManager, id, s3);
         id = 160;
-        Seminar s4 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s4 = new Seminar(id, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         test.insert(memManager, id, s4);
         id = 224;
-        Seminar s5 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s5 = new Seminar(id, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         test.insert(memManager, id, s5);
         id = 72;
-        Seminar s6 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s6 = new Seminar(id, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         test.insert(memManager, id, s6);
 
         test.delete(memManager, 72);
@@ -142,7 +153,8 @@ public class myHashTableTest extends TestCase {
         test.delete(memManager, 32);
 
         for (int k = 1; k <= 50; k++) {
-            Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
+            Seminar s = new Seminar(k, title, dateTime, length, x, y, 
+                    cost, keywordList, desc);
             test.insert(memManager, k, s);
         }
         for (int k = 200; k > 50; k--) {
@@ -152,7 +164,8 @@ public class myHashTableTest extends TestCase {
             assertEquals(true, test.delete(memManager, k));
         }
         for (int k = 1; k <= 50; k++) {
-            Seminar s = new Seminar(k, title, dateTime, length, x, y, cost, keywordList, desc);
+            Seminar s = new Seminar(k, title, dateTime, length, x, y, 
+                    cost, keywordList, desc);
             test.insert(memManager, k, s);
         }
         for (int k = 200; k > 50; k--) {
@@ -164,7 +177,8 @@ public class myHashTableTest extends TestCase {
     }
 
     /**
-     * Test the `search` method for searching elements in the hash table.
+     * Test the `search` method for searching elements in 
+     * the hash table.
      */
     public void testSearch() {
         MyHashTable test = new MyHashTable(16);
@@ -180,9 +194,11 @@ public class myHashTableTest extends TestCase {
         int cost = -1;
         String desc = "";
         String[] keywordList = {};
-        int[] array = new int[] { 32, 96, 160, 224, 72, 83, 99, 115, 131, 147, 163, 179, 195, 211, 227, 243 };
+        int[] array = new int[] { 32, 96, 160, 224, 72, 83, 99, 
+                115, 131, 147, 163, 179, 195, 211, 227, 243 };
         for (int k = 0; k < array.length; k++) {
-            Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
+            Seminar s = new Seminar(array[k], title, dateTime, 
+                    length, x, y, cost, keywordList, desc);
             test.insert(memManager, array[k], s);
 
         }
@@ -200,7 +216,8 @@ public class myHashTableTest extends TestCase {
         test.delete(memManager, 2);
         assertEquals(false, test.search(memManager, 2));
         for (int k = 0; k < array.length; k++) {
-            if (array[k] != 10 && array[k] != 2 && array[k] != 3 && array[k] != 5) {
+            if (array[k] != 10 && array[k] != 2 && array[k] != 3 
+                    && array[k] != 5) {
                 assertEquals(true, test.search(memManager, array[k]));
             } else {
                 assertEquals(false, test.search(memManager, array[k]));
@@ -209,7 +226,8 @@ public class myHashTableTest extends TestCase {
     }
 
     /**
-     * Test the `printHashtable` method for printing the contents of the hash table.
+     * Test the `printHashtable` method for printing 
+     * the contents of the hash table.
      */
     public void testPrint() {
         MyHashTable test = new MyHashTable(8);
@@ -225,19 +243,24 @@ public class myHashTableTest extends TestCase {
         int cost = -1;
         String desc = "";
         String[] keywordList = {};
-        Seminar s1 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s1 = new Seminar(id, title, dateTime, length, x, y,
+                cost, keywordList, desc);
         test.insert(memManager, 1, s1);
         id = 2;
-        Seminar s2 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s2 = new Seminar(id, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         test.insert(memManager, 2, s2);
         id = 3;
-        Seminar s3 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s3 = new Seminar(id, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         test.insert(memManager, 3, s3);
         id = 5;
-        Seminar s4 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s4 = new Seminar(id, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         test.insert(memManager, 5, s4);
         id = 10;
-        Seminar s5 = new Seminar(id, title, dateTime, length, x, y, cost, keywordList, desc);
+        Seminar s5 = new Seminar(id, title, dateTime, length, x, y, 
+                cost, keywordList, desc);
         int[] testArr = test.printHashtable();
         test.delete(memManager, 10);
         assertEquals(1, testArr[0]);

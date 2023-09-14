@@ -8,7 +8,8 @@ import student.TestCase;
 
 public class ParserTest extends TestCase {
     /**
-     * Test the `initializeComponents` method for correct component initialization.
+     * Test the `initializeComponents` method for correct component 
+     * initialization.
      */
     public void testInitializeComponents() {
 

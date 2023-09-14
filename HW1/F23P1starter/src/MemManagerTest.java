@@ -6,7 +6,8 @@
 import student.TestCase;
 public class MemManagerTest extends TestCase {
     /**
-     * Sets up the tests that follow. In general, used for initialization
+     * Sets up the tests that follow. In general, used for 
+     * initialization
      */
     public void setUp() {
         // Nothing here
@@ -189,10 +190,9 @@ public class MemManagerTest extends TestCase {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(2);
         assertEquals(null, memManager.splitMemoryPool
-                (2, memManager.getDummyNode().getNext()).getNext().getNext());
+                (2, memManager.getDummyNode().getNext())
+                .getNext().getNext());
 
-//		memManager.dummy.getNext().setNext(new FreeList(1,1));
-//		assertEquals(1,memManager.splitMemoryPool(2, memManager.dummy.getNext()).getVal());
 
     }
     /**
