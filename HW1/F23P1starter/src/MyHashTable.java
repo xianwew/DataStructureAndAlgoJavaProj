@@ -211,7 +211,6 @@ public class MyHashTable {
 	* Implement the delete function for the hash table.
 	* @param memManager a memManager object created by main.
 	* @param key provided by the user.
-	* @return return true if deletion succeeded
 	*/
 	public boolean delete(MemManager memManager, int key) {
 		boolean containKey = false;
@@ -284,12 +283,6 @@ public class MyHashTable {
 			tmpKey[j] = i;
 			j++;
 		}
-		
-//		for(int i = 0; i < tmpHandle.length; i++) {
-//			if(tmpHandle[i].getStartIndex() == -1) {
-//				tmpHandle[i] = null;
-//			}
-//		}
 		
 		this.size *= 2;	
 		this.values = tmpHandle;

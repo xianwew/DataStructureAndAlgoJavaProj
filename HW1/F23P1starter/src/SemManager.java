@@ -32,23 +32,23 @@ import java.io.*;
  * @memory pool: the place to store seminar objects.
  */
 
+/**
+ * The main function of the program. 
+ * It firstly initializes all the components
+ * and then calls function.
+ */
 public class SemManager {
-     /**
-     * The main function of the program. It firstly initializes all
-     * the components and then calls function. 
-     */
-	public static void main (String[] args) {
-		if (args != null) {
-			Parser parser = new Parser();
-		    Object[] components = parser.initializeComponents(args);   
-		    MemManager memManager = new MemManager();		        
-	        memManager.memoryPool = (byte[]) components[0];
-	        memManager.initializeMemManger(Integer.parseInt(args[0]));
-		    MyHashTable hashTable = (MyHashTable) components[1];
-		    File commandFile = (File) components[2];        
-		    WorldDataBase worldDataBase = 
-		    		new WorldDataBase(memManager, hashTable);
-		    parser.processSeminars(commandFile, worldDataBase);		    
-		}
-	}   
+    public static void main(String[] args) {
+        if (args != null) {
+            Parser parser = new Parser();
+            Object[] components = parser.initializeComponents(args);
+            MemManager memManager = new MemManager();
+            memManager.memoryPool = (byte[]) components[0];
+            memManager.initializeMemManger(Integer.parseInt(args[0]));
+            MyHashTable hashTable = (MyHashTable) components[1];
+            File commandFile = (File) components[2];
+            WorldDataBase worldDataBase = new WorldDataBase(memManager, hashTable);
+            parser.processSeminars(commandFile, worldDataBase);
+        }
+    }
 }
