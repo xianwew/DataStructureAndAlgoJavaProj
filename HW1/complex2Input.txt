@@ -2,7 +2,7 @@ insert 1
 T1
 0610051600 90 10 10 45
 K1 
-ID1
+D1
 
 insert 2
 T1

@@ -15,6 +15,6 @@
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="SemManager"/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="Project1"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="512 4 src/P1Sample_input.txt"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="512 4 ../complex2Input.txt"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Project1"/>
 </launchConfiguration>
