@@ -415,14 +415,16 @@ public class MemManager {
      * still can be merged
      */
     public boolean mergeCondition() {
-        FreeList curPosition = dummy.getNext();
-        while (curPosition != null && curPosition.getNext() != null) {
-            if (curPosition.getIndex() + curPosition.getVal() == 
-                    curPosition.getNext().getIndex() &&
-                        curPosition.getVal() == curPosition.getNext().getVal()) {
-                return true;
+        if(dummy != null) {
+            FreeList curPosition = dummy.getNext();
+            while (curPosition != null && curPosition.getNext() != null) {
+                if (curPosition.getIndex() + curPosition.getVal() == 
+                        curPosition.getNext().getIndex()) {
+                    detectMerge();
+                }
+                curPosition = curPosition.getNext();
             }
-            curPosition = curPosition.getNext();
+            return true;
         }
         return false;
     }
@@ -433,13 +435,19 @@ public class MemManager {
      */
     public boolean mergeMemoryPool() {
         if(dummy != null) {
-            while (mergeCondition()) {
-                mergeMain();
+            FreeList curPosition = dummy.getNext();
+            while (curPosition != null && curPosition.getNext() != null) {
+                if (curPosition.getIndex() + curPosition.getVal() == 
+                        curPosition.getNext().getIndex()) {
+                    detectMerge();
+                }
+                curPosition = curPosition.getNext();
             }
             return true;
         }
         return false;
     }
+    
     
     /**
      * The function detects if any two 
@@ -447,7 +455,7 @@ public class MemManager {
      * one node
      * @return the pointer pointing to the merged space
      */
-    public FreeList mergeMain() {
+    public FreeList detectMerge() {
         FreeList left = dummy.getNext();
         FreeList right = null;
         if (left != null) {

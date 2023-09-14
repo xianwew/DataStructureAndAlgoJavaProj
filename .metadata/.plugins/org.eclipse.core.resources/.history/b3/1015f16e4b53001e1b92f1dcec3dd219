@@ -415,14 +415,16 @@ public class MemManager {
      * still can be merged
      */
     public boolean mergeCondition() {
-        FreeList curPosition = dummy.getNext();
-        while (curPosition != null && curPosition.getNext() != null) {
-            if (curPosition.getIndex() + curPosition.getVal() == 
-                    curPosition.getNext().getIndex() &&
-                        curPosition.getVal() == curPosition.getNext().getVal()) {
-                return true;
+        if(dummy != null) {
+            FreeList curPosition = dummy.getNext();
+            while (curPosition != null && curPosition.getNext() != null) {
+                if (curPosition.getIndex() + curPosition.getVal() == 
+                        curPosition.getNext().getIndex() &&
+                            curPosition.getVal() == curPosition.getNext().getVal()) {
+                    return true;
+                }
+                curPosition = curPosition.getNext();
             }
-            curPosition = curPosition.getNext();
         }
         return false;
     }

@@ -431,36 +431,36 @@ public class MemManagerTest extends TestCase {
     }
     
     /**
-     * Test the `mergeMain` method with various scenarios.
+     * Test the `detectMerge` method with various scenarios.
      */
-    public void testmergeMain() {
+    public void testdetectMerge() {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(2);
-        assertEquals(2, memManager.mergeMain().getVal());
+        assertEquals(2, memManager.detectMerge().getVal());
         memManager.getDummyNode().getNext().setVal(1);
         memManager.getDummyNode().getNext().setIndex(0);
         memManager.getDummyNode().getNext().setNext(new FreeList(1, 1));
-        assertEquals(2, memManager.mergeMain().getVal());
+        assertEquals(2, memManager.detectMerge().getVal());
 
         MemManager memManager2 = new MemManager();
         memManager2.initializeMemManger(2);
-        assertEquals(2, memManager2.mergeMain().getVal());
+        assertEquals(2, memManager2.detectMerge().getVal());
         memManager2.getDummyNode().getNext().setVal(2);
         memManager2.getDummyNode().getNext().setIndex(0);
         memManager2.getDummyNode().getNext().setNext(new FreeList(1, 1));
-        assertEquals(1, memManager2.mergeMain().getVal());
+        assertEquals(1, memManager2.detectMerge().getVal());
 
         MemManager memManager3 = new MemManager();
         memManager3.initializeMemManger(2);
-        assertEquals(1, memManager2.mergeMain().getVal());
+        assertEquals(1, memManager2.detectMerge().getVal());
         memManager3.getDummyNode().getNext().setVal(1);
         memManager3.getDummyNode().getNext().setIndex(-1);
         memManager3.getDummyNode().getNext().setNext(new FreeList(1, 1));
-        assertEquals(1, memManager3.mergeMain().getVal());
+        assertEquals(1, memManager3.detectMerge().getVal());
 
         MemManager memManager4 = new MemManager();
         memManager4.initializeMemManger(2);
-        assertEquals(1, memManager2.mergeMain().getVal());
+        assertEquals(1, memManager2.detectMerge().getVal());
         memManager4.getDummyNode().getNext().setVal(1);
         memManager4.getDummyNode().getNext().setIndex(0);
         FreeList tmp1 = new FreeList(1, 1);
@@ -469,7 +469,7 @@ public class MemManagerTest extends TestCase {
         tmp2.setPrev(tmp1);
         memManager4.getDummyNode().getNext().setNext(tmp1);
         memManager4.getDummyNode().getNext().getNext().setNext(tmp2);
-        assertEquals(1, memManager4.mergeMain().getVal());
+        assertEquals(1, memManager4.detectMerge().getVal());
 
     }
 
