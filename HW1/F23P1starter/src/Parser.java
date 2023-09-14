@@ -1,10 +1,9 @@
-import java.io.*;
-import java.util.*;
-
 /**
  * @author Xianwei Wu/Jiren Wang
  * @version September 2023, updated September 2023
  */
+import java.io.*;
+import java.util.*;
 
 public class Parser {
     /**
@@ -12,7 +11,7 @@ public class Parser {
      * 
      * @param data: a line of the input txt file
      */
-    public String data = "";
+    private String data = "";
 
     /**
      * Dummy Parser constructor
@@ -69,6 +68,22 @@ public class Parser {
         return new String[16];
     }
 
+    /**
+     * return the data value
+     */
+    public String getData() {
+        return this.data;
+    }
+    
+    /**
+     * set the data value
+     * @param input: the input string value
+     */
+    public void setData(String input) {
+        this.data = input;
+    }
+
+    
     /**
      * Create a method to get the instruction from the input string
      * 

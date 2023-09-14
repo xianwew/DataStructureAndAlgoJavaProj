@@ -10,7 +10,8 @@ public class WorldDataBase {
     private MyHashTable hashTable;
 
     /**
-     * Constructs a new `WorldDataBase` object with the specified seminar manager
+     * Constructs a new `WorldDataBase` 
+     * object with the specified seminar manager
      * and hashTable.
      *
      * @param memManager a memory manager reference

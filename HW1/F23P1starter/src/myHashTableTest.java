@@ -1,9 +1,10 @@
-import static org.junit.Assert.*;
-import student.TestCase;
-
 /**
  * This class contains a set of unit tests for the `MyHashTable` class.
+ * @author jiren&xianwei
+ * @version September 2023, updated September 2023
  */
+
+import student.TestCase;
 public class myHashTableTest extends TestCase {
     /**
      * Test the `calculateFirstHashing` and `calculateSecondHashing` methods for
@@ -27,25 +28,25 @@ public class myHashTableTest extends TestCase {
      */
     public void testHashing() {
         MyHashTable test = new MyHashTable(16);
-        test.keys[0] = 32;
-        test.hashing(32, new Handle(1, 1, 32), test.values);
-        assertEquals(1, test.values[0].getSize());
-        test.keys[1] = 96;
-        test.hashing(96, new Handle(2, 1, 96), test.values);
-        assertEquals(1, test.values[13].getSize());
-        test.keys[2] = 160;
-        test.hashing(160, new Handle(3, 1, 160), test.values);
-        assertEquals(1, test.values[5].getSize());
-        test.keys[3] = 224;
-        test.hashing(224, new Handle(4, 1, 224), test.values);
-        assertEquals(1, test.values[10].getSize());
-        test.keys[4] = 72;
-        test.hashing(72, new Handle(5, 1, 72), test.values);
-        assertEquals(1, test.values[8].getSize());
-        test.keys[3] = 0;
-        test.values[10].setStartIndex(-1);
-        test.hashing(224, new Handle(4, 1, 224), test.values);
-        assertEquals(1, test.values[10].getSize());
+        test.setKeysElement(0, 32);
+        test.hashing(32, new Handle(1, 1, 32), test.getValues());
+        assertEquals(1, test.getValues()[0].getSize());
+        test.setKeysElement(1, 32);
+        test.hashing(96, new Handle(2, 1, 96), test.getValues());
+        assertEquals(1, test.getValues()[13].getSize());
+        test.setKeysElement(2, 160);
+        test.hashing(160, new Handle(3, 1, 160), test.getValues());
+        assertEquals(1, test.getValues()[5].getSize());
+        test.setKeysElement(3, 224);
+        test.hashing(224, new Handle(4, 1, 224), test.getValues());
+        assertEquals(1, test.getValues()[10].getSize());
+        test.setKeysElement(4, 72);
+        test.hashing(72, new Handle(5, 1, 72), test.getValues());
+        assertEquals(1, test.getValues()[8].getSize());
+        test.setKeysElement(3, 0);
+        test.getValues()[10].setStartIndex(-1);
+        test.hashing(224, new Handle(4, 1, 224), test.getValues());
+        assertEquals(1, test.getValues()[10].getSize());
 
     }
 
@@ -70,10 +71,10 @@ public class myHashTableTest extends TestCase {
         for (int k = 0; k < array.length; k++) {
             Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
             test.insert(memManager, array[k], s);
-            assertEquals(k + 1, test.lastElementIndex);
+            assertEquals(k + 1, test.getLastElementIndex());
 //    		assertEquals(, test.keys[array[k]-1]);
             int t = 0;
-            for (Handle h : test.values) {
+            for (Handle h : test.getValues()) {
                 if (h != null && h.getKey() == array[k]) {
                     t = array[k];
                     break;
@@ -81,9 +82,9 @@ public class myHashTableTest extends TestCase {
             }
 //    		assertEquals(1, test.values[t].getSize());	
         }
-        assertEquals(32, test.size);
-        assertEquals(32, test.keys.length);
-        assertEquals(32, test.values.length);
+        assertEquals(32, test.getSize());
+        assertEquals(32, test.getKeys().length);
+        assertEquals(32, test.getValues().length);
         for (int k = 0; k < array.length; k++) {
             Seminar s = new Seminar(array[k], title, dateTime, length, x, y, cost, keywordList, desc);
             assertEquals(false, test.insert(memManager, array[k], s));
@@ -92,9 +93,9 @@ public class myHashTableTest extends TestCase {
         test.delete(memManager, 147);
         test.insert(memManager, 147, s);
         test.reHash();
-        assertEquals(64, test.size);
-        assertEquals(64, test.keys.length);
-        assertEquals(64, test.values.length);
+        assertEquals(64, test.getSize());
+        assertEquals(64, test.getKeys().length);
+        assertEquals(64, test.getValues().length);
     }
 
     /**

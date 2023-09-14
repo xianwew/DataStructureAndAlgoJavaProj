@@ -43,7 +43,7 @@ public class SemManager {
             Parser parser = new Parser();
             Object[] components = parser.initializeComponents(args);
             MemManager memManager = new MemManager();
-            memManager.memoryPool = (byte[]) components[0];
+            memManager.setMemoryPool((byte[]) components[0]);
             memManager.initializeMemManger(Integer.parseInt(args[0]));
             MyHashTable hashTable = (MyHashTable) components[1];
             File commandFile = (File) components[2];

@@ -10,10 +10,10 @@ import java.io.*;
  */
 
 public class MemManager {
-    public int doubleSizeTest = 0;
-    public FreeList dummy;
-    public int size;
-    public byte[] memoryPool;
+    private int doubleSizeTest = 0;
+    private FreeList dummy;
+    private int size;
+    private byte[] memoryPool;
 
     /**
      * Dummy MemManager constructor
@@ -42,6 +42,66 @@ public class MemManager {
         head.setPrev(dummy);
         this.size = size;
         this.memoryPool = new byte[size];
+    }
+    
+    /**
+     * Return dummy node
+     */
+    public FreeList getDummyNode() {
+        return dummy;
+    }
+    
+    /**
+     * Set dummy node
+     * @param node: FreeList node input
+     */
+    public void setDummy(FreeList node) {
+        this.dummy = node;
+    }
+    
+    /**
+     * Get the memory pool size
+     */
+    public int getSize() {
+        return size;
+    }
+    
+    /**
+     * Set the value size
+     */
+    public void setSize(int sizeInput) {
+        this.size = sizeInput;
+    }
+    
+    /**
+     * Set the value size
+     */
+    public byte[] getMemoryPool() {
+        return memoryPool;
+    }
+    
+    /**
+     * Set the memory pool
+     * @param memoryPoolInput: input memory pool
+     */
+    public void setMemoryPool(
+            byte[] memoryPoolInput) {
+        this.memoryPool = memoryPoolInput;
+    }
+    
+    /**
+     * Get the doubleSizeTestVal
+     */
+    public int getDoubleSizeTest() {
+            return doubleSizeTest;
+    }
+    
+    /**
+     * Set doubleSizeTest valuable
+     * @param input: input doubleSizeTest
+     */
+    public void DoubleSizeTest(int input) {
+        doubleSizeTest = input;
     }
     
     /**

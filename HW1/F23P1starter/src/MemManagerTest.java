@@ -1,11 +1,9 @@
-import static org.junit.Assert.*;
+/**
+ * @author Xianwei Wu/Jiren Wang
+ * @version September 2023, updated September 2023
+ */
 
 import student.TestCase;
-
-/**
- * @author {Your Name Here}
- * @version {Put Something Here}
- */
 public class MemManagerTest extends TestCase {
     /**
      * Sets up the tests that follow. In general, used for initialization
@@ -20,7 +18,7 @@ public class MemManagerTest extends TestCase {
     public void testPrintMemManager() {
         MemManager memManager2 = new MemManager();
         memManager2.initializeMemManger(512);
-        memManager2.dummy.setNext(null);
+        memManager2.getDummyNode().setNext(null);
         assertEquals(false, memManager2.printMemManager());
 
         MemManager memManager = new MemManager();
@@ -36,10 +34,10 @@ public class MemManagerTest extends TestCase {
         String desc = "This seminar will present "
                 + "an overview of HCI research at VT";
         String[] keywordList = {};
-        FreeList tmp = memManager.dummy.getNext();
-        memManager.dummy.setNext(null);
+        FreeList tmp = memManager.getDummyNode().getNext();
+        memManager.getDummyNode().setNext(null);
         assertEquals(false, memManager.printMemManager());
-        memManager.dummy.setNext(tmp);
+        memManager.getDummyNode().setNext(tmp);
         Seminar s1 = new Seminar(1, "Overview of HCI Research at VT", 
                 "0610051600", 90, x, y, 45,
                 new String[] { "HCI", "Computer_Science", 
@@ -114,7 +112,7 @@ public class MemManagerTest extends TestCase {
         FreeList tmp3 = new FreeList(64, 96);
         FreeList tmp4 = new FreeList(128, 128);
         assertEquals(true, memManager3.printMemManager());
-        memManager3.dummy.setNext(tmp1);
+        memManager3.getDummyNode().setNext(tmp1);
         assertEquals(true, memManager3.printMemManager());
         tmp1.setNext(tmp2);
         assertEquals(true, memManager3.printMemManager());
@@ -133,23 +131,23 @@ public class MemManagerTest extends TestCase {
         memManager.initializeMemManger(0);
 
         assertEquals(0, memManager.doubleSize().getVal());
-        assertEquals(0, memManager.size);
+        assertEquals(0, memManager.getSize());
 
         MemManager memManager2 = new MemManager();
         memManager2.initializeMemManger(1);
 
         assertEquals(1, memManager2.doubleSize().getNext().getVal());
-        assertEquals(2, memManager2.size);
+        assertEquals(2, memManager2.getSize());
 
         MemManager memManager3 = new MemManager();
         memManager3.initializeMemManger(2);
 
         assertEquals(2, memManager3.doubleSize().getNext().getVal());
-        assertEquals(4, memManager3.size);
-        assertEquals(2, memManager3.doubleSizeTest);
+        assertEquals(4, memManager3.getSize());
+        assertEquals(2, memManager3.getDoubleSizeTest());
         MemManager memManager4 = new MemManager();
         memManager4.initializeMemManger(2);
-        memManager4.dummy = null;
+        memManager4.setDummy(null);
         assertEquals(null, memManager4.doubleSize());
 
     }
@@ -159,7 +157,7 @@ public class MemManagerTest extends TestCase {
     public void testFindSpaceAvailable() {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(1);
-        memManager.dummy = null;
+        memManager.setDummy(null);
         assertEquals(null, memManager.FindSpaceAvailable(0));
 
         MemManager memManager2 = new MemManager();
@@ -168,7 +166,7 @@ public class MemManagerTest extends TestCase {
 
         MemManager memManager3 = new MemManager();
         memManager3.initializeMemManger(1);
-        memManager3.dummy.getNext().setVal(Integer.MAX_VALUE);
+        memManager3.getDummyNode().getNext().setVal(Integer.MAX_VALUE);
         assertEquals(null, memManager3.FindSpaceAvailable(3));
 
     }
@@ -191,7 +189,7 @@ public class MemManagerTest extends TestCase {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(2);
         assertEquals(null, memManager.splitMemoryPool
-                (2, memManager.dummy.getNext()).getNext().getNext());
+                (2, memManager.getDummyNode().getNext()).getNext().getNext());
 
 //		memManager.dummy.getNext().setNext(new FreeList(1,1));
 //		assertEquals(1,memManager.splitMemoryPool(2, memManager.dummy.getNext()).getVal());
@@ -206,9 +204,9 @@ public class MemManagerTest extends TestCase {
         assertEquals(false, memManager.delete(new Handle(-1, -1, -1)));
 
         memManager.delete(new Handle(1, 1, 1));
-        memManager.dummy.setIndex(10);
+        memManager.getDummyNode().setIndex(10);
         assertEquals(true, memManager.delete(new Handle(1, 1, 1)));
-        memManager.dummy.setPrev(new FreeList(-1, -1));
+        memManager.getDummyNode().setPrev(new FreeList(-1, -1));
         memManager.delete(new Handle(1, 1, 1));
 
         memManager.insert(new byte[1], 2);
@@ -222,38 +220,38 @@ public class MemManagerTest extends TestCase {
         MemManager memManager = new MemManager();
         memManager.initializeMemManger(2);
         assertEquals(2, memManager.detectMerge().getVal());
-        memManager.dummy.getNext().setVal(1);
-        memManager.dummy.getNext().setIndex(0);
-        memManager.dummy.getNext().setNext(new FreeList(1, 1));
+        memManager.getDummyNode().getNext().setVal(1);
+        memManager.getDummyNode().getNext().setIndex(0);
+        memManager.getDummyNode().getNext().setNext(new FreeList(1, 1));
         assertEquals(2, memManager.detectMerge().getVal());
 
         MemManager memManager2 = new MemManager();
         memManager2.initializeMemManger(2);
         assertEquals(2, memManager2.detectMerge().getVal());
-        memManager2.dummy.getNext().setVal(2);
-        memManager2.dummy.getNext().setIndex(0);
-        memManager2.dummy.getNext().setNext(new FreeList(1, 1));
+        memManager2.getDummyNode().getNext().setVal(2);
+        memManager2.getDummyNode().getNext().setIndex(0);
+        memManager2.getDummyNode().getNext().setNext(new FreeList(1, 1));
         assertEquals(1, memManager2.detectMerge().getVal());
 
         MemManager memManager3 = new MemManager();
         memManager3.initializeMemManger(2);
         assertEquals(1, memManager2.detectMerge().getVal());
-        memManager3.dummy.getNext().setVal(1);
-        memManager3.dummy.getNext().setIndex(-1);
-        memManager3.dummy.getNext().setNext(new FreeList(1, 1));
+        memManager3.getDummyNode().getNext().setVal(1);
+        memManager3.getDummyNode().getNext().setIndex(-1);
+        memManager3.getDummyNode().getNext().setNext(new FreeList(1, 1));
         assertEquals(1, memManager3.detectMerge().getVal());
 
         MemManager memManager4 = new MemManager();
         memManager4.initializeMemManger(2);
         assertEquals(1, memManager2.detectMerge().getVal());
-        memManager4.dummy.getNext().setVal(1);
-        memManager4.dummy.getNext().setIndex(0);
+        memManager4.getDummyNode().getNext().setVal(1);
+        memManager4.getDummyNode().getNext().setIndex(0);
         FreeList tmp1 = new FreeList(1, 1);
         FreeList tmp2 = new FreeList(1, 2);
-        tmp1.setPrev(memManager4.dummy.getNext());
+        tmp1.setPrev(memManager4.getDummyNode().getNext());
         tmp2.setPrev(tmp1);
-        memManager4.dummy.getNext().setNext(tmp1);
-        memManager4.dummy.getNext().getNext().setNext(tmp2);
+        memManager4.getDummyNode().getNext().setNext(tmp1);
+        memManager4.getDummyNode().getNext().getNext().setNext(tmp2);
         assertEquals(1, memManager4.detectMerge().getVal());
 
     }

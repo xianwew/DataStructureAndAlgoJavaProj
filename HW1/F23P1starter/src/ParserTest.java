@@ -1,13 +1,11 @@
-import static org.junit.Assert.*;
-
-import java.io.File;
-import java.nio.ByteBuffer;
-import student.TestCase;
-
 /**
  * This class contains unit tests for the `Parser` class, specifically testing
  * its initialization and command processing methods.
  */
+
+import java.io.File;
+import student.TestCase;
+
 public class ParserTest extends TestCase {
     /**
      * Test the `initializeComponents` method for correct component initialization.
@@ -51,7 +49,7 @@ public class ParserTest extends TestCase {
         String[] input = new String[] { "16", "16", 
                 "src/testParser1.txt" };
         Object[] components = test1.initializeComponents(input);
-        memManager.memoryPool = (byte[]) components[0];
+        memManager.setMemoryPool((byte[]) components[0]);
         memManager.initializeMemManger(16);
         MyHashTable hashTable = (MyHashTable) components[1];
         File commandFile1 = (File) components[2];
@@ -66,31 +64,31 @@ public class ParserTest extends TestCase {
         WorldDataBase worldDataBase = new WorldDataBase(memManager, 
                 hashTable);
         test1.processSeminars(commandFile1, worldDataBase);
-        assertEquals("awdasd", test1.data);
-        test1.data = "";
+        assertEquals("awdasd", test1.getData());
+        test1.setData("");
         test1.processSeminars(commandFile2, worldDataBase);
-        assertEquals("", test1.data);
-        test1.data = "";
+        assertEquals("", test1.getData());
+        test1.setData("");
         test1.processSeminars(commandFile3, worldDataBase);
-        assertEquals("abcdefg", test1.data);
-        test1.data = "";
+        assertEquals("abcdefg", test1.getData());
+        test1.setData("");
         test1.processSeminars(commandFile4, worldDataBase);
-        assertEquals("awdasd", test1.data);
-        test1.data = "";
+        assertEquals("awdasd", test1.getData());
+        test1.setData("");
         test1.processSeminars(commandFile5, worldDataBase);
-        assertEquals("insert 1", test1.data);
-        test1.data = "";
+        assertEquals("insert 1", test1.getData());
+        test1.setData("");
         test1.processSeminars(commandFile6, worldDataBase);
-        assertEquals("print blocks", test1.data);
-        test1.data = "";
+        assertEquals("print blocks", test1.getData());
+        test1.setData("");
         test1.processSeminars(commandFile7, worldDataBase);
-        assertEquals("delete 1", test1.data);
-        test1.data = "";
+        assertEquals("delete 1", test1.getData());
+        test1.setData("");
         test1.processSeminars(commandFile8, worldDataBase);
-        assertEquals("search 1", test1.data);
-        test1.data = "";
+        assertEquals("search 1", test1.getData());
+        test1.setData("");
         test1.processSeminars(commandFile9, worldDataBase);
-        assertEquals("search 1", test1.data);
+        assertEquals("search 1", test1.getData());
 
     }
 
