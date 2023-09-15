@@ -419,10 +419,9 @@ public class MemManager {
         FreeList curPosition = dummy.getNext();
         while (curPosition != null &&
                 curPosition.getNext() != null) {
-            if (curPosition.getIndex() + curPosition.getVal() == 
-                    curPosition.getNext().getIndex() && 
-                        curPosition.getVal() == 
-                            curPosition.getNext().getVal()) {
+            if ((curPosition.getIndex() | curPosition.getVal()) == 
+                    (curPosition.getNext().getIndex() | 
+                        curPosition.getNext().getVal())) {
                 return true;
             }
             curPosition = curPosition.getNext();
@@ -459,8 +458,8 @@ public class MemManager {
         }
 
         while (right != null) {
-            if ((left.getVal() == right.getVal()) && (left.getIndex()
-                    + left.getVal() == right.getIndex())) {
+            if ((left.getIndex() | left.getVal()) == 
+                    (right.getIndex() | right.getVal())) {
                 FreeList newInsert = 
                         new FreeList(left.getVal() * 2, left.getIndex());
                 FreeList prev = left.getPrev();
