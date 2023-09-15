@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="src (1)" project="Project1" tests="21" started="21" failures="0" errors="0" ignored="0">
+  <testsuite name="MemManagerTest" time="0.034">
+    <testcase name="testPrintMemManager" classname="MemManagerTest" time="0.013"/>
+    <testcase name="testInsertionSort" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testPrintOut" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testProcessFreeList" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testdoublesize" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testFindSpaceAvailable" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testgetNearestPowerOfTwo" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testsplitMemoryPool" classname="MemManagerTest" time="0.002"/>
+    <testcase name="testdelete" classname="MemManagerTest" time="0.001"/>
+    <testcase name="testMergeMemeoryPool" classname="MemManagerTest" time="0.001"/>
+    <testcase name="testmergeMain" classname="MemManagerTest" time="0.001"/>
+  </testsuite>
+  <testsuite name="SemManagerTest" time="0.067">
+    <testcase name="testMInitx" classname="SemManagerTest" time="0.067"/>
+  </testsuite>
+  <testsuite name="MyHashTableTest" time="0.027">
+    <testcase name="testHashing" classname="MyHashTableTest" time="0.003"/>
+    <testcase name="testHashingCalculation" classname="MyHashTableTest" time="0.002"/>
+    <testcase name="testInsert" classname="MyHashTableTest" time="0.003"/>
+    <testcase name="testDelete" classname="MyHashTableTest" time="0.013"/>
+    <testcase name="testSearch" classname="MyHashTableTest" time="0.003"/>
+    <testcase name="testPrint" classname="MyHashTableTest" time="0.002"/>
+  </testsuite>
+  <testsuite name="SeminarTest" time="0.004">
+    <testcase name="testtoString" classname="SeminarTest" time="0.002"/>
+    <testcase name="testSeminarDS" classname="SeminarTest" time="0.002"/>
+  </testsuite>
+  <testsuite name="ParserTest" time="0.007">
+    <testcase name="testInitializeComponents" classname="ParserTest" time="0.007"/>
+  </testsuite>
+</testrun>
