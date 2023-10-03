@@ -1,9 +1,9 @@
 <SensorData>
 <Timestamp>
-1695188205147
+1695436895839
 </Timestamp>
 <Runtime>
-1695188205147
+1695436895840
 </Runtime>
 <Tool>
 Eclipse
@@ -12,7 +12,7 @@ Eclipse
 DevEvent
 </SensorDataType>
 <URI>
-/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW2/F23P2starter/Project2/src/SemSearch.java
+/H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW2/F23P2starter/Project2/src/Seminar.java
 </URI>
 <ProjectURI>
 /H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/ѧϰ/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW2/F23P2starter/Project2
@@ -47,7 +47,7 @@ Close
 Unit-Name
 </Name>
 <Value>
-SemSearch.java
+Seminar.java
 </Value>
 </Property>
 <Property>

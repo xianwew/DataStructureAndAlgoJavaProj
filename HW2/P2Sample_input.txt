@@ -68,6 +68,7 @@ search location 10 10 20
 search date 0 1
 
 delete 1
+delete 1
 
 print ID
 print location

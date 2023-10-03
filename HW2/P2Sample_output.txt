@@ -179,6 +179,7 @@ Description: Seminar about the      Computing systems research at      VT
 Keywords: high_performance_computing, grids, VT, computer, science
 8 nodes visited in this search
 Record with ID 1 successfully deleted from the database
+Delete FAILED -- There is no record with ID 1
 ID Tree:
     null
   10
