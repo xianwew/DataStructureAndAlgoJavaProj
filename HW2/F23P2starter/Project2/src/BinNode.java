@@ -3,5 +3,5 @@ public interface BinNode {
 	public void setkey(int x, int y);
 	public BinNode getLeft();
 	public BinNode getRight();
-	boolean isleaf = false;
+	boolean isLeaf = false;
 }

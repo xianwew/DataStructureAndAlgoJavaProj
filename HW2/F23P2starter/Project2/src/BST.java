@@ -9,6 +9,8 @@ public class BST<T extends Comparable<? super T>> {
 		this.root = node;
 	}
 	
+	public BST(){}
+	
 	public BST (T key, Seminar value) {
 		this.root = new BSTNode<T>(key, value);
 	}
@@ -16,16 +18,18 @@ public class BST<T extends Comparable<? super T>> {
 	private void insertHelper(BSTNode<T> curNode, T key, Seminar val, BSTNode<T> parent) {
 		if (curNode == null) {
 			BSTNode<T> insert = new BSTNode<T>(key, val);
-			if (parent.compareKey(key) > 0) {
+			if (parent.compareKey(key) >= 0) {
 				parent.setLeft(insert);
-			} else {
+			} 
+			else {
 				parent.setRight(insert);
 			}
 			return;
 		}
-		if (root.compareKey(key) > 0) {
+		if (curNode.compareKey(key) >= 0) {
 			insertHelper(curNode.getLeft(), key, val, curNode);
-		} else {
+		} 
+		else {
 			insertHelper(curNode.getRight(), key, val, curNode);
 		}
 	}
@@ -33,10 +37,12 @@ public class BST<T extends Comparable<? super T>> {
 	public BSTNode<T> insertNode(T key, Seminar val) {
 		if (root != null && (root.compareKey(key) < 0)) {
 			insertHelper(root.getRight(), key, val, root);
-		} else if (root != null && (root.compareKey(key) > 0)) {
+		} 
+		else if (root != null && (root.compareKey(key) >= 0)) {
 			insertHelper(root.getLeft(), key, val, root);
-		} else {
-			return null;
+		} 
+		else {
+			this.root = new BSTNode<T>(key, val);
 		}
 		return root;
 	}
@@ -48,37 +54,50 @@ public class BST<T extends Comparable<? super T>> {
 
 		if (curNode.compareKey(key) < 0) {
 			curNode.setRight(deleteNode(curNode.getRight(), key));
-		} else if (curNode.compareKey(key) > 0) {
+		} 
+		else if (curNode.compareKey(key) >= 0) {
 			curNode.setLeft(deleteNode(curNode.getLeft(), key));
-		} else {
+		} 
+		else {
 			if (curNode.getLeft() == null) {
 				return curNode.getRight();
-			} else if (curNode.getRight() == null) {
+			} 
+			else if (curNode.getRight() == null) {
 				return curNode.getLeft();
 			}
 
-			BSTNode<T> cur = curNode.getRight();
-			while (curNode.getLeft() != null) {
-				cur = cur.getLeft();
+			BSTNode<T> cur = curNode.getLeft();
+			while (cur.getRight() != null) {
+				cur = cur.getRight();
 			}
 			curNode.setKey(cur.getKey());
-			curNode.setRight(deleteNode(curNode.getRight(), curNode.getKey()));
+			curNode.setLeft(deleteNode(curNode.getLeft(), curNode.getKey()));
 		}
 		return curNode;
 	}
 
-	public BSTNode<T> searchNode(BSTNode<T> curNode, T key) {
+	public BSTNode<T> searchNode(BSTNode<T> curNode, T key, BSTNode<T>[] searchRes) {
 		if (curNode == null) {
 			return curNode;
 		}
-		BSTNode<T> leftNode = searchNode(curNode.getLeft(), key);
-		BSTNode<T> rightNode = searchNode(curNode.getRight(), key);
+		
+		BSTNode<T> leftNode = null;
+		BSTNode<T> rightNode = null;
+		
+		if(curNode.compareKey(key) >= 0) {
+			leftNode = searchNode(curNode.getLeft(), key, searchRes);
+		}
+		else {
+			rightNode = searchNode(curNode.getRight(), key, searchRes);
+		}
 
 		if (curNode.compareKey(key) == 0) {
 			return curNode;
-		} else if (leftNode != null && leftNode.compareKey(key) == 0) {
+		} 
+		else if (leftNode != null && leftNode.compareKey(key) == 0) {
 			return leftNode;
-		} else if (rightNode != null && rightNode.compareKey(key) == 0) {
+		} 
+		else if (rightNode != null && rightNode.compareKey(key) == 0) {
 			return rightNode;
 		}
 		return null;
