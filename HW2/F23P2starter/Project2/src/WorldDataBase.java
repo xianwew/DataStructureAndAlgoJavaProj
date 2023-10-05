@@ -11,7 +11,7 @@ public class WorldDataBase {
             case 1:
                 insert(seminar);
             case 2:
-                search(instruction, seminar);
+                search(instruction, data);
             case 3:
                 delete(id);
             case 4:
@@ -29,16 +29,16 @@ public class WorldDataBase {
        
     }
     
-    public void search(int instruction, Seminar seminar) {
+    public void search(int instruction, String[] data) {
         switch (instruction) {
             case 1 : 
-                idTree.searchNode(seminar.id());
+                idTree.searchNode(Integer.valueOf(data[0]), Integer.MIN_VALUE);
             case 2 :
-                costTree.searchNode(seminar.cost());
+                costTree.searchNode(Integer.valueOf(data[0]), Integer.valueOf(data[1]));
             case 3 :
-                dateTree.searchNode(seminar.date());
+                dateTree.searchNode(data[0], data[1]);
             case 4 :
-                keywordTree.searchNode(seminar.keywords());
+                keywordTree.searchNode(data[0], "");
                 
         }
     }

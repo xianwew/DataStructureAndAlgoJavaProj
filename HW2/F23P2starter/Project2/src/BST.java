@@ -77,51 +77,80 @@ public class BST<T extends Comparable<? super T>> {
 	}
 
 	public void deleteNode (T key) {
-	    LinkedList<T> searchResult = searchNode(key);
+	    LinkedList<T> searchResult = searchNode(key, null);
 	    while(searchResult != null) {
 	        deleteNodeHelper(searchResult.getVal(), key);
 	        searchResult = searchResult.getNext();
 	    }
 	}
 	
-	public BSTNode<T> searchNodeHelper(BSTNode<T> curNode, T key) {
+	public BSTNode<T> searchNodeHelper(BSTNode<T> curNode, T key1, T key2, boolean left) {
 		if (curNode == null) {
-			return curNode;
+			return null;
 		}
 		
 		BSTNode<T> leftNode = null;
 		BSTNode<T> rightNode = null;
-		
-		if(curNode.compareKey(key) >= 0) {
-			leftNode = searchNodeHelper(curNode.getLeft(), key);
+		if(key2 == null) {
+    		if(curNode.compareKey(key1) >= 0) {
+    			leftNode = searchNodeHelper(curNode.getLeft(), key1, key2, left);
+    		}
+    		else {
+    			rightNode = searchNodeHelper(curNode.getRight(), key1, key2, left);
+    		}
+    		
+		    if (curNode.compareKey(key1) == 0) {
+	            return curNode;
+	        } 
+	        else if (leftNode != null && leftNode.compareKey(key1) == 0) {
+	            return leftNode;
+	        } 
+	        else if (rightNode != null && rightNode.compareKey(key1) == 0) {
+	            return rightNode;
+	        } 
 		}
 		else {
-			rightNode = searchNodeHelper(curNode.getRight(), key);
-		}
-
-		if (curNode.compareKey(key) == 0) {
-			return curNode;
-		} 
-		else if (leftNode != null && leftNode.compareKey(key) == 0) {
-			return leftNode;
-		} 
-		else if (rightNode != null && rightNode.compareKey(key) == 0) {
-			return rightNode;
+		    if(curNode.compareKey(key2) > 0 || curNode.compareKey(key1) < 0 ) {
+		        return null;
+		    }
+		    if(left) {
+		        leftNode = searchNodeHelper(curNode.getLeft(), key1, key2, left);
+		        if(leftNode != null && leftNode.compareKey(key1) > 0 && leftNode.compareKey(key2) < 0) {
+		            return leftNode;
+		        }
+		    }
+		    else{
+		        rightNode = searchNodeHelper(curNode.getRight(), key1, key2, left);
+		        if(rightNode != null && rightNode.compareKey(key1) > 0 && rightNode.compareKey(key2) < 0) {
+                    return rightNode;
+                }
+		    }
+		    
 		}
 		return null;
 	}
 	
-	public LinkedList<T> searchNode(T key) {
+	public LinkedList<T> searchNode(T key1, T key2) {
 		LinkedList<T> curList = new LinkedList<T>();
 		BSTNode<T> curNode = root;
 		LinkedList<T> result = curList;
-		while(searchNodeHelper(curNode,key)!=null) {
+		while(searchNodeHelper(curNode, key1, key2, true)!=null) {
 		    LinkedList<T> tmp = new LinkedList<T>();
-		    curNode = searchNodeHelper(curNode,key);
+		    curNode = searchNodeHelper(curNode,key1, key2, true);
 		    tmp.setVal(curNode);
 		    curNode = curNode.getLeft();
 		    curList.setNext(tmp);
 		    curList = curList.getNext();
+		}
+		if(String.valueOf(key2) != "" && String.valueOf(key2) != String.valueOf(Integer.MIN_VALUE)) {
+		    while(searchNodeHelper(curNode, key1, key2, false)!=null) {
+	            LinkedList<T> tmp = new LinkedList<T>();
+	            curNode = searchNodeHelper(curNode,key1, key2, false);
+	            tmp.setVal(curNode);
+	            curNode = curNode.getRight();
+	            curList.setNext(tmp);
+	            curList = curList.getNext();
+	        }
 		}
 		return result.getNext();
 		
