@@ -103,11 +103,19 @@ public class BST<T extends Comparable<? super T>> {
 		return null;
 	}
 	
-	public BSTNode<T>[] searchNode(T key) {
-		BSTNode<T>[] searchRes;
-		
-		
-		return searchRes;
+	public LinkedList searchNode(T key) {
+		LinkedList curList = new LinkedList();
+		BSTNode<T> curNode = root;
+		LinkedList result = curList;
+		while(searchNodeHelper(curNode,key)!=null) {
+		    LinkedList tmp = new LinkedList();
+		    curNode = searchNodeHelper(curNode,key);
+		    tmp.setVal(curNode.getValue());
+		    curNode = curNode.getLeft();
+		    curList.setNext(tmp);
+		    curList = curList.getNext();
+		}
+		return result.getNext();
 		
 	}
 
