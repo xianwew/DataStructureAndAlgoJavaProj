@@ -27,54 +27,6 @@ public class Parser {
      * @param args the user input arguments
      * @return initialize components
      */
-    public Object[] initializeComponents(String[] args) {
-        if (args != null) {
-            File commandFile = null;
-            int i = -1;
-            int k = -1;
-            try {
-                i = Integer.parseInt(args[0]);
-            } 
-            catch (Exception e) {
-                System.out.println("Error in creating memory "
-                        + "pool!" + " Please enter an integar!");
-                return new String[11];
-            }
-            if ((i & i - 1) != 0 || i <= 0) {
-                System.out.println(
-                        "Error in creating memory pool! " + "The size must "
-                                + "be the power " + ""
-                                        + "of 2 and greater than 0!");
-                return new String[12];
-            }
-            try {
-                k = Integer.parseInt(args[1]);
-            } 
-            catch (Exception e) {
-                System.out.println("Error in creating "
-                        + "hashTable!" + " Please enter an integar!");
-                return new String[13];
-            }
-            if ((k & k - 1) != 0 || k <= 0) {
-                System.out.println(
-                        "Error in creating hashTable! " + "The size must"
-                                + " be the power " + ""
-                                        + "of 2 and greater than 0!");
-                return new String[14];
-            }
-
-            commandFile = new File(args[2]);
-
-            Object[] objects = new Object[3];
-            objects[0] = new byte[Integer.parseInt(args[0])];
-            objects[1] = new MyHashTable(
-                    Integer.parseInt(args[1]));
-            objects[2] = commandFile;
-            return objects;
-        }
-        return new String[16];
-    }
-
     /**
      * Get the data valuable
      * @return the data value
@@ -91,6 +43,24 @@ public class Parser {
         this.data = input;
     }
 
+    public String[] getData(String dataLocal) {
+        String data1 = "";
+        String data2 = "";
+        String data3 = "";
+        String[] result = new String[3];
+        try {
+            data1 = dataLocal.split("\\s+")[2];
+            data2 = dataLocal.split("\\s+")[3];
+            data3 = dataLocal.split("\\s+")[4];
+        }
+        catch (Exception e) {
+//          System.out.println("Error in getting instruction!");
+        }
+        result[0] = data1;
+        result[1] = data2;
+        result[2] = data3;
+        return result;
+    }
     
     /**
      * Create a method to get the instruction from the input string
@@ -109,23 +79,42 @@ public class Parser {
 //            System.out.println("Error in getting instruction!");
         }
         if (tmpDataLeft.indexOf("insert") == 0) {
-            return 1;
+            return 11;
         } 
         else if (tmpDataLeft.indexOf("search") == 0) {
-            return 2;
-        } 
-        else if (tmpDataLeft.indexOf("print") == 0) {
-            if (tmpDataRight.indexOf("hashtable") == 0) {
-                return 3;
-            } 
-            else if (tmpDataRight.indexOf("blocks") == 0) {
-                return 4;
+            if(tmpDataRight.indexOf("ID") == 0) {
+                return 21;
             }
-            return 0;
+            else if(tmpDataRight.indexOf("cost") == 0) {
+                return 22;
+            }
+            else if(tmpDataRight.indexOf("date") == 0) {
+                return 23;
+            }
+            else if(tmpDataRight.indexOf("keyword") == 0) {
+                return 24;
+            }
+            return 25;
         } 
         else if (tmpDataLeft.indexOf("delete") == 0) {
-            return 5;
+            return 31;
         }
+        else if (tmpDataLeft.indexOf("print") == 0) {
+            if (tmpDataRight.indexOf("date") == 0) {
+                return 41;
+            } 
+            else if (tmpDataRight.indexOf("keyword") == 0) {
+                return 42;
+            }
+            else if (tmpDataRight.indexOf("location") == 0) {
+                return 43;
+            }
+            else if (tmpDataRight.indexOf("cost") == 0) {
+                return 44;
+            }
+            return 45;
+        } 
+       
         return 0;
     }
 
@@ -147,8 +136,10 @@ public class Parser {
             if (reader.hasNextLine()) {
                 data = reader.nextLine().trim();
             }
+            String[] param = new String[3];
             while (true) {
                 instruction = getInstruction(data);
+                param = getData(data);
                 int line = 0;
                 int id = -1;
                 String title = "";
@@ -220,10 +211,11 @@ public class Parser {
                 }
                 Seminar seminar = new Seminar(id, title, 
                         dateTime, length, x, y, cost, keywordList, desc);
-                dataBase.processCommand(instruction, id, seminar);
+                dataBase.processCommand(instruction, id, seminar, param);
                 if (!reader.hasNextLine()) {
                     reader.close();
                     instruction = getInstruction(data);
+                    param = getData(data);
                     if (instruction != 0) {
                         try {
                             id = Integer.parseInt(data.split("\\s+")[1]);
@@ -234,7 +226,7 @@ public class Parser {
                         }
                         seminar = new Seminar(id, title, dateTime, 
                                 length, x, y, cost, keywordList, desc);
-                        dataBase.processCommand(instruction, id, seminar);
+                        dataBase.processCommand(instruction, id, seminar, param);
                     }
                     break;
                 }
