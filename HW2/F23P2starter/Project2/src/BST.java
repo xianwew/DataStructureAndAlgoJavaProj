@@ -47,16 +47,16 @@ public class BST<T extends Comparable<? super T>> {
 		return root;
 	}
 
-	public BSTNode<T> deleteNode(BSTNode<T> curNode, T key) {
+	public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key) {
 		if (curNode == null) {
 			return null;
 		}
 
 		if (curNode.compareKey(key) < 0) {
-			curNode.setRight(deleteNode(curNode.getRight(), key));
+			curNode.setRight(deleteNodeHelper(curNode.getRight(), key));
 		} 
 		else if (curNode.compareKey(key) >= 0) {
-			curNode.setLeft(deleteNode(curNode.getLeft(), key));
+			curNode.setLeft(deleteNodeHelper(curNode.getLeft(), key));
 		} 
 		else {
 			if (curNode.getLeft() == null) {
@@ -71,11 +71,19 @@ public class BST<T extends Comparable<? super T>> {
 				cur = cur.getRight();
 			}
 			curNode.setKey(cur.getKey());
-			curNode.setLeft(deleteNode(curNode.getLeft(), curNode.getKey()));
+			curNode.setLeft(deleteNodeHelper(curNode.getLeft(), curNode.getKey()));
 		}
 		return curNode;
 	}
 
+	public void deleteNode (T key) {
+	    LinkedList<T> searchResult = searchNode(key);
+	    while(searchResult != null) {
+	        deleteNodeHelper(searchResult.getVal(), key);
+	        searchResult = searchResult.getNext();
+	    }
+	}
+	
 	public BSTNode<T> searchNodeHelper(BSTNode<T> curNode, T key) {
 		if (curNode == null) {
 			return curNode;
@@ -103,14 +111,14 @@ public class BST<T extends Comparable<? super T>> {
 		return null;
 	}
 	
-	public LinkedList searchNode(T key) {
-		LinkedList curList = new LinkedList();
+	public LinkedList<T> searchNode(T key) {
+		LinkedList<T> curList = new LinkedList<T>();
 		BSTNode<T> curNode = root;
-		LinkedList result = curList;
+		LinkedList<T> result = curList;
 		while(searchNodeHelper(curNode,key)!=null) {
-		    LinkedList tmp = new LinkedList();
+		    LinkedList<T> tmp = new LinkedList<T>();
 		    curNode = searchNodeHelper(curNode,key);
-		    tmp.setVal(curNode.getValue());
+		    tmp.setVal(curNode);
 		    curNode = curNode.getLeft();
 		    curList.setNext(tmp);
 		    curList = curList.getNext();
@@ -119,4 +127,5 @@ public class BST<T extends Comparable<? super T>> {
 		
 	}
 
+	
 }

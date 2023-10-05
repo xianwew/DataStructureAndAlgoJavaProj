@@ -4,10 +4,10 @@
  * @version September 2023, updated Oct 2023
  */
 
-public class LinkedList {
-    private Seminar val;
-    private LinkedList next;
-    private LinkedList prev;
+public class LinkedList<T extends Comparable<? super T>>{
+    private BSTNode<T> val;
+    private LinkedList<T> next;
+    private LinkedList<T> prev;
 
     /**
      * Initialize paramaters.
@@ -20,7 +20,7 @@ public class LinkedList {
         this.prev = null;
     }
     
-    public LinkedList(Seminar val) {
+    public LinkedList(BSTNode<T> val) {
         this.val = val;
         this.next = null;
         this.prev = null;
@@ -31,14 +31,14 @@ public class LinkedList {
      * 
      * @return initialize next    
      */
-    public LinkedList getNext() {
+    public LinkedList<T> getNext() {
         return next;
     }
     /**
      * set the value of a field named next
      * @param next  Redefine the new next domain, receive next
      */
-    public void setNext(LinkedList next) {
+    public void setNext(LinkedList<T> next) {
         this.next = next;
     }
     /**
@@ -46,14 +46,14 @@ public class LinkedList {
      * 
      * @return initialize prev    
      */
-    public LinkedList getPrev() {
+    public LinkedList<T> getPrev() {
         return prev;
     }
     /**
      * set the value of a field named prev
      * @param prev  Redefine the new next domain, receive previous 
      */
-    public void setPrev(LinkedList prev) {
+    public void setPrev(LinkedList<T> prev) {
         this.prev = prev;
     }
     /**
@@ -61,14 +61,14 @@ public class LinkedList {
      * 
      * @return initialize Val   
      */
-    public Seminar getVal() {
+    public BSTNode<T> getVal() {
         return val;
     }
     /**
      * set the value of a field named Val
      * @param val  Redefine the new next domain, receive values
      */
-    public void setVal(Seminar val) {
+    public void setVal(BSTNode<T> val) {
         this.val = val;
     }
     
