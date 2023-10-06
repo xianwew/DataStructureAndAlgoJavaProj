@@ -4,6 +4,15 @@ public class WorldDataBase {
     private BST<String> dateTree;
     private BST<String> keywordTree;
     private BinTree locationTree;
+    
+    public WorldDataBase(){
+        this.idTree = new BST<Integer>();
+        this.costTree = new BST<Integer>();
+        this.dateTree = new BST<String>();
+        this.keywordTree = new BST<String>();
+        this.locationTree = new BinTree();
+    }
+    
     public void processCommand (int instruction, int id, Seminar seminar, String[] data) {
         int instructionType = instruction / 10;
         instruction = instruction % 10;
@@ -15,7 +24,7 @@ public class WorldDataBase {
             case 3:
                 delete(id);
             case 4:
-                print(instruction, seminar);
+                print(instruction);
         }
     }
     
@@ -44,14 +53,25 @@ public class WorldDataBase {
     }
     
     public void delete(int id) {
-        
+        Seminar tmp = null;
+        tmp = idTree.deleteNode(id, id);
+        costTree.deleteNode(tmp.cost(), id);
+        dateTree.deleteNode(tmp.date(), id);
+        for(String s : tmp.keywords()) {
+            keywordTree.deleteNode(s, id);
+        }
     }
     
-    public void print(int instruction, Seminar seminar) {
-        
+    public void print(int instruction) {
+        switch (instruction) {
+            case 1 : 
+                idTree.print();
+            case 2 :
+                costTree.print();
+            case 3 :
+                dateTree.print();
+            case 4 :
+                keywordTree.print();
+        }
     }
-    
-   
-    
-    
 }
