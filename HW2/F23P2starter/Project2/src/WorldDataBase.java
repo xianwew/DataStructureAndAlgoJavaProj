@@ -4,13 +4,15 @@ public class WorldDataBase {
     private BST<String> dateTree;
     private BST<String> keywordTree;
     private BinTree locationTree;
+    private int worldSize;
     
-    public WorldDataBase(){
+    public WorldDataBase(int worldSizeLocal){
         this.idTree = new BST<Integer>();
         this.costTree = new BST<Integer>();
         this.dateTree = new BST<String>();
         this.keywordTree = new BST<String>();
         this.locationTree = new BinTree();
+        this.worldSize = worldSizeLocal;
     }
     
     public void processCommand (int instruction, int id, Seminar seminar, String[] data) {
@@ -33,15 +35,25 @@ public class WorldDataBase {
     }
     
     public void insert(Seminar seminar) {
-    	System.out.println("insert " + seminar.id());
-    	System.out.println(seminar.toString());
-        idTree.insertNode(seminar.id(), seminar);
-        costTree.insertNode(seminar.cost(), seminar);
-        dateTree.insertNode(seminar.date(), seminar);
-        for(String s : seminar.keywords()) {
-            keywordTree.insertNode(s, seminar);
-        }
-       
+    	if(seminar.x() < 0 || seminar.y() < 0 || seminar.x() >= worldSize || seminar.y() >= worldSize) {
+    	    System.out.println("Insert FAILED - Bad x, y coordinates: " + seminar.x() + ", " + seminar.y());
+    	    return;
+    	}
+    	LinkedList<Integer> result = idTree.searchNode(seminar.id(), Integer.MIN_VALUE, false);
+    	if(result == null) {
+    	    System.out.println("Successfully inserted record with ID " + seminar.id());
+	        System.out.println(seminar.toString());
+	        idTree.insertNode(seminar.id(), seminar);
+	        costTree.insertNode(seminar.cost(), seminar);
+	        dateTree.insertNode(seminar.date(), seminar);
+	        for(String s : seminar.keywords()) {
+	            keywordTree.insertNode(s, seminar);
+	        }
+    	}
+    	else {
+    	    System.out.println("Insert FAILED - There is already a record with ID " + seminar.id());
+    	    return;
+    	}
     }
     
     public void search(int instruction, String[] data) {
@@ -61,6 +73,7 @@ public class WorldDataBase {
         	dateTree.searchNode(data[0], data[1], true);
         }
         else if (instruction == 4) {
+            System.out.println("Seminars matching keyword " + data[0] + ":");
         	keywordTree.searchNode(data[0], "", false);
         }
     }
@@ -88,16 +101,20 @@ public class WorldDataBase {
         	idTree.print();
         }
         else if (instruction == 2) {
-        	System.out.println("Cost Tree:");
-        	costTree.print();
-        }
-        else if (instruction == 3) {
         	System.out.println("Date Tree:");
         	dateTree.print();
         }
-        else if (instruction == 4) {
+        else if (instruction == 3) {
         	System.out.println("Keyword Tree:");
         	keywordTree.print();
+        }
+        else if (instruction == 4) {
+        	System.out.println("Location Tree:");
+//        	locationTree.print();
+        }
+        else if (instruction == 5) {
+            System.out.println("Cost Tree:");
+            costTree.print();
         }
     }
 }

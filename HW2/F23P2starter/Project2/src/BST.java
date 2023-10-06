@@ -186,9 +186,9 @@ public class BST<T extends Comparable<? super T>> {
         printBinaryTree(node.getRight(), level + 1);
 
         printSpaces(level);
-        if (level > 0) {
-            System.out.print("└── ");
-        }
+//        if (level > 0) {
+//            System.out.print("└── ");
+//        }
         System.out.println(node.getKey());
 
         printBinaryTree(node.getLeft(), level + 1);

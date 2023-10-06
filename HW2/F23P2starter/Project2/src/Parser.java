@@ -103,19 +103,21 @@ public class Parser {
             return 31;
         }
         else if (tmpDataLeft.indexOf("print") == 0) {
-            if (tmpDataRight.indexOf("date") == 0) {
+            if (tmpDataRight.indexOf("ID") == 0) {
                 return 41;
             } 
-            else if (tmpDataRight.indexOf("keyword") == 0) {
+            else if (tmpDataRight.indexOf("date") == 0) {
                 return 42;
-            }
-            else if (tmpDataRight.indexOf("location") == 0) {
+            } 
+            else if (tmpDataRight.indexOf("keyword") == 0) {
                 return 43;
             }
-            else if (tmpDataRight.indexOf("cost") == 0) {
+            else if (tmpDataRight.indexOf("location") == 0) {
                 return 44;
             }
-            return 45;
+            else if (tmpDataRight.indexOf("cost") == 0) {
+                return 45;
+            }
         } 
        
         return 0;
