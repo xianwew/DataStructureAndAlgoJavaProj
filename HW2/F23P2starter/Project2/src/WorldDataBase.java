@@ -65,6 +65,7 @@ public class WorldDataBase {
             		System.out.println("Search FAILED -- There is no record with ID " + data[0]);
             	}
             	else {
+            	    System.out.println("Found record with ID " + data[0] + ":");
             		System.out.println(resultId.getVal().getValue().toString());
             	}
             	break;
