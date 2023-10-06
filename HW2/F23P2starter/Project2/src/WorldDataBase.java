@@ -69,6 +69,7 @@ public class WorldDataBase {
             	}
             	break;
     		case 2:
+    		    System.out.println("Seminars with costs in range "+ data[0] + " to " + data[1] + ":"); 
     			LinkedList<Integer> resultCost = costTree.searchNode(Integer.valueOf(data[0]), Integer.valueOf(data[1]), true);
     			while(resultCost != null) {
     				System.out.println(resultCost.getVal().getValue().toString());
