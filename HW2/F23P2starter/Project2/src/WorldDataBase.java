@@ -39,16 +39,17 @@ public class WorldDataBase {
     }
     
     public void search(int instruction, String[] data) {
-        switch (instruction) {
-            case 1 : 
-                idTree.searchNode(Integer.valueOf(data[0]), Integer.MIN_VALUE);
-            case 2 :
-                costTree.searchNode(Integer.valueOf(data[0]), Integer.valueOf(data[1]));
-            case 3 :
-                dateTree.searchNode(data[0], data[1]);
-            case 4 :
-                keywordTree.searchNode(data[0], "");
-                
+        if (instruction == 1) {
+        	idTree.searchNode(Integer.valueOf(data[0]), Integer.MIN_VALUE);
+        }
+        else if (instruction == 2) {
+        	costTree.searchNode(Integer.valueOf(data[0]), Integer.valueOf(data[1]));
+        }
+        else if (instruction == 3) {
+        	dateTree.searchNode(data[0], data[1]);
+        }
+        else if (instruction == 4) {
+        	keywordTree.searchNode(data[0], "");
         }
     }
     
@@ -63,15 +64,17 @@ public class WorldDataBase {
     }
     
     public void print(int instruction) {
-        switch (instruction) {
-            case 1 : 
-                idTree.print();
-            case 2 :
-                costTree.print();
-            case 3 :
-                dateTree.print();
-            case 4 :
-                keywordTree.print();
+        if (instruction == 1) {
+        	idTree.print();
+        }
+        else if (instruction == 2) {
+        	costTree.print();
+        }
+        else if (instruction == 3) {
+        	dateTree.print();
+        }
+        else if (instruction == 4) {
+        	keywordTree.print();
         }
     }
 }
