@@ -44,10 +44,10 @@ public class BSTNode<T extends Comparable<? super T>> {
 	}
 
 	public int compareNode(BSTNode<T> node) {
-		return this.key.compareTo(node.getKey());
+		return this.getKey().compareTo(node.getKey());
 	}
 	
 	public int compareKey(T key) {
-		return this.key.compareTo(key);
+		return this.getKey().compareTo(key);
 	}
 }

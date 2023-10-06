@@ -77,7 +77,7 @@ public class BST<T extends Comparable<? super T>> {
 	}
 
 	public Seminar deleteNode (T key, int id) {
-	    LinkedList<T> searchResult = searchNode(key, null);
+	    LinkedList<T> searchResult = searchNode(key, null, false);
 	    Seminar result = null;
 	    while(searchResult != null) {
 	        BSTNode<T> tmp = searchResult.getVal();
@@ -92,19 +92,19 @@ public class BST<T extends Comparable<? super T>> {
 	    return result;
 	}
 	
-	public BSTNode<T> searchNodeHelper(BSTNode<T> curNode, T key1, T key2, boolean left) {
+	public BSTNode<T> searchNodeHelper(BSTNode<T> curNode, T key1, T key2, boolean left, boolean range) {
 		if (curNode == null) {
 			return null;
 		}
 		
 		BSTNode<T> leftNode = null;
 		BSTNode<T> rightNode = null;
-		if(String.valueOf(key2) == "" || String.valueOf(key2) == String.valueOf(Integer.MIN_VALUE)) {
+		if(!range) {
     		if(curNode.compareKey(key1) >= 0) {
-    			leftNode = searchNodeHelper(curNode.getLeft(), key1, key2, left);
+    			leftNode = searchNodeHelper(curNode.getLeft(), key1, key2, left, range);
     		}
     		else {
-    			rightNode = searchNodeHelper(curNode.getRight(), key1, key2, left);
+    			rightNode = searchNodeHelper(curNode.getRight(), key1, key2, left, range);
     		}
     		
 		    if (curNode.compareKey(key1) == 0) {
@@ -118,11 +118,11 @@ public class BST<T extends Comparable<? super T>> {
 	        } 
 		}
 		else {
-		    if(curNode.compareKey(key2) > 0 || curNode.compareKey(key1) < 0 ) {
+		    if(curNode == null || curNode.compareKey(key2) > 0 || curNode.compareKey(key1) < 0 ) {
 		        return null;
 		    }
-		    leftNode = searchNodeHelper(curNode.getLeft(), key1, key2, left);
-		    rightNode = searchNodeHelper(curNode.getRight(), key1, key2, left);
+		    leftNode = searchNodeHelper(curNode.getLeft(), key1, key2, left, range);
+		    rightNode = searchNodeHelper(curNode.getRight(), key1, key2, left, range);
 		    if(left) {
 		        if(curNode != null && curNode.compareKey(key1) > 0 
                         && curNode.compareKey(key2) < 0) {
@@ -144,24 +144,24 @@ public class BST<T extends Comparable<? super T>> {
 		return null;
 	}
 	
-	public LinkedList<T> searchNode(T key1, T key2) {
+	public LinkedList<T> searchNode(T key1, T key2, boolean range) {
 		LinkedList<T> curList = new LinkedList<T>();
 		BSTNode<T> curNode = root;
 		LinkedList<T> result = curList;
 		
-		while(searchNodeHelper(curNode, key1, key2, true) != null) {
+		while(searchNodeHelper(curNode, key1, key2, true, range) != null) {
 		    LinkedList<T> tmp = new LinkedList<T>();
-		    curNode = searchNodeHelper(curNode,key1, key2, true);
+		    curNode = searchNodeHelper(curNode,key1, key2, true, range);
 		    tmp.setVal(curNode);
 		    curNode = curNode.getLeft();
 		    curList.setNext(tmp);
 		    curList = curList.getNext();
 		}
 		curNode = root;
-		if(String.valueOf(key2) != "" && String.valueOf(key2) != String.valueOf(Integer.MIN_VALUE)) {
-		    while(searchNodeHelper(curNode, key1, key2, false) != null) {
+		if(range) {
+		    while(searchNodeHelper(curNode, key1, key2, false, range) != null) {
 	            LinkedList<T> tmp = new LinkedList<T>();
-	            curNode = searchNodeHelper(curNode,key1, key2, false);
+	            curNode = searchNodeHelper(curNode,key1, key2, false, range);
 	            tmp.setVal(curNode);
 	            curNode = curNode.getRight();
 	            curList.setNext(tmp);

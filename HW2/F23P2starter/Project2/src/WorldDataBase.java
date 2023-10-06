@@ -44,16 +44,16 @@ public class WorldDataBase {
     
     public void search(int instruction, String[] data) {
         if (instruction == 1) {
-        	idTree.searchNode(Integer.valueOf(data[0]), Integer.MIN_VALUE);
+        	idTree.searchNode(Integer.valueOf(data[0]), Integer.MIN_VALUE, false);
         }
         else if (instruction == 2) {
-        	costTree.searchNode(Integer.valueOf(data[0]), Integer.valueOf(data[1]));
+        	costTree.searchNode(Integer.valueOf(data[0]), Integer.valueOf(data[1]), true);
         }
         else if (instruction == 3) {
-        	dateTree.searchNode(data[0], data[1]);
+        	dateTree.searchNode(data[0], data[1], true);
         }
         else if (instruction == 4) {
-        	keywordTree.searchNode(data[0], "");
+        	keywordTree.searchNode(data[0], "", false);
         }
     }
     
