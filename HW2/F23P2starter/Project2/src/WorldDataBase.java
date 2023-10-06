@@ -76,6 +76,7 @@ public class WorldDataBase {
     			}
     			break;
     		case 3:
+    			System.out.println("Seminars with dates in range " + data[0] + " to " + data[1] + ":");
     			LinkedList<String> resultDate = dateTree.searchNode(data[0], data[1], true);
     			while(resultDate != null) {
     				System.out.println(resultDate.getVal().getValue().toString());
