@@ -33,6 +33,8 @@ public class WorldDataBase {
     }
     
     public void insert(Seminar seminar) {
+    	System.out.println("insert " + seminar.id());
+    	System.out.println(seminar.toString());
         idTree.insertNode(seminar.id(), seminar);
         costTree.insertNode(seminar.cost(), seminar);
         dateTree.insertNode(seminar.date(), seminar);
@@ -44,7 +46,13 @@ public class WorldDataBase {
     
     public void search(int instruction, String[] data) {
         if (instruction == 1) {
-        	idTree.searchNode(Integer.valueOf(data[0]), Integer.MIN_VALUE, false);
+        	LinkedList<Integer> result = idTree.searchNode(Integer.valueOf(data[0]), Integer.MIN_VALUE, false);
+        	if(result == null) {
+        		System.out.println("Search FAILED -- There is no record with ID " + data[0]);
+        	}
+        	else {
+        		System.out.println(result.getVal().getValue().toString());
+        	}
         }
         else if (instruction == 2) {
         	costTree.searchNode(Integer.valueOf(data[0]), Integer.valueOf(data[1]), true);
@@ -58,6 +66,7 @@ public class WorldDataBase {
     }
     
     public void delete(int id) {
+    	System.out.println("delete " + id);
         Seminar tmp = null;
         tmp = idTree.deleteNode(id, id);
         if(tmp != null) {
@@ -66,20 +75,28 @@ public class WorldDataBase {
 	        for(String s : tmp.keywords()) {
 	            keywordTree.deleteNode(s, id);
 	        }
+	        System.out.println("Record with ID " + id + " successfully deleted from the database");
+        }
+        else {
+        	System.out.println("Delete FAILED -- There is no record with ID " + id);
         }
     }
     
     public void print(int instruction) {
         if (instruction == 1) {
+        	System.out.println("ID Tree:");
         	idTree.print();
         }
         else if (instruction == 2) {
+        	System.out.println("Cost Tree:");
         	costTree.print();
         }
         else if (instruction == 3) {
+        	System.out.println("Date Tree:");
         	dateTree.print();
         }
         else if (instruction == 4) {
+        	System.out.println("Keyword Tree:");
         	keywordTree.print();
         }
     }
