@@ -100,43 +100,53 @@ public class BST<T extends Comparable<? super T>> {
 		curList.setNext(new LinkedList<T>(nodeToBeAdded));
 	}
 	
-	public void searchNodeHelper(BSTNode<T> curNode, T key1, T key2, boolean range, LinkedList<T> head) {
+	public int searchNodeHelper(BSTNode<T> curNode, T key1, T key2, boolean range, LinkedList<T> head) {
 		if (curNode == null) {
-			return;
+			return 1;
 		}
 		
+		int leftVisited = 0;
+		int rightVisited = 0;
 		if(!range) {
     		if(curNode.compareKey(key1) >= 0) {
-    			searchNodeHelper(curNode.getLeft(), key1, key2, range, head);
+    			leftVisited = searchNodeHelper(curNode.getLeft(), key1, key2, range, head);
     		}
     		
 		    if (curNode.compareKey(key1) == 0) {
 		    	addToLinkedList(curNode, head);
-		    	return;
+		    	return 1 + leftVisited + rightVisited;
 	        }     
 		    
-		    if(curNode.compareKey(key1) < 0) {
-		    	searchNodeHelper(curNode.getRight(), key1, key2, range, head);
+		    if (curNode.compareKey(key1) < 0) {
+		    	rightVisited = searchNodeHelper(curNode.getRight(), key1, key2, range, head);
 		    }
 		}
 		else {
-		    if(curNode == null || curNode.compareKey(key2) > 0 || curNode.compareKey(key1) < 0 ) {
-		        return;
-		    }
-		    searchNodeHelper(curNode.getLeft(), key1, key2, range, head);
-	        if(curNode != null && curNode.compareKey(key1) >= 0 
-                    && curNode.compareKey(key2) <= 0) {
-		    	addToLinkedList(curNode, head);
-		    	return;
-	        }
-	        searchNodeHelper(curNode.getRight(), key1, key2, range, head);
+			if (curNode.compareKey(key2) > 0) {
+				leftVisited = searchNodeHelper(curNode.getLeft(), key1, key2, range, head);
+				return 1 + leftVisited;
+			}    
+			else if (curNode.compareKey(key1) < 0) {
+				rightVisited = searchNodeHelper(curNode.getRight(), key1, key2, range, head);
+				return 1 + rightVisited;
+	        }    
+			else {
+				leftVisited = searchNodeHelper(curNode.getLeft(), key1, key2, range, head);
+				addToLinkedList(curNode, head);
+				if(curNode.compareKey(key2) != 0) {
+					rightVisited = searchNodeHelper(curNode.getRight(), key1, key2, range, head);
+				}
+			}
 		}
-		return;
+		return 1 + leftVisited + rightVisited;
 	}
 	
 	public LinkedList<T> searchNode(T key1, T key2, boolean range) {
 		LinkedList<T> result = new LinkedList<T>();
-		searchNodeHelper(root, key1, key2, range, result);
+		int count = searchNodeHelper(root, key1, key2, range, result);
+		if (range) {
+			System.out.println(count + " nodes visited in this search");
+		}
 		return result.getNext();
 	}
 
@@ -165,8 +175,8 @@ public class BST<T extends Comparable<? super T>> {
     }
 
     private void printSpaces(int count) {
-        for (int i = 0; i < count * 2; i++) {
-            System.out.print(" ");
+        for (int i = 0; i < count; i++) {
+            System.out.print("  ");
         }
     }
 }

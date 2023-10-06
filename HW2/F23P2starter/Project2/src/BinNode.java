@@ -1,7 +1,8 @@
 public interface BinNode {
-	public int[] getKey();
-	public void setkey(int x, int y);
-	public BinNode getLeft();
-	public BinNode getRight();
-	boolean isLeaf = false;
+	public boolean isLeaf();
+	public boolean isEmpty();
+	public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth, int yWidth);
+	public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth, int yWidth);
+	public int search(int circuleX, int circuleY, int level, int xWidth, int yWidth);
+	public void print(int level);
 }
