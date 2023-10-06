@@ -54,11 +54,14 @@ public class Parser {
             data3 = dataLocal.split("\\s+")[4];
         }
         catch (Exception e) {
-//          System.out.println("Error in getting instruction!");
+//          System.out.println("Error in getting data!");
         }
         result[0] = data1;
         result[1] = data2;
         result[2] = data3;
+    	System.out.println("datae1: " + data1);
+    	System.out.println("datae2: " + data2);
+    	System.out.println("datae3: " + data3);
         return result;
     }
     
