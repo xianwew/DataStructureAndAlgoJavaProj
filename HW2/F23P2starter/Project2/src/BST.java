@@ -92,85 +92,51 @@ public class BST<T extends Comparable<? super T>> {
 	    return result;
 	}
 	
-	public BSTNode<T> searchNodeHelper(BSTNode<T> curNode, T key1, T key2, boolean left, boolean range) {
+	public void addToLinkedList (BSTNode<T> nodeToBeAdded, LinkedList<T> head) {
+		LinkedList<T> curList = head;
+		while(curList.getNext() != null) {
+			curList = curList.getNext();
+		}
+		curList.setNext(new LinkedList<T>(nodeToBeAdded));
+	}
+	
+	public void searchNodeHelper(BSTNode<T> curNode, T key1, T key2, boolean range, LinkedList<T> head) {
 		if (curNode == null) {
-			return null;
+			return;
 		}
 		
-		BSTNode<T> leftNode = null;
-		BSTNode<T> rightNode = null;
 		if(!range) {
     		if(curNode.compareKey(key1) >= 0) {
-    			leftNode = searchNodeHelper(curNode.getLeft(), key1, key2, left, range);
+    			searchNodeHelper(curNode.getLeft(), key1, key2, range, head);
     		}
     		
 		    if (curNode.compareKey(key1) == 0) {
-	            return curNode;
-	        } 
-	        else if (leftNode != null && leftNode.compareKey(key1) == 0) {
-	            return leftNode;
-	        } 
-		    
+		    	addToLinkedList(curNode, head);
+		    	return;
+	        }     
 		    
 		    if(curNode.compareKey(key1) < 0) {
-		    	rightNode = searchNodeHelper(curNode.getRight(), key1, key2, left, range);
+		    	searchNodeHelper(curNode.getRight(), key1, key2, range, head);
 		    }
-		    
-	        if (rightNode != null && rightNode.compareKey(key1) == 0) {
-	            return rightNode;
-	        } 
 		}
 		else {
 		    if(curNode == null || curNode.compareKey(key2) > 0 || curNode.compareKey(key1) < 0 ) {
-		        return null;
+		        return;
 		    }
-		    leftNode = searchNodeHelper(curNode.getLeft(), key1, key2, left, range);
-		    rightNode = searchNodeHelper(curNode.getRight(), key1, key2, left, range);
-		    if(left) {
-		        if(curNode != null && curNode.compareKey(key1) >= 0 
-                        && curNode.compareKey(key2) <= 0) {
-		            return curNode;
-		        }
-		        else if(leftNode != null && leftNode.compareKey(key1) >= 0 
-		                && leftNode.compareKey(key2) <= 0) {
-		            return leftNode;
-		        }
-		    }
-		    else{
-		        if(rightNode != null && rightNode.compareKey(key1) >= 0 
-		                && rightNode.compareKey(key2) <= 0 ) {
-                    return rightNode;
-                }
-		    }
-		    
+		    searchNodeHelper(curNode.getLeft(), key1, key2, range, head);
+	        if(curNode != null && curNode.compareKey(key1) >= 0 
+                    && curNode.compareKey(key2) <= 0) {
+		    	addToLinkedList(curNode, head);
+		    	return;
+	        }
+	        searchNodeHelper(curNode.getRight(), key1, key2, range, head);
 		}
-		return null;
+		return;
 	}
 	
 	public LinkedList<T> searchNode(T key1, T key2, boolean range) {
-		LinkedList<T> curList = new LinkedList<T>();
-		BSTNode<T> curNode = root;
-		LinkedList<T> result = curList;
-		
-		while(searchNodeHelper(curNode, key1, key2, true, range) != null) {
-		    LinkedList<T> tmp = new LinkedList<T>();
-		    curNode = searchNodeHelper(curNode,key1, key2, true, range);
-		    tmp.setVal(curNode);
-		    curNode = curNode.getLeft();
-		    curList.setNext(tmp);
-		    curList = curList.getNext();
-		}
-		curNode = root;
-		if(range) {
-		    while(searchNodeHelper(curNode, key1, key2, false, range) != null) {
-	            LinkedList<T> tmp = new LinkedList<T>();
-	            curNode = searchNodeHelper(curNode,key1, key2, false, range);
-	            tmp.setVal(curNode);
-	            curNode = curNode.getRight();
-	            curList.setNext(tmp);
-	            curList = curList.getNext();
-	        }
-		}
+		LinkedList<T> result = new LinkedList<T>();
+		searchNodeHelper(root, key1, key2, range, result);
 		return result.getNext();
 	}
 
