@@ -173,25 +173,27 @@ public class BST<T extends Comparable<? super T>> {
 	}
 
 	public void print() {
-	    printBinaryTree(root, 0);
+		if(root == null) {
+			System.out.println("This tree is empty");
+			return;
+		}
+	    int record = printBinaryTree(root, 0);
+	    System.out.println("Number of records: " + record);
 	}
 	
-    private void printBinaryTree(BSTNode<T> node, int level) {
+    private int printBinaryTree(BSTNode<T> node, int level) {
         if (node == null) {
             printSpaces(level);
             System.out.println("null");
-            return;
+            return 0;
         }
-
-        printBinaryTree(node.getRight(), level + 1);
-
+        int left = 0;
+        int right = 0;
+        right = printBinaryTree(node.getRight(), level + 1);
         printSpaces(level);
-//        if (level > 0) {
-//            System.out.print("└── ");
-//        }
         System.out.println(node.getKey());
-
-        printBinaryTree(node.getLeft(), level + 1);
+        left = printBinaryTree(node.getLeft(), level + 1);
+        return 1 + left + right;
     }
 
     private void printSpaces(int count) {
@@ -199,5 +201,4 @@ public class BST<T extends Comparable<? super T>> {
             System.out.print(" ");
         }
     }
-	
 }
