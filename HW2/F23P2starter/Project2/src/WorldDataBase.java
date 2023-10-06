@@ -65,6 +65,7 @@ public class WorldDataBase {
             		System.out.println("Search FAILED -- There is no record with ID " + data[0]);
             	}
             	else {
+            		System.out.println("Found record with ID " + data[0] + ":");
             		System.out.println(resultId.getVal().getValue().toString());
             	}
             	break;
@@ -75,6 +76,7 @@ public class WorldDataBase {
     				System.out.println(resultCost.getVal().getValue().toString());
     				resultCost = resultCost.getNext();
     			}
+    			System.out.println(costTree.getVisitedCount() + " nodes visited in this search");
     			break;
     		case 3:
     			System.out.println("Seminars with dates in range " + data[0] + " to " + data[1] + ":");
@@ -83,6 +85,7 @@ public class WorldDataBase {
     				System.out.println(resultDate.getVal().getValue().toString());
     				resultDate = resultDate.getNext();
     			}
+    			System.out.println(dateTree.getVisitedCount() + " nodes visited in this search");
     			break;
     		case 4:
     			System.out.println("Seminars matching keyword " + data[0] + ":");

@@ -1,6 +1,15 @@
 public class BST<T extends Comparable<? super T>> {
 	BSTNode<T> root;
+	private int visitedCount = 0;
 
+	public int getVisitedCount(){
+		return this.visitedCount;
+	}
+	
+	public int setVisitedCount(int count){
+		return this.visitedCount = count;
+	}
+	
 	public BSTNode<T> getRoot(){
 		return this.root;
 	}
@@ -142,11 +151,10 @@ public class BST<T extends Comparable<? super T>> {
 	}
 	
 	public LinkedList<T> searchNode(T key1, T key2, boolean range) {
+		setVisitedCount(0);
 		LinkedList<T> result = new LinkedList<T>();
 		int count = searchNodeHelper(root, key1, key2, range, result);
-		if (range) {
-			System.out.println(count + " nodes visited in this search");
-		}
+		setVisitedCount(count);
 		return result.getNext();
 	}
 
