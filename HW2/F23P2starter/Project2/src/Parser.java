@@ -129,8 +129,9 @@ public class Parser {
      *      and calls functions
      */
     public void processSeminars(
-            File commandFile, WorldDataBase dataBase) {
+            String[] args, WorldDataBase dataBase) {
         try {
+            File commandFile = new File(args[3]);
             Scanner reader = new Scanner(commandFile);
             int instruction = 0;
             if (reader.hasNextLine()) {

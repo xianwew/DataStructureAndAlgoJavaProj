@@ -38,5 +38,8 @@ public class SemSearch {
     public static void main(String[] args) {
         // This is the main file for the program.
         Seminar dum = new Seminar();
+        WorldDataBase world = new WorldDataBase();
+        Parser parser = new Parser();
+        parser.processSeminars(args, world);
     }
 }
