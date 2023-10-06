@@ -103,9 +103,6 @@ public class BST<T extends Comparable<? super T>> {
     		if(curNode.compareKey(key1) >= 0) {
     			leftNode = searchNodeHelper(curNode.getLeft(), key1, key2, left, range);
     		}
-    		else {
-    			rightNode = searchNodeHelper(curNode.getRight(), key1, key2, left, range);
-    		}
     		
 		    if (curNode.compareKey(key1) == 0) {
 	            return curNode;
@@ -113,7 +110,13 @@ public class BST<T extends Comparable<? super T>> {
 	        else if (leftNode != null && leftNode.compareKey(key1) == 0) {
 	            return leftNode;
 	        } 
-	        else if (rightNode != null && rightNode.compareKey(key1) == 0) {
+		    
+		    
+		    if(curNode.compareKey(key1) < 0) {
+		    	rightNode = searchNodeHelper(curNode.getRight(), key1, key2, left, range);
+		    }
+		    
+	        if (rightNode != null && rightNode.compareKey(key1) == 0) {
 	            return rightNode;
 	        } 
 		}
