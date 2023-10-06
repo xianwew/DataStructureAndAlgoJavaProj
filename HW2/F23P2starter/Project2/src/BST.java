@@ -55,10 +55,12 @@ public class BST<T extends Comparable<? super T>> {
 		if (curNode.compareKey(key) < 0) {
 			curNode.setRight(deleteNodeHelper(curNode.getRight(), key));
 		} 
-		else if (curNode.compareKey(key) >= 0) {
+		else if (curNode.compareKey(key) > 0) {
+//			System.out.println("curNode val vs Key: " + curNode.compareKey(key));
 			curNode.setLeft(deleteNodeHelper(curNode.getLeft(), key));
 		} 
 		else {
+//			System.out.println("Found the node to be deleted!");
 			if (curNode.getLeft() == null) {
 				return curNode.getRight();
 			} 
@@ -82,10 +84,11 @@ public class BST<T extends Comparable<? super T>> {
 	    while(searchResult != null) {
 	        BSTNode<T> tmp = searchResult.getVal();
 	        if(tmp.getValue().id() == id) {
-	            if(String.valueOf(id) == String.valueOf(key)) {
+	            if(String.valueOf(id).equals(String.valueOf(key))) {
+	            	//System.out.println("Id to be deleted: " + searchResult.getVal().getValue().id());
 	                result = tmp.getValue();
 	            }
-	            deleteNodeHelper(searchResult.getVal(), key); 
+	            deleteNodeHelper(tmp, key); 
 	        }
 	        searchResult = searchResult.getNext();
 	    }

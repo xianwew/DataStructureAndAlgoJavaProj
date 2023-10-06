@@ -51,35 +51,53 @@ public class WorldDataBase {
 	        }
     	}
     	else {
+//    		System.out.println(seminar.toString());
     	    System.out.println("Insert FAILED - There is already a record with ID " + seminar.id());
     	    return;
     	}
     }
     
     public void search(int instruction, String[] data) {
-        if (instruction == 1) {
-        	LinkedList<Integer> result = idTree.searchNode(Integer.valueOf(data[0]), Integer.MIN_VALUE, false);
-        	if(result == null) {
-        		System.out.println("Search FAILED -- There is no record with ID " + data[0]);
-        	}
-        	else {
-        		System.out.println(result.getVal().getValue().toString());
-        	}
-        }
-        else if (instruction == 2) {
-        	costTree.searchNode(Integer.valueOf(data[0]), Integer.valueOf(data[1]), true);
-        }
-        else if (instruction == 3) {
-        	dateTree.searchNode(data[0], data[1], true);
-        }
-        else if (instruction == 4) {
-            System.out.println("Seminars matching keyword " + data[0] + ":");
-        	keywordTree.searchNode(data[0], "", false);
-        }
+    	switch (instruction) {
+    		case 1:
+    			LinkedList<Integer> resultId = idTree.searchNode(Integer.valueOf(data[0]), Integer.MIN_VALUE, false);
+            	if(resultId == null) {
+            		System.out.println("Search FAILED -- There is no record with ID " + data[0]);
+            	}
+            	else {
+            		System.out.println(resultId.getVal().getValue().toString());
+            	}
+            	break;
+    		case 2:
+    			LinkedList<Integer> resultCost = costTree.searchNode(Integer.valueOf(data[0]), Integer.valueOf(data[1]), true);
+    			while(resultCost != null) {
+    				System.out.println(resultCost.getVal().getValue().toString());
+    				resultCost = resultCost.getNext();
+    			}
+    			break;
+    		case 3:
+    			LinkedList<String> resultDate = dateTree.searchNode(data[0], data[1], true);
+    			while(resultDate != null) {
+    				System.out.println(resultDate.getVal().getValue().toString());
+    				resultDate = resultDate.getNext();
+    			}
+    			break;
+    		case 4:
+    			System.out.println("Seminars matching keyword " + data[0] + ":");
+    			LinkedList<String> resultKeyword = keywordTree.searchNode(data[0], "", false);
+    			while(resultKeyword != null) {
+    				System.out.println(resultKeyword.getVal().getValue().toString());
+    				resultKeyword = resultKeyword.getNext();
+    			}
+            	break;
+    		case 5:
+    			System.out.println("search location " + data[0] + " " + data[1] + " " + data[2]);
+    			break;
+    	}
     }
     
     public void delete(int id) {
-    	System.out.println("delete " + id);
+//    	System.out.println("delete " + id);
         Seminar tmp = null;
         tmp = idTree.deleteNode(id, id);
         if(tmp != null) {
@@ -96,25 +114,27 @@ public class WorldDataBase {
     }
     
     public void print(int instruction) {
-        if (instruction == 1) {
-        	System.out.println("ID Tree:");
-        	idTree.print();
-        }
-        else if (instruction == 2) {
-        	System.out.println("Date Tree:");
-        	dateTree.print();
-        }
-        else if (instruction == 3) {
-        	System.out.println("Keyword Tree:");
-        	keywordTree.print();
-        }
-        else if (instruction == 4) {
-        	System.out.println("Location Tree:");
-//        	locationTree.print();
-        }
-        else if (instruction == 5) {
-            System.out.println("Cost Tree:");
-            costTree.print();
-        }
+    	switch (instruction) {
+    		case 1:
+            	System.out.println("ID Tree:");
+            	idTree.print();
+            	break;
+    		case 2:
+            	System.out.println("Date Tree:");
+            	dateTree.print();
+            	break;
+    		case 3:
+            	System.out.println("Keyword Tree:");
+            	keywordTree.print();
+            	break;
+    		case 4:
+            	System.out.println("Location Tree:");
+//            	locationTree.print();
+            	break;
+    		case 5:
+                System.out.println("Cost Tree:");
+                costTree.print();
+                break;
+    	}
     }
 }
