@@ -59,9 +59,9 @@ public class Parser {
         result[0] = data1;
         result[1] = data2;
         result[2] = data3;
-    	System.out.println("data1: " + data1);
-    	System.out.println("data2: " + data2);
-    	System.out.println("data3: " + data3);
+//    	System.out.println("data1: " + data1);
+//    	System.out.println("data2: " + data2);
+//    	System.out.println("data3: " + data3);
         return result;
     }
     

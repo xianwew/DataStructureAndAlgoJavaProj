@@ -149,7 +149,7 @@ public class BST<T extends Comparable<? super T>> {
 		BSTNode<T> curNode = root;
 		LinkedList<T> result = curList;
 		
-		while(searchNodeHelper(curNode, key1, key2, true)!=null) {
+		while(searchNodeHelper(curNode, key1, key2, true) != null) {
 		    LinkedList<T> tmp = new LinkedList<T>();
 		    curNode = searchNodeHelper(curNode,key1, key2, true);
 		    tmp.setVal(curNode);
@@ -159,7 +159,7 @@ public class BST<T extends Comparable<? super T>> {
 		}
 		curNode = root;
 		if(String.valueOf(key2) != "" && String.valueOf(key2) != String.valueOf(Integer.MIN_VALUE)) {
-		    while(searchNodeHelper(curNode, key1, key2, false)!=null) {
+		    while(searchNodeHelper(curNode, key1, key2, false) != null) {
 	            LinkedList<T> tmp = new LinkedList<T>();
 	            curNode = searchNodeHelper(curNode,key1, key2, false);
 	            tmp.setVal(curNode);
