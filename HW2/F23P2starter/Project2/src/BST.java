@@ -82,7 +82,7 @@ public class BST<T extends Comparable<? super T>> {
 	    while(searchResult != null) {
 	        BSTNode<T> tmp = searchResult.getVal();
 	        if(tmp.getValue().id() == id) {
-	            if(String.valueOf(id) == key) {
+	            if(String.valueOf(id) == String.valueOf(key)) {
 	                result = tmp.getValue();
 	            }
 	            deleteNodeHelper(searchResult.getVal(), key); 

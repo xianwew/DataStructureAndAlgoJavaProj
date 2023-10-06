@@ -19,12 +19,16 @@ public class WorldDataBase {
         switch (instructionType) {
             case 1:
                 insert(seminar);
+                break;
             case 2:
                 search(instruction, data);
+                break;
             case 3:
                 delete(id);
+                break;
             case 4:
                 print(instruction);
+                break;
         }
     }
     
@@ -56,10 +60,12 @@ public class WorldDataBase {
     public void delete(int id) {
         Seminar tmp = null;
         tmp = idTree.deleteNode(id, id);
-        costTree.deleteNode(tmp.cost(), id);
-        dateTree.deleteNode(tmp.date(), id);
-        for(String s : tmp.keywords()) {
-            keywordTree.deleteNode(s, id);
+        if(tmp != null) {
+        	costTree.deleteNode(tmp.cost(), id);
+	        dateTree.deleteNode(tmp.date(), id);
+	        for(String s : tmp.keywords()) {
+	            keywordTree.deleteNode(s, id);
+	        }
         }
     }
     
