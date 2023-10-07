@@ -49,7 +49,8 @@ public class WorldDataBase {
 	        for(String s : seminar.keywords()) {
 	            keywordTree.insertNode(s, seminar);
 	        }
-    	}
+	        locationTree.insert(seminar);    	
+	    }
     	else {
     		System.out.println(seminar.toString());
     	    System.out.println("Insert FAILED - There is already a record with ID " + seminar.id());
@@ -134,7 +135,7 @@ public class WorldDataBase {
             	break;
     		case 4:
             	System.out.println("Location Tree:");
-//            	locationTree.print();
+            	locationTree.print();
             	break;
     		case 5:
                 System.out.println("Cost Tree:");

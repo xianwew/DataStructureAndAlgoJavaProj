@@ -42,8 +42,8 @@ public class BinNodeLeaf implements BinNode{
 	}
 	
 	public BinNodeLeaf(Seminar seminarLocal) {
-		this.setSeminar(seminarLocal);
 		this.sl = new seminarList();
+		sl.setSeminar(seminarLocal);
 	}
 	
 	public boolean isLeaf() {
@@ -80,10 +80,10 @@ public class BinNodeLeaf implements BinNode{
 		BinNodeInternal tmp = new BinNodeInternal();
 		curList = sl;
 		while(curList != null) {
-		    tmp.insert(x, y, curList.getSeminar(), level, xWidth, yWidth);
+		    tmp.insert(x, y, curList.getSeminar(), level + 1, xWidth, yWidth);
 		    curList = curList.getNext();
 		}
-		tmp.insert(x, y, seminar, level, xWidth, yWidth);
+		tmp.insert(x, y, seminar, level + 1, xWidth, yWidth);
 		return this;
 	}
 
@@ -96,5 +96,15 @@ public class BinNodeLeaf implements BinNode{
 	}
 
 	public void print(int level) {	
+	    for (int i = 0; i < level; i++) {
+            System.out.print("  ");
+        }
+	    String s = "";
+	    seminarList curList = sl;
+        while(curList != null) {
+            s += " " + curList.getSeminar().id();
+            curList = curList.getNext();
+        }
+        System.out.println("Leaf with" + count + " objects: " + s);
 	}
 }

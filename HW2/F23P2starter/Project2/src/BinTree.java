@@ -8,7 +8,7 @@ public class BinTree {
     }
     
     public void insert(Seminar seminar) {
-    	root = root.insert(worldSize, worldSize, seminar, worldSize, worldSize, worldSize)
+    	root = root.insert(0, worldSize - 1, seminar, 0, worldSize, worldSize);
     }
     
     public void delete(int id) {
@@ -19,9 +19,21 @@ public class BinTree {
     	
     }
     
+    public int printHelper(int level, BinNode node) {
+        node.print(level);
+        int leftCount = 0;
+        int rightCount = 0;
+        if(!node.isEmpty() && !node.isLeaf()) {
+            BinNodeInternal tmp = (BinNodeInternal)node;
+            leftCount = printHelper(level, tmp.getLeft());
+            rightCount = printHelper(level, tmp.getRight());
+        } 
+        return 1 + leftCount + rightCount;
+    }
+    
     public int print() {
-    	
-    	return 0;
+        int count = printHelper(0, root);
+    	return count;
     }
     
     

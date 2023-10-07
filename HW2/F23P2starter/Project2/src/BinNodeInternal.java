@@ -18,6 +18,26 @@ public class BinNodeInternal implements BinNode {
     public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
         // modify left and right node
     	// x, y <= mid point, go left, > go right. left = left.insert
+        int division = level % 2;
+        if(division == 0 && level != 0) {
+            xWidth /= 2;
+            if(seminar.x() <= xWidth) {
+                left =  left.insert(x, y, seminar, level, xWidth, yWidth);
+            }
+            else {
+                right = right.insert(x + xWidth, y, seminar, level, xWidth, yWidth);
+            }
+        }
+        else if(division == 1) {
+            yWidth /= 2;
+            if(seminar.y() <= yWidth) {
+                left = left.insert(x, y, seminar, level, xWidth, yWidth);
+            }
+            else {
+                right = right.insert(x, y + yWidth, seminar, level, xWidth, yWidth);
+            }
+        }
+        
         
     	return this;
     }
@@ -31,7 +51,10 @@ public class BinNodeInternal implements BinNode {
     }
 
     public void print(int level) {
-        
+        for (int i = 0; i < level; i++) {
+            System.out.print("  ");
+        }
+        System.out.println("I");
     }
 
 	public BinNode getLeft() {
