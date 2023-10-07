@@ -1,5 +1,7 @@
 public class BinNodeInternal implements BinNode {
-
+	private BinNode left;
+	private BinNode right;
+	
     public boolean isLeaf() {
         return false;
     }
@@ -23,6 +25,22 @@ public class BinNodeInternal implements BinNode {
     public void print(int level) {
         
     }
+
+	public BinNode getLeft() {
+		return left;
+	}
+
+	public void setLeft(BinNode left) {
+		this.left = left;
+	}
+
+	public BinNode getRight() {
+		return right;
+	}
+
+	public void setRight(BinNode right) {
+		this.right = right;
+	}
     
     
 }

@@ -136,7 +136,7 @@ public class Parser {
     public void processSeminars(
             String[] args, WorldDataBase dataBase) {
         try {
-            File commandFile = new File(args[3]);
+            File commandFile = new File(args[1]);
             Scanner reader = new Scanner(commandFile);
             int instruction = 0;
             if (reader.hasNextLine()) {

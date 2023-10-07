@@ -1,8 +1,18 @@
 public class BinNodeLeaf implements BinNode{
 	private Seminar seminar;
+	private int count = 0;
+	
+	
+	public int getCount () {
+		return count;
+	}
+	
+	public void setCount (int countLoc) {
+		this.count = countLoc;
+	}
 	
 	public BinNodeLeaf(Seminar seminarLocal) {
-		this.seminar = seminarLocal;
+		this.setSeminar(seminarLocal);
 	}
 	
 	public boolean isLeaf() {
@@ -26,6 +36,14 @@ public class BinNodeLeaf implements BinNode{
 	}
 
 	public void print(int level) {	
+	}
+
+	public Seminar getSeminar() {
+		return seminar;
+	}
+
+	public void setSeminar(Seminar seminar) {
+		this.seminar = seminar;
 	}
 
 }

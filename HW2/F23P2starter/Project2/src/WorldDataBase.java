@@ -11,7 +11,7 @@ public class WorldDataBase {
         this.costTree = new BST<Integer>();
         this.dateTree = new BST<String>();
         this.keywordTree = new BST<String>();
-        this.locationTree = new BinTree();
+        this.locationTree = new BinTree(worldSizeLocal);
         this.worldSize = worldSizeLocal;
     }
     
