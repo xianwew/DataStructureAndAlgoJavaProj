@@ -1,6 +1,36 @@
 public class BinNodeLeaf implements BinNode{
-	private Seminar seminar;
+    public class seminarList{
+        private Seminar seminar = null;
+        private seminarList next = null; 
+        private seminarList prev = null;
+        
+        public Seminar getSeminar() {
+            return seminar;
+        }
+        
+        public void setSeminar(Seminar seminar) {
+            this.seminar = seminar;
+        } 
+        
+        public seminarList getNext() {
+            return next;
+        }
+        
+        public void setNext(seminarList next) {
+            this.next = next;
+        }
+        
+        public seminarList getPrev() {
+            return prev;
+        }
+        
+        public void setPrev(seminarList prev) {
+            this.prev = prev;
+        }
+    }
+    
 	private int count = 0;
+	private seminarList sl;
 	//List with seminars
 	
 	public int getCount () {
@@ -13,6 +43,7 @@ public class BinNodeLeaf implements BinNode{
 	
 	public BinNodeLeaf(Seminar seminarLocal) {
 		this.setSeminar(seminarLocal);
+		this.sl = new seminarList();
 	}
 	
 	public boolean isLeaf() {
@@ -28,14 +59,34 @@ public class BinNodeLeaf implements BinNode{
 			//if x, y equals existing seminar
 			//increase count
 			//insert to the list
-		
-		//case 2
-			//create internal node
-			//insert all seminars from the list to the same internal node 
-			//insert the seminar to the internal node
-			//return the internal node
-			
-		return this;
+	    seminarList curList = sl;
+		if(curList.getSeminar() != null && curList.getSeminar().x() == seminar.x() && curList.getSeminar().y()==seminar.y()) {
+		    while(curList.getNext() != null) {
+		        curList = curList.getNext();
+		    }
+		    seminarList tmp = new seminarList();
+		    tmp.setSeminar(seminar);
+		    curList.setNext(tmp);
+		    return this;
+		}
+		else if(curList.getSeminar() == null) {
+            curList.setSeminar(seminar);
+            return this;
+		}
+		 
+        //case 2
+            //create internal node
+            //insert all seminars from the list to the same internal node 
+            //insert the seminar to the internal node
+            //return the internal node
+		BinNodeInternal tmp = new BinNodeInternal();
+		curList = sl;
+		while(curList != null) {
+		    tmp.insert(x, y, curList.getSeminar(), level, xWidth, yWidth);
+		    curList = curList.getNext();
+		}
+		tmp.insert(x, y, seminar, level, xWidth, yWidth);
+		return tmp;
 	}
 
 	public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
@@ -48,13 +99,4 @@ public class BinNodeLeaf implements BinNode{
 
 	public void print(int level) {	
 	}
-
-	public Seminar getSeminar() {
-		return seminar;
-	}
-
-	public void setSeminar(Seminar seminar) {
-		this.seminar = seminar;
-	}
-
 }

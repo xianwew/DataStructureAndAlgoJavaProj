@@ -18,6 +18,7 @@ public class BinNodeInternal implements BinNode {
     public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
         // modify left and right node
     	// x, y <= mid point, go left, > go right. left = left.insert
+        
     	return this;
     }
 
