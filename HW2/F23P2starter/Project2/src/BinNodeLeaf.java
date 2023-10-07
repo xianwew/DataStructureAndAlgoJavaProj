@@ -67,11 +67,9 @@ public class BinNodeLeaf implements BinNode{
 		    seminarList tmp = new seminarList();
 		    tmp.setSeminar(seminar);
 		    curList.setNext(tmp);
-		    return this;
 		}
 		else if(curList.getSeminar() == null) {
             curList.setSeminar(seminar);
-            return this;
 		}
 		 
         //case 2
@@ -86,7 +84,7 @@ public class BinNodeLeaf implements BinNode{
 		    curList = curList.getNext();
 		}
 		tmp.insert(x, y, seminar, level, xWidth, yWidth);
-		return tmp;
+		return this;
 	}
 
 	public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
