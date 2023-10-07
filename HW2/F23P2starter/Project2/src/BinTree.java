@@ -4,24 +4,11 @@ public class BinTree {
 	
     public BinTree(int worldSizeLocal) {
     	this.worldSize = worldSizeLocal;
-    	this.root = new BinNodeEmpty();
-    }
-    
-    public void insertHelper(Seminar seminar, int level, int xWidth, int yWidth, int x, int y) {
-        if(level % 2 == 0) {
-            xWidth = xWidth / 2;
-            
-        }
+    	root = BinNodeEmpty.getNode();
     }
     
     public void insert(Seminar seminar) {
-    	if(root.isEmpty() == true) {
-    	    root = new BinNodeLeaf(seminar);
-//    	   insert sth
-    	}
-    	else {
-    	   insertHelper(seminar, 0, worldSize-1, worldSize - 1, 0, worldSize-1);
-    	}
+    	root = root.insert(worldSize, worldSize, seminar, worldSize, worldSize, worldSize)
     }
     
     public void delete(int id) {
@@ -30,6 +17,11 @@ public class BinTree {
 	
     public void search(int x, int y) {
     	
+    }
+    
+    public int print() {
+    	
+    	return 0;
     }
     
     

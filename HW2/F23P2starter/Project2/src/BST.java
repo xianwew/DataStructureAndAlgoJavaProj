@@ -56,7 +56,7 @@ public class BST<T extends Comparable<? super T>> {
 		if (curNode == null) {
 			return null;
 		}
-
+		
 		if (curNode.compareKey(key) < 0) {
 			curNode.setRight(deleteNodeHelper(curNode.getRight(), key));
 		} 

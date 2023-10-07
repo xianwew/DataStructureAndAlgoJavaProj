@@ -10,8 +10,15 @@ public class BinNodeInternal implements BinNode {
         return false;
     }
 
+    public BinNodeInternal(){
+    	left = BinNodeEmpty.getNode();
+    	right = BinNodeEmpty.getNode();
+    }
+    
     public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
-        return null;
+        // modify left and right node
+    	// x, y <= mid point, go left, > go right. left = left.insert
+    	return this;
     }
 
     public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
