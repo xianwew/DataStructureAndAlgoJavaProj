@@ -12,7 +12,7 @@ public class BinTree {
     }
     
     public void delete(Seminar seminar, int id) {
-    	root = root.delete(0, worldSize - 1, seminar, 0, worldSize, worldSize);
+    	//root = root.delete(0, worldSize - 1, seminar, 0, worldSize, worldSize);
     }
 	
     public int searchHelper(int x, int y, int radius, BinNode node, int level) {
@@ -56,11 +56,8 @@ public class BinTree {
     }
     
     public int print() {
-        if(!(root.isEmpty() && root.isLeaf())) {
-            int count = printHelper(0, root);
-            return count;
-        }
-        return 0;
+        int count = printHelper(0, root);
+        return count;
     }
     
     
