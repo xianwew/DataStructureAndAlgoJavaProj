@@ -41,6 +41,10 @@ public class BinNodeInternal implements BinNode {
     }
 
     public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
+        int mod = level % 2;
+        if(mod == 0) {
+            
+        }
         return null;
     }
 

@@ -98,6 +98,8 @@ public class WorldDataBase {
             	break;
     		case 5:
     			System.out.println("search location " + data[0] + " " + data[1] + " " + data[2]);
+    			int count = locationTree.search(Integer.valueOf(data[0]), Integer.valueOf(data[1]), Integer.valueOf(data[2]));
+    			System.out.println(count + " nodes visited in this search");
     			break;
     	}
     }
@@ -112,6 +114,7 @@ public class WorldDataBase {
 	        for(String s : tmp.keywords()) {
 	            keywordTree.deleteNode(s, id);
 	        }
+	        locationTree.delete(tmp, id);
 	        System.out.println("Record with ID " + id + " successfully deleted from the database");
         }
         else {

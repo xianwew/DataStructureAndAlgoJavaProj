@@ -1,30 +1,12 @@
 public class BinNodeLeaf implements BinNode{
-    public class seminarList{
-        private Seminar seminar = null;
-        private seminarList next = null; 
-        
-        public Seminar getSeminar() {
-            return seminar;
-        }
-        
-        public void setSeminar(Seminar seminar) {
-            this.seminar = seminar;
-        } 
-        
-        public seminarList getNext() {
-            return next;
-        }
-        
-        public void setNext(seminarList next) {
-            this.next = next;
-        }
-    }
-
-    
-	private seminarList sl;
+	private SeminarList sl;
+	
+	public SeminarList getSeminarList() {
+	    return sl;
+	}
 	
 	public BinNodeLeaf(Seminar seminarLocal) {
-		this.sl = new seminarList();
+		this.sl = new SeminarList();
 		sl.setSeminar(seminarLocal);
 	}
 	
@@ -41,12 +23,12 @@ public class BinNodeLeaf implements BinNode{
 			//if x, y equals existing seminar
 			//increase count
 			//insert to the list
-	    seminarList curList = sl;
+	    SeminarList curList = sl;
 		if(curList.getSeminar() != null && curList.getSeminar().x() == seminar.x() && curList.getSeminar().y()==seminar.y()) {
 		    while(curList.getNext() != null) {
 		        curList = curList.getNext();
 		    }
-		    seminarList tmp = new seminarList();
+		    SeminarList tmp = new SeminarList();
 		    tmp.setSeminar(seminar);
 		    curList.setNext(tmp);
 		    return this;
@@ -84,7 +66,7 @@ public class BinNodeLeaf implements BinNode{
             System.out.print("  ");
         }
 	    String s = "";
-	    seminarList curList = sl;
+	    SeminarList curList = sl;
 	    int count = 0;
         while(curList != null) {
             s += " " + curList.getSeminar().id();
