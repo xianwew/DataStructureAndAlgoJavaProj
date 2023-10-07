@@ -18,19 +18,19 @@ public class BinNodeInternal implements BinNode {
     public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
         // modify left and right node
     	// x, y <= mid point, go left, > go right. left = left.insert
-        int division = level % 2;
-        if(division == 0 && level != 0) {
+        int mod = level % 2;
+        if(mod == 0) {
             xWidth /= 2;
-            if(seminar.x() <= xWidth) {
+            if(seminar.x() <= xWidth + x) {
                 left =  left.insert(x, y, seminar, level, xWidth, yWidth);
             }
             else {
                 right = right.insert(x + xWidth, y, seminar, level, xWidth, yWidth);
             }
         }
-        else if(division == 1) {
+        else {
             yWidth /= 2;
-            if(seminar.y() <= yWidth) {
+            if(seminar.y() <= yWidth + y) {
                 left = left.insert(x, y, seminar, level, xWidth, yWidth);
             }
             else {
