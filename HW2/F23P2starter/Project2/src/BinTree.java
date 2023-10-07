@@ -7,8 +7,11 @@ public class BinTree {
     	this.root = new BinNodeEmpty();
     }
     
-    public void insertHelper(Seminar seminar) {
-        
+    public void insertHelper(Seminar seminar, int level, int xWidth, int yWidth, int x, int y) {
+        if(level % 2 == 0) {
+            xWidth = xWidth / 2;
+            
+        }
     }
     
     public void insert(Seminar seminar) {
@@ -16,7 +19,9 @@ public class BinTree {
     	    root = new BinNodeLeaf(seminar);
 //    	   insert sth
     	}
-    	
+    	else {
+    	   insertHelper(seminar, 0, worldSize-1, worldSize - 1, 0, worldSize-1);
+    	}
     }
     
     public void delete(int id) {
