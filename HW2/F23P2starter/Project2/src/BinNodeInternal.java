@@ -48,8 +48,11 @@ public class BinNodeInternal implements BinNode {
         return null;
     }
 
-    public int search(int circuleX, int circuleY, int level, int xWidth, int yWidth) {
-        return 0;
+    public int search(int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {
+        int mod = level / 2;
+        int leftVisited = getLeft().search(circuleX, circuleY, radius, level, xWidth, yWidth);
+        int rightVisited = getRight().search(circuleX, circuleY, radius, level, xWidth, yWidth);
+        return 1 + leftVisited + rightVisited;
     }
 
     public void print(int level) {
