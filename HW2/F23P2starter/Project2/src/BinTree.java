@@ -24,9 +24,9 @@ public class BinTree {
         int leftCount = 0;
         int rightCount = 0;
         if(!node.isEmpty() && !node.isLeaf()) {
-            BinNodeInternal tmp = (BinNodeInternal)node;
-            leftCount = printHelper(level, tmp.getLeft());
-            rightCount = printHelper(level, tmp.getRight());
+            BinNodeInternal tmp =  (BinNodeInternal) node;
+            leftCount = printHelper(level + 1, tmp.getLeft());
+            rightCount = printHelper(level + 1, tmp.getRight());
         } 
         return 1 + leftCount + rightCount;
     }

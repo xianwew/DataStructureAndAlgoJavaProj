@@ -2,7 +2,6 @@ public class BinNodeLeaf implements BinNode{
     public class seminarList{
         private Seminar seminar = null;
         private seminarList next = null; 
-        private seminarList prev = null;
         
         public Seminar getSeminar() {
             return seminar;
@@ -19,27 +18,10 @@ public class BinNodeLeaf implements BinNode{
         public void setNext(seminarList next) {
             this.next = next;
         }
-        
-        public seminarList getPrev() {
-            return prev;
-        }
-        
-        public void setPrev(seminarList prev) {
-            this.prev = prev;
-        }
     }
+
     
-	private int count = 0;
 	private seminarList sl;
-	//List with seminars
-	
-	public int getCount () {
-		return count;
-	}
-	
-	public void setCount (int countLoc) {
-		this.count = countLoc;
-	}
 	
 	public BinNodeLeaf(Seminar seminarLocal) {
 		this.sl = new seminarList();
@@ -47,7 +29,7 @@ public class BinNodeLeaf implements BinNode{
 	}
 	
 	public boolean isLeaf() {
-		return false;
+		return true;
 	}
 
 	public boolean isEmpty() {
@@ -82,10 +64,10 @@ public class BinNodeLeaf implements BinNode{
 		BinNodeInternal tmp = new BinNodeInternal();
 		curList = sl;
 		while(curList != null) {
-		    tmp.insert(x, y, curList.getSeminar(), level + 1, xWidth, yWidth);
+		    tmp.insert(x, y, curList.getSeminar(), level, xWidth, yWidth);
 		    curList = curList.getNext();
 		}
-		tmp.insert(x, y, seminar, level + 1, xWidth, yWidth);
+		tmp.insert(x, y, seminar, level, xWidth, yWidth);
 		return tmp;
 	}
 
@@ -103,10 +85,12 @@ public class BinNodeLeaf implements BinNode{
         }
 	    String s = "";
 	    seminarList curList = sl;
+	    int count = 0;
         while(curList != null) {
             s += " " + curList.getSeminar().id();
             curList = curList.getNext();
+            count++;
         }
-        System.out.println("Leaf with" + count + " objects: " + s);
+        System.out.println("Leaf with " + count + " objects:" + s);
 	}
 }

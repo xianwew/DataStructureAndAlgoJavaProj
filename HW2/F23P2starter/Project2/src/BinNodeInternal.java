@@ -21,24 +21,22 @@ public class BinNodeInternal implements BinNode {
         int mod = level % 2;
         if(mod == 0) {
             xWidth /= 2;
-            if(seminar.x() <= xWidth + x) {
-                left =  left.insert(x, y, seminar, level, xWidth, yWidth);
+            if(seminar.x() < xWidth + x) {
+                left =  left.insert(x, y, seminar, level + 1, xWidth, yWidth);
             }
             else {
-                right = right.insert(x + xWidth, y, seminar, level, xWidth, yWidth);
+                right = right.insert(x + xWidth, y, seminar, level + 1, xWidth, yWidth);
             }
         }
         else {
             yWidth /= 2;
-            if(seminar.y() <= yWidth + y) {
-                left = left.insert(x, y, seminar, level, xWidth, yWidth);
+            if(seminar.y() < yWidth + y) {
+                left = left.insert(x, y, seminar, level + 1, xWidth, yWidth);
             }
             else {
-                right = right.insert(x, y + yWidth, seminar, level, xWidth, yWidth);
+                right = right.insert(x, y + yWidth, seminar, level + 1, xWidth, yWidth);
             }
-        }
-        
-        
+        }   
     	return this;
     }
 
@@ -71,7 +69,5 @@ public class BinNodeInternal implements BinNode {
 
 	public void setRight(BinNode right) {
 		this.right = right;
-	}
-    
-    
+	}  
 }
