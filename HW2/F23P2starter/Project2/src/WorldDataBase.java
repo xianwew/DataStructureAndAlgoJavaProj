@@ -114,7 +114,7 @@ public class WorldDataBase {
 	        for(String s : tmp.keywords()) {
 	            keywordTree.deleteNode(s, id);
 	        }
-	        locationTree.delete(tmp, id);
+	        locationTree.delete(tmp);
 	        System.out.println("Record with ID " + id + " successfully deleted from the database");
         }
         else {

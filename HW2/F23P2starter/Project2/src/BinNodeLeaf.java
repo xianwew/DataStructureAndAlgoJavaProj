@@ -7,7 +7,9 @@ public class BinNodeLeaf implements BinNode{
 	
 	public BinNodeLeaf(Seminar seminarLocal) {
 		this.sl = new SeminarList();
-		sl.setSeminar(seminarLocal);
+		SeminarList tmp = new SeminarList();
+		tmp.setSeminar(seminarLocal);
+		sl.setNext(tmp);
 	}
 	
 	public boolean isLeaf() {
@@ -23,7 +25,7 @@ public class BinNodeLeaf implements BinNode{
 			//if x, y equals existing seminar
 			//increase count
 			//insert to the list
-	    SeminarList curList = sl;
+	    SeminarList curList = sl.getNext();
 		if(curList.getSeminar() != null && curList.getSeminar().x() == seminar.x() && curList.getSeminar().y()==seminar.y()) {
 		    while(curList.getNext() != null) {
 		        curList = curList.getNext();
@@ -44,7 +46,7 @@ public class BinNodeLeaf implements BinNode{
             //insert the seminar to the internal node
             //return the internal node
 		BinNodeInternal tmp = new BinNodeInternal();
-		curList = sl;
+		curList = sl.getNext();
 		while(curList != null) {
 		    tmp.insert(x, y, curList.getSeminar(), level, xWidth, yWidth);
 		    curList = curList.getNext();
@@ -54,11 +56,26 @@ public class BinNodeLeaf implements BinNode{
 	}
 
 	public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
+	    SeminarList tmp = sl.getNext();
+	    SeminarList prev = sl;
+	    while(tmp != null) {
+	        if(tmp.getSeminar().id() == seminar.id()) {
+	            tmp = tmp.getNext();
+	            prev.setNext(tmp);
+	        }
+	        if(tmp != null) {
+	            tmp = tmp.getNext();
+	        }
+	        prev = tmp;
+	    }
+	    if(sl.getNext() != null && sl.getNext().getSeminar() != null) {
+	        return this;
+	    }
 		return BinNodeEmpty.getNode();
 	}
 
 	public int search(int x, int y, int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {
-	    SeminarList tmp = sl;
+	    SeminarList tmp = sl.getNext();
 	    if(tmp != null && tmp.getSeminar() != null && Math.pow(tmp.getSeminar().x() - circuleX, 2) + Math.pow(tmp.getSeminar().y() - circuleY, 2) <= radius * radius) {
             while(tmp != null) {
                 System.out.println("Found a record with key value " + tmp.getSeminar().id() + " at " + tmp.getSeminar().x() + ", " + tmp.getSeminar().y());
@@ -73,7 +90,7 @@ public class BinNodeLeaf implements BinNode{
             System.out.print("  ");
         }
 	    String s = "";
-	    SeminarList curList = sl;
+	    SeminarList curList = sl.getNext();
 	    int count = 0;
         while(curList != null) {
             s += " " + curList.getSeminar().id();

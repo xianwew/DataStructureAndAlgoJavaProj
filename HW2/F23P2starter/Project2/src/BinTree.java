@@ -11,7 +11,7 @@ public class BinTree {
     	root = root.insert(0, worldSize - 1, seminar, 0, worldSize, worldSize);
     }
     
-    public void delete(Seminar seminar, int id) {
+    public void delete(Seminar seminar) {
     	root = root.delete(0, worldSize - 1, seminar, 0, worldSize, worldSize);
     }
     
