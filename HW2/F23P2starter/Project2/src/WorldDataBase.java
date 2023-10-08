@@ -97,7 +97,7 @@ public class WorldDataBase {
     			}
             	break;
     		case 5:
-    			System.out.println("search location " + data[0] + " " + data[1] + " " + data[2]);
+    			System.out.println("Seminars within " + data[2] + " units of " + data[0] + ", " + data[1] + ":");
     			int count = locationTree.search(Integer.valueOf(data[0]), Integer.valueOf(data[1]), Integer.valueOf(data[2]));
     			System.out.println(count + " nodes visited in this search");
     			break;
