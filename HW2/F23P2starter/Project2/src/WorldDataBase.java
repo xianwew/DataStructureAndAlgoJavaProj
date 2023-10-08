@@ -138,7 +138,7 @@ public class WorldDataBase {
             	break;
     		case 4:
             	System.out.println("Location Tree:");
-            	locationTree.print();
+            	locationTree.print(0, locationTree.getRoot());
             	break;
     		case 5:
                 System.out.println("Cost Tree:");

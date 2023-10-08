@@ -2,6 +2,10 @@ public class BinTree {
 	int worldSize = 0;
 	private BinNode root;
 	
+	public BinNode getRoot() {
+		return this.root;
+	}
+	
     public BinTree(int worldSizeLocal) {
     	this.worldSize = worldSizeLocal;
     	root = BinNodeEmpty.getNode();
@@ -19,22 +23,16 @@ public class BinTree {
         return root.search(0, 0, circuleX, circuleY, radius, 0, worldSize, worldSize);
     }
     
-    public int printHelper(int level, BinNode node) {
+    public int print(int level, BinNode node) {
         node.print(level);
         int leftCount = 0;
         int rightCount = 0;
         if(!node.isEmpty() && !node.isLeaf()) {
             BinNodeInternal tmp =  (BinNodeInternal) node;
-            leftCount = printHelper(level + 1, tmp.getLeft());
-            rightCount = printHelper(level + 1, tmp.getRight());
+            leftCount = print(level + 1, tmp.getLeft());
+            rightCount = print(level + 1, tmp.getRight());
         } 
         return 1 + leftCount + rightCount;
-    }
-    
-    public int print() {
-        int count = printHelper(0, root);
-        return count;
-    }
-    
+    } 
     
 }
