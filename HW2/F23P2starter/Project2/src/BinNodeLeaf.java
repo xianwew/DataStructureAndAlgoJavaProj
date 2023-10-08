@@ -54,7 +54,7 @@ public class BinNodeLeaf implements BinNode{
 	}
 
 	public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
-		return null;
+		return BinNodeEmpty.getNode();
 	}
 
 	public int search(int x, int y, int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {

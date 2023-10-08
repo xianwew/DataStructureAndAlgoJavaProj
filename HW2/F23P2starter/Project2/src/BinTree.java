@@ -12,7 +12,7 @@ public class BinTree {
     }
     
     public void delete(Seminar seminar, int id) {
-    	//root = root.delete(0, worldSize - 1, seminar, 0, worldSize, worldSize);
+    	root = root.delete(0, worldSize - 1, seminar, 0, worldSize, worldSize);
     }
     
     public int search(int circuleX, int circuleY, int radius) {
