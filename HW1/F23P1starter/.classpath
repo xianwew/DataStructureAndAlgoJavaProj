@@ -7,6 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/学习/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/lib/student.jar"/>
+	<classpathentry kind="lib" path="H:/D_Vol_Origin/360MoveData/Users/Xianwei/Desktop/Study/Graduate/Fall2023/CS5040/DataStructureAndAlgoJavaProj/HW1/F23P1starter/lib/student.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

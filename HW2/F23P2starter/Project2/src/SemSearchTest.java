@@ -1,3 +1,8 @@
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import student.TestCase;
 
 /**
@@ -21,6 +26,22 @@ public class SemSearchTest extends TestCase {
         SemSearch sem = new SemSearch();
         assertNotNull(sem);
         SemSearch.main(null);
+        
+        String filePath = "src/P2Sample_output.txt"; 
+
+        String refOut = "";
+        try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+            refOut = new String(bytes, StandardCharsets.UTF_8);
+        } 
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        SemSearch.main(new String[]{"128", "src/P2Sample_input.txt"});
+        String printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
+        
     }
 }
 
