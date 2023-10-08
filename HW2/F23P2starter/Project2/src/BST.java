@@ -1,26 +1,64 @@
+/**
+ * Binary Search Tree (BST) class for storing key-value pairs.
+ *
+ * @author xianwei & jiren
+ * @version Oct 2023
+ * @param <T> java generic
+ */
 public class BST<T extends Comparable<? super T>> {
     BSTNode<T> root;
     private int visitedCount = 0;
 
+    /**
+     * Get the count of nodes visited during the last operation.
+     *
+     * @return The number of nodes visited.
+     */
     public int getVisitedCount() {
         return this.visitedCount;
     }
 
+    /**
+     * Get the root node of the BST.
+     *
+     * @return The root node.
+     */
     public BSTNode<T> getRoot() {
         return this.root;
     }
 
+    /**
+     * Set the root node of the BST.
+     *
+     * @param node The new root node.
+     */
     public void setRoot(BSTNode<T> node) {
         this.root = node;
     }
 
+    /**
+     * Create an empty BST.
+     */
     public BST() {
     }
 
+    /**
+     * Create a BST with a root node containing the specified key and value.
+     *
+     * @param key   The key of the root node.
+     * @param value The value associated with the key.
+     */
     public BST(T key, Seminar value) {
         this.root = new BSTNode<T>(key, value);
     }
 
+    /**
+     * Insert a key-value pair into the BST.
+     *
+     * @param key The key to insert.
+     * @param val The value associated with the key.
+     * @return The root node of the modified BST.
+     */
     private void insertHelper(BSTNode<T> curNode, T key, Seminar val,
             BSTNode<T> parent) {
         if (curNode == null) {
@@ -41,6 +79,14 @@ public class BST<T extends Comparable<? super T>> {
         }
     }
 
+    /**
+     * Inserts a node with the specified key and value into the Binary Search
+     * Tree (BST).
+     *
+     * @param key The key to be inserted.
+     * @param val The value associated with the key.
+     * @return The root node of the BST after the insertion.
+     */
     public BSTNode<T> insertNode(T key, Seminar val) {
         if (root != null && (root.compareKey(key) < 0)) {
             insertHelper(root.getRight(), key, val, root);
@@ -54,6 +100,13 @@ public class BST<T extends Comparable<? super T>> {
         return root;
     }
 
+    /**
+     * Delete a node with a specific key and ID from the BST.
+     *
+     * @param key The key to delete.
+     * @param curNode current node
+     * @return The deleted Seminar or null if not found.
+     */
     public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key) {
         if (curNode == null) {
             return null;
@@ -83,6 +136,14 @@ public class BST<T extends Comparable<? super T>> {
         return curNode;
     }
 
+    /**
+     * Deletes a node with the specified key and ID from the Binary Search Tree
+     * (BST).
+     *
+     * @param key The key to match for deletion.
+     * @param id  The ID to match for deletion.
+     * @return The deleted Seminar object if found, or null if not found.
+     */
     public Seminar deleteNode(T key, int id) {
         LinkedList<T> searchResult = searchNode(key, null, false);
         Seminar result = null;
@@ -99,6 +160,12 @@ public class BST<T extends Comparable<? super T>> {
         return result;
     }
 
+    /**
+     * Adds a BSTNode to the end of a linked list.
+     *
+     * @param nodeToBeAdded The BSTNode to add to the linked list.
+     * @param head          The head of the linked list.
+     */
     public void addToLinkedList(BSTNode<T> nodeToBeAdded, LinkedList<T> head) {
         LinkedList<T> curList = head;
         while (curList.getNext() != null) {
@@ -107,6 +174,17 @@ public class BST<T extends Comparable<? super T>> {
         curList.setNext(new LinkedList<T>(nodeToBeAdded));
     }
 
+    /**
+     * Search for nodes within a specified range or matching a key.
+     *
+     * @param key1  The first key for range search or exact match.
+     * @param key2  The second key for range search (ignored if not in range
+     *              search).
+     * @param curNode current node
+     * @param range If true, perform a range search; if false, perform an exact
+     *              match search.
+     * @return A linked list of matching nodes or null if none found.
+     */
     public int searchNodeHelper(BSTNode<T> curNode, T key1, T key2,
             boolean range, LinkedList<T> head) {
         if (curNode == null) {
@@ -155,6 +233,16 @@ public class BST<T extends Comparable<? super T>> {
         return 1 + leftVisited + rightVisited;
     }
 
+    /**
+     * Searches for nodes within the Binary Search Tree (BST) based on a
+     * specified key range.
+     *
+     * @param key1  The lower bound of the key range.
+     * @param key2  The upper bound of the key range.
+     * @param range True if a range search should be performed, false for an
+     *              exact match search.
+     * @return A linked list containing the nodes matching the search criteria.
+     */
     public LinkedList<T> searchNode(T key1, T key2, boolean range) {
         LinkedList<T> result = new LinkedList<T>();
         int count = searchNodeHelper(root, key1, key2, range, result);
@@ -162,6 +250,11 @@ public class BST<T extends Comparable<? super T>> {
         return result.getNext();
     }
 
+    /**
+     * Prints the contents of the Binary Search Tree (BST) in a hierarchical
+     * fashion. If the tree is empty, it prints a message indicating that the
+     * tree is empty.
+     */
     public void print() {
         if (root == null) {
             System.out.println("This tree is empty");
@@ -171,6 +264,15 @@ public class BST<T extends Comparable<? super T>> {
         System.out.println("Number of records: " + record);
     }
 
+    /**
+     * Recursively prints the contents of the Binary Search Tree (BST) starting
+     * from a given node. Each node's key is printed indented according to its
+     * level in the tree.
+     *
+     * @param node  The current node to print.
+     * @param level The level of the current node in the tree.
+     * @return The total number of nodes printed, including the current node.
+     */
     private int printHelper(BSTNode<T> node, int level) {
         if (node == null) {
             printSpaces(level);
@@ -186,6 +288,11 @@ public class BST<T extends Comparable<? super T>> {
         return 1 + left + right;
     }
 
+    /**
+     * Prints a specified number of spaces to provide indentation in the output.
+     *
+     * @param count The number of spaces to print.
+     */
     private void printSpaces(int count) {
         for (int i = 0; i < count; i++) {
             System.out.print("  ");

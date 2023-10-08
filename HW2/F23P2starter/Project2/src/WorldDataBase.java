@@ -1,3 +1,13 @@
+/**
+ * The `WorldDataBase` class represents a database for storing and managing
+ * seminar records. It utilizes various data structures, including binary search
+ * trees and binary trees, to organize and manipulate seminar data. The database
+ * allows for inserting, searching, deleting, and printing seminar records based
+ * on different criteria.
+ *
+ * @author xianwei & jiren
+ * @version Oct 2023
+ */
 public class WorldDataBase {
     private BST<Integer> idTree;
     private BST<Integer> costTree;
@@ -6,6 +16,11 @@ public class WorldDataBase {
     private BinTree locationTree;
     private int worldSize;
 
+    /**
+     * Constructs a new `WorldDataBase` instance with the specified world size.
+     *
+     * @param worldSizeLocal The size of the world for spatial indexing.
+     */
     public WorldDataBase(int worldSizeLocal) {
         this.idTree = new BST<Integer>();
         this.costTree = new BST<Integer>();
@@ -15,26 +30,45 @@ public class WorldDataBase {
         this.worldSize = worldSizeLocal;
     }
 
+    /**
+     * Processes a command to perform an operation on the seminar records. The
+     * command type and parameters are determined by the instruction and data
+     * provided.
+     *
+     * @param instruction The instruction code that specifies the operation to
+     *                    be performed.
+     * @param id          The ID of the seminar record (if applicable).
+     * @param seminar     The seminar record to be processed (if applicable).
+     * @param data        An array of additional data used for processing the
+     *                    command.
+     */
     public void processCommand(int instruction, int id, Seminar seminar,
             String[] data) {
         int instructionType = instruction / 10;
         instruction = instruction % 10;
         switch (instructionType) {
-        case 1:
-            insert(seminar);
-            break;
-        case 2:
-            search(instruction, data);
-            break;
-        case 3:
-            delete(id);
-            break;
-        case 4:
-            print(instruction);
-            break;
+            case 1:
+                insert(seminar);
+                break;
+            case 2:
+                search(instruction, data);
+                break;
+            case 3:
+                delete(id);
+                break;
+            case 4:
+                print(instruction);
+                break;
         }
     }
 
+    /**
+     * Inserts a seminar record into the database. The seminar's validity is
+     * checked based on its coordinates, and it is inserted into appropriate
+     * data structures.
+     *
+     * @param seminar The seminar record to be inserted.
+     */
     public void insert(Seminar seminar) {
         if (seminar.x() < 0 || seminar.y() < 0 || seminar.x() >= worldSize
                 || seminar.y() >= worldSize) {
@@ -64,67 +98,82 @@ public class WorldDataBase {
         }
     }
 
+    /**
+     * Searches for seminar records based on the given instruction and data. The
+     * search results are printed to the console.
+     *
+     * @param instruction The search instruction code.
+     * @param data        An array of search criteria or parameters.
+     */
     public void search(int instruction, String[] data) {
         switch (instruction) {
-        case 1:
-            LinkedList<Integer> resultId = idTree.searchNode(
-                    Integer.valueOf(data[0]), Integer.MIN_VALUE, false);
-            if (resultId == null) {
+            case 1:
+                LinkedList<Integer> resultId = idTree.searchNode(
+                        Integer.valueOf(data[0]), Integer.MIN_VALUE, false);
+                if (resultId == null) {
+                    System.out.println(
+                            "Search FAILED -- There is no record with ID "
+                                    + data[0]);
+                }
+                else {
+                    System.out.println("Found record with ID " + data[0] + ":");
+                    System.out.println(resultId.getVal().getValue().toString());
+                }
+                break;
+            case 2:
+                System.out.println("Seminars with costs in range " + data[0]
+                        + " to " + data[1] + ":");
+                LinkedList<Integer> resultCost = costTree.searchNode(
+                        Integer.valueOf(data[0]), Integer.valueOf(data[1]),
+                        true);
+                while (resultCost != null) {
+                    System.out
+                            .println(resultCost.getVal().getValue().toString());
+                    resultCost = resultCost.getNext();
+                }
+                System.out.println(costTree.getVisitedCount()
+                        + " nodes visited in this search");
+                break;
+            case 3:
+                System.out.println("Seminars with dates in range " + data[0]
+                        + " to " + data[1] + ":");
+                LinkedList<String> resultDate = dateTree.searchNode(data[0],
+                        data[1], true);
+                while (resultDate != null) {
+                    System.out
+                            .println(resultDate.getVal().getValue().toString());
+                    resultDate = resultDate.getNext();
+                }
+                System.out.println(dateTree.getVisitedCount()
+                        + " nodes visited in this search");
+                break;
+            case 4:
                 System.out
-                        .println("Search FAILED -- There is no record with ID "
-                                + data[0]);
-            }
-            else {
-                System.out.println("Found record with ID " + data[0] + ":");
-                System.out.println(resultId.getVal().getValue().toString());
-            }
-            break;
-        case 2:
-            System.out.println("Seminars with costs in range " + data[0]
-                    + " to " + data[1] + ":");
-            LinkedList<Integer> resultCost = costTree.searchNode(
-                    Integer.valueOf(data[0]), Integer.valueOf(data[1]), true);
-            while (resultCost != null) {
-                System.out.println(resultCost.getVal().getValue().toString());
-                resultCost = resultCost.getNext();
-            }
-            System.out.println(costTree.getVisitedCount()
-                    + " nodes visited in this search");
-            break;
-        case 3:
-            System.out.println("Seminars with dates in range " + data[0]
-                    + " to " + data[1] + ":");
-            LinkedList<String> resultDate = dateTree.searchNode(data[0],
-                    data[1], true);
-            while (resultDate != null) {
-                System.out.println(resultDate.getVal().getValue().toString());
-                resultDate = resultDate.getNext();
-            }
-            System.out.println(dateTree.getVisitedCount()
-                    + " nodes visited in this search");
-            break;
-        case 4:
-            System.out.println("Seminars matching keyword " + data[0] + ":");
-            LinkedList<String> resultKeyword = keywordTree.searchNode(data[0],
-                    "", false);
-            while (resultKeyword != null) {
-                System.out
-                        .println(resultKeyword.getVal().getValue().toString());
-                resultKeyword = resultKeyword.getNext();
-            }
-            break;
-        case 5:
-            System.out.println("Seminars within " + data[2] + " units of "
-                    + data[0] + ", " + data[1] + ":");
-            int count = locationTree.search(Integer.valueOf(data[0]),
-                    Integer.valueOf(data[1]), Integer.valueOf(data[2]));
-            System.out.println(count + " nodes visited in this search");
-            break;
+                        .println("Seminars matching keyword " + data[0] + ":");
+                LinkedList<String> resultKeyword = keywordTree
+                        .searchNode(data[0], "", false);
+                while (resultKeyword != null) {
+                    System.out.println(
+                            resultKeyword.getVal().getValue().toString());
+                    resultKeyword = resultKeyword.getNext();
+                }
+                break;
+            case 5:
+                System.out.println("Seminars within " + data[2] + " units of "
+                        + data[0] + ", " + data[1] + ":");
+                int count = locationTree.search(Integer.valueOf(data[0]),
+                        Integer.valueOf(data[1]), Integer.valueOf(data[2]));
+                System.out.println(count + " nodes visited in this search");
+                break;
         }
     }
 
+    /**
+     * Deletes a seminar record from the database based on its ID.
+     *
+     * @param id The ID of the seminar record to be deleted.
+     */
     public void delete(int id) {
-//    	System.out.println("delete " + id);
         Seminar tmp = null;
         tmp = idTree.deleteNode(id, id);
         if (tmp != null) {
@@ -143,28 +192,34 @@ public class WorldDataBase {
         }
     }
 
+    /**
+     * Prints the contents of the specified data structure.
+     *
+     * @param instruction The print instruction code that specifies the data
+     *                    structure to print.
+     */
     public void print(int instruction) {
         switch (instruction) {
-        case 1:
-            System.out.println("ID Tree:");
-            idTree.print();
-            break;
-        case 2:
-            System.out.println("Date Tree:");
-            dateTree.print();
-            break;
-        case 3:
-            System.out.println("Keyword Tree:");
-            keywordTree.print();
-            break;
-        case 4:
-            System.out.println("Location Tree:");
-            locationTree.print(0, locationTree.getRoot());
-            break;
-        case 5:
-            System.out.println("Cost Tree:");
-            costTree.print();
-            break;
+            case 1:
+                System.out.println("ID Tree:");
+                idTree.print();
+                break;
+            case 2:
+                System.out.println("Date Tree:");
+                dateTree.print();
+                break;
+            case 3:
+                System.out.println("Keyword Tree:");
+                keywordTree.print();
+                break;
+            case 4:
+                System.out.println("Location Tree:");
+                locationTree.print(0, locationTree.getRoot());
+                break;
+            case 5:
+                System.out.println("Cost Tree:");
+                costTree.print();
+                break;
         }
     }
 }

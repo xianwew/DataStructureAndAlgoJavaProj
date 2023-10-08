@@ -3,6 +3,7 @@
  * 
  * @author xianwei & jiren
  * @version September 2023, updated Oct 2023
+ * @param <T> java generic
  */
 
 public class LinkedList<T extends Comparable<? super T>> {
@@ -11,16 +12,17 @@ public class LinkedList<T extends Comparable<? super T>> {
     private LinkedList<T> prev;
 
     /**
-     * Initialize paramaters.
-     * 
-     * @param val   input values
-     * @param index memory pool index
+     * Initialize.
      */
     public LinkedList() {
         this.next = null;
         this.prev = null;
     }
-
+    /**
+     * Initialize .
+     * 
+     * @param val value
+     */
     public LinkedList(BSTNode<T> val) {
         this.val = val;
         this.next = null;

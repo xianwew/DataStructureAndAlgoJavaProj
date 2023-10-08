@@ -1,5 +1,8 @@
 /**
- * BinNodeLeaf class create the founction about leaf node
+ * Implementation of the BinNode interface for representing a leaf node in a
+ * binary tree. This class holds a list of seminars at the same (x, y)
+ * coordinates. Each leaf node may contain multiple seminars with the same
+ * coordinates.
  *
  * @author xianwei&jiren
  * @version Oct 2023, last updated Oct 2023
@@ -8,14 +11,19 @@ public class BinNodeLeaf implements BinNode {
     private SeminarList sl;
 
     /**
-     * Create seminarlist
+     * Get the seminar list associated with this leaf node.
      *
-     * @param tin input title
+     * @return The seminar list.
      */
     public SeminarList getSeminarList() {
         return sl;
     }
 
+    /**
+     * Create a new leaf node with an initial seminar.
+     *
+     * @param seminarLocal The initial seminar to be added to the leaf node.
+     */
     public BinNodeLeaf(Seminar seminarLocal) {
         this.sl = new SeminarList();
         SeminarList tmp = new SeminarList();
@@ -23,14 +31,37 @@ public class BinNodeLeaf implements BinNode {
         sl.setNext(tmp);
     }
 
+    /**
+     * Check if this node is a leaf (always returns true for a leaf node).
+     *
+     * @return true since this is a leaf node.
+     */
     public boolean isLeaf() {
         return true;
     }
 
+    /**
+     * Check if this node is empty (always returns false for a leaf node).
+     *
+     * @return false since this is not an empty node.
+     */
     public boolean isEmpty() {
         return false;
     }
 
+    /**
+     * Insert a new seminar with the specified properties into the leaf node. If
+     * a seminar with the same (x, y) coordinates already exists, it will be
+     * added to the list.
+     *
+     * @param x       The x-coordinate of the seminar.
+     * @param y       The y-coordinate of the seminar.
+     * @param seminar The seminar to be inserted.
+     * @param level   The level of the binary tree.
+     * @param xWidth  The width of the x-coordinate.
+     * @param yWidth  The width of the y-coordinate.
+     * @return The updated leaf node.
+     */
     public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth,
             int yWidth) {
         // case 1
@@ -53,12 +84,6 @@ public class BinNodeLeaf implements BinNode {
             curList.setSeminar(seminar);
             return this;
         }
-
-        // case 2
-        // create internal node
-        // insert all seminars from the list to the same internal node
-        // insert the seminar to the internal node
-        // return the internal node
         BinNodeInternal tmp = new BinNodeInternal();
         curList = sl.getNext();
         while (curList != null) {
@@ -69,6 +94,18 @@ public class BinNodeLeaf implements BinNode {
         return tmp;
     }
 
+    /**
+     * Delete a seminar with the specified properties from the leaf node.
+     *
+     * @param x       The x-coordinate of the seminar to be deleted.
+     * @param y       The y-coordinate of the seminar to be deleted.
+     * @param seminar The seminar to be deleted.
+     * @param level   The level of the binary tree.
+     * @param xWidth  The width of the x-coordinate.
+     * @param yWidth  The width of the y-coordinate.
+     * @return The updated leaf node or an empty node if all seminars are
+     *         deleted.
+     */
     public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth,
             int yWidth) {
         SeminarList tmp = sl.getNext();
@@ -89,6 +126,20 @@ public class BinNodeLeaf implements BinNode {
         return BinNodeEmpty.getNode();
     }
 
+    /**
+     * Search for seminars within a specified circular region and print the
+     * found seminars.
+     *
+     * @param x        The x-coordinate of the center of the circle.
+     * @param y        The y-coordinate of the center of the circle.
+     * @param circuleX The x-coordinate of the seminar to be searched.
+     * @param circuleY The y-coordinate of the seminar to be searched.
+     * @param radius   The radius of the circle.
+     * @param level    The level of the binary tree.
+     * @param xWidth   The width of the x-coordinate.
+     * @param yWidth   The width of the y-coordinate.
+     * @return The number of seminars found within the circular region.
+     */
     public int search(int x, int y, int circuleX, int circuleY, int radius,
             int level, int xWidth, int yWidth) {
         SeminarList tmp = sl.getNext();
@@ -106,6 +157,11 @@ public class BinNodeLeaf implements BinNode {
         return 1;
     }
 
+    /**
+     * Print the contents of the leaf node.
+     *
+     * @param level The level of the binary tree.
+     */
     public void print(int level) {
         for (int i = 0; i < level; i++) {
             System.out.print("  ");

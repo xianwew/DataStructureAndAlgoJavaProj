@@ -59,7 +59,6 @@ public class SemSearchTest extends TestCase {
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
         
-        //	
         filePath = "src/P2Sample_output2.txt"; 
 
         refOut = "";
