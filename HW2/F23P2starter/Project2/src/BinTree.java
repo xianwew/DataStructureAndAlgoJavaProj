@@ -8,15 +8,15 @@ public class BinTree {
     }
     
     public void insert(Seminar seminar) {
-    	root = root.insert(0, worldSize - 1, seminar, 0, worldSize, worldSize);
+    	root = root.insert(0, 0, seminar, 0, worldSize, worldSize);
     }
     
     public void delete(Seminar seminar) {
-    	root = root.delete(0, worldSize - 1, seminar, 0, worldSize, worldSize);
+    	root = root.delete(0, 0, seminar, 0, worldSize, worldSize);
     }
     
     public int search(int circuleX, int circuleY, int radius) {
-        return root.search(0, worldSize - 1, circuleX, circuleY, radius, 0, worldSize, worldSize);
+        return root.search(0, 0, circuleX, circuleY, radius, 0, worldSize, worldSize);
     }
     
     public int printHelper(int level, BinNode node) {
