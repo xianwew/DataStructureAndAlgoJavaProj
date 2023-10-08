@@ -49,7 +49,7 @@ public class BinNodeInternal implements BinNode {
     }
 
     public int search(int x, int y, int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {
-        int mod = level / 2;
+        int mod = level % 2;
         int leftVisited = 0;
         int rightVisited = 0;
         int top = 0;
@@ -72,14 +72,14 @@ public class BinNodeInternal implements BinNode {
             bottom = circuleY - radius + y > 0? circuleY - radius + y: 0;
             top = circuleY + radius + y > yWidth? yWidth : circuleY + radius + y;
             if(bottom >= yWidth / 2 + y) {
-                rightVisited = getRight().search(x, y - yWidth/2, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
+                rightVisited = getRight().search(x, y + yWidth/2, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
             }
             else if(top < yWidth / 2 + y) {
                 leftVisited = getLeft().search(x, y, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
             }
             else {
                 leftVisited = getLeft().search(x, y, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
-                rightVisited = getRight().search(x, y - yWidth/2, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
+                rightVisited = getRight().search(x, y + yWidth/2, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
             }
         }
         return 1 + leftVisited + rightVisited;
