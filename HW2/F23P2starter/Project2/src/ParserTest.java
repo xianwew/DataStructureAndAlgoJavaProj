@@ -1,4 +1,3 @@
-import java.io.File;
 import student.TestCase;
 /**
  * This class contains unit tests for the `Parser` class, specifically testing
