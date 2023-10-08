@@ -1,37 +1,40 @@
-public class BinNodeEmpty implements BinNode{
-	static private BinNodeEmpty flyweight = null;
+public class BinNodeEmpty implements BinNode {
+    static private BinNodeEmpty flyweight = null;
 
-	public static BinNodeEmpty getNode () {
-		if (flyweight == null) {
-			flyweight = new BinNodeEmpty();
-		}
-		return flyweight;
-	}
-	
-	public boolean isLeaf() {
-		return true;
-	}
+    public static BinNodeEmpty getNode() {
+        if (flyweight == null) {
+            flyweight = new BinNodeEmpty();
+        }
+        return flyweight;
+    }
 
-	public boolean isEmpty() {
-		return true;
-	}
+    public boolean isLeaf() {
+        return true;
+    }
 
-	public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
-		return new BinNodeLeaf(seminar);
-	}
+    public boolean isEmpty() {
+        return true;
+    }
 
-	public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth, int yWidth) {
-		return this;	
-	}
+    public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth,
+            int yWidth) {
+        return new BinNodeLeaf(seminar);
+    }
 
-	public int search(int x, int y, int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {
-		return 1;	
-	}
+    public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth,
+            int yWidth) {
+        return this;
+    }
 
-	public void print(int level) {
+    public int search(int x, int y, int circuleX, int circuleY, int radius,
+            int level, int xWidth, int yWidth) {
+        return 1;
+    }
+
+    public void print(int level) {
         for (int i = 0; i < level; i++) {
             System.out.print("  ");
         }
-		System.out.println("E");
-	}
+        System.out.println("E");
+    }
 }

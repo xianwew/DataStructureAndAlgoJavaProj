@@ -29,16 +29,14 @@
 //   during the discussion. I have violated neither the spirit nor
 //   letter of this restriction.
 
-
 public class SemSearch {
     /**
-     * @param args
-     *     Command line parameters
+     * @param args Command line parameters
      */
     public static void main(String[] args) {
         // This is the main file for the program.
         Seminar dum = new Seminar();
-        if(args != null) {
+        if (args != null) {
             WorldDataBase world = new WorldDataBase(Integer.valueOf(args[0]));
             Parser parser = new Parser();
             parser.processSeminars(args, world);
