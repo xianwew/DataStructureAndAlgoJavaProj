@@ -52,7 +52,6 @@ public class WorldDataBase {
 	        locationTree.insert(seminar);    	
 	    }
     	else {
-    		System.out.println(seminar.toString());
     	    System.out.println("Insert FAILED - There is already a record with ID " + seminar.id());
     	    return;
     	}
