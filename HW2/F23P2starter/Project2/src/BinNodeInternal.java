@@ -55,8 +55,8 @@ public class BinNodeInternal implements BinNode {
         int top = 0;
         int bottom = 0;
         if(mod == 0) {
-            bottom = circuleX - radius + x > 0? circuleX - radius + x : 0;
-            top = circuleX + radius + x > xWidth? xWidth : circuleX + radius + x;
+            bottom = circuleX - radius;
+            top = circuleX + radius;
             if(bottom >= xWidth / 2 + x) {
                 rightVisited = getRight().search(x + xWidth/2, y, circuleX, circuleY, radius, level + 1, xWidth/2, yWidth);
             }
@@ -69,8 +69,8 @@ public class BinNodeInternal implements BinNode {
             }
         }
         else {
-            bottom = circuleY - radius + y > 0? circuleY - radius + y: 0;
-            top = circuleY + radius + y > yWidth? yWidth : circuleY + radius + y;
+            bottom = circuleY - radius ;
+            top = circuleY + radius;
             if(bottom >= yWidth / 2 + y) {
                 rightVisited = getRight().search(x, y + yWidth/2, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
             }
