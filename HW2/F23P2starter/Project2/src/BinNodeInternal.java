@@ -48,10 +48,40 @@ public class BinNodeInternal implements BinNode {
         return null;
     }
 
-    public int search(int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {
+    public int search(int x, int y, int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {
         int mod = level / 2;
-        int leftVisited = getLeft().search(circuleX, circuleY, radius, level, xWidth, yWidth);
-        int rightVisited = getRight().search(circuleX, circuleY, radius, level, xWidth, yWidth);
+        int leftVisited = 0;
+        int rightVisited = 0;
+        int top = 0;
+        int bottom = 0;
+        if(mod == 0) {
+            bottom = circuleX - radius + x > 0? circuleX - radius + x : 0;
+            top = circuleX + radius + x > xWidth? xWidth : circuleX + radius + x;
+            if(bottom >= xWidth / 2 + x) {
+                rightVisited = getRight().search(x + xWidth/2, y, circuleX, circuleY, radius, level + 1, xWidth/2, yWidth);
+            }
+            else if(top < xWidth / 2 + x) {
+                leftVisited = getLeft().search(x, y, circuleX, circuleY, radius, level + 1, xWidth/2, yWidth);
+            }
+            else {
+                leftVisited = getLeft().search(x, y, circuleX, circuleY, radius, level + 1, xWidth/2, yWidth);
+                rightVisited = getRight().search(x + xWidth/2, y, circuleX, circuleY, radius, level + 1, xWidth/2, yWidth);
+            }
+        }
+        else {
+            bottom = circuleY - radius + y > 0? circuleY - radius + y: 0;
+            top = circuleY + radius + y > yWidth? yWidth : circuleY + radius + y;
+            if(bottom >= yWidth / 2 + y) {
+                rightVisited = getRight().search(x, y - yWidth/2, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
+            }
+            else if(top < yWidth / 2 + y) {
+                leftVisited = getLeft().search(x, y, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
+            }
+            else {
+                leftVisited = getLeft().search(x, y, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
+                rightVisited = getRight().search(x, y - yWidth/2, circuleX, circuleY, radius, level + 1, xWidth, yWidth/2);
+            }
+        }
         return 1 + leftVisited + rightVisited;
     }
 

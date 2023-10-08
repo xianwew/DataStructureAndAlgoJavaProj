@@ -24,7 +24,7 @@ public class BinNodeEmpty implements BinNode{
 		return this;	
 	}
 
-	public int search(int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {
+	public int search(int x, int y, int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {
 		return 1;	
 	}
 

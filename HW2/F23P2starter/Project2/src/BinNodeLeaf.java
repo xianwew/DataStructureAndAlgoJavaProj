@@ -57,7 +57,7 @@ public class BinNodeLeaf implements BinNode{
 		return null;
 	}
 
-	public int search(int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {
+	public int search(int x, int y, int circuleX, int circuleY, int radius, int level, int xWidth, int yWidth) {
 	    SeminarList tmp = sl;
 	    if(tmp != null && tmp.getSeminar() != null && Math.pow(tmp.getSeminar().x(), 2) + Math.pow(tmp.getSeminar().y(), 2) <= radius * radius) {
             while(tmp != null) {

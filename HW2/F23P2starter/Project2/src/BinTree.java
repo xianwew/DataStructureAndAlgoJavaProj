@@ -15,8 +15,8 @@ public class BinTree {
     	//root = root.delete(0, worldSize - 1, seminar, 0, worldSize, worldSize);
     }
     
-    public int search(int x, int y, int radius) {
-        return root.search(x, y, radius, 0, worldSize, worldSize);
+    public int search(int circuleX, int circuleY, int radius) {
+        return root.search(0, worldSize - 1, circuleX, circuleY, radius, 0, worldSize, worldSize);
     }
     
     public int printHelper(int level, BinNode node) {
