@@ -7,6 +7,9 @@ import student.TestCase;
  */
 public class BinNodeInternalTest extends TestCase {
 
-    
+    public void searchTest() {
+        BinNodeInternal tmp = new BinNodeInternal();
+        tmp.search(0, 0, 0, 0, 0, 0, 0, 0);
+    }
     
 }

@@ -128,6 +128,42 @@ public class SemSearchTest extends TestCase {
         SemSearch.main(new String[]{"0", "src/P2Sample_input3.txt"});
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
+        
+        
+        //  
+        filePath = "src/P2syntaxSearch_output.txt"; 
+
+        refOut = "";
+        try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+            refOut = new String(bytes, StandardCharsets.UTF_8);
+        } 
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        systemOut().clearHistory();
+        SemSearch.main(new String[]{"128", "src/P2syntaxSearch_input.txt"});
+        printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
+        
+        
+//        //  
+//        filePath = "src/P2syntaxPrint_output.txt"; 
+//
+//        refOut = "";
+//        try {
+//            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+//            refOut = new String(bytes, StandardCharsets.UTF_8);
+//        } 
+//        catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        
+//        systemOut().clearHistory();
+//        SemSearch.main(new String[]{"128", "src/P2syntaxPrint_input.txt"});
+//        printOut = systemOut().getHistory();
+//        assertFuzzyEquals(printOut, refOut);
     }
 }
 
