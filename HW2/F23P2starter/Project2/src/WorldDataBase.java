@@ -183,7 +183,7 @@ public class WorldDataBase {
             costTree.deleteNode(seminar.cost(), id);
             dateTree.deleteNode(seminar.date(), id);
             for (String s : seminar.keywords()) {
-                System.out.println(s):
+                System.out.println(s);
                 keywordTree.deleteNode(s, id);
             }
             locationTree.delete(seminar);
