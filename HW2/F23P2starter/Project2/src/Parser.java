@@ -121,9 +121,7 @@ public class Parser {
             else if (tmpDataRight.indexOf("location") == 0) {
                 return 44;
             }
-            else if (tmpDataRight.indexOf("cost") == 0) {
-                return 45;
-            }
+            return 45;
         }
 
         return 0;

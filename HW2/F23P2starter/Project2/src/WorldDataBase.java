@@ -176,8 +176,6 @@ public class WorldDataBase {
     public void delete(int id) {
         LinkedList<Integer> searchResultId = idTree.searchNode(id, null, false);
         if (searchResultId != null) {
-            System.out.println("Record with ID " + id
-                    + " successfully deleted from the database");
             Seminar seminar = searchResultId.getVal().getValue();
             idTree.deleteNode(id, id);
             costTree.deleteNode(seminar.cost(), id);
@@ -186,6 +184,8 @@ public class WorldDataBase {
                 keywordTree.deleteNode(s, id);
             }
             locationTree.delete(seminar);
+            System.out.println("Record with ID " + id
+                    + " successfully deleted from the database");
         }
         else {
             System.out.println(

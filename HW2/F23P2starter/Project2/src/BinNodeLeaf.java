@@ -120,7 +120,7 @@ public class BinNodeLeaf implements BinNode {
             }
             prev = tmp;
         }
-        if (sl.getNext() != null && sl.getNext().getSeminar() != null) {
+        if (sl.getNext() != null) {
             return this;
         }
         return BinNodeEmpty.getNode();

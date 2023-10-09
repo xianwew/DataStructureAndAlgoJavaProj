@@ -17,26 +17,20 @@ swwdaw qawd
     Introduction to   bioinformatics and computation biology
 
 print ID
-print cost
-print date
 print keyword
 
 delete 2
 
 print ID
-print cost
-print date
 print keyword
 
 delete 3
 
-print ID
-print cost
-print date
 print keyword
 delete 5
 
 print ID
 print cost
+print location
 print date
 print keyword

@@ -1,0 +1,122 @@
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 10, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+Successfully inserted record with ID 3
+ID: 3, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 10, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+Successfully inserted record with ID 5
+ID: 5, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 10, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: swwdaw, qawd
+ID Tree:
+      null
+    5
+      null
+  3
+    null
+2
+  null
+Number of records: 3
+Cost Tree:
+  null
+30
+    null
+  30
+      null
+    30
+      null
+Number of records: 3
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+      null
+    0610071600
+      null
+Number of records: 3
+Keyword Tree:
+      null
+    swwdaw
+        null
+      qawd
+        null
+  AWD
+      null
+    AWD
+      null
+AEGFAEW
+    null
+  AEGFAEW
+    null
+Number of records: 6
+Record with ID 2 successfully deleted from the database
+ID Tree:
+    null
+  5
+    null
+3
+  null
+Number of records: 2
+Cost Tree:
+  null
+30
+    null
+  30
+    null
+Number of records: 2
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+    null
+Number of records: 2
+Keyword Tree:
+      null
+    swwdaw
+        null
+      qawd
+        null
+  AWD
+    null
+AEGFAEW
+  null
+Number of records: 4
+Record with ID 3 successfully deleted from the database
+ID Tree:
+  null
+5
+  null
+Number of records: 1
+Cost Tree:
+  null
+30
+  null
+Number of records: 1
+Date Tree:
+  null
+0610071600
+  null
+Number of records: 1
+Keyword Tree:
+  null
+swwdaw
+    null
+  qawd
+    null
+Number of records: 2
+Record with ID 5 successfully deleted from the database
+ID Tree:
+This tree is empty
+Cost Tree:
+This tree is empty
+Date Tree:
+This tree is empty
+Keyword Tree:
+This tree is empty

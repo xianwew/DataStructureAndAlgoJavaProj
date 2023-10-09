@@ -6,7 +6,7 @@
  * @param <T> java generic
  */
 public class BST<T extends Comparable<? super T>> {
-    BSTNode<T> root;
+    private BSTNode<T> root;
     private int visitedCount = 0;
 
     /**
@@ -105,6 +105,8 @@ public class BST<T extends Comparable<? super T>> {
      *
      * @param key     The key to delete.
      * @param curNode current node
+     * @param id the id to be deleted
+     * @param swapping indicate if we are swapping the nodes
      * @return The deleted Seminar or null if not found.
      */
     public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key, int id,
@@ -153,7 +155,6 @@ public class BST<T extends Comparable<? super T>> {
      *
      * @param key The key to match for deletion.
      * @param id  The ID to match for deletion.
-     * @return The deleted Seminar object if found, or null if not found.
      */
     public void deleteNode(T key, int id) {
         root = deleteNodeHelper(root, key, id, false);
@@ -182,6 +183,7 @@ public class BST<T extends Comparable<? super T>> {
      * @param curNode current node
      * @param range   If true, perform a range search; if false, perform an
      *                exact match search.
+     * @param head    the head of the linked list
      * @return A linked list of matching nodes or null if none found.
      */
     public int searchNodeHelper(BSTNode<T> curNode, T key1, T key2,
