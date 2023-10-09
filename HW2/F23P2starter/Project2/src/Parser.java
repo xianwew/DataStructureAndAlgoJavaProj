@@ -223,6 +223,7 @@ public class Parser {
                 dataBase.processCommand(instruction, id, seminar, param);
                 if (!reader.hasNextLine()) {
                     reader.close();
+                    boolean sameIns = instruction == getInstruction(data);
                     instruction = getInstruction(data);
                     param = getData(data);
                     if (instruction != 0) {
@@ -235,8 +236,11 @@ public class Parser {
                         }
                         seminar = new Seminar(id, title, dateTime, length, x, y,
                                 cost, keywordList, desc);
-                        dataBase.processCommand(instruction, id, seminar,
-                                param);
+                        
+                        if(!sameIns) {
+                            dataBase.processCommand(instruction, id, seminar,
+                                    param);
+                        }
                     }
                     break;
                 }

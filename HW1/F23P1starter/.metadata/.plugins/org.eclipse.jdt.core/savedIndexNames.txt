@@ -1,0 +1,2 @@
+INDEX VERSION 1.134+H:\D_Vol_Origin\360MoveData\Users\Xianwei\Desktop\Study\Graduate\Fall2023\CS5040\DataStructureAndAlgoJavaProj\HW1\F23P1starter\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
