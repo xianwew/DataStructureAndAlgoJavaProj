@@ -183,28 +183,10 @@ Number of records: 8
 Location Tree:
 I
   Leaf with 1 objects: 6
-  I
-    E
-    I
-      I
-        I
-          I
-            I
-              I
-                I
-                  E
-                  Leaf with 1 objects: 10
-                E
-              E
-            E
-          E
-        E
-      E
+  Leaf with 1 objects: 10
 Record with ID 10 successfully deleted from the database
 Location Tree:
-I
-  Leaf with 1 objects: 6
-  E
+Leaf with 1 objects: 6
 Record with ID 6 successfully deleted from the database
 ID Tree:
 This tree is empty
