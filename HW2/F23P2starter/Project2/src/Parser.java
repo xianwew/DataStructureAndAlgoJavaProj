@@ -142,15 +142,49 @@ public class Parser {
             File commandFile = new File(args[1]);
             Scanner reader = new Scanner(commandFile);
             int instruction = 0;
+            int id = -1;
+            boolean execute = true;
+            Scanner reader2 = new Scanner(commandFile);
+            if (reader2.hasNextLine()) {
+                data = reader2.nextLine().trim();
+                if(!reader2.hasNextLine()) {
+                    try {
+                        id = Integer.parseInt(data.split("\\s+")[1]);
+                    }
+                    catch (Exception e) {
+//                      System.out.println("
+//                          Error in getting instruction!");
+                    }
+                    dataBase.processCommand(getInstruction(data), id, null,
+                            null);
+                    execute = false;
+                }
+                else if(reader2.nextLine().trim() == "" && data != "") {
+                    try {
+                        id = Integer.parseInt(data.split("\\s+")[1]);
+                    }
+                    catch (Exception e) {
+//                      System.out.println("
+//                          Error in getting instruction!");
+                    }
+                    dataBase.processCommand(getInstruction(data), id, null,
+                            null);
+                    execute = false;
+                }
+            }
+            reader2.close();
+            data = "";
+            id = -1;
             if (reader.hasNextLine()) {
                 data = reader.nextLine().trim();
             }
+            
             String[] param = new String[3];
-            while (true) {
+            while (execute) {
                 instruction = getInstruction(data);
                 param = getData(data);
                 int line = 0;
-                int id = -1;
+                id = -1;
                 String title = "";
                 String dateTime = "";
                 int length = -1;
@@ -223,7 +257,6 @@ public class Parser {
                 dataBase.processCommand(instruction, id, seminar, param);
                 if (!reader.hasNextLine()) {
                     reader.close();
-                    boolean sameIns = instruction == getInstruction(data);
                     instruction = getInstruction(data);
                     param = getData(data);
                     if (instruction != 0) {
@@ -236,11 +269,8 @@ public class Parser {
                         }
                         seminar = new Seminar(id, title, dateTime, length, x, y,
                                 cost, keywordList, desc);
-                        
-                        if(!sameIns) {
-                            dataBase.processCommand(instruction, id, seminar,
-                                    param);
-                        }
+                        dataBase.processCommand(instruction, id, seminar,
+                                param);
                     }
                     break;
                 }

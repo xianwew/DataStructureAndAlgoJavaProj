@@ -145,16 +145,7 @@ public class BST<T extends Comparable<? super T>> {
      * @return The deleted Seminar object if found, or null if not found.
      */
     public void deleteNode(T key, int id) {
-        if(root != null && root.getValue().id() == id && root.getLeft() == null && root.getRight() == null) {
-            root = null;
-        }
-        else {
-            root = deleteNodeHelper(root, key, id, false);
-        }
-        if(root != null) {
-            System.out.println(root.getKey());
-        }
-        
+        root = deleteNodeHelper(root, key, id, false);
     }
 
     /**
