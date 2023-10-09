@@ -1,0 +1,113 @@
+Date Tree:
+This tree is empty
+Keyword Tree:
+This tree is empty
+Location Tree:
+E
+Cost Tree:
+This tree is empty
+ID Tree:
+This tree is empty
+Search FAILED -- There is no record with ID 1
+Seminars matching keyword VT:
+Seminars with costs in range 1 to 3:
+1 nodes visited in this search
+Seminars with dates in range 0 to 1:
+1 nodes visited in this search
+Seminars within 1 units of 1, 13:
+1 nodes visited in this search
+Delete FAILED -- There is no record with ID 123
+Insert FAILED - Bad x, y coordinates: -1, 10
+Insert FAILED - Bad x, y coordinates: 10, 128
+Insert FAILED - Bad x, y coordinates: 128, 10
+Insert FAILED - Bad x, y coordinates: 132, -1
+Insert FAILED - Bad x, y coordinates: 10, 10
+Insert FAILED - Bad x, y coordinates: 10, 10
+Insert FAILED - Bad x, y coordinates: 30, 10
+Insert FAILED - Bad x, y coordinates: 0, 0
+Insert FAILED - Bad x, y coordinates: 64, 64
+Insert FAILED - Bad x, y coordinates: 64, 127
+Insert FAILED - Bad x, y coordinates: 127, 127
+ID Tree:
+This tree is empty
+Date Tree:
+This tree is empty
+Keyword Tree:
+This tree is empty
+Cost Tree:
+This tree is empty
+Location Tree:
+E
+Insert FAILED - Bad x, y coordinates: 0, 0
+Seminars matching keyword VT:
+Seminars matching keyword awdaw:
+Search FAILED -- There is no record with ID 1
+Search FAILED -- There is no record with ID 112
+Seminars with costs in range 30 to 50:
+1 nodes visited in this search
+Seminars with costs in range 134 to 153:
+1 nodes visited in this search
+Seminars within 1 units of 13, 1313:
+1 nodes visited in this search
+Seminars within 131 units of -13, -1313:
+1 nodes visited in this search
+Seminars within 1 units of -1, 0:
+1 nodes visited in this search
+Seminars within 2000 units of -1, 0:
+1 nodes visited in this search
+Seminars within 0 units of 10, 10:
+1 nodes visited in this search
+Seminars within 0 units of 11, 11:
+1 nodes visited in this search
+Seminars within 20 units of 10, 10:
+1 nodes visited in this search
+Seminars with dates in range 0 to 1:
+1 nodes visited in this search
+Delete FAILED -- There is no record with ID 1
+Delete FAILED -- There is no record with ID 1
+ID Tree:
+This tree is empty
+Location Tree:
+E
+Keyword Tree:
+This tree is empty
+Cost Tree:
+This tree is empty
+Date Tree:
+This tree is empty
+Insert FAILED - Bad x, y coordinates: 0, 0
+Insert FAILED - Bad x, y coordinates: 13, 1313
+Seminars matching keyword VT:
+Seminars matching keyword awdaw:
+Search FAILED -- There is no record with ID 1
+Search FAILED -- There is no record with ID 112
+Seminars with costs in range 30 to 50:
+1 nodes visited in this search
+Seminars with costs in range 134 to 153:
+1 nodes visited in this search
+Seminars within 1 units of 13, 1313:
+1 nodes visited in this search
+Seminars within 131 units of -13, -1313:
+1 nodes visited in this search
+Seminars within 1 units of -1, 0:
+1 nodes visited in this search
+Seminars within 2000 units of -1, 0:
+1 nodes visited in this search
+Seminars within 0 units of 10, 10:
+1 nodes visited in this search
+Seminars within 0 units of 11, 11:
+1 nodes visited in this search
+Seminars within 20 units of 10, 10:
+1 nodes visited in this search
+Seminars with dates in range 0 to 1:
+1 nodes visited in this search
+ID Tree:
+This tree is empty
+Location Tree:
+E
+Keyword Tree:
+This tree is empty
+Cost Tree:
+This tree is empty
+Date Tree:
+This tree is empty
