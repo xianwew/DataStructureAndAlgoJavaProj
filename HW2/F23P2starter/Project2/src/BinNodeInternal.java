@@ -138,7 +138,7 @@ public class BinNodeInternal implements BinNode {
                 rightVisited = getRight().search(x + xWidth / 2, y, circuleX,
                         circuleY, radius, level + 1, xWidth / 2, yWidth);
             }
-            else if (top < xWidth / 2 + x) {
+            else if (top <= xWidth / 2 + x) {
                 leftVisited = getLeft().search(x, y, circuleX, circuleY, radius,
                         level + 1, xWidth / 2, yWidth);
             }
@@ -156,7 +156,7 @@ public class BinNodeInternal implements BinNode {
                 rightVisited = getRight().search(x, y + yWidth / 2, circuleX,
                         circuleY, radius, level + 1, xWidth, yWidth / 2);
             }
-            else if (top < yWidth / 2 + y) {
+            else if (top <= yWidth / 2 + y) {
                 leftVisited = getLeft().search(x, y, circuleX, circuleY, radius,
                         level + 1, xWidth, yWidth / 2);
             }
