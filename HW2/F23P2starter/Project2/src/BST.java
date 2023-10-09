@@ -107,16 +107,16 @@ public class BST<T extends Comparable<? super T>> {
      * @param curNode current node
      * @return The deleted Seminar or null if not found.
      */
-    public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key) {
+    public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, int id) {
         if (curNode == null) {
             return null;
         }
 
-        if (curNode.compareKey(key) < 0) {
-            curNode.setRight(deleteNodeHelper(curNode.getRight(), key));
+        if (curNode.getValue().id() < id) {
+            curNode.setRight(deleteNodeHelper(curNode.getRight(), id));
         }
-        else if (curNode.compareKey(key) > 0) {
-            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), key));
+        else if (curNode.getValue().id() > id) {
+            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), id));
         }
         else {
             if (curNode.getLeft() == null) {
@@ -131,7 +131,7 @@ public class BST<T extends Comparable<? super T>> {
                 cur = cur.getRight();
             }
             curNode.setKey(cur.getKey());
-            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), cur.getKey()));
+            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), curNode.getValue().id()));
         }
         return curNode;
     }
@@ -153,7 +153,7 @@ public class BST<T extends Comparable<? super T>> {
                 if (String.valueOf(id).equals(String.valueOf(key))) {
                     result = tmp.getValue();
                 }
-                root = deleteNodeHelper(tmp, key);
+                root = deleteNodeHelper(root, id);
             }
             searchResult = searchResult.getNext();
         }

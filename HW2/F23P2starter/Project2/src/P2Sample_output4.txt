@@ -323,28 +323,60 @@ I
     E
   E
 Keyword Tree:
-        null
-      science
-        null
-    high_performance_computing
-        null
-      grids
             null
-          computer_science
-              null
-            computer_science
+          science
+            null
+        high_performance_computing
+            null
+          grids
                 null
               computer_science
                   null
                 computer_science
-                  null
-        computer
+                    null
+                  computer_science
+                      null
+                    computer_science
+                      null
+            computer
+              null
+      computation_biology
+        null
+    Virginia_Tech
+        null
+      Virginia_Tech
+        null
+  VT
+      null
+    VT
+        null
+      VT
           null
-  computation_biology
+        HPC
+            null
+          HPC
+              null
+            HPC
+                null
+              HPC
+                null
+Computer_Science
+        null
+      Computer_Science
+          null
+        CSE
+            null
+          CSE
+              null
+            CSE
+                null
+              CSE
+                null
+    Biology
+      null
+  Bioinformatics
     null
-Virginia_Tech
-  null
-Number of records: 10
+Number of records: 26
 Cost Tree:
   null
 30
@@ -382,6 +414,18 @@ Description: Learn what kind of    research is done on HPC  and CSE at VT
 Keywords: HPC, CSE, computer_science
 Insert FAILED - Bad x, y coordinates: 13, 1313
 Seminars matching keyword VT:
+ID: 10, Title: Computing Systems Research at VT
+Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Description: Seminar about the      Computing systems research at      VT
+Keywords: high_performance_computing, grids, VT, computer, science
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 10, Y: 10, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Virginia_Tech
+ID: 1, Title: Overview of HCI Research at VT
+Date: 0610051600, Length: 90, X: 10, Y: 128, Cost: 45
+Description: This seminar will present an overview of HCI research at VT
+Keywords: HCI, Computer_Science, VT, Virginia_Tech
 Seminars matching keyword awdaw:
 Search FAILED -- There is no record with ID 1
 Search FAILED -- There is no record with ID 112
@@ -487,34 +531,66 @@ I
     E
   E
 Keyword Tree:
-        null
-      science
-        null
-    high_performance_computing
-        null
-      grids
             null
-          computer_science
-              null
-            computer_science
+          science
+            null
+        high_performance_computing
+            null
+          grids
                 null
               computer_science
                   null
                 computer_science
                     null
                   computer_science
-                    null
-        computer
+                      null
+                    computer_science
+                        null
+                      computer_science
+                        null
+            computer
+              null
+      computation_biology
+        null
+    Virginia_Tech
+        null
+      Virginia_Tech
+        null
+  VT
+      null
+    VT
+        null
+      VT
           null
-  computation_biology
-    null
-Virginia_Tech
-    null
-  HPC
+        HPC
+            null
+          HPC
+              null
+            HPC
+                null
+              HPC
+                  null
+                HPC
+                  null
+Computer_Science
+        null
+      Computer_Science
+          null
+        CSE
+            null
+          CSE
+              null
+            CSE
+                null
+              CSE
+                  null
+                CSE
+                  null
+    Biology
       null
-    CSE
-      null
-Number of records: 13
+  Bioinformatics
+    null
+Number of records: 29
 Cost Tree:
   null
 30
