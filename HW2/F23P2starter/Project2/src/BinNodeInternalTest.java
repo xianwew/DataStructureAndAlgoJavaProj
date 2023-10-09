@@ -1,4 +1,5 @@
 import student.TestCase;
+
 /**
  * This class contains test cases for the BinNodeInternal class.
  * 
@@ -11,5 +12,5 @@ public class BinNodeInternalTest extends TestCase {
         BinNodeInternal tmp = new BinNodeInternal();
         tmp.search(0, 0, 0, 0, 0, 0, 0, 0);
     }
-    
+
 }

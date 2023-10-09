@@ -10,18 +10,15 @@ Computational Biology and Bioinformatics in CS at Virginia Tech
 AEGFAEW AWD
     Introduction to   bioinformatics and computation biology
 
+print ID
+                print                   keyword
+
 delete 2
 
 print ID
-print date
                 print                   keyword
-                
-print cost
 
 delete 3
 
 print ID
-print date
                 print                   keyword
-                
-print cost

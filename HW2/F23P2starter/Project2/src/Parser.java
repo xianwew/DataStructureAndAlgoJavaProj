@@ -61,7 +61,8 @@ public class Parser {
             data1 = dataLocal.split("\\s+")[2];
             data2 = dataLocal.split("\\s+")[3];
             data3 = dataLocal.split("\\s+")[4];
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
 //          System.out.println("Error in getting data!");
         }
         result[0] = data1;
@@ -82,7 +83,8 @@ public class Parser {
         try {
             tmpDataLeft = dataLocal.split("\\s+")[0];
             tmpDataRight = dataLocal.split("\\s+")[1];
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
 //            System.out.println("Error in getting instruction!");
         }
         if (tmpDataLeft.indexOf("insert") == 0) {
@@ -144,7 +146,8 @@ public class Parser {
             if (reader.hasNextLine()) {
                 data = reader.nextLine().trim();
             }
-
+            int lastLineExecution = 0;
+            int totalLine = 1;
             String[] param = new String[3];
             while (true) {
                 instruction = getInstruction(data);
@@ -166,7 +169,7 @@ public class Parser {
                         case 0:
                             try {
                                 id = Integer.parseInt(tmpData.split("\\s+")[1]);
-                            } 
+                            }
                             catch (Exception e) {
                                 // handle exception
                             }
@@ -182,7 +185,8 @@ public class Parser {
                                 x = Short.parseShort(tmpDataArr[2]);
                                 y = Short.parseShort(tmpDataArr[3]);
                                 cost = Integer.parseInt(tmpDataArr[4]);
-                            } catch (Exception e) {
+                            }
+                            catch (Exception e) {
                                 // handle exception
                             }
                             break;
@@ -196,11 +200,13 @@ public class Parser {
                     line++;
                     if (reader.hasNextLine()) {
                         data = reader.nextLine().trim();
+                        totalLine++;
                     }
                     tmpData = data;
                     while (reader.hasNextLine() && tmpData.trim().equals("")) {
                         data = reader.nextLine().trim();
                         tmpData = data;
+                        totalLine++;
                     }
                     if (reader.hasNextLine()) {
                         if (getInstruction(data) != 0) {
@@ -214,24 +220,24 @@ public class Parser {
                 if (desc.equals("")) {
                     desc = data.trim();
                 }
-                seminar = new Seminar(id, title, dateTime, length, x, y,
-                        cost, keywordList, desc);
+                seminar = new Seminar(id, title, dateTime, length, x, y, cost,
+                        keywordList, desc);
                 dataBase.processCommand(instruction, id, seminar, param);
+                lastLineExecution = totalLine - 1 > 0 ? totalLine - 1 : 0;
                 if (!reader.hasNextLine()) {
                     reader.close();
-                    boolean sameIns = getInstruction(data) == instruction;
                     instruction = getInstruction(data);
                     param = getData(data);
                     if (instruction != 0) {
                         try {
                             id = Integer.parseInt(data.split("\\s+")[1]);
-                        } 
+                        }
                         catch (Exception e) {
                             // handle exception
                         }
                         seminar = new Seminar(id, title, dateTime, length, x, y,
                                 cost, keywordList, desc);
-                        if(line != 1 || !sameIns) {
+                        if (lastLineExecution != 0) {
                             dataBase.processCommand(instruction, id, seminar,
                                     param);
                         }
@@ -239,7 +245,8 @@ public class Parser {
                     break;
                 }
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             System.out.println("Error" + " in reading/processing files!");
             e.printStackTrace();
         }

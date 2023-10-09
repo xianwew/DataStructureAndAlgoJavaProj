@@ -343,23 +343,19 @@ Keyword Tree:
       computation_biology
         null
     Virginia_Tech
-        null
-      Virginia_Tech
-        null
+      null
   VT
       null
     VT
         null
-      VT
+      HPC
           null
         HPC
             null
           HPC
               null
             HPC
-                null
-              HPC
-                null
+              null
 Computer_Science
         null
       Computer_Science
@@ -376,7 +372,7 @@ Computer_Science
       null
   Bioinformatics
     null
-Number of records: 26
+Number of records: 24
 Cost Tree:
   null
 30
@@ -422,10 +418,6 @@ ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 10, Y: 10, Cost: 30
 Description: Introduction to   bioinformatics and computation biology
 Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Virginia_Tech
-ID: 1, Title: Overview of HCI Research at VT
-Date: 0610051600, Length: 90, X: 10, Y: 128, Cost: 45
-Description: This seminar will present an overview of HCI research at VT
-Keywords: HCI, Computer_Science, VT, Virginia_Tech
 Seminars matching keyword awdaw:
 Search FAILED -- There is no record with ID 1
 Search FAILED -- There is no record with ID 112
@@ -553,14 +545,12 @@ Keyword Tree:
       computation_biology
         null
     Virginia_Tech
-        null
-      Virginia_Tech
-        null
+      null
   VT
       null
     VT
         null
-      VT
+      HPC
           null
         HPC
             null
@@ -569,9 +559,7 @@ Keyword Tree:
             HPC
                 null
               HPC
-                  null
-                HPC
-                  null
+                null
 Computer_Science
         null
       Computer_Science
@@ -590,7 +578,7 @@ Computer_Science
       null
   Bioinformatics
     null
-Number of records: 29
+Number of records: 27
 Cost Tree:
   null
 30

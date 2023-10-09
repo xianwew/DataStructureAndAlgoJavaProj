@@ -177,13 +177,12 @@ public class WorldDataBase {
         LinkedList<Integer> searchResultId = idTree.searchNode(id, null, false);
         if (searchResultId != null) {
             System.out.println("Record with ID " + id
-                    + " successfully deleted from the database"); 
-            Seminar seminar = searchResultId.getVal().getValue(); 
+                    + " successfully deleted from the database");
+            Seminar seminar = searchResultId.getVal().getValue();
             idTree.deleteNode(id, id);
             costTree.deleteNode(seminar.cost(), id);
             dateTree.deleteNode(seminar.date(), id);
             for (String s : seminar.keywords()) {
-                System.out.println(s);
                 keywordTree.deleteNode(s, id);
             }
             locationTree.delete(seminar);

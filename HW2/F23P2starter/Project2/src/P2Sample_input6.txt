@@ -1,10 +1,4 @@
 print location
-print cost
-print location
-print cost
-print location
-print cost
-print location
 
 
 

@@ -18,6 +18,7 @@ public class LinkedList<T extends Comparable<? super T>> {
         this.next = null;
         this.prev = null;
     }
+
     /**
      * Initialize .
      * 

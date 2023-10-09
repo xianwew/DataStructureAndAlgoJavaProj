@@ -97,6 +97,6 @@ public class BinNodeEmpty implements BinNode {
         for (int i = 0; i < level; i++) {
             System.out.print("  ");
         }
-        System.out.println("E"); 
+        System.out.println("E");
     }
 }

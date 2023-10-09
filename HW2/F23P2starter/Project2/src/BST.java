@@ -103,35 +103,46 @@ public class BST<T extends Comparable<? super T>> {
     /**
      * Delete a node with a specific key and ID from the BST.
      *
-     * @param key The key to delete.
+     * @param key     The key to delete.
      * @param curNode current node
      * @return The deleted Seminar or null if not found.
      */
-    public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key, int id, boolean swapping) {
+    public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key, int id,
+            boolean swapping) {
         if (curNode == null) {
             return null;
         }
 
         if (curNode.compareKey(key) < 0) {
-            curNode.setRight(deleteNodeHelper(curNode.getRight(), key, id, false));
+            curNode.setRight(
+                    deleteNodeHelper(curNode.getRight(), key, id, false));
         }
         else if (curNode.compareKey(key) > 0) {
-            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), key, id, false));
+            curNode.setLeft(
+                    deleteNodeHelper(curNode.getLeft(), key, id, false));
         }
-        else if (curNode.getValue().id() == id || swapping){
-            if (curNode.getLeft() == null) {
-                return curNode.getRight();
-            }
-            else if (curNode.getRight() == null) {
-                return curNode.getLeft();
-            }
+        else {
+            if (curNode.getValue().id() == id || swapping) {
+                if (curNode.getLeft() == null) {
+                    return curNode.getRight();
+                }
+                else if (curNode.getRight() == null) {
+                    return curNode.getLeft();
+                }
 
-            BSTNode<T> cur = curNode.getLeft();
-            while (cur.getRight() != null) {
-                cur = cur.getRight();
+                BSTNode<T> cur = curNode.getLeft();
+                while (cur.getRight() != null) {
+                    cur = cur.getRight();
+                }
+                curNode.setKey(cur.getKey());
+                curNode.setValue(cur.getValue());
+                curNode.setLeft(deleteNodeHelper(curNode.getLeft(),
+                        curNode.getKey(), id, true));
             }
-            curNode.setKey(cur.getKey());
-            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), curNode.getKey(), id, true));
+            else {
+                curNode.setLeft(
+                        deleteNodeHelper(curNode.getLeft(), key, id, false));
+            }
         }
         return curNode;
     }
@@ -165,12 +176,12 @@ public class BST<T extends Comparable<? super T>> {
     /**
      * Search for nodes within a specified range or matching a key.
      *
-     * @param key1  The first key for range search or exact match.
-     * @param key2  The second key for range search (ignored if not in range
-     *              search).
+     * @param key1    The first key for range search or exact match.
+     * @param key2    The second key for range search (ignored if not in range
+     *                search).
      * @param curNode current node
-     * @param range If true, perform a range search; if false, perform an exact
-     *              match search.
+     * @param range   If true, perform a range search; if false, perform an
+     *                exact match search.
      * @return A linked list of matching nodes or null if none found.
      */
     public int searchNodeHelper(BSTNode<T> curNode, T key1, T key2,
@@ -272,6 +283,7 @@ public class BST<T extends Comparable<? super T>> {
         right = printHelper(node.getRight(), level + 1);
         printSpaces(level);
         System.out.println(node.getKey());
+//      System.out.println(node.getKey() + ": " + node.getValue().id());
         left = printHelper(node.getLeft(), level + 1);
         return 1 + left + right;
     }

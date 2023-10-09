@@ -69,14 +69,12 @@ ID Tree:
   null
 Number of records: 2
 Date Tree:
-      null
-    1203301125
-      null
+    null
   0701250830
     null
 0610071600
   null
-Number of records: 3
+Number of records: 2
 Keyword Tree:
         null
       science
@@ -84,9 +82,7 @@ Keyword Tree:
     high_performance_computing
         null
       grids
-            null
-          computer_science
-            null
+          null
         computer
           null
   computation_biology
@@ -96,63 +92,58 @@ Keyword Tree:
         VT
             null
           VT
-              null
-            HPC
-              null
+            null
       Computer_Science
-          null
-        CSE
-          null
+        null
     Biology
       null
 Bioinformatics
   null
-Number of records: 14
+Number of records: 11
 Cost Tree:
   null
 30
-      null
-    25
-      null
+    null
   17
     null
-Number of records: 3
+Number of records: 2
 Delete FAILED -- There is no record with ID 1
 Record with ID 2 successfully deleted from the database
 Delete FAILED -- There is no record with ID 3
-Record with ID 10 successfully deleted from the database
 ID Tree:
-This tree is empty
+  null
+10
+  null
+Number of records: 1
 Date Tree:
   null
-1203301125
+0701250830
   null
 Number of records: 1
 Keyword Tree:
       null
     science
       null
-  computer_science
+  high_performance_computing
       null
-    computer_science
-      null
-Virginia_Tech
+    grids
         null
-      Virginia_Tech
+      computer
         null
-    VT
-        null
-      VT
-          null
-        HPC
-          null
-  CSE
-      null
-    CSE
-      null
-Number of records: 10
+VT
+  null
+Number of records: 5
 Cost Tree:
   null
-25
+17
   null
 Number of records: 1
+Record with ID 10 successfully deleted from the database
+ID Tree:
+This tree is empty
+Date Tree:
+This tree is empty
+Keyword Tree:
+This tree is empty
+Cost Tree:
+This tree is empty

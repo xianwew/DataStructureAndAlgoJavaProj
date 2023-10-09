@@ -1,8 +1,6 @@
 /**
- * Represents a binary tree for storing seminars 
- * in a two-dimensional space. It
- * provides methods for inserting, deleting, 
- * searching, and printing seminars.
+ * Represents a binary tree for storing seminars in a two-dimensional space. It
+ * provides methods for inserting, deleting, searching, and printing seminars.
  *
  * @author xianwei & jiren
  * @version Oct 2023
@@ -23,8 +21,7 @@ public class BinTree {
     /**
      * Creates a new binary tree with the specified world size.
      *
-     * @param worldSizeLocal The size of the world 
-     * (both width and height).
+     * @param worldSizeLocal The size of the world (both width and height).
      */
     public BinTree(int worldSizeLocal) {
         this.worldSize = worldSizeLocal;
@@ -50,8 +47,7 @@ public class BinTree {
     }
 
     /**
-     * Search for seminars within a circular region 
-     * defined by a center and
+     * Search for seminars within a circular region defined by a center and
      * radius.
      *
      * @param circuleX The x-coordinate of the center of the circle.

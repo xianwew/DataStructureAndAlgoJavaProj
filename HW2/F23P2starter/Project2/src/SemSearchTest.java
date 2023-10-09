@@ -17,155 +17,147 @@ public class SemSearchTest extends TestCase {
         // Nothing here
     }
 
-
     /**
      * Get code coverage of the class declaration.
      */
-    public void testMInitx()
-    {
+    public void testMInitx() {
         SemSearch sem = new SemSearch();
         assertNotNull(sem);
         SemSearch.main(null);
-        
-        String filePath = "src/P2Sample_output.txt"; 
+
+        String filePath = "src/P2Sample_output.txt";
 
         String refOut = "";
         try {
             byte[] bytes = Files.readAllBytes(Paths.get(filePath));
             refOut = new String(bytes, StandardCharsets.UTF_8);
-        } 
+        }
         catch (IOException e) {
             e.printStackTrace();
         }
-        
-        SemSearch.main(new String[]{"128", "src/P2Sample_input.txt"});
+
+        SemSearch.main(new String[] { "128", "src/P2Sample_input.txt" });
         String printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
+
         //
-        filePath = "src/P2syntaxInsert_output.txt"; 
+        filePath = "src/P2syntaxInsert_output.txt";
 
         refOut = "";
         try {
             byte[] bytes = Files.readAllBytes(Paths.get(filePath));
             refOut = new String(bytes, StandardCharsets.UTF_8);
-        } 
+        }
         catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         systemOut().clearHistory();
-        SemSearch.main(new String[]{"128", "src/P2syntaxInsert_input.txt"});
+        SemSearch.main(new String[] { "128", "src/P2syntaxInsert_input.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
-        filePath = "src/P2Sample_output2.txt"; 
+
+        filePath = "src/P2Sample_output2.txt";
 
         refOut = "";
         try {
             byte[] bytes = Files.readAllBytes(Paths.get(filePath));
             refOut = new String(bytes, StandardCharsets.UTF_8);
-        } 
+        }
         catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         systemOut().clearHistory();
-        SemSearch.main(new String[]{"128", "src/P2Sample_input2.txt"});
+        SemSearch.main(new String[] { "128", "src/P2Sample_input2.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
-        
-        //	
-        filePath = "src/P2Sample_output3.txt"; 
+
+        //
+        filePath = "src/P2Sample_output3.txt";
 
         refOut = "";
         try {
             byte[] bytes = Files.readAllBytes(Paths.get(filePath));
             refOut = new String(bytes, StandardCharsets.UTF_8);
-        } 
+        }
         catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         systemOut().clearHistory();
-        SemSearch.main(new String[]{"128", "src/P2Sample_input3.txt"});
+        SemSearch.main(new String[] { "128", "src/P2Sample_input3.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
-        
-        //  
-        filePath = "src/P2Sample_output4.txt"; 
+
+        //
+        filePath = "src/P2Sample_output4.txt";
 
         refOut = "";
         try {
             byte[] bytes = Files.readAllBytes(Paths.get(filePath));
             refOut = new String(bytes, StandardCharsets.UTF_8);
-        } 
+        }
         catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         systemOut().clearHistory();
-        SemSearch.main(new String[]{"1024", "src/P2Sample_input3.txt"});
+        SemSearch.main(new String[] { "1024", "src/P2Sample_input3.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
-        
-        //  
-        filePath = "src/P2Sample_output5.txt"; 
+
+        //
+        filePath = "src/P2Sample_output5.txt";
 
         refOut = "";
         try {
             byte[] bytes = Files.readAllBytes(Paths.get(filePath));
             refOut = new String(bytes, StandardCharsets.UTF_8);
-        } 
+        }
         catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         systemOut().clearHistory();
-        SemSearch.main(new String[]{"0", "src/P2Sample_input3.txt"});
+        SemSearch.main(new String[] { "0", "src/P2Sample_input3.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
-        
-        //  
-        filePath = "src/P2syntaxSearch_output.txt"; 
+
+        //
+        filePath = "src/P2syntaxSearch_output.txt";
 
         refOut = "";
         try {
             byte[] bytes = Files.readAllBytes(Paths.get(filePath));
             refOut = new String(bytes, StandardCharsets.UTF_8);
-        } 
+        }
         catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         systemOut().clearHistory();
-        SemSearch.main(new String[]{"128", "src/P2syntaxSearch_input.txt"});
+        SemSearch.main(new String[] { "128", "src/P2syntaxSearch_input.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
-        
-        //  
-        filePath = "src/P2Sample_output6.txt"; 
+
+        //
+        filePath = "src/P2Sample_output6.txt";
 
         refOut = "";
         try {
             byte[] bytes = Files.readAllBytes(Paths.get(filePath));
             refOut = new String(bytes, StandardCharsets.UTF_8);
-        } 
+        }
         catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         systemOut().clearHistory();
-        SemSearch.main(new String[]{"128", "src/P2Sample_input4.txt"});
+        SemSearch.main(new String[] { "128", "src/P2Sample_input4.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
-        
+
 //        //  
 //        filePath = "src/P2syntaxPrint_output.txt"; 
 //
@@ -184,4 +176,3 @@ public class SemSearchTest extends TestCase {
 //        assertFuzzyEquals(printOut, refOut);
     }
 }
-
