@@ -108,6 +108,10 @@ public class BinNodeInternal implements BinNode {
                         yWidth);
             }
         }
+        if (left.isEmpty() && left.isLeaf() && right.isEmpty()
+                && right.isEmpty()) {
+            return BinNodeEmpty.getNode();
+        }
         return this;
     }
 

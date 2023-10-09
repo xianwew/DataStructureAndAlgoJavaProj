@@ -67,37 +67,26 @@ ID: 3, Title: Overview of HPC and CSE Research at VT
 Date: 1203301125, Length: 35, X: 67, Y: 67, Cost: 25
 Description: Learn what kind of    research is done on HPC  and CSE at VT
 Keywords: HPC, CSE, computer_science
-Keyword Tree:
-        null
-      science
-        null
-    high_performance_computing
-        null
-      grids
-            null
-          computer_science
-            null
-        computer
-          null
-  computation_biology
-            null
-          Virginia_Tech
-            null
-        VT
-            null
-          VT
-              null
-            HPC
-              null
-      Computer_Science
-          null
-        CSE
-          null
-    Biology
-      null
-Bioinformatics
-  null
-Number of records: 14
+Location Tree:
+I
+  E
+  I
+    E
+    I
+      I
+        I
+          I
+            I
+              I
+                I
+                  Leaf with 2 objects: 2 3
+                  Leaf with 1 objects: 10
+                E
+              E
+            E
+          E
+        E
+      E
 Successfully inserted record with ID 6
 ID: 6, Title: Overview of HPC and CSE Research at VT
 Date: 1203301125, Length: 35, X: 31, Y: 31, Cost: 25
@@ -156,7 +145,7 @@ I
             I
               I
                 I
-                  Leaf with 2 objects: 2 3
+                  Leaf with 1 objects: 2
                   Leaf with 1 objects: 10
                 E
               E
@@ -203,7 +192,7 @@ I
             I
               I
                 I
-                  Leaf with 1 objects: 3
+                  E
                   Leaf with 1 objects: 10
                 E
               E
@@ -212,37 +201,14 @@ I
         E
       E
 Record with ID 10 successfully deleted from the database
-Keyword Tree:
-    null
-  computer_science
-    null
-HPC
-    null
-  CSE
-    null
-Number of records: 3
+Location Tree:
+I
+  Leaf with 1 objects: 6
+  E
 Record with ID 6 successfully deleted from the database
 ID Tree:
 This tree is empty
 Keyword Tree:
 This tree is empty
 Location Tree:
-I
-  E
-  I
-    E
-    I
-      I
-        I
-          I
-            I
-              I
-                I
-                  Leaf with 1 objects: 3
-                  E
-                E
-              E
-            E
-          E
-        E
-      E
+E

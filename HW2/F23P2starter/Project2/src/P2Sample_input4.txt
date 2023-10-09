@@ -22,7 +22,7 @@ Overview of HPC and CSE Research at VT
       HPC      CSE      computer_science 
 Learn what kind of    research is done on HPC  and CSE at VT
 
-print                   keyword
+print                   location
 
 insert 6
 Overview of HPC and CSE Research at VT
@@ -43,7 +43,7 @@ print ID
 print location
 
 delete 10
-print                   keyword
+print                   location
 
 delete 6
 

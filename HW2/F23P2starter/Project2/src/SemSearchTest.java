@@ -157,7 +157,7 @@ public class SemSearchTest extends TestCase {
         SemSearch.main(new String[] { "128", "src/P2Sample_input4.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
+
         //
         filePath = "src/P2Sample_output7.txt";
 
