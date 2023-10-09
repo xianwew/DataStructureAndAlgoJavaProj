@@ -336,21 +336,19 @@ Keyword Tree:
               null
 Computer_Science
         null
-      Computer_Science
+      CSE
           null
         CSE
             null
           CSE
               null
             CSE
-                null
-              CSE
-                null
+              null
     Biology
       null
   Bioinformatics
     null
-Number of records: 24
+Number of records: 23
 Cost Tree:
   null
 30
@@ -528,7 +526,7 @@ Keyword Tree:
                 null
 Computer_Science
         null
-      Computer_Science
+      CSE
           null
         CSE
             null
@@ -537,14 +535,12 @@ Computer_Science
             CSE
                 null
               CSE
-                  null
-                CSE
-                  null
+                null
     Biology
       null
   Bioinformatics
     null
-Number of records: 27
+Number of records: 26
 Cost Tree:
   null
 30

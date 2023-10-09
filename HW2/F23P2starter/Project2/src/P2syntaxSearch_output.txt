@@ -35,11 +35,11 @@ Seminars within 10 units of 20, 10:
 Found a record with key value 1 at 10, 10
 Found a record with key value 2 at 20, 10
 Found a record with key value 3 at 30, 10
-22 nodes visited in this search
+21 nodes visited in this search
 Seminars within 10 units of 0, 0:
 Found a record with key value 21 at 0, 10
 Found a record with key value 10 at 10, 0
-14 nodes visited in this search
+15 nodes visited in this search
 Seminars within 10 units of 4, 4:
 Found a record with key value 21 at 0, 10
 Found a record with key value 10 at 10, 0

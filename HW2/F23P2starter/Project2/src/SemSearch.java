@@ -6,8 +6,8 @@
 /**
  * The class containing the main method.
  *
- * @author {Your Name Here}
- * @version {Put Something Here}
+ * @author xianwei & jiren
+ * @version Oct 2023
  */
 
 // On my honor:

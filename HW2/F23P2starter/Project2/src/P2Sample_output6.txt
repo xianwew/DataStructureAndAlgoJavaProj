@@ -1,11 +1,13 @@
 Successfully inserted record with ID 2
 ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
-Date: 0610071600, Length: 60, X: 10, Y: 10, Cost: 30
+Date: 0610071600, Length: 60, X: 67, Y: 67, Cost: 30
 Description: Introduction to   bioinformatics and computation biology
 Keywords: Bioinformatics, computation_biology, Biology, Computer_Science, VT, Virginia_Tech
+Location Tree:
+Leaf with 1 objects: 2
 Successfully inserted record with ID 10
 ID: 10, Title: Computing Systems Research at VT
-Date: 0701250830, Length: 30, X: 30, Y: 10, Cost: 17
+Date: 0701250830, Length: 30, X: 68, Y: 67, Cost: 17
 Description: Seminar about the      Computing systems research at      VT
 Keywords: high_performance_computing, grids, VT, computer, science
 ID Tree:
@@ -15,13 +17,6 @@ ID Tree:
 2
   null
 Number of records: 2
-Date Tree:
-    null
-  0701250830
-    null
-0610071600
-  null
-Number of records: 2
 Keyword Tree:
         null
       science
@@ -47,34 +42,77 @@ Keyword Tree:
 Bioinformatics
   null
 Number of records: 11
-Cost Tree:
-  null
-30
-    null
-  17
-    null
-Number of records: 2
+Location Tree:
+I
+  E
+  I
+    E
+    I
+      I
+        I
+          I
+            I
+              I
+                I
+                  Leaf with 1 objects: 2
+                  Leaf with 1 objects: 10
+                E
+              E
+            E
+          E
+        E
+      E
 Successfully inserted record with ID 3
 ID: 3, Title: Overview of HPC and CSE Research at VT
-Date: 1203301125, Length: 35, X: 0, Y: 0, Cost: 25
+Date: 1203301125, Length: 35, X: 67, Y: 67, Cost: 25
 Description: Learn what kind of    research is done on HPC  and CSE at VT
 Keywords: HPC, CSE, computer_science
-Delete FAILED -- There is no record with ID 5
+Keyword Tree:
+        null
+      science
+        null
+    high_performance_computing
+        null
+      grids
+            null
+          computer_science
+            null
+        computer
+          null
+  computation_biology
+            null
+          Virginia_Tech
+            null
+        VT
+            null
+          VT
+              null
+            HPC
+              null
+      Computer_Science
+          null
+        CSE
+          null
+    Biology
+      null
+Bioinformatics
+  null
+Number of records: 14
+Successfully inserted record with ID 6
+ID: 6, Title: Overview of HPC and CSE Research at VT
+Date: 1203301125, Length: 35, X: 31, Y: 31, Cost: 25
+Description: Learn what kind of    research is done on HPC  and CSE at VT
+Keywords: HPC, CSE, computer_science
 Record with ID 3 successfully deleted from the database
 ID Tree:
     null
   10
-    null
+      null
+    6
+      null
 2
   null
-Number of records: 2
-Date Tree:
-    null
-  0701250830
-    null
-0610071600
-  null
-Number of records: 2
+Number of records: 3
 Keyword Tree:
         null
       science
@@ -82,7 +120,9 @@ Keyword Tree:
     high_performance_computing
         null
       grids
-          null
+            null
+          computer_science
+            null
         computer
           null
   computation_biology
@@ -92,34 +132,46 @@ Keyword Tree:
         VT
             null
           VT
-            null
+              null
+            HPC
+              null
       Computer_Science
-        null
+          null
+        CSE
+          null
     Biology
       null
 Bioinformatics
   null
-Number of records: 11
-Cost Tree:
-  null
-30
-    null
-  17
-    null
-Number of records: 2
-Delete FAILED -- There is no record with ID 1
+Number of records: 14
+Location Tree:
+I
+  Leaf with 1 objects: 6
+  I
+    E
+    I
+      I
+        I
+          I
+            I
+              I
+                I
+                  Leaf with 2 objects: 2 3
+                  Leaf with 1 objects: 10
+                E
+              E
+            E
+          E
+        E
+      E
 Record with ID 2 successfully deleted from the database
-Delete FAILED -- There is no record with ID 3
 ID Tree:
   null
 10
-  null
-Number of records: 1
-Date Tree:
-  null
-0701250830
-  null
-Number of records: 1
+    null
+  6
+    null
+Number of records: 2
 Keyword Tree:
       null
     science
@@ -127,23 +179,70 @@ Keyword Tree:
   high_performance_computing
       null
     grids
-        null
+          null
+        computer_science
+          null
       computer
         null
 VT
-  null
-Number of records: 5
-Cost Tree:
-  null
-17
-  null
-Number of records: 1
+      null
+    HPC
+      null
+  CSE
+    null
+Number of records: 8
+Location Tree:
+I
+  Leaf with 1 objects: 6
+  I
+    E
+    I
+      I
+        I
+          I
+            I
+              I
+                I
+                  Leaf with 1 objects: 3
+                  Leaf with 1 objects: 10
+                E
+              E
+            E
+          E
+        E
+      E
 Record with ID 10 successfully deleted from the database
+Keyword Tree:
+    null
+  computer_science
+    null
+HPC
+    null
+  CSE
+    null
+Number of records: 3
+Record with ID 6 successfully deleted from the database
 ID Tree:
-This tree is empty
-Date Tree:
 This tree is empty
 Keyword Tree:
 This tree is empty
-Cost Tree:
-This tree is empty
+Location Tree:
+I
+  E
+  I
+    E
+    I
+      I
+        I
+          I
+            I
+              I
+                I
+                  Leaf with 1 objects: 3
+                  E
+                E
+              E
+            E
+          E
+        E
+      E

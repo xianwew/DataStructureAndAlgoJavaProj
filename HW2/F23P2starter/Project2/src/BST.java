@@ -103,28 +103,27 @@ public class BST<T extends Comparable<? super T>> {
     /**
      * Delete a node with a specific key and ID from the BST.
      *
-     * @param key     The key to delete.
-     * @param curNode current node
-     * @param id the id to be deleted
+     * @param key      The key to delete.
+     * @param curNode  current node
+     * @param id       the id to be deleted
      * @param swapping indicate if we are swapping the nodes
      * @return The deleted Seminar or null if not found.
      */
-    public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key, int id,
-            boolean swapping) {
+    public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key, int id) {
         if (curNode == null) {
             return null;
         }
 
         if (curNode.compareKey(key) < 0) {
             curNode.setRight(
-                    deleteNodeHelper(curNode.getRight(), key, id, false));
+                    deleteNodeHelper(curNode.getRight(), key, id));
         }
         else if (curNode.compareKey(key) > 0) {
             curNode.setLeft(
-                    deleteNodeHelper(curNode.getLeft(), key, id, false));
+                    deleteNodeHelper(curNode.getLeft(), key, id));
         }
         else {
-            if (curNode.getValue().id() == id || swapping) {
+            if (curNode.getValue().id() == id) {
                 if (curNode.getLeft() == null) {
                     return curNode.getRight();
                 }
@@ -139,11 +138,11 @@ public class BST<T extends Comparable<? super T>> {
                 curNode.setKey(cur.getKey());
                 curNode.setValue(cur.getValue());
                 curNode.setLeft(deleteNodeHelper(curNode.getLeft(),
-                        curNode.getKey(), id, true));
+                        curNode.getKey(), cur.getValue().id()));
             }
             else {
                 curNode.setLeft(
-                        deleteNodeHelper(curNode.getLeft(), key, id, false));
+                        deleteNodeHelper(curNode.getLeft(), key, id));
             }
         }
         return curNode;
@@ -157,7 +156,7 @@ public class BST<T extends Comparable<? super T>> {
      * @param id  The ID to match for deletion.
      */
     public void deleteNode(T key, int id) {
-        root = deleteNodeHelper(root, key, id, false);
+        root = deleteNodeHelper(root, key, id);
     }
 
     /**

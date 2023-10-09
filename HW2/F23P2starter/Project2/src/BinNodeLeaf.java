@@ -65,9 +65,7 @@ public class BinNodeLeaf implements BinNode {
     public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth,
             int yWidth) {
         // case 1
-        // if x, y equals existing seminar
-        // increase count
-        // insert to the list
+        // if x, y equal to existing seminar
         SeminarList curList = sl.getNext();
         if (curList.getSeminar() != null
                 && curList.getSeminar().x() == seminar.x()
@@ -80,10 +78,9 @@ public class BinNodeLeaf implements BinNode {
             curList.setNext(tmp);
             return this;
         }
-        else if (curList.getSeminar() == null) {
-            curList.setSeminar(seminar);
-            return this;
-        }
+        // System.out.println("awd");
+        // case 2
+        // if x, y not equal to existing seminar
         BinNodeInternal tmp = new BinNodeInternal();
         curList = sl.getNext();
         while (curList != null) {
