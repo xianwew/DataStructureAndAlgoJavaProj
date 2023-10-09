@@ -174,17 +174,19 @@ public class WorldDataBase {
      * @param id The ID of the seminar record to be deleted.
      */
     public void delete(int id) {
-        Seminar tmp = null;
-        tmp = idTree.deleteNode(id, id);
-        if (tmp != null) {
-            costTree.deleteNode(tmp.cost(), id);
-            dateTree.deleteNode(tmp.date(), id);
-            for (String s : tmp.keywords()) {
+        LinkedList<Integer> searchResultId = idTree.searchNode(id, null, false);
+        if (searchResultId != null) {
+            System.out.println("Record with ID " + id
+                    + " successfully deleted from the database"); 
+            Seminar seminar = searchResultId.getVal().getValue(); 
+            idTree.deleteNode(id, id);
+            costTree.deleteNode(seminar.cost(), id);
+            dateTree.deleteNode(seminar.date(), id);
+            for (String s : seminar.keywords()) {
+                System.out.println(s):
                 keywordTree.deleteNode(s, id);
             }
-            locationTree.delete(tmp);
-            System.out.println("Record with ID " + id
-                    + " successfully deleted from the database");
+            locationTree.delete(seminar);
         }
         else {
             System.out.println(

@@ -107,18 +107,18 @@ public class BST<T extends Comparable<? super T>> {
      * @param curNode current node
      * @return The deleted Seminar or null if not found.
      */
-    public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, int id) {
+    public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key, int id, boolean swapping) {
         if (curNode == null) {
             return null;
         }
 
-        if (curNode.getValue().id() < id) {
-            curNode.setRight(deleteNodeHelper(curNode.getRight(), id));
+        if (curNode.compareKey(key) < 0) {
+            curNode.setRight(deleteNodeHelper(curNode.getRight(), key, id, false));
         }
-        else if (curNode.getValue().id() > id) {
-            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), id));
+        else if (curNode.compareKey(key) > 0) {
+            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), key, id, false));
         }
-        else {
+        else if (curNode.getValue().id() == id || swapping){
             if (curNode.getLeft() == null) {
                 return curNode.getRight();
             }
@@ -131,7 +131,7 @@ public class BST<T extends Comparable<? super T>> {
                 cur = cur.getRight();
             }
             curNode.setKey(cur.getKey());
-            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), curNode.getValue().id()));
+            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), curNode.getKey(), id, true));
         }
         return curNode;
     }
@@ -144,20 +144,17 @@ public class BST<T extends Comparable<? super T>> {
      * @param id  The ID to match for deletion.
      * @return The deleted Seminar object if found, or null if not found.
      */
-    public Seminar deleteNode(T key, int id) {
-        LinkedList<T> searchResult = searchNode(key, null, false);
-        Seminar result = null;
-        while (searchResult != null) {
-            BSTNode<T> tmp = searchResult.getVal();
-            if (tmp.getValue().id() == id) {
-                if (String.valueOf(id).equals(String.valueOf(key))) {
-                    result = tmp.getValue();
-                }
-                root = deleteNodeHelper(root, id);
-            }
-            searchResult = searchResult.getNext();
+    public void deleteNode(T key, int id) {
+        if(root != null && root.getValue().id() == id && root.getLeft() == null && root.getRight() == null) {
+            root = null;
         }
-        return result;
+        else {
+            root = deleteNodeHelper(root, key, id, false);
+        }
+        if(root != null) {
+            System.out.println(root.getKey());
+        }
+        
     }
 
     /**

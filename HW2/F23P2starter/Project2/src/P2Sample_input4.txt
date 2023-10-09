@@ -31,6 +31,11 @@ print cost
 delete 1
 delete 2
 delete 3
+print ID
+print date
+                print                   keyword
+                
+print cost
 delete 10
 
 print ID
