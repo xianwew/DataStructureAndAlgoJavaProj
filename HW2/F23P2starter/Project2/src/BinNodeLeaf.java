@@ -108,7 +108,7 @@ public class BinNodeLeaf implements BinNode {
         SeminarList tmp = sl.getNext();
         SeminarList prev = sl;
         while (tmp != null) {
-            if(tmp.getSeminar().id() == seminar.id()) {
+            if (tmp.getSeminar().id() == seminar.id()) {
                 prev.setNext(tmp.getNext());
             }
             prev = tmp;

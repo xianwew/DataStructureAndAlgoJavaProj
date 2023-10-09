@@ -106,7 +106,6 @@ public class BST<T extends Comparable<? super T>> {
      * @param key      The key to delete.
      * @param curNode  current node
      * @param id       the id to be deleted
-     * @param swapping indicate if we are swapping the nodes
      * @return The deleted Seminar or null if not found.
      */
     public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key, int id) {
