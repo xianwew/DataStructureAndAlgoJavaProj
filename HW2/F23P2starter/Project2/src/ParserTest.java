@@ -1,3 +1,6 @@
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import student.TestCase;
 
 /**
@@ -30,5 +33,5 @@ public class ParserTest extends TestCase {
         assertEquals(45, test.getInstruction("print cost 123"));
 
     }
-
+    
 }

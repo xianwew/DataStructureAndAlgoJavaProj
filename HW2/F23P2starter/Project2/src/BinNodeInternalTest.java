@@ -11,7 +11,7 @@ public class BinNodeInternalTest extends TestCase {
     /**
      * Test the search function.
      */
-    public void searchTest() {
+    public void testSearch() {
         BinNodeInternal tmp = new BinNodeInternal();
         tmp.search(0, 0, 0, 0, 0, 0, 0, 0);
     }
@@ -19,7 +19,7 @@ public class BinNodeInternalTest extends TestCase {
     /**
      * Test the insert function.
      */
-    public void insertTest() {
+    public void testInsert() {
         int id = 12;
         String title = "";
         String date = "";

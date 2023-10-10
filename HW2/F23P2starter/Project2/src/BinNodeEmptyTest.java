@@ -1,4 +1,8 @@
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import student.TestCase;
 
 /**
@@ -12,25 +16,33 @@ public class BinNodeEmptyTest extends TestCase {
     /**
      * Test the print method of BinNodeEmpty.
      */
-    public void printTest() {
-        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(outputStream));
+    public void testPrint() {
 
         BinNodeEmpty tmp = BinNodeEmpty.getNode();
         int level = 3;
 
         tmp.print(level);
-        System.setOut(System.out);
-
-        String expectedOutput = "      E\n";
-        assertEquals(expectedOutput, outputStream.toString());
-
+        String printOut = systemOut().getHistory();
+        String refOut = "      E\n";
+        assertFuzzyEquals(printOut, refOut);
+ 
+        
+        systemOut().clearHistory();
         level = 0;
         tmp.print(level);
-        System.setOut(System.out);
 
-        expectedOutput = "E\n";
-        assertEquals(expectedOutput, outputStream.toString());
+        refOut = "E\n";
+        assertFuzzyEquals(printOut, refOut);
+
+        
+        systemOut().clearHistory();
+        level = -1;
+        tmp.print(level);
+
+        refOut = "E\n";
+        assertFuzzyEquals(printOut, refOut);
+        
+        
     }
 
 }
