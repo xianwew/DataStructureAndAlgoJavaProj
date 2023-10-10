@@ -1,6 +1,3 @@
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
 import student.TestCase;
 
 /**

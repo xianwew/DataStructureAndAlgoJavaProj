@@ -67,6 +67,7 @@ public interface BinNode {
      * Print the node at the specified level.
      *
      * @param level The level at which to print the node.
+     * @param return the number of iteration.
      */
     public int print(int level);
 }

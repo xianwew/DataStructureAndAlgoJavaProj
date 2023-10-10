@@ -35,7 +35,6 @@ public class SemSearch {
      */
     public static void main(String[] args) {
         // This is the main file for the program.
-        Seminar dum = new Seminar();
         if (args != null) {
             WorldDataBase world = new WorldDataBase(Integer.valueOf(args[0]));
             Parser parser = new Parser();

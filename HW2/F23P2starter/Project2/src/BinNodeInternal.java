@@ -182,6 +182,7 @@ public class BinNodeInternal implements BinNode {
      * Print the internal node at the specified level.
      *
      * @param level The level at which to print the internal node.
+     * @param return the number of iteration.
      */
     public int print(int level) {
         int i = 0;
