@@ -1,0 +1,78 @@
+insert 2
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     50     10 30
+AEGFAEW AWD
+    Introduction to   bioinformatics and computation biology
+
+insert 3
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     80     80 30
+AEGFAEW AWD
+    Introduction to   bioinformatics and computation biology
+
+insert 5
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     20     70 30
+swwdaw qawd
+    Introduction to   bioinformatics and computation biology
+
+insert 6
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     50     20 30
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 8
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     15    15 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 9
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     13    15 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 10
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     15    17 20
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 11
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     13    17 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 12
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     17   13 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 13
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     12    17 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+print ID
+print keyword
+
+delete 2
+
+print ID
+print keyword
+
+delete 3
+
+print keyword
+delete 5
+
+print ID
+print cost
+print location
+print date
+print keyword
