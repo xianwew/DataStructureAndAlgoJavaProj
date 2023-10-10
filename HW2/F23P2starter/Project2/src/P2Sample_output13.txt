@@ -38,6 +38,102 @@ ID: 100, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 13, Y: 7, Cost: 23
 Description: Introduction to   bioinformatics and computation
 Keywords: swwdaw, swwdawraw
+Record with ID 5 successfully deleted from the database
+Delete FAILED -- There is no record with ID 5
+Record with ID 6 successfully deleted from the database
+Found record with ID 45:
+ID: 45, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+Seminars with costs in range 30 to 50:
+ID: 8, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID: 1, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: swwdaw, qawd
+ID: 45, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+ID: 25, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+11 nodes visited in this search
+Seminars with costs in range 0 to 10:
+6 nodes visited in this search
+Seminars with costs in range 10 to 20:
+ID: 7, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 20
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+6 nodes visited in this search
+Seminars with costs in range -1 to -1:
+6 nodes visited in this search
+Seminars with costs in range 0 to -1:
+6 nodes visited in this search
+Seminars with costs in range 127 to 127:
+2 nodes visited in this search
+Seminars with costs in range 61 to 61:
+2 nodes visited in this search
+Seminars with costs in range 0 to 61:
+ID: 7, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 20
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID: 100, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 13, Y: 7, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID: 8, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID: 1, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: swwdaw, qawd
+ID: 45, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+ID: 25, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+13 nodes visited in this search
+Seminars with costs in range 61 to 127:
+2 nodes visited in this search
+Seminars with costs in range 0 to 127:
+ID: 7, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 20
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID: 100, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 13, Y: 7, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID: 8, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID: 1, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: swwdaw, qawd
+ID: 45, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+ID: 25, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+13 nodes visited in this search
 Location Tree:
 I
   I
@@ -46,15 +142,7 @@ I
         I
           I
             I
-              I
-                I
-                  I
-                    I
-                      Leaf with 1 objects: 6
-                      Leaf with 3 objects: 1 5 8
-                    E
-                  E
-                E
+              Leaf with 2 objects: 1 8
               Leaf with 1 objects: 100
             E
           Leaf with 3 objects: 7 25 45
@@ -80,15 +168,7 @@ I
         I
           I
             I
-              I
-                I
-                  I
-                    I
-                      Leaf with 1 objects: 6
-                      Leaf with 3 objects: 1 5 8
-                    E
-                  E
-                E
+              Leaf with 2 objects: 1 8
               Leaf with 1 objects: 100
             Leaf with 1 objects: 9
           I
@@ -108,6 +188,9 @@ ID: 12, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 15, Y: 15, Cost: 23
 Description: Introduction to   bioinformatics and computation
 Keywords: swwdaw, swwdawraw
+Delete FAILED -- There is no record with ID 5
+Record with ID 8 successfully deleted from the database
+Record with ID 1 successfully deleted from the database
 Location Tree:
 I
   I
@@ -116,15 +199,7 @@ I
         I
           I
             I
-              I
-                I
-                  I
-                    I
-                      Leaf with 1 objects: 6
-                      Leaf with 3 objects: 1 5 8
-                    E
-                  E
-                E
+              E
               I
                 Leaf with 1 objects: 100
                 Leaf with 1 objects: 12
