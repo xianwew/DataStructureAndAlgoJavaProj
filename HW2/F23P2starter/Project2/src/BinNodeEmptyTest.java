@@ -21,6 +21,7 @@ public class BinNodeEmptyTest extends TestCase {
         BinNodeEmpty tmp = BinNodeEmpty.getNode();
         int level = 3;
 
+        systemOut().clearHistory();
         tmp.print(level);
         String printOut = systemOut().getHistory();
         String refOut = "      E\n";
@@ -43,6 +44,12 @@ public class BinNodeEmptyTest extends TestCase {
         assertFuzzyEquals(printOut, refOut);
         
         
+        systemOut().clearHistory();
+        level = 10;
+        tmp.print(level);
+
+        refOut = "                    E\n";
+        assertFuzzyEquals(printOut, refOut);
     }
 
 }
