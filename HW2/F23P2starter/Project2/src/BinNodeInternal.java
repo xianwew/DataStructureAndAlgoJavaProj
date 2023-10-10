@@ -225,4 +225,5 @@ public class BinNodeInternal implements BinNode {
     public void setRight(BinNode right) {
         this.right = right;
     }
+
 }
