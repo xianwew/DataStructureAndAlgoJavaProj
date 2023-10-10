@@ -141,7 +141,7 @@ public class Parser {
             Scanner reader = new Scanner(commandFile);
             int instruction = 0;
             int id = -1;
-            data = reader.nextLine().trim();
+            data = reader.nextLine().trim();     
             int lastLineExecution = 0;
             int totalLine = 1;
             String[] param = new String[3];
@@ -194,11 +194,11 @@ public class Parser {
                             break;
                     }
                     line++;
-                    data = reader.nextLine().trim();
                     if (reader.hasNextLine()) {
+                        data = reader.nextLine().trim();
                         totalLine++;
-                        tmpData = data;
                     }
+                    tmpData = data;
                     while (reader.hasNextLine() && tmpData.trim().equals("")) {
                         data = reader.nextLine().trim();
                         tmpData = data;
@@ -219,7 +219,7 @@ public class Parser {
                 seminar = new Seminar(id, title, dateTime, length, x, y, cost,
                         keywordList, desc);
                 dataBase.processCommand(instruction, id, seminar, param);
-                lastLineExecution = totalLine - 1 > 0 ? totalLine - 1 : 0;
+                lastLineExecution = totalLine - 1;
                 if (!reader.hasNextLine()) {
                     reader.close();
                     instruction = getInstruction(data);
