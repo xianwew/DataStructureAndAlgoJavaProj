@@ -195,7 +195,7 @@ public class Parser {
                     }
                     line++;
                     data = reader.nextLine().trim();
-                    if(reader.hasNextLine()) {
+                    if (reader.hasNextLine()) {
                         totalLine++;
                         tmpData = data;
                     }
