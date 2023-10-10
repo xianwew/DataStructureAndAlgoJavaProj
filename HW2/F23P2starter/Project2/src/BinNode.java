@@ -68,5 +68,5 @@ public interface BinNode {
      *
      * @param level The level at which to print the node.
      */
-    public void print(int level);
+    public int print(int level);
 }

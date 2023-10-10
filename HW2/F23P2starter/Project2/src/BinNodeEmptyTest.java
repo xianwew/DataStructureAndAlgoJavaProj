@@ -20,33 +20,35 @@ public class BinNodeEmptyTest extends TestCase {
 
         BinNodeEmpty tmp = BinNodeEmpty.getNode();
         int level = 3;
+        int result = 0;
 
         systemOut().clearHistory();
-        tmp.print(level);
+        result = tmp.print(level);
         String printOut = systemOut().getHistory();
         String refOut = "      E\n";
         assertFuzzyEquals(printOut, refOut);
- 
-        
+        assertEquals(result, 3);
+
         systemOut().clearHistory();
         level = 0;
-        tmp.print(level);
+        result = tmp.print(level);
         refOut = "E\n";
         assertFuzzyEquals(printOut, refOut);
+        assertEquals(result, 0);
 
-        
         systemOut().clearHistory();
         level = -1;
-        tmp.print(level);
+        result = tmp.print(level);
         refOut = "E\n";
         assertFuzzyEquals(printOut, refOut);
-        
-        
+        assertEquals(result, 0);
+
         systemOut().clearHistory();
         level = 10;
-        tmp.print(level);
+        result = tmp.print(level);
         refOut = "                    E\n";
         assertFuzzyEquals(printOut, refOut);
+        assertEquals(result, 10);
     }
 
 }

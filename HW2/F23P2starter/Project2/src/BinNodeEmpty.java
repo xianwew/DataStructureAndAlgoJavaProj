@@ -90,10 +90,12 @@ public class BinNodeEmpty implements BinNode {
      *
      * @param level The level at which to print the empty node.
      */
-    public void print(int level) {
-        for (int i = 0; i < level; i++) {
+    public int print(int level) {
+        int i = 0;
+        for (i = 0; i < level; i++) {
             System.out.print("  ");
         }
         System.out.println("E");
+        return i;
     }
 }

@@ -120,7 +120,10 @@ public class BST<T extends Comparable<? super T>> {
             curNode.setLeft(deleteNodeHelper(curNode.getLeft(), key, id));
         }
         else {
-            if (curNode.getValue().id() == id) {
+            if (curNode.getValue().id() != id) {
+                curNode.setLeft(deleteNodeHelper(curNode.getLeft(), key, id));
+            }
+            else {
                 if (curNode.getLeft() == null) {
                     return curNode.getRight();
                 }
@@ -136,9 +139,6 @@ public class BST<T extends Comparable<? super T>> {
                 curNode.setValue(cur.getValue());
                 curNode.setLeft(deleteNodeHelper(curNode.getLeft(),
                         curNode.getKey(), cur.getValue().id()));
-            }
-            else {
-                curNode.setLeft(deleteNodeHelper(curNode.getLeft(), key, id));
             }
         }
         return curNode;

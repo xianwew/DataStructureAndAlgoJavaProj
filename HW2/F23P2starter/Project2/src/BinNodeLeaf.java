@@ -80,13 +80,12 @@ public class BinNodeLeaf implements BinNode {
         // if x, y equal to existing seminar
         SeminarList curList = sl.getNext();
         SeminarList prev = sl;
-        if (curList != null && curList.getSeminar().x() == seminar.x()
+        if (curList.getSeminar().x() == seminar.x()
                 && curList.getSeminar().y() == seminar.y()) {
             SeminarList tmp = new SeminarList();
             tmp.setSeminar(seminar);
-            while (curList != null) {
-                if (prev.getSeminar().id() < seminar.id()
-                        && curList.getSeminar().id() > seminar.id()) {
+            while (true) {
+                if (curList.getSeminar().id() > seminar.id()) {
                     prev.setNext(tmp);
                     tmp.setNext(curList);
                     break;
@@ -159,7 +158,7 @@ public class BinNodeLeaf implements BinNode {
     public int search(int x, int y, int circuleX, int circuleY, int radius,
             int level, int xWidth, int yWidth) {
         SeminarList tmp = sl.getNext();
-        if (tmp != null && Math.pow(tmp.getSeminar().x() - circuleX, 2) + Math
+        if (Math.pow(tmp.getSeminar().x() - circuleX, 2) + Math
                 .pow(tmp.getSeminar().y() - circuleY, 2) <= radius * radius) {
             while (tmp != null) {
                 System.out.println("Found a record with key value "
@@ -176,8 +175,9 @@ public class BinNodeLeaf implements BinNode {
      *
      * @param level The level of the binary tree.
      */
-    public void print(int level) {
-        for (int i = 0; i < level; i++) {
+    public int print(int level) {
+        int i = 0;
+        for (i = 0; i < level; i++) {
             System.out.print("  ");
         }
         String s = "";
@@ -189,6 +189,7 @@ public class BinNodeLeaf implements BinNode {
             count++;
         }
         System.out.println("Leaf with " + count + " objects:" + s);
+        return i;
     }
 
 }

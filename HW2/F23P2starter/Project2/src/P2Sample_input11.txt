@@ -97,50 +97,50 @@ swwdaw swwdawraw
     Introduction to   bioinformatics and computation
 
 print location
-
+search ID 2
 delete 2
 
 print location
-
+search ID 3
 delete 3
 
 print location
 delete 5
 
 print location
-
+search ID 4
 delete 4
 
 print location
-
+search ID 1
 delete 1
 
 print location
-
+search ID 6
 delete 6
 
 print location
-
+search ID 12
 delete 12
 
 print location
-
+search ID 11
 delete 11
 
 print location
-
+search ID 10
 delete 10
 
 print location
-
+search ID 8
 delete 8
 
 print location
-
+search ID 7
 delete 7
 
 print location
-
+search ID 9
 delete 9
 
 print location

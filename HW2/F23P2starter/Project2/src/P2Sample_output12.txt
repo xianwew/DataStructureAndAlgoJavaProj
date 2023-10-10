@@ -212,6 +212,11 @@ I
       I
         Leaf with 1 objects: 10
         Leaf with 2 objects: 1 2
+Found record with ID 2:
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
 Record with ID 2 successfully deleted from the database
 Location Tree:
 I
@@ -233,6 +238,11 @@ I
       I
         Leaf with 1 objects: 10
         Leaf with 1 objects: 1
+Found record with ID 3:
+ID: 3, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 1, Y: 1, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: swwdaw, qawd
 Record with ID 3 successfully deleted from the database
 Location Tree:
 I
@@ -273,6 +283,11 @@ I
       I
         Leaf with 1 objects: 10
         Leaf with 1 objects: 1
+Found record with ID 4:
+ID: 4, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 1, Y: 1, Cost: 30
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
 Record with ID 4 successfully deleted from the database
 Location Tree:
 I
@@ -292,6 +307,11 @@ I
       I
         Leaf with 1 objects: 10
         Leaf with 1 objects: 1
+Found record with ID 1:
+ID: 1, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
 Record with ID 1 successfully deleted from the database
 Location Tree:
 I
@@ -309,6 +329,11 @@ I
     I
       Leaf with 1 objects: 8
       Leaf with 1 objects: 10
+Found record with ID 6:
+ID: 6, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 0, Y: 3, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
 Record with ID 6 successfully deleted from the database
 Location Tree:
 I
@@ -322,6 +347,11 @@ I
     I
       Leaf with 1 objects: 8
       Leaf with 1 objects: 10
+Found record with ID 12:
+ID: 12, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 1, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
 Record with ID 12 successfully deleted from the database
 Location Tree:
 I
@@ -335,6 +365,11 @@ I
     I
       Leaf with 1 objects: 8
       Leaf with 1 objects: 10
+Found record with ID 11:
+ID: 11, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 1, Y: 3, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
 Record with ID 11 successfully deleted from the database
 Location Tree:
 I
@@ -348,6 +383,11 @@ I
     I
       Leaf with 1 objects: 8
       Leaf with 1 objects: 10
+Found record with ID 10:
+ID: 10, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 2, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
 Record with ID 10 successfully deleted from the database
 Location Tree:
 I
@@ -359,6 +399,11 @@ I
         Leaf with 1 objects: 7
         Leaf with 1 objects: 9
     Leaf with 1 objects: 8
+Found record with ID 8:
+ID: 8, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 2, Y: 3, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
 Record with ID 8 successfully deleted from the database
 Location Tree:
 I
@@ -370,9 +415,19 @@ I
         Leaf with 1 objects: 7
         Leaf with 1 objects: 9
     E
+Found record with ID 7:
+ID: 7, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 0, Cost: 20
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
 Record with ID 7 successfully deleted from the database
 Location Tree:
 Leaf with 1 objects: 9
+Found record with ID 9:
+ID: 9, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 1, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
 Record with ID 9 successfully deleted from the database
 Location Tree:
 E

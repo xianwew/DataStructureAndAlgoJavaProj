@@ -38,6 +38,36 @@ ID: 100, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 13, Y: 7, Cost: 23
 Description: Introduction to   bioinformatics and computation
 Keywords: swwdaw, swwdawraw
+Found record with ID 25:
+ID: 25, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+Found record with ID 100:
+ID: 100, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 13, Y: 7, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Found record with ID 7:
+ID: 7, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 20
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Found record with ID 6:
+ID: 6, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 1, Y: 1, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Found record with ID 1:
+ID: 1, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: swwdaw, qawd
+Found record with ID 8:
+ID: 8, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
 Record with ID 5 successfully deleted from the database
 Delete FAILED -- There is no record with ID 5
 Record with ID 6 successfully deleted from the database
@@ -160,6 +190,9 @@ ID: 101, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 31, Y: 0, Cost: 23
 Description: Introduction to   bioinformatics and computation
 Keywords: swwdaw, swwdawraw
+Record with ID 25 successfully deleted from the database
+Record with ID 100 successfully deleted from the database
+Record with ID 45 successfully deleted from the database
 Location Tree:
 I
   I
@@ -167,13 +200,11 @@ I
       I
         I
           I
-            I
-              Leaf with 2 objects: 1 8
-              Leaf with 1 objects: 100
+            Leaf with 2 objects: 1 8
             Leaf with 1 objects: 9
           I
             Leaf with 1 objects: 101
-            Leaf with 3 objects: 7 25 45
+            Leaf with 1 objects: 7
         E
       E
     E
@@ -188,6 +219,22 @@ ID: 12, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 15, Y: 15, Cost: 23
 Description: Introduction to   bioinformatics and computation
 Keywords: swwdaw, swwdawraw
+Found record with ID 12:
+ID: 12, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 15, Y: 15, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Search FAILED -- There is no record with ID 25
+Found record with ID 101:
+ID: 101, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 31, Y: 0, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Found record with ID 9:
+ID: 9, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 0, Y: 31, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
 Delete FAILED -- There is no record with ID 5
 Record with ID 8 successfully deleted from the database
 Record with ID 1 successfully deleted from the database
@@ -198,11 +245,7 @@ I
       I
         I
           I
-            I
-              E
-              I
-                Leaf with 1 objects: 100
-                Leaf with 1 objects: 12
+            Leaf with 1 objects: 12
             I
               I
                 E
@@ -218,7 +261,7 @@ I
               E
           I
             Leaf with 1 objects: 101
-            Leaf with 3 objects: 7 25 45
+            Leaf with 1 objects: 7
         E
       E
     E

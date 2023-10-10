@@ -45,6 +45,13 @@ Computational Biology and Bioinformatics in CS at Virginia Tech
       0610071600       60     13    7 23
 swwdaw swwdawraw
     Introduction to   bioinformatics and computation
+    
+search ID 25
+search ID 100
+search ID 7
+search ID 6
+search ID 1
+search ID 8
 delete 5
 delete 5
 delete 6
@@ -60,6 +67,7 @@ search cost 0 61
 search cost 61 127
 search cost 0 127
 
+
 print location
 
 insert 9
@@ -74,6 +82,10 @@ Computational Biology and Bioinformatics in CS at Virginia Tech
 swwdaw swwdawraw
     Introduction to   bioinformatics and computation
 
+delete 25
+
+delete 100
+delete 45
 print location
 
 insert 36
@@ -88,6 +100,10 @@ Computational Biology and Bioinformatics in CS at Virginia Tech
 swwdaw swwdawraw
     Introduction to   bioinformatics and computation
 
+search ID 12
+search ID 25
+search ID 101
+search ID 9
 delete 5
 delete 8
 delete 1
