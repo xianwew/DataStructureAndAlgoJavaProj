@@ -8,6 +8,42 @@ ID: 3, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 80, Y: 80, Cost: 30
 Description: Introduction to   bioinformatics and computation biology
 Keywords: AEGFAEW, AWD
+ID Tree:
+    null
+  3
+    null
+2
+  null
+Number of records: 2
+Cost Tree:
+  null
+30
+    null
+  30
+    null
+Number of records: 2
+Location Tree:
+I
+  Leaf with 1 objects: 2
+  Leaf with 1 objects: 3
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+    null
+Number of records: 2
+Keyword Tree:
+    null
+  AWD
+      null
+    AWD
+      null
+AEGFAEW
+    null
+  AEGFAEW
+    null
+Number of records: 4
 Successfully inserted record with ID 5
 ID: 5, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 20, Y: 70, Cost: 30
@@ -18,6 +54,72 @@ ID: 6, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 50, Y: 20, Cost: 30
 Description: Introduction to   bioinformatics and computation
 Keywords: swwdaw, swwdawraw
+ID Tree:
+        null
+      6
+        null
+    5
+      null
+  3
+    null
+2
+  null
+Number of records: 4
+Cost Tree:
+  null
+30
+    null
+  30
+      null
+    30
+        null
+      30
+        null
+Number of records: 4
+Location Tree:
+I
+  I
+    I
+      E
+      I
+        I
+          E
+          I
+            Leaf with 1 objects: 2
+            Leaf with 1 objects: 6
+        E
+    Leaf with 1 objects: 5
+  Leaf with 1 objects: 3
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+      null
+    0610071600
+        null
+      0610071600
+        null
+Number of records: 4
+Keyword Tree:
+        null
+      swwdawraw
+        null
+    swwdaw
+          null
+        swwdaw
+          null
+      qawd
+        null
+  AWD
+      null
+    AWD
+      null
+AEGFAEW
+    null
+  AEGFAEW
+    null
+Number of records: 8
 Successfully inserted record with ID 8
 ID: 8, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 15, Y: 15, Cost: 23
@@ -28,6 +130,108 @@ ID: 9, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 13, Y: 15, Cost: 23
 Description: Introduction to   bioinformatics and computation
 Keywords: swwdaw, swwdawraw
+ID Tree:
+            null
+          9
+            null
+        8
+          null
+      6
+        null
+    5
+      null
+  3
+    null
+2
+  null
+Number of records: 6
+Cost Tree:
+  null
+30
+    null
+  30
+      null
+    30
+        null
+      30
+          null
+        23
+            null
+          23
+            null
+Number of records: 6
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              E
+              I
+                E
+                I
+                  E
+                  I
+                    E
+                    I
+                      Leaf with 1 objects: 9
+                      Leaf with 1 objects: 8
+            E
+          E
+        E
+      I
+        I
+          E
+          I
+            Leaf with 1 objects: 2
+            Leaf with 1 objects: 6
+        E
+    Leaf with 1 objects: 5
+  Leaf with 1 objects: 3
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+      null
+    0610071600
+        null
+      0610071600
+          null
+        0610071600
+            null
+          0610071600
+            null
+Number of records: 6
+Keyword Tree:
+        null
+      swwdawraw
+          null
+        swwdawraw
+            null
+          swwdawraw
+            null
+    swwdaw
+          null
+        swwdaw
+            null
+          swwdaw
+              null
+            swwdaw
+              null
+      qawd
+        null
+  AWD
+      null
+    AWD
+      null
+AEGFAEW
+    null
+  AEGFAEW
+    null
+Number of records: 12
 Successfully inserted record with ID 10
 ID: 10, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 15, Y: 17, Cost: 20
@@ -38,6 +242,138 @@ ID: 11, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 13, Y: 17, Cost: 23
 Description: Introduction to   bioinformatics and computation
 Keywords: swwdaw, swwdawraw
+ID Tree:
+                null
+              11
+                null
+            10
+              null
+          9
+            null
+        8
+          null
+      6
+        null
+    5
+      null
+  3
+    null
+2
+  null
+Number of records: 8
+Cost Tree:
+  null
+30
+    null
+  30
+      null
+    30
+        null
+      30
+          null
+        23
+            null
+          23
+                null
+              23
+                null
+            20
+              null
+Number of records: 8
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              E
+              I
+                E
+                I
+                  E
+                  I
+                    E
+                    I
+                      Leaf with 1 objects: 9
+                      Leaf with 1 objects: 8
+            I
+              E
+              I
+                I
+                  E
+                  I
+                    I
+                      Leaf with 1 objects: 11
+                      Leaf with 1 objects: 10
+                    E
+                E
+          E
+        E
+      I
+        I
+          E
+          I
+            Leaf with 1 objects: 2
+            Leaf with 1 objects: 6
+        E
+    Leaf with 1 objects: 5
+  Leaf with 1 objects: 3
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+      null
+    0610071600
+        null
+      0610071600
+          null
+        0610071600
+            null
+          0610071600
+              null
+            0610071600
+                null
+              0610071600
+                null
+Number of records: 8
+Keyword Tree:
+        null
+      swwdawraw
+          null
+        swwdawraw
+            null
+          swwdawraw
+              null
+            swwdawraw
+                null
+              swwdawraw
+                null
+    swwdaw
+          null
+        swwdaw
+            null
+          swwdaw
+              null
+            swwdaw
+                null
+              swwdaw
+                  null
+                swwdaw
+                  null
+      qawd
+        null
+  AWD
+      null
+    AWD
+      null
+AEGFAEW
+    null
+  AEGFAEW
+    null
+Number of records: 16
 Successfully inserted record with ID 12
 ID: 12, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 17, Y: 13, Cost: 23
@@ -70,6 +406,96 @@ ID Tree:
     null
 2
   null
+Number of records: 10
+Cost Tree:
+  null
+30
+    null
+  30
+      null
+    30
+        null
+      30
+          null
+        23
+            null
+          23
+                null
+              23
+                  null
+                23
+                    null
+                  23
+                    null
+            20
+              null
+Number of records: 10
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              E
+              I
+                E
+                I
+                  E
+                  I
+                    E
+                    I
+                      Leaf with 1 objects: 9
+                      Leaf with 1 objects: 8
+            I
+              E
+              I
+                I
+                  E
+                  I
+                    I
+                      I
+                        I
+                          Leaf with 1 objects: 13
+                          Leaf with 1 objects: 11
+                        E
+                      Leaf with 1 objects: 10
+                    E
+                E
+          Leaf with 1 objects: 12
+        E
+      I
+        I
+          E
+          I
+            Leaf with 1 objects: 2
+            Leaf with 1 objects: 6
+        E
+    Leaf with 1 objects: 5
+  Leaf with 1 objects: 3
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+      null
+    0610071600
+        null
+      0610071600
+          null
+        0610071600
+            null
+          0610071600
+              null
+            0610071600
+                null
+              0610071600
+                  null
+                0610071600
+                    null
+                  0610071600
+                    null
 Number of records: 10
 Keyword Tree:
         null
@@ -114,9 +540,101 @@ AEGFAEW
   AEGFAEW
     null
 Number of records: 20
+Successfully inserted record with ID 14
+ID: 14, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 5, Y: 32, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 15
+ID: 15, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 32, Y: 5, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID Tree:
+                        null
+                      15
+                        null
+                    14
+                      null
+                  13
+                    null
+                12
+                  null
+              11
+                null
+            10
+              null
+          9
+            null
+        8
+          null
+      6
+        null
+    5
+      null
+  3
+    null
+2
+  null
+Number of records: 12
+Keyword Tree:
+        null
+      swwdawraw
+          null
+        swwdawraw
+            null
+          swwdawraw
+              null
+            swwdawraw
+                null
+              swwdawraw
+                  null
+                swwdawraw
+                    null
+                  swwdawraw
+                      null
+                    swwdawraw
+                        null
+                      swwdawraw
+                        null
+    swwdaw
+          null
+        swwdaw
+            null
+          swwdaw
+              null
+            swwdaw
+                null
+              swwdaw
+                  null
+                swwdaw
+                    null
+                  swwdaw
+                      null
+                    swwdaw
+                        null
+                      swwdaw
+                          null
+                        swwdaw
+                          null
+      qawd
+        null
+  AWD
+      null
+    AWD
+      null
+AEGFAEW
+    null
+  AEGFAEW
+    null
+Number of records: 24
 Record with ID 2 successfully deleted from the database
 ID Tree:
-                  null
+                      null
+                    15
+                      null
+                  14
+                    null
                 13
                   null
               12
@@ -135,7 +653,7 @@ ID Tree:
     null
 3
   null
-Number of records: 9
+Number of records: 11
 Keyword Tree:
         null
       swwdawraw
@@ -151,7 +669,11 @@ Keyword Tree:
                 swwdawraw
                     null
                   swwdawraw
-                    null
+                      null
+                    swwdawraw
+                        null
+                      swwdawraw
+                        null
     swwdaw
           null
         swwdaw
@@ -167,14 +689,18 @@ Keyword Tree:
                   swwdaw
                       null
                     swwdaw
-                      null
+                        null
+                      swwdaw
+                          null
+                        swwdaw
+                          null
       qawd
         null
   AWD
     null
 AEGFAEW
   null
-Number of records: 18
+Number of records: 22
 Record with ID 3 successfully deleted from the database
 Keyword Tree:
     null
@@ -191,7 +717,11 @@ Keyword Tree:
             swwdawraw
                 null
               swwdawraw
-                null
+                  null
+                swwdawraw
+                    null
+                  swwdawraw
+                    null
 swwdaw
       null
     swwdaw
@@ -207,13 +737,21 @@ swwdaw
               swwdaw
                   null
                 swwdaw
-                  null
+                    null
+                  swwdaw
+                      null
+                    swwdaw
+                      null
   qawd
     null
-Number of records: 16
+Number of records: 20
 Record with ID 5 successfully deleted from the database
 ID Tree:
-              null
+                  null
+                15
+                  null
+              14
+                null
             13
               null
           12
@@ -228,7 +766,7 @@ ID Tree:
     null
 6
   null
-Number of records: 7
+Number of records: 9
 Cost Tree:
   null
 30
@@ -242,10 +780,14 @@ Cost Tree:
           23
               null
             23
-              null
+                null
+              23
+                  null
+                23
+                  null
       20
         null
-Number of records: 7
+Number of records: 9
 Location Tree:
 I
   I
@@ -280,8 +822,12 @@ I
                     E
                 E
           Leaf with 1 objects: 12
+        Leaf with 1 objects: 14
+      I
+        I
+          Leaf with 1 objects: 15
+          Leaf with 1 objects: 6
         E
-      Leaf with 1 objects: 6
     E
   E
 Date Tree:
@@ -299,8 +845,12 @@ Date Tree:
           0610071600
               null
             0610071600
-              null
-Number of records: 7
+                null
+              0610071600
+                  null
+                0610071600
+                  null
+Number of records: 9
 Keyword Tree:
     null
   swwdawraw
@@ -316,7 +866,11 @@ Keyword Tree:
             swwdawraw
                 null
               swwdawraw
-                null
+                  null
+                swwdawraw
+                    null
+                  swwdawraw
+                    null
 swwdaw
     null
   swwdaw
@@ -330,5 +884,9 @@ swwdaw
           swwdaw
               null
             swwdaw
-              null
-Number of records: 14
+                null
+              swwdaw
+                  null
+                swwdaw
+                  null
+Number of records: 18

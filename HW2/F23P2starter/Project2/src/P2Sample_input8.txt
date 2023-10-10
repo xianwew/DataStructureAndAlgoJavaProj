@@ -1,43 +1,118 @@
 insert 1
 Overview of HCI Research at VT
-0610051600 90 127 127 45
+0610051600 90 0 8 45
 HCI Computer_Science VT Virginia_Tech
 This seminar will present an overview of HCI research at VT
 
-
 insert 2
 Computational Biology and Bioinformatics in CS at Virginia Tech
-      0610071600       60     67     67 30
+      0610071600       60     1     7 30
 Bioinformatics computation_biology Biology Computer_Science VT Virginia_Tech
     Introduction to   bioinformatics and computation biology
-insert 10
+insert 3
 Computing Systems Research at VT
 0701250830  30 31   31  17
 high_performance_computing           grids     VT computer science
   Seminar about the      Computing systems research at      VT
     
-insert 3
+insert 4
 Overview of HPC and CSE Research at VT
-1203301125     35        0  0                                           25
+1203301125     35        2  6                                           25
+      HPC      CSE      computer_science 
+Learn what kind of    research is done on HPC  and CSE at VT
+
+insert 5
+Overview of HPC and CSE Research at VT
+1203301125     35        3  5                                           25
       HPC      CSE      computer_science 
 Learn what kind of    research is done on HPC  and CSE at VT
 
 insert 6
 Overview of HPC and CSE Research at VT
-1203301125     35        31  0                                           25
+1203301125     35        4  4                                           25
       HPC      CSE      computer_science 
 Learn what kind of    research is done on HPC  and CSE at VT
 
 insert 7
 Overview of HPC and CSE Research at VT
-1203301125     35        127  0                                           25
+1203301125     35        0  0                                           25
       HPC      CSE      computer_science 
 Learn what kind of    research is done on HPC  and CSE at VT
 
-insert 8
-Overview of HPC and CSE Research at VT
-1203301125     35        0  127                                           25
-      HPC      CSE      computer_science 
-Learn what kind of    research is done on HPC  and CSE at VT
-
+print ID
+print cost
 print location
+print date
+print keyword
+search location 4 4 2
+
+delete 1
+
+print ID
+print cost
+print location
+print date
+print keyword
+search location 2 2 2
+
+delete 2
+
+print ID
+print cost
+print location
+print date
+print keyword
+search location 1 1 2
+
+delete 3
+
+print ID
+print cost
+print location
+print date
+print keyword
+search location 0 0 2
+
+delete 4
+
+print ID
+print cost
+print location
+print date
+print keyword
+search location -1 0 10
+
+delete 5
+
+print ID
+print cost
+print location
+print date
+print keyword
+search location 1 4 10
+
+delete 6
+
+print ID
+print cost
+print location
+print date
+print keyword
+search location 4 4 10
+
+delete 7
+
+print ID
+print cost
+print location
+print date
+print keyword
+search location 1 2 2
+
+delete 8
+print ID
+print cost
+print location
+print date
+print keyword
+search location 2 4 10

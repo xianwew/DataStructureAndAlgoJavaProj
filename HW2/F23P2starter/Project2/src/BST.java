@@ -109,9 +109,9 @@ public class BST<T extends Comparable<? super T>> {
      * @return The deleted Seminar or null if not found.
      */
     public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key, int id) {
-        if (curNode == null) {
-            return null;
-        }
+//        if (curNode == null) {
+//            return null;
+//        }
 
         if (curNode.compareKey(key) < 0) {
             curNode.setRight(

@@ -1,0 +1,500 @@
+Insert FAILED - Bad x, y coordinates: 50, 10
+Insert FAILED - Bad x, y coordinates: 80, 80
+ID Tree:
+This tree is empty
+Cost Tree:
+This tree is empty
+Location Tree:
+E
+Date Tree:
+This tree is empty
+Keyword Tree:
+This tree is empty
+Insert FAILED - Bad x, y coordinates: 20, 70
+Insert FAILED - Bad x, y coordinates: 50, 20
+ID Tree:
+This tree is empty
+Cost Tree:
+This tree is empty
+Location Tree:
+E
+Date Tree:
+This tree is empty
+Keyword Tree:
+This tree is empty
+Successfully inserted record with ID 8
+ID: 8, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 15, Y: 15, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 9
+ID: 9, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 13, Y: 15, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID Tree:
+    null
+  9
+    null
+8
+  null
+Number of records: 2
+Cost Tree:
+  null
+23
+    null
+  23
+    null
+Number of records: 2
+Location Tree:
+I
+  I
+    I
+      E
+      I
+        E
+        I
+          E
+          I
+            E
+            I
+              Leaf with 1 objects: 9
+              Leaf with 1 objects: 8
+    E
+  E
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+    null
+Number of records: 2
+Keyword Tree:
+    null
+  swwdawraw
+      null
+    swwdawraw
+      null
+swwdaw
+    null
+  swwdaw
+    null
+Number of records: 4
+Successfully inserted record with ID 10
+ID: 10, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 15, Y: 17, Cost: 20
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 11
+ID: 11, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 13, Y: 17, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID Tree:
+        null
+      11
+        null
+    10
+      null
+  9
+    null
+8
+  null
+Number of records: 4
+Cost Tree:
+  null
+23
+    null
+  23
+        null
+      23
+        null
+    20
+      null
+Number of records: 4
+Location Tree:
+I
+  I
+    I
+      E
+      I
+        E
+        I
+          E
+          I
+            E
+            I
+              Leaf with 1 objects: 9
+              Leaf with 1 objects: 8
+    I
+      E
+      I
+        I
+          E
+          I
+            I
+              Leaf with 1 objects: 11
+              Leaf with 1 objects: 10
+            E
+        E
+  E
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+      null
+    0610071600
+        null
+      0610071600
+        null
+Number of records: 4
+Keyword Tree:
+    null
+  swwdawraw
+      null
+    swwdawraw
+        null
+      swwdawraw
+          null
+        swwdawraw
+          null
+swwdaw
+    null
+  swwdaw
+      null
+    swwdaw
+        null
+      swwdaw
+        null
+Number of records: 8
+Successfully inserted record with ID 12
+ID: 12, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 17, Y: 13, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 13
+ID: 13, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 12, Y: 17, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+ID Tree:
+            null
+          13
+            null
+        12
+          null
+      11
+        null
+    10
+      null
+  9
+    null
+8
+  null
+Number of records: 6
+Cost Tree:
+  null
+23
+    null
+  23
+        null
+      23
+          null
+        23
+            null
+          23
+            null
+    20
+      null
+Number of records: 6
+Location Tree:
+I
+  I
+    I
+      E
+      I
+        E
+        I
+          E
+          I
+            E
+            I
+              Leaf with 1 objects: 9
+              Leaf with 1 objects: 8
+    I
+      E
+      I
+        I
+          E
+          I
+            I
+              I
+                I
+                  Leaf with 1 objects: 13
+                  Leaf with 1 objects: 11
+                E
+              Leaf with 1 objects: 10
+            E
+        E
+  Leaf with 1 objects: 12
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+      null
+    0610071600
+        null
+      0610071600
+          null
+        0610071600
+            null
+          0610071600
+            null
+Number of records: 6
+Keyword Tree:
+    null
+  swwdawraw
+      null
+    swwdawraw
+        null
+      swwdawraw
+          null
+        swwdawraw
+            null
+          swwdawraw
+              null
+            swwdawraw
+              null
+swwdaw
+    null
+  swwdaw
+      null
+    swwdaw
+        null
+      swwdaw
+          null
+        swwdaw
+            null
+          swwdaw
+            null
+Number of records: 12
+Insert FAILED - Bad x, y coordinates: 5, 32
+Insert FAILED - Bad x, y coordinates: 32, 5
+ID Tree:
+            null
+          13
+            null
+        12
+          null
+      11
+        null
+    10
+      null
+  9
+    null
+8
+  null
+Number of records: 6
+Keyword Tree:
+    null
+  swwdawraw
+      null
+    swwdawraw
+        null
+      swwdawraw
+          null
+        swwdawraw
+            null
+          swwdawraw
+              null
+            swwdawraw
+              null
+swwdaw
+    null
+  swwdaw
+      null
+    swwdaw
+        null
+      swwdaw
+          null
+        swwdaw
+            null
+          swwdaw
+            null
+Number of records: 12
+Delete FAILED -- There is no record with ID 2
+ID Tree:
+            null
+          13
+            null
+        12
+          null
+      11
+        null
+    10
+      null
+  9
+    null
+8
+  null
+Number of records: 6
+Keyword Tree:
+    null
+  swwdawraw
+      null
+    swwdawraw
+        null
+      swwdawraw
+          null
+        swwdawraw
+            null
+          swwdawraw
+              null
+            swwdawraw
+              null
+swwdaw
+    null
+  swwdaw
+      null
+    swwdaw
+        null
+      swwdaw
+          null
+        swwdaw
+            null
+          swwdaw
+            null
+Number of records: 12
+Delete FAILED -- There is no record with ID 3
+Keyword Tree:
+    null
+  swwdawraw
+      null
+    swwdawraw
+        null
+      swwdawraw
+          null
+        swwdawraw
+            null
+          swwdawraw
+              null
+            swwdawraw
+              null
+swwdaw
+    null
+  swwdaw
+      null
+    swwdaw
+        null
+      swwdaw
+          null
+        swwdaw
+            null
+          swwdaw
+            null
+Number of records: 12
+Delete FAILED -- There is no record with ID 5
+ID Tree:
+            null
+          13
+            null
+        12
+          null
+      11
+        null
+    10
+      null
+  9
+    null
+8
+  null
+Number of records: 6
+Cost Tree:
+  null
+23
+    null
+  23
+        null
+      23
+          null
+        23
+            null
+          23
+            null
+    20
+      null
+Number of records: 6
+Location Tree:
+I
+  I
+    I
+      E
+      I
+        E
+        I
+          E
+          I
+            E
+            I
+              Leaf with 1 objects: 9
+              Leaf with 1 objects: 8
+    I
+      E
+      I
+        I
+          E
+          I
+            I
+              I
+                I
+                  Leaf with 1 objects: 13
+                  Leaf with 1 objects: 11
+                E
+              Leaf with 1 objects: 10
+            E
+        E
+  Leaf with 1 objects: 12
+Date Tree:
+  null
+0610071600
+    null
+  0610071600
+      null
+    0610071600
+        null
+      0610071600
+          null
+        0610071600
+            null
+          0610071600
+            null
+Number of records: 6
+Keyword Tree:
+    null
+  swwdawraw
+      null
+    swwdawraw
+        null
+      swwdawraw
+          null
+        swwdawraw
+            null
+          swwdawraw
+              null
+            swwdawraw
+              null
+swwdaw
+    null
+  swwdaw
+      null
+    swwdaw
+        null
+      swwdaw
+          null
+        swwdaw
+            null
+          swwdaw
+            null
+Number of records: 12

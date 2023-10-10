@@ -1,8 +1,4 @@
-Successfully inserted record with ID 1
-ID: 1, Title: Overview of HCI Research at VT
-Date: 0610051600, Length: 90, X: 0, Y: 8, Cost: 45
-Description: This seminar will present an overview of HCI research at VT
-Keywords: HCI, Computer_Science, VT, Virginia_Tech
+Insert FAILED - Bad x, y coordinates: 0, 8
 Successfully inserted record with ID 2
 ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
 Date: 0610071600, Length: 60, X: 1, Y: 7, Cost: 30
@@ -29,117 +25,6 @@ ID: 7, Title: Overview of HPC and CSE Research at VT
 Date: 1203301125, Length: 35, X: 0, Y: 0, Cost: 25
 Description: Learn what kind of    research is done on HPC  and CSE at VT
 Keywords: HPC, CSE, computer_science
-ID Tree:
-            null
-          7
-            null
-        6
-          null
-      5
-        null
-    4
-      null
-  2
-    null
-1
-  null
-Number of records: 6
-Cost Tree:
-  null
-45
-    null
-  30
-      null
-    25
-        null
-      25
-          null
-        25
-            null
-          25
-            null
-Number of records: 6
-Location Tree:
-I
-  I
-    Leaf with 1 objects: 7
-    I
-      I
-        E
-        I
-          Leaf with 1 objects: 1
-          Leaf with 1 objects: 2
-      I
-        Leaf with 1 objects: 5
-        Leaf with 1 objects: 4
-  Leaf with 1 objects: 6
-Date Tree:
-      null
-    1203301125
-        null
-      1203301125
-          null
-        1203301125
-            null
-          1203301125
-            null
-  0610071600
-    null
-0610051600
-  null
-Number of records: 6
-Keyword Tree:
-          null
-        computer_science
-            null
-          computer_science
-              null
-            computer_science
-                null
-              computer_science
-                null
-      computation_biology
-        null
-    Virginia_Tech
-        null
-      Virginia_Tech
-        null
-  VT
-      null
-    VT
-        null
-      HPC
-          null
-        HPC
-            null
-          HPC
-              null
-            HPC
-              null
-HCI
-    null
-  Computer_Science
-          null
-        Computer_Science
-            null
-          CSE
-              null
-            CSE
-                null
-              CSE
-                  null
-                CSE
-                  null
-      Biology
-        null
-    Bioinformatics
-      null
-Number of records: 22
-Seminars within 2 units of 4, 4:
-Found a record with key value 5 at 3, 5
-Found a record with key value 6 at 4, 4
-8 nodes visited in this search
-Record with ID 1 successfully deleted from the database
 ID Tree:
           null
         7
@@ -190,43 +75,136 @@ Date Tree:
   null
 Number of records: 5
 Keyword Tree:
+      null
+    computer_science
+        null
+      computer_science
           null
         computer_science
             null
           computer_science
-              null
-            computer_science
-                null
-              computer_science
-                null
-      computation_biology
-        null
-    Virginia_Tech
-      null
-  VT
-      null
-    HPC
-        null
-      HPC
-          null
-        HPC
+            null
+  computation_biology
+            null
+          Virginia_Tech
+            null
+        VT
             null
           HPC
-            null
-Computer_Science
-        null
-      CSE
+              null
+            HPC
+                null
+              HPC
+                  null
+                HPC
+                  null
+      Computer_Science
           null
         CSE
             null
           CSE
               null
             CSE
-              null
+                null
+              CSE
+                null
     Biology
       null
-  Bioinformatics
+Bioinformatics
+  null
+Number of records: 18
+Seminars within 2 units of 4, 4:
+Found a record with key value 5 at 3, 5
+Found a record with key value 6 at 4, 4
+8 nodes visited in this search
+Delete FAILED -- There is no record with ID 1
+ID Tree:
+          null
+        7
+          null
+      6
+        null
+    5
+      null
+  4
     null
+2
+  null
+Number of records: 5
+Cost Tree:
+  null
+30
+    null
+  25
+      null
+    25
+        null
+      25
+          null
+        25
+          null
+Number of records: 5
+Location Tree:
+I
+  I
+    Leaf with 1 objects: 7
+    I
+      Leaf with 1 objects: 2
+      I
+        Leaf with 1 objects: 5
+        Leaf with 1 objects: 4
+  Leaf with 1 objects: 6
+Date Tree:
+    null
+  1203301125
+      null
+    1203301125
+        null
+      1203301125
+          null
+        1203301125
+          null
+0610071600
+  null
+Number of records: 5
+Keyword Tree:
+      null
+    computer_science
+        null
+      computer_science
+          null
+        computer_science
+            null
+          computer_science
+            null
+  computation_biology
+            null
+          Virginia_Tech
+            null
+        VT
+            null
+          HPC
+              null
+            HPC
+                null
+              HPC
+                  null
+                HPC
+                  null
+      Computer_Science
+          null
+        CSE
+            null
+          CSE
+              null
+            CSE
+                null
+              CSE
+                null
+    Biology
+      null
+Bioinformatics
+  null
 Number of records: 18
 Seminars within 2 units of 2, 2:
 8 nodes visited in this search
@@ -275,16 +253,16 @@ Date Tree:
         null
 Number of records: 4
 Keyword Tree:
+    null
+  computer_science
       null
     computer_science
         null
       computer_science
           null
         computer_science
-            null
-          computer_science
-            null
-  HPC
+          null
+HPC
       null
     HPC
         null
@@ -292,14 +270,14 @@ Keyword Tree:
           null
         HPC
           null
-CSE
-    null
   CSE
       null
     CSE
         null
       CSE
-        null
+          null
+        CSE
+          null
 Number of records: 12
 Seminars within 2 units of 1, 1:
 Found a record with key value 7 at 0, 0
@@ -349,16 +327,16 @@ Date Tree:
         null
 Number of records: 4
 Keyword Tree:
+    null
+  computer_science
       null
     computer_science
         null
       computer_science
           null
         computer_science
-            null
-          computer_science
-            null
-  HPC
+          null
+HPC
       null
     HPC
         null
@@ -366,14 +344,14 @@ Keyword Tree:
           null
         HPC
           null
-CSE
-    null
   CSE
       null
     CSE
         null
       CSE
-        null
+          null
+        CSE
+          null
 Number of records: 12
 Seminars within 2 units of 0, 0:
 Found a record with key value 7 at 0, 0
@@ -413,25 +391,25 @@ Date Tree:
       null
 Number of records: 3
 Keyword Tree:
+    null
+  computer_science
       null
     computer_science
         null
       computer_science
-          null
-        computer_science
-          null
-  HPC
+        null
+HPC
       null
     HPC
         null
       HPC
         null
-CSE
-    null
   CSE
       null
     CSE
-      null
+        null
+      CSE
+        null
 Number of records: 9
 Seminars within 10 units of -1, 0:
 Found a record with key value 7 at 0, 0
@@ -465,19 +443,19 @@ Date Tree:
     null
 Number of records: 2
 Keyword Tree:
+    null
+  computer_science
       null
     computer_science
-        null
-      computer_science
-        null
-  HPC
+      null
+HPC
       null
     HPC
       null
-CSE
-    null
   CSE
-    null
+      null
+    CSE
+      null
 Number of records: 6
 Seminars within 10 units of 1, 4:
 Found a record with key value 7 at 0, 0
@@ -502,13 +480,13 @@ Date Tree:
   null
 Number of records: 1
 Keyword Tree:
-      null
-    computer_science
-      null
-  HPC
     null
-CSE
-  null
+  computer_science
+    null
+HPC
+    null
+  CSE
+    null
 Number of records: 3
 Seminars within 10 units of 4, 4:
 Found a record with key value 7 at 0, 0

@@ -10,6 +10,12 @@ Computational Biology and Bioinformatics in CS at Virginia Tech
 AEGFAEW AWD
     Introduction to   bioinformatics and computation biology
 
+print ID
+print cost
+print location
+print date
+print keyword
+
 insert 5
 Computational Biology and Bioinformatics in CS at Virginia Tech
       0610071600       60     20     70 30
@@ -21,6 +27,12 @@ Computational Biology and Bioinformatics in CS at Virginia Tech
       0610071600       60     50     20 30
 swwdaw swwdawraw
     Introduction to   bioinformatics and computation
+
+print ID
+print cost
+print location
+print date
+print keyword
 
 insert 8
 Computational Biology and Bioinformatics in CS at Virginia Tech
@@ -34,6 +46,12 @@ Computational Biology and Bioinformatics in CS at Virginia Tech
 swwdaw swwdawraw
     Introduction to   bioinformatics and computation
 
+print ID
+print cost
+print location
+print date
+print keyword
+
 insert 10
 Computational Biology and Bioinformatics in CS at Virginia Tech
       0610071600       60     15    17 20
@@ -46,6 +64,12 @@ Computational Biology and Bioinformatics in CS at Virginia Tech
 swwdaw swwdawraw
     Introduction to   bioinformatics and computation
 
+print ID
+print cost
+print location
+print date
+print keyword
+
 insert 12
 Computational Biology and Bioinformatics in CS at Virginia Tech
       0610071600       60     17   13 23
@@ -55,6 +79,24 @@ swwdaw swwdawraw
 insert 13
 Computational Biology and Bioinformatics in CS at Virginia Tech
       0610071600       60     12    17 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+print ID
+print cost
+print location
+print date
+print keyword
+
+insert 14
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     5    32 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 15
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     32    5 23
 swwdaw swwdawraw
     Introduction to   bioinformatics and computation
 
