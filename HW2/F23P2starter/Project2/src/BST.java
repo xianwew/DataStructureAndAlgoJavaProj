@@ -220,8 +220,10 @@ public class BST<T extends Comparable<? super T>> {
                 leftVisited = searchNodeHelper(curNode.getLeft(), key1, key2,
                         range, head);
                 addToLinkedList(curNode, head);
-                rightVisited = searchNodeHelper(curNode.getRight(), key1, key2,
-                        range, head);
+                if (curNode.compareKey(key2) != 0) {
+                    rightVisited = searchNodeHelper(curNode.getRight(), key1,
+                            key2, range, head);
+                }
             }
         }
         return 1 + leftVisited + rightVisited;

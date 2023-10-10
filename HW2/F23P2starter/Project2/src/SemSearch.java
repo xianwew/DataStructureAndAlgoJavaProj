@@ -41,27 +41,5 @@ public class SemSearch {
             Parser parser = new Parser();
             parser.processSeminars(args, world);
         }
-
-//        BinTree tmp = new BinTree(4);
-//        tmp.print(0, tmp.getRoot());
-//        
-//        String refOut = "";
-//        
-//        
-//        int id = 12;
-//        String title = "";
-//        String date = "";
-//        int length = 1;
-//        short x = 16;
-//        short y = 16;
-//        int cost = 2;
-//        String[] keywords = new String[3];
-//        String desc = "";
-//        Seminar seminar = new Seminar(id, title, date, length, x, y, cost, keywords, desc);
-//       
-//        tmp.insert(seminar);
-//        BinNode node = tmp.getRoot();
-//        tmp.print(0, node);
-//        refOut = "";
     }
 }

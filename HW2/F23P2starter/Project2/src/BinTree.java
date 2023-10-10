@@ -71,7 +71,8 @@ public class BinTree {
         node.print(level);
         if (!node.isLeaf()) {
             BinNodeInternal tmp = (BinNodeInternal) node;
-            return print(level + 1, tmp.getLeft()) + print(level + 1, tmp.getRight()) + 1;
+            return print(level + 1, tmp.getLeft())
+                    + print(level + 1, tmp.getRight()) + 1;
         }
         return 1;
     }
