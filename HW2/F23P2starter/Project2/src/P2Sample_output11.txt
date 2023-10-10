@@ -1,0 +1,358 @@
+Successfully inserted record with ID 1
+ID: 1, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+Successfully inserted record with ID 2
+ID: 2, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 7, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+Successfully inserted record with ID 3
+ID: 3, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: swwdaw, qawd
+Successfully inserted record with ID 4
+ID: 4, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 5
+ID: 5, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 6
+ID: 6, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 1, Y: 1, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 7
+ID: 7, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 7, Y: 13, Cost: 20
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 8
+ID: 8, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 13, Y: 7, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              Leaf with 1 objects: 6
+              Leaf with 3 objects: 3 4 5
+            E
+          E
+        Leaf with 1 objects: 7
+      Leaf with 1 objects: 8
+    E
+  I
+    Leaf with 1 objects: 2
+    Leaf with 1 objects: 1
+Successfully inserted record with ID 9
+ID: 9, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 0, Y: 31, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 10
+ID: 10, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 31, Y: 0, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              Leaf with 1 objects: 6
+              Leaf with 3 objects: 3 4 5
+            E
+          E
+        Leaf with 1 objects: 7
+      Leaf with 1 objects: 8
+    Leaf with 1 objects: 9
+  I
+    I
+      Leaf with 1 objects: 2
+      Leaf with 1 objects: 10
+    Leaf with 1 objects: 1
+Successfully inserted record with ID 11
+ID: 11, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 1, Y: 28, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 12
+ID: 12, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 15, Y: 15, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              Leaf with 1 objects: 6
+              Leaf with 3 objects: 3 4 5
+            E
+          E
+        Leaf with 1 objects: 7
+      I
+        Leaf with 1 objects: 8
+        Leaf with 1 objects: 12
+    I
+      I
+        E
+        I
+          I
+            E
+            I
+              I
+                Leaf with 1 objects: 11
+                Leaf with 1 objects: 9
+              E
+          E
+      E
+  I
+    I
+      Leaf with 1 objects: 2
+      Leaf with 1 objects: 10
+    Leaf with 1 objects: 1
+Record with ID 2 successfully deleted from the database
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              Leaf with 1 objects: 6
+              Leaf with 3 objects: 3 4 5
+            E
+          E
+        Leaf with 1 objects: 7
+      I
+        Leaf with 1 objects: 8
+        Leaf with 1 objects: 12
+    I
+      I
+        E
+        I
+          I
+            E
+            I
+              I
+                Leaf with 1 objects: 11
+                Leaf with 1 objects: 9
+              E
+          E
+      E
+  I
+    Leaf with 1 objects: 10
+    Leaf with 1 objects: 1
+Record with ID 3 successfully deleted from the database
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              Leaf with 1 objects: 6
+              Leaf with 2 objects: 4 5
+            E
+          E
+        Leaf with 1 objects: 7
+      I
+        Leaf with 1 objects: 8
+        Leaf with 1 objects: 12
+    I
+      I
+        E
+        I
+          I
+            E
+            I
+              I
+                Leaf with 1 objects: 11
+                Leaf with 1 objects: 9
+              E
+          E
+      E
+  I
+    Leaf with 1 objects: 10
+    Leaf with 1 objects: 1
+Record with ID 5 successfully deleted from the database
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              Leaf with 1 objects: 6
+              Leaf with 1 objects: 4
+            E
+          E
+        Leaf with 1 objects: 7
+      I
+        Leaf with 1 objects: 8
+        Leaf with 1 objects: 12
+    I
+      I
+        E
+        I
+          I
+            E
+            I
+              I
+                Leaf with 1 objects: 11
+                Leaf with 1 objects: 9
+              E
+          E
+      E
+  I
+    Leaf with 1 objects: 10
+    Leaf with 1 objects: 1
+Record with ID 4 successfully deleted from the database
+Location Tree:
+I
+  I
+    I
+      I
+        Leaf with 1 objects: 6
+        Leaf with 1 objects: 7
+      I
+        Leaf with 1 objects: 8
+        Leaf with 1 objects: 12
+    I
+      I
+        E
+        I
+          I
+            E
+            I
+              I
+                Leaf with 1 objects: 11
+                Leaf with 1 objects: 9
+              E
+          E
+      E
+  I
+    Leaf with 1 objects: 10
+    Leaf with 1 objects: 1
+Record with ID 1 successfully deleted from the database
+Location Tree:
+I
+  I
+    I
+      I
+        Leaf with 1 objects: 6
+        Leaf with 1 objects: 7
+      I
+        Leaf with 1 objects: 8
+        Leaf with 1 objects: 12
+    I
+      I
+        E
+        I
+          I
+            E
+            I
+              I
+                Leaf with 1 objects: 11
+                Leaf with 1 objects: 9
+              E
+          E
+      E
+  Leaf with 1 objects: 10
+Record with ID 6 successfully deleted from the database
+Location Tree:
+I
+  I
+    I
+      Leaf with 1 objects: 7
+      I
+        Leaf with 1 objects: 8
+        Leaf with 1 objects: 12
+    I
+      I
+        E
+        I
+          I
+            E
+            I
+              I
+                Leaf with 1 objects: 11
+                Leaf with 1 objects: 9
+              E
+          E
+      E
+  Leaf with 1 objects: 10
+Record with ID 12 successfully deleted from the database
+Location Tree:
+I
+  I
+    I
+      Leaf with 1 objects: 7
+      Leaf with 1 objects: 8
+    I
+      I
+        E
+        I
+          I
+            E
+            I
+              I
+                Leaf with 1 objects: 11
+                Leaf with 1 objects: 9
+              E
+          E
+      E
+  Leaf with 1 objects: 10
+Record with ID 11 successfully deleted from the database
+Location Tree:
+I
+  I
+    I
+      Leaf with 1 objects: 7
+      Leaf with 1 objects: 8
+    Leaf with 1 objects: 9
+  Leaf with 1 objects: 10
+Record with ID 10 successfully deleted from the database
+Location Tree:
+I
+  I
+    I
+      Leaf with 1 objects: 7
+      Leaf with 1 objects: 8
+    Leaf with 1 objects: 9
+  E
+Record with ID 8 successfully deleted from the database
+Location Tree:
+I
+  I
+    Leaf with 1 objects: 7
+    Leaf with 1 objects: 9
+  E
+Record with ID 7 successfully deleted from the database
+Location Tree:
+Leaf with 1 objects: 9
+Record with ID 9 successfully deleted from the database
+Location Tree:
+E

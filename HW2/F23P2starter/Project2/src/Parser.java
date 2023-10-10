@@ -141,7 +141,7 @@ public class Parser {
             Scanner reader = new Scanner(commandFile);
             int instruction = 0;
             int id = -1;
-            data = reader.nextLine().trim();     
+            data = reader.nextLine().trim();
             int lastLineExecution = 0;
             int totalLine = 1;
             String[] param = new String[3];
@@ -213,9 +213,9 @@ public class Parser {
                         break;
                     }
                 }
-                if (desc.equals("")) {
-                    desc = data.trim();
-                }
+//                if (desc.equals("")) {
+//                    desc = data.trim();
+//                }
                 seminar = new Seminar(id, title, dateTime, length, x, y, cost,
                         keywordList, desc);
                 dataBase.processCommand(instruction, id, seminar, param);

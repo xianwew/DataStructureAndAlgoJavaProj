@@ -14,9 +14,6 @@ public class BinNodeEmpty implements BinNode {
      * @return The singleton instance of the empty node.
      */
     public static BinNodeEmpty getNode() {
-//        if (flyweight == null) {
-//            flyweight = new BinNodeEmpty();
-//        }
         return flyweight;
     }
 

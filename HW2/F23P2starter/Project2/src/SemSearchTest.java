@@ -245,7 +245,67 @@ public class SemSearchTest extends TestCase {
         SemSearch.main(new String[] { "8", "src/P2Sample_input8.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
+        
+        //
+        filePath = "src/P2Sample_output6_1.txt";
 
+        refOut = "";
+        try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+            refOut = new String(bytes, StandardCharsets.UTF_8);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        systemOut().clearHistory();
+        SemSearch.main(new String[] { "8", "src/P2Sample_input6.txt" });
+        printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
+        
+        //
+        filePath = "src/P2Sample_output6_2.txt";
+
+        refOut = "Error\" + \" in reading/processing files!";
+        systemOut().clearHistory();
+        SemSearch.main(new String[] { "8", "src/P2Sample_input6_1.txt" });
+        printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
+        
+        //
+        filePath = "src/P2Sample_output11.txt";
+
+        refOut = "";
+        try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+            refOut = new String(bytes, StandardCharsets.UTF_8);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        systemOut().clearHistory();
+        SemSearch.main(new String[] { "32", "src/P2Sample_input10.txt" });
+        printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
+        
+        
+        //
+        filePath = "src/P2Sample_output12.txt";
+
+        refOut = "";
+        try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+            refOut = new String(bytes, StandardCharsets.UTF_8);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        systemOut().clearHistory();
+        SemSearch.main(new String[] { "4", "src/P2Sample_input11.txt" });
+        printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
 //        //  
 //        filePath = "src/P2syntaxPrint_output.txt"; 
 //
