@@ -53,10 +53,7 @@ public class BinTreeTest extends TestCase {
         
         tmp.insert(seminar2);
         result = tmp.print(0, tmp.getRoot());
-        assertEquals(result, 5);
-        refOut = "i/n  i/n    leaf with 1 objects 12/n  leaf with 1 objects 10/nE";
-        printOut = systemOut().getHistory();
-        //assertFuzzyEquals(printOut, refOut);     
+        assertEquals(result, 5);  
     }
     
 

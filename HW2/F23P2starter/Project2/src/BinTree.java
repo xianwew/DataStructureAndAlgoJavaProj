@@ -69,14 +69,11 @@ public class BinTree {
      */
     public int print(int level, BinNode node) {
         node.print(level);
-        int leftCount = 0;
-        int rightCount = 0;
         if (!node.isLeaf()) {
             BinNodeInternal tmp = (BinNodeInternal) node;
-            leftCount = print(level + 1, tmp.getLeft());
-            rightCount = print(level + 1, tmp.getRight());
+            return print(level + 1, tmp.getLeft()) + print(level + 1, tmp.getRight()) + 1;
         }
-        return 1 + leftCount + rightCount;
+        return 1;
     }
 
 }

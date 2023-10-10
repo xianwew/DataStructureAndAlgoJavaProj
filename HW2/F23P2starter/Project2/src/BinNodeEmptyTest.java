@@ -31,7 +31,6 @@ public class BinNodeEmptyTest extends TestCase {
         systemOut().clearHistory();
         level = 0;
         tmp.print(level);
-
         refOut = "E\n";
         assertFuzzyEquals(printOut, refOut);
 
@@ -39,7 +38,6 @@ public class BinNodeEmptyTest extends TestCase {
         systemOut().clearHistory();
         level = -1;
         tmp.print(level);
-
         refOut = "E\n";
         assertFuzzyEquals(printOut, refOut);
         
@@ -47,7 +45,6 @@ public class BinNodeEmptyTest extends TestCase {
         systemOut().clearHistory();
         level = 10;
         tmp.print(level);
-
         refOut = "                    E\n";
         assertFuzzyEquals(printOut, refOut);
     }

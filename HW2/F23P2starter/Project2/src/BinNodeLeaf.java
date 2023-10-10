@@ -67,8 +67,7 @@ public class BinNodeLeaf implements BinNode {
         // case 1
         // if x, y equal to existing seminar
         SeminarList curList = sl.getNext();
-        if (curList.getSeminar() != null
-                && curList.getSeminar().x() == seminar.x()
+        if (curList != null && curList.getSeminar().x() == seminar.x()
                 && curList.getSeminar().y() == seminar.y()) {
             while (curList.getNext() != null) {
                 curList = curList.getNext();
@@ -137,10 +136,8 @@ public class BinNodeLeaf implements BinNode {
     public int search(int x, int y, int circuleX, int circuleY, int radius,
             int level, int xWidth, int yWidth) {
         SeminarList tmp = sl.getNext();
-        if (tmp != null && tmp.getSeminar() != null
-                && Math.pow(tmp.getSeminar().x() - circuleX, 2)
-                        + Math.pow(tmp.getSeminar().y() - circuleY, 2) <= radius
-                                * radius) {
+        if (tmp != null && Math.pow(tmp.getSeminar().x() - circuleX, 2) + Math
+                .pow(tmp.getSeminar().y() - circuleY, 2) <= radius * radius) {
             while (tmp != null) {
                 System.out.println("Found a record with key value "
                         + tmp.getSeminar().id() + " at " + tmp.getSeminar().x()

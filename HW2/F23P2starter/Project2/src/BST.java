@@ -88,14 +88,14 @@ public class BST<T extends Comparable<? super T>> {
      * @return The root node of the BST after the insertion.
      */
     public BSTNode<T> insertNode(T key, Seminar val) {
-        if (root != null && (root.compareKey(key) < 0)) {
+        if (root == null) {
+            this.root = new BSTNode<T>(key, val);
+        }
+        else if (root.compareKey(key) < 0) {
             insertHelper(root.getRight(), key, val, root);
         }
-        else if (root != null && (root.compareKey(key) >= 0)) {
-            insertHelper(root.getLeft(), key, val, root);
-        }
         else {
-            this.root = new BSTNode<T>(key, val);
+            insertHelper(root.getLeft(), key, val, root);
         }
         return root;
     }
@@ -223,10 +223,8 @@ public class BST<T extends Comparable<? super T>> {
                 leftVisited = searchNodeHelper(curNode.getLeft(), key1, key2,
                         range, head);
                 addToLinkedList(curNode, head);
-                if (curNode.compareKey(key2) != 0) {
-                    rightVisited = searchNodeHelper(curNode.getRight(), key1,
-                            key2, range, head);
-                }
+                rightVisited = searchNodeHelper(curNode.getRight(), key1,
+                        key2, range, head);
             }
         }
         return 1 + leftVisited + rightVisited;
