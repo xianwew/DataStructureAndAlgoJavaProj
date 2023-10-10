@@ -103,9 +103,9 @@ public class BST<T extends Comparable<? super T>> {
     /**
      * Delete a node with a specific key and ID from the BST.
      *
-     * @param key      The key to delete.
-     * @param curNode  current node
-     * @param id       the id to be deleted
+     * @param key     The key to delete.
+     * @param curNode current node
+     * @param id      the id to be deleted
      * @return The deleted Seminar or null if not found.
      */
     public BSTNode<T> deleteNodeHelper(BSTNode<T> curNode, T key, int id) {
@@ -114,12 +114,10 @@ public class BST<T extends Comparable<? super T>> {
 //        }
 
         if (curNode.compareKey(key) < 0) {
-            curNode.setRight(
-                    deleteNodeHelper(curNode.getRight(), key, id));
+            curNode.setRight(deleteNodeHelper(curNode.getRight(), key, id));
         }
         else if (curNode.compareKey(key) > 0) {
-            curNode.setLeft(
-                    deleteNodeHelper(curNode.getLeft(), key, id));
+            curNode.setLeft(deleteNodeHelper(curNode.getLeft(), key, id));
         }
         else {
             if (curNode.getValue().id() == id) {
@@ -140,8 +138,7 @@ public class BST<T extends Comparable<? super T>> {
                         curNode.getKey(), cur.getValue().id()));
             }
             else {
-                curNode.setLeft(
-                        deleteNodeHelper(curNode.getLeft(), key, id));
+                curNode.setLeft(deleteNodeHelper(curNode.getLeft(), key, id));
             }
         }
         return curNode;
@@ -223,8 +220,8 @@ public class BST<T extends Comparable<? super T>> {
                 leftVisited = searchNodeHelper(curNode.getLeft(), key1, key2,
                         range, head);
                 addToLinkedList(curNode, head);
-                rightVisited = searchNodeHelper(curNode.getRight(), key1,
-                        key2, range, head);
+                rightVisited = searchNodeHelper(curNode.getRight(), key1, key2,
+                        range, head);
             }
         }
         return 1 + leftVisited + rightVisited;
