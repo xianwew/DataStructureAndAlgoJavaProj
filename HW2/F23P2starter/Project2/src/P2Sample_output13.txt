@@ -1,0 +1,150 @@
+Successfully inserted record with ID 25
+ID: 25, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+Successfully inserted record with ID 45
+ID: 45, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: AEGFAEW, AWD
+Successfully inserted record with ID 1
+ID: 1, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation biology
+Keywords: swwdaw, qawd
+Successfully inserted record with ID 8
+ID: 8, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 30
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 5
+ID: 5, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 3, Y: 3, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 6
+ID: 6, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 1, Y: 1, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 7
+ID: 7, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 16, Y: 16, Cost: 20
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 100
+ID: 100, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 13, Y: 7, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              I
+                I
+                  I
+                    I
+                      Leaf with 1 objects: 6
+                      Leaf with 3 objects: 1 5 8
+                    E
+                  E
+                E
+              Leaf with 1 objects: 100
+            E
+          Leaf with 3 objects: 7 25 45
+        E
+      E
+    E
+  E
+Successfully inserted record with ID 9
+ID: 9, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 0, Y: 31, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 101
+ID: 101, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 31, Y: 0, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              I
+                I
+                  I
+                    I
+                      Leaf with 1 objects: 6
+                      Leaf with 3 objects: 1 5 8
+                    E
+                  E
+                E
+              Leaf with 1 objects: 100
+            Leaf with 1 objects: 9
+          I
+            Leaf with 1 objects: 101
+            Leaf with 3 objects: 7 25 45
+        E
+      E
+    E
+  E
+Successfully inserted record with ID 36
+ID: 36, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 1, Y: 28, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Successfully inserted record with ID 12
+ID: 12, Title: Computational Biology and Bioinformatics in CS at Virginia Tech
+Date: 0610071600, Length: 60, X: 15, Y: 15, Cost: 23
+Description: Introduction to   bioinformatics and computation
+Keywords: swwdaw, swwdawraw
+Location Tree:
+I
+  I
+    I
+      I
+        I
+          I
+            I
+              I
+                I
+                  I
+                    I
+                      Leaf with 1 objects: 6
+                      Leaf with 3 objects: 1 5 8
+                    E
+                  E
+                E
+              I
+                Leaf with 1 objects: 100
+                Leaf with 1 objects: 12
+            I
+              I
+                E
+                I
+                  I
+                    E
+                    I
+                      I
+                        Leaf with 1 objects: 36
+                        Leaf with 1 objects: 9
+                      E
+                  E
+              E
+          I
+            Leaf with 1 objects: 101
+            Leaf with 3 objects: 7 25 45
+        E
+      E
+    E
+  E

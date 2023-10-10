@@ -25,7 +25,19 @@ public class BinNodeLeaf implements BinNode {
      * @param seminarLocal The initial seminar to be added to the leaf node.
      */
     public BinNodeLeaf(Seminar seminarLocal) {
+        int id = Integer.MIN_VALUE;
+        String title = "";
+        String date = "";
+        int length = 0;
+        short x = 0;
+        short y = 0;
+        int cost = 0;
+        String[] keywords = new String[1];
+        String desc = "";
+        Seminar dummy = new Seminar(id, title, date, length, x, y, cost,
+                keywords, desc);
         this.sl = new SeminarList();
+        this.sl.setSeminar(dummy);
         SeminarList tmp = new SeminarList();
         tmp.setSeminar(seminarLocal);
         sl.setNext(tmp);
@@ -67,14 +79,25 @@ public class BinNodeLeaf implements BinNode {
         // case 1
         // if x, y equal to existing seminar
         SeminarList curList = sl.getNext();
-        if (curList.getSeminar().x() == seminar.x()
+        SeminarList prev = sl;
+        if (curList != null && curList.getSeminar().x() == seminar.x()
                 && curList.getSeminar().y() == seminar.y()) {
-            while (curList.getNext() != null) {
-                curList = curList.getNext();
-            }
             SeminarList tmp = new SeminarList();
             tmp.setSeminar(seminar);
-            curList.setNext(tmp);
+            while (curList != null) {
+                if (prev.getSeminar().id() < seminar.id()
+                        && curList.getSeminar().id() > seminar.id()) {
+                    prev.setNext(tmp);
+                    tmp.setNext(curList);
+                    break;
+                }
+                prev = curList;
+                curList = curList.getNext();
+                if (curList == null) {
+                    prev.setNext(tmp);
+                    break;
+                }
+            }
             return this;
         }
         // System.out.println("awd");
@@ -136,7 +159,7 @@ public class BinNodeLeaf implements BinNode {
     public int search(int x, int y, int circuleX, int circuleY, int radius,
             int level, int xWidth, int yWidth) {
         SeminarList tmp = sl.getNext();
-        if (Math.pow(tmp.getSeminar().x() - circuleX, 2) + Math
+        if (tmp != null && Math.pow(tmp.getSeminar().x() - circuleX, 2) + Math
                 .pow(tmp.getSeminar().y() - circuleY, 2) <= radius * radius) {
             while (tmp != null) {
                 System.out.println("Found a record with key value "

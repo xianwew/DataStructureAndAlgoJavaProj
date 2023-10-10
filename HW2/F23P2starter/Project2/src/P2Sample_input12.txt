@@ -1,0 +1,83 @@
+insert 25
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     16     16 30
+AEGFAEW AWD
+    Introduction to   bioinformatics and computation biology
+
+insert 45
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     16     16 30
+AEGFAEW AWD
+    Introduction to   bioinformatics and computation biology
+
+insert 1
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     3     3 30
+swwdaw qawd
+    Introduction to   bioinformatics and computation biology
+
+insert 8
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     3     3 30
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 5
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     3    3 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 6
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     1    1 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 7
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     16   16 20
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 100
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     13    7 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+delete ID 5
+delete ID 5
+delete ID 6
+search ID 45
+print location
+
+insert 9
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     0   31 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 101
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     31    0 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+print location
+
+insert 36
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     1    28 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+insert 12
+Computational Biology and Bioinformatics in CS at Virginia Tech
+      0610071600       60     15    15 23
+swwdaw swwdawraw
+    Introduction to   bioinformatics and computation
+
+delete ID 5
+delete ID 8
+delete ID 1
+print location 
