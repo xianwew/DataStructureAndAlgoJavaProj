@@ -89,7 +89,7 @@ public class BinNodeEmpty implements BinNode {
      * Print the empty node at the specified level.
      *
      * @param level The level at which to print the empty node.
-     * @param return the number of iteration.
+     * @return the number of iteration.
      */
     public int print(int level) {
         int i = 0;
