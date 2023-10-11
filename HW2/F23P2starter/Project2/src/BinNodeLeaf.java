@@ -1,8 +1,5 @@
 /**
- * Implementation of the BinNode interface for representing a leaf node in a
- * binary tree. This class holds a list of seminars at the same (x, y)
- * coordinates. Each leaf node may contain multiple seminars with the same
- * coordinates.
+ * Implementation of BinNodeLeaf
  *
  * @author xianwei&jiren
  * @version Oct 2023, last updated Oct 2023
@@ -20,9 +17,9 @@ public class BinNodeLeaf implements BinNode {
     }
 
     /**
-     * Create a new leaf node with an initial seminar.
+     * Create a new leaf node with an seminar value.
      *
-     * @param seminarLocal The initial seminar to be added to the leaf node.
+     * @param seminarLocal The seminar to be added to the leaf node.
      */
     public BinNodeLeaf(Seminar seminarLocal) {
         int id = Integer.MIN_VALUE;
@@ -44,7 +41,7 @@ public class BinNodeLeaf implements BinNode {
     }
 
     /**
-     * Check if this node is a leaf (always returns true for a leaf node).
+     * Check if this node is a leaf.
      *
      * @return true since this is a leaf node.
      */
@@ -53,7 +50,7 @@ public class BinNodeLeaf implements BinNode {
     }
 
     /**
-     * Check if this node is empty (always returns false for a leaf node).
+     * Check if this node is empty.
      *
      * @return false since this is not an empty node.
      */
@@ -62,17 +59,16 @@ public class BinNodeLeaf implements BinNode {
     }
 
     /**
-     * Insert a new seminar with the specified properties into the leaf node. If
-     * a seminar with the same (x, y) coordinates already exists, it will be
-     * added to the list.
+     * Insert a new seminar into the leaf node. If a seminar with the same (x,
+     * y) coordinates already exists, it will be added to the list.
      *
-     * @param x       The x-coordinate of the seminar.
-     * @param y       The y-coordinate of the seminar.
+     * @param x       The x-coordinate of the block.
+     * @param y       The y-coordinate of the block.
      * @param seminar The seminar to be inserted.
      * @param level   The level of the binary tree.
-     * @param xWidth  The width of the x-coordinate.
-     * @param yWidth  The width of the y-coordinate.
-     * @return The updated leaf node.
+     * @param xWidth  The x width of the block.
+     * @param yWidth  The y width of the block.
+     * @return The new binTree node.
      */
     public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth,
             int yWidth) {
@@ -113,16 +109,15 @@ public class BinNodeLeaf implements BinNode {
     }
 
     /**
-     * Delete a seminar with the specified properties from the leaf node.
+     * Delete a node from the binTree.
      *
-     * @param x       The x-coordinate of the seminar to be deleted.
-     * @param y       The y-coordinate of the seminar to be deleted.
-     * @param seminar The seminar to be deleted.
-     * @param level   The level of the binary tree.
-     * @param xWidth  The width of the x-coordinate.
-     * @param yWidth  The width of the y-coordinate.
-     * @return The updated leaf node or an empty node if all seminars are
-     *         deleted.
+     * @param x       The x-coordinate of the block.
+     * @param y       The y-coordinate of the block.
+     * @param seminar The seminar associated with the node to be deleted.
+     * @param level   The level of the node to be deleted.
+     * @param xWidth  The x width of the block.
+     * @param yWidth  The y width of the block.
+     * @return This empty node since nothing is deleted.
      */
     public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth,
             int yWidth) {
@@ -142,18 +137,17 @@ public class BinNodeLeaf implements BinNode {
     }
 
     /**
-     * Search for seminars within a specified circular region and print the
-     * found seminars.
+     * Search for a node within a specified circular region.
      *
-     * @param x        The x-coordinate of the center of the circle.
-     * @param y        The y-coordinate of the center of the circle.
-     * @param circuleX The x-coordinate of the seminar to be searched.
-     * @param circuleY The y-coordinate of the seminar to be searched.
+     * @param x        The x-coordinate of the block.
+     * @param y        The y-coordinate of the block.
+     * @param circuleX The x-coordinate of the center of the circle.
+     * @param circuleY The y-coordinate of the center of the circle.
      * @param radius   The radius of the circle.
-     * @param level    The level of the binary tree.
-     * @param xWidth   The width of the x-coordinate.
-     * @param yWidth   The width of the y-coordinate.
-     * @return The number of seminars found within the circular region.
+     * @param level    The level of the node to be searched.
+     * @param xWidth   The x width of the block.
+     * @param yWidth   The y width of the block.
+     * @return 1 since an empty node is visited.
      */
     public int search(int x, int y, int circuleX, int circuleY, int radius,
             int level, int xWidth, int yWidth) {

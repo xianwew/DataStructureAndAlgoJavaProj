@@ -1,9 +1,6 @@
 /**
- * The `WorldDataBase` class represents a database for storing and managing
- * seminar records. It utilizes various data structures, including binary search
- * trees and binary trees, to organize and manipulate seminar data. The database
- * allows for inserting, searching, deleting, and printing seminar records based
- * on different criteria.
+ * The WorldDataBase class represents a database for storing and managing
+ * seminar records.
  *
  * @author xianwei & jiren
  * @version Oct 2023
@@ -17,7 +14,7 @@ public class WorldDataBase {
     private int worldSize;
 
     /**
-     * Constructs a new `WorldDataBase` instance with the specified world size.
+     * Creates a new data base instance with the specified world size.
      *
      * @param worldSizeLocal The size of the world for spatial indexing.
      */
@@ -31,9 +28,7 @@ public class WorldDataBase {
     }
 
     /**
-     * Processes a command to perform an operation on the seminar records. The
-     * command type and parameters are determined by the instruction and data
-     * provided.
+     * Processes a command to perform an operation on the seminar records.
      *
      * @param instruction The instruction code that specifies the operation to
      *                    be performed.
@@ -63,9 +58,7 @@ public class WorldDataBase {
     }
 
     /**
-     * Inserts a seminar record into the database. The seminar's validity is
-     * checked based on its coordinates, and it is inserted into appropriate
-     * data structures.
+     * Inserts a seminar record into various trees.
      *
      * @param seminar The seminar record to be inserted.
      */
@@ -99,8 +92,7 @@ public class WorldDataBase {
     }
 
     /**
-     * Searches for seminar records based on the given instruction and data. The
-     * search results are printed to the console.
+     * Searches for seminar records in various trees.
      *
      * @param instruction The search instruction code.
      * @param data        An array of search criteria or parameters.
@@ -169,7 +161,7 @@ public class WorldDataBase {
     }
 
     /**
-     * Deletes a seminar record from the database based on its ID.
+     * Deletes a seminar record from various trees.
      *
      * @param id The ID of the seminar record to be deleted.
      */
@@ -194,10 +186,10 @@ public class WorldDataBase {
     }
 
     /**
-     * Prints the contents of the specified data structure.
+     * Prints the contents of the specified tree.
      *
-     * @param instruction The print instruction code that specifies the data
-     *                    structure to print.
+     * @param instruction The print instruction code that specifies the tree to
+     *                    print.
      */
     public void print(int instruction) {
         switch (instruction) {

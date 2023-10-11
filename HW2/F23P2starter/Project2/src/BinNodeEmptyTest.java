@@ -1,7 +1,7 @@
 import student.TestCase;
 
 /**
- * This class contains test cases for the BinNodeEmpty class.
+ * This class contains test cases for BinNodeEmpty.
  * 
  * @author xianwei & jiren
  * @version Oct 2023
@@ -9,7 +9,7 @@ import student.TestCase;
 public class BinNodeEmptyTest extends TestCase {
 
     /**
-     * Test the print method of BinNodeEmpty.
+     * Test the print method.
      */
     public void testPrint() {
 

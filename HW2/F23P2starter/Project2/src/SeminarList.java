@@ -1,8 +1,6 @@
 /**
- * The `SeminarList` class represents a node in a linked list used to store
- * Seminar objects. Each node contains a reference to a Seminar object and a
- * reference to the next node in the list. This class provides methods to get
- * and set the Seminar object and the next node.
+ * The SeminarList class represents a node in a linked list used to store
+ * seminar objects
  *
  * @author xianwei & jiren
  * @version Oct 2023

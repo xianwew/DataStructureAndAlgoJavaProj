@@ -9,14 +9,12 @@
 public class LinkedList<T extends Comparable<? super T>> {
     private BSTNode<T> val;
     private LinkedList<T> next;
-    private LinkedList<T> prev;
 
     /**
      * Initialize.
      */
     public LinkedList() {
         this.next = null;
-        this.prev = null;
     }
 
     /**
@@ -27,7 +25,6 @@ public class LinkedList<T extends Comparable<? super T>> {
     public LinkedList(BSTNode<T> val) {
         this.val = val;
         this.next = null;
-        this.prev = null;
     }
 
     /**
@@ -49,39 +46,12 @@ public class LinkedList<T extends Comparable<? super T>> {
     }
 
     /**
-     * Initialize prev.
-     * 
-     * @return initialize prev
-     */
-    public LinkedList<T> getPrev() {
-        return prev;
-    }
-
-    /**
-     * set the value of a field named prev
-     * 
-     * @param prev Redefine the new next domain, receive previous
-     */
-    public void setPrev(LinkedList<T> prev) {
-        this.prev = prev;
-    }
-
-    /**
      * Initialize Val.
      * 
      * @return initialize Val
      */
     public BSTNode<T> getVal() {
         return val;
-    }
-
-    /**
-     * set the value of a field named Val
-     * 
-     * @param val Redefine the new next domain, receive values
-     */
-    public void setVal(BSTNode<T> val) {
-        this.val = val;
     }
 
 }

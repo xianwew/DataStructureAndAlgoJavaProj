@@ -1,5 +1,5 @@
 /**
- * A node class for a Binary Search Tree (BST).
+ * The node class for the BST.
  *
  * @author xianwei & jiren
  * @version Oct 2023
@@ -13,7 +13,7 @@ public class BSTNode<T extends Comparable<? super T>> {
     private BSTNode<T> right;
 
     /**
-     * Constructs a new BSTNode with the specified key and value.
+     * Creates a new BSTNode with the specified key and value.
      *
      * @param key   The key associated with this node.
      * @param value The value associated with this node.

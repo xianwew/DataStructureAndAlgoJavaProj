@@ -1,6 +1,6 @@
 /**
- * Represents a binary tree for storing seminars in a two-dimensional space. It
- * provides methods for inserting, deleting, searching, and printing seminars.
+ * Represents a binTree, a tree for storing seminars in a two-dimensional space.
+ * It provides methods for inserting, deleting, searching, and printing records.
  *
  * @author xianwei & jiren
  * @version Oct 2023
@@ -10,7 +10,7 @@ public class BinTree {
     private BinNode root;
 
     /**
-     * Get the root node of the binary tree.
+     * Get the root node of the binTree.
      *
      * @return The root node.
      */
@@ -19,9 +19,9 @@ public class BinTree {
     }
 
     /**
-     * Creates a new binary tree with the specified world size.
+     * Creates a new binTree with the specified world size.
      *
-     * @param worldSizeLocal The size of the world (both width and height).
+     * @param worldSizeLocal The size of the world.
      */
     public BinTree(int worldSizeLocal) {
         this.worldSize = worldSizeLocal;
@@ -29,7 +29,7 @@ public class BinTree {
     }
 
     /**
-     * Insert a seminar into the binary tree.
+     * Insert a seminar into the binTree.
      *
      * @param seminar The seminar to be inserted.
      */
@@ -38,7 +38,7 @@ public class BinTree {
     }
 
     /**
-     * Delete a seminar from the binary tree.
+     * Delete a seminar from the binTree.
      *
      * @param seminar The seminar to be deleted.
      */
@@ -53,7 +53,7 @@ public class BinTree {
      * @param circuleX The x-coordinate of the center of the circle.
      * @param circuleY The y-coordinate of the center of the circle.
      * @param radius   The radius of the circular region.
-     * @return The number of seminars found within the circular region.
+     * @return The number of visited nodes during the search.
      */
     public int search(int circuleX, int circuleY, int radius) {
         return root.search(0, 0, circuleX, circuleY, radius, 0, worldSize,
@@ -61,11 +61,11 @@ public class BinTree {
     }
 
     /**
-     * Print the binary tree starting from the specified node.
+     * Print the binTree.
      *
      * @param level The level of the current node in the tree.
      * @param node  The current node to be printed.
-     * @return The total number of nodes printed in the subtree.
+     * @return The total number of nodes printed.
      */
     public int print(int level, BinNode node) {
         node.print(level);

@@ -1,5 +1,5 @@
 /**
- * Binary Search Tree (BST) class for storing key-value pairs.
+ * BST for storing key-value pairs.
  *
  * @author xianwei & jiren
  * @version Oct 2023
@@ -10,7 +10,7 @@ public class BST<T extends Comparable<? super T>> {
     private int visitedCount = 0;
 
     /**
-     * Get the count of nodes visited during the last operation.
+     * Get the count of nodes visited during the search.
      *
      * @return The number of nodes visited.
      */
@@ -80,8 +80,7 @@ public class BST<T extends Comparable<? super T>> {
     }
 
     /**
-     * Inserts a node with the specified key and value into the Binary Search
-     * Tree (BST).
+     * Inserts a node with the specified key and value into the BST.
      *
      * @param key The key to be inserted.
      * @param val The value associated with the key.
@@ -145,8 +144,7 @@ public class BST<T extends Comparable<? super T>> {
     }
 
     /**
-     * Deletes a node with the specified key and ID from the Binary Search Tree
-     * (BST).
+     * Deletes a node from the BST.
      *
      * @param key The key to match for deletion.
      * @param id  The ID to match for deletion.
@@ -173,13 +171,13 @@ public class BST<T extends Comparable<? super T>> {
      * Search for nodes within a specified range or matching a key.
      *
      * @param key1    The first key for range search or exact match.
-     * @param key2    The second key for range search (ignored if not in range
-     *                search).
+     * @param key2    The second key for range search (ignored if it is not
+     *                range search).
      * @param curNode current node
      * @param range   If true, perform a range search; if false, perform an
      *                exact match search.
      * @param head    the head of the linked list
-     * @return A linked list of matching nodes or null if none found.
+     * @return the number of visited nodes.
      */
     public int searchNodeHelper(BSTNode<T> curNode, T key1, T key2,
             boolean range, LinkedList<T> head) {
@@ -230,8 +228,7 @@ public class BST<T extends Comparable<? super T>> {
     }
 
     /**
-     * Searches for nodes within the Binary Search Tree (BST) based on a
-     * specified key range.
+     * Searches for nodes within the BST based on a specified key range.
      *
      * @param key1  The lower bound of the key range.
      * @param key2  The upper bound of the key range.
@@ -247,9 +244,7 @@ public class BST<T extends Comparable<? super T>> {
     }
 
     /**
-     * Prints the contents of the Binary Search Tree (BST) in a hierarchical
-     * fashion. If the tree is empty, it prints a message indicating that the
-     * tree is empty.
+     * Prints the contents of the BST.
      */
     public void print() {
         if (root == null) {
@@ -261,9 +256,7 @@ public class BST<T extends Comparable<? super T>> {
     }
 
     /**
-     * Recursively prints the contents of the Binary Search Tree (BST) starting
-     * from a given node. Each node's key is printed indented according to its
-     * level in the tree.
+     * Recursively prints the contents of the BST.
      *
      * @param node  The current node to print.
      * @param level The level of the current node in the tree.

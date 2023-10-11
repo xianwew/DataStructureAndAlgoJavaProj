@@ -1,16 +1,14 @@
 import student.TestCase;
 
 /**
- * This class contains unit tests for the `Parser` class, specifically testing
- * its initialization and command processing methods.
+ * This class contains unit tests for Parser
  * 
  * @author Xianwei Wu/Jiren Wang
  * @version September 2023, updated September 2023
  */
 public class ParserTest extends TestCase {
     /**
-     * Test the `initializeComponents` method for correct component
-     * initialization.
+     * Test the getInstruction function
      */
     public void testGetInstruction() {
 

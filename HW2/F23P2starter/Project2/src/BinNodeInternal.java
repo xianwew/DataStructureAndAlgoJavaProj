@@ -1,6 +1,5 @@
 /**
- * Implementation of the BinNode interface for representing an internal node in
- * a binary tree.
+ * Implementation of BinNodeInternal.
  * 
  * @author xianwei & jiren
  * @version Oct 2023
@@ -10,7 +9,7 @@ public class BinNodeInternal implements BinNode {
     private BinNode right;
 
     /**
-     * Check if this node is a leaf (always returns false for an internal node).
+     * Check if this node is a leaf.
      *
      * @return false since this is an internal node.
      */
@@ -19,7 +18,7 @@ public class BinNodeInternal implements BinNode {
     }
 
     /**
-     * Check if this node is empty (always returns false for an internal node).
+     * Check if this node is empty.
      *
      * @return false since this is an internal node.
      */
@@ -36,15 +35,15 @@ public class BinNodeInternal implements BinNode {
     }
 
     /**
-     * Insert a new node with the specified properties into the binary tree.
+     * Insert a new node into the BinTree.
      *
-     * @param x       The x-coordinate of the new node.
-     * @param y       The y-coordinate of the new node.
-     * @param seminar The seminar associated with the new node.
-     * @param level   The level of the new node.
-     * @param xWidth  The width of the x-coordinate.
-     * @param yWidth  The width of the y-coordinate.
-     * @return The new binary tree node.
+     * @param x       The x-coordinate of the block.
+     * @param y       The y-coordinate of the block.
+     * @param seminar The seminar to be inserted.
+     * @param level   The level of the binary tree.
+     * @param xWidth  The x width of the block.
+     * @param yWidth  The y width of the block.
+     * @return The new binTree node.
      */
     public BinNode insert(int x, int y, Seminar seminar, int level, int xWidth,
             int yWidth) {
@@ -75,15 +74,15 @@ public class BinNodeInternal implements BinNode {
     }
 
     /**
-     * Delete a node with the specified properties from the binary tree.
+     * Delete a node from the binTree.
      *
-     * @param x       The x-coordinate of the node to be deleted.
-     * @param y       The y-coordinate of the node to be deleted.
+     * @param x       The x-coordinate of the block.
+     * @param y       The y-coordinate of the block.
      * @param seminar The seminar associated with the node to be deleted.
      * @param level   The level of the node to be deleted.
-     * @param xWidth  The width of the x-coordinate.
-     * @param yWidth  The width of the y-coordinate.
-     * @return The updated binary tree node.
+     * @param xWidth  The x width of the block.
+     * @param yWidth  The y width of the block.
+     * @return This empty node since nothing is deleted.
      */
     public BinNode delete(int x, int y, Seminar seminar, int level, int xWidth,
             int yWidth) {
@@ -122,15 +121,15 @@ public class BinNodeInternal implements BinNode {
     /**
      * Search for a node within a specified circular region.
      *
-     * @param x        The x-coordinate of the center of the circle.
-     * @param y        The y-coordinate of the center of the circle.
-     * @param circuleX The x-coordinate of the node to be searched.
-     * @param circuleY The y-coordinate of the node to be searched.
+     * @param x        The x-coordinate of the block.
+     * @param y        The y-coordinate of the block.
+     * @param circuleX The x-coordinate of the center of the circle.
+     * @param circuleY The y-coordinate of the center of the circle.
      * @param radius   The radius of the circle.
      * @param level    The level of the node to be searched.
-     * @param xWidth   The width of the x-coordinate.
-     * @param yWidth   The width of the y-coordinate.
-     * @return The result of the search operation.
+     * @param xWidth  The x width of the block.
+     * @param yWidth  The y width of the block.
+     * @return 1 since an empty node is visited.
      */
     public int search(int x, int y, int circuleX, int circuleY, int radius,
             int level, int xWidth, int yWidth) {
