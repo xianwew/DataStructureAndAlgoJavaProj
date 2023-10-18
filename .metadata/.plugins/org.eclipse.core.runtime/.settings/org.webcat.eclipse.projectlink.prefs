@@ -1,9 +1,0 @@
-eclipse.preferences.version=1
-org.webcat.eclipse.projectlink.preferences.data_notification_shown=true
-org.webcat.eclipse.projectlink.preferences.downloadURL=http\://web-cat.cs.vt.edu/Web-CAT/assignments.xml
-org.webcat.eclipse.projectlink.preferences.email=xianwei@vt.edu
-org.webcat.eclipse.projectlink.preferences.push_to_server=true
-org.webcat.eclipse.projectlink.preferences.submitURL=https\://web-cat.cs.vt.edu/Web-CAT/WebObjects/Web-CAT.woa/wa/assignments/eclipse?institution\=VT
-org.webcat.eclipse.projectlink.preferences.urlType=separate
-org.webcat.eclipse.projectlink.preferences.user_uuid=c50eb2a0-f56a-489a-8a5b-a225d8bb69f9
-org.webcat.eclipse.projectlink.preferences.username=xianwei
