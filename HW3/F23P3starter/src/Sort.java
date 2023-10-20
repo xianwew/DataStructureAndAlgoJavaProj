@@ -48,19 +48,20 @@ public class Sort {
         return (i + 1);
     }
 
-    private void quickSort(int low, int high) {
+    public void quickSort(int low, int high) {
         if (low < high) {
             int pi = partition(low, high);
             quickSort(low, pi - 1);
             quickSort(pi + 1, high);
         }
     }
+    
 
-    private static void printArr(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
+//    private void printArr(int[] arr) {
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.print(arr[i] + " ");
+//        }
+//    }
 //        public static void main(String[] args)
 //        {
 //            int[] arr = { 10, 7, 8, 9, 1, 5 };
