@@ -6,6 +6,7 @@ public class Buffer {
     public Buffer() {
         data = new byte[4096];
     }
+    
     public boolean isDirty() {
         return isDirty;
     }
