@@ -2,7 +2,11 @@ import java.io.RandomAccessFile;
 import java.io.IOException;
 
 public class BufferPool implements BufferPoolADT {
-
+    public class BufferList{
+        
+        
+    }
+    
     public void insert(byte[] space, int sz, int pos) {
 
     }

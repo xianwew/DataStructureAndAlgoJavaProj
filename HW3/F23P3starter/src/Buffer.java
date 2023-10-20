@@ -1,7 +1,8 @@
 public class Buffer {
     private boolean isDirty = false;
     private byte[] data;
-
+    private int ID;
+    
     public Buffer() {
         data = new byte[4096];
     }
@@ -19,5 +20,12 @@ public class Buffer {
 
     public void setData(byte[] data) {
         this.data = data;
+    }
+    
+    public int getID() {
+        return ID;
+    }
+    public void setID(int iD) {
+        ID = iD;
     }
 }
