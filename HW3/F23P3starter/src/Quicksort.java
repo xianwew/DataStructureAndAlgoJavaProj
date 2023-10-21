@@ -67,11 +67,15 @@ public class Quicksort {
                 e.printStackTrace();
             }
 
+            if(Integer.valueOf(args[1]) < 1 || Integer.valueOf(args[1]) > 20) {
+                System.out.println("The input buffer size should between 1 - 20");
+                return;
+            }
+            
             BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]), args[0]);
             Sort sort = new Sort(bufferPool);
-            long lengthBefore = bufferPool.getFileLength();
-            //System.out.println("before sort: " + length);
             sort.quickSort(0, bufferPool.getFileLength() - 4);
+            bufferPool.writeAllDirtyBlockToDisk();
             CheckFile cf = new CheckFile();
             try {
                 System.out.println("Was file sorted successfully: " + cf.checkFile(args[0]));
@@ -79,8 +83,6 @@ public class Quicksort {
             catch (Exception e) {
                 e.printStackTrace();
             }
-            long lengthAfter = bufferPool.getFileLength();
-            System.out.println("File length identical: " + (lengthAfter == lengthBefore));
         }
     }
 }

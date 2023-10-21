@@ -168,7 +168,7 @@ public class BufferPool implements BufferPoolADT {
         block.setPrev(dummy);
         block.setNext(oldTop);
         oldTop.setPrev(block);
-        printBuffers();
+//        printBuffers();
     }
     
     public void discardBlock() {
@@ -181,7 +181,7 @@ public class BufferPool implements BufferPoolADT {
         prevprev.setNext(tail);
         tail.setPrev(prevprev);
         curNumOfBuffer--;
-        printBuffers();
+//        printBuffers();
 //          System.out.println("block discarded!");
     }
     
@@ -197,7 +197,17 @@ public class BufferPool implements BufferPoolADT {
         return buffer;
     }
 
-
+    public void writeAllDirtyBlockToDisk() {
+        BufferList tmp = dummy.getNext();
+        while(tmp != tail) {
+            if(tmp.getBuffer().isDirty()) {
+                writeToDisk(tmp.getBuffer().getID() * 4096, tmp.getBuffer().getData());
+            }
+            tmp = tmp.getNext();
+        }
+    }
+    
+    
     public void writeToDisk(long index, byte[] data) {
         try {
             RandomAccessFile raf = new RandomAccessFile(fileName, "rw");
