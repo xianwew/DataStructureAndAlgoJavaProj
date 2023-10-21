@@ -42,6 +42,6 @@ public class Sort {
             long pivot = partition(low, high);
             quickSort(low, pivot - 4);
             quickSort(pivot + 4, high);  
-        }      
+        }     
     }
 }
