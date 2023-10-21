@@ -61,7 +61,7 @@ public class Quicksort {
         // This is the main file for the program.
         if(args != null) {
             try {
-                generateFile(args[0], "4096", 'b');
+                generateFile(args[0], "1024", 'b');
             }
             catch (IOException e) {
                 e.printStackTrace();
@@ -71,7 +71,5 @@ public class Quicksort {
             long length = bufferPool.getFileLength();
             sort.quickSort(0, length - 4);
         }
-       
-        
     }
 }
