@@ -13,27 +13,22 @@ public class Sort {
     }
 
     private int compareByteArray(byte[] a, byte[] b) {
-        if (a[0] > b[0]) {
-            return 1;
-        }
-        else if (a[0] < b[0]) {
-            return -1;
-        }
-        else {
-            if (a[1] > b[1]) {
+        for (int i = 0; i < 2; i++) {
+            if (a[i] > b[i]) {
                 return 1;
-            }
-            else if (a[1] < b[1]) {
+            } 
+            else if (a[i] < b[i]) {
                 return -1;
             }
         }
-        return 0;
+        return 0;  
     }
+
 
     private long partition(long low, long high) {
         byte[] highSection = new byte[4];
         byte[] curSection = new byte[4];
-        System.out.println("high: " + high);
+        //System.out.println("high: " + high);
         bufferPool.getbytes(highSection, 4, high);
         byte[] pivot = Arrays.copyOfRange(highSection, 0, 2);
         long i = (low - 4);

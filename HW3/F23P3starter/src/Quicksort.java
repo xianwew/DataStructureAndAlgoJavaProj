@@ -61,11 +61,12 @@ public class Quicksort {
         // This is the main file for the program.
         if(args != null) {
             try {
-                generateFile(args[0], "1024", 'b');
+                generateFile(args[0], "1024", 'a');
             }
             catch (IOException e) {
                 e.printStackTrace();
             }
+
             BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]), args[0]);
             Sort sort = new Sort(bufferPool);
             long length = bufferPool.getFileLength();

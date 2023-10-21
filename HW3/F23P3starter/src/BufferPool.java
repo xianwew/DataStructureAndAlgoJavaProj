@@ -42,29 +42,42 @@ public class BufferPool implements BufferPoolADT {
     private BufferList dummy = null;
     private int poolSize;
     private String fileName;
+    private int curNumOfBuffer;
     
     public BufferPool(int size, String fName) {
         dummy = new BufferList(false);
         poolSize = size;
         fileName = fName;
+        curNumOfBuffer = 0;
     }
 
     public int getSize() {
         return poolSize;
     }
     
+    public int getCurNumOfBuffer() {
+        return curNumOfBuffer;
+    }
+
+    public void setCurNumOfBuffer(int numOfBuffer) {
+        this.curNumOfBuffer = numOfBuffer;
+    }
+    
     public void insert(byte[] space, int sz, long pos) {
         long blockID = pos / (sz * 1024);
         BufferList insertBlock = dummy.getNext();
         BufferList prev = dummy;
-        while(insertBlock != null && insertBlock.getBuffer().getID() != blockID) {    
+        while(insertBlock != null) { 
+            if(insertBlock.getBuffer().getID() == blockID) {
+                break;
+            }
             prev = insertBlock;
             insertBlock = insertBlock.getNext();
             //System.out.println("abb");
         }
         
         if(insertBlock == null) {
-            System.out.println("adwad");
+            System.out.println("insertBlock is null!");
             insertBlock = new BufferList(true);
             insertBlock.getBuffer().setID(blockID);
             prev.setNext(insertBlock);
@@ -83,35 +96,48 @@ public class BufferPool implements BufferPoolADT {
     public void getbytes(byte[] space, int sz, long pos) {
         long blockID = pos / (sz * 1024);
         BufferList searchBlock = dummy.getNext();
-        BufferList prev = dummy;
-        while(searchBlock != null && searchBlock.getBuffer().getID() != blockID) {   
-            prev = searchBlock;
+        while(searchBlock != null) {  
+            if(searchBlock.getBuffer().getID() == blockID) {
+                break;
+            }
             searchBlock = searchBlock.getNext();
         }
         
         if(searchBlock == null) {
+            if(getCurNumOfBuffer() + 1 >= poolSize) {
+                discardBlock();
+            }
             byte[] dataRead = readFromDisk(pos - pos % 4096);
             System.out.println("new insert index: " + (pos - pos % 4096));
             System.out.println("new insert block ID: " + blockID);
             searchBlock = new BufferList(true);
             searchBlock.getBuffer().setID(blockID);
             searchBlock.setBuffer(new Buffer(dataRead));
-            prev.setNext(searchBlock);
-            searchBlock.setPrev(prev);
-            discardBlock();
+            BufferList oldTop = dummy.getNext();
+            dummy.setNext(searchBlock);
+            searchBlock.setPrev(dummy);
+            searchBlock.setNext(oldTop);
+            if(oldTop != null) {
+                oldTop.setPrev(searchBlock);
+            } 
+            setCurNumOfBuffer(getCurNumOfBuffer() + 1);
         }   
+        else {
+            moveToTheTop(pos);
+        }
         
         for(int i = 0; i < sz; i++) {
             space[i] = searchBlock.getBuffer().getData()[(int) (i + pos % (sz * 1024))];
-        }
-        
-        moveToTheTop(pos);
+        }  
     }
     
     private void setDirtyBit(long pos) {
         long blockID = pos / 4096;
         BufferList searchBlock = dummy.getNext();
-        while(searchBlock != null && searchBlock.getBuffer().getID() != blockID) {    
+        while(searchBlock != null) {  
+            if(searchBlock.getBuffer().getID() == blockID) {
+                break;
+            }
             searchBlock = searchBlock.getNext();
         }
         if(searchBlock != null){
@@ -142,19 +168,13 @@ public class BufferPool implements BufferPoolADT {
         }
         
         if(searchBlock != null && dummy.getNext() != searchBlock) {
-            System.out.println("moved to the top!");
+            //System.out.println("Block with ID: " + blockID + " moved to the top!");
             BufferList searchPrev = searchBlock.getPrev();
-            BufferList searchNext = searchBlock.getNext();
-            
-            // Detach searchBlock from its current position
-            if (searchPrev != null) {
-                searchPrev.setNext(searchNext);
-            }
+            BufferList searchNext = searchBlock.getNext();          
+            searchPrev.setNext(searchNext);
             if (searchNext != null) {
                 searchNext.setPrev(searchPrev);
             }
-
-            // Attach searchBlock to the top
             BufferList oldTop = dummy.getNext();
             dummy.setNext(searchBlock);
             searchBlock.setPrev(dummy);
@@ -164,19 +184,16 @@ public class BufferPool implements BufferPoolADT {
     }
     
     public void discardBlock() {
-        int curSize = 0;
         BufferList curList = dummy.getNext();
         BufferList prev = dummy;
         BufferList prevprev = null;
         while(curList != null) {
-            curSize++;
             prevprev = prev;
             prev = curList;
             curList = curList.getNext();
-        }
+        } 
         
-        if(curSize <= poolSize) {
-            System.out.println(curSize);
+        if(getCurNumOfBuffer() <= poolSize) { 
             return;
         }
         else {
@@ -188,6 +205,9 @@ public class BufferPool implements BufferPoolADT {
                 }
             }
             prevprev.setNext(null);
+            prev.setPrev(null);
+            setCurNumOfBuffer(getCurNumOfBuffer() - 1);
+            System.out.println("curNumOfBuffer: " + getCurNumOfBuffer());
             System.out.println("block discarded!");
         }
     }
@@ -231,4 +251,5 @@ public class BufferPool implements BufferPoolADT {
         }
         return length;
     }
+
 }
