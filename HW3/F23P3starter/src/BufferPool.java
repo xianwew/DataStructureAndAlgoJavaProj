@@ -60,7 +60,9 @@ public class BufferPool implements BufferPoolADT {
         }
         
         for(int i = 0; i < sz; i++) {
-            insertBlock.getBuffer().getData()[i + pos - blockID * sz * 1024] = space[i];
+            System.out.println("BlockID: " + blockID);
+            System.out.println("pos: " + pos);
+            insertBlock.getBuffer().getData()[i + pos % (blockID * sz * 1024)] = space[i];
         }
         
         moveToTheTop(pos);
@@ -76,11 +78,12 @@ public class BufferPool implements BufferPoolADT {
         
         if(searchBlock != null) {
             for(int i = 0; i < sz; i++) {
-                space[i] = searchBlock.getBuffer().getData()[i + pos - blockID * sz * 1024];
+                space[i] = searchBlock.getBuffer().getData()[i + pos % (blockID * sz * 1024)];
             }
         }   
         else {
             byte[] dataRead = readFromDisk(pos);
+            System.out.println(pos);
             insert(dataRead, 4, pos);
         }   
         
@@ -182,5 +185,19 @@ public class BufferPool implements BufferPoolADT {
         catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    
+    public long getFileLength() {
+        long length = 0;
+        try {
+            RandomAccessFile raf = new RandomAccessFile(fileName, "r");
+            raf.seek(0);
+            length = raf.length();
+            raf.close();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        return length;
     }
 }
