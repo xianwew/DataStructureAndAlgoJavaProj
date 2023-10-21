@@ -158,7 +158,6 @@ public class BufferPool implements BufferPoolADT {
         if(dummy.getNext() == tail || dummy.getNext().getNext() == tail || dummy.getNext() == block) {
             return;
         }
-//      System.out.println("Block with ID: " + blockID + " moved to the top!");
         BufferList searchPrev = block.getPrev();
         BufferList searchNext = block.getNext();          
         searchPrev.setNext(searchNext);
@@ -168,7 +167,7 @@ public class BufferPool implements BufferPoolADT {
         block.setPrev(dummy);
         block.setNext(oldTop);
         oldTop.setPrev(block);
-//        printBuffers();
+//      printBuffers();
     }
     
     public void discardBlock() {
@@ -182,14 +181,16 @@ public class BufferPool implements BufferPoolADT {
         tail.setPrev(prevprev);
         curNumOfBuffer--;
 //        printBuffers();
-//          System.out.println("block discarded!");
+//        System.out.println("block discarded!");
     }
     
     public byte[] readFromDisk(long index) {
         byte[] buffer = new byte[4096];
-        try (RandomAccessFile raf = new RandomAccessFile(fileName, "r")) {
+        try {
+            RandomAccessFile raf = new RandomAccessFile(fileName, "r");
             raf.seek(index);
             raf.read(buffer);
+            raf.close();
         } 
         catch (IOException e) {
             e.printStackTrace();
@@ -207,7 +208,6 @@ public class BufferPool implements BufferPoolADT {
         }
     }
     
-    
     public void writeToDisk(long index, byte[] data) {
         try {
             RandomAccessFile raf = new RandomAccessFile(fileName, "rw");
@@ -222,8 +222,10 @@ public class BufferPool implements BufferPoolADT {
     
     public long getFileLength() {
         long length = 0;
-        try (RandomAccessFile raf = new RandomAccessFile(fileName, "r")) {
+        try {
+            RandomAccessFile raf = new RandomAccessFile(fileName, "r");
             length = raf.length();
+            raf.close();
         } 
         catch (IOException e) {
             e.printStackTrace();
