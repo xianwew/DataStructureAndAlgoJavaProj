@@ -5,10 +5,12 @@ public class Buffer {
     
     public Buffer() {
         data = new byte[4096];
+        isDirty = false;
     }
     
     public Buffer(byte[] newData) {
         data = newData;
+        isDirty = false;
     }
     
     public boolean isDirty() {
@@ -30,7 +32,8 @@ public class Buffer {
     public long getID() {
         return id;
     }
-    public void setID(long iD) {
-        id = iD;
+    
+    public void setID(long idLoc) {
+        id = idLoc;
     }
 }

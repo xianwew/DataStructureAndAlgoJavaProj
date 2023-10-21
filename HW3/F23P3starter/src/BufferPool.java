@@ -1,5 +1,4 @@
 import java.io.RandomAccessFile;
-import java.util.Arrays;
 import java.io.IOException;
 
 public class BufferPool implements BufferPoolADT {
@@ -63,34 +62,44 @@ public class BufferPool implements BufferPoolADT {
         this.curNumOfBuffer = numOfBuffer;
     }
     
+    public BufferList insertBufferToTop(long id) {
+        BufferList insertBlock = new BufferList(true);
+        insertBlock.getBuffer().setID(id);
+        BufferList oldTop = dummy.getNext();
+        dummy.setNext(insertBlock);
+        insertBlock.setPrev(dummy);
+        insertBlock.setNext(oldTop);
+        if(oldTop != null) {
+            oldTop.setPrev(insertBlock);
+        } 
+        setCurNumOfBuffer(getCurNumOfBuffer() + 1);
+        return insertBlock;
+    }
+    
     public void insert(byte[] space, int sz, long pos) {
         long blockID = pos / (sz * 1024);
         BufferList insertBlock = dummy.getNext();
-        BufferList prev = dummy;
         while(insertBlock != null) { 
             if(insertBlock.getBuffer().getID() == blockID) {
                 break;
             }
-            prev = insertBlock;
             insertBlock = insertBlock.getNext();
-            //System.out.println("abb");
         }
         
         if(insertBlock == null) {
             System.out.println("insertBlock is null!");
-            insertBlock = new BufferList(true);
-            insertBlock.getBuffer().setID(blockID);
-            prev.setNext(insertBlock);
-            insertBlock.setPrev(prev);
+            if(getCurNumOfBuffer() >= poolSize) {
+                discardBlock();
+            }
+            insertBlock = insertBufferToTop(blockID);
+        }
+        else {
+            moveToTheTop(pos);
         }
         
         for(int i = 0; i < sz; i++) {
-            //System.out.println("BlockID: " + blockID);
-            //System.out.println("pos: " + (pos + i));
             insertBlock.getBuffer().getData()[(int) (i + pos % (sz * 1024))] = space[i];
-        }
-        
-        moveToTheTop(pos);
+        } 
     }
 
     public void getbytes(byte[] space, int sz, long pos) {
@@ -104,23 +113,14 @@ public class BufferPool implements BufferPoolADT {
         }
         
         if(searchBlock == null) {
-            if(getCurNumOfBuffer() + 1 >= poolSize) {
+            if(getCurNumOfBuffer() >= poolSize) {
                 discardBlock();
             }
             byte[] dataRead = readFromDisk(pos - pos % 4096);
             System.out.println("new insert index: " + (pos - pos % 4096));
             System.out.println("new insert block ID: " + blockID);
-            searchBlock = new BufferList(true);
-            searchBlock.getBuffer().setID(blockID);
+            searchBlock = insertBufferToTop(blockID);
             searchBlock.setBuffer(new Buffer(dataRead));
-            BufferList oldTop = dummy.getNext();
-            dummy.setNext(searchBlock);
-            searchBlock.setPrev(dummy);
-            searchBlock.setNext(oldTop);
-            if(oldTop != null) {
-                oldTop.setPrev(searchBlock);
-            } 
-            setCurNumOfBuffer(getCurNumOfBuffer() + 1);
         }   
         else {
             moveToTheTop(pos);
