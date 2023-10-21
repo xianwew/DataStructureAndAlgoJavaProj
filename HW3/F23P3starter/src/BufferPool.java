@@ -128,7 +128,7 @@ public class BufferPool implements BufferPoolADT {
     
     private void setDirtyBit(int sz, long pos) {
         BufferList searchBlock = getBlockByPos(sz, pos);
-        if(searchBlock != null){
+        if(searchBlock != tail){
             searchBlock.getBuffer().setDirty(true);
         }
     }
