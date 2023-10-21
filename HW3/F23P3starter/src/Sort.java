@@ -38,6 +38,7 @@ public class Sort {
         byte[] pivot = Arrays.copyOfRange(highSection, 0, 2);
         long i = (low - 4);
         for (long j = low; j <= high - 4; j = j + 4) {
+            //System.out.println("j: " + j);
             bufferPool.getbytes(curSection, 4, j);
             byte[] curKey = Arrays.copyOfRange(curSection, 0, 2);
             if (compareByteArray(curKey, pivot) == -1) {

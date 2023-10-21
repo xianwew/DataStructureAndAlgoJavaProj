@@ -76,6 +76,8 @@ public class BufferPool implements BufferPoolADT {
             //System.out.println("pos: " + (pos + i));
             insertBlock.getBuffer().getData()[(int) (i + pos % (sz * 1024))] = space[i];
         }
+        
+        moveToTheTop(pos);
     }
 
     public void getbytes(byte[] space, int sz, long pos) {
@@ -126,8 +128,6 @@ public class BufferPool implements BufferPoolADT {
         insert(tmpI, 4, j);
         setDirtyBit(i);
         setDirtyBit(j);
-        moveToTheTop(i);
-        moveToTheTop(j);
     }
 
     public void moveToTheTop(long pos) {
@@ -143,21 +143,23 @@ public class BufferPool implements BufferPoolADT {
         
         if(searchBlock != null && dummy.getNext() != searchBlock) {
             System.out.println("moved to the top!");
-            BufferList topBlock = dummy.getNext();
             BufferList searchPrev = searchBlock.getPrev();
             BufferList searchNext = searchBlock.getNext();
-            BufferList topPrev = topBlock.getPrev();
-            BufferList topNext = topBlock.getNext();
-            searchBlock.setPrev(topPrev);
-            searchBlock.setNext(topNext);
-            searchPrev.setNext(topBlock);
-            if(searchNext != null) {
-                searchNext.setPrev(topBlock);
+            
+            // Detach searchBlock from its current position
+            if (searchPrev != null) {
+                searchPrev.setNext(searchNext);
             }
-            topBlock.setPrev(searchPrev);
-            topBlock.setNext(searchNext);
-            topPrev.setNext(searchBlock);
-            topNext.setPrev(searchBlock);
+            if (searchNext != null) {
+                searchNext.setPrev(searchPrev);
+            }
+
+            // Attach searchBlock to the top
+            BufferList oldTop = dummy.getNext();
+            dummy.setNext(searchBlock);
+            searchBlock.setPrev(dummy);
+            searchBlock.setNext(oldTop);
+            oldTop.setPrev(searchBlock);
         }
     }
     
@@ -186,7 +188,6 @@ public class BufferPool implements BufferPoolADT {
                 }
             }
             prevprev.setNext(null);
-            prev.setPrev(null);
             System.out.println("block discarded!");
         }
     }
