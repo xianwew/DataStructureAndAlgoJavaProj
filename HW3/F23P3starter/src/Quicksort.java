@@ -59,9 +59,9 @@ public class Quicksort {
      */
     public static void main(String[] args) {
         // This is the main file for the program.
-        if(args != null) {
+        if(args != null && args.length == 3) {
             try {
-                generateFile(args[0], "1", 'b');
+                generateFile(args[0], "1", 'a');
             }
             catch (IOException e) {
                 e.printStackTrace();
@@ -74,8 +74,7 @@ public class Quicksort {
             
             BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]), args[0]);
             Sort sort = new Sort(bufferPool);
-            sort.quickSort(0, bufferPool.getFileLength() - 4);
-            bufferPool.writeAllDirtyBlockToDisk();
+            sort.startSorting(0, bufferPool.getFileLength() - 4);
             CheckFile cf = new CheckFile();
             try {
                 System.out.println("Was file sorted successfully: " + cf.checkFile(args[0]));

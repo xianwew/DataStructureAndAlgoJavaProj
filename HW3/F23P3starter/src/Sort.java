@@ -40,4 +40,9 @@ public class Sort {
             quickSort(pivot + 4, high);  
         }     
     }
+    
+    public void startSorting(long low, long high) {
+        quickSort(low, high);
+        bufferPool.writeAllDirtyBlockToDisk();
+    }
 }
