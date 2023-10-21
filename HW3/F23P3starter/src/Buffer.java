@@ -1,18 +1,23 @@
 public class Buffer {
     private boolean isDirty = false;
     private byte[] data;
-    private long id;
+    private long id = -1;
     
     public Buffer() {
         data = new byte[4096];
         isDirty = false;
-        id = -1;
     }
     
-    public Buffer(byte[] newData) {
+    public Buffer(byte[] newData, long idLoc) {
         data = newData;
         isDirty = false;
-        id = -1;
+        id = idLoc;
+    }
+    
+    public Buffer(long idLoc) {
+        data = new byte[4096];
+        isDirty = false;
+        id = idLoc;
     }
     
     public boolean isDirty() {

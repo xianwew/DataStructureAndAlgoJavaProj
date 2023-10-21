@@ -61,7 +61,7 @@ public class Quicksort {
         // This is the main file for the program.
         if(args != null) {
             try {
-                generateFile(args[0], "7", 'a');
+                generateFile(args[0], "128", 'a');
             }
             catch (IOException e) {
                 e.printStackTrace();
@@ -69,16 +69,18 @@ public class Quicksort {
 
             BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]), args[0]);
             Sort sort = new Sort(bufferPool);
-            long length = bufferPool.getFileLength();
-            System.out.println(length);
-            sort.quickSort(0, length - 4);
+            long lengthBefore = bufferPool.getFileLength();
+            //System.out.println("before sort: " + length);
+            sort.quickSort(0, bufferPool.getFileLength() - 4);
             CheckFile cf = new CheckFile();
             try {
-                cf.checkFile(args[0]);
+                System.out.println("Was file sorted successfully: " + cf.checkFile(args[0]));
             }
             catch (Exception e) {
                 e.printStackTrace();
             }
+            long lengthAfter = bufferPool.getFileLength();
+            System.out.println("File length identical: " + (lengthAfter == lengthBefore));
         }
     }
 }
