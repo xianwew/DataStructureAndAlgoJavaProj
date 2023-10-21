@@ -6,11 +6,13 @@ public class Buffer {
     public Buffer() {
         data = new byte[4096];
         isDirty = false;
+        id = -1;
     }
     
     public Buffer(byte[] newData) {
         data = newData;
         isDirty = false;
+        id = -1;
     }
     
     public boolean isDirty() {
