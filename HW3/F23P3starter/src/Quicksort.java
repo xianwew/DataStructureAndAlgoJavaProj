@@ -69,7 +69,7 @@ public class Quicksort {
             BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]), args[0]);
             Sort sort = new Sort(bufferPool);
             long length = bufferPool.getFileLength();
-            sort.quickSort(0, (int) (length - 4));
+            sort.quickSort(0, length - 4);
         }
        
         

@@ -62,12 +62,7 @@ public class BufferPool implements BufferPoolADT {
         for(int i = 0; i < sz; i++) {
             //System.out.println("BlockID: " + blockID);
             System.out.println("pos: " + (pos + i));
-            if(blockID != 0) {
-                insertBlock.getBuffer().getData()[(int) (i + pos % (blockID * sz * 1024))] = space[i];
-            }
-            else {
-                insertBlock.getBuffer().getData()[(int) (i + pos)] = space[i];
-            }
+            insertBlock.getBuffer().getData()[(int) (i + pos % (sz * 1024))] = space[i];
         }
         
         moveToTheTop(pos);
@@ -85,22 +80,15 @@ public class BufferPool implements BufferPoolADT {
         
         if(searchBlock == null) {
             byte[] dataRead = readFromDisk(pos - pos % 4096);
-            System.out.println(pos - pos % 4096);
+            System.out.println("new insert index: " + (pos - pos % 4096));
             searchBlock = new BufferList(true);
             searchBlock.getBuffer().setID(blockID);
             searchBlock.setBuffer(new Buffer(dataRead));
             prev.setNext(searchBlock);
         }   
         
-        if(blockID != 0) {
-            for(int i = 0; i < sz; i++) {
-                space[i] = searchBlock.getBuffer().getData()[(int) (i + pos % (blockID * sz * 1024))];
-            }
-        }
-        else {
-            for(int i = 0; i < sz; i++) {
-                space[i] = searchBlock.getBuffer().getData()[(int) (i + pos)];
-            }
+        for(int i = 0; i < sz; i++) {
+            space[i] = searchBlock.getBuffer().getData()[(int) (i + pos % (sz * 1024))];
         }
         
         moveToTheTop(pos);
@@ -138,14 +126,17 @@ public class BufferPool implements BufferPoolADT {
         while(searchBlock != null && searchBlock.getBuffer().getID() != blockID) {    
             searchBlock = searchBlock.getNext();
         }
-        byte[] dataToMove = searchBlock.getBuffer().getData();
-        long idToMove = searchBlock.getBuffer().getID();
-        byte[] dataToSwap = dummy.getNext().getBuffer().getData();
-        long idToSwap = dummy.getNext().getBuffer().getID();
-        searchBlock.getBuffer().setData(dataToSwap);
-        searchBlock.getBuffer().setID(idToSwap);
-        dummy.getNext().getBuffer().setData(dataToMove);
-        dummy.getNext().getBuffer().setID(idToMove);
+        
+        if(searchBlock != null) {
+            byte[] dataToMove = searchBlock.getBuffer().getData();
+            long idToMove = searchBlock.getBuffer().getID();
+            byte[] dataToSwap = dummy.getNext().getBuffer().getData();
+            long idToSwap = dummy.getNext().getBuffer().getID();
+            searchBlock.getBuffer().setData(dataToSwap);
+            searchBlock.getBuffer().setID(idToSwap);
+            dummy.getNext().getBuffer().setData(dataToMove);
+            dummy.getNext().getBuffer().setID(idToMove);
+        }
     }
     
     public void discardBlock() {

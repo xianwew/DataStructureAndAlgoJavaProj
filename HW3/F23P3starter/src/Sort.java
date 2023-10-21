@@ -35,11 +35,11 @@ public class Sort {
         byte[] curSection = new byte[4];
         System.out.println("high: " + high);
         bufferPool.getbytes(highSection, 4, high);
-        byte[] pivot = Arrays.copyOfRange(highSection, 0, 1);
+        byte[] pivot = Arrays.copyOfRange(highSection, 0, 2);
         long i = (low - 4);
         for (long j = low; j <= high - 4; j = j + 4) {
             bufferPool.getbytes(curSection, 4, j);
-            byte[] curKey = Arrays.copyOfRange(curSection, 0, 1);
+            byte[] curKey = Arrays.copyOfRange(curSection, 0, 2);
             if (compareByteArray(curKey, pivot) == -1) {
                 i = i + 4;
                 swap(i, j);
