@@ -1,10 +1,14 @@
 public class Buffer {
     private boolean isDirty = false;
     private byte[] data;
-    private int ID;
+    private long id;
     
     public Buffer() {
         data = new byte[4096];
+    }
+    
+    public Buffer(byte[] newData) {
+        data = newData;
     }
     
     public boolean isDirty() {
@@ -23,10 +27,10 @@ public class Buffer {
         this.data = data;
     }
     
-    public int getID() {
-        return ID;
+    public long getID() {
+        return id;
     }
-    public void setID(int iD) {
-        ID = iD;
+    public void setID(long iD) {
+        id = iD;
     }
 }

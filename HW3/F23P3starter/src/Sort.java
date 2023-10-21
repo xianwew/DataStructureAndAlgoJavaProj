@@ -8,7 +8,7 @@ public class Sort {
         bufferPool = bp;
     }
 
-    private void swap(int i, int j) {
+    private void swap(long i, long j) {
         bufferPool.swap(i, j);
     }
 
@@ -30,29 +30,30 @@ public class Sort {
         return 0;
     }
 
-    private int partition(int low, int high) {
-        byte[] highSection = null;
-        byte[] curSection = null;
+    private long partition(long low, long high) {
+        byte[] highSection = new byte[4];
+        byte[] curSection = new byte[4];
+        System.out.println("high: " + high);
         bufferPool.getbytes(highSection, 4, high);
         byte[] pivot = Arrays.copyOfRange(highSection, 0, 1);
-        int i = (low - 1);
-        for (int j = low; j <= high - 1; j++) {
+        long i = (low - 4);
+        for (long j = low; j <= high - 4; j = j + 4) {
             bufferPool.getbytes(curSection, 4, j);
             byte[] curKey = Arrays.copyOfRange(curSection, 0, 1);
             if (compareByteArray(curKey, pivot) == -1) {
-                i++;
+                i = i + 4;
                 swap(i, j);
             }
         }
-        swap(i + 1, high);
-        return (i + 1);
+        swap(i + 4, high);
+        return (i + 4);
     }
 
-    public void quickSort(int low, int high) {
+    public void quickSort(long low, long high) {
         if (low < high) {
-            int pi = partition(low, high);
-            quickSort(low, pi - 1);
-            quickSort(pi + 1, high);
+            long pi = partition(low, high);
+            quickSort(low, pi - 4);
+            quickSort(pi + 4, high);
         }
     }
     
@@ -62,15 +63,15 @@ public class Sort {
 //            System.out.print(arr[i] + " ");
 //        }
 //    }
-//        public static void main(String[] args)
-//        {
-//            int[] arr = { 10, 7, 8, 9, 1, 5 };
-//            int N = arr.length;
+//    public static void main(String[] args)
+//    {
+//        int[] arr = { 10, 7, 8, 9, 1, 5 };
+//        int N = arr.length;
 //
-//            // Function call
-//            quickSort(arr, 0, N - 1);
-//            System.out.println("Sorted array:");
-//            printArr(arr);
-//        }
+//        // Function call
+//        quickSort(arr, 0, N - 1);
+//        System.out.println("Sorted array:");
+//        printArr(arr);
+//    }
 
 }

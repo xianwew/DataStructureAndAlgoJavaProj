@@ -44,8 +44,8 @@ public class BufferPool implements BufferPoolADT {
         return poolSize;
     }
     
-    public void insert(byte[] space, int sz, int pos) {
-        int blockID = pos / (sz * 1024);
+    public void insert(byte[] space, int sz, long pos) {
+        long blockID = pos / (sz * 1024);
         BufferList insertBlock = dummy.getNext();
         BufferList prev = dummy;
         while(insertBlock != null && insertBlock.getBuffer().getID() != blockID) {    
@@ -60,38 +60,54 @@ public class BufferPool implements BufferPoolADT {
         }
         
         for(int i = 0; i < sz; i++) {
-            System.out.println("BlockID: " + blockID);
-            System.out.println("pos: " + pos);
-            insertBlock.getBuffer().getData()[i + pos % (blockID * sz * 1024)] = space[i];
+            //System.out.println("BlockID: " + blockID);
+            System.out.println("pos: " + (pos + i));
+            if(blockID != 0) {
+                insertBlock.getBuffer().getData()[(int) (i + pos % (blockID * sz * 1024))] = space[i];
+            }
+            else {
+                insertBlock.getBuffer().getData()[(int) (i + pos)] = space[i];
+            }
         }
         
         moveToTheTop(pos);
         discardBlock();
     }
 
-    public void getbytes(byte[] space, int sz, int pos) {
-        int blockID = pos / (sz * 1024);
+    public void getbytes(byte[] space, int sz, long pos) {
+        long blockID = pos / (sz * 1024);
         BufferList searchBlock = dummy.getNext();
-        while(searchBlock != null && searchBlock.getBuffer().getID() != blockID) {    
+        BufferList prev = dummy;
+        while(searchBlock != null && searchBlock.getBuffer().getID() != blockID) {   
+            prev = searchBlock;
             searchBlock = searchBlock.getNext();
         }
         
-        if(searchBlock != null) {
+        if(searchBlock == null) {
+            byte[] dataRead = readFromDisk(pos - pos % 4096);
+            System.out.println(pos - pos % 4096);
+            searchBlock = new BufferList(true);
+            searchBlock.getBuffer().setID(blockID);
+            searchBlock.setBuffer(new Buffer(dataRead));
+            prev.setNext(searchBlock);
+        }   
+        
+        if(blockID != 0) {
             for(int i = 0; i < sz; i++) {
-                space[i] = searchBlock.getBuffer().getData()[i + pos % (blockID * sz * 1024)];
+                space[i] = searchBlock.getBuffer().getData()[(int) (i + pos % (blockID * sz * 1024))];
             }
-        }   
+        }
         else {
-            byte[] dataRead = readFromDisk(pos);
-            System.out.println(pos);
-            insert(dataRead, 4, pos);
-        }   
+            for(int i = 0; i < sz; i++) {
+                space[i] = searchBlock.getBuffer().getData()[(int) (i + pos)];
+            }
+        }
         
         moveToTheTop(pos);
     }
     
-    private void setDirtyBit(int pos) {
-        int blockID = pos / 4096;
+    private void setDirtyBit(long pos) {
+        long blockID = pos / 4096;
         BufferList searchBlock = dummy.getNext();
         while(searchBlock != null && searchBlock.getBuffer().getID() != blockID) {    
             searchBlock = searchBlock.getNext();
@@ -101,7 +117,7 @@ public class BufferPool implements BufferPoolADT {
         }
     }
 
-    public void swap(int i, int j) {
+    public void swap(long i, long j) {
         byte[] tmpJ = new byte[4];
         byte[] tmpI = new byte[4];
         getbytes(tmpJ, 4, j);
@@ -112,20 +128,20 @@ public class BufferPool implements BufferPoolADT {
         setDirtyBit(j);
     }
 
-    public void moveToTheTop(int pos) {
+    public void moveToTheTop(long pos) {
         if(dummy.getNext() == null || dummy.getNext().getNext() == null) {
             return;
         }
-        
-        int blockID = pos / 4096;
+
+        long blockID = pos / 4096;
         BufferList searchBlock = dummy.getNext();
         while(searchBlock != null && searchBlock.getBuffer().getID() != blockID) {    
             searchBlock = searchBlock.getNext();
         }
         byte[] dataToMove = searchBlock.getBuffer().getData();
-        int idToMove = searchBlock.getBuffer().getID();
+        long idToMove = searchBlock.getBuffer().getID();
         byte[] dataToSwap = dummy.getNext().getBuffer().getData();
-        int idToSwap = dummy.getNext().getBuffer().getID();
+        long idToSwap = dummy.getNext().getBuffer().getID();
         searchBlock.getBuffer().setData(dataToSwap);
         searchBlock.getBuffer().setID(idToSwap);
         dummy.getNext().getBuffer().setData(dataToMove);
@@ -150,7 +166,7 @@ public class BufferPool implements BufferPoolADT {
         else {
             Buffer bf = prevprev.getBuffer();
             if(bf != null) {
-                int blockID = prevprev.getBuffer().getID();
+                long blockID = prevprev.getBuffer().getID();
                 if(bf.isDirty()) {
                     for(int i = 0; i < bf.getData().length; i = i + 4) {
                         writeToDisk(i + 4096 * blockID, Arrays.copyOfRange(bf.getData(), i, i + 3));
@@ -161,7 +177,7 @@ public class BufferPool implements BufferPoolADT {
         }
     }
     
-    public byte[] readFromDisk(int index) {
+    public byte[] readFromDisk(long index) {
         byte[] returnVal = new byte[4096];
         try {
             RandomAccessFile raf = new RandomAccessFile(fileName, "r");
@@ -175,7 +191,7 @@ public class BufferPool implements BufferPoolADT {
         return returnVal;
     }
 
-    public void writeToDisk(int index, byte[] data) {
+    public void writeToDisk(long index, byte[] data) {
         try {
             RandomAccessFile raf = new RandomAccessFile(fileName, "rw");
             raf.seek(index);
