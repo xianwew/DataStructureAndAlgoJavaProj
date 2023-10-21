@@ -30,13 +30,11 @@ public class Sort {
         byte[] curSection = new byte[4];
         //System.out.println("high: " + high);
         bufferPool.getbytes(highSection, 4, high);
-        byte[] pivot = Arrays.copyOfRange(highSection, 0, 2);
         long i = (low - 4);
         for (long j = low; j <= high - 4; j = j + 4) {
             //System.out.println("j: " + j);
             bufferPool.getbytes(curSection, 4, j);
-            byte[] curKey = Arrays.copyOfRange(curSection, 0, 2);
-            if (compareByteArray(curKey, pivot) == -1) {
+            if (compareByteArray(curSection, highSection) == -1) {
                 i = i + 4;
                 swap(i, j);
             }
@@ -47,9 +45,11 @@ public class Sort {
 
     public void quickSort(long low, long high) {
         if (low < high) {
+            //System.out.println("low: " + low);
+            //System.out.println("high: " + high);
             long pi = partition(low, high);
             quickSort(low, pi - 4);
-            quickSort(pi + 4, high);
-        }
+            quickSort(pi + 4, high);  
+        }      
     }
 }

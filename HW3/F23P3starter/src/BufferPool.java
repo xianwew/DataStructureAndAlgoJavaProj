@@ -1,4 +1,5 @@
 import java.io.RandomAccessFile;
+import java.util.Arrays;
 import java.io.IOException;
 
 public class BufferPool implements BufferPoolADT {
@@ -87,13 +88,13 @@ public class BufferPool implements BufferPoolADT {
         }
         
         if(insertBlock == null) {
-            System.out.println("insertBlock is null!");
-            if(getCurNumOfBuffer() >= poolSize) {
+            //System.out.println("insertBlock is null!");
+            if(getCurNumOfBuffer() > poolSize - 1) {
                 discardBlock();
             }
             insertBlock = insertBufferToTop(blockID);
         }
-        else {
+        else{
             moveToTheTop(pos);
         }
         
@@ -107,22 +108,23 @@ public class BufferPool implements BufferPoolADT {
         BufferList searchBlock = dummy.getNext();
         while(searchBlock != null) {  
             if(searchBlock.getBuffer().getID() == blockID) {
+                //System.out.println("abab");
                 break;
             }
             searchBlock = searchBlock.getNext();
         }
         
         if(searchBlock == null) {
-            if(getCurNumOfBuffer() >= poolSize) {
+            if(getCurNumOfBuffer() > poolSize - 1) {
                 discardBlock();
             }
             byte[] dataRead = readFromDisk(pos - pos % 4096);
-            System.out.println("new insert index: " + (pos - pos % 4096));
-            System.out.println("new insert block ID: " + blockID);
+//            System.out.println("new insert index: " + (pos - pos % 4096));
+//            System.out.println("new insert block ID: " + blockID);
             searchBlock = insertBufferToTop(blockID);
             searchBlock.setBuffer(new Buffer(dataRead));
         }   
-        else {
+        else{
             moveToTheTop(pos);
         }
         
@@ -207,8 +209,8 @@ public class BufferPool implements BufferPoolADT {
             prevprev.setNext(null);
             prev.setPrev(null);
             setCurNumOfBuffer(getCurNumOfBuffer() - 1);
-            System.out.println("curNumOfBuffer: " + getCurNumOfBuffer());
-            System.out.println("block discarded!");
+//            System.out.println("curNumOfBuffer: " + getCurNumOfBuffer());
+//            System.out.println("block discarded!");
         }
     }
     
