@@ -87,7 +87,6 @@ public class BufferPool implements BufferPoolADT {
 
     public void closeFile() {
         try {
-            //System.out.println("file length after sorting: " + raf.length());
             raf.close();
         }
         catch (IOException e) {
@@ -123,12 +122,11 @@ public class BufferPool implements BufferPoolADT {
     public void insert(byte[] space, int sz, long pos) {
         long blockID = pos * sz / 4096;
         BufferList insertBlock = getBlockByPos(sz, pos);
-        if(insertBlock == tail) {
-            if(curNumOfBuffer > poolSize - 1) {
+        if(insertBlock == tail) {  
+            if(curNumOfBuffer >= poolSize) {
                 discardBlock();
             }
             insertBlock = insertBufferToTop(blockID);
-            setDirtyBit(sz, pos);
         }
         else{
             moveToTheTop(insertBlock);
@@ -137,23 +135,24 @@ public class BufferPool implements BufferPoolADT {
         for(int i = 0; i < sz; i++) {
             insertBlock.getBuffer().getData()[(int) (i + pos * sz % 4096)] = space[i];
         } 
+        
+        setDirtyBit(sz, pos);
     }
 
     public void getbytes(byte[] space, int sz, long pos) {
         long blockID = pos * sz / 4096;
-        BufferList searchBlock = getBlockByPos(sz, pos);
+        BufferList searchBlock = getBlockByPos(sz, pos);  
         if(searchBlock == tail) {
-            if(curNumOfBuffer > poolSize - 1) {
-                discardBlock();
-            }
             byte[] dataRead = null;
-            try {
-                dataRead = readFromDisk(pos * 4 - pos * 4 % 4096);
+            try {       
+                if(curNumOfBuffer >= poolSize) {
+                    discardBlock();
+                }
+                dataRead = readFromDisk(blockID * sz * 1024);
                 searchBlock = insertBufferToTop(blockID);
                 searchBlock.setBuffer(new Buffer(dataRead, blockID));
             }
             catch (Exception e) {
-                System.out.print("seek index: " + (pos * 4 - pos * 4 % 4096));
                 e.printStackTrace();
             }
         }   
@@ -180,9 +179,10 @@ public class BufferPool implements BufferPoolADT {
         getbytes(tmpJ, 4, j);
         getbytes(tmpI, 4, i);
         insert(tmpJ, 4, i);
+        if(poolSize == 1) {
+            getbytes(tmpJ, 4, j);
+        }
         insert(tmpI, 4, j);
-        setDirtyBit(4, i);
-        setDirtyBit(4, j);
     }
 
     public void printBuffers() {
@@ -219,7 +219,6 @@ public class BufferPool implements BufferPoolADT {
                 writeToDisk(4096 * bf.getID(), bf.getData());
             }
             catch (Exception e) {
-                System.out.println(4096 * bf.getID());
                 e.printStackTrace();
             }
         }
