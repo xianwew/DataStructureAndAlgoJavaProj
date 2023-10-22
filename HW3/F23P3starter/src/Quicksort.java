@@ -96,6 +96,7 @@ public class Quicksort {
                 output.write("Disk reads: " + bufferPool.getReads() + " times\n");
                 output.write("Disk writes: " + bufferPool.getWrites() + " times\n");
                 output.write("Sort time: " + bufferPool.getTime() + " ms\n");
+                output.write("\n");
                 output.flush();
                 output.close();    
                 CheckFile cf = new CheckFile();

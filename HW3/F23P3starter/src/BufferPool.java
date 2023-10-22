@@ -1,6 +1,4 @@
 import java.io.RandomAccessFile;
-import java.util.Arrays;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class BufferPool implements BufferPoolADT {
@@ -10,11 +8,11 @@ public class BufferPool implements BufferPoolADT {
         private Buffer buffer;
 
         public BufferList(boolean createBuffer) {
-            if(createBuffer) {
+            if (createBuffer) {
                 this.buffer = new Buffer();
             }
         }
- 
+
         public BufferList getNext() {
             return next;
         }
@@ -49,7 +47,7 @@ public class BufferPool implements BufferPoolADT {
     private int writes;
     private int reads;
     private int hits;
-    
+
     public BufferPool(int size, RandomAccessFile rafInput) {
         dummy = new BufferList(false);
         tail = new BufferList(false);
@@ -57,17 +55,17 @@ public class BufferPool implements BufferPoolADT {
         tail.setPrev(dummy);
         poolSize = size;
         curNumOfBuffer = 0;
-        raf = rafInput; 
+        raf = rafInput;
         Sort sort = new Sort(this);
         long startTime = System.currentTimeMillis();
-        sort.quickSort(0, getFileLength()/4 - 1);
+        sort.quickSort(0, getFileLength() / 4 - 1);
         writeAllDirtyBlockToDisk();
         time = System.currentTimeMillis() - startTime;
     }
 
     public int getSize() {
         return poolSize;
-    } 
+    }
 
     public long getTime() {
         return time;
@@ -83,7 +81,7 @@ public class BufferPool implements BufferPoolADT {
 
     public int getHits() {
         return hits;
-    }  
+    }
 
     public void closeFile() {
         try {
@@ -93,7 +91,7 @@ public class BufferPool implements BufferPoolADT {
             e.printStackTrace();
         }
     }
-    
+
     public BufferList insertBufferToTop(long id) {
         Buffer bf = new Buffer(id);
         BufferList insertBlock = new BufferList(false);
@@ -106,46 +104,45 @@ public class BufferPool implements BufferPoolADT {
         curNumOfBuffer++;
         return insertBlock;
     }
-    
+
     public BufferList getBlockByPos(int sz, long pos) {
         long blockID = pos * sz / 4096;
         BufferList searchBlock = dummy.getNext();
-        while(searchBlock != tail) { 
-            if(searchBlock.getBuffer().getID() == blockID) {
+        while (searchBlock != tail) {
+            if (searchBlock.getBuffer().getID() == blockID) {
                 break;
             }
             searchBlock = searchBlock.getNext();
         }
         return searchBlock;
     }
-    
+
     public void insert(byte[] space, int sz, long pos) {
         long blockID = pos * sz / 4096;
         BufferList insertBlock = getBlockByPos(sz, pos);
-        if(insertBlock == tail) {  
-            if(curNumOfBuffer >= poolSize) {
+        if (insertBlock == tail) {
+            if (curNumOfBuffer >= poolSize) {
                 discardBlock();
             }
             insertBlock = insertBufferToTop(blockID);
         }
-        else{
-            moveToTheTop(insertBlock);
+
+        for (int i = 0; i < sz; i++) {
+            insertBlock.getBuffer()
+                    .getData()[(int) (i + pos * sz % 4096)] = space[i];
         }
-        
-        for(int i = 0; i < sz; i++) {
-            insertBlock.getBuffer().getData()[(int) (i + pos * sz % 4096)] = space[i];
-        } 
-        
+
         setDirtyBit(sz, pos);
+        moveToTheTop(insertBlock);
     }
 
     public void getbytes(byte[] space, int sz, long pos) {
         long blockID = pos * sz / 4096;
-        BufferList searchBlock = getBlockByPos(sz, pos);  
-        if(searchBlock == tail) {
+        BufferList searchBlock = getBlockByPos(sz, pos);
+        if (searchBlock == tail) {
             byte[] dataRead = null;
-            try {       
-                if(curNumOfBuffer >= poolSize) {
+            try {
+                if (curNumOfBuffer >= poolSize) {
                     discardBlock();
                 }
                 dataRead = readFromDisk(blockID * sz * 1024);
@@ -155,20 +152,22 @@ public class BufferPool implements BufferPoolADT {
             catch (Exception e) {
                 e.printStackTrace();
             }
-        }   
-        else{
+        }
+        else {
             hits++;
-            moveToTheTop(searchBlock);
+        }
+
+        for (int i = 0; i < sz; i++) {
+            space[i] = searchBlock.getBuffer()
+                    .getData()[(int) (i + pos * sz % 4096)];
         }
         
-        for(int i = 0; i < sz; i++) {
-            space[i] = searchBlock.getBuffer().getData()[(int) (i + pos * sz % 4096)];
-        }  
+        moveToTheTop(searchBlock);
     }
-    
+
     private void setDirtyBit(int sz, long pos) {
         BufferList searchBlock = getBlockByPos(sz, pos);
-        if(searchBlock != tail){
+        if (searchBlock != tail) {
             searchBlock.getBuffer().setDirty(true);
         }
     }
@@ -179,7 +178,7 @@ public class BufferPool implements BufferPoolADT {
         getbytes(tmpJ, 4, j);
         getbytes(tmpI, 4, i);
         insert(tmpJ, 4, i);
-        if(poolSize == 1) {
+        if (poolSize == 1) {
             getbytes(tmpJ, 4, j);
         }
         insert(tmpI, 4, j);
@@ -188,19 +187,20 @@ public class BufferPool implements BufferPoolADT {
     public void printBuffers() {
         BufferList tmp = dummy.getNext();
         System.out.println("Buffer list: ");
-        while(tmp != tail) {
+        while (tmp != tail) {
             System.out.print(tmp.getBuffer().getID() + " ");
             tmp = tmp.getNext();
         }
         System.out.println();
     }
-    
+
     public void moveToTheTop(BufferList block) {
-        if(dummy.getNext() == tail || dummy.getNext().getNext() == tail || dummy.getNext() == block) {
+        if (dummy.getNext() == tail || dummy.getNext().getNext() == tail
+                || dummy.getNext() == block) {
             return;
         }
         BufferList searchPrev = block.getPrev();
-        BufferList searchNext = block.getNext();          
+        BufferList searchNext = block.getNext();
         searchPrev.setNext(searchNext);
         searchNext.setPrev(searchPrev);
         BufferList oldTop = dummy.getNext();
@@ -209,12 +209,12 @@ public class BufferPool implements BufferPoolADT {
         block.setNext(oldTop);
         oldTop.setPrev(block);
     }
-    
+
     public void discardBlock() {
         BufferList prev = tail.getPrev();
         BufferList prevprev = tail.getPrev().getPrev();
         Buffer bf = prev.getBuffer();
-        if(bf.isDirty()) {
+        if (bf.isDirty()) {
             try {
                 writeToDisk(4096 * bf.getID(), bf.getData());
             }
@@ -226,8 +226,8 @@ public class BufferPool implements BufferPoolADT {
         tail.setPrev(prevprev);
         curNumOfBuffer--;
     }
-    
-    public byte[] readFromDisk(long index) throws Exception{
+
+    public byte[] readFromDisk(long index) throws Exception {
         byte[] buffer = new byte[4096];
         raf.seek(index);
         raf.read(buffer);
@@ -237,10 +237,11 @@ public class BufferPool implements BufferPoolADT {
 
     public void writeAllDirtyBlockToDisk() {
         BufferList tmp = dummy.getNext();
-        while(tmp != tail) {
-            if(tmp.getBuffer().isDirty()) {
+        while (tmp != tail) {
+            if (tmp.getBuffer().isDirty()) {
                 try {
-                    writeToDisk(tmp.getBuffer().getID() * 4096, tmp.getBuffer().getData());
+                    writeToDisk(tmp.getBuffer().getID() * 4096,
+                            tmp.getBuffer().getData());
                 }
                 catch (Exception e) {
                     e.printStackTrace();
@@ -250,21 +251,20 @@ public class BufferPool implements BufferPoolADT {
         }
         closeFile();
     }
-    
+
     public void writeToDisk(long index, byte[] data) throws Exception {
         raf.seek(index);
         raf.write(data);
         writes++;
     }
-    
+
     public long getFileLength() {
-        long length = 0;
         try {
-            length = raf.length();
+            return raf.length();
         }
         catch (IOException e) {
             e.printStackTrace();
         }
-        return length;
+        return 0;
     }
 }
