@@ -18,7 +18,6 @@ public class CheckFile
         // empty constructor
     }
 
-
     /**
      * This method checks a file to see if it is properly sorted.
      *

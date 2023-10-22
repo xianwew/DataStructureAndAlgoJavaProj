@@ -87,6 +87,7 @@ public class BufferPool implements BufferPoolADT {
 
     public void closeFile() {
         try {
+            //System.out.println("file length after sorting: " + raf.length());
             raf.close();
         }
         catch (IOException e) {
@@ -126,7 +127,6 @@ public class BufferPool implements BufferPoolADT {
             if(curNumOfBuffer > poolSize - 1) {
                 discardBlock();
             }
-//            System.out.println("awd");
             insertBlock = insertBufferToTop(blockID);
             setDirtyBit(sz, pos);
         }
@@ -153,6 +153,7 @@ public class BufferPool implements BufferPoolADT {
                 searchBlock.setBuffer(new Buffer(dataRead, blockID));
             }
             catch (Exception e) {
+                System.out.print("seek index: " + (pos * 4 - pos * 4 % 4096));
                 e.printStackTrace();
             }
         }   
@@ -207,26 +208,24 @@ public class BufferPool implements BufferPoolADT {
         block.setPrev(dummy);
         block.setNext(oldTop);
         oldTop.setPrev(block);
-//      printBuffers();
     }
     
     public void discardBlock() {
         BufferList prev = tail.getPrev();
         BufferList prevprev = tail.getPrev().getPrev();
         Buffer bf = prev.getBuffer();
-        if(bf != null && bf.isDirty()) {
+        if(bf.isDirty()) {
             try {
                 writeToDisk(4096 * bf.getID(), bf.getData());
             }
             catch (Exception e) {
+                System.out.println(4096 * bf.getID());
                 e.printStackTrace();
             }
         }
         prevprev.setNext(tail);
         tail.setPrev(prevprev);
         curNumOfBuffer--;
-//        printBuffers();
-//        System.out.println("block discarded!");
     }
     
     public byte[] readFromDisk(long index) throws Exception{
@@ -250,12 +249,7 @@ public class BufferPool implements BufferPoolADT {
             }
             tmp = tmp.getNext();
         }
-        try {
-            raf.close();
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+        closeFile();
     }
     
     public void writeToDisk(long index, byte[] data) throws Exception {

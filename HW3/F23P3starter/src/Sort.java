@@ -19,12 +19,12 @@ public class Sort {
 
     private long partition(long low, long high) {
         byte[] highSection = new byte[4];
-        byte[] curSection = new byte[4];
+        byte[] pivotSection = new byte[4];
         bufferPool.getbytes(highSection, 4, high);
         long i = (low - 1);
-        for (long j = low; j <= high - 1; j++) {
-            bufferPool.getbytes(curSection, 4, j);
-            if (compareByteArray(curSection, highSection) == -1) { 
+        for (long j = low; j <= high; j++) {
+            bufferPool.getbytes(pivotSection, 4, j);
+            if (compareByteArray(pivotSection, highSection) == -1) { 
                 i++;
                 bufferPool.swap(i, j);
             }
