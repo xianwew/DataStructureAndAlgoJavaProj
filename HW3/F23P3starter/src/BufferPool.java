@@ -45,8 +45,13 @@ public class BufferPool implements BufferPoolADT {
     private int poolSize;
     private String fileName;
     private int curNumOfBuffer;
+    private RandomAccessFile raf;
+    private long time;
+    private int writes;
+    private int reads;
+    private int hits;
     
-    public BufferPool(int size, String fName) {
+    public BufferPool(int size, String fName, RandomAccessFile rafInput) {
         dummy = new BufferList(false);
         tail = new BufferList(false);
         dummy.setNext(tail);
@@ -54,10 +59,41 @@ public class BufferPool implements BufferPoolADT {
         poolSize = size;
         fileName = fName;
         curNumOfBuffer = 0;
+        raf = rafInput; 
+        Sort sort = new Sort(this);
+        long startTime = System.currentTimeMillis();
+        sort.quickSort(0, getFileLength() - 4);
+        writeAllDirtyBlockToDisk();
+        time = System.currentTimeMillis() - startTime;
     }
 
     public int getSize() {
         return poolSize;
+    } 
+
+    public long getTime() {
+        return time;
+    }
+
+    public int getWrites() {
+        return writes;
+    }
+
+    public int getReads() {
+        return reads;
+    }
+
+    public int getHits() {
+        return hits;
+    }  
+
+    public void closeFile() {
+        try {
+            raf.close();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     
     public BufferList insertBufferToTop(long id) {
@@ -111,13 +147,18 @@ public class BufferPool implements BufferPoolADT {
             if(curNumOfBuffer > poolSize - 1) {
                 discardBlock();
             }
-            byte[] dataRead = readFromDisk(pos - pos % 4096);
-//            System.out.println("new insert index: " + (pos - pos % 4096));
-//            System.out.println("new insert block ID: " + blockID);
-            searchBlock = insertBufferToTop(blockID);
-            searchBlock.setBuffer(new Buffer(dataRead, blockID));
+            byte[] dataRead = null;
+            try {
+                dataRead = readFromDisk(pos - pos % 4096);
+                searchBlock = insertBufferToTop(blockID);
+                searchBlock.setBuffer(new Buffer(dataRead, blockID));
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
         }   
         else{
+            hits++;
             moveToTheTop(searchBlock);
         }
         
@@ -175,7 +216,12 @@ public class BufferPool implements BufferPoolADT {
         BufferList prevprev = tail.getPrev().getPrev();
         Buffer bf = prev.getBuffer();
         if(bf != null && bf.isDirty()) {
-            writeToDisk(4096 * bf.getID(), bf.getData());
+            try {
+                writeToDisk(4096 * bf.getID(), bf.getData());
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         prevprev.setNext(tail);
         tail.setPrev(prevprev);
@@ -184,17 +230,11 @@ public class BufferPool implements BufferPoolADT {
 //        System.out.println("block discarded!");
     }
     
-    public byte[] readFromDisk(long index) {
+    public byte[] readFromDisk(long index) throws Exception{
         byte[] buffer = new byte[4096];
-        try {
-            RandomAccessFile raf = new RandomAccessFile(fileName, "r");
-            raf.seek(index);
-            raf.read(buffer);
-            raf.close();
-        } 
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+        raf.seek(index);
+        raf.read(buffer);
+        reads++;
         return buffer;
     }
 
@@ -202,17 +242,16 @@ public class BufferPool implements BufferPoolADT {
         BufferList tmp = dummy.getNext();
         while(tmp != tail) {
             if(tmp.getBuffer().isDirty()) {
-                writeToDisk(tmp.getBuffer().getID() * 4096, tmp.getBuffer().getData());
+                try {
+                    writeToDisk(tmp.getBuffer().getID() * 4096, tmp.getBuffer().getData());
+                }
+                catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
             tmp = tmp.getNext();
         }
-    }
-    
-    public void writeToDisk(long index, byte[] data) {
         try {
-            RandomAccessFile raf = new RandomAccessFile(fileName, "rw");
-            raf.seek(index);
-            raf.write(data);
             raf.close();
         }
         catch (IOException e) {
@@ -220,13 +259,17 @@ public class BufferPool implements BufferPoolADT {
         }
     }
     
+    public void writeToDisk(long index, byte[] data) throws Exception {
+        raf.seek(index);
+        raf.write(data);
+        writes++;
+    }
+    
     public long getFileLength() {
         long length = 0;
         try {
-            RandomAccessFile raf = new RandomAccessFile(fileName, "r");
             length = raf.length();
-            raf.close();
-        } 
+        }
         catch (IOException e) {
             e.printStackTrace();
         }

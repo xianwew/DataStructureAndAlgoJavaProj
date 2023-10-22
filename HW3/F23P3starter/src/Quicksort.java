@@ -2,7 +2,9 @@
  * {Project Description Here}
  */
 
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 
 /**
  * The class containing the main method.
@@ -56,32 +58,55 @@ public class Quicksort {
     /**
      * @param args
      *      Command line parameters.
+     * @throws IOException 
      */
     public static void main(String[] args) {
         // This is the main file for the program.
         if(args != null && args.length == 3) {
             try {
-                generateFile(args[0], "1", 'a');
+                generateFile(args[0], "32", 'b');
             }
             catch (IOException e) {
                 e.printStackTrace();
             }
-
+            
             if(Integer.valueOf(args[1]) < 1 || Integer.valueOf(args[1]) > 20) {
                 System.out.println("The input buffer size should between 1 - 20");
                 return;
             }
             
-            BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]), args[0]);
-            Sort sort = new Sort(bufferPool);
-            sort.startSorting(0, bufferPool.getFileLength() - 4);
-            CheckFile cf = new CheckFile();
+            RandomAccessFile raf = null;
             try {
+                raf = new RandomAccessFile(args[0], "rw");
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+      
+            if(raf == null) {
+                System.out.println("The input data file cannot be opened");
+                return;
+            }
+            
+            try {
+                FileWriter output = new FileWriter(args[2], true);
+                BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]), args[0], raf);
+                output.write("Sort file name: " + args[0] + "\n");
+                output.write("Cache Hits: " + bufferPool.getHits() + "\n");
+                output.write("Disk reads: " + bufferPool.getReads() + "\n");
+                output.write("Disk writes: " + bufferPool.getWrites() + "\n");
+                output.write("Time is " + bufferPool.getTime() + "\n");
+                output.flush();
+                output.close();    
+                CheckFile cf = new CheckFile();
                 System.out.println("Was file sorted successfully: " + cf.checkFile(args[0]));
             }
             catch (Exception e) {
                 e.printStackTrace();
             }
+        }
+        else {
+            System.out.println("Invalid user arguments");
         }
     }
 }

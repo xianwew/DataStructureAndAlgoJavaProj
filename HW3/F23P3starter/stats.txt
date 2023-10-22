@@ -1,0 +1,10 @@
+Sort file name: test.txt
+Cache Hits: 21068176
+Disk reads: 100
+Disk writes: 99
+Time is 230
+Sort file name: test.txt
+Cache Hits: 1176684
+Disk reads: 103
+Disk writes: 102
+Time is 41
