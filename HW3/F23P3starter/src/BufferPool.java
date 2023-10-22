@@ -48,8 +48,8 @@ public class BufferPool implements BufferPoolADT {
     private long reads;
     private long hits;
     private long readWriteTime;
-    private final int REC_PER_BUFFER = 1024;
-    private final int REC_SIZE = 4;
+    private static final int REC_PER_BUFFER = 1024;
+    private static final int REC_SIZE = 4;
 
     public BufferPool(int size, RandomAccessFile rafInput) {
         dummy = new BufferList(false);
@@ -221,7 +221,8 @@ public class BufferPool implements BufferPoolADT {
         Buffer bf = prev.getBuffer();
         if (bf.isDirty()) {
             try {
-                writeToDisk(REC_SIZE * REC_PER_BUFFER * bf.getID(), bf.getData());
+                writeToDisk(REC_SIZE * REC_PER_BUFFER * bf.getID(),
+                        bf.getData());
             }
             catch (Exception e) {
                 e.printStackTrace();
@@ -248,7 +249,8 @@ public class BufferPool implements BufferPoolADT {
         while (tmp != tail) {
             if (tmp.getBuffer().isDirty()) {
                 try {
-                    writeToDisk(tmp.getBuffer().getID() * REC_SIZE * REC_PER_BUFFER,
+                    writeToDisk(
+                            tmp.getBuffer().getID() * REC_SIZE * REC_PER_BUFFER,
                             tmp.getBuffer().getData());
                 }
                 catch (Exception e) {

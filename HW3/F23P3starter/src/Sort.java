@@ -1,7 +1,7 @@
 public class Sort {
     private BufferPool bufferPool;
-    private final int INSERTION_SORT_THRESHOLD = 48;
-    private final int REC_SIZE = 4;
+    private static final int INSERTION_SORT_THRESHOLD = 48;
+    private static final int REC_SIZE = 4;
 
     public Sort(BufferPool bufferPool) {
         this.bufferPool = bufferPool;
