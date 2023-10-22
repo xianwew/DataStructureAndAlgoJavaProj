@@ -21,23 +21,23 @@ public class Sort {
         byte[] highSection = new byte[4];
         byte[] curSection = new byte[4];
         bufferPool.getbytes(highSection, 4, high);
-        long i = (low - 4);
-        for (long j = low; j <= high - 4; j = j + 4) {
+        long i = (low - 1);
+        for (long j = low; j <= high - 1; j++) {
             bufferPool.getbytes(curSection, 4, j);
             if (compareByteArray(curSection, highSection) == -1) { 
-                i = i + 4;
+                i++;
                 bufferPool.swap(i, j);
             }
         }
-        bufferPool.swap(i + 4, high);
-        return (i + 4);
+        bufferPool.swap(i + 1, high);
+        return (i + 1);
     }
 
     public void quickSort(long low, long high) {
         if (low < high) {
             long pivot = partition(low, high);
-            quickSort(low, pivot - 4);
-            quickSort(pivot + 4, high);  
+            quickSort(low, pivot - 1);
+            quickSort(pivot + 1, high);  
         }     
     }
 }

@@ -60,7 +60,7 @@ public class BufferPool implements BufferPoolADT {
         raf = rafInput; 
         Sort sort = new Sort(this);
         long startTime = System.currentTimeMillis();
-        sort.quickSort(0, getFileLength() - 4);
+        sort.quickSort(0, getFileLength()/4 - 1);
         writeAllDirtyBlockToDisk();
         time = System.currentTimeMillis() - startTime;
     }
@@ -108,7 +108,7 @@ public class BufferPool implements BufferPoolADT {
     }
     
     public BufferList getBlockByPos(int sz, long pos) {
-        long blockID = pos / (sz * 1024);
+        long blockID = pos * sz / 4096;
         BufferList searchBlock = dummy.getNext();
         while(searchBlock != tail) { 
             if(searchBlock.getBuffer().getID() == blockID) {
@@ -120,7 +120,7 @@ public class BufferPool implements BufferPoolADT {
     }
     
     public void insert(byte[] space, int sz, long pos) {
-        long blockID = pos / (sz * 1024);
+        long blockID = pos * sz / 4096;
         BufferList insertBlock = getBlockByPos(sz, pos);
         if(insertBlock == tail) {
             if(curNumOfBuffer > poolSize - 1) {
@@ -135,12 +135,12 @@ public class BufferPool implements BufferPoolADT {
         }
         
         for(int i = 0; i < sz; i++) {
-            insertBlock.getBuffer().getData()[(int) (i + pos % (sz * 1024))] = space[i];
+            insertBlock.getBuffer().getData()[(int) (i + pos * sz % 4096)] = space[i];
         } 
     }
 
     public void getbytes(byte[] space, int sz, long pos) {
-        long blockID = pos / (sz * 1024);
+        long blockID = pos * sz / 4096;
         BufferList searchBlock = getBlockByPos(sz, pos);
         if(searchBlock == tail) {
             if(curNumOfBuffer > poolSize - 1) {
@@ -148,7 +148,7 @@ public class BufferPool implements BufferPoolADT {
             }
             byte[] dataRead = null;
             try {
-                dataRead = readFromDisk(pos - pos % 4096);
+                dataRead = readFromDisk(pos * 4 - pos * 4 % 4096);
                 searchBlock = insertBufferToTop(blockID);
                 searchBlock.setBuffer(new Buffer(dataRead, blockID));
             }
@@ -162,7 +162,7 @@ public class BufferPool implements BufferPoolADT {
         }
         
         for(int i = 0; i < sz; i++) {
-            space[i] = searchBlock.getBuffer().getData()[(int) (i + pos % (sz * 1024))];
+            space[i] = searchBlock.getBuffer().getData()[(int) (i + pos * sz % 4096)];
         }  
     }
     

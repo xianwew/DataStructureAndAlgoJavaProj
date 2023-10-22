@@ -14,3 +14,38 @@ Cache Hits: 33659
 Disk reads: 1
 Disk writes: 1
 Time is 4
+Sort file name: test.txt
+Cache Hits: 1400170
+Disk reads: 8
+Disk writes: 8
+Time is 29
+Sort file name: test.txt
+Cache Hits: 33583088
+Disk reads: 10
+Disk writes: 10
+Time is 422
+Sort file name: test.txt
+Cache Hits: 11585489
+Disk reads: 16410
+Disk writes: 23
+Time is 171
+Sort file name: test.txt
+Cache Hits: 5300145
+Disk reads: 21539
+Disk writes: 29
+Time is 152
+Sort file name: test.txt
+Cache Hits: 7409618
+Disk reads: 8
+Disk writes: 8
+Time is 83
+Sort file name: test.txt
+Cache Hits: 1411984
+Disk reads: 8
+Disk writes: 8
+Time is 27
+Sort file name: test.txt
+Cache Hits: 259448
+Disk reads: 8
+Disk writes: 8
+Time is 16
