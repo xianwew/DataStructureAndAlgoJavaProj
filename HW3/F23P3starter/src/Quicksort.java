@@ -64,7 +64,7 @@ public class Quicksort {
         // This is the main file for the program.
         if(args != null && args.length == 3) {
             try {
-                generateFile(args[0], "32", 'b');
+                generateFile(args[0], "1", 'a');
             }
             catch (IOException e) {
                 e.printStackTrace();
@@ -90,7 +90,7 @@ public class Quicksort {
             
             try {
                 FileWriter output = new FileWriter(args[2], true);
-                BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]), args[0], raf);
+                BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]), raf);
                 output.write("Sort file name: " + args[0] + "\n");
                 output.write("Cache Hits: " + bufferPool.getHits() + "\n");
                 output.write("Disk reads: " + bufferPool.getReads() + "\n");

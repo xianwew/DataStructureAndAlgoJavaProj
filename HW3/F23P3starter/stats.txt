@@ -1,10 +1,16 @@
+
 Sort file name: test.txt
-Cache Hits: 21068176
-Disk reads: 100
-Disk writes: 99
-Time is 230
+Cache Hits: 22343
+Disk reads: 1
+Disk writes: 1
+Time is 3
 Sort file name: test.txt
-Cache Hits: 1176684
-Disk reads: 103
-Disk writes: 102
-Time is 41
+Cache Hits: 21996
+Disk reads: 1
+Disk writes: 1
+Time is 3
+Sort file name: test.txt
+Cache Hits: 33659
+Disk reads: 1
+Disk writes: 1
+Time is 4

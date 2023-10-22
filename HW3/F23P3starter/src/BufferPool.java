@@ -43,7 +43,6 @@ public class BufferPool implements BufferPoolADT {
     private BufferList dummy = null;
     private BufferList tail = null;
     private int poolSize;
-    private String fileName;
     private int curNumOfBuffer;
     private RandomAccessFile raf;
     private long time;
@@ -51,13 +50,12 @@ public class BufferPool implements BufferPoolADT {
     private int reads;
     private int hits;
     
-    public BufferPool(int size, String fName, RandomAccessFile rafInput) {
+    public BufferPool(int size, RandomAccessFile rafInput) {
         dummy = new BufferList(false);
         tail = new BufferList(false);
         dummy.setNext(tail);
         tail.setPrev(dummy);
         poolSize = size;
-        fileName = fName;
         curNumOfBuffer = 0;
         raf = rafInput; 
         Sort sort = new Sort(this);
@@ -128,6 +126,7 @@ public class BufferPool implements BufferPoolADT {
             if(curNumOfBuffer > poolSize - 1) {
                 discardBlock();
             }
+//            System.out.println("awd");
             insertBlock = insertBufferToTop(blockID);
             setDirtyBit(sz, pos);
         }
