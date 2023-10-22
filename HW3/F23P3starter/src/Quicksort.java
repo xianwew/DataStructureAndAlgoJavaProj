@@ -63,12 +63,12 @@ public class Quicksort {
     public static void main(String[] args) {
         // This is the main file for the program.
         if(args != null && args.length == 3) {
-            try {
-                generateFile(args[0], "1000", 'b');
-            }
-            catch (IOException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                generateFile(args[0], "1000", 'b');
+//            }
+//            catch (IOException e) {
+//                e.printStackTrace();
+//            }
             
             if(Integer.valueOf(args[1]) < 1 || Integer.valueOf(args[1]) > 20) {
                 System.out.println("The input buffer size should between 1 - 20");
@@ -81,9 +81,6 @@ public class Quicksort {
             }
             catch (Exception e) {
                 e.printStackTrace();
-            }
-      
-            if(raf == null) {
                 System.out.println("The input data file cannot be opened");
                 return;
             }
@@ -96,11 +93,13 @@ public class Quicksort {
                 output.write("Disk reads: " + bufferPool.getReads() + " times\n");
                 output.write("Disk writes: " + bufferPool.getWrites() + " times\n");
                 output.write("Sort time: " + bufferPool.getTime() + " ms\n");
+                output.write("ReadWrite time: " + bufferPool.getReadWriteTime() + " ms\n");
                 output.write("\n");
                 output.flush();
                 output.close();    
                 CheckFile cf = new CheckFile();
                 System.out.println("Was file sorted successfully: " + cf.checkFile(args[0]));
+                System.out.println("Read Write time: " + bufferPool.getReadWriteTime() + " ms");
             }
             catch (Exception e) {
                 e.printStackTrace();
