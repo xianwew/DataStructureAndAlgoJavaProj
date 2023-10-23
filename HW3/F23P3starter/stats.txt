@@ -26,3 +26,24 @@ Disk writes: 9773 times
 Sort time: 332 ms
 ReadWrite time: 48 ms
 
+Sort file name: test.txt
+Cache Hits: 17049186 times
+Disk reads: 7023 times
+Disk writes: 6296 times
+Sort time: 254 ms
+ReadWrite time: 40 ms
+
+Sort file name: test.txt
+Cache Hits: 18832712 times
+Disk reads: 7759 times
+Disk writes: 6904 times
+Sort time: 294 ms
+ReadWrite time: 32 ms
+
+Sort file name: test.txt
+Cache Hits: 61031044 times
+Disk reads: 14345 times
+Disk writes: 14014 times
+Sort time: 708 ms
+ReadWrite time: 87 ms
+

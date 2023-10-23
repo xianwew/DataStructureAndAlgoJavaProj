@@ -64,7 +64,7 @@ public class Quicksort {
         // This is the main file for the program.
         if(args != null && args.length == 3) {
             try {
-                generateFile(args[0], "1000", 'a');
+                generateFile(args[0], "1000", 'b');
             }
             catch (IOException e) {
                 e.printStackTrace();
