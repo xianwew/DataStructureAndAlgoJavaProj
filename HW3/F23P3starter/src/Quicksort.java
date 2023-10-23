@@ -1,5 +1,6 @@
+
 /**
- * {Project Description Here}
+ * implement Quick sort
  */
 
 import java.io.FileWriter;
@@ -9,8 +10,8 @@ import java.io.RandomAccessFile;
 /**
  * The class containing the main method.
  *
- * @author {Your Name Here}
- * @version {Put Something Here}
+ * @author xianwei & jiren 
+ * @version Oct 22nd
  */
 
 // On my honor:
@@ -39,13 +40,13 @@ public class Quicksort {
      * This method is used to generate a file of a certain size, containing a
      * specified number of records.
      *
-     * @param filename the name of the file to create/write to
+     * @param filename  the name of the file to create/write to
      * @param blockSize the size of the file to generate
-     * @param format the format of file to create
+     * @param format    the format of file to create
      * @throws IOException throw if the file is not open and proper
      */
     public static void generateFile(String filename, String blockSize,
-        char format) throws IOException {
+            char format) throws IOException {
         FileGenerator generator = new FileGenerator();
         String[] inputs = new String[3];
         inputs[0] = "-" + format;
@@ -54,27 +55,26 @@ public class Quicksort {
         generator.generateFile(inputs);
     }
 
-
     /**
-     * @param args
-     *      Command line parameters.
-     * @throws IOException 
+     * @param args Command line parameters.
+     * @throws IOException
      */
     public static void main(String[] args) {
         // This is the main file for the program.
-        if(args != null && args.length == 3) {
+        if (args != null && args.length == 3) {
 //            try {
-//                generateFile(args[0], "1000", 'b');
+//                generateFile(args[0], "1000", 'a');
 //            }
 //            catch (IOException e) {
 //                e.printStackTrace();
 //            }
-            
-            if(Integer.valueOf(args[1]) < 1 || Integer.valueOf(args[1]) > 20) {
-                System.out.println("The input buffer size should between 1 - 20");
+
+            if (Integer.valueOf(args[1]) < 1 || Integer.valueOf(args[1]) > 20) {
+                System.out
+                        .println("The input buffer size should between 1 - 20");
                 return;
             }
-            
+
             RandomAccessFile raf = null;
             try {
                 raf = new RandomAccessFile(args[0], "rw");
@@ -84,22 +84,29 @@ public class Quicksort {
                 System.out.println("The input data file cannot be opened");
                 return;
             }
-            
+
             try {
                 FileWriter output = new FileWriter(args[2], true);
-                BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]), raf);
+                BufferPool bufferPool = new BufferPool(Integer.valueOf(args[1]),
+                        raf);
                 output.write("Sort file name: " + args[0] + "\n");
-                output.write("Cache Hits: " + bufferPool.getHits() + " times\n");
-                output.write("Disk reads: " + bufferPool.getReads() + " times\n");
-                output.write("Disk writes: " + bufferPool.getWrites() + " times\n");
+                output.write(
+                        "Cache Hits: " + bufferPool.getHits() + " times\n");
+                output.write(
+                        "Disk reads: " + bufferPool.getReads() + " times\n");
+                output.write(
+                        "Disk writes: " + bufferPool.getWrites() + " times\n");
                 output.write("Sort time: " + bufferPool.getTime() + " ms\n");
-                output.write("ReadWrite time: " + bufferPool.getReadWriteTime() + " ms\n");
+                output.write("ReadWrite time: " + bufferPool.getReadWriteTime()
+                        + " ms\n");
                 output.write("\n");
                 output.flush();
-                output.close();    
+                output.close();
                 CheckFile cf = new CheckFile();
-                System.out.println("Was file sorted successfully: " + cf.checkFile(args[0]));
-                System.out.println("Read Write time: " + bufferPool.getReadWriteTime() + " ms");
+                System.out.println("Was file sorted successfully: "
+                        + cf.checkFile(args[0]));
+                System.out.println("Read Write time: "
+                        + bufferPool.getReadWriteTime() + " ms");
             }
             catch (Exception e) {
                 e.printStackTrace();
