@@ -1,70 +1,28 @@
 Sort file name: test.txt
-Cache Hits: 62241454 times
-Disk reads: 13210 times
-Disk writes: 13152 times
-Sort time: 646 ms
-ReadWrite time: 65 ms
+Cache Hits: 0 times
+Disk reads: 0 times
+Disk writes: 0 times
+Sort time: 0 ms
+ReadWrite time: 0 ms
 
 Sort file name: test.txt
-Cache Hits: 59699118 times
-Disk reads: 12661 times
-Disk writes: 12607 times
-Sort time: 621 ms
-ReadWrite time: 49 ms
+Cache Hits: 17007046 times
+Disk reads: 7973 times
+Disk writes: 6854 times
+Sort time: 250 ms
+ReadWrite time: 38 ms
 
 Sort file name: test.txt
-Cache Hits: 42327435 times
-Disk reads: 13170 times
-Disk writes: 13086 times
-Sort time: 685 ms
-ReadWrite time: 52 ms
+Cache Hits: 16606043 times
+Disk reads: 7741 times
+Disk writes: 6997 times
+Sort time: 249 ms
+ReadWrite time: 46 ms
 
 Sort file name: test.txt
-Cache Hits: 45938887 times
-Disk reads: 14683 times
-Disk writes: 14629 times
-Sort time: 776 ms
-ReadWrite time: 77 ms
-
-Sort file name: test.txt
-Cache Hits: 44433314 times
-Disk reads: 15180 times
-Disk writes: 15128 times
-Sort time: 750 ms
-ReadWrite time: 56 ms
-
-Sort file name: test.txt
-Cache Hits: 43785544 times
-Disk reads: 14706 times
-Disk writes: 14643 times
-Sort time: 740 ms
-ReadWrite time: 75 ms
-
-Sort file name: test.txt
-Cache Hits: 43601440 times
-Disk reads: 14026 times
-Disk writes: 13966 times
-Sort time: 717 ms
-ReadWrite time: 69 ms
-
-Sort file name: test.txt
-Cache Hits: 43454465 times
-Disk reads: 14046 times
-Disk writes: 13996 times
-Sort time: 717 ms
-ReadWrite time: 61 ms
-
-Sort file name: test.txt
-Cache Hits: 43579964 times
-Disk reads: 14312 times
-Disk writes: 14265 times
-Sort time: 741 ms
-ReadWrite time: 61 ms
-
-Sort file name: test.txt
-Cache Hits: 43408928 times
-Disk reads: 14472 times
-Disk writes: 14420 times
-Sort time: 707 ms
-ReadWrite time: 62 ms
+Cache Hits: 22935916 times
+Disk reads: 10670 times
+Disk writes: 9773 times
+Sort time: 332 ms
+ReadWrite time: 48 ms
 

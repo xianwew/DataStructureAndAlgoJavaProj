@@ -1,7 +1,11 @@
+import java.util.Random;
+
 public class Sort {
     private BufferPool bufferPool;
     private static final int INSERTION_SORT_THRESHOLD = 48;
     private static final int REC_SIZE = 4;
+    private static final int SAMPLE_SIZE = 3;
+    private Random rand = new Random();
 
     public Sort(BufferPool bufferPool) {
         this.bufferPool = bufferPool;
@@ -13,12 +17,43 @@ public class Sort {
         return Integer.compare(IntA, IntB);
     }
 
-    private long partition(long low, long high) {
+    private void threeWayPartition(long low, long high, long[] result) {
+        byte[] pivotSection = new byte[REC_SIZE];
+        bufferPool.getbytes(pivotSection, REC_SIZE, low);
+
+        long lessThan = low;
+        long greaterThan = high;
+        long i = low;
+
+        while (i <= greaterThan) {
+            byte[] currentSection = new byte[REC_SIZE];
+            bufferPool.getbytes(currentSection, REC_SIZE, i);
+            int compareRes = compareByteArray(currentSection, pivotSection);
+
+            if (compareRes < 0) {
+                bufferPool.swap(lessThan, i);
+                lessThan++;
+                i++;
+            }
+            else if (compareRes > 0) {
+                bufferPool.swap(i, greaterThan);
+                greaterThan--;
+            }
+            else {
+                i++;
+            }
+        }
+
+        result[0] = lessThan;
+        result[1] = greaterThan;
+    }
+
+    private long twoWayPartition(long low, long high) {
         byte[] pivotSection = new byte[REC_SIZE];
         byte[] currentSection = new byte[REC_SIZE];
 
         bufferPool.getbytes(pivotSection, REC_SIZE, high);
-        long i = (low - 1);
+        long i = low - 1;
 
         for (long j = low; j < high; j++) {
             bufferPool.getbytes(currentSection, REC_SIZE, j);
@@ -28,7 +63,27 @@ public class Sort {
             }
         }
         bufferPool.swap(i + 1, high);
-        return (i + 1);
+        return i + 1;
+    }
+
+    private boolean shouldUseThreeWay(long low, long high) {
+        int duplicates = 0;
+        byte[][] samples = new byte[SAMPLE_SIZE][REC_SIZE];
+
+        for (int i = 0; i < SAMPLE_SIZE; i++) {
+            long pos = low + rand.nextInt((int) (high - low + 1));
+            bufferPool.getbytes(samples[i], REC_SIZE, pos);
+        }
+
+        for (int i = 0; i < SAMPLE_SIZE; i++) {
+            for (int j = i + 1; j < SAMPLE_SIZE; j++) {
+                if (compareByteArray(samples[i], samples[j]) == 0) {
+                    duplicates++;
+                }
+            }
+        }
+
+        return duplicates >= (SAMPLE_SIZE / 2);
     }
 
     private void insertionSort(long low, long high) {
@@ -56,14 +111,21 @@ public class Sort {
                 insertionSort(low, high);
                 break;
             }
-            long pivot = partition(low, high);
-            if (pivot - low < high - pivot) {
-                quickSort(low, pivot - 1);
-                low = pivot + 1;
+
+            if (shouldUseThreeWay(low, high)) {
+                long[] partitionResults = new long[2];
+                threeWayPartition(low, high, partitionResults);
+                long lessThan = partitionResults[0];
+                long greaterThan = partitionResults[1];
+
+                quickSort(low, lessThan - 1);
+                quickSort(greaterThan + 1, high);
+                return;
             }
             else {
-                quickSort(pivot + 1, high);
-                high = pivot - 1;
+                long pivot = twoWayPartition(low, high);
+                quickSort(low, pivot - 1);
+                low = pivot + 1;
             }
         }
     }
