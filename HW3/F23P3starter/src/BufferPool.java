@@ -138,14 +138,11 @@ public class BufferPool implements BufferPoolADT {
             if (curNumOfBuffer >= poolSize)
                 discardBlock();
 
-            if (isInsert) {
-                targetBlock = insertBufferToTop(blockID);
-            }
-            else {
+            targetBlock = insertBufferToTop(blockID);
+            if(!isInsert) {
                 byte[] dataRead;
                 try {
                     dataRead = readFromDisk(blockID * sz * REC_PER_BUFFER);
-                    targetBlock = insertBufferToTop(blockID);
                     targetBlock.setBuffer(new Buffer(dataRead, blockID));
                 }
                 catch (Exception e) {

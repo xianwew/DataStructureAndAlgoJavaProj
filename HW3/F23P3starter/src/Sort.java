@@ -4,7 +4,7 @@ public class Sort {
     private BufferPool bufferPool;
     private static final int INSERTION_SORT_THRESHOLD = 48;
     private static final int REC_SIZE = 4;
-    private static final int SAMPLE_SIZE = 3;
+    private static final int SAMPLE_SIZE = 5;
     private Random rand = new Random();
 
     public Sort(BufferPool bufferPool) {

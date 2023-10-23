@@ -6,44 +6,9 @@ Sort time: 0 ms
 ReadWrite time: 0 ms
 
 Sort file name: test.txt
-Cache Hits: 17007046 times
-Disk reads: 7973 times
-Disk writes: 6854 times
-Sort time: 250 ms
-ReadWrite time: 38 ms
-
-Sort file name: test.txt
-Cache Hits: 16606043 times
-Disk reads: 7741 times
-Disk writes: 6997 times
-Sort time: 249 ms
-ReadWrite time: 46 ms
-
-Sort file name: test.txt
-Cache Hits: 22935916 times
-Disk reads: 10670 times
-Disk writes: 9773 times
-Sort time: 332 ms
-ReadWrite time: 48 ms
-
-Sort file name: test.txt
-Cache Hits: 17049186 times
-Disk reads: 7023 times
-Disk writes: 6296 times
-Sort time: 254 ms
-ReadWrite time: 40 ms
-
-Sort file name: test.txt
-Cache Hits: 18832712 times
-Disk reads: 7759 times
-Disk writes: 6904 times
-Sort time: 294 ms
-ReadWrite time: 32 ms
-
-Sort file name: test.txt
-Cache Hits: 61031044 times
-Disk reads: 14345 times
-Disk writes: 14014 times
-Sort time: 708 ms
-ReadWrite time: 87 ms
+Cache Hits: 0 times
+Disk reads: 0 times
+Disk writes: 0 times
+Sort time: 0 ms
+ReadWrite time: 0 ms
 
