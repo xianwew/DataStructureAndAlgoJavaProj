@@ -8,12 +8,14 @@ public class Buffer {
     private boolean isDirty = false;
     private byte[] data;
     private long id = -1;
-
+    private static final int REC_PER_BUFFER = 1024;
+    private static final int REC_SIZE = 4;
+    
     /**
      * Default constructor for Buffer. 
      */
     public Buffer() {
-        data = new byte[4096];
+        data = new byte[REC_PER_BUFFER * REC_SIZE];
         isDirty = false;
     }
 
@@ -35,7 +37,7 @@ public class Buffer {
      * @param idLoc The identifier for the buffer.
      */
     public Buffer(long idLoc) {
-        data = new byte[4096];
+        data = new byte[REC_PER_BUFFER * REC_SIZE];
         isDirty = false;
         id = idLoc;
     }
