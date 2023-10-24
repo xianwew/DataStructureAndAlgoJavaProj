@@ -113,8 +113,12 @@ public class BufferPool implements BufferPoolADT {
         curNumOfBuffer = 0;
         readWriteTime = 0;
         raf = rafInput;
-        Sort sort = new Sort(this);
         long startTime = System.currentTimeMillis();
+        // initialize buffers here
+        for (int i = 0; i < size; i++) {
+            insertBufferToTop(-1);
+        }
+        Sort sort = new Sort(this);
         sort.quickSort(0, getFileLength() / REC_SIZE - 1);
         writeAllDirtyBlockToDisk();
         timeFlag = System.currentTimeMillis() - startTime;
@@ -217,8 +221,10 @@ public class BufferPool implements BufferPoolADT {
         long blockID = calculateBlockID(sz, pos);
         BufferList searchBlock = dummy.getNext();
         while (searchBlock != tail) {
-            if (searchBlock.getBuffer().getID() == blockID) {
-                break;
+            if (searchBlock.getBuffer() != null) {
+                if (searchBlock.getBuffer().getID() == blockID) {
+                    break;
+                }
             }
             searchBlock = searchBlock.getNext();
         }
@@ -251,17 +257,18 @@ public class BufferPool implements BufferPoolADT {
         BufferList targetBlock = getBlockByPos(sz, pos);
 
         if (targetBlock == tail) {
-            if (curNumOfBuffer >= poolSize)
+            if (curNumOfBuffer >= poolSize) {
+                // discard the least recently used buffer if the target
+                // buffer was not found and after the insertion will
+                // make the number of buffers exceed the limit
                 discardBlock();
-
-            if (isInsert) {
-                targetBlock = insertBufferToTop(blockID);
             }
-            else {
+
+            targetBlock = insertBufferToTop(blockID);
+            if (!isInsert) {
                 byte[] dataRead;
                 try {
                     dataRead = readFromDisk(blockID * sz * REC_PER_BUFFER);
-                    targetBlock = insertBufferToTop(blockID);
                     targetBlock.setBuffer(new Buffer(dataRead, blockID));
                 }
                 catch (Exception e) {
@@ -320,7 +327,9 @@ public class BufferPool implements BufferPoolADT {
     private void setDirtyBit(int sz, long pos) {
         BufferList searchBlock = getBlockByPos(sz, pos);
         if (searchBlock != tail) {
-            searchBlock.getBuffer().setDirty(true);
+            if (searchBlock.getBuffer() != null) {
+                searchBlock.getBuffer().setDirty(true);
+            }
         }
     }
 
@@ -351,7 +360,7 @@ public class BufferPool implements BufferPoolADT {
      * @param block The BufferList containing the buffer block to be moved.
      */
     public void moveToTheTop(BufferList block) {
-        if (block == dummy.getNext() || dummy.getNext() == tail) {
+        if (dummy.getNext() == block || dummy.getNext() == tail) {
             return;
         }
         block.getPrev().setNext(block.getNext());

@@ -8,7 +8,6 @@ import java.util.Random;
  */
 public class Sort {
     private BufferPool bufferPool;
-    private static final int INSERTION_SORT_THRESHOLD = 48;
     private static final int REC_SIZE = 4;
     private static final int SAMPLE_SIZE = 5;
     private Random rand = new Random();
@@ -129,31 +128,6 @@ public class Sort {
     }
 
     /**
-     * Performs insertion sort within the given range to sort elements.
-     *
-     * @param low  The lower bound of the range to be sorted.
-     * @param high The upper bound of the range to be sorted.
-     */
-    private void insertionSort(long low, long high) {
-        for (long i = low + 1; i <= high; i++) {
-            byte[] current = new byte[REC_SIZE];
-            bufferPool.getbytes(current, REC_SIZE, i);
-            long j = i - 1;
-            while (j >= low) {
-                byte[] prev = new byte[REC_SIZE];
-                bufferPool.getbytes(prev, REC_SIZE, j);
-                if (compareByteArray(current, prev) < 0) {
-                    bufferPool.swap(j + 1, j);
-                    j--;
-                }
-                else {
-                    break;
-                }
-            }
-        }
-    }
-
-    /**
      * Sorts the elements within the given range using the quicksort algorithm.
      *
      * @param low  The lower bound of the range to be sorted.
@@ -161,11 +135,6 @@ public class Sort {
      */
     public void quickSort(long low, long high) {
         while (low < high) {
-            if (high - low < INSERTION_SORT_THRESHOLD) {
-                insertionSort(low, high);
-                break;
-            }
-
             if (shouldUseThreeWay(low, high)) {
                 long[] partitionResults = new long[2];
                 threeWayPartition(low, high, partitionResults);
