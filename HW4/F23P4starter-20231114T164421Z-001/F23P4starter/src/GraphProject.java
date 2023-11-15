@@ -38,6 +38,6 @@ public class GraphProject
     	if(args.length != 2) {
     		return;
     	}
-    	CommandProcessor processor = new CommandProcessor(Integer.valueOf(args[0]), args[1]);
+    	Parser parser = new Parser(Integer.valueOf(args[0]), args[1]);
     }
 }

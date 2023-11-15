@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class CommandProcessor {
+public class Parser {
     private Controller controller;
     private String fileName;
 
@@ -21,7 +21,7 @@ public class CommandProcessor {
         this.fileName = fileName;
     }
 
-    public CommandProcessor(int intialSize, String filenameLocal) {
+    public Parser(int intialSize, String filenameLocal) {
         setFileName(filenameLocal);
         setController(new Controller(intialSize));
         beginParsingByLine(getFileName());

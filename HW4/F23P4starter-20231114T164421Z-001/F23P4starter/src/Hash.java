@@ -25,6 +25,11 @@ public class Hash {
         public void setValue(GraphList value) {
             this.value = value;
         }
+        
+        public KVPair(String keyLocal, GraphList graphListLocal) {
+            setKey(keyLocal);
+            setValue(graphListLocal);
+        }
     }
     
     private int size;
@@ -41,10 +46,6 @@ public class Hash {
         return this.size;
     }
 
-    public void setSize(int sizeLocal) {
-        size = sizeLocal;
-    }
-
     public Hash(int sizeLocal) {
         size = sizeLocal;
     }
@@ -52,43 +53,11 @@ public class Hash {
     public boolean isArtist() {
         return isArtist;
     }
-
-    public void setIsArtist(boolean isArtist) {
-        this.isArtist = isArtist;
-    }
-    
-    /**
-     * Get the keys array
-     * 
-     * @return the keys array
-     */
-    public KVPair[] getKeyValues() {
-        return this.keyValues;
-    }
-
-    /**
-     * Set keys element
-     * 
-     * @param index input index
-     * @param val   input key
-     */
-    public void setKeyValue(int index, String key, int value) {
-        keyValues[index].setKey(key);
-        keyValues[index].setKey(key);
-    }
-
-    /**
-     * Get the last element index valuable
-     * 
-     * @return the lastElementIndex
-     */
-    public int getNumberOfElements() {
-        return this.numberOfElements;
-    }
     
     public Hash(int sizeLocal, boolean isArtistLocal) {
-        setSize(sizeLocal);
-        setIsArtist(isArtistLocal);
+        size = sizeLocal;
+        isArtist = isArtistLocal;
+        keyValues = new KVPair[size];
     }
     
     public int searchForValueOrSlot(String key, boolean returnAvailableSlot) {
@@ -96,24 +65,27 @@ public class Hash {
         if(keyValues[homeIndex] == null) {
             return returnAvailableSlot? homeIndex: -1;
         }
-        else if(keyValues[homeIndex].getKey() == "TombStone") {
+        else if(keyValues[homeIndex].getKey().equals("TOMBSTONE")) {
             if(returnAvailableSlot) {
                 return homeIndex;
             }
         }
-
+        else if(keyValues[homeIndex].getKey().equals(key)) {
+            return returnAvailableSlot? -1: homeIndex;
+        }
+        
         int awayFromHomeSlot = 1;
         while(true) {
             int slotToBeChecked = (awayFromHomeSlot*awayFromHomeSlot + homeIndex) % size;
             if(keyValues[slotToBeChecked].getKey() ==  null) {
                 return returnAvailableSlot? slotToBeChecked: -1;
             }
-            else if(keyValues[slotToBeChecked].getKey() == "TombStone") {
+            else if(keyValues[slotToBeChecked].getKey().equals("TOMBSTONE")) {
                 if(returnAvailableSlot) {
                     return slotToBeChecked;
                 }
             }
-            else if(keyValues[slotToBeChecked].getKey() == key) {
+            else if(keyValues[slotToBeChecked].getKey().equals(key)) {
                 return returnAvailableSlot? -1: slotToBeChecked;
             }
             awayFromHomeSlot++;
@@ -129,8 +101,8 @@ public class Hash {
     public boolean insert(String key, GraphList value) {
         int availableSlot = searchForValueOrSlot(key, true);
         if(availableSlot != -1) {
-            keyValues[availableSlot].setKey(key);
-            keyValues[availableSlot].setValue(value);
+            KVPair newPair = new KVPair(key, value);
+            keyValues[availableSlot] = newPair;
             numberOfElements++;
             if(numberOfElements > size / 2) {
                 reHash();
@@ -148,12 +120,12 @@ public class Hash {
         int totalValidValue = 0;
         for(int i = 0; i < size; i++) {
             if(keyValues[i].getKey() != "") {
-                if(keyValues[i].getKey() != "TombStone") {
+                if(!keyValues[i].getKey().equals("TOMBSTONE")) {
                     totalValidValue++;
                     System.out.println(i + " :|" + keyValues[i].getValue() + "|");
                 }
                 else {
-                    System.out.println(i + ": " + keyValues[i].getValue());
+                    System.out.println(i + ": TOMBSTONE");
                 }
             }
         }
@@ -167,7 +139,7 @@ public class Hash {
 
     public boolean shouldSetTombStone(String key) {
         int homeIndex = getHomeSlot(key, getSize());
-        if(keyValues[homeIndex].getKey() == key) {
+        if(keyValues[homeIndex] != null && keyValues[homeIndex].getKey().equals(key)) {
             int slotToBeChecked = (1 + homeIndex) % size;
             if(keyValues[slotToBeChecked] == null) {
                 return false;
@@ -178,7 +150,7 @@ public class Hash {
         int awayFromHomeSlot = 1;
         while(true) {
             int slotToBeChecked = (awayFromHomeSlot*awayFromHomeSlot + homeIndex) % size;
-            if(keyValues[homeIndex].getKey() == key) {
+            if(keyValues[homeIndex].getKey().equals(key)) {
                 awayFromHomeSlot++;
                 slotToBeChecked = (awayFromHomeSlot*awayFromHomeSlot + homeIndex) % size;
                 if(keyValues[slotToBeChecked] == null) {
@@ -204,12 +176,12 @@ public class Hash {
         }
         
         if(shouldSetTombStone(key)) {
-            keyValues[slot].setKey("TombStone");
+            keyValues[slot].setKey("TOMBSTONE");
+            keyValues[slot].setValue(null);
         }
         else {
-            keyValues[slot].setKey("");
+            keyValues[slot] = null;
         }
-        keyValues[slot].setValue(null);
         numberOfElements--;
         
         return true;
@@ -224,7 +196,7 @@ public class Hash {
         
         int indexOfCurKeyValues = 0;
         for (KVPair i : keyValues) {
-            if(i != null && i.getKey() != "tombStone") {
+            if(i != null && !i.getKey().equals("TOMBSTONE")) {
                 currentKeyValues[indexOfCurKeyValues] = i;
                 indexOfCurKeyValues++;
             }
