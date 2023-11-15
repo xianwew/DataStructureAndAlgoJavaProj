@@ -102,13 +102,13 @@ public class Hash {
      * @param key key to be inserted.
      * @return if insert was successful
      */
-    public boolean insert(String key, GraphList value) {
+    public boolean insert(String key, GraphList value, boolean rehashing) {
         int availableSlot = searchForValueOrSlot(key, true);
         if(availableSlot != -1) {
             KVPair newPair = new KVPair(key, value);
             keyValues[availableSlot] = newPair;
             numberOfElements++;
-            if(numberOfElements > size / 2) {
+            if(numberOfElements > size / 2 && !rehashing) {
                 reHash();
             } 
             return true;
@@ -123,10 +123,10 @@ public class Hash {
     public void printHashtable() {
         int totalValidValue = 0;
         for(int i = 0; i < size; i++) {
-            if(keyValues[i].getKey() != "") {
-                if(!keyValues[i].getKey().equals("TOMBSTONE")) {
+            if(keyValues[i] != null && !keyValues[i].getKey().equals("")) {
+                if(!keyValues[i].getKey().equals("TOMBSTONE") && keyValues[i].getKey() != null) {
                     totalValidValue++;
-                    System.out.println(i + " :|" + keyValues[i].getValue() + "|");
+                    System.out.println(i + ": |" + keyValues[i].getKey() + "|");
                 }
                 else {
                     System.out.println(i + ": TOMBSTONE");
@@ -179,13 +179,13 @@ public class Hash {
             return false;
         }
         
-        if(shouldSetTombStone(key)) {
-            keyValues[slot].setKey("TOMBSTONE");
-            keyValues[slot].setValue(null);
-        }
-        else {
-            keyValues[slot] = null;
-        }
+//        if(shouldSetTombStone(key)) {
+        keyValues[slot].setKey("TOMBSTONE");
+        keyValues[slot].setValue(null);
+//        }
+//        else {
+//            keyValues[slot] = null;
+//        }
         numberOfElements--;
         
         return true;
@@ -206,13 +206,17 @@ public class Hash {
             }
         }      
 
+
         keyValues = newKeyValues;
         size *= 2;
-        for (int i = 0; i < numberOfElements; i++) {
-            insert(currentKeyValues[i].getKey(), currentKeyValues[i].getValue());
+        for (int i = 0; i < currentKeyValues.length; i++) {
+            if(currentKeyValues[i] != null) {
+                insert(currentKeyValues[i].getKey(), currentKeyValues[i].getValue(), true);
+            }
         }
-
-        System.out.println("Hash table expanded to " + size + " records");
+        
+        String tableType = isArtist? "Artist": "Song";
+        System.out.println(tableType + " hash table size doubled.");
     }
 
     /**

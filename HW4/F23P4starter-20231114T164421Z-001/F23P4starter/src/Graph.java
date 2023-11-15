@@ -149,7 +149,7 @@ public class Graph {
             }
             node.setNext(null);
             node.setPrev(null);
-            if(preNode.getValue() == null) {
+            if(preNode.getValue() == null && nxtNode == null) {
                 adjacencyListLoad--;
             }
         }

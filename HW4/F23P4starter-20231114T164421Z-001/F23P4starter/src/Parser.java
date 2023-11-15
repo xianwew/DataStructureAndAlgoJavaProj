@@ -39,22 +39,19 @@ public class Parser {
                 switch (cmd) {
                     case "insert":
                         scancmd.useDelimiter("<SEP>");
-                        String artist = scancmd.next();
-                        String song = scancmd.next();
-                        System.out.println("Insert " + artist + " \\ " + song);
+                        String artist = scancmd.next().trim();
+                        String song = scancmd.next().trim();
                         controller.insert(artist, song);
                         break;
                     case "remove":
-                        type = scancmd.next();
-                        String token = scancmd.nextLine();
+                        type = scancmd.next().trim();
+                        String token = scancmd.nextLine().trim();
 
                         switch (type) {
                             case "artist":
-                                System.out.println("Artist Delete: " + token);
                                 controller.removeArtist(token);
                                 break;
                             case "song":
-                                System.out.println("Song Delete: " + token);
                                 controller.removeSong(token);
                                 break;
                             default:
@@ -63,27 +60,22 @@ public class Parser {
                         }
                         break;
                     case "print":
-                        type = scancmd.next();
+                        type = scancmd.next().trim();
                         switch (type) {
                             case "artist":
-                                System.out.println("Print artist mode");
                                 controller.printArtists();
                                 break;
                             case "song":
-                                System.out.println("Print song mode");
                                 controller.printSongs();
                                 break;
                             case "graph":
-                                System.out.println("Print graph mode");
-                                controller.printSongs();
+                                controller.printGraph();
                                 break;
                             default:
-                                System.out.println("Error bad print type" + type);
                                 break;
                         }
                         break;
                     default:
-                        System.out.println("Unrecognized input");
                         break;
                 }
             }
