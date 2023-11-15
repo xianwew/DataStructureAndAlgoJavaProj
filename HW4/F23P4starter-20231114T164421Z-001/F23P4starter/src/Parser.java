@@ -42,6 +42,7 @@ public class Parser {
                         String artist = scancmd.next();
                         String song = scancmd.next();
                         System.out.println("Insert " + artist + " \\ " + song);
+                        controller.insert(artist, song);
                         break;
                     case "remove":
                         type = scancmd.next();
@@ -50,9 +51,11 @@ public class Parser {
                         switch (type) {
                             case "artist":
                                 System.out.println("Artist Delete: " + token);
+                                controller.removeArtist(token);
                                 break;
                             case "song":
                                 System.out.println("Song Delete: " + token);
+                                controller.removeSong(token);
                                 break;
                             default:
                                 System.out.println("Error bad remove type " + type);
@@ -64,12 +67,15 @@ public class Parser {
                         switch (type) {
                             case "artist":
                                 System.out.println("Print artist mode");
+                                controller.printArtists();
                                 break;
                             case "song":
                                 System.out.println("Print song mode");
+                                controller.printSongs();
                                 break;
-                            case "blocks":
-                                System.out.println("Print block mode");
+                            case "graph":
+                                System.out.println("Print graph mode");
+                                controller.printSongs();
                                 break;
                             default:
                                 System.out.println("Error bad print type" + type);

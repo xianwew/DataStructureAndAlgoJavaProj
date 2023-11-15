@@ -81,4 +81,17 @@ public class Controller {
         songs.delete(song);
         graph.remove(songNode);
     }
+    
+    public void printArtists() {
+        artists.printHashtable();
+    }
+    
+    public void printSongs() {
+        songs.printHashtable();
+    }
+    
+    public void printGraph() {
+        graph.printGraph();;
+    }
+    
 }
