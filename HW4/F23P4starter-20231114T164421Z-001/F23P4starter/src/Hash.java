@@ -46,10 +46,6 @@ public class Hash {
         return this.size;
     }
 
-    public Hash(int sizeLocal) {
-        size = sizeLocal;
-    }
-
     public boolean isArtist() {
         return isArtist;
     }

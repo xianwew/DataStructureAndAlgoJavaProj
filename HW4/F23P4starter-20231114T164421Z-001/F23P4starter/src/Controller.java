@@ -5,8 +5,8 @@ public class Controller {
     private Graph graph;
 
     public Controller(int sizeLocal) {
-        artists = new Hash(sizeLocal);
-        songs = new Hash(sizeLocal);
+        artists = new Hash(sizeLocal, true);
+        songs = new Hash(sizeLocal, false);
         graph = new Graph(sizeLocal);
     }
 
@@ -51,6 +51,7 @@ public class Controller {
         
         artists.delete(artist);
         graph.remove(artistNode);
+        System.out.println("|" + artist + "| is removed from the Artist database.");
     }
 
     public void removeSong(String song) {
@@ -80,6 +81,7 @@ public class Controller {
         
         songs.delete(song);
         graph.remove(songNode);
+        System.out.println("|" + song + "| is removed from the Song database.");
     }
     
     public void printArtists() {
