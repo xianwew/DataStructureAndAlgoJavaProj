@@ -34,16 +34,18 @@ public class Controller {
         GraphList curArtistSong = artistNode.getNext();
         while(curArtistSong != null) {
             GraphList songWrittenByThatArtist = songs.getValue(curArtistSong.getValue());
-            GraphList allArtistsWroteSameSong = songWrittenByThatArtist.getNext();
-            while(allArtistsWroteSameSong != null) {
-                if(allArtistsWroteSameSong.getValue() == artist) {
-                    graph.remove(allArtistsWroteSameSong);
+            GraphList artistWroteSameSong = songWrittenByThatArtist.getNext();
+            while(artistWroteSameSong != null) {
+                if(artistWroteSameSong.getValue() == artist) {
+                    graph.remove(artistWroteSameSong);
                 }
             }
+            
             if(songWrittenByThatArtist.getNext() == null) {
                 graph.remove(songWrittenByThatArtist);
+                songs.delete(curArtistSong.getValue());
             }
-            songs.delete(curArtistSong.getValue());
+            
             curArtistSong = curArtistSong.getNext();
         }
         
@@ -52,6 +54,31 @@ public class Controller {
     }
 
     public void removeSong(String song) {
-
+        GraphList songNode = songs.getValue(song);
+        if(songNode == null) {
+            System.out.println("|" + song + "| does not exist in the Song database.");
+            return;
+        }
+        
+        GraphList curArtist = songNode.getNext();
+        while(curArtist != null) {
+            GraphList artistWroteSameSong = artists.getValue(curArtist.getValue());
+            GraphList songWrittebyThatArtist = artistWroteSameSong.getNext();
+            while(songWrittebyThatArtist != null) {
+                if(songWrittebyThatArtist.getValue() == song) {
+                    graph.remove(songWrittebyThatArtist);
+                }
+            }
+            
+            if(artistWroteSameSong.getNext() == null) {
+                graph.remove(artistWroteSameSong);
+                artists.delete(curArtist.getValue());
+            }
+            
+            curArtist = curArtist.getNext();
+        }
+        
+        songs.delete(song);
+        graph.remove(songNode);
     }
 }
