@@ -6,7 +6,7 @@
  */
 
 public class Hash {
-    public class KVPair {
+    private class KVPair {
         private String key;
         private GraphList value;
         
@@ -92,7 +92,7 @@ public class Hash {
     }
     
     public int searchForValueOrSlot(String key, boolean returnAvailableSlot) {
-        int homeIndex = getHomeSlot(key, getSize());
+        int homeIndex = getHomeSlot(key, size);
         if(keyValues[homeIndex] == null) {
             return returnAvailableSlot? homeIndex: -1;
         }
@@ -220,22 +220,21 @@ public class Hash {
      */
     public void reHash() {
         KVPair[] newKeyValues = new KVPair[size * 2];
-
-        for (Handle i : keys) {
-            if(i != null && i.getKey() != -1) {
-                hashing(i.getKey(), i, tmpHandle);
+        KVPair[] currentKeyValues = new KVPair[size];
+        
+        int indexOfCurKeyValues = 0;
+        for (KVPair i : keyValues) {
+            if(i != null && i.getKey() != "tombStone") {
+                currentKeyValues[indexOfCurKeyValues] = i;
+                indexOfCurKeyValues++;
             }
-        }
+        }      
 
-        int j = 0;
-        for (int i : keys) {
-            tmpKey[j] = i;
-            j++;
+        keyValues = newKeyValues;
+        size *= 2;
+        for (int i = 0; i < numberOfElements; i++) {
+            insert(currentKeyValues[i].getKey(), currentKeyValues[i].getValue());
         }
-
-        this.size *= 2;
-        this.keys = tmpHandle;
-        this.keys = tmpKey;
 
         System.out.println("Hash table expanded to " + size + " records");
     }
