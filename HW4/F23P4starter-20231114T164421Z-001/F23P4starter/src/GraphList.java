@@ -1,5 +1,6 @@
 public class GraphList {
     private String value;
+    private boolean isArtist;
     private GraphList prev;
     private GraphList next;
     
@@ -25,5 +26,20 @@ public class GraphList {
     
     public void setNext(GraphList nextLocal) {
         this.next = nextLocal;
+    }
+
+    public boolean isArtist() {
+        return isArtist;
+    }
+
+    public void setIsArtist(boolean isArtistLocal) {
+        this.isArtist = isArtistLocal;
+    }
+    
+    public GraphList() {}
+    
+    public GraphList(String valueLocal, boolean isArtistLocal) {
+        setValue(valueLocal);
+        setIsArtist(isArtistLocal);
     }
 }

@@ -92,6 +92,14 @@ public class Hash {
         }
     }
     
+    public GraphList getValue(String key) {
+        int slot = searchForValueOrSlot(key, false);
+        if(slot == -1) {
+            return null;
+        }
+        return keyValues[slot].getValue();
+    }
+    
     /**
      * Implement the insertion function for the hash table.
      * 
