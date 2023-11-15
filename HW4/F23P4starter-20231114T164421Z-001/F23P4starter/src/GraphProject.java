@@ -35,5 +35,9 @@ public class GraphProject
      */
     public static void main(String[] args) {
         // This is the main file for the program.
+    	if(args.length != 2) {
+    		return;
+    	}
+    	CommandProcessor processor = new CommandProcessor(Integer.valueOf(args[0]), args[1]);
     }
 }
