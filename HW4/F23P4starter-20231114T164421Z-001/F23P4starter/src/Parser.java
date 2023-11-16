@@ -31,7 +31,7 @@ public class Parser {
         try {
             Scanner sc = new Scanner(new File(filename));
             Scanner scancmd;
-            while (sc.hasNextLine()) {
+            while(sc.hasNextLine()) {
                 String line = sc.nextLine();
                 scancmd = new Scanner(line);
                 String cmd = scancmd.next();

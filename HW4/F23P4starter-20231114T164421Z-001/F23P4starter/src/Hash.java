@@ -159,15 +159,9 @@ public class Hash {
             return false;
         }
 
-//        if(shouldSetTombStone(key)) {
         keyValues[slot].setKey("TOMBSTONE");
         keyValues[slot].setValue(null);
-//        }
-//        else {
-//            keyValues[slot] = null;
-//        }
         numberOfElements--;
-
         return true;
     }
 
