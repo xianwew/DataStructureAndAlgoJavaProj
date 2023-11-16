@@ -1,5 +1,57 @@
-
 public class Graph {
+    private static class UnionFind {
+        private int[] parent;
+        private int[] rank;
+        private int[] size;
+
+        public UnionFind(int n) {
+            parent = new int[n];
+            rank = new int[n];
+            size = new int[n];
+            for (int i = 0; i < n; i++) {
+                parent[i] = i;
+                rank[i] = 0;
+                size[i] = 1; 
+            }
+        }
+
+        public int find(int i) {
+            if (parent[i] != i) {
+                parent[i] = find(parent[i]);
+            }
+            return parent[i];
+        }
+
+        public void union(int x, int y) {
+            int rootX = find(x);
+            int rootY = find(y);
+            
+            if (rootX != rootY) {
+                if (rank[rootX] < rank[rootY]) {
+                    parent[rootX] = rootY;
+                    size[rootY] += size[rootX];
+                } else if (rank[rootX] > rank[rootY]) {
+                    parent[rootY] = rootX;
+                    size[rootX] += size[rootY];
+                } else {
+                    parent[rootY] = rootX;
+                    rank[rootX]++;
+                    size[rootX] += size[rootY];
+                }
+            }
+        }
+        
+        public int maxSize() {
+            int max = 0;
+            for (int i = 0; i < parent.length; i++) {
+                if (i == parent[i]) { 
+                    max = Math.max(max, size[i]);
+                }
+            }
+            return max;
+        }
+    }
+    
     private int size;
     private int adjacencyListLoad;
     private GraphList[] adjacencyList;
@@ -110,6 +162,10 @@ public class Graph {
 
         if(songNodeId == -1) {
             songNode = insertNewNodeToNewRow();
+            GraphList newArtist = new GraphList(artistNodeId);
+            songNode.setNext(newArtist);
+            newArtist.setPrev(songNode);
+            
             artistNode = findNode(artistNodeId);
             GraphList next = artistNode.getNext();
             GraphList newInsertSong = new GraphList(songNode.getId());
@@ -124,6 +180,10 @@ public class Graph {
 
         if(artistNodeId == -1) {
             artistNode = insertNewNodeToNewRow();
+            GraphList newSong = new GraphList(songNodeId);
+            artistNode.setNext(newSong);
+            newSong.setPrev(artistNode);
+            
             songNode = findNode(artistNodeId);
             GraphList next = songNode.getNext();
             GraphList newInsertArtist = new GraphList(artistNode.getId());
@@ -186,16 +246,65 @@ public class Graph {
             }
         }
     }
+    
+    public int countComponents() {
+        UnionFind uf = new UnionFind(adjacencyListLoad);
 
+        for (int i = 0; i < adjacencyListLoad; i++) {
+            if(adjacencyList[i].getNext() != null) {
+                GraphList curNode = adjacencyList[i].getNext();
+                while(curNode != null) {
+                    int j = curNode.getId();
+                    uf.union(i, j);
+                    curNode = curNode.getNext();
+                }
+            }
+        }
+
+        int count = 0;
+        for (int i = 0; i < adjacencyListLoad; i++) {
+            if (uf.find(i) == i) {
+                count++;
+            }
+        }
+
+        return count;
+    }
     
-    
-    
-    
-    
-    
+    public int findLargestComponentSize() {
+        UnionFind uf = new UnionFind(adjacencyListLoad);
+        for (int i = 0; i < adjacencyListLoad; i++) {
+            if(adjacencyList[i].getNext() != null) {
+                GraphList curNode = adjacencyList[i].getNext();
+                while(curNode != null) {
+                    int j = curNode.getId();
+                    uf.union(i, j);
+                    curNode = curNode.getNext();
+                }
+            }
+        }
+        return uf.maxSize();
+    }
     
     public void printGraph() {
-        System.out.println("Printing graph!");
+        for(GraphList dummy: adjacencyList) {
+            GraphList curNode = dummy.getNext();
+            if(curNode != null) {
+                System.out.println();
+                System.out.print(curNode.getId() + " ");
+                curNode = curNode.getNext();
+            }
+            while(curNode != null) {
+                System.out.print(curNode.getId() + " ");
+                curNode = curNode.getNext();
+            }
+            
+        }
+        System.out.println();
+        int connected = countComponents();
+        int largestConnectedComponent = findLargestComponentSize();
+        System.out.println("There are " + connected + " connected components");
+        System.out.println("The largest connected component has " + largestConnectedComponent + " elements");
     }
 
 }
