@@ -1,15 +1,14 @@
 public class GraphList {
-    private String value;
-    private boolean isArtist;
+    private int id = -1;
     private GraphList prev;
     private GraphList next;
     
-    public String getValue() {
-        return value;
+    public void setId(int idLocal) {
+        id = idLocal;
     }
     
-    public void setValue(String valueLocal) {
-        this.value = valueLocal;
+    public int getId() {
+        return id;
     }
     
     public GraphList getPrev() {
@@ -27,19 +26,10 @@ public class GraphList {
     public void setNext(GraphList nextLocal) {
         this.next = nextLocal;
     }
-
-    public boolean isArtist() {
-        return isArtist;
-    }
-
-    public void setIsArtist(boolean isArtistLocal) {
-        this.isArtist = isArtistLocal;
-    }
     
     public GraphList() {}
     
-    public GraphList(String valueLocal, boolean isArtistLocal) {
-        setValue(valueLocal);
-        setIsArtist(isArtistLocal);
+    public GraphList(int idlocal) {
+        setId(idlocal);
     }
 }

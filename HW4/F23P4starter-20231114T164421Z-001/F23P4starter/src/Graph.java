@@ -37,109 +37,141 @@ public class Graph {
         }
     }
 
-    public GraphList findArtist(String artist) {
-        GraphList artistNode = null;
+    public GraphList findNode(int id) {
+        GraphList curNode = null;
         for (GraphList l : adjacencyList) {
-            if(l.getNext() != null && l.getNext().isArtist() && l.getNext().getValue().equals(artist)) {
-                artistNode = l.getNext();
+            if(l.getNext() != null && l.getNext().getId() == id) {
+                curNode = l.getNext();
                 break;
             }
         }
-        return artistNode;
-    }
-
-    public GraphList findSong(String song) {
-        GraphList songNode = null;
-        for (GraphList l : adjacencyList) {
-            if(l.getNext() != null && !l.getNext().isArtist() && l.getNext().getValue().equals(song)) {
-                songNode = l.getNext();
-                break;
-            }
-        }
-        return songNode;
+        return curNode;
     }
 
     public GraphList getUnoccupiedListRow() {
         GraphList dummyNode = null;
-        for (GraphList l : adjacencyList) {
-            if(l.getNext() == null) {
-                dummyNode = l;
+        int index = 0;
+        for (index = 0; index < size; index++) {
+            if(adjacencyList[index].getNext() == null) {
+                dummyNode = adjacencyList[index];
+                dummyNode.setId(index);
                 break;
             }
         }
+
         adjacencyListLoad++;
         return dummyNode;
     }
 
     private void expandAdjacencyList() {
-        GraphList[] newList = new GraphList[2*size];
-        for(int i = 0; i < size; i++) {
+        GraphList[] newList = new GraphList[2 * size];
+        for (int i = 0; i < size; i++) {
             newList[i] = adjacencyList[i];
         }
         adjacencyList = newList;
         size *= 2;
+        for (int i = 0; i < size; i++) {
+            if(adjacencyList[i] == null) {
+                adjacencyList[i] = new GraphList();
+            }
+        }
     }
 
-    public void insertNewRow(String artist, String song, boolean insertArtist) {
-        GraphList newInsert = null;
+    public GraphList insertNewNodeToNewRow() {
         GraphList dummy = getUnoccupiedListRow();
-        if(insertArtist) {
-            newInsert = new GraphList(artist, true);
-            dummy.setNext(newInsert);
-            newInsert.setPrev(dummy);
-            newInsert = new GraphList(song, false);
-            dummy.getNext().setNext(newInsert);
-            newInsert.setPrev(dummy.getNext());
-        }
-        else {
-            newInsert = new GraphList(song, false);
-            dummy.setNext(newInsert);
-            newInsert.setPrev(dummy);
-            newInsert = new GraphList(artist, true);
-            dummy.getNext().setNext(newInsert);
-            newInsert.setPrev(dummy.getNext());
-        }
+        int index = dummy.getId();
+        dummy.setId(-1);
+        GraphList newNode = new GraphList(index);
+        dummy.setNext(newNode);
+        newNode.setPrev(dummy);
+        return newNode;
     }
 
-    public boolean insert(String artist, String song) {
+    public GraphList[] insert(int artistNodeId, int songNodeId) {
         if(adjacencyListLoad == size) {
             expandAdjacencyList();
         }
 
-        GraphList newInsert = null;
-        GraphList artistNode = findArtist(artist);
-        if(artistNode != null) {
-            newInsert = new GraphList(song, false);
-            while(artistNode.getNext() != null) {
-                if(artistNode.getNext().getValue().equals(song)) {
-                    return false;
-                }
-                artistNode = artistNode.getNext();
-            }
-            artistNode.setNext(newInsert);
-            newInsert.setPrev(artistNode);
-        }
-        else {
-            insertNewRow(artist, song, true);
-        }
-
-        GraphList songNode = findArtist(song);
-        if(songNode != null) {
-            newInsert = new GraphList(artist, false);
-            while(artistNode.getNext() != null) {
-                artistNode = artistNode.getNext();
-            }
-            artistNode.setNext(newInsert);
-            newInsert.setPrev(artistNode);
-        }
-        else {
-            insertNewRow(artist, song, false);
+        GraphList artistNode = null;
+        GraphList songNode = null;
+        if(artistNodeId == -1 && songNodeId == -1) {
+            artistNode = insertNewNodeToNewRow();
+            songNode = insertNewNodeToNewRow();
+//            System.out.println("artistNodeId: " + artistNode.getId());
+//            System.out.println("songNodeId: " + songNode.getId());
+            GraphList newInsertSongInArtistRow = new GraphList(songNode.getId());
+            newInsertSongInArtistRow.setPrev(artistNode);
+            artistNode.setNext(newInsertSongInArtistRow);
+            GraphList newInsertArtistInSongRow = new GraphList(artistNode.getId());
+            newInsertArtistInSongRow.setPrev(songNode);
+            songNode.setNext(newInsertArtistInSongRow);
+            return new GraphList[] { artistNode, songNode };
         }
 
-        return true;
+        if(songNodeId == -1) {
+            songNode = insertNewNodeToNewRow();
+            artistNode = findNode(artistNodeId);
+            GraphList next = artistNode.getNext();
+            GraphList newInsertSong = new GraphList(songNode.getId());
+            artistNode.setNext(newInsertSong);
+            newInsertSong.setPrev(artistNode);
+            newInsertSong.setNext(next);
+            if(next != null) {
+                next.setPrev(newInsertSong);
+            }
+            return new GraphList[] { artistNode, songNode };
+        }
+
+        if(artistNodeId == -1) {
+            artistNode = insertNewNodeToNewRow();
+            songNode = findNode(artistNodeId);
+            GraphList next = songNode.getNext();
+            GraphList newInsertArtist = new GraphList(artistNode.getId());
+            artistNode.setNext(newInsertArtist);
+            newInsertArtist.setPrev(songNode);
+            newInsertArtist.setNext(next);
+            if(next != null) {
+                next.setPrev(newInsertArtist);
+            }
+            return new GraphList[] { artistNode, songNode };
+        }
+
+        return new GraphList[] { artistNode, songNode };
     }
 
-    public void remove(GraphList node) {
+    public void removeNode(GraphList node) {
+        GraphList rowElement = node.getNext();
+        while(rowElement != null) {
+            GraphList rowNodeAsKey = adjacencyList[rowElement.getId()];
+            if(rowNodeAsKey != null) {
+                GraphList rowNodeAsKeyRowElement = rowNodeAsKey.getNext();
+                while(rowNodeAsKeyRowElement != null) {
+                    if(rowNodeAsKeyRowElement.getId() == node.getId()) {
+                        removeSingleNode(rowNodeAsKeyRowElement);
+                        break;
+                    }
+                    rowNodeAsKeyRowElement = rowNodeAsKeyRowElement.getNext();
+                }
+
+//                if(rowNodeAsKey.getNext() == null) {
+//                    graph.remove(songWrittenByThatArtist);
+//                    songs.delete(curArtistSong.getValue());
+//                }
+            }
+
+            rowElement = rowElement.getNext();
+        }
+
+        removeWholeRow(node);
+    }
+
+    public void removeWholeRow(GraphList firstNode) {
+        GraphList dummy = firstNode.getPrev();
+        dummy.setNext(null);
+        firstNode.setPrev(null);
+    }
+
+    public void removeSingleNode(GraphList node) {
         if(node != null) {
             GraphList preNode = node.getPrev();
             GraphList nxtNode = node.getNext();
@@ -149,14 +181,21 @@ public class Graph {
             }
             node.setNext(null);
             node.setPrev(null);
-            if(preNode.getValue() == null && nxtNode == null) {
+            if(preNode.getId() == -1 && nxtNode.getNext() == null) {
                 adjacencyListLoad--;
             }
         }
     }
+
+    
+    
+    
+    
+    
+    
     
     public void printGraph() {
         System.out.println("Printing graph!");
     }
-    
+
 }

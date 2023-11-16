@@ -1,4 +1,3 @@
-
 public class Controller {
     private Hash artists;
     private Hash songs;
@@ -9,22 +8,42 @@ public class Controller {
         songs = new Hash(sizeLocal, false);
         graph = new Graph(sizeLocal);
     }
-
+    
+    private boolean existInDataBase(String artist, String song) {
+        GraphList artistNode = artists.getValue(artist);
+        GraphList artistsWroteThatSong = songs.getValue(song);
+        if(artistsWroteThatSong == null || artistNode == null) {
+            return false;
+        }
+        
+        GraphList curArtist = artistsWroteThatSong.getNext();
+        while(curArtist != null) {
+            if(curArtist.getId() == artistNode.getId()) {
+                return true;
+            }
+            curArtist = curArtist.getNext();
+        }
+        
+        return false;
+    }
+    
     public void insert(String artist, String song) {
-        boolean success = graph.insert(artist, song);
-        if(!success) {
+        if(existInDataBase(artist, song)) {
             System.out.println("|" + artist + "<SEP>" + song + "| duplicates a record already in the database.");
             return;
         }
+ 
+        GraphList artistNode = artists.getValue(artist);
+        GraphList songNode = songs.getValue(song);
+        int artistNodeIndex = artistNode == null? -1: artistNode.getId();
+        int songNodeIndex = songNode == null? -1: songNode.getId();
+        GraphList[] insertedNodes = graph.insert(artistNodeIndex, songNodeIndex);
 
-        GraphList artistNode = graph.findArtist(artist);
-        GraphList songNode = graph.findArtist(song);
-
-        if(artists.insert(artist, artistNode, false)) {
+        if(artists.insert(artist, insertedNodes[0], false)) {
             System.out.println("|" + artist + "| is added to the Artist database.");
         }
 
-        if(songs.insert(song, songNode, false)) {
+        if(songs.insert(song, insertedNodes[1], false)) {
             System.out.println("|" + song + "| is added to the Song database.");
         }
     }
@@ -36,29 +55,8 @@ public class Controller {
             return;
         }
 
-        GraphList curArtistSong = artistNode.getNext();
-        while(curArtistSong != null) {
-            GraphList songWrittenByThatArtist = songs.getValue(curArtistSong.getValue());
-            if(songWrittenByThatArtist != null) {
-                GraphList artistWroteSameSong = songWrittenByThatArtist.getNext();
-                while(artistWroteSameSong != null) {
-                    if(artistWroteSameSong.getValue() == artist) {
-                        graph.remove(artistWroteSameSong);
-                    }
-                    artistWroteSameSong = artistWroteSameSong.getNext();
-                }
-                
-                if(songWrittenByThatArtist.getNext() == null) {
-                    graph.remove(songWrittenByThatArtist);
-                    songs.delete(curArtistSong.getValue());
-                }
-            }
-
-            curArtistSong = curArtistSong.getNext();
-        }
-
+        graph.removeNode(artistNode);
         artists.delete(artist);
-        graph.remove(artistNode);
         System.out.println("|" + artist + "| is removed from the Artist database.");
     }
 
@@ -69,29 +67,8 @@ public class Controller {
             return;
         }
 
-        GraphList curArtist = songNode.getNext();
-        while(curArtist != null) {
-            GraphList artistWroteSameSong = artists.getValue(curArtist.getValue());
-            if(artistWroteSameSong != null) {
-                GraphList songWrittebyThatArtist = artistWroteSameSong.getNext();
-                while(songWrittebyThatArtist != null) {
-                    if(songWrittebyThatArtist.getValue() == song) {
-                        graph.remove(songWrittebyThatArtist);
-                    }
-                    songWrittebyThatArtist = songWrittebyThatArtist.getNext();
-                }
-                
-                if(artistWroteSameSong.getNext() == null) {
-                    graph.remove(artistWroteSameSong);
-                    artists.delete(curArtist.getValue());
-                }
-            }
-
-            curArtist = curArtist.getNext();
-        }
-
+        graph.removeNode(songNode);
         songs.delete(song);
-        graph.remove(songNode);
         System.out.println("|" + song + "| is removed from the Song database.");
     }
 
@@ -105,7 +82,6 @@ public class Controller {
 
     public void printGraph() {
         graph.printGraph();
-        ;
     }
 
 }

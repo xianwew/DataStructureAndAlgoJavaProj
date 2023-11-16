@@ -1,5 +1,6 @@
 import student.TestCase;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -35,7 +36,25 @@ public class GraphProjectTest
 
     }
 
+    public void testGraphProject() {
+        String filePath = "src/CustomOutput.txt";
 
+        String refOut = "";
+        try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+            refOut = new String(bytes, StandardCharsets.UTF_8);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        systemOut().clearHistory();
+        GraphProject.main(new String[] { "10", "src/P4sampleInput.txt" });
+        String printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
+    }
+    
+    
     /**
      * This method is simply to get code coverage of the class declaration.
      */
