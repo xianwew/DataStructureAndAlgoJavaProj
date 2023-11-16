@@ -55,7 +55,7 @@ public class Controller {
             return;
         }
 
-        graph.removeNode(artistNode);
+        graph.removeNodeInTheWholeGraph(artistNode);
         artists.delete(artist);
         System.out.println("|" + artist + "| is removed from the Artist database.");
     }
@@ -67,7 +67,7 @@ public class Controller {
             return;
         }
 
-        graph.removeNode(songNode);
+        graph.removeNodeInTheWholeGraph(songNode);
         songs.delete(song);
         System.out.println("|" + song + "| is removed from the Song database.");
     }

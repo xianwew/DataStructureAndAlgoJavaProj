@@ -37,19 +37,6 @@ public class Hash {
     private int numberOfElements;
     private boolean isArtist;
 
-    /**
-     * Get the size valuable
-     * 
-     * @return the size
-     */
-    public int getSize() {
-        return this.size;
-    }
-
-    public boolean isArtist() {
-        return isArtist;
-    }
-
     public Hash(int sizeLocal, boolean isArtistLocal) {
         size = sizeLocal;
         isArtist = isArtistLocal;

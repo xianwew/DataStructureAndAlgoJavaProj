@@ -5,10 +5,6 @@ public class Parser {
     private Controller controller;
     private String fileName;
 
-    public Controller getController() {
-        return controller;
-    }
-
     public void setController(Controller controller) {
         this.controller = controller;
     }
@@ -46,16 +42,12 @@ public class Parser {
                     case "remove":
                         type = scancmd.next().trim();
                         String token = scancmd.nextLine().trim();
-
                         switch (type) {
                             case "artist":
                                 controller.removeArtist(token);
                                 break;
                             case "song":
                                 controller.removeSong(token);
-                                break;
-                            default:
-                                System.out.println("Error bad remove type " + type);
                                 break;
                         }
                         break;

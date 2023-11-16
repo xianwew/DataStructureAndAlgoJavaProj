@@ -205,7 +205,7 @@ public class Graph {
         return new GraphList[] { artistNode, songNode };
     }
 
-    public void removeNode(GraphList node) {
+    public void removeNodeInTheWholeGraph(GraphList node) {
         GraphList rowElement = node.getNext();
         while(rowElement != null) {
             GraphList rowNodeAsKey = adjacencyList[rowElement.getId()];
