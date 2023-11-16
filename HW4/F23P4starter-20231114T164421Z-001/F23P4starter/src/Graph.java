@@ -319,10 +319,8 @@ public class Graph {
     }
 
     public void printGraph() {
-        int connected = countComponents();
-        int largestConnectedComponent = findLargestComponentSize();
-        System.out.println("There are " + connected + " connected components");
-        System.out.println("The largest connected component has " + largestConnectedComponent + " elements");
+        System.out.println("There are " + countComponents() + " connected components");
+        System.out.println("The largest connected component has " + findLargestComponentSize() + " elements");
         System.out.println("The diameter of the largest component is " + floyd());
     }
 
