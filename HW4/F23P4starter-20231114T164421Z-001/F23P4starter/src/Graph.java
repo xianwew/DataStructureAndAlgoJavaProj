@@ -1,5 +1,5 @@
 public class Graph {
-    private static class UnionFind {
+    private class UnionFind {
         private int[] parent;
         private int[] rank;
         private int[] size;
