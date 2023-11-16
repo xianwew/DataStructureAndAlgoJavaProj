@@ -139,6 +139,20 @@ public class Graph {
         return newNode;
     }
 
+    public void insertNode(GraphList firstNode, GraphList nodeToBeInserted) {
+//        if(firstNode == null) {
+//            return;
+//        }
+//        
+        GraphList next = firstNode.getNext();
+        firstNode.setNext(nodeToBeInserted);
+        nodeToBeInserted.setPrev(firstNode);
+        nodeToBeInserted.setNext(next);
+        if(next != null) {
+            next.setPrev(nodeToBeInserted);
+        }
+    }
+    
     public GraphList[] insert(int artistNodeId, int songNodeId) {
         if(adjacencyListLoad == size) {
             expandAdjacencyList();
@@ -149,53 +163,45 @@ public class Graph {
         if(artistNodeId == -1 && songNodeId == -1) {
             artistNode = insertNewNodeToNewRow();
             songNode = insertNewNodeToNewRow();
-//            System.out.println("artistNodeId: " + artistNode.getId());
-//            System.out.println("songNodeId: " + songNode.getId());
             GraphList newInsertSongInArtistRow = new GraphList(songNode.getId());
-            newInsertSongInArtistRow.setPrev(artistNode);
-            artistNode.setNext(newInsertSongInArtistRow);
+            insertNode(artistNode, newInsertSongInArtistRow);
             GraphList newInsertArtistInSongRow = new GraphList(artistNode.getId());
-            newInsertArtistInSongRow.setPrev(songNode);
-            songNode.setNext(newInsertArtistInSongRow);
+            insertNode(songNode, newInsertArtistInSongRow);
             return new GraphList[] { artistNode, songNode };
         }
 
         if(songNodeId == -1) {
             songNode = insertNewNodeToNewRow();
             GraphList newArtist = new GraphList(artistNodeId);
-            songNode.setNext(newArtist);
-            newArtist.setPrev(songNode);
-            
+            insertNode(songNode, newArtist);
             artistNode = findNode(artistNodeId);
-            GraphList next = artistNode.getNext();
             GraphList newInsertSong = new GraphList(songNode.getId());
-            artistNode.setNext(newInsertSong);
-            newInsertSong.setPrev(artistNode);
-            newInsertSong.setNext(next);
-            if(next != null) {
-                next.setPrev(newInsertSong);
-            }
+            insertNode(artistNode, newInsertSong);
+            
             return new GraphList[] { artistNode, songNode };
         }
 
         if(artistNodeId == -1) {
             artistNode = insertNewNodeToNewRow();
             GraphList newSong = new GraphList(songNodeId);
-            artistNode.setNext(newSong);
-            newSong.setPrev(artistNode);
-            
+            insertNode(artistNode, newSong);
             songNode = findNode(artistNodeId);
-            GraphList next = songNode.getNext();
             GraphList newInsertArtist = new GraphList(artistNode.getId());
-            artistNode.setNext(newInsertArtist);
-            newInsertArtist.setPrev(songNode);
-            newInsertArtist.setNext(next);
-            if(next != null) {
-                next.setPrev(newInsertArtist);
-            }
+            insertNode(songNode, newInsertArtist);
+            
             return new GraphList[] { artistNode, songNode };
         }
 
+        if(artistNodeId != -1 && songNodeId != -1) {
+            GraphList songAppendToArtist = new GraphList(songNodeId);
+            GraphList artistAppendToSong = new GraphList(artistNodeId);
+            artistNode = findNode(artistNodeId);
+            songNode = findNode(songNodeId);
+            
+            insertNode(artistNode, songAppendToArtist);
+            insertNode(songNode, artistAppendToSong);
+        }
+        
         return new GraphList[] { artistNode, songNode };
     }
 
@@ -287,20 +293,20 @@ public class Graph {
     }
     
     public void printGraph() {
-        for(GraphList dummy: adjacencyList) {
-            GraphList curNode = dummy.getNext();
-            if(curNode != null) {
-                System.out.println();
-                System.out.print(curNode.getId() + " ");
-                curNode = curNode.getNext();
-            }
-            while(curNode != null) {
-                System.out.print(curNode.getId() + " ");
-                curNode = curNode.getNext();
-            }
-            
-        }
-        System.out.println();
+//        for(GraphList dummy: adjacencyList) {
+//            GraphList curNode = dummy.getNext();
+//            if(curNode != null) {
+//                System.out.println();
+//                System.out.print(curNode.getId() + " ");
+//                curNode = curNode.getNext();
+//            }
+//            while(curNode != null) {
+//                System.out.print(curNode.getId() + " ");
+//                curNode = curNode.getNext();
+//            }
+//            
+//        }
+//        System.out.println();
         int connected = countComponents();
         int largestConnectedComponent = findLargestComponentSize();
         System.out.println("There are " + connected + " connected components");

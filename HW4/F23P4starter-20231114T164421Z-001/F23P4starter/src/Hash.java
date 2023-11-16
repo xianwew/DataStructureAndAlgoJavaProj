@@ -146,31 +146,6 @@ public class Hash {
         }
     }
 
-//    public boolean shouldSetTombStone(String key) {
-//        int homeIndex = getHomeSlot(key, getSize());
-//        if(keyValues[homeIndex] != null && keyValues[homeIndex].getKey().equals(key)) {
-//            int slotToBeChecked = (1 + homeIndex) % size;
-//            if(keyValues[slotToBeChecked] == null) {
-//                return false;
-//            }
-//            return true;
-//        }
-//        
-//        int awayFromHomeSlot = 1;
-//        while(true) {
-//            int slotToBeChecked = (awayFromHomeSlot*awayFromHomeSlot + homeIndex) % size;
-//            if(keyValues[homeIndex].getKey().equals(key)) {
-//                awayFromHomeSlot++;
-//                slotToBeChecked = (awayFromHomeSlot*awayFromHomeSlot + homeIndex) % size;
-//                if(keyValues[slotToBeChecked] == null) {
-//                    return false;
-//                }
-//                return true; 
-//            }
-//            awayFromHomeSlot++;
-//        }  
-//    }
-
     /**
      * Implement the delete function for the hash table.
      * 
