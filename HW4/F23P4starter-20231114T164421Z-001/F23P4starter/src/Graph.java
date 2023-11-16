@@ -275,7 +275,7 @@ public class Graph {
         return uf.maxSize();
     }
 
-    public int floydWarshall() {
+    public int floyd() {
         int[][] dist = new int[adjacencyListLoad][adjacencyListLoad];
 
         for (int i = 0; i < adjacencyListLoad; i++) {
@@ -322,7 +322,7 @@ public class Graph {
         int largestConnectedComponent = findLargestComponentSize();
         System.out.println("There are " + connected + " connected components");
         System.out.println("The largest connected component has " + largestConnectedComponent + " elements");
-        System.out.println("The diameter of the largest component is " + floydWarshall());
+        System.out.println("The diameter of the largest component is " + floyd());
     }
 
 }
