@@ -169,6 +169,17 @@ public class Graph {
             return new GraphList[] { artistNode, songNode };
         }
 
+        if(artistNodeId != -1 && songNodeId != -1) {
+            GraphList songAppendToArtist = new GraphList(songNodeId);
+            GraphList artistAppendToSong = new GraphList(artistNodeId);
+            artistNode = findNode(artistNodeId);
+            songNode = findNode(songNodeId);
+
+            insertNode(artistNode, songAppendToArtist);
+            insertNode(songNode, artistAppendToSong);
+            return new GraphList[] { artistNode, songNode };
+        }
+        
         if(songNodeId == -1) {
             songNode = insertNewNodeToNewRow();
             GraphList newArtist = new GraphList(artistNodeId);
@@ -189,16 +200,6 @@ public class Graph {
             insertNode(songNode, newInsertArtist);
 
             return new GraphList[] { artistNode, songNode };
-        }
-
-        if(artistNodeId != -1 && songNodeId != -1) {
-            GraphList songAppendToArtist = new GraphList(songNodeId);
-            GraphList artistAppendToSong = new GraphList(artistNodeId);
-            artistNode = findNode(artistNodeId);
-            songNode = findNode(songNodeId);
-
-            insertNode(artistNode, songAppendToArtist);
-            insertNode(songNode, artistAppendToSong);
         }
 
         return new GraphList[] { artistNode, songNode };
