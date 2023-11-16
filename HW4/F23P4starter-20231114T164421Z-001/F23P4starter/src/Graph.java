@@ -133,6 +133,9 @@ public class Graph {
     }
 
     public GraphList insertNewNodeToNewRow() {
+        if(adjacencyListLoad > size / 2) {
+            expandAdjacencyList();
+        }
         GraphList dummy = getUnoccupiedListRow();
         int index = dummy.getId();
         dummy.setId(-1);
@@ -153,10 +156,6 @@ public class Graph {
     }
 
     public GraphList[] insert(int artistNodeId, int songNodeId) {
-        if(adjacencyListLoad == size) {
-            expandAdjacencyList();
-        }
-
         GraphList artistNode = null;
         GraphList songNode = null;
         if(artistNodeId == -1 && songNodeId == -1) {
@@ -187,7 +186,6 @@ public class Graph {
             artistNode = findNode(artistNodeId);
             GraphList newInsertSong = new GraphList(songNode.getId());
             insertNode(artistNode, newInsertSong);
-
             return new GraphList[] { artistNode, songNode };
         }
 
@@ -198,7 +196,6 @@ public class Graph {
             songNode = findNode(artistNodeId);
             GraphList newInsertArtist = new GraphList(artistNode.getId());
             insertNode(songNode, newInsertArtist);
-
             return new GraphList[] { artistNode, songNode };
         }
 
