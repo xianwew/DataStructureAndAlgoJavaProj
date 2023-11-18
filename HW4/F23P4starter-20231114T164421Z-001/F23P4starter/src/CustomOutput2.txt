@@ -32,7 +32,7 @@ total artists: 2
 15: |Long Lonesome Blues|
 16: |Ma Rainey's Black Bottom|
 total songs: 6
-There are 8 connected components
+There are 5 connected components
 The largest connected component has 4 elements
 The diameter of the largest component is 3
 |Sleepy| does not exist in the Song database.

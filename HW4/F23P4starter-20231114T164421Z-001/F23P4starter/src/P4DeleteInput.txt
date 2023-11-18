@@ -1,0 +1,40 @@
+print song
+print artist
+print graph	  	
+insert ABC<SEP>song1	  	
+insert ABC<SEP>song2	
+print song
+print artist
+print graph
+remove song song2
+print song
+print artist
+print graph	
+insert BCD<SEP>song2
+print song
+print artist
+print graph
+insert bcd<SEP>song2
+print song
+print artist
+print graph
+remove song song1
+print song
+print artist
+print graph
+remove song song2
+print song
+print artist
+print graph
+remove artist ABC
+print song
+print artist
+print graph
+remove artist BCD
+print song
+print artist
+print graph
+remove artist bcd
+print song
+print artist
+print graph

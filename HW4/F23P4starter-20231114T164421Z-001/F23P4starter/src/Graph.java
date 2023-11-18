@@ -206,15 +206,13 @@ public class Graph {
         GraphList rowElement = node.getNext();
         while(rowElement != null) {
             GraphList rowNodeAsKey = adjacencyList[rowElement.getId()];
-            if(rowNodeAsKey != null) {
-                GraphList rowNodeAsKeyRowElement = rowNodeAsKey.getNext();
-                while(rowNodeAsKeyRowElement != null) {
-                    if(rowNodeAsKeyRowElement.getId() == node.getId()) {
-                        removeSingleNode(rowNodeAsKeyRowElement);
-                        break;
-                    }
-                    rowNodeAsKeyRowElement = rowNodeAsKeyRowElement.getNext();
+            GraphList rowNodeAsKeyRowElement = rowNodeAsKey.getNext();
+            while(rowNodeAsKeyRowElement != null) {
+                if(rowNodeAsKeyRowElement.getId() == node.getId()) {
+                    removeSingleNode(rowNodeAsKeyRowElement);
+                    break;
                 }
+                rowNodeAsKeyRowElement = rowNodeAsKeyRowElement.getNext();
             }
             rowElement = rowElement.getNext();
         }
@@ -225,6 +223,7 @@ public class Graph {
         GraphList dummy = firstNode.getPrev();
         dummy.setNext(null);
         firstNode.setPrev(null);
+        adjacencyListLoad--;
     }
 
     public void removeSingleNode(GraphList node) {
@@ -236,14 +235,11 @@ public class Graph {
         }
         node.setNext(null);
         node.setPrev(null);
-        if(preNode.getId() == -1 && nxtNode.getNext() == null) {
-            adjacencyListLoad--;
-        }
     }
 
     private UnionFind unionGraph() {
-        UnionFind uf = new UnionFind(adjacencyListLoad);
-        for (int i = 0; i < adjacencyListLoad; i++) {
+        UnionFind uf = new UnionFind(size);
+        for (int i = 0; i < size; i++) {
             if(adjacencyList[i].getNext() != null) {
                 GraphList curNode = adjacencyList[i].getNext();
                 while(curNode != null) {
@@ -272,15 +268,15 @@ public class Graph {
     }
 
     public int floyd() {
-        int[][] dist = new int[adjacencyListLoad][adjacencyListLoad];
+        int[][] dist = new int[size][size];
 
-        for (int i = 0; i < adjacencyListLoad; i++) {
-            for (int k = 0; k < adjacencyListLoad; k++) {
+        for (int i = 0; i < size; i++) {
+            for (int k = 0; k < size; k++) {
                 dist[i][k] = INF;
             }
         }
 
-        for (int i = 0; i < adjacencyListLoad; i++) {
+        for (int i = 0; i < size; i++) {
             dist[i][i] = 0;
             if(adjacencyList[i].getNext() != null) {
                 GraphList curNode = adjacencyList[i].getNext();
@@ -291,9 +287,9 @@ public class Graph {
             }
         }
 
-        for (int k = 0; k < adjacencyListLoad; k++) {
-            for (int i = 0; i < adjacencyListLoad; i++) {
-                for (int j = 0; j < adjacencyListLoad; j++) {
+        for (int k = 0; k < size; k++) {
+            for (int i = 0; i < size; i++) {
+                for (int j = 0; j < size; j++) {
                     if(dist[i][k] < INF && dist[k][j] < INF) {
                         dist[i][j] = Math.min(dist[i][j], dist[i][k] + dist[k][j]);
                     }
@@ -302,8 +298,8 @@ public class Graph {
         }
 
         int diameter = 0;
-        for (int i = 0; i < adjacencyListLoad; i++) {
-            for (int j = 0; j < adjacencyListLoad; j++) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
                 if(dist[i][j] != INF) {
                     diameter = Math.max(diameter, dist[i][j]);
                 }
@@ -315,7 +311,8 @@ public class Graph {
 
     public void printGraph() {
         System.out.println("There are " + countComponents() + " connected components");
-        System.out.println("The largest connected component has " + findLargestComponentSize() + " elements");
+        int maxSize = adjacencyListLoad == 0? 0: findLargestComponentSize();
+        System.out.println("The largest connected component has " + maxSize + " elements");
         System.out.println("The diameter of the largest component is " + floyd());
     }
 
