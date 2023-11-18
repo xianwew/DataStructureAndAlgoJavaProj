@@ -48,7 +48,7 @@ public class Hash {
         if(keyValues[homeIndex] == null) {
             return returnAvailableSlot ? homeIndex : -1;
         }
-        else if(keyValues[homeIndex].getKey().equals("TOMBSTONE")) {
+        else if(keyValues[homeIndex].getValue() == null) {
             if(returnAvailableSlot) {
                 return homeIndex;
             }
@@ -63,7 +63,7 @@ public class Hash {
             if(keyValues[slotToBeChecked] == null) {
                 return returnAvailableSlot ? slotToBeChecked : -1;
             }
-            else if(keyValues[slotToBeChecked].getKey().equals("TOMBSTONE")) {
+            else if(keyValues[slotToBeChecked].getValue() == null) {
                 if(returnAvailableSlot) {
                     return slotToBeChecked;
                 }
@@ -98,10 +98,12 @@ public class Hash {
         if(availableSlot != -1) {
             KVPair newPair = new KVPair(key, value);
             keyValues[availableSlot] = newPair;
-            numberOfElements++;
-            if(numberOfElements > size / 2 && !rehashing) {
-                reHash();
-            }
+            if(!rehashing) {
+                numberOfElements++;
+                if(numberOfElements > size / 2) {
+                    reHash();
+                }
+            }         
             return true;
         }
 
@@ -115,8 +117,8 @@ public class Hash {
     public void printHashtable() {
         int totalValidValue = 0;
         for (int i = 0; i < size; i++) {
-            if(keyValues[i] != null && !keyValues[i].getKey().equals("")) {
-                if(!keyValues[i].getKey().equals("TOMBSTONE") && keyValues[i].getKey() != null) {
+            if(keyValues[i] != null) {
+                if(keyValues[i].getValue() != null) {
                     totalValidValue++;
                     System.out.println(i + ": |" + keyValues[i].getKey() + "|");
                 }
@@ -142,10 +144,6 @@ public class Hash {
      */
     public boolean delete(String key) {
         int slot = searchForValueOrSlot(key, false);
-        if(slot == -1) {
-            return false;
-        }
-
         keyValues[slot].setKey("TOMBSTONE");
         keyValues[slot].setValue(null);
         numberOfElements--;
@@ -161,7 +159,7 @@ public class Hash {
 
         int indexOfCurKeyValues = 0;
         for (KVPair i : keyValues) {
-            if(i != null && !i.getKey().equals("TOMBSTONE")) {
+            if(i != null && i.getValue() != null) {
                 currentKeyValues[indexOfCurKeyValues] = i;
                 indexOfCurKeyValues++;
             }

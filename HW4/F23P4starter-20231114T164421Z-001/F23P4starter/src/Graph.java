@@ -146,6 +146,9 @@ public class Graph {
     }
 
     public void insertNode(GraphList firstNode, GraphList nodeToBeInserted) {
+        if(firstNode == null) {
+            return;
+        }
         GraphList next = firstNode.getNext();
         firstNode.setNext(nodeToBeInserted);
         nodeToBeInserted.setPrev(firstNode);

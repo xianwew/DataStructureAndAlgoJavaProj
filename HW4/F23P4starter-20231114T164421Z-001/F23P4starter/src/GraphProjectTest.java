@@ -52,6 +52,36 @@ public class GraphProjectTest
         GraphProject.main(new String[] { "10", "src/P4sampleInput.txt" });
         String printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
+        
+        filePath = "src/CustomOutput2.txt";
+        refOut = "";
+        try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+                refOut = new String(bytes, StandardCharsets.UTF_8);
+            }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        systemOut().clearHistory();
+        GraphProject.main(new String[] { "10", "src/P4sampleInput2.txt" });
+        printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
+        
+        filePath = "src/CustomOutput3.txt";
+        refOut = "";
+        try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+                refOut = new String(bytes, StandardCharsets.UTF_8);
+            }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        systemOut().clearHistory();
+        GraphProject.main(new String[] { "10", "src/P4InsertInput.txt" });
+        printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
     }
     
     

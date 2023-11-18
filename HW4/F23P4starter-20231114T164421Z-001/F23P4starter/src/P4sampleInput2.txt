@@ -1,0 +1,28 @@
+remove song When Summer's Through	  	
+print song
+print artist
+print graph	  	
+insert Blind Lemon Jefferson<SEP>Long Lonesome Blues	  	
+insert Blind Lemon Jefferson<SEP>Long Lonesome Blues	  	
+insert Blind Lemon Jefferson<SEP>Long   Lonesome Blues
+insert Blind Lemon Jefferson<SEP>long Lonesome Blues
+insert Blind lemon jefferson<SEP>long Lonesome Blues
+insert TOMBSTONE<SEP>TOMBSTONE
+remove artist TOMBSTONE
+remove Blind lemon jefferson
+remove song Long   Lonesome Blues
+insert Ma Rainey<SEP>Ma Rainey's Black Bottom
+insert Ma Rainey<SEP>Long Lonesome Blues
+insert Ma Rainey<SEP>Mississippi Boweavil Blues
+insert Ma Rainey<SEP>Fixin' To Die Blues
+insert  Ma Rainey<SEP>long Lonesome Blues
+remove artist  Ma Rainey
+print artist
+print song
+print graph
+remove song Sleepy
+remove artist ma rainey
+remove artist Ma Rainey
+remove artist Blind Lemon Jefferson
+remove artist Blind       Lemon Jefferson
+print artist

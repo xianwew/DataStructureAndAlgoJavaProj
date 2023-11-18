@@ -1,0 +1,39 @@
+total songs: 0
+total artists: 0
+There are 0 connected components
+The largest connected component has 0 elements
+The diameter of the largest component is 0
+|ABC| is added to the Artist database.
+|song1| is added to the Song database.
+|song2| is added to the Song database.
+|song3| is added to the Song database.
+|ABC<SEP>song3| duplicates a record already in the database.
+|song4| is added to the Song database.
+3: |ABC|
+total artists: 1
+0: |song3|
+1: |song4|
+8: |song1|
+9: |song2|
+total songs: 4
+There are 1 connected components
+The largest connected component has 5 elements
+The diameter of the largest component is 2
+|TOMBSTONE| is added to the Artist database.
+|TOMBSTONE| is added to the Song database.
+|BCD| is added to the Artist database.
+|bcd| is added to the Artist database.
+2: |bcd|
+3: |ABC|
+4: |TOMBSTONE|
+6: |BCD|
+total artists: 4
+0: |song3|
+1: |song4|
+4: |TOMBSTONE|
+8: |song1|
+9: |song2|
+total songs: 5
+There are 2 connected components
+The largest connected component has 7 elements
+The diameter of the largest component is 3

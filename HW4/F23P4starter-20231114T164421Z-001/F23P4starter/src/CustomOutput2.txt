@@ -1,0 +1,47 @@
+|When Summer's Through| does not exist in the Song database.
+total songs: 0
+total artists: 0
+There are 0 connected components
+The largest connected component has 0 elements
+The diameter of the largest component is 0
+|Blind Lemon Jefferson| is added to the Artist database.
+|Long Lonesome Blues| is added to the Song database.
+|Blind Lemon Jefferson<SEP>Long Lonesome Blues| duplicates a record already in the database.
+|Long   Lonesome Blues| is added to the Song database.
+|long Lonesome Blues| is added to the Song database.
+|Blind lemon jefferson| is added to the Artist database.
+|TOMBSTONE| is added to the Artist database.
+|TOMBSTONE| is added to the Song database.
+|TOMBSTONE| is removed from the Artist database.
+|Long   Lonesome Blues| is removed from the Song database.
+|Ma Rainey| is added to the Artist database.
+|Ma Rainey's Black Bottom| is added to the Song database.
+|Mississippi Boweavil Blues| is added to the Song database.
+Song hash table size doubled.
+|Fixin' To Die Blues| is added to the Song database.
+|Ma Rainey| is removed from the Artist database.
+0: |Blind Lemon Jefferson|
+4: |Blind lemon jefferson|
+5: TOMBSTONE
+7: TOMBSTONE
+total artists: 2
+1: |Fixin' To Die Blues|
+2: |Mississippi Boweavil Blues|
+4: |TOMBSTONE|
+7: |long Lonesome Blues|
+15: |Long Lonesome Blues|
+16: |Ma Rainey's Black Bottom|
+total songs: 6
+There are 8 connected components
+The largest connected component has 4 elements
+The diameter of the largest component is 3
+|Sleepy| does not exist in the Song database.
+|ma rainey| does not exist in the Artist database.
+|Ma Rainey| does not exist in the Artist database.
+|Blind Lemon Jefferson| is removed from the Artist database.
+|Blind       Lemon Jefferson| does not exist in the Artist database.
+0: TOMBSTONE
+4: |Blind lemon jefferson|
+5: TOMBSTONE
+7: TOMBSTONE
+total artists: 1
