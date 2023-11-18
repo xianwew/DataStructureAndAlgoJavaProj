@@ -310,8 +310,8 @@ public class Graph {
     }
 
     public void printGraph() {
-        System.out.println("There are " + countComponents() + " connected components");
         int maxSize = adjacencyListLoad == 0? 0: findLargestComponentSize();
+        System.out.println("There are " + countComponents() + " connected components");
         System.out.println("The largest connected component has " + maxSize + " elements");
         System.out.println("The diameter of the largest component is " + floyd());
     }
