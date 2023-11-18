@@ -66,7 +66,7 @@ total songs: 0
 total artists: 3
 There are 3 connected components
 The largest connected component has 1 elements
-The diameter of the largest component is 1
+The diameter of the largest component is 0
 |ABC| is removed from the Artist database.
 8: TOMBSTONE
 9: TOMBSTONE
@@ -77,7 +77,7 @@ total songs: 0
 total artists: 2
 There are 2 connected components
 The largest connected component has 1 elements
-The diameter of the largest component is 1
+The diameter of the largest component is 0
 |BCD| is removed from the Artist database.
 8: TOMBSTONE
 9: TOMBSTONE
@@ -88,7 +88,7 @@ total songs: 0
 total artists: 1
 There are 1 connected components
 The largest connected component has 1 elements
-The diameter of the largest component is 1
+The diameter of the largest component is 0
 |bcd| is removed from the Artist database.
 8: TOMBSTONE
 9: TOMBSTONE

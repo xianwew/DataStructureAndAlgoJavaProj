@@ -53,7 +53,7 @@ public class Graph {
     private int size;
     private int adjacencyListLoad;
     private GraphList[] adjacencyList;
-    private static final int INF = Integer.MAX_VALUE;
+    private static final int INF = Integer.MAX_VALUE / 2;
 
     public void setAdjacencyListLoad(int adjacencyListLoadLocal) {
         this.adjacencyListLoad = adjacencyListLoadLocal;
@@ -74,7 +74,7 @@ public class Graph {
             if(l.getNext().getId() == id) {
                 curNode = l.getNext();
                 break;
-            }   
+            }
         }
         return curNode;
     }
@@ -247,18 +247,19 @@ public class Graph {
 
         for (int i = 0; i < size; i++) {
             for (int k = 0; k < size; k++) {
-                dist[i][k] = INF;
+                if (i == k) {
+                    dist[i][k] = 0;
+                } else {
+                    dist[i][k] = INF;
+                }
             }
         }
 
         for (int i = 0; i < size; i++) {
-            dist[i][i] = 0;
-            if(adjacencyList[i].getNext() != null) {
-                GraphList curNode = adjacencyList[i].getNext();
-                while(curNode != null) {
-                    dist[i][curNode.getId()] = 1;
-                    curNode = curNode.getNext();
-                }
+            GraphList curNode = adjacencyList[i].getNext();
+            while (curNode != null) {
+                dist[i][curNode.getId()] = 1;
+                curNode = curNode.getNext();
             }
         }
 
@@ -285,10 +286,12 @@ public class Graph {
     }
 
     public void printGraph() {
-        System.out.println("There are " + countComponents() + " connected components");
-        int maxSize = adjacencyListLoad == 0 ? 0 : findLargestComponentSize();
+        int connected = countComponents();
+        int maxSize = adjacencyListLoad == 0? 0 : findLargestComponentSize();
+        int diameter = adjacencyListLoad == connected? 0: floyd();
+        System.out.println("There are " + connected + " connected components");
         System.out.println("The largest connected component has " + maxSize + " elements");
-        System.out.println("The diameter of the largest component is " + floyd());
+        System.out.println("The diameter of the largest component is " + diameter);
     }
 
 }
