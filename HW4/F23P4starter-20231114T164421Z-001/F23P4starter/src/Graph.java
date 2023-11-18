@@ -71,7 +71,7 @@ public class Graph {
     public GraphList findNode(int id) {
         GraphList curNode = null;
         for (GraphList l : adjacencyList) {
-            if(l.getNext().getId() == id) {
+            if(l.getNext() != null && l.getNext().getId() == id) {
                 curNode = l.getNext();
                 break;
             }
@@ -215,12 +215,12 @@ public class Graph {
     private UnionFind unionGraph() {
         UnionFind uf = new UnionFind(size);
         for (int i = 0; i < size; i++) {
-            if(adjacencyList[i].getNext() != null) {
-                GraphList curNode = adjacencyList[i].getNext();
-                while(curNode != null) {
+            GraphList curNode = adjacencyList[i].getNext();
+            while(curNode != null) {
+                if(findNode(i) != null) {
                     uf.union(i, curNode.getId());
-                    curNode = curNode.getNext();
                 }
+                curNode = curNode.getNext();
             }
         }
         return uf;
@@ -229,35 +229,41 @@ public class Graph {
     public int countComponents() {
         UnionFind uf = unionGraph();
         int count = 0;
-        for (int i = 0; i < adjacencyListLoad; i++) {
-            if(uf.find(i) == i) {
-                count++;
+        for (int i = 0; i < size; i++) {
+            if(findNode(i) != null) {
+                if(uf.find(i) == i) {
+                    count++;
+                }
             }
         }
         return count;
     }
 
     public int findLargestComponentSize() {
+        if(adjacencyListLoad == 0) {
+            return 0;
+        }
+
         UnionFind uf = unionGraph();
         return uf.maxSize();
     }
 
     public int floyd() {
+        if(countComponents() == adjacencyListLoad) {
+            return 0;
+        }
+        
         int[][] dist = new int[size][size];
 
         for (int i = 0; i < size; i++) {
-            for (int k = 0; k < size; k++) {
-                if (i == k) {
-                    dist[i][k] = 0;
-                } else {
-                    dist[i][k] = INF;
-                }
+            for (int j = 0; j < size; j++) {
+                dist[i][j] = INF;
             }
         }
 
         for (int i = 0; i < size; i++) {
             GraphList curNode = adjacencyList[i].getNext();
-            while (curNode != null) {
+            while(curNode != null) {
                 dist[i][curNode.getId()] = 1;
                 curNode = curNode.getNext();
             }
@@ -266,8 +272,8 @@ public class Graph {
         for (int k = 0; k < size; k++) {
             for (int i = 0; i < size; i++) {
                 for (int j = 0; j < size; j++) {
-                    if(dist[i][k] < INF && dist[k][j] < INF) {
-                        dist[i][j] = Math.min(dist[i][j], dist[i][k] + dist[k][j]);
+                    if(dist[i][k] != INF && dist[k][j] != INF && dist[i][k] + dist[k][j] < dist[i][j]) {
+                        dist[i][j] = dist[i][k] + dist[k][j];
                     }
                 }
             }
@@ -276,22 +282,36 @@ public class Graph {
         int diameter = 0;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                if(dist[i][j] != INF) {
-                    diameter = Math.max(diameter, dist[i][j]);
+                if(dist[i][j] != INF && dist[i][j] > diameter) {
+                    diameter = dist[i][j];
                 }
             }
         }
-
+        
         return diameter;
     }
 
     public void printGraph() {
         int connected = countComponents();
-        int maxSize = adjacencyListLoad == 0? 0 : findLargestComponentSize();
-        int diameter = adjacencyListLoad == connected? 0: floyd();
+        int maxSize = findLargestComponentSize();
+        int diameter = floyd();
         System.out.println("There are " + connected + " connected components");
         System.out.println("The largest connected component has " + maxSize + " elements");
         System.out.println("The diameter of the largest component is " + diameter);
+//        for (GraphList dummy : adjacencyList) {
+//            GraphList curNode = dummy.getNext();
+//            if(curNode != null) {
+//                System.out.println();
+//                System.out.print(curNode.getId() + " ");
+//                curNode = curNode.getNext();
+//            }
+//            while(curNode != null) {
+//                System.out.print(curNode.getId() + " ");
+//                curNode = curNode.getNext();
+//            }
+//
+//        }
+//        System.out.println();
     }
 
 }

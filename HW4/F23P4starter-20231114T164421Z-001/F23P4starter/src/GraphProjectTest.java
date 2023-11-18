@@ -37,7 +37,7 @@ public class GraphProjectTest
     }
 
     public void testGraphProject() {
-        String filePath = "src/CustomOutput.txt";
+        String filePath = "src/P4sampleOutput.txt";
 
         String refOut = "";
         try {
