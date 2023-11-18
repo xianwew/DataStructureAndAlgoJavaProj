@@ -90,10 +90,6 @@ public class Hash {
      * @return if insert was successful
      */
     public boolean insert(String key, GraphList value, boolean rehashing) {
-        if(value == null) {
-            return false;
-        }
-
         int availableSlot = searchForValueOrSlot(key, true);
         if(availableSlot != -1) {
             KVPair newPair = new KVPair(key, value);

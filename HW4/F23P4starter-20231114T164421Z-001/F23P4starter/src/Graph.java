@@ -146,9 +146,6 @@ public class Graph {
     }
 
     public void insertNode(GraphList firstNode, GraphList nodeToBeInserted) {
-        if(firstNode == null) {
-            return;
-        }
         GraphList next = firstNode.getNext();
         firstNode.setNext(nodeToBeInserted);
         nodeToBeInserted.setPrev(firstNode);
@@ -181,7 +178,7 @@ public class Graph {
             insertNode(songNode, artistAppendToSong);
             return new GraphList[] { artistNode, songNode };
         }
-        
+
         if(songNodeId == -1) {
             songNode = insertNewNodeToNewRow();
             GraphList newArtist = new GraphList(artistNodeId);
@@ -196,7 +193,7 @@ public class Graph {
             artistNode = insertNewNodeToNewRow();
             GraphList newSong = new GraphList(songNodeId);
             insertNode(artistNode, newSong);
-            songNode = findNode(artistNodeId);
+            songNode = findNode(songNodeId);
             GraphList newInsertArtist = new GraphList(artistNode.getId());
             insertNode(songNode, newInsertArtist);
             return new GraphList[] { artistNode, songNode };
@@ -231,18 +228,16 @@ public class Graph {
     }
 
     public void removeSingleNode(GraphList node) {
-        if(node != null) {
-            GraphList preNode = node.getPrev();
-            GraphList nxtNode = node.getNext();
-            preNode.setNext(nxtNode);
-            if(nxtNode != null) {
-                nxtNode.setPrev(preNode);
-            }
-            node.setNext(null);
-            node.setPrev(null);
-            if(preNode.getId() == -1 && nxtNode.getNext() == null) {
-                adjacencyListLoad--;
-            }
+        GraphList preNode = node.getPrev();
+        GraphList nxtNode = node.getNext();
+        preNode.setNext(nxtNode);
+        if(nxtNode != null) {
+            nxtNode.setPrev(preNode);
+        }
+        node.setNext(null);
+        node.setPrev(null);
+        if(preNode.getId() == -1 && nxtNode.getNext() == null) {
+            adjacencyListLoad--;
         }
     }
 
