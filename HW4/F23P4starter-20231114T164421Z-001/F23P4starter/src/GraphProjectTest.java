@@ -112,6 +112,18 @@ public class GraphProjectTest
         GraphProject.main(new String[] { "2", "src/P4InsertInput.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
+        
+        refOut = "";
+        systemOut().clearHistory();
+        GraphProject.main(new String[] { "0", "src/P4InsertInput.txt" });
+        printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
+        
+        refOut = "";
+        systemOut().clearHistory();
+        GraphProject.main(new String[] {});
+        printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
     }
     
     
