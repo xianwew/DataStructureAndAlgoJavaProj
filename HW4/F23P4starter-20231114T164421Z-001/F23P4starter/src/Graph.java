@@ -133,7 +133,7 @@ public class Graph {
     }
 
     public GraphList insertNewNodeToNewRow() {
-        if(adjacencyListLoad > size / 2) {
+        if(adjacencyListLoad == size) {
             expandAdjacencyList();
         }
         GraphList dummy = getUnoccupiedListRow();
@@ -310,10 +310,24 @@ public class Graph {
     }
 
     public void printGraph() {
-        int maxSize = adjacencyListLoad == 0? 0: findLargestComponentSize();
+        int maxSize = adjacencyListLoad == 0 ? 0 : findLargestComponentSize();
         System.out.println("There are " + countComponents() + " connected components");
         System.out.println("The largest connected component has " + maxSize + " elements");
         System.out.println("The diameter of the largest component is " + floyd());
+//        for (GraphList dummy : adjacencyList) {
+//            GraphList curNode = dummy.getNext();
+//            if(curNode != null) {
+//                System.out.println();
+//                System.out.print(curNode.getId() + " ");
+//                curNode = curNode.getNext();
+//            }
+//            while(curNode != null) {
+//                System.out.print(curNode.getId() + " ");
+//                curNode = curNode.getNext();
+//            }
+//
+//        }
+//        System.out.println();
     }
 
 }
