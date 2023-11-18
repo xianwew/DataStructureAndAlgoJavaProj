@@ -27,11 +27,7 @@ public class Graph {
             int rootY = find(y);
 
             if(rootX != rootY) {
-                if(rank[rootX] < rank[rootY]) {
-                    parent[rootX] = rootY;
-                    size[rootY] += size[rootX];
-                }
-                else if(rank[rootX] > rank[rootY]) {
+                if(rank[rootX] > rank[rootY]) {
                     parent[rootY] = rootX;
                     size[rootX] += size[rootY];
                 }
@@ -59,26 +55,6 @@ public class Graph {
     private GraphList[] adjacencyList;
     private static final int INF = Integer.MAX_VALUE;
 
-    public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-
-    public GraphList[] getAdjacencyList() {
-        return adjacencyList;
-    }
-
-    public void setAdjacencyList(GraphList[] adjacencyList) {
-        this.adjacencyList = adjacencyList;
-    }
-
-    public int getAdjacencyListLoad() {
-        return adjacencyListLoad;
-    }
-
     public void setAdjacencyListLoad(int adjacencyListLoadLocal) {
         this.adjacencyListLoad = adjacencyListLoadLocal;
     }
@@ -95,10 +71,10 @@ public class Graph {
     public GraphList findNode(int id) {
         GraphList curNode = null;
         for (GraphList l : adjacencyList) {
-            if(l.getNext() != null && l.getNext().getId() == id) {
+            if(l.getNext().getId() == id) {
                 curNode = l.getNext();
                 break;
-            }
+            }   
         }
         return curNode;
     }
@@ -196,7 +172,6 @@ public class Graph {
             songNode = findNode(songNodeId);
             GraphList newInsertArtist = new GraphList(artistNode.getId());
             insertNode(songNode, newInsertArtist);
-            return new GraphList[] { artistNode, songNode };
         }
 
         return new GraphList[] { artistNode, songNode };
@@ -207,7 +182,7 @@ public class Graph {
         while(rowElement != null) {
             GraphList rowNodeAsKey = adjacencyList[rowElement.getId()];
             GraphList rowNodeAsKeyRowElement = rowNodeAsKey.getNext();
-            while(rowNodeAsKeyRowElement != null) {
+            while(true) {
                 if(rowNodeAsKeyRowElement.getId() == node.getId()) {
                     removeSingleNode(rowNodeAsKeyRowElement);
                     break;
@@ -310,24 +285,10 @@ public class Graph {
     }
 
     public void printGraph() {
-        int maxSize = adjacencyListLoad == 0 ? 0 : findLargestComponentSize();
         System.out.println("There are " + countComponents() + " connected components");
+        int maxSize = adjacencyListLoad == 0 ? 0 : findLargestComponentSize();
         System.out.println("The largest connected component has " + maxSize + " elements");
         System.out.println("The diameter of the largest component is " + floyd());
-//        for (GraphList dummy : adjacencyList) {
-//            GraphList curNode = dummy.getNext();
-//            if(curNode != null) {
-//                System.out.println();
-//                System.out.print(curNode.getId() + " ");
-//                curNode = curNode.getNext();
-//            }
-//            while(curNode != null) {
-//                System.out.print(curNode.getId() + " ");
-//                curNode = curNode.getNext();
-//            }
-//
-//        }
-//        System.out.println();
     }
 
 }

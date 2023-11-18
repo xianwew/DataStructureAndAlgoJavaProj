@@ -97,6 +97,21 @@ public class GraphProjectTest
         GraphProject.main(new String[] { "10", "src/P4DeleteInput.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
+        
+        filePath = "src/CustomOutput5.txt";
+        refOut = "";
+        try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+                refOut = new String(bytes, StandardCharsets.UTF_8);
+            }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        systemOut().clearHistory();
+        GraphProject.main(new String[] { "2", "src/P4InsertInput.txt" });
+        printOut = systemOut().getHistory();
+        assertFuzzyEquals(printOut, refOut);
     }
     
     
