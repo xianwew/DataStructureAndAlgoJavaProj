@@ -19,3 +19,57 @@ insert bcd<SEP>song2
 print artist
 print song
 print graph
+insert efg<SEP>song1	
+insert efg<SEP>song2
+insert bcd<SEP>song3
+print artist
+print song
+print graph
+remove artist efg
+print artist
+print song
+print graph
+remove artist abc
+print artist
+print song
+print graph
+remove artist ABC
+print artist
+print song
+print graph
+remove artist BCD
+print artist
+print song
+print graph
+remove artist bcd
+print artist
+print song
+print graph
+remove artist TOMBSTONE
+print artist
+print song
+print graph
+remove song TOMBSTONE
+print artist
+print song
+print graph
+remove artist cdf
+print artist
+print song
+print graph
+remove artist cde
+print artist
+print song
+print graph
+remove song song1
+print artist
+print song
+print graph
+remove song song2
+print artist
+print song
+print graph
+remove song song3
+print artist
+print song
+print graph

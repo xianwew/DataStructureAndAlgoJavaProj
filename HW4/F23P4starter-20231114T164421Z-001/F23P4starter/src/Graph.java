@@ -53,7 +53,7 @@ public class Graph {
     private int size;
     private int adjacencyListLoad;
     private GraphList[] adjacencyList;
-    private static final int INF = Integer.MAX_VALUE / 2;
+    private static final int INF = Integer.MAX_VALUE;
 
     public void setAdjacencyListLoad(int adjacencyListLoadLocal) {
         this.adjacencyListLoad = adjacencyListLoadLocal;
@@ -217,9 +217,7 @@ public class Graph {
         for (int i = 0; i < size; i++) {
             GraphList curNode = adjacencyList[i].getNext();
             while(curNode != null) {
-                if(findNode(i) != null) {
-                    uf.union(i, curNode.getId());
-                }
+                uf.union(i, curNode.getId());
                 curNode = curNode.getNext();
             }
         }
@@ -248,16 +246,21 @@ public class Graph {
         return uf.maxSize();
     }
 
-    public int floyd() {
+    public int floyd(int sizeLargestConnected) {
         if(countComponents() == adjacencyListLoad) {
             return 0;
         }
-        
+
         int[][] dist = new int[size][size];
 
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                dist[i][j] = INF;
+                if(i == j && findNode(i) != null) {
+                    dist[i][j] = 0;
+                }
+                else {
+                    dist[i][j] = INF;
+                }
             }
         }
 
@@ -272,29 +275,33 @@ public class Graph {
         for (int k = 0; k < size; k++) {
             for (int i = 0; i < size; i++) {
                 for (int j = 0; j < size; j++) {
-                    if(dist[i][k] != INF && dist[k][j] != INF && dist[i][k] + dist[k][j] < dist[i][j]) {
+                    if(dist[i][k] != INF && dist[k][j] != INF && dist[i][j] > dist[i][k] + dist[k][j]) {
                         dist[i][j] = dist[i][k] + dist[k][j];
                     }
                 }
             }
         }
 
+//        int[] largestPath = new int[2];
         int diameter = 0;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                if(dist[i][j] != INF && dist[i][j] > diameter) {
+                if(i != j && dist[i][j] != INF && dist[i][j] >= diameter) {
                     diameter = dist[i][j];
+//                    largestPath[0] = i;
+//                    largestPath[1] = j;
                 }
             }
         }
-        
+
+        // System.out.println("largest path: " + largestPath[0] + " " + largestPath[1]);
         return diameter;
     }
 
     public void printGraph() {
         int connected = countComponents();
         int maxSize = findLargestComponentSize();
-        int diameter = floyd();
+        int diameter = floyd(connected);
         System.out.println("There are " + connected + " connected components");
         System.out.println("The largest connected component has " + maxSize + " elements");
         System.out.println("The diameter of the largest component is " + diameter);

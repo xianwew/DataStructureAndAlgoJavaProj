@@ -45,21 +45,11 @@ public class Hash {
 
     public int searchForValueOrSlot(String key, boolean returnAvailableSlot) {
         int homeIndex = getHomeSlot(key, size);
-        if(keyValues[homeIndex] == null) {
-            return returnAvailableSlot ? homeIndex : -1;
-        }
-        else if(keyValues[homeIndex].getValue() == null) {
-            if(returnAvailableSlot) {
-                return homeIndex;
-            }
-        }
-        else if(keyValues[homeIndex].getKey().equals(key)) {
-            return returnAvailableSlot ? -1 : homeIndex;
-        }
+        int awayFromHomeSlot = 0;
 
-        int awayFromHomeSlot = 1;
         while(true) {
             int slotToBeChecked = (awayFromHomeSlot * awayFromHomeSlot + homeIndex) % size;
+
             if(keyValues[slotToBeChecked] == null) {
                 return returnAvailableSlot ? slotToBeChecked : -1;
             }
@@ -71,6 +61,7 @@ public class Hash {
             else if(keyValues[slotToBeChecked].getKey().equals(key)) {
                 return returnAvailableSlot ? -1 : slotToBeChecked;
             }
+
             awayFromHomeSlot++;
         }
     }
@@ -99,7 +90,7 @@ public class Hash {
                 if(numberOfElements > size / 2) {
                     reHash();
                 }
-            }         
+            }
             return true;
         }
 
@@ -117,6 +108,7 @@ public class Hash {
                 if(keyValues[i].getValue() != null) {
                     totalValidValue++;
                     System.out.println(i + ": |" + keyValues[i].getKey() + "|");
+                    //System.out.println(i + ": |" + keyValues[i].getKey() + "|" + " index: " + keyValues[i].getValue().getId());
                 }
                 else {
                     System.out.println(i + ": TOMBSTONE");

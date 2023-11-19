@@ -1,0 +1,12 @@
+insert a1<SEP>s1
+insert a1<SEP>s10
+insert a1<SEP>s20
+insert a2<SEP>s10
+insert a2<SEP>s20
+insert a2<SEP>ss1
+insert a2<SEP>ss2
+insert a2<SEP>ss3
+insert a3<SEP>ss4
+print artist
+print song
+print graph
