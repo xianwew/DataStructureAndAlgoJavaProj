@@ -1,0 +1,10 @@
+insert a1<SEP>s1
+insert a2<SEP>s1
+insert a2<SEP>s3
+insert a3<SEP>s2
+insert a4<SEP>s2
+insert a5<SEP>s2
+insert a6<SEP>s4
+insert a7<SEP>s4
+insert a8<SEP>s4
+print graph

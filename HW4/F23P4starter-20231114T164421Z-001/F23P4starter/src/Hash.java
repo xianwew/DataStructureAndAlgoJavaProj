@@ -158,9 +158,9 @@ public class Hash {
                 if (keyValues[i].getValue() != null) {
                     totalValidValue++;
                     System.out.println(i + ": |" + keyValues[i].getKey() + "|");
-                    // System.out.println(i + ": |" + keyValues[i].getKey() +
-                    // "|" + " index: " +
-                    // keyValues[i].getValue().getId());
+//                     System.out.println(i + ": |" + keyValues[i].getKey() +
+//                     "|" + " index: " +
+//                     keyValues[i].getValue().getId());
                 }
                 else {
                     System.out.println(i + ": TOMBSTONE");
@@ -178,7 +178,7 @@ public class Hash {
     /**
      * Implement the delete function for the hash table.
      * 
-     * @param key        provided by the user.
+     * @param key provided by the user.
      * @return if deletion was successful
      */
     public boolean delete(String key) {
