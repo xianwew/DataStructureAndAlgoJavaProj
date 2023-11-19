@@ -110,7 +110,7 @@ public class GraphProjectTest extends TestCase {
         GraphProject.main(new String[] { "2", "src/P4InsertInput.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
+
         filePath = "src/CustomOutput6.txt";
         refOut = "";
         try {
@@ -122,11 +122,10 @@ public class GraphProjectTest extends TestCase {
         }
 
         systemOut().clearHistory();
-        GraphProject.main(new String[] { "10", "src/P4AdvancedPrintInput.txt" });
+        GraphProject
+                .main(new String[] { "10", "src/P4AdvancedPrintInput.txt" });
         printOut = systemOut().getHistory();
         assertFuzzyEquals(printOut, refOut);
-        
-        
 
         refOut = "";
         systemOut().clearHistory();
