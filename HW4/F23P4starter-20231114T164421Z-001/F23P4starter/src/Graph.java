@@ -85,8 +85,7 @@ public class Graph {
             }
             return max;
         }
-        
-        
+
     }
 
     private int size;
@@ -359,6 +358,12 @@ public class Graph {
         return uf.maxSize();
     }
 
+    /**
+     * Trim the given adjacency matrix to a smaller matrix, only keep '1's
+     *
+     * @param matrix The input adjacency matrix.
+     * @return The the trimmed matrix.
+     */
     public int[][] trimZeros(int[][] matrix) {
         int rows = matrix.length;
         int cols = matrix[0].length;
@@ -377,62 +382,55 @@ public class Graph {
         int nonEmptyRows = 0;
         int nonEmptyCols = 0;
         for (int i = 0; i < rows; i++) {
-            if (emptyRows[i]) nonEmptyRows++;
+            if (emptyRows[i])
+                nonEmptyRows++;
         }
         for (int j = 0; j < cols; j++) {
-            if (emptyCols[j]) nonEmptyCols++;
+            if (emptyCols[j])
+                nonEmptyCols++;
         }
 
-        int[][] trimmedMatrix = new int[nonEmptyRows][nonEmptyCols];
-        int rowIdx = 0;
+        int[][] trimmed = new int[nonEmptyRows][nonEmptyCols];
+        int rowIndex = 0;
         for (int i = 0; i < rows; i++) {
             if (emptyRows[i]) {
-                int colIdx = 0;
+                int colIndex = 0;
                 for (int j = 0; j < cols; j++) {
                     if (emptyCols[j]) {
-                        trimmedMatrix[rowIdx][colIdx] = matrix[i][j];
-                        colIdx++;
+                        trimmed[rowIndex][colIndex] = matrix[i][j];
+                        colIndex++;
                     }
                 }
-                rowIdx++;
+                rowIndex++;
             }
         }
 
-        return trimmedMatrix;
+        return trimmed;
     }
 
-//    public void printMatrix(int[][] matrix) {
-//        for (int i = 0; i < matrix.length; i++) {
-//            for (int j = 0; j < matrix[i].length; j++) {
-//                System.out.print(matrix[i][j] + " ");
-//            }
-//            System.out.println();
-//        }
-//    }
-    
     /**
      * Computes the diameter of the largest connected component in the graph
      * using Floyd algorithm.
      *
-     * @param sizeLargestConnected The size of the largest connected component.
-     * @param largetConnectedComponents The adjacency matrix for the largest connected components.
+     * @param sizeLargestConnected  The size of the largest connected component.
+     * @param largetConnectedMatrix The adjacency matrix for the largest
+     *                              connected components.
      * @return The diameter of the largest connected component.
      */
-    public int floyd(int sizeLargestConnected, int[][] largetConnectedComponents) {
+    public int floyd(int sizeLargestConnected, int[][] largetConnectedMatrix) {
         if (countComponents() == adjacencyListLoad) {
             return 0;
         }
 
-        int[][] trimmed = trimZeros(largetConnectedComponents);
+        int[][] trimmed = trimZeros(largetConnectedMatrix);
         int[][] dist = new int[sizeLargestConnected][sizeLargestConnected];
-//        printMatrix(trimmed);
-//        printMatrix(largetConnectedComponents);
-        
+
         for (int i = 0; i < sizeLargestConnected; i++) {
             for (int j = 0; j < sizeLargestConnected; j++) {
                 if (i == j) {
                     dist[i][j] = 0;
-                } else {
+                }
+                else {
                     dist[i][j] = trimmed[i][j] != 0 ? trimmed[i][j] : INF;
                 }
             }
@@ -460,24 +458,38 @@ public class Graph {
 
         return diameter;
     }
-    
+
+    /**
+     * Check if 2 vertices have edge
+     * 
+     * @param i vertex i
+     * @param j vertex j
+     * 
+     * @return whether these 2 vertices have edge
+     */
     public boolean isEdge(int i, int j) {
         GraphList node = findNode(i);
-        if(node == null) {
+        if (node == null) {
             return false;
         }
-        
+
         node = node.getNext();
-        while(node != null) {
-            if(node.getId() == j) {
+        while (node != null) {
+            if (node.getId() == j) {
                 return true;
             }
             node = node.getNext();
         }
         return false;
     }
-    
-    public int[][][] getLargestComponentsAdjacencyMatrices() {
+
+    /**
+     * Calculate all the largest connected components by UnionFind
+     * 
+     * @return all the adjacency matrices of the largest connected components by
+     *         UnionFind
+     */
+    public int[][][] getLargestConnectedMatrices() {
         UnionFind uf = unionGraph();
         int maxComponentSize = uf.maxSize();
 
@@ -493,7 +505,8 @@ public class Graph {
             }
         }
 
-        int[][][] largestComponentsAdjacencyMatrices = new int[index][uf.parent.length][uf.parent.length];
+        int[][][] largestMatrices = 
+                new int[index][uf.parent.length][uf.parent.length];
         for (int i = 0; i < uf.parent.length; i++) {
             int rootI = uf.find(i);
             if (uf.size[rootI] == maxComponentSize) {
@@ -501,28 +514,15 @@ public class Graph {
                 for (int j = 0; j < uf.parent.length; j++) {
                     int rootJ = uf.find(j);
                     if (rootI == rootJ && isEdge(i, j)) {
-                        largestComponentsAdjacencyMatrices[componentIdx][i][j] = 1;
+                        largestMatrices[componentIdx][i][j] = 1;
                     }
                 }
             }
         }
 
-        return largestComponentsAdjacencyMatrices;
+        return largestMatrices;
     }
-    
-//    public void printLargestConnectedMatrix(int[][][] largestConnectedMatrix) {
-//        for (int i = 0; i < largestConnectedMatrix.length; i++) {
-//            System.out.println("Matrix #" + (i + 1) + ":");
-//            for (int j = 0; j < largestConnectedMatrix[i].length; j++) {
-//                for (int k = 0; k < largestConnectedMatrix[i][j].length; k++) {
-//                    System.out.print(largestConnectedMatrix[i][j][k] + " ");
-//                }
-//                System.out.println();
-//            }
-//            System.out.println(); 
-//        }
-//    }
-    
+
     /**
      * Prints information about the graph.
      */
@@ -530,32 +530,14 @@ public class Graph {
         int connected = countComponents();
         int maxSize = findLargestComponentSize();
         int diameter = 0;
-        int [][][] largestConnectedMatrix = getLargestComponentsAdjacencyMatrices();
-        for(int i = 0; i < largestConnectedMatrix.length; i++) {
-            diameter = Math.max(diameter, floyd(maxSize, largestConnectedMatrix[i]));
+        int[][][] largestMatrices = getLargestConnectedMatrices();
+        for (int i = 0; i < largestMatrices.length; i++) {
+            diameter = Math.max(diameter, floyd(maxSize, largestMatrices[i]));
         }
-//        System.out.println("There are " + largestConnectedMatrix.length + " largest connected components");
-//        printLargestConnectedMatrix(largestConnectedMatrix);
         System.out.println("There are " + connected + " connected components");
         System.out.println(
                 "The largest connected component has " + maxSize + " elements");
         System.out.println(
                 "The diameter of the largest component is " + diameter);
     }
-
 }
-
-//for(GraphList dummy: adjacencyList) {
-//GraphList curNode = dummy.getNext();
-//if(curNode != null) {
-//  System.out.println();
-//  System.out.print(curNode.getId() + " ");
-//  curNode = curNode.getNext();
-//}
-//while(curNode != null) {
-//  System.out.print(curNode.getId() + " ");
-//  curNode = curNode.getNext();
-//}
-//
-//}
-//System.out.println();

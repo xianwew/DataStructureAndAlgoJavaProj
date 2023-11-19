@@ -1,6 +1,8 @@
 /**
  * Hash table class
  *
+ * Hash class
+ *
  * @author <Xianwei && Jiren>
  * @version <Nov, 2023>
  */
@@ -82,7 +84,7 @@ public class Hash {
      * @param key                 key to be searched.
      * @param returnAvailableSlot true to return available slot, false to return
      *                            the value index if found.
-     * @return if insert was successful
+     * @return a index
      */
     public int searchForValueOrSlot(String key, boolean returnAvailableSlot) {
         int homeIndex = getHomeSlot(key, size);
@@ -158,9 +160,6 @@ public class Hash {
                 if (keyValues[i].getValue() != null) {
                     totalValidValue++;
                     System.out.println(i + ": |" + keyValues[i].getKey() + "|");
-//                     System.out.println(i + ": |" + keyValues[i].getKey() +
-//                     "|" + " index: " +
-//                     keyValues[i].getValue().getId());
                 }
                 else {
                     System.out.println(i + ": TOMBSTONE");
