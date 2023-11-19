@@ -1,8 +1,8 @@
 /**
  * Hash table class
  *
- * @author <Put Something Here>
- * @version <Put Something Here>
+ * @author <Xianwei && Jiren>
+ * @version <Nov, 2023>
  */
 
 public class Hash {
@@ -10,22 +10,49 @@ public class Hash {
         private String key;
         private GraphList value;
 
+        /**
+         * constructor of the table
+         * 
+         * @return the key
+         */
         public String getKey() {
             return key;
         }
 
+        /**
+         * Sets the key for this key-value pair.
+         *
+         * @param key The key to set.
+         */
         public void setKey(String key) {
             this.key = key;
         }
 
+        /**
+         * Gets the value associated with this key-value pair.
+         *
+         * @return The GraphList value.
+         */
         public GraphList getValue() {
             return value;
         }
 
+        /**
+         * Sets the value for this key-value pair.
+         *
+         * @param value The GraphList value to set.
+         */
         public void setValue(GraphList value) {
             this.value = value;
         }
 
+        /**
+         * Constructs a new key-value pair with the given key and GraphList
+         * value.
+         *
+         * @param keyLocal       The key to set.
+         * @param graphListLocal The GraphList value to set.
+         */
         public KVPair(String keyLocal, GraphList graphListLocal) {
             setKey(keyLocal);
             setValue(graphListLocal);
@@ -37,28 +64,43 @@ public class Hash {
     private int numberOfElements;
     private boolean isArtist;
 
+    /**
+     * constructor of the table
+     * 
+     * @param sizeLocal     size of the table.
+     * @param isArtistLocal indicate if this is artist table.
+     */
     public Hash(int sizeLocal, boolean isArtistLocal) {
         size = sizeLocal;
         isArtist = isArtistLocal;
         keyValues = new KVPair[size];
     }
 
+    /**
+     * search for a value or a available slot.
+     * 
+     * @param key                 key to be searched.
+     * @param returnAvailableSlot true to return available slot, false to return
+     *                            the value index if found.
+     * @return if insert was successful
+     */
     public int searchForValueOrSlot(String key, boolean returnAvailableSlot) {
         int homeIndex = getHomeSlot(key, size);
         int awayFromHomeSlot = 0;
 
-        while(true) {
-            int slotToBeChecked = (awayFromHomeSlot * awayFromHomeSlot + homeIndex) % size;
+        while (true) {
+            int slotToBeChecked = (awayFromHomeSlot * awayFromHomeSlot
+                    + homeIndex) % size;
 
-            if(keyValues[slotToBeChecked] == null) {
+            if (keyValues[slotToBeChecked] == null) {
                 return returnAvailableSlot ? slotToBeChecked : -1;
             }
-            else if(keyValues[slotToBeChecked].getValue() == null) {
-                if(returnAvailableSlot) {
+            else if (keyValues[slotToBeChecked].getValue() == null) {
+                if (returnAvailableSlot) {
                     return slotToBeChecked;
                 }
             }
-            else if(keyValues[slotToBeChecked].getKey().equals(key)) {
+            else if (keyValues[slotToBeChecked].getKey().equals(key)) {
                 return returnAvailableSlot ? -1 : slotToBeChecked;
             }
 
@@ -66,9 +108,15 @@ public class Hash {
         }
     }
 
+    /**
+     * Get the value of the table, given a key
+     * 
+     * @param key key to be searched.
+     * @return the value associated with the key.
+     */
     public GraphList getValue(String key) {
         int slot = searchForValueOrSlot(key, false);
-        if(slot == -1) {
+        if (slot == -1) {
             return null;
         }
         return keyValues[slot].getValue();
@@ -77,17 +125,19 @@ public class Hash {
     /**
      * Implement the insertion function for the hash table.
      * 
-     * @param key key to be inserted.
+     * @param key       key to be inserted.
+     * @param value     value to be inserted.
+     * @param rehashing if is rehashing.
      * @return if insert was successful
      */
     public boolean insert(String key, GraphList value, boolean rehashing) {
         int availableSlot = searchForValueOrSlot(key, true);
-        if(availableSlot != -1) {
+        if (availableSlot != -1) {
             KVPair newPair = new KVPair(key, value);
             keyValues[availableSlot] = newPair;
-            if(!rehashing) {
+            if (!rehashing) {
                 numberOfElements++;
-                if(numberOfElements > size / 2) {
+                if (numberOfElements > size / 2) {
                     reHash();
                 }
             }
@@ -104,18 +154,20 @@ public class Hash {
     public void printHashtable() {
         int totalValidValue = 0;
         for (int i = 0; i < size; i++) {
-            if(keyValues[i] != null) {
-                if(keyValues[i].getValue() != null) {
+            if (keyValues[i] != null) {
+                if (keyValues[i].getValue() != null) {
                     totalValidValue++;
                     System.out.println(i + ": |" + keyValues[i].getKey() + "|");
-                    //System.out.println(i + ": |" + keyValues[i].getKey() + "|" + " index: " + keyValues[i].getValue().getId());
+                    // System.out.println(i + ": |" + keyValues[i].getKey() +
+                    // "|" + " index: " +
+                    // keyValues[i].getValue().getId());
                 }
                 else {
                     System.out.println(i + ": TOMBSTONE");
                 }
             }
         }
-        if(isArtist) {
+        if (isArtist) {
             System.out.println("total artists: " + totalValidValue);
         }
         else {
@@ -126,7 +178,6 @@ public class Hash {
     /**
      * Implement the delete function for the hash table.
      * 
-     * @param memManager a memManager object created by main.
      * @param key        provided by the user.
      * @return if deletion was successful
      */
@@ -147,7 +198,7 @@ public class Hash {
 
         int indexOfCurKeyValues = 0;
         for (KVPair i : keyValues) {
-            if(i != null && i.getValue() != null) {
+            if (i != null && i.getValue() != null) {
                 currentKeyValues[indexOfCurKeyValues] = i;
                 indexOfCurKeyValues++;
             }
@@ -156,8 +207,9 @@ public class Hash {
         keyValues = newKeyValues;
         size *= 2;
         for (int i = 0; i < currentKeyValues.length; i++) {
-            if(currentKeyValues[i] != null) {
-                insert(currentKeyValues[i].getKey(), currentKeyValues[i].getValue(), true);
+            if (currentKeyValues[i] != null) {
+                insert(currentKeyValues[i].getKey(),
+                        currentKeyValues[i].getValue(), true);
             }
         }
 
@@ -169,7 +221,8 @@ public class Hash {
      * Compute the hash function
      * 
      * @param s      The string that we are hashing
-     * @param length Length of the hash table (needed because this method is static)
+     * @param length Length of the hash table (needed because this method is
+     *               static)
      * @return The hash function key (the home slot in the table for this key)
      */
     public static int getHomeSlot(String s, int length) {

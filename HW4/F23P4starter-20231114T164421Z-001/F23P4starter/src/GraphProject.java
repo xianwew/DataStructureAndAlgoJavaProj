@@ -1,10 +1,10 @@
 // -------------------------------------------------------------------------
 /**
- * Main for Graph project (CS3114/CS5040 Fall 2023 Project 4).
- * Usage: java GraphProject <init-hash-size> <command-file>
+ * Main for Graph project (CS3114/CS5040 Fall 2023 Project 4). Usage: java
+ * GraphProject <init-hash-size> <command-file>
  *
- * @author {Your Name Here}
- * @version {Put Something Here}
+ * @author <Xianwei && Jiren>
+ * @version <Nov, 2023>
  *
  */
 
@@ -27,22 +27,20 @@
 //   during the discussion. I have violated neither the spirit nor
 //   letter of this restriction.
 
-public class GraphProject
-{
+public class GraphProject {
     /**
-     * @param args
-     *     Command line parameters
+     * @param args Command line parameters
      */
     public static void main(String[] args) {
         // This is the main file for the program.
-    	if(args.length != 2) {
-    		return;
-    	}
-    	
-    	if(Integer.valueOf(args[0]) < 1) {
-    	    return;
-    	}
-    	
-    	new CommandProcessor(Integer.valueOf(args[0]), args[1]);
+        if (args.length != 2) {
+            return;
+        }
+
+        if (Integer.valueOf(args[0]) < 1) {
+            return;
+        }
+
+        new CommandProcessor(Integer.valueOf(args[0]), args[1]);
     }
 }
