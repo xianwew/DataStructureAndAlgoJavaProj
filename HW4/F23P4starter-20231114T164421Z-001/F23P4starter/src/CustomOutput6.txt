@@ -1,0 +1,289 @@
+total songs: 0
+total artists: 0
+There are 0 connected components
+The largest connected component has 0 elements
+The diameter of the largest component is 0
+|ABC| is added to the Artist database.
+|song1| is added to the Song database.
+|song2| is added to the Song database.
+3: |ABC|
+total artists: 1
+8: |song1|
+9: |song2|
+total songs: 2
+There are 1 connected components
+The largest connected component has 3 elements
+The diameter of the largest component is 2
+|TOMBSTONE| is added to the Artist database.
+|TOMBSTONE| is added to the Song database.
+|abc| is added to the Artist database.
+|cde| is added to the Artist database.
+|cdf| is added to the Artist database.
+|song3| is added to the Song database.
+1: |cdf|
+3: |ABC|
+4: |TOMBSTONE|
+5: |cde|
+9: |abc|
+total artists: 5
+0: |song3|
+4: |TOMBSTONE|
+8: |song1|
+9: |song2|
+total songs: 4
+There are 3 connected components
+The largest connected component has 5 elements
+The diameter of the largest component is 4
+Artist hash table size doubled.
+|BCD| is added to the Artist database.
+|bcd| is added to the Artist database.
+2: |bcd|
+4: |TOMBSTONE|
+6: |BCD|
+9: |abc|
+11: |cdf|
+13: |ABC|
+15: |cde|
+total artists: 7
+0: |song3|
+4: |TOMBSTONE|
+8: |song1|
+9: |song2|
+total songs: 4
+There are 3 connected components
+The largest connected component has 7 elements
+The diameter of the largest component is 4
+|efg| is added to the Artist database.
+1: |efg|
+2: |bcd|
+4: |TOMBSTONE|
+6: |BCD|
+9: |abc|
+11: |cdf|
+13: |ABC|
+15: |cde|
+total artists: 8
+0: |song3|
+4: |TOMBSTONE|
+8: |song1|
+9: |song2|
+total songs: 4
+There are 2 connected components
+The largest connected component has 10 elements
+The diameter of the largest component is 6
+|efg| is removed from the Artist database.
+1: TOMBSTONE
+2: |bcd|
+4: |TOMBSTONE|
+6: |BCD|
+9: |abc|
+11: |cdf|
+13: |ABC|
+15: |cde|
+total artists: 7
+0: |song3|
+4: |TOMBSTONE|
+8: |song1|
+9: |song2|
+total songs: 4
+There are 2 connected components
+The largest connected component has 9 elements
+The diameter of the largest component is 6
+|abc| is removed from the Artist database.
+1: TOMBSTONE
+2: |bcd|
+4: |TOMBSTONE|
+6: |BCD|
+9: TOMBSTONE
+11: |cdf|
+13: |ABC|
+15: |cde|
+total artists: 6
+0: |song3|
+4: |TOMBSTONE|
+8: |song1|
+9: |song2|
+total songs: 4
+There are 2 connected components
+The largest connected component has 8 elements
+The diameter of the largest component is 5
+|ABC| is removed from the Artist database.
+1: TOMBSTONE
+2: |bcd|
+4: |TOMBSTONE|
+6: |BCD|
+9: TOMBSTONE
+11: |cdf|
+13: TOMBSTONE
+15: |cde|
+total artists: 5
+0: |song3|
+4: |TOMBSTONE|
+8: |song1|
+9: |song2|
+total songs: 4
+There are 2 connected components
+The largest connected component has 7 elements
+The diameter of the largest component is 5
+|BCD| is removed from the Artist database.
+1: TOMBSTONE
+2: |bcd|
+4: |TOMBSTONE|
+6: TOMBSTONE
+9: TOMBSTONE
+11: |cdf|
+13: TOMBSTONE
+15: |cde|
+total artists: 4
+0: |song3|
+4: |TOMBSTONE|
+8: |song1|
+9: |song2|
+total songs: 4
+There are 3 connected components
+The largest connected component has 5 elements
+The diameter of the largest component is 4
+|bcd| is removed from the Artist database.
+1: TOMBSTONE
+2: TOMBSTONE
+4: |TOMBSTONE|
+6: TOMBSTONE
+9: TOMBSTONE
+11: |cdf|
+13: TOMBSTONE
+15: |cde|
+total artists: 3
+0: |song3|
+4: |TOMBSTONE|
+8: |song1|
+9: |song2|
+total songs: 4
+There are 4 connected components
+The largest connected component has 2 elements
+The diameter of the largest component is 1
+|TOMBSTONE| is removed from the Artist database.
+1: TOMBSTONE
+2: TOMBSTONE
+4: TOMBSTONE
+6: TOMBSTONE
+9: TOMBSTONE
+11: |cdf|
+13: TOMBSTONE
+15: |cde|
+total artists: 2
+0: |song3|
+4: |TOMBSTONE|
+8: |song1|
+9: |song2|
+total songs: 4
+There are 4 connected components
+The largest connected component has 2 elements
+The diameter of the largest component is 1
+|TOMBSTONE| is removed from the Song database.
+1: TOMBSTONE
+2: TOMBSTONE
+4: TOMBSTONE
+6: TOMBSTONE
+9: TOMBSTONE
+11: |cdf|
+13: TOMBSTONE
+15: |cde|
+total artists: 2
+0: |song3|
+4: TOMBSTONE
+8: |song1|
+9: |song2|
+total songs: 3
+There are 3 connected components
+The largest connected component has 2 elements
+The diameter of the largest component is 1
+|cdf| is removed from the Artist database.
+1: TOMBSTONE
+2: TOMBSTONE
+4: TOMBSTONE
+6: TOMBSTONE
+9: TOMBSTONE
+11: TOMBSTONE
+13: TOMBSTONE
+15: |cde|
+total artists: 1
+0: |song3|
+4: TOMBSTONE
+8: |song1|
+9: |song2|
+total songs: 3
+There are 3 connected components
+The largest connected component has 2 elements
+The diameter of the largest component is 1
+|cde| is removed from the Artist database.
+1: TOMBSTONE
+2: TOMBSTONE
+4: TOMBSTONE
+6: TOMBSTONE
+9: TOMBSTONE
+11: TOMBSTONE
+13: TOMBSTONE
+15: TOMBSTONE
+total artists: 0
+0: |song3|
+4: TOMBSTONE
+8: |song1|
+9: |song2|
+total songs: 3
+There are 3 connected components
+The largest connected component has 1 elements
+The diameter of the largest component is 0
+|song1| is removed from the Song database.
+1: TOMBSTONE
+2: TOMBSTONE
+4: TOMBSTONE
+6: TOMBSTONE
+9: TOMBSTONE
+11: TOMBSTONE
+13: TOMBSTONE
+15: TOMBSTONE
+total artists: 0
+0: |song3|
+4: TOMBSTONE
+8: TOMBSTONE
+9: |song2|
+total songs: 2
+There are 2 connected components
+The largest connected component has 1 elements
+The diameter of the largest component is 0
+|song2| is removed from the Song database.
+1: TOMBSTONE
+2: TOMBSTONE
+4: TOMBSTONE
+6: TOMBSTONE
+9: TOMBSTONE
+11: TOMBSTONE
+13: TOMBSTONE
+15: TOMBSTONE
+total artists: 0
+0: |song3|
+4: TOMBSTONE
+8: TOMBSTONE
+9: TOMBSTONE
+total songs: 1
+There are 1 connected components
+The largest connected component has 1 elements
+The diameter of the largest component is 0
+|song3| is removed from the Song database.
+1: TOMBSTONE
+2: TOMBSTONE
+4: TOMBSTONE
+6: TOMBSTONE
+9: TOMBSTONE
+11: TOMBSTONE
+13: TOMBSTONE
+15: TOMBSTONE
+total artists: 0
+0: TOMBSTONE
+4: TOMBSTONE
+8: TOMBSTONE
+9: TOMBSTONE
+total songs: 0
+There are 0 connected components
+The largest connected component has 0 elements
+The diameter of the largest component is 0

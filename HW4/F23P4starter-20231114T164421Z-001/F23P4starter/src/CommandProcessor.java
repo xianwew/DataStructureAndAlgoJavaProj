@@ -99,11 +99,7 @@ public class CommandProcessor {
                             case "graph":
                                 controller.printGraph();
                                 break;
-                            default:
-                                break;
                         }
-                        break;
-                    default:
                         break;
                 }
             }
