@@ -413,16 +413,15 @@ public class Graph {
      * using Floyd algorithm.
      *
      * @param sizeLargestConnected  The size of the largest connected component.
-     * @param largetConnectedMatrix The adjacency matrix for the largest
+     * @param adjacencyMatrix The trimmed adjacency matrix for the largest
      *                              connected components.
      * @return The diameter of the largest connected component.
      */
-    public int floyd(int sizeLargestConnected, int[][] largetConnectedMatrix) {
+    public int floyd(int sizeLargestConnected, int[][] adjacencyMatrix) {
         if (countComponents() == adjacencyListLoad) {
             return 0;
         }
 
-        int[][] trimmed = trimZeros(largetConnectedMatrix);
         int[][] dist = new int[sizeLargestConnected][sizeLargestConnected];
 
         for (int i = 0; i < sizeLargestConnected; i++) {
@@ -431,7 +430,9 @@ public class Graph {
                     dist[i][j] = 0;
                 }
                 else {
-                    dist[i][j] = trimmed[i][j] != 0 ? trimmed[i][j] : INF;
+                    dist[i][j] = adjacencyMatrix[i][j] != 0
+                            ? adjacencyMatrix[i][j]
+                            : INF;
                 }
             }
         }
@@ -532,7 +533,8 @@ public class Graph {
         int diameter = 0;
         int[][][] largestMatrices = getLargestConnectedMatrices();
         for (int i = 0; i < largestMatrices.length; i++) {
-            diameter = Math.max(diameter, floyd(maxSize, largestMatrices[i]));
+            diameter = Math.max(diameter,
+                    floyd(maxSize, trimZeros(largestMatrices[i])));
         }
         System.out.println("There are " + connected + " connected components");
         System.out.println(
