@@ -247,14 +247,12 @@ public class Graph {
             return new GraphList[] { artistNode, songNode };
         }
 
-        if (artistNodeId == -1) {
-            artistNode = insertNewNodeToNewRow();
-            GraphList newSong = new GraphList(songNodeId);
-            insertNode(artistNode, newSong);
-            songNode = findNode(songNodeId);
-            GraphList newInsertArtist = new GraphList(artistNode.getId());
-            insertNode(songNode, newInsertArtist);
-        }
+        artistNode = insertNewNodeToNewRow();
+        GraphList newSong = new GraphList(songNodeId);
+        insertNode(artistNode, newSong);
+        songNode = findNode(songNodeId);
+        GraphList newInsertArtist = new GraphList(artistNode.getId());
+        insertNode(songNode, newInsertArtist);
 
         return new GraphList[] { artistNode, songNode };
     }
@@ -412,9 +410,9 @@ public class Graph {
      * Computes the diameter of the largest connected component in the graph
      * using Floyd algorithm.
      *
-     * @param sizeLargestConnected  The size of the largest connected component.
-     * @param adjacencyMatrix The trimmed adjacency matrix for the largest
-     *                              connected components.
+     * @param sizeLargestConnected The size of the largest connected component.
+     * @param adjacencyMatrix      The trimmed adjacency matrix for the largest
+     *                             connected components.
      * @return The diameter of the largest connected component.
      */
     public int floyd(int sizeLargestConnected, int[][] adjacencyMatrix) {

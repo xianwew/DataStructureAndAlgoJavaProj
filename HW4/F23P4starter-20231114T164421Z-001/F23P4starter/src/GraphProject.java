@@ -36,7 +36,6 @@ public class GraphProject {
         if (args.length != 2) {
             return;
         }
-
         if (Integer.valueOf(args[0]) < 1) {
             return;
         }
